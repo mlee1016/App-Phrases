@@ -1,0 +1,188 @@
+{"course1":[
+  {
+    "phrase": "Il [[est]] ici.",
+    "pr": "eel [[eh]] ee-see",
+    "en": "He [[is]] here.",
+    "des": "'est' is the third person singular of 'être' (to be).",
+    "phrase_name": "is"
+  },
+  {
+    "phrase": "[[C’est]] une bonne idée.",
+    "pr": "[[seh]] oon bon ee-day",
+    "en": "[[It is]] a good idea.",
+    "des": "C’est = it is (ce + est).",
+    "phrase_name": "is"
+  },
+  {
+    "phrase": "Ce [[n’est pas]] facile.",
+    "pr": "suh [[neh pah]] fah-seel",
+    "en": "It [[is not]] easy.",
+    "des": "Negative form using 'n’est pas'.",
+    "phrase_name": "is"
+  },
+  {
+    "phrase": "Il [[est]] professeur.",
+    "pr": "eel [[eh]] pro-fes-seur",
+    "en": "He [[is]] a teacher.",
+    "des": "'est' used for profession without article.",
+    "phrase_name": "is"
+  },
+  {
+    "phrase": "Je veux [[seulement]] t’aider.",
+    "pr": "zhuh vuh [[suhl-mahn]] teh-day",
+    "en": "I [[only]] want to help you.",
+    "des": "'Seulement' means 'only'.",
+    "phrase_name": "only"
+  },
+  {
+    "phrase": "C’est pour les membres [[seulement]].",
+    "pr": "seh poor lay mahmbr [[suh-luh-mahn]]",
+    "en": "It’s for members [[only]].",
+    "des": "'Seulement' emphasizes exclusivity.",
+    "phrase_name": "only"
+  },
+  {
+    "phrase": "Elle est ici [[depuis]] hier.",
+    "pr": "el eh ee-see duh-pwee ee-yer",
+    "en": "She has been here [[since]] yesterday.",
+    "des": "'Depuis' means 'since' or 'for'.",
+    "phrase_name": "since"
+  },
+  {
+    "phrase": "Je vis ici [[depuis]] 2010.",
+    "pr": "zhuh vee ee-see duh-pwee duh mil dees",
+    "en": "I’ve lived here [[since]] 2010.",
+    "des": "'Depuis' used for time origin.",
+    "phrase_name": "since"
+  },
+  {
+    "phrase": "[[Je suis]] fatigué.",
+    "pr": "[[zhuh swee]] fah-tee-gay",
+    "en": "[[I am]] tired.",
+    "des": "'Je suis' = 'I am'.",
+    "phrase_name": "am"
+  },
+  {
+    "phrase": "[[Je suis]] étudiant.",
+    "pr": "[[zhuh swee]] eh-too-dyah(n)",
+    "en": "[[I am]] a student.",
+    "des": "Again, 'Je suis' for identity.",
+    "phrase_name": "am"
+  },
+  {
+    "phrase": "Tu es gentil [[et]] intelligent.",
+    "pr": "tew eh zhahn-tee [[ay(n)]] an-tell-ee-zhah(n)",
+    "en": "You are kind [[and]] smart.",
+    "des": "'Et' is the French word for 'and'.",
+    "phrase_name": "and"
+  },
+  {
+    "phrase": "J’aime le thé [[et]] le café.",
+    "pr": "zhem luh tay [[ay]] luh kah-fay",
+    "en": "I like tea [[and]] coffee.",
+    "des": "Use 'et' to join two nouns.",
+    "phrase_name": "and"
+  },
+  {
+    "phrase": "Tu veux du thé ou [[du]] café ?",
+    "pr": "tew vuh dew tay oo dew kah-fay",
+    "en": "Do you want tea [[or]] coffee?",
+    "des": "'Ou' means 'or' in French.",
+    "phrase_name": "or"
+  },
+  {
+    "phrase": "C’est maintenant [[ou]] jamais.",
+    "pr": "seh mant-nah(n) [[oo]] zha-meh",
+    "en": "It’s now [[or]] never.",
+    "des": "Common structure using 'ou'.",
+    "phrase_name":""
+  }]
+,
+"course2":[
+  {
+    "phrase": "J’aime le thé [[et]] le café.",
+    "pr": "zhem luh tay [[eh]] luh kah-fay",
+    "en": "I like tea [[and]] coffee.",
+    "des": "'et' connects two nouns.",
+    "phrase_name": "et"
+  },
+  {
+    "phrase": "Il chante [[et]] danse bien.",
+    "pr": "eel shant [[eh]] dahns byan",
+    "en": "He sings [[and]] dances well.",
+    "des": "'et' connects two verbs.",
+    "phrase_name": "et"
+  },
+  
+  {
+    "phrase": "Je veux venir, [[mais]] je suis fatigué.",
+    "pr": "zhuh vuh vuh-neer [[meh]] zhuh swee fah-tee-gay",
+    "en": "I want to come, [[but]] I am tired.",
+    "des": "'mais' shows contrast between clauses.",
+    "phrase_name": "mais"
+  },
+  {
+    "phrase": "Il est petit, [[mais]] fort.",
+    "pr": "eel eh puh-tee [[meh]] for",
+    "en": "He is small [[but]] strong.",
+    "des": "Contrasts two adjectives.",
+    "phrase_name": "mais"
+  },
+  {
+    "phrase": "Tu veux du thé [[ou]] du café ?",
+    "pr": "tew vuh dew tay [[oo]] dew kah-fay",
+    "en": "Do you want tea [[or]] coffee?",
+    "des": "'ou' offers a choice.",
+    "phrase_name": "ou"
+  },
+  {
+    "phrase": "C’est maintenant [[ou]] jamais.",
+    "pr": "seh mant-nah(n) [[oo]] zha-meh",
+    "en": "It’s now [[or]] never.",
+    "des": "Used in a fixed expression.",
+    "phrase_name": "ou"
+  },
+  {
+    "phrase": "Je reste à la maison [[parce qu’il]] pleut.",
+    "pr": "zhuh rest ah lah meh-zon [[parss keel]] pluh",
+    "en": "I’m staying home [[because]] it’s raining.",
+    "des": "'parce que' gives a reason.",
+    "phrase_name": "parce que"
+  },
+  {
+    "phrase": "[[Bien qu’il]] fasse froid, il sort.",
+    "pr": "[[byan keel]] fass frwah eel sor",
+    "en": "[[Although]] it’s cold, he goes out.",
+    "des": "Subjunctive after 'bien que'.",
+    "phrase_name": "bien que"
+  },
+  {
+    "phrase": "[[Bien que]] je sois fatigué, je travaille.",
+    "pr": "[[byan kuh]] zhuh swah fah-tee-gay zhuh tra-vye",
+    "en": "[[Although]] I’m tired, I work.",
+    "des": "'sois' is subjunctive of 'être'.",
+    "phrase_name": "bien que"
+  },
+  {
+    "phrase": "[[Si]] tu veux, on peut y aller.",
+    "pr": "[[see]] tew vuh on puh ee ah-lay",
+    "en": "[[If]] you want, we can go.",
+    "des": "'si' introduces a condition.",
+    "phrase_name": "si"
+  },
+  {
+    "phrase": "[[Si]] j’ai le temps, je le ferai.",
+    "pr": "[[see]] zhay luh tahn zhuh luh feh-ray",
+    "en": "[[If]] I have time, I will do it.",
+    "des": "Common future conditional pattern.",
+    "phrase_name": "si"
+  },
+  {
+    "phrase": "[[Si]] tu m’aides, je t’aide.",
+    "pr": "[[see]] tew med zhuh ted",
+    "en": "[[If]] you help me, I’ll help you.",
+    "des": "Simple conditional pattern.",
+    "phrase_name": "si"
+  }
+]
+}

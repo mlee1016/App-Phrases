@@ -1,0 +1,253 @@
+
+.sidenav {
+  height: 100%; /* 100% Full-height */
+  width: 0; /* 0 width - change this with JavaScript */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Stay on top */
+  top: 0; /* Stay at the top */
+  left: 0;
+  background-color: rgb(37, 12, 5); /* Black*/
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 60px; /* Place content 60px from the top */
+  transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+}
+
+/* The navigation menu links */
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: rgb(174, 224, 240);
+  display: block;
+  transition: 0.3s;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover {
+  color: #f1f1f1;
+  cursor: pointer;
+}
+
+/* Position and style the close button (top right corner) */
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+#main {
+transition: margin-left .5s;
+padding: 20px;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+.sidenav {padding-top: 15px;}
+.sidenav a {font-size: 18px;}
+}
+.sideClass{
+  width: 250px;
+  
+}/*
+body{
+  width: 100%;
+  height: 100%;
+  background-color: rgb(185, 172, 58);
+  color: rgb(13, 3, 31);
+  border-style: solid;
+  border-color: rgb(26, 230, 244);
+  
+  top: 0;
+  bottom: 0;
+
+  height: 2000px
+}
+.nav-around{
+  margin: 0;
+  display:flex;
+  flex-direction: row;
+  align-content: space-evenly;
+  list-style-type: none;
+  background-color: rgba(202, 163, 127, 0.849);
+  font-family:'Courier New', Courier, monospace;
+  font-style:italic;
+  font-weight: 200;
+  border-style: solid;
+  border-color: rgb(174, 224, 240);
+  width: 650px;
+}
+.s{
+  list-style: none;
+  display: flex;
+  align-items:self-end;
+  background-color: rgb(8, 3, 31);
+  padding: 1.5rem;
+  font-size: large;
+}*/
+/*li{
+  list-style: none;
+}
+
+
+
+.open-side{
+  
+  cursor: pointer;
+  padding-right: .5rem;
+
+}
+a{
+  color: rgb(26, 230, 244);
+  text-decoration: none;
+  align-self:auto;
+  margin: 1.5rem;
+}
+a:hover{
+  text-decoration: underline;
+}
+
+.nav-bar{
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  align-content: space-around;
+  justify-content: space-evenly;
+  margin: 1.5rem;
+
+  
+
+}
+/*
+.whole-div{
+  height: 2000px;
+  background-color: rgb(13, 3, 31);
+  width: 100%;
+  display: flex;
+
+  flex-direction: column;
+  align-items: center;
+
+}
+
+.sign-out{
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  background-color: rgb(13, 3, 31);
+}*/
+.na{
+
+  display: flex;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  height: 60px;
+  width: 100%;
+
+  background-color: rgb(46, 141, 172);
+
+  flex-direction: row;
+}
+
+.sign-out{
+  position: absolute;
+  align-content: space-between;
+  right: 1.5em;
+  
+}
+/*button{
+  color: rgb(174, 224, 240);
+  background-color: rgb(5, 41, 53);
+  border-radius: 6px;
+  height: 27px;
+}
+
+
+button:hover{
+  color: rgb(5, 41, 53);
+  background-color: rgb(174, 224, 241);
+  cursor: pointer;
+  border-color: rgb(174, 224, 241);
+}
+a{
+  text-decoration: none;
+}
+*/
+.navbar {
+  background-color: #333;
+  padding: 1rem;
+}
+
+.nav-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  color: white;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.nav-links {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: #f0a500;
+}
+@media (max-width: 640px) {
+  .auth-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+}
+
+.menu-toggle {
+  display: none;
+  font-size: 1.5rem;
+  color: white;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    background-color: #333;
+    position: absolute;
+    top: 60px;
+    right: 1rem;
+    width: 200px;
+    border-radius: 8px;
+    padding: 1rem;
+  }
+
+  .nav-links.show {
+    display: flex;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+}
+
+.cursive-font {
+  font-family: 'Brush Script MT', cursive;
+}
+
+.signedIn{
+  text-shadow: 0px 2px 6px rgb(174, 224, 240),  0px 2px 6px rgb(174, 224, 240) ;
+}

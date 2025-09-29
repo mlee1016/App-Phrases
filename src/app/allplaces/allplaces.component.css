@@ -1,0 +1,10 @@
+.stripe-checkout{
+  color: rgb(0,150,150);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 150px;
+  height: 260px;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  border: .5em solid rgb(0,150,150);
+}

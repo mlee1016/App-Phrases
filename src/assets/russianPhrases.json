@@ -1,0 +1,2231 @@
+{
+  "usefulRussian": [
+    {
+      "phrase": "Привет!",
+      "pr": "Privet!",
+      "en": "Hello",
+      "des": "",
+      "phrase_name": "usefulRussian",
+      "language": "Russian",
+      "type": "story"
+    },
+    {
+      "phrase": "Здравствуйте!",
+      "pr": "Zdravstvuyte!",
+      "en": "Hello - (Polite)",
+      "des": "",
+      "phrase_name": "usefulRussian",
+      "language": "Russian",
+      "type": "story"
+    },
+    {
+      "phrase": "Доброе утро!",
+      "pr": "Dobroye utro!",
+      "en": "Good morning!",
+      "des": "",
+      "phrase_name": "usefulRussian",
+      "language": "Russian",
+      "type": "story"
+    },
+    {
+      "phrase": "Добрый день!",
+      "pr": "Dobryy den’!",
+      "en": "Good afternoon!",
+      "des": "",
+      "phrase_name": "usefulRussian",
+      "language": "Russian",
+      "type": "story"
+    },
+    {
+      "phrase": "Добрый вечер!",
+      "pr": "Dobryy vecher!",
+      "en": "Good evening!",
+      "des": "",
+      "phrase_name": "usefulRussian",
+      "language": "Russian",
+      "type": "story"
+    },
+    {
+      "phrase": "Пока!",
+      "pr": "Poka!",
+      "en": "Bye!",
+      "des": "",
+      "phrase_name": "usefulRussian",
+      "language": "Russian",
+      "type": "story"
+    },
+    {
+      "phrase": "До свидания!",
+      "pr": "Do svidaniya!",
+      "en": "Goodbye!",
+      "des": "",
+      "phrase_name": "usefulRussian",
+      "language": "Russian",
+      "type": "story"
+    },
+    {
+      "phrase": "Как дела?",
+      "pr": "Kak dela?",
+      "en": "How are you?",
+      "des": "",
+      "phrase_name": "usefulRussian",
+      "language": "Russian",
+      "type": "story"
+    },
+    {
+      "phrase": "Хорошо, спасибо.",
+      "pr": "Khorosho, spasibo.",
+      "en": "Good, thank you.",
+      "des": "",
+      "phrase_name": "usefulRussian",
+      "language": "Russian",
+      "type": "story"
+    },
+    {
+      "phrase": "Как вас зовут?",
+      "pr": "Kak vas zovut?",
+      "en": "What is your name?",
+      "des": "",
+      "phrase_name": "usefulRussian",
+      "language": "Russian",
+      "type": "story"
+    },
+    {
+      "phrase": "Меня зовут…",
+      "pr": "Menya zovut…",
+      "en": "My name is...",
+      "des": "",
+      "phrase_name": "usefulRussian",
+      "language": "Russian",
+      "type": "story"
+    },
+    {
+      "phrase": "Очень приятно.",
+      "pr": "Ochen’ priyatno.",
+      "en": "Nice to meet you.",
+      "des": "",
+      "phrase_name": "usefulRussian",
+      "language": "Russian",
+      "type": "story"
+    },
+    {
+      "phrase": "Пожалуйста.",
+      "pr": "Pozhaluysta.",
+      "en": "Please / You’re welcome.",
+      "des": "",
+      "phrase_name": "usefulRussian",
+      "language": "Russian",
+      "type": "story"
+    },
+    {
+      "phrase": "Спасибо.",
+      "pr": "Spasibo.",
+      "en": "Thank you.",
+      "des": "",
+      "phrase_name": "usefulRussian",
+      "language": "Russian",
+      "type": "story"
+    },
+    {
+      "phrase": "Большое спасибо.",
+      "pr": "Bol’shoye spasibo.",
+      "en": "Thank you very much.",
+      "des": "",
+      "phrase_name": "usefulRussian",
+      "language": "Russian",
+      "type": "story"
+    }
+  ],
+  "conversation": [
+    {
+      "phrase": "Привет! Как тебя зовут?",
+      "pr": "Privet! Kak tebya zovut?",
+      "en": "Hi! What’s your name?",
+      "des": "",
+      "phrase_name": "conversation",
+      "language": "Russian",
+      "type": "story"
+    },
+    {
+      "phrase": "Привет! Меня зовут Кирилл. А тебя?",
+      "pr": "Privet! Menya zovut Kirill. A tebya?",
+      "en": "Hi! My name is Kirill. And you?",
+      "des": "",
+      "phrase_name": "conversation",
+      "language": "Russian",
+      "type": "story"
+    },
+    {
+      "phrase": "Меня зовут Максим. Очень приятно познакомиться.",
+      "pr": "Menya zovut Maksim. Ochen’ priyatno poznakomit’sya.",
+      "en": "My name is Maksim. Nice to meet you.",
+      "des": "",
+      "phrase_name": "conversation",
+      "language": "Russian",
+      "type": "story"
+    },
+    {
+      "phrase": "Взаимно! Ты откуда?",
+      "pr": "Vzaimno! Ty otkuda?",
+      "en": "Likewise! Where are you from?",
+      "des": "",
+      "phrase_name": "conversation",
+      "language": "Russian",
+      "type": "story"
+    },
+    {
+      "phrase": "Я из Новосибирска, а ты?",
+      "pr": "Ya iz Novosibirska, a ty?",
+      "en": "I’m from Novosibirsk, and you?",
+      "des": "",
+      "phrase_name": "conversation",
+      "language": "Russian",
+      "type": "story"
+    },
+    {
+      "phrase": "Я из Казани, но сейчас живу здесь.",
+      "pr": "Ya iz Kazani, no seychas zhivu zdes’.",
+      "en": "I’m from Kazan, but I live here now.",
+      "des": "",
+      "phrase_name": "conversation",
+      "language": "Russian",
+      "type": "story"
+    },
+    {
+      "phrase": "Здорово! Чем занимаешься?",
+      "pr": "Zdorovo! Chem zanimayesh’sya?",
+      "en": "Cool! What do you do?",
+      "des": "",
+      "phrase_name": "conversation",
+      "language": "Russian",
+      "type": "story"
+    },
+    {
+      "phrase": "Я работаю в IT-компании. А ты?",
+      "pr": "Ya rabotayu v IT-kompanii. A ty?",
+      "en": "I work in an IT company. And you?",
+      "des": "",
+      "phrase_name": "conversation",
+      "language": "Russian",
+      "type": "story"
+    },
+    {
+      "phrase": "Я инженер. Мы строим жилые дома.",
+      "pr": "Ya inzhener. My stroim zhilye doma.",
+      "en": "I’m an engineer. We build residential houses.",
+      "des": "",
+      "phrase_name": "conversation",
+      "language": "Russian",
+      "type": "story"
+    },
+    {
+      "phrase": "Это интересная работа.",
+      "pr": "Eto interesnaya rabota.",
+      "en": "That’s an interesting job.",
+      "des": "",
+      "phrase_name": "conversation",
+      "language": "Russian",
+      "type": "story"
+    },
+    {
+      "phrase": "Да, мне нравится. А тебе нравится твоя работа?",
+      "pr": "Da, mne nravitsya. A tebe nravitsya tvoya rabota?",
+      "en": "Yes, I like it. Do you like your job?",
+      "des": "",
+      "phrase_name": "conversation",
+      "language": "Russian",
+      "type": "story"
+    },
+    {
+      "phrase": "Да, очень. Мне нравится решать задачи.",
+      "pr": "Da, ochen’. Mne nravitsya reshat’ zadachi.",
+      "en": "Yes, very much. I like solving problems.",
+      "des": "",
+      "phrase_name": "conversation",
+      "language": "Russian",
+      "type": "story"
+    },
+    {
+      "phrase": "Круто! Как насчёт хобби?",
+      "pr": "Kruto! Kak naschyot hobby?",
+      "en": "Cool! What about hobbies?",
+      "des": "",
+      "phrase_name": "conversation",
+      "language": "Russian",
+      "type": "story"
+    },
+    {
+      "phrase": "Я люблю бегать и кататься на велосипеде. А ты?",
+      "pr": "Ya lyublyu begat’ i katat’sya na velosipede. A ty?",
+      "en": "I like running and cycling. And you?",
+      "des": "",
+      "phrase_name": "conversation",
+      "language": "Russian",
+      "type": "story"
+    },
+    {
+      "phrase": "Я играю в футбол и иногда фотографирую.",
+      "pr": "Ya igrayu v futbol i inogda fotografiruyu.",
+      "en": "I play soccer and sometimes take photos.",
+      "des": "",
+      "phrase_name": "conversation",
+      "language": "Russian",
+      "type": "story"
+    },
+    {
+      "phrase": "Классно! Может, как-нибудь сыграем вместе?",
+      "pr": "Klassno! Mozhet, kak-nibud’ sygrayem vmeste?",
+      "en": "Awesome! Maybe we can play together sometime?",
+      "des": "",
+      "phrase_name": "conversation",
+      "language": "Russian",
+      "type": "story"
+    },
+    {
+      "phrase": "Конечно, договорились!",
+      "pr": "Konechno, dogovorilis’!",
+      "en": "Of course, deal!",
+      "des": "",
+      "phrase_name": "conversation",
+      "language": "Russian",
+      "type": "story"
+    }
+  ],
+  "conversationQA": [
+    {
+      "phrase": "Почему вы учите русский язык?",
+      "pr": "Pochemu vy uchite russkiy yazyk?",
+      "en": "Why are you learning Russian?",
+      "des": "",
+      "phrase_name": "conversationQA",
+      "language": "Russian",
+      "type": "story"
+    },
+    {
+      "phrase": "Я изучаю русский язык, потому что мне нравится культура и история России.",
+      "pr": "Ya izuchayu russkiy yazyk, potomu chto mne nravitsya kultura i istoriya Rossii.",
+      "en": "I am learning Russian because I like Russian culture and history.",
+      "des": "",
+      "phrase_name": "conversationQA",
+      "language": "Russian",
+      "type": "story"
+    },
+    {
+      "phrase": "Как давно вы изучаете русский язык?",
+      "pr": "Kak davno vy izuchayete russkiy yazyk?",
+      "en": "How long have you been learning Russian?",
+      "des": "",
+      "phrase_name": "conversationQA",
+      "language": "Russian",
+      "type": "story"
+    },
+    {
+      "phrase": "Я учу русский уже год.",
+      "pr": "Ya uchu russkiy uzhe god.",
+      "en": "I have been learning Russian for a year.",
+      "des": "",
+      "phrase_name": "conversationQA",
+      "language": "Russian",
+      "type": "story"
+    },
+    {
+      "phrase": "Вам нравится русский язык?",
+      "pr": "Vam nravitsya russkiy yazyk?",
+      "en": "Do you like the Russian language?",
+      "des": "",
+      "phrase_name": "conversationQA",
+      "language": "Russian",
+      "type": "story"
+    }
+  ],
+  "conversationQA2-1": [
+    {
+      "phrase": "Да, мне очень нравится русский язык!",
+      "pr": "Da, mne ochen' nravitsya russkiy yazyk!",
+      "en": "Yes, I really like the Russian language!",
+      "des": "",
+      "phrase_name": "conversationQA2-1",
+      "language": "Russian",
+      "type": "story"
+    },
+    {
+      "phrase": "Как вам даётся русский язык?",
+      "pr": "Kak vam dayotsya russkiy yazyk?",
+      "en": "How is Russian going for you?",
+      "des": "",
+      "phrase_name": "conversationQA2-1",
+      "language": "Russian",
+      "type": "story"
+    },
+    {
+      "phrase": "Русский язык сложный, но мне интересно его изучать.",
+      "pr": "Russkiy yazyk slozhnyy, no mne interesno yego izuchat'.",
+      "en": "Russian is difficult, but I find it interesting to learn.",
+      "des": "",
+      "phrase_name": "conversationQA2-1",
+      "language": "Russian",
+      "type": "story"
+    },
+    {
+      "phrase": "Какие слова или грамматика вам кажутся сложными?",
+      "pr": "Kakie slova ili grammatika vam kazhutsya slozhnymi?",
+      "en": "Which words or grammar seem difficult to you?",
+      "des": "",
+      "phrase_name": "conversationQA2-1",
+      "language": "Russian",
+      "type": "story"
+    },
+    {
+      "phrase": "Мне сложно запомнить падежи и произношение некоторых слов.",
+      "pr": "Mne slozhno zapomnit' padezhi i proiznosheniye nekotorykh slov.",
+      "en": "I find it difficult to remember cases and the pronunciation of some words.",
+      "des": "",
+      "phrase_name": "conversationQA2-1",
+      "language": "Russian",
+      "type": "story"
+    }
+  ],
+  "conversationQA2": [
+    {
+      "phrase": "Вы понимаете, что я говорю?",
+      "pr": "Vy ponimayete, chto ya govoryu?",
+      "en": "Do you understand what I’m saying?",
+      "des": "",
+      "phrase_name": "conversationQA2",
+      "language": "Russian",
+      "type": "story"
+    },
+    {
+      "phrase": "Да, но иногда мне нужно, чтобы говорили медленнее.",
+      "pr": "Da, no inogda mne nuzhno, chtoby govorili medlennee.",
+      "en": "Yes, but sometimes I need people to speak slower.",
+      "des": "",
+      "phrase_name": "conversationQA2",
+      "language": "Russian",
+      "type": "story"
+    },
+    {
+      "phrase": "Вы были в России?",
+      "pr": "Vy byli v Rossii?",
+      "en": "Have you been to Russia?",
+      "des": "",
+      "phrase_name": "conversationQA2",
+      "language": "Russian",
+      "type": "story"
+    },
+    {
+      "phrase": "Нет, но я бы хотел посетить Москву и Санкт-Петербург.",
+      "pr": "Net, no ya by khotel posetit' Moskvu i Sankt-Peterburg.",
+      "en": "No, but I would like to visit Moscow and Saint Petersburg.",
+      "des": "",
+      "phrase_name": "conversationQA2",
+      "language": "Russian",
+      "type": "story"
+    },
+    {
+      "phrase": "Какое русское слово вам нравится больше всего?",
+      "pr": "Kakoye russkoye slovo vam nravitsya bol’she vsego?",
+      "en": "What Russian word do you like the most?",
+      "des": "",
+      "phrase_name": "conversationQA2",
+      "language": "Russian",
+      "type": "story"
+    },
+    {
+      "phrase": "Мне нравится слово 'вдохновение'. Оно красиво звучит.",
+      "pr": "Mne nravitsya slovo 'vdokhnoveniye'. Ono krasivo zvuchit.",
+      "en": "I like the word 'inspiration' (вдохновение). It sounds beautiful.",
+      "des": "",
+      "phrase_name": "conversationQA2",
+      "language": "Russian",
+      "type": "story"
+    }
+  ],
+  "conversationQA3": [
+    {
+      "phrase": "Вы смотрите фильмы на русском?",
+      "pr": "Vy smotrite filmy na russkom?",
+      "en": "Do you watch movies in Russian?",
+      "des": "",
+      "phrase_name": "conversationQA3",
+      "language": "Russian",
+      "type": "story"
+    },
+    {
+      "phrase": "Да, я смотрел(а) несколько фильмов, но иногда сложно понимать речь.",
+      "pr": "Da, ya smotrel(a) neskol'ko fil'mov, no inogda slozhno ponimat' rech'.",
+      "en": "Yes, I have watched a few movies, but sometimes it's hard to understand the speech.",
+      "des": "",
+      "phrase_name": "conversationQA3",
+      "language": "Russian",
+      "type": "story"
+    },
+    {
+      "phrase": "Какой ваш любимый русский фильм или песня?",
+      "pr": "Kakoy vash lyubimyy russkiy fil'm ili pesnya?",
+      "en": "What is your favorite Russian movie or song?",
+      "des": "",
+      "phrase_name": "conversationQA3",
+      "language": "Russian",
+      "type": "story"
+    },
+    {
+      "phrase": "Мне нравится фильм 'Брат' и песня 'Катюша'.",
+      "pr": "Mne nravitsya fil'm 'Brat' i pesnya 'Katyusha'.",
+      "en": "I like the movie 'Brat' and the song 'Katyusha'.",
+      "des": "",
+      "phrase_name": "conversationQA3",
+      "language": "Russian",
+      "type": "story"
+    },
+    {
+      "phrase": "Какое русское блюдо вы пробовали?",
+      "pr": "Kakoye russkoye blyudo vy probovali?",
+      "en": "What Russian dish have you tried?",
+      "des": "",
+      "phrase_name": "conversationQA3",
+      "language": "Russian",
+      "type": "story"
+    },
+    {
+      "phrase": "Я пробовал(а) борщ, блины и пельмени. Очень вкусно!",
+      "pr": "Ya proboval(a) borshch, bliny i pel'meni. Ochen' vkusno!",
+      "en": "I have tried borscht, blini, and pelmeni. Very tasty!",
+      "des": "",
+      "phrase_name": "conversationQA3",
+      "language": "Russian",
+      "type": "story"
+    },
+    {
+      "phrase": "Хотите посетить Россию?",
+      "pr": "Khotite posetit' Rossiyu?",
+      "en": "Do you want to visit Russia?",
+      "des": "",
+      "phrase_name": "conversationQA3",
+      "language": "Russian",
+      "type": "story"
+    },
+    {
+      "phrase": "Да, это моя мечта! Хочу увидеть Красную площадь и Байкал.",
+      "pr": "Da, eto moya mechta! Khochu uvidet' Krasnuyu ploshchad' i Baykal.",
+      "en": "Yes, it is my dream! I want to see Red Square and Lake Baikal.",
+      "des": "",
+      "phrase_name": "conversationQA3",
+      "language": "Russian",
+      "type": "story"
+    }
+  ],
+  "Restaurant": [
+    {
+      "phrase": "Привет! Хочешь пойти в ресторан сегодня?",
+      "pr": "Privet! Khochesh' poyti v restoran segodnya?",
+      "en": "Hi! Do you want to go to a restaurant today?",
+      "des": "",
+      "phrase_name": "Restaurant",
+      "language": "Russian",
+      "type": "story"
+    },
+    {
+      "phrase": "Привет! Да, хорошая идея. Какой ресторан?",
+      "pr": "Privet! Da, khoroshaya ideya. Kakoy restoran?",
+      "en": "Hi! Yes, good idea. Which restaurant?",
+      "des": "",
+      "phrase_name": "Restaurant",
+      "language": "Russian",
+      "type": "story"
+    },
+    {
+      "phrase": "Может, итальянский? Я люблю пасту.",
+      "pr": "Mozhet, italyanskiy? Ya lyublyu pastu.",
+      "en": "Maybe Italian? I love pasta.",
+      "des": "",
+      "phrase_name": "Restaurant",
+      "language": "Russian",
+      "type": "story"
+    },
+    {
+      "phrase": "Отлично! Я тоже люблю итальянскую кухню.",
+      "pr": "Otlichno! Ya tozhe lyublyu italyanskuyu kukhnyu.",
+      "en": "Great! I also love Italian food.",
+      "des": "",
+      "phrase_name": "Restaurant",
+      "language": "Russian",
+      "type": "story"
+    },
+    {
+      "phrase": "Во сколько пойдём?",
+      "pr": "Vo skol'ko poydyom?",
+      "en": "What time shall we go?",
+      "des": "",
+      "phrase_name": "Restaurant",
+      "language": "Russian",
+      "type": "story"
+    },
+    {
+      "phrase": "В семь часов подойдет?",
+      "pr": "V sem' chasov podoydet?",
+      "en": "Is 7 o’clock okay?",
+      "des": "",
+      "phrase_name": "Restaurant",
+      "language": "Russian",
+      "type": "story"
+    },
+    {
+      "phrase": "Да, отлично! Где встретимся?",
+      "pr": "Da, otlichno! Gde vstretimsya?",
+      "en": "Yes, perfect! Where shall we meet?",
+      "des": "",
+      "phrase_name": "Restaurant",
+      "language": "Russian",
+      "type": "story"
+    },
+    {
+      "phrase": "Давай у метро.",
+      "pr": "Davay u metro.",
+      "en": "Let’s meet at the metro.",
+      "des": "",
+      "phrase_name": "Restaurant",
+      "language": "Russian",
+      "type": "story"
+    },
+    {
+      "phrase": "Хорошо! До встречи!",
+      "pr": "Khorosho! Do vstrechi!",
+      "en": "Okay! See you soon!",
+      "des": "",
+      "phrase_name": "Restaurant",
+      "language": "Russian",
+      "type": "story"
+    },
+    {
+      "phrase": "До встречи!",
+      "pr": "Do vstrechi!",
+      "en": "See you soon!",
+      "des": "",
+      "phrase_name": "Restaurant",
+      "language": "Russian",
+      "type": "story"
+    }
+  ],
+  "Asking Directions": [
+    {
+      "phrase": "Извините, где находится Красная площадь?",
+      "pr": "Izvinite, gde nakhoditsya Krasnaya ploshchad'?",
+      "en": "Excuse me, where is Red Square?",
+      "des": "",
+      "phrase_name": "Asking Directions",
+      "language": "Russian",
+      "type": "story"
+    },
+    {
+      "phrase": "Красная площадь недалеко. Идите прямо, потом поверните налево.",
+      "pr": "Krasnaya ploshchad' nedaleko. Idite pryamo, potom povernite nalevo.",
+      "en": "Red Square is not far. Go straight, then turn left.",
+      "des": "",
+      "phrase_name": "Asking Directions",
+      "language": "Russian",
+      "type": "story"
+    },
+    {
+      "phrase": "Спасибо! Это далеко пешком?",
+      "pr": "Spasibo! Eto daleko peshkom?",
+      "en": "Thank you! Is it far on foot?",
+      "des": "",
+      "phrase_name": "Asking Directions",
+      "language": "Russian",
+      "type": "story"
+    },
+    {
+      "phrase": "Нет, около десяти минут.",
+      "pr": "Net, okolo desyati minut.",
+      "en": "No, about ten minutes.",
+      "des": "",
+      "phrase_name": "Asking Directions",
+      "language": "Russian",
+      "type": "story"
+    },
+    {
+      "phrase": "Отлично! А где здесь метро?",
+      "pr": "Otlichno! A gde zdes' metro?",
+      "en": "Great! And where is the metro here?",
+      "des": "",
+      "phrase_name": "Asking Directions",
+      "language": "Russian",
+      "type": "story"
+    },
+    {
+      "phrase": "Станция метро рядом, вот там, справа.",
+      "pr": "Stantsiya metro ryadom, vot tam, sprava.",
+      "en": "The metro station is nearby, right there on the right.",
+      "des": "",
+      "phrase_name": "Asking Directions",
+      "language": "Russian",
+      "type": "story"
+    },
+    {
+      "phrase": "Спасибо большое! Вы очень добры.",
+      "pr": "Spasibo bol'shoye! Vy ochen' dobry.",
+      "en": "Thank you very much! You are very kind.",
+      "des": "",
+      "phrase_name": "Asking Directions",
+      "language": "Russian",
+      "type": "story"
+    },
+    {
+      "phrase": "Не за что! Удачи вам!",
+      "pr": "Ne za chto! Udachi vam!",
+      "en": "You're welcome! Good luck!",
+      "des": "",
+      "phrase_name": "Asking Directions",
+      "language": "Russian",
+      "type": "story"
+    }
+  ],
+  "conversation1": [
+    {
+      "phrase": "Ты откуда?",
+      "pr": "Ty otkuda?",
+      "en": "Where are you from?",
+      "des": "",
+      "phrase_name": "conversation1",
+      "language": "Russian",
+      "type": "story"
+    },
+    {
+      "phrase": "Я из Франции. А ты?",
+      "pr": "Ya iz Frantsii. A ty?",
+      "en": "I'm from France. And you?",
+      "des": "",
+      "phrase_name": "conversation1",
+      "language": "Russian",
+      "type": "story"
+    },
+    {
+      "phrase": "Я из России.",
+      "pr": "Ya iz Rossii.",
+      "en": "I'm from Russia.",
+      "des": "",
+      "phrase_name": "conversation1",
+      "language": "Russian",
+      "type": "story"
+    },
+    {
+      "phrase": "Ты говоришь по-русски?",
+      "pr": "Ty govorish' po-russki?",
+      "en": "Do you speak Russian?",
+      "des": "",
+      "phrase_name": "conversation1",
+      "language": "Russian",
+      "type": "story"
+    },
+    {
+      "phrase": "Немного.",
+      "pr": "Nemnogo.",
+      "en": "A little.",
+      "des": "",
+      "phrase_name": "conversation1",
+      "language": "Russian",
+      "type": "story"
+    },
+    {
+      "phrase": "Здравствуйте! Что будете заказывать?",
+      "pr": "Zdravstvuyte! Chto budete zakazyvat'?",
+      "en": "Hello! What would you like to order?",
+      "des": "",
+      "phrase_name": "conversation1",
+      "language": "Russian",
+      "type": "story"
+    },
+    {
+      "phrase": "Я буду кофе и пирог, пожалуйста.",
+      "pr": "Ya budu kofe i pirog, pozhaluysta.",
+      "en": "I’ll have coffee and a pie, please.",
+      "des": "",
+      "phrase_name": "conversation1",
+      "language": "Russian",
+      "type": "story"
+    },
+    {
+      "phrase": "С вас 200 рублей.",
+      "pr": "S vas dvesti rubley.",
+      "en": "That’ll be 200 rubles.",
+      "des": "",
+      "phrase_name": "conversation1",
+      "language": "Russian",
+      "type": "story"
+    },
+    {
+      "phrase": "Вот, пожалуйста.",
+      "pr": "Vot, pozhaluysta.",
+      "en": "Here you go.",
+      "des": "",
+      "phrase_name": "conversation1",
+      "language": "Russian",
+      "type": "story"
+    },
+    {
+      "phrase": "Спасибо!",
+      "pr": "Spasibo!",
+      "en": "Thank you!",
+      "des": "",
+      "phrase_name": "conversation1",
+      "language": "Russian",
+      "type": "story"
+    }
+  ],
+  "course": [
+    {
+      "phrase": "Я люблю чай [[и]] кофе.",
+      "pr": "Ya lyublyu chay [[i]] kofe.",
+      "en": "I like tea [[and]] coffee.",
+      "des": "",
+      "phrase_name": "course1",
+      "language": "Russian",
+      "type": "story"
+    },
+    {
+      "phrase": "Мама [[и]] папа дома.",
+      "pr": "Mama [[i]] papa doma.",
+      "en": "Mom [[and]] dad are at home.",
+      "des": "",
+      "phrase_name": "course1",
+      "language": "Russian",
+      "type": "story"
+    },
+    {
+      "phrase": "Я люблю мороженое, [[но]] сейчас холодно.",
+      "pr": "Ya lyublyu morozhenoye, [[no]] seychas kholodno.",
+      "en": "I love ice cream, [[but]] it's cold now.",
+      "des": " но - but",
+      "phrase_name": "course1",
+      "language": "Russian",
+      "type": "story"
+    },
+    {
+      "phrase": "У него есть машина, [[но]] она старая.",
+      "pr": "U nego yest' mashina, [[no]] ona staraya.",
+      "en": "He has a car, [[but]] it is old.",
+      "des": " но - but",
+      "phrase_name": "course1",
+      "language": "Russian",
+      "type": "story"
+    },
+    {
+      "phrase": "Ты хочешь чай [[или]] кофе?",
+      "pr": "Ty khochesh' chay [[ili]] kofe?",
+      "en": "Do you want tea [[or]] coffee?",
+      "des": "",
+      "phrase_name": "course1",
+      "language": "Russian",
+      "type": "story"
+    },
+    {
+      "phrase": "Это кошка [[или]] собака?",
+      "pr": "Eto koshka [[ili]] sobaka?",
+      "en": "Is it a cat [[or]] a dog?",
+      "des": "",
+      "phrase_name": "course1",
+      "language": "Russian",
+      "type": "story"
+    },
+    {
+      "phrase": "У меня [[есть]] брат.",
+      "pr": "U menya [[yest]]' brat.",
+      "en": "I [[have]] a brother.",
+      "des": "",
+      "phrase_name": "course1",
+      "language": "Russian",
+      "type": "story"
+    },
+    {
+      "phrase": "В комнате [[есть]] стол.",
+      "pr": "V komnate yest' stol.",
+      "en": "[[There is]] a table in the room.",
+      "des": "",
+      "phrase_name": "course1",
+      "language": "Russian",
+      "type": "story"
+    },
+    {
+      "phrase": "Он был [[в]] Москве.",
+      "pr": "On byl [[v]] Moskve.",
+      "en": "He was [[in]] Moscow.",
+      "des": "",
+      "phrase_name": "course1",
+      "language": "Russian",
+      "type": "story"
+    },
+    {
+      "phrase": "Она была дома.",
+      "pr": "Ona byla doma.",
+      "en": "She was at home.",
+      "des": "",
+      "phrase_name": "course1",
+      "language": "Russian",
+      "type": "story"
+    },
+    {
+      "phrase": "Вчера было холодно.",
+      "pr": "Vchera bylo kholodno.",
+      "en": "It was cold yesterday.",
+      "des": "",
+      "phrase_name": "course1",
+      "language": "Russian",
+      "type": "story"
+    },
+    {
+      "phrase": "Я студент.",
+      "pr": "Ya student.",
+      "en": "I am a student.",
+      "des": "",
+      "phrase_name": "course1",
+      "language": "Russian",
+      "type": "story"
+    },
+    {
+      "phrase": "Я дома.",
+      "pr": "Ya doma.",
+      "en": "I am at home.",
+      "des": "",
+      "phrase_name": "course1",
+      "language": "Russian",
+      "type": "course"
+    }
+  ],
+  "course2": [
+    {
+      "phrase": "Хотя он устал, он работает.",
+      "pr": "Khotya on ustal, on rabotayet.",
+      "en": "Although he is tired, he is working.",
+      "des": "",
+      "phrase_name": "course2",
+      "language": "Russian",
+      "type": "course"
+    },
+    {
+      "phrase": "Я пошёл, хотя было поздно.",
+      "pr": "Ya poshyol, khotya bylo pozdno.",
+      "en": "I went, although it was late.",
+      "des": "",
+      "phrase_name": "course2",
+      "language": "Russian",
+      "type": "story"
+    },
+    {
+      "phrase": "Я не пришёл, [[потому]] что был занят.",
+      "pr": "Ya ne prishyol, [[potomu]] chto byl zanyat.",
+      "en": "I didn’t come [[because]] I was busy.",
+      "des": "",
+      "phrase_name": "course2",
+      "language": "Russian",
+      "type": "story"
+    },
+    {
+      "phrase": "Она спит, [[потому]] что устала.",
+      "pr": "Ona spit, [[potomu]] chto ustala.",
+      "en": "She is sleeping [[because]] she is tired.",
+      "des": "",
+      "phrase_name": "course2",
+      "language": "Russian",
+      "type": "story"
+    },
+    {
+      "phrase": "[[Если]] пойдёт дождь, я не пойду.",
+      "pr": "[[Yesli]] poydyot dozhd', ya ne poydu.",
+      "en": "[[If]] it rains, I won’t go.",
+      "des": "",
+      "phrase_name": "course2",
+      "language": "Russian",
+      "type": "story"
+    },
+    {
+      "phrase": "[[Если]] хочешь, пошли со мной.",
+      "pr": "[[Yesli]] khochesh', poshli so mnoy.",
+      "en": "[[If]] you want, come with me.",
+      "des": "",
+      "phrase_name": "course2",
+      "language": "Russian",
+      "type": "story"
+    },
+    {
+      "phrase": "Даже дети это понимают.",
+      "pr": "Dazhe deti eto ponimayut.",
+      "en": "Even children understand this.",
+      "des": "",
+      "phrase_name": "course2",
+      "language": "Russian",
+      "type": "story"
+    },
+    {
+      "phrase": "Он даже не сказал привет.",
+      "pr": "On dazhe ne skazal privet.",
+      "en": "He didn’t even say hello.",
+      "des": "",
+      "phrase_name": "course2",
+      "language": "Russian",
+      "type": "story"
+    },
+    {
+      "phrase": "Я [[тоже]] люблю музыку.",
+      "pr": "Ya [[tozhe]] lyublyu muzyku.",
+      "en": "I [[also]] like music.",
+      "des": "",
+      "phrase_name": "course2",
+      "language": "Russian",
+      "type": "story"
+    },
+    {
+      "phrase": "Он идёт в магазин, и я [[тоже]].",
+      "pr": "On idyot v magazin, i ya [[tozhe]].",
+      "en": "He’s going to the store, and so am I.",
+      "des": "",
+      "phrase_name": "course2",
+      "language": "Russian",
+      "type": "story"
+    },
+    {
+      "phrase": "Я люблю чай. [[Также]] я пью сок.",
+      "pr": "Ya lyublyu chay. [[Takzhe]] ya p'yu sok.",
+      "en": "I like tea. I [[also]] drink juice.",
+      "des": "",
+      "phrase_name": "course2",
+      "language": "Russian",
+      "type": "story"
+    },
+    {
+      "phrase": "Она говорит по-английски, [[также]] по-русски.",
+      "pr": "Ona govorit po-angliyski, [[takzhe]] po-russki.",
+      "en": "She speaks English and [[also]] Russian.",
+      "des": "",
+      "phrase_name": "course2",
+      "language": "Russian",
+      "type": "story"
+    }
+  ],"course2-1":[
+
+  ],
+  "course3":
+    [
+  {
+    "phrase": "Я [[есть]] студент.",
+    "pr": "Ya [[yest']] student.",
+    "en": "I [[am]] a student."
+  },
+  {
+    "phrase": "Я [[есть]] дома.",
+    "pr": "Ya [[yest']] doma.",
+    "en": "I [[am]] at home."
+  },
+  {
+    "phrase": "Я [[есть]] в списке.",
+    "pr": "Ya [[yest']] v spiske.",
+    "en": "I [[am]] on the list."
+  },
+  {
+    "phrase": "Я [[готов]].",
+    "pr": "Ya [[gotov]].",
+    "en": "I [[am]] ready."
+  },
+  {
+    "phrase": "Я [[есть]] в Москве.",
+    "pr": "Ya [[yest']] v Moskve.",
+    "en": "I [[am]] in Moscow."
+  },
+  {
+    "phrase": "Встреча уже [[закончена]].",
+    "pr": "Vstrecha uzhe [[zakonchena]].",
+    "en": "The meeting [[is]] already over."
+  },
+  {
+    "phrase": "Мой чемодан [[был]] в гостинице.",
+    "pr": "Moy chemodan [[byl]] v gostinitse.",
+    "en": "My suitcase [[was]] in the hotel."
+  },
+  {
+    "phrase": "Это [[будет]] интересно.",
+    "pr": "Eto [[budet]] interesno.",
+    "en": "It [[will be]] interesting."
+  },
+  {
+    "phrase": "Он [[был]] в дороге три часа.",
+    "pr": "On [[byl]] v doroge tri chasa.",
+    "en": "He [[was]] on the road for three hours."
+  },
+  {
+    "phrase": "Моя сумка [[находится]] у друга.",
+    "pr": "Moya sumka [[nakhoditsya]] u druga.",
+    "en": "My bag [[is]] at my friend's place."
+  }
+]
+,
+  
+  "question/negations": [
+    {
+      "phrase": "Кто это?",
+      "pr": "Kto eto?",
+      "en": "Who is this?",
+      "des": "Кто = who. Basic subject question.",
+      "phrase_name": "question/negations",
+      "language": "Russian",
+      "type": "story"
+    },
+    {
+      "phrase": "Что это?",
+      "pr": "Chto eto?",
+      "en": "What is this?",
+      "des": "Что = what. Subject question for objects.",
+      "phrase_name": "question/negations",
+      "language": "Russian",
+      "type": "story"
+    },
+    {
+      "phrase": "Где он живёт?",
+      "pr": "Gde on zhivyot?",
+      "en": "Where does he live?",
+      "des": "Где = where (location).",
+      "phrase_name": "question/negations",
+      "language": "Russian",
+      "type": "story"
+    },
+    {
+      "phrase": "Когда урок?",
+      "pr": "Kogda urok?",
+      "en": "When is the lesson?",
+      "des": "Когда = when.",
+      "phrase_name": "question/negations",
+      "language": "Russian",
+      "type": "story"
+    },
+    {
+      "phrase": "Почему ты не пришёл?",
+      "pr": "Pochemu ty ne prishyol?",
+      "en": "Why didn’t you come?",
+      "des": "Почему = why. Used with negation.",
+      "phrase_name": "question/negations",
+      "language": "Russian",
+      "type": "story"
+    },
+    {
+      "phrase": "Как тебя зовут?",
+      "pr": "Kak tebya zovut?",
+      "en": "What is your name?",
+      "des": "Как = how. With verb 'call (name)' structure.",
+      "phrase_name": "question/negations",
+      "language": "Russian",
+      "type": "story"
+    },
+    {
+      "phrase": "Я не понимаю.",
+      "pr": "Ya ne ponimayu.",
+      "en": "I don't understand.",
+      "des": "'не' placed before verb for negation.",
+      "phrase_name": "question/negations",
+      "language": "Russian",
+      "type": "story"
+    },
+    {
+      "phrase": "Он не дома.",
+      "pr": "On ne doma.",
+      "en": "He is not at home.",
+      "des": "'не' before adverbial 'дома' (at home).",
+      "phrase_name": "question/negations",
+      "language": "Russian",
+      "type": "story"
+    },
+    {
+      "phrase": "Это не мой телефон.",
+      "pr": "Eto ne moy telefon.",
+      "en": "This is not my phone.",
+      "des": "'не' before possessive pronoun 'мой'.",
+      "phrase_name": "question/negations",
+      "language": "Russian",
+      "type": "story"
+    },
+    {
+      "phrase": "Я не говорю по-русски.",
+      "pr": "Ya ne govoryu po-russki.",
+      "en": "I don’t speak Russian.",
+      "des": "'не' before verb for action negation.",
+      "phrase_name": "question/negations",
+      "language": "Russian",
+      "type": "story"
+    }
+  ],
+  "part12": [
+    {
+      "phrase": "Я дома.",
+      "pr": "Ya doma.",
+      "en": "I am at home.",
+      "des": "Present tense 'am' is omitted. 'дома' is adverbial.",
+      "phrase_name": "part1",
+      "language": "Russian",
+      "type": "story"
+    },
+    {
+      "phrase": "Он студент.",
+      "pr": "On student.",
+      "en": "He is a student.",
+      "des": "'студент' is in the nominative case as subject complement.",
+      "phrase_name": "part1",
+      "language": "Russian",
+      "type": "story"
+    },
+    {
+      "phrase": "[[Это]] мой брат.",
+      "pr": "[[Eto]] moy brat.",
+      "en": "[[This]] is my brother.",
+      "des": "'брат' is in the nominative case after 'это'.",
+      "phrase_name": "part1",
+      "language": "Russian",
+      "type": "story"
+    },
+    {
+      "phrase": "[[С]] 2020 года я живу в России.",
+      "pr": "[[S]] dvadtsat' vtorogo goda ya zhivu v Rossii.",
+      "en": "[[Since]] 2020 I have been living in Russia.",
+      "des": "'с' requires the genitive case: 'года'.",
+      "phrase_name": "part1",
+      "language": "Russian",
+      "type": "story"
+    },
+    {
+      "phrase": "Он работает с утра [[до]] вечера.",
+      "pr": "On rabotayet s utra [[do]] vechera.",
+      "en": "He works from morning [[until]] evening.",
+      "des": "'с' and 'до' both require genitive: 'утра', 'вечера'.",
+      "phrase_name": "part1",
+      "language": "Russian",
+      "type": "story"
+    },
+    {
+      "phrase": "Я не поехал, [[потому что]] был болен.",
+      "pr": "Ya ne poyekhal, [[potomu chto]] byl bolen.",
+      "en": "I didn't go because I was sick.",
+      "des": "'потому что' introduces a reason clause.",
+      "phrase_name": "part1",
+      "language": "Russian",
+      "type": "story"
+    },
+    {
+      "phrase": "Она дома, потому что идёт дождь.",
+      "pr": "Ona doma, potomu chto idyot dozhd'.",
+      "en": "She is at home because it is raining.",
+      "des": "'потому что' introduces cause; 'дождь' is subject.",
+      "phrase_name": "part1",
+      "language": "Russian",
+      "type": "story"
+    },
+    {
+      "phrase": "Это подарок для тебя.",
+      "pr": "Eto podarok dlya tebya.",
+      "en": "This is a gift for you.",
+      "des": "'для' requires the genitive case: 'тебя'.",
+      "phrase_name": "part1",
+      "language": "Russian",
+      "type": "story"
+    },
+    {
+      "phrase": "Спасибо за помощь.",
+      "pr": "Spasibo za pomoshch'.",
+      "en": "Thanks for the help.",
+      "des": "'за' takes the accusative case: 'помощь'.",
+      "phrase_name": "part1",
+      "language": "Russian",
+      "type": "story"
+    },
+    {
+      "phrase": "Это для мамы.",
+      "pr": "Eto dlya mamy.",
+      "en": "This is for mom.",
+      "des": "'для' takes genitive case: 'мамы'.",
+      "phrase_name": "part1",
+      "language": "Russian",
+      "type": "story"
+    },
+    {
+      "phrase": "Я иду [[в]] магазин.",
+      "pr": "Ya idu [[v]] magazin.",
+      "en": "I'm going [[to]] the store.",
+      "des": "'в' (to) uses accusative for direction.",
+      "phrase_name": "part1",
+      "language": "Russian",
+      "type": "story"
+    },
+    {
+      "phrase": "Он дал книгу другу.",
+      "pr": "On dal knigu drugu.",
+      "en": "He gave the book [[to]] a friend.",
+      "des": "Dative case for recipient: 'другу'.",
+      "phrase_name": "part1",
+      "language": "Russian",
+      "type": "story"
+    },
+    {
+      "phrase": "Мы едем [[на]] работу.",
+      "pr": "My yedem [[na]] rabotu.",
+      "en": "We are going [[to]] work.",
+      "des": "'на' for direction uses accusative: 'работу'.",
+      "phrase_name": "part1",
+      "language": "Russian",
+      "type": "story"
+    },
+    {
+      "phrase": "Он пишет письмо бабушке.",
+      "pr": "On pishet pis'mo babushke.",
+      "en": "He is writing a letter [[to]] grandma.",
+      "des": "Dative used for recipient: 'бабушке'.",
+      "phrase_name": "part1",
+      "language": "Russian",
+      "type": "story"
+    },
+    {
+      "phrase": "Мы едем [[к]] врачу.",
+      "pr": "My yedem [[k]] vrachu.",
+      "en": "We are going [[to]] the doctor.",
+      "des": "'к' (to a person) uses the dative case: 'врачу'.",
+      "phrase_name": "part1",
+      "language": "Russian",
+      "type": "story"
+    }
+  ],
+  "useful": [
+    {
+      "phrase": "Я хочу поехать в Россию.",
+      "pr": "Ya khochu poyekhat' v Rossiyu.",
+      "en": "I want to go to Russia.",
+      "des": "",
+      "phrase_name": "useful",
+      "language": "Russian",
+      "type": "story"
+    },
+    {
+      "phrase": "Я хочу поехать в Москву.",
+      "pr": "Ya khochu poyekhat' v Moskvu.",
+      "en": "I want to travel to Moscow.",
+      "des": "",
+      "phrase_name": "useful",
+      "language": "Russian",
+      "type": "story"
+    },
+    {
+      "phrase": "Как это сказать?",
+      "pr": "Kak eto skazat'?",
+      "en": "How do you say this?",
+      "des": "",
+      "phrase_name": "useful",
+      "language": "Russian",
+      "type": "story"
+    },
+    {
+      "phrase": "Как это правильно произносится?",
+      "pr": "Kak eto pravil'no proiznositsya?",
+      "en": "How is this correctly pronounced?",
+      "des": "",
+      "phrase_name": "useful",
+      "language": "Russian",
+      "type": "story"
+    },
+    {
+      "phrase": "Как заказать в ресторане?",
+      "pr": "Kak zakazat' v restorane?",
+      "en": "How do I order in a restaurant?",
+      "des": "",
+      "phrase_name": "useful",
+      "language": "Russian",
+      "type": "story"
+    },
+    {
+      "phrase": "Где можно сделать заказ в ресторане?",
+      "pr": "Gde mozhno sdelat' zakaz v restorane?",
+      "en": "Where do I order in a restaurant?",
+      "des": "",
+      "phrase_name": "useful",
+      "language": "Russian",
+      "type": "story"
+    },
+    {
+      "phrase": "Какое место или ресторан вы порекомендуете здесь?",
+      "pr": "Kakoye mesto ili restoran vy porekomenduyete zdes'?",
+      "en": "What is the recommended place or restaurant to eat here?",
+      "des": "",
+      "phrase_name": "useful",
+      "language": "Russian",
+      "type": "story"
+    },
+    {
+      "phrase": "Что здесь рекомендуется посетить?",
+      "pr": "Chto zdes' rekomenduetsya posetit'?",
+      "en": "What is recommended to visit here?",
+      "des": "",
+      "phrase_name": "useful",
+      "language": "Russian",
+      "type": "story"
+    },
+    {
+      "phrase": "Что ты сейчас делаешь?",
+      "pr": "Chto ty seychas delayesh'?",
+      "en": "What are you doing right now?",
+      "des": "",
+      "phrase_name": "useful",
+      "language": "Russian",
+      "type": "story"
+    },
+    {
+      "phrase": "Ты занят(а)?",
+      "pr": "Ty zanyat(a)?",
+      "en": "Are you busy?",
+      "des": "",
+      "phrase_name": "useful",
+      "language": "Russian",
+      "type": "story"
+    },
+    {
+      "phrase": "Изучать русский язык трудно.",
+      "pr": "Izuchat' russkiy yazyk trudno.",
+      "en": "Learning Russian is difficult.",
+      "des": "",
+      "phrase_name": "useful",
+      "language": "Russian",
+      "type": "story"
+    },
+    {
+      "phrase": "Я всё ещё начинающий в русском языке.",
+      "pr": "Ya vsyo yeshchyo nachinayushchiy v russkom yazyke.",
+      "en": "I am still a beginner in Russian.",
+      "des": "",
+      "phrase_name": "useful",
+      "language": "Russian",
+      "type": "story"
+    },
+    {
+      "phrase": "Ты можешь научить меня новому слову?",
+      "pr": "Ty mozhesh nauchit' menya novomu slovu?",
+      "en": "Can you teach me a new word?",
+      "des": "",
+      "phrase_name": "useful",
+      "language": "Russian",
+      "type": "story"
+    },
+    {
+      "phrase": "Ты говоришь по-английски?",
+      "pr": "Ty govorish' po-angliyski?",
+      "en": "Can you speak English?",
+      "des": "",
+      "phrase_name": "useful",
+      "language": "Russian",
+      "type": "story"
+    },
+    {
+      "phrase": "Мне нравится твой акцент.",
+      "pr": "Mne nravitsya tvoy aktsent.",
+      "en": "I like your accent.",
+      "des": "",
+      "phrase_name": "useful",
+      "language": "Russian",
+      "type": "story"
+    },
+    {
+      "phrase": "Ты говоришь на других языках?",
+      "pr": "Ty govorish' na drugikh yazykakh?",
+      "en": "Do you speak any other languages?",
+      "des": "",
+      "phrase_name": "useful",
+      "language": "Russian",
+      "type": "story"
+    },
+    {
+      "phrase": "Твой английский лучше, чем мой русский.",
+      "pr": "Tvoy angliyskiy luchshe, chem moy russkiy.",
+      "en": "Your English speaking is better than my Russian speaking.",
+      "des": "",
+      "phrase_name": "useful",
+      "language": "Russian",
+      "type": "story"
+    },
+    {
+      "phrase": "Это круто!",
+      "pr": "Eto kruto!",
+      "en": "That's cool!",
+      "des": "",
+      "phrase_name": "useful",
+      "language": "Russian",
+      "type": "story"
+    },
+    {
+      "phrase": "У тебя отличное произношение.",
+      "pr": "U tebya otlichnoye proiznoshenie.",
+      "en": "Your pronunciation is great.",
+      "des": "",
+      "phrase_name": "useful",
+      "language": "Russian",
+      "type": "story"
+    },
+    {
+      "phrase": "Я учу язык, потому что он звучит круто.",
+      "pr": "Ya uchu yazyk, potomu chto on zvuchit kruto.",
+      "en": "I’m learning the language because it sounds cool.",
+      "des": "",
+      "phrase_name": "useful",
+      "language": "Russian",
+      "type": "story"
+    },
+    {
+      "phrase": "Я учу язык, потому что его весело говорить.",
+      "pr": "Ya uchu yazyk, potomu chto yego veselo govorit'.",
+      "en": "I’m learning the language because it’s fun to speak.",
+      "des": "",
+      "phrase_name": "useful",
+      "language": "Russian",
+      "type": "story"
+    },
+    {
+      "phrase": "Это очередь?",
+      "pr": "Eto ochered'?",
+      "en": "Is this the line?",
+      "des": "",
+      "phrase_name": "useful",
+      "language": "Russian",
+      "type": "story"
+    },
+    {
+      "phrase": "Где очередь?",
+      "pr": "Gde ochered'?",
+      "en": "Where is the line?",
+      "des": "",
+      "phrase_name": "useful",
+      "language": "Russian",
+      "type": "story"
+    },
+    {
+      "phrase": "Что это там?",
+      "pr": "Chto eto tam?",
+      "en": "What is that over there?",
+      "des": "",
+      "phrase_name": "useful",
+      "language": "Russian",
+      "type": "story"
+    },
+    {
+      "phrase": "Какой город стоит посетить в России?",
+      "pr": "Kakoy gorod stoit posetit' v Rossii?",
+      "en": "What city should I visit in Russia?",
+      "des": "",
+      "phrase_name": "useful",
+      "language": "Russian",
+      "type": "story"
+    },
+    {
+      "phrase": "Я хочу поехать в Россию в будущем.",
+      "pr": "Ya khochu poyekhat' v Rossiyu v budushchem.",
+      "en": "I want to go to Russia in the future.",
+      "des": "",
+      "phrase_name": "useful",
+      "language": "Russian",
+      "type": "story"
+    },
+    {
+      "phrase": "Есть ли конкретный сериал или фильм, который ты порекомендуешь?",
+      "pr": "Yest' li konkretniy serial ili film, kotoryy ty porekomenduyesh'?",
+      "en": "Is there a specific TV show or movie that you recommend?",
+      "des": "",
+      "phrase_name": "useful",
+      "language": "Russian",
+      "type": "story"
+    }
+  ],
+  "ya-verb-conjugation": [
+    {
+      "phrase": "Я живу в Москве.",
+      "pr": "Ya zhivu v Moskve.",
+      "en": "I live in Moscow.",
+      "des": "",
+      "phrase_name": "ya-verb-conjugation",
+      "language": "Russian",
+      "type": "story"
+    },
+    {
+      "phrase": "Я учу русский язык.",
+      "pr": "Ya uchu russkiy yazyk.",
+      "en": "I am learning Russian.",
+      "des": "",
+      "phrase_name": "ya-verb-conjugation",
+      "language": "Russian",
+      "type": "story"
+    },
+    {
+      "phrase": "Я люблю чай.",
+      "pr": "Ya lyublyu chai.",
+      "en": "I love tea.",
+      "des": "",
+      "phrase_name": "ya-verb-conjugation",
+      "language": "Russian",
+      "type": "story"
+    },
+    {
+      "phrase": "Я читаю книгу.",
+      "pr": "Ya chitayu knigu.",
+      "en": "I am reading a book.",
+      "des": "",
+      "phrase_name": "ya-verb-conjugation",
+      "language": "Russian",
+      "type": "story"
+    },
+    {
+      "phrase": "Я работаю дома.",
+      "pr": "Ya rabotayu doma.",
+      "en": "I work at home.",
+      "des": "",
+      "phrase_name": "ya-verb-conjugation",
+      "language": "Russian",
+      "type": "story"
+    },
+    {
+      "phrase": "Я ел суп.",
+      "pr": "Ya yel sup.",
+      "en": "I ate soup.",
+      "des": "",
+      "phrase_name": "ya-verb-conjugation",
+      "language": "Russian",
+      "type": "story"
+    },
+    {
+      "phrase": "Я ходил в магазин.",
+      "pr": "Ya khodil v magazin.",
+      "en": "I went to the store.",
+      "des": "",
+      "phrase_name": "ya-verb-conjugation",
+      "language": "Russian",
+      "type": "story"
+    },
+    {
+      "phrase": "Я смотрел фильм.",
+      "pr": "Ya smotrel fil'm.",
+      "en": "I watched a movie.",
+      "des": "",
+      "phrase_name": "ya-verb-conjugation",
+      "language": "Russian",
+      "type": "story"
+    },
+    {
+      "phrase": "Я учил слова.",
+      "pr": "Ya uchil slova.",
+      "en": "I studied words.",
+      "des": "",
+      "phrase_name": "ya-verb-conjugation",
+      "language": "Russian",
+      "type": "story"
+    },
+    {
+      "phrase": "Я говорил с другом.",
+      "pr": "Ya govoril s drugom.",
+      "en": "I spoke with a friend.",
+      "des": "",
+      "phrase_name": "ya-verb-conjugation",
+      "language": "Russian",
+      "type": "story"
+    },
+    {
+      "phrase": "Я буду дома завтра.",
+      "pr": "Ya budu doma zavtra.",
+      "en": "I will be home tomorrow.",
+      "des": "",
+      "phrase_name": "ya-verb-conjugation",
+      "language": "Russian",
+      "type": "story"
+    },
+    {
+      "phrase": "Я поеду в Санкт-Петербург.",
+      "pr": "Ya poedu v Sankt-Peterburg.",
+      "en": "I will go to Saint Petersburg.",
+      "des": "",
+      "phrase_name": "ya-verb-conjugation",
+      "language": "Russian",
+      "type": "story"
+    },
+    {
+      "phrase": "Я буду читать книгу.",
+      "pr": "Ya budu chitat' knigu.",
+      "en": "I will read a book.",
+      "des": "",
+      "phrase_name": "ya-verb-conjugation",
+      "language": "Russian",
+      "type": "story"
+    },
+    {
+      "phrase": "Я куплю билет.",
+      "pr": "Ya kuplu bilet.",
+      "en": "I will buy a ticket.",
+      "des": "",
+      "phrase_name": "ya-verb-conjugation",
+      "language": "Russian",
+      "type": "story"
+    },
+    {
+      "phrase": "Я буду говорить по-русски.",
+      "pr": "Ya budu govorit' po-russki.",
+      "en": "I will speak Russian.",
+      "des": "",
+      "phrase_name": "ya-verb-conjugation",
+      "language": "Russian",
+      "type": "story"
+    }
+  ],
+  "tbl-verb-conjugation": [
+    {
+      "phrase": "Ты говоришь по-английски?",
+      "pr": "Ty govorish' po-angliyski?",
+      "en": "Do you speak English?",
+      "des": "",
+      "phrase_name": "tbl-verb-conjugation",
+      "language": "Russian",
+      "type": "story"
+    },
+    {
+      "phrase": "Ты знаешь мой номер?",
+      "pr": "Ty znayesh' moy nomer?",
+      "en": "Do you know my number?",
+      "des": "",
+      "phrase_name": "tbl-verb-conjugation",
+      "language": "Russian",
+      "type": "story"
+    },
+    {
+      "phrase": "Ты слушаешь музыку?",
+      "pr": "Ty slushayesh' muzyku?",
+      "en": "Are you listening to music?",
+      "des": "",
+      "phrase_name": "tbl-verb-conjugation",
+      "language": "Russian",
+      "type": "story"
+    },
+    {
+      "phrase": "Ты часто ходишь сюда?",
+      "pr": "Ty chasto khodish' syuda?",
+      "en": "Do you come here often?",
+      "des": "",
+      "phrase_name": "tbl-verb-conjugation",
+      "language": "Russian",
+      "type": "story"
+    },
+    {
+      "phrase": "Ты понимаешь меня?",
+      "pr": "Ty ponimayesh' menya?",
+      "en": "Do you understand me?",
+      "des": "",
+      "phrase_name": "tbl-verb-conjugation",
+      "language": "Russian",
+      "type": "story"
+    },
+    {
+      "phrase": "Ты ездил в Россию?",
+      "pr": "Ty yezdil v Rossiyu?",
+      "en": "Did you go to Russia?",
+      "des": "",
+      "phrase_name": "tbl-verb-conjugation",
+      "language": "Russian",
+      "type": "story"
+    },
+    {
+      "phrase": "Ты смотрел этот фильм?",
+      "pr": "Ty smotrel etot fil'm?",
+      "en": "Did you watch this movie?",
+      "des": "",
+      "phrase_name": "tbl-verb-conjugation",
+      "language": "Russian",
+      "type": "story"
+    },
+    {
+      "phrase": "Ты играл в футбол?",
+      "pr": "Ty igral v futbol?",
+      "en": "Did you play football?",
+      "des": "",
+      "phrase_name": "tbl-verb-conjugation",
+      "language": "Russian",
+      "type": "story"
+    },
+    {
+      "phrase": "Ты ел на улице?",
+      "pr": "Ty yel na ulitse?",
+      "en": "Did you eat outside?",
+      "des": "",
+      "phrase_name": "tbl-verb-conjugation",
+      "language": "Russian",
+      "type": "story"
+    },
+    {
+      "phrase": "Ты помог маме?",
+      "pr": "Ty pomog mame?",
+      "en": "Did you help your mom?",
+      "des": "",
+      "phrase_name": "tbl-verb-conjugation",
+      "language": "Russian",
+      "type": "story"
+    },
+    {
+      "phrase": "Ты будешь дома вечером?",
+      "pr": "Ty budesh' doma vecherom?",
+      "en": "Will you be home in the evening?",
+      "des": "",
+      "phrase_name": "tbl-verb-conjugation",
+      "language": "Russian",
+      "type": "story"
+    },
+    {
+      "phrase": "Ты купишь хлеб?",
+      "pr": "Ty kupish' khleb?",
+      "en": "Will you buy bread?",
+      "des": "",
+      "phrase_name": "tbl-verb-conjugation",
+      "language": "Russian",
+      "type": "story"
+    },
+    {
+      "phrase": "Ты поедешь на море?",
+      "pr": "Ty poedesh' na more?",
+      "en": "Will you go to the sea?",
+      "des": "",
+      "phrase_name": "tbl-verb-conjugation",
+      "language": "Russian",
+      "type": "story"
+    },
+    {
+      "phrase": "Ты будешь учить русский язык?",
+      "pr": "Ty budesh' uchit' russkiy yazyk?",
+      "en": "Will you study Russian?",
+      "des": "",
+      "phrase_name": "tbl-verb-conjugation",
+      "language": "Russian",
+      "type": "story"
+    },
+    {
+      "phrase": "Ты позвонишь мне завтра?",
+      "pr": "Ty pozvonish' mne zavtra?",
+      "en": "Will you call me tomorrow?",
+      "des": "",
+      "phrase_name": "tbl-verb-conjugation",
+      "language": "Russian",
+      "type": "story"
+    }
+  ],"easy-story1":[
+    
+  {
+    "phrase": "Здравствуйте! Где парк?",
+    "pr": "Zdravstvuyte! Gde park?",
+    "en": "Hello! Where is the park?",
+    "grammar": ["Здравствуйте", "где", "парк"]
+  },
+  {
+    "phrase": "Парк там, слева от магазина.",
+    "pr": "Park tam, sleva ot magazina.",
+    "en": "The park is there, to the left of the store.",
+    "grammar": ["там", "слева", "от"]
+  },
+  {
+    "phrase": "Спасибо! Я иду туда.",
+    "pr": "Spasibo! Ya idu tuda.",
+    "en": "Thank you! I’m going there.",
+    "grammar": ["спасибо", "иду", "туда"]
+  },
+  {
+    "phrase": "Пожалуйста! Хорошего дня!",
+    "pr": "Pozhaluysta! Khoroshego dnya!",
+    "en": "You're welcome! Have a good day!",
+    "grammar": ["пожалуйста", "дня (Genitive singular)"]
+  },
+  
+  {
+    "phrase": "Извините, где кафе?",
+    "pr": "Izvinite, gde kafe?",
+    "en": "Excuse me, where is the café?",
+    "grammar": ["извините", "где", "кафе"]
+  },
+  {
+    "phrase": "Кафе рядом с банком.",
+    "pr": "Kafe ryadom s bankom.",
+    "en": "The café is next to the bank.",
+    "grammar": ["рядом", "с", "с + Instrumental"]
+  },
+  {
+    "phrase": "Это далеко?",
+    "pr": "Eto daleko?",
+    "en": "Is it far?",
+    "grammar": ["это", "далеко"]
+  },
+  {
+    "phrase": "Нет, недалеко. Пять минут пешком.",
+    "pr": "Net, nedaleko. Pyat' minut peshkom.",
+    "en": "No, not far. Five minutes on foot.",
+    "grammar": ["нет", "недалеко", "минут"]
+  },
+  {
+    "phrase": "Спасибо большое!",
+    "pr": "Spasibo bol'shoye!",
+    "en": "Thank you very much!",
+    "grammar": ["спасибо", "большое"]
+  },
+  {
+    "phrase": "Пожалуйста. Удачи!",
+    "pr": "Pozhaluysta. Udachi!",
+    "en": "You're welcome. Good luck!",
+    "grammar": ["пожалуйста", "удачи"]
+  }
+],
+"easy-story2":[
+  {
+    "phrase": "Привет! Как дела?",
+    "pr": "Privet! Kak dela?",
+    "en": "Hi! How are you?",
+    "grammar": ["привет", "как", "дела"]
+  },
+  {
+    "phrase": "Привет! Всё хорошо, спасибо.",
+    "pr": "Privet! Vsyo khorosho, spasibo.",
+    "en": "Hi! Everything is good, thank you.",
+    "grammar": ["всё", "хорошо", "спасибо"]
+  },
+  {
+    "phrase": "Ты где был вчера?",
+    "pr": "Ty gde byl vchera?",
+    "en": "Where were you yesterday?",
+    "grammar": ["ты", "где", "был", "вчера"]
+  },
+  {
+    "phrase": "Я был дома и смотрел фильм.",
+    "pr": "Ya byl doma i smotrel film.",
+    "en": "I was at home and watched a movie.",
+    "grammar": ["я", "был", "дома", "смотрел"]
+  },
+  {
+    "phrase": "[[А]] ты что делал?",
+    "pr": "[[A]] ty chto delal?",
+    "en": "[[And]] what did you do?",
+    "grammar": ["а", "[[and]]", "[[what]]"]
+  },
+  {
+    "phrase": "[[Я]] гулял с друзьями в парке.",
+      "pr": "[[Ya]] gulyal s druz'yami v parke.",
+      "en": "[[I]] walked with friends in the park.",
+      "grammar": ["я", "[[I]]", "[[with friends]]"]
+  },
+  {
+      "phrase": "[[Это было весело]].",
+      "pr": "[[Eto bylo veselo]].",
+      "en": "[[It was fun]].",
+      "grammar": ["это было весело"]
+  },
+  {
+      "phrase": "[[Давай встретимся завтра]].",
+      "pr": "[[Davay vstretimsya zavtra]].",
+      "en": "[[Let's meet tomorrow]].",
+      "grammar":["давай встретимся завтра"]}
+],
+"phrases1":[
+  { "phrase": "Как дела?", "pr": "Kak dela?", "en": "How are you?", "des": "Classic casual greeting" },
+  { "phrase": "Чем занимаешься сегодня?", "pr": "Chem zanimayesh'sya segodnya?", "en": "What are you up to today?", "des": "Asking about current activities" },
+  { "phrase": "Как погода у тебя?", "pr": "Kak pogoda u tebya?", "en": "How’s the weather where you are?", "des": "Light conversation starter" },
+  { "phrase": "Ты любишь путешествовать?", "pr": "Ty lyubish' puteshestvovat'?", "en": "Do you like traveling?", "des": "Travel small talk" },
+  { "phrase": "Какие страны ты уже посетил?", "pr": "Kakie strany ty uzhe posetil?", "en": "Which countries have you visited?", "des": "Sharing travel experiences" },
+  { "phrase": "Какой твой любимый город?", "pr": "Kakoy tvoy lyubimyy gorod?", "en": "What is your favorite city?", "des": "Asking about favorite places" },
+  { "phrase": "Ты любишь музыку?", "pr": "Ty lyubish' muzyku?", "en": "Do you like music?", "des": "Opening a music topic" },
+  { "phrase": "Какой твой любимый жанр музыки?", "pr": "Kakoy tvoy lyubimyy zhanr muzyki?", "en": "What’s your favorite music genre?", "des": "Continuing music discussion" },
+  { "phrase": "Ты играешь на каком-нибудь инструменте?", "pr": "Ty igrayesh' na kakom-nibud' instrumente?", "en": "Do you play any instrument?", "des": "Music hobby chat" },
+  { "phrase": "Какая твоя любимая группа?", "pr": "Kakaya tvoya lyubimaya gruppa?", "en": "What’s your favorite band?", "des": "Music small talk" },
+  { "phrase": "Ты любишь смотреть фильмы?", "pr": "Ty lyubish' smotret' fil'my?", "en": "Do you like watching movies?", "des": "Movie topic starter" },
+  { "phrase": "Какой твой любимый фильм?", "pr": "Kakoy tvoy lyubimyy fil'm?", "en": "What is your favorite movie?", "des": "Discussing movie favorites" },
+  { "phrase": "Смотришь сериалы?", "pr": "Smotrish' serialy?", "en": "Do you watch TV series?", "des": "Casual entertainment talk" },
+  { "phrase": "Любишь комедии или драмы?", "pr": "Lyubish' komedii ili dramy?", "en": "Do you like comedies or dramas?", "des": "Comparing tastes" },
+  { "phrase": "Читаешь книги в свободное время?", "pr": "Chitayesh' knigi v svobodnoye vremya?", "en": "Do you read books in your free time?", "des": "Book-related small talk" },
+  { "phrase": "Какой жанр книг тебе нравится?", "pr": "Kakoy zhanr knig tebe nravitsya?", "en": "Which book genre do you like?", "des": "Follow-up book chat" },
+  { "phrase": "У тебя есть любимый автор?", "pr": "U tebya yest' lyubimyy avtor?", "en": "Do you have a favorite author?", "des": "Literature interest" },
+  { "phrase": "Какие у тебя хобби?", "pr": "Kakie u tebya khobbi?", "en": "What hobbies do you have?", "des": "General hobby question" },
+  { "phrase": "Любишь готовить?", "pr": "Lyubish' gotovit'?", "en": "Do you like cooking?", "des": "Food & hobbies topic" },
+  { "phrase": "Какое твоё любимое блюдо?", "pr": "Kakoye tvoyo lyubimoye blyudo?", "en": "What’s your favorite dish?", "des": "Food preference" },
+  { "phrase": "Ты пробовал русскую кухню?", "pr": "Ty proboval russkuyu kukhnyu?", "en": "Have you tried Russian cuisine?", "des": "Cultural food talk" },
+  { "phrase": "Какая погода тебе нравится больше всего?", "pr": "Kakaya pogoda tebe nravitsya bol'she vsego?", "en": "What weather do you like most?", "des": "Casual opinion question" },
+  { "phrase": "Ты рано просыпаешься?", "pr": "Ty rano prosypayesh'sya?", "en": "Do you wake up early?", "des": "Daily routine chat" },
+  { "phrase": "Ты любишь спорт?", "pr": "Ty lyubish' sport?", "en": "Do you like sports?", "des": "Sports small talk" },
+  { "phrase": "Какой вид спорта тебе нравится?", "pr": "Kakoy vid sporta tebe nravitsya?", "en": "Which sport do you like?", "des": "Sports preferences" },
+  { "phrase": "Ты ходишь в спортзал?", "pr": "Ty khodish' v sportzal?", "en": "Do you go to the gym?", "des": "Fitness conversation" },
+  { "phrase": "Ты когда-нибудь катался на лыжах?", "pr": "Ty kogda-nibud' katalsya na lyzhakh?", "en": "Have you ever gone skiing?", "des": "Winter sports question" },
+  { "phrase": "Любишь море или горы?", "pr": "Lyubish' more ili gory?", "en": "Do you prefer the sea or the mountains?", "des": "Travel preference" },
+  { "phrase": "Какой сезон тебе нравится больше всего?", "pr": "Kakoy sezon tebe nravitsya bol'she vsego?", "en": "Which season do you like most?", "des": "Weather/season talk" },
+  { "phrase": "Ты когда-нибудь был в Москве?", "pr": "Ty kogda-nibud' byl v Moskve?", "en": "Have you ever been to Moscow?", "des": "City travel topic" },
+  { "phrase": "Хочешь посетить Санкт-Петербург?", "pr": "Khochesh' posetit' Sankt-Peterburg?", "en": "Do you want to visit St. Petersburg?", "des": "Travel interest" },
+  { "phrase": "Ты любишь фотографировать?", "pr": "Ty lyubish' fotografirovat'?", "en": "Do you like taking photos?", "des": "Photography small talk" },
+  { "phrase": "Какая у тебя любимая соцсеть?", "pr": "Kakaya u tebya lyubimaya sotsset'?", "en": "What’s your favorite social network?", "des": "Online habits chat" },
+  { "phrase": "Ты часто смотришь видео на YouTube?", "pr": "Ty chasto smotrish' video na YouTube?", "en": "Do you often watch videos on YouTube?", "des": "Online entertainment" },
+  { "phrase": "У тебя есть домашние животные?", "pr": "U tebya yest' domashnie zhivotnye?", "en": "Do you have pets?", "des": "Pets topic starter" },
+  { "phrase": "Как зовут твоего питомца?", "pr": "Kak zovut tvoyego pitomtsa?", "en": "What is your pet’s name?", "des": "Pet details" },
+  { "phrase": "Ты любишь кошек или собак?", "pr": "Ty lyubish' koshek ili sobak?", "en": "Do you like cats or dogs?", "des": "Pet preference" },
+  { "phrase": "Ты любишь вечеринки?", "pr": "Ty lyubish' vecherinki?", "en": "Do you like parties?", "des": "Social life chat" },
+  { "phrase": "Ты интроверт или экстраверт?", "pr": "Ty introvert ili ekstravert?", "en": "Are you an introvert or extrovert?", "des": "Personality talk" },
+  { "phrase": "Ты пробовал какие-нибудь экстремальные виды спорта?", "pr": "Ty proboval kakie-nibud' ekstremal'nye vidy sporta?", "en": "Have you tried any extreme sports?", "des": "Adventure question" },
+  { "phrase": "Ты часто ходишь в кафе?", "pr": "Ty chasto khodish' v kafe?", "en": "Do you often go to cafés?", "des": "Food & leisure topic" },
+  { "phrase": "Любишь танцевать?", "pr": "Lyubish' tantsevat'?", "en": "Do you like dancing?", "des": "Music & social topic" },
+  { "phrase": "Какие приложения ты используешь чаще всего?", "pr": "Kakie prilozheniya ty ispol'zuyesh' chashche vsego?", "en": "Which apps do you use most?", "des": "Tech small talk" },
+  { "phrase": "Ты когда-нибудь катался на велосипеде по горам?", "pr": "Ty kogda-nibud' katalsya na velosipede po goram?", "en": "Have you ever gone mountain biking?", "des": "Outdoor hobby" },
+  { "phrase": "Тебе нравится искусство?", "pr": "Tebe nravitsya iskusstvo?", "en": "Do you like art?", "des": "Art conversation" },
+  { "phrase": "Какой твой любимый музей?", "pr": "Kakoy tvoy lyubimyy muzey?", "en": "What’s your favorite museum?", "des": "Art/culture follow-up" },
+  { "phrase": "Ты любишь ездить на поезде?", "pr": "Ty lyubish' ezdit' na poezde?", "en": "Do you like traveling by train?", "des": "Travel preference" },
+  { "phrase": "Ты предпочитаешь кофе или чай?", "pr": "Ty predpochitayesh' kofe ili chay?", "en": "Do you prefer coffee or tea?", "des": "Simple daily preference" },
+  { "phrase": "Ты любишь утро или вечер?", "pr": "Ty lyubish' utro ili vecher?", "en": "Do you prefer morning or evening?", "des": "Lifestyle preference" }
+]
+,
+  "part1": [
+        { "phrase": "Я купил хлеб и молоко.", "pr": "Ya kupil khleb i moloko.", "en": "I bought bread and milk.", "des": "Joining two items together." },
+        { "phrase": "Мы играли в футбол и баскетбол.", "pr": "My igrali v futbol i basketbol.", "en": "We played football and basketball.", "des": "Connecting two activities." },
+        { "phrase": "Она читала книгу и слушала музыку.", "pr": "Ona chitala knigu i slushala muzyku.", "en": "She was reading a book and listening to music.", "des": "Connecting simultaneous actions." },
+        { "phrase": "Я люблю чай и кофе.", "pr": "Ya lyublyu chai i kofe.", "en": "I like tea and coffee.", "des": "Listing two preferences." }
+    ,
+        { "phrase": "Он высокий, а его брат низкий.", "pr": "On vysokiy, a ego brat nizkiy.", "en": "He is tall, but his brother is short.", "des": "Contrast between two subjects." },
+        { "phrase": "Я хочу пойти в кино, а она дома.", "pr": "Ya khochu poyti v kino, a ona doma.", "en": "I want to go to the cinema, but she is at home.", "des": "Contrasting two actions." },
+        { "phrase": "Это яблоко красное, а то зелёное.", "pr": "Eto yabloko krasnoye, a to zelyonoye.", "en": "This apple is red, and that one is green.", "des": "Contrasting two objects." },
+        { "phrase": "Я люблю кофе, а мой друг чай.", "pr": "Ya lyublyu kofe, a moy drug chai.", "en": "I like coffee, and my friend likes tea.", "des": "Showing difference in preferences." }
+    ,
+  
+        { "phrase": "Я хотел пойти гулять, но пошёл дождь.", "pr": "Ya hotel poyti gulyat, no poshol dozhd.", "en": "I wanted to go for a walk, but it rained.", "des": "Expressing contrast or opposition." },
+        { "phrase": "Он умный, но ленивый.", "pr": "On umniy, no leniviy.", "en": "He is smart, but lazy.", "des": "Contrasting qualities." },
+        { "phrase": "Я люблю мороженое, но не шоколадное.", "pr": "Ya lyublyu morozhenoe, no ne shokoladnoe.", "en": "I like ice cream, but not chocolate.", "des": "Showing exception or limitation." },
+        { "phrase": "Мы хотели поехать на море, но не было денег.", "pr": "My khoteli poekhat na more, no ne bylo deneg.", "en": "We wanted to go to the sea, but had no money.", "des": "Contrast between intention and reality." }
+    
+    ,
+    
+        { "phrase": "Я остался дома, потому что шёл дождь.", "pr": "Ya ostalsya doma, potomu chto shel dozhd.", "en": "I stayed home because it was raining.", "des": "Giving a reason." },
+        { "phrase": "Он не пришёл, потому что заболел.", "pr": "On ne prishel, potomu chto zabolel.", "en": "He didn’t come because he was sick.", "des": "Explaining cause." },
+        { "phrase": "Мы не купили машину, потому что дорого.", "pr": "My ne kupili mashinu, potomu chto dorogo.", "en": "We didn’t buy a car because it’s expensive.", "des": "Showing justification." },
+        { "phrase": "Я устал, потому что работал весь день.", "pr": "Ya ustal, potomu chto rabotal ves den'.", "en": "I’m tired because I worked all day.", "des": "Explaining consequence." }
+      
+    ,
+    
+        { "phrase": "Хотя он устал, он продолжал работать.", "pr": "Khotya on ustal, on prodolzhal rabotat.", "en": "Although he was tired, he continued working.", "des": "Showing contrast despite condition." },
+        { "phrase": "Я пойду гулять, хотя идёт дождь.", "pr": "Ya poydu gulyat, khotya idyot dozhd.", "en": "I will go for a walk although it’s raining.", "des": "Contrasting action vs. condition." },
+        { "phrase": "Хотя фильм был длинный, он понравился.", "pr": "Khotya film byl dlinnyy, on ponravilsya.", "en": "Although the movie was long, I liked it.", "des": "Contrast between expectation and opinion." },
+        { "phrase": "Хотя она маленькая, она сильная.", "pr": "Khotya ona malen'kaya, ona sil'naya.", "en": "Although she is small, she is strong.", "des": "Showing contrast between size and strength." }
+    ,
+    
+        { "phrase": "Если будет дождь, мы останемся дома.", "pr": "Yesli budet dozhd, my ostanemsya doma.", "en": "If it rains, we will stay home.", "des": "Expressing condition." },
+        { "phrase": "Если ты придёшь, мы начнём.", "pr": "Yesli ty pridyesh', my nachnyom.", "en": "If you come, we will start.", "des": "Conditional action." },
+        { "phrase": "Я куплю мороженое, если у меня будет время.", "pr": "Ya kuplyu morozhenoe, yesli u menya budet vremya.", "en": "I’ll buy ice cream if I have time.", "des": "Showing possibility." },
+        { "phrase": "Если он устал, пусть отдохнёт.", "pr": "Yesli on ustal, pust' otdokhnyot.", "en": "If he is tired, let him rest.", "des": "Condition leading to recommendation." }
+      ],
+    "part2": [
+        { "phrase": "Мы поехали в Питер.", "pr": "My poekhali v Piter.", "en": "We went to St. Petersburg.", "des": "Indicates destination inside a city." },
+        { "phrase": "Кошка спряталась в шкафу.", "pr": "Koshka spryatalas' v shkafu.", "en": "The cat hid in the wardrobe.", "des": "Indicates location inside an object." },
+        { "phrase": "Я работаю в банке.", "pr": "Ya rabotayu v banke.", "en": "I work in a bank.", "des": "Shows location of work." },
+        { "phrase": "Он повернулся влево.", "pr": "On povernulsya vlevo.", "en": "He turned to the left.", "des": "Shows direction or movement into a side." }
+    ,
+        { "phrase": "Карандаш лежит на столе.", "pr": "Karandash lezhit na stole.", "en": "The pencil is on the table.", "des": "Indicates position on a surface." },
+        { "phrase": "Мы пойдём на выставку.", "pr": "My poydyom na vystavku.", "en": "We will go to the exhibition.", "des": "Indicates direction towards an event." },
+        { "phrase": "Он работает на компьютере.", "pr": "On rabotayet na kompyutere.", "en": "He works on the computer.", "des": "Shows location of work." },
+        { "phrase": "Птица села на крышу.", "pr": "Ptitsa sela na kryshu.", "en": "The bird sat on the roof.", "des": "Indicates placement on top of something." }
+      ,
+        { "phrase": "Я пришёл с братом.", "pr": "Ya prishel s bratom.", "en": "I came with my brother.", "des": "Indicates accompaniment." },
+        { "phrase": "Он пишет письмо с улыбкой.", "pr": "On pishet pismo s ulybkoy.", "en": "He writes a letter with a smile.", "des": "Indicates manner of action." },
+        { "phrase": "Мы делали проект с командой.", "pr": "My delali proyekt s komandoy.", "en": "We did the project with the team.", "des": "Shows collaboration." },
+        { "phrase": "Она ела суп с ложкой.", "pr": "Ona yela sup s lozhkoy.", "en": "She ate soup with a spoon.", "des": "Specifies the tool used." }
+      ,
+        { "phrase": "Я стоял у окна.", "pr": "Ya stoyal u okna.", "en": "I stood by the window.", "des": "Indicates location near something." },
+        { "phrase": "У меня есть собака.", "pr": "U menya yest sobaka.", "en": "I have a dog.", "des": "Shows possession." },
+        { "phrase": "Мы встречались у кафе.", "pr": "My vstrechalis' u kafe.", "en": "We met at the café.", "des": "Specifies meeting place." },
+        { "phrase": "Он учился у известного художника.", "pr": "On uchilsya u izvestnogo khudozhnika.", "en": "He studied under a famous artist.", "des": "Shows association or source." }
+,
+        { "phrase": "Письмо от мамы пришло сегодня.", "pr": "Pismo ot mamy prishlo segodnya.", "en": "A letter from mom arrived today.", "des": "Indicates sender." },
+        { "phrase": "Он убежал от собаки.", "pr": "On ubezhal ot sobaki.", "en": "He ran away from the dog.", "des": "Shows movement away from something." },
+        { "phrase": "От дороги веет холодом.", "pr": "Ot dorogi veet kholodom.", "en": "Cold comes from the road.", "des": "Indicates source." },
+        { "phrase": "Подарок от друга был сюрпризом.", "pr": "Podarok ot druga byl syurprizom.", "en": "A gift from a friend was a surprise.", "des": "Shows origin or source." }
+    ,
+    
+        { "phrase": "Это письмо для тебя.", "pr": "Eto pis'mo dlya tebya.", "en": "This letter is for you.", "des": "Indicates recipient." },
+        { "phrase": "Я купил книгу для сына.", "pr": "Ya kupil knigu dlya syna.", "en": "I bought a book for my son.", "des": "Shows purpose or beneficiary." },
+        { "phrase": "Мы готовим еду для гостей.", "pr": "My gotovim edu dlya gostey.", "en": "We are preparing food for the guests.", "des": "Indicates intended group." },
+        { "phrase": "Эта сумка для школы.", "pr": "Eta sumka dlya shkoly.", "en": "This bag is for school.", "des": "Shows intended use." }
+      ,
+        { "phrase": "Он ушёл без прощания.", "pr": "On ushel bez proshchaniya.", "en": "He left without saying goodbye.", "des": "Indicates absence of action." },
+        { "phrase": "Чай без лимона.", "pr": "Chay bez limona.", "en": "Tea without lemon.", "des": "Specifies exclusion." },
+        { "phrase": "Мы справились без помощи родителей.", "pr": "My spravilis' bez pomoshchi roditeley.", "en": "We managed without parents’ help.", "des": "Indicates independence." },
+        { "phrase": "Он не может жить без музыки.", "pr": "On ne mozhet zhit bez muzyki.", "en": "He cannot live without music.", "des": "Shows essential absence." }
+      ,
+    
+        { "phrase": "Мы говорили о фильме.", "pr": "My govorili o filme.", "en": "We talked about the movie.", "des": "Specifies topic of discussion." },
+        { "phrase": "Он пишет статью об истории.", "pr": "On pishet stat'yu ob istorii.", "en": "He is writing an article about history.", "des": "Indicates subject matter." },
+        { "phrase": "Я думал о тебе.", "pr": "Ya dumal o tebe.", "en": "I was thinking about you.", "des": "Shows focus of thought." },
+        { "phrase": "Мы читали книгу о космосе.", "pr": "My chitali knigu o kosmose.", "en": "We read a book about space.", "des": "Indicates topic of reading." }
+    ],
+    "part3":[
+        
+        { "phrase": "Я не хочу есть.", "pr": "Ya ne khochu yest'.", "en": "I do not want to eat.", "des": "Negates the verb." },
+        { "phrase": "Он не дома.", "pr": "On ne doma.", "en": "He is not at home.", "des": "Indicates absence." },
+        { "phrase": "Это не интересно.", "pr": "Eto ne interesno.", "en": "This is not interesting.", "des": "Negates adjective/adverb." },
+        { "phrase": "Мы не понимаем.", "pr": "My ne ponimayem.", "en": "We do not understand.", "des": "Negates the action." }
+      
+    ,
+    
+        { "phrase": "Я не видел ни фильма, ни книги.", "pr": "Ya ne videl ni fil'ma, ni knigi.", "en": "I have seen neither the movie nor the book.", "des": "Connects two negative items." },
+        { "phrase": "Он не говорит ни по-русски, ни по-английски.", "pr": "On ne govorit ni po-russki, ni po-angliyski.", "en": "He speaks neither Russian nor English.", "des": "Negates multiple options." },
+        { "phrase": "Я не ел ни рыбу, ни мясо.", "pr": "Ya ne yel ni rybu, ni myaso.", "en": "I ate neither fish nor meat.", "des": "Lists two negated items." },
+        { "phrase": "Она не любит ни чай, ни кофе.", "pr": "Ona ne lyubit ni chai, ni kofe.", "en": "She likes neither tea nor coffee.", "des": "Shows preference negation." }
+      
+    ,
+        { "phrase": "Я тоже хочу пойти.", "pr": "Ya tozhe khochu poyti.", "en": "I also want to go.", "des": "Adds agreement or inclusion." },
+        { "phrase": "Он тоже пришёл.", "pr": "On tozhe prishel.", "en": "He also came.", "des": "Indicates addition of someone." },
+        { "phrase": "Моя сестра тоже любит шоколад.", "pr": "Moya sestra tozhe lyubit shokolad.", "en": "My sister also likes chocolate.", "des": "Shows shared preference." },
+        { "phrase": "Я тоже согласен.", "pr": "Ya tozhe soglasen.", "en": "I also agree.", "des": "Expresses agreement." }
+      
+    ,
+    
+        { "phrase": "Я хочу ещё пирог.", "pr": "Ya khochu eshchyo pirog.", "en": "I want more pie.", "des": "Indicates additional quantity." },
+        { "phrase": "Он ещё спит.", "pr": "On eshchyo spit.", "en": "He is still sleeping.", "des": "Shows ongoing action." },
+        { "phrase": "Мне нужно ещё время.", "pr": "Mne nuzhno eshchyo vremya.", "en": "I need more time.", "des": "Indicates extra amount needed." },
+        { "phrase": "Я ещё не готов.", "pr": "Ya eshchyo ne gotov.", "en": "I am still not ready.", "des": "Expresses continuation of a negative state." }
+,
+        { "phrase": "Я уже поел.", "pr": "Ya uzhe poel.", "en": "I have already eaten.", "des": "Indicates completion of an action." },
+        { "phrase": "Он уже дома.", "pr": "On uzhe doma.", "en": "He is already at home.", "des": "Shows current state reached." },
+        { "phrase": "Мы уже сделали задачу.", "pr": "My uzhe sdelali zadachu.", "en": "We have already completed the task.", "des": "Indicates task finished." },
+        { "phrase": "Фильм уже начался.", "pr": "Film uzhe nachalsya.", "en": "The movie has already started.", "des": "Shows event has begun." }
+      ,
+    
+        { "phrase": "Я всегда пью кофе утром.", "pr": "Ya vsegda p'yu kofe utrom.", "en": "I always drink coffee in the morning.", "des": "Indicates habitual action." },
+        { "phrase": "Она всегда улыбается.", "pr": "Ona vsegda ulybaetsya.", "en": "She always smiles.", "des": "Shows constant behavior." },
+        { "phrase": "Мы всегда вместе.", "pr": "My vsegda vmeste.", "en": "We are always together.", "des": "Indicates permanence." },
+        { "phrase": "Он всегда говорит правду.", "pr": "On vsegda govorit pravdu.", "en": "He always tells the truth.", "des": "Shows consistency of action." }
+,
+        { "phrase": "Я никогда не был в Париже.", "pr": "Ya nikogda ne byl v Parizhe.", "en": "I have never been to Paris.", "des": "Indicates absence of experience." },
+        { "phrase": "Он никогда не опаздывает.", "pr": "On nikogda ne opazdyvayet.", "en": "He never arrives late.", "des": "Shows habitual negation." },
+        { "phrase": "Я никогда не курил.", "pr": "Ya nikogda ne kuril.", "en": "I have never smoked.", "des": "Indicates an action never done." },
+        { "phrase": "Она никогда не говорит неправду.", "pr": "Ona nikogda ne govorit nepravu.", "en": "She never tells a lie.", "des": "Shows moral consistency." }
+    
+    ],"part4": [
+    
+        { "phrase": "Кто это?", "pr": "Kto eto?", "en": "Who is this?", "des": "Asks for the identity of a person." },
+        { "phrase": "Кто пришёл вчера?", "pr": "Kto prishel vchera?", "en": "Who came yesterday?", "des": "Asks about someone’s arrival." },
+        { "phrase": "Кто знает ответ?", "pr": "Kto znayet otvet?", "en": "Who knows the answer?", "des": "Inquires about a knowledgeable person." },
+        { "phrase": "Кто будет вести урок?", "pr": "Kto budet vesti urok?", "en": "Who will lead the lesson?", "des": "Asks about the person in charge." }
+      
+    ,
+        { "phrase": "Что ты делаешь?", "pr": "Chto ty delayesh'?", "en": "What are you doing?", "des": "Asks about an action." },
+        { "phrase": "Что это значит?", "pr": "Chto eto znachit?", "en": "What does this mean?", "des": "Asks for explanation." },
+        { "phrase": "Что ты купил?", "pr": "Chto ty kupil?", "en": "What did you buy?", "des": "Asks about an object or thing." },
+        { "phrase": "Что произошло?", "pr": "Chto proizoshlo?", "en": "What happened?", "des": "Inquires about an event." }
+      
+    ,
+    
+        { "phrase": "Где ты был вчера?", "pr": "Gde ty byl vchera?", "en": "Where were you yesterday?", "des": "Asks about location in the past." },
+        { "phrase": "Где находится музей?", "pr": "Gde nakhoditsya muzey?", "en": "Where is the museum?", "des": "Asks about the position of a place." },
+        { "phrase": "Где моя сумка?", "pr": "Gde moya sumka?", "en": "Where is my bag?", "des": "Asks about the location of an object." },
+        { "phrase": "Где мы встретимся?", "pr": "Gde my vstretimsya?", "en": "Where will we meet?", "des": "Asks about the meeting location." }
+      
+    ,
+    
+        { "phrase": "Когда ты придёшь?", "pr": "Kogda ty pridyesh'?", "en": "When will you come?", "des": "Asks about time of arrival." },
+        { "phrase": "Когда начнётся фильм?", "pr": "Kogda nachnyotsya film?", "en": "When will the movie start?", "des": "Inquires about starting time." },
+        { "phrase": "Когда у тебя день рождения?", "pr": "Kogda u tebya den' rozhdeniya?", "en": "When is your birthday?", "des": "Asks for a date." },
+        { "phrase": "Когда мы поедем в отпуск?", "pr": "Kogda my poedem v otpusk?", "en": "When will we go on vacation?", "des": "Asks about future plans." }
+      
+    ,
+        { "phrase": "Почему ты опоздал?", "pr": "Pochemu ty opozdal?", "en": "Why were you late?", "des": "Asks for reason." },
+        { "phrase": "Почему он плачет?", "pr": "Pochemu on plachet?", "en": "Why is he crying?", "des": "Inquires about cause of emotion." },
+        { "phrase": "Почему мы должны это делать?", "pr": "Pochemu my dolzhny eto delat'?", "en": "Why do we have to do this?", "des": "Asks for justification." },
+        { "phrase": "Почему она ушла?", "pr": "Pochemu ona ushla?", "en": "Why did she leave?", "des": "Asks for reason behind an action." }
+      
+    ,
+        { "phrase": "Как ты это сделал?", "pr": "Kak ty eto sdelal?", "en": "How did you do this?", "des": "Asks about method or manner." },
+        { "phrase": "Как пройти к станции?", "pr": "Kak proyti k stantsii?", "en": "How do I get to the station?", "des": "Asks for directions." },
+        { "phrase": "Как ты себя чувствуешь?", "pr": "Kak ty sebya chuvstvuyesh'?", "en": "How do you feel?", "des": "Inquires about state or condition." },
+        { "phrase": "Как работает этот телефон?", "pr": "Kak rabotayet etot telefon?", "en": "How does this phone work?", "des": "Asks about functioning." }
+        ,
+        { "phrase": "Какой фильм ты хочешь посмотреть?", "pr": "Kakoy film ty khochesh' posmotret'?", "en": "Which movie do you want to watch?", "des": "Asks about choice." },
+        { "phrase": "Какая книга твоя?", "pr": "Kakaya kniga tvoya?", "en": "Which book is yours?", "des": "Asks about identification." },
+        { "phrase": "Какое сегодня число?", "pr": "Kakoye segodnya chislo?", "en": "What is the date today?", "des": "Asks for specification." },
+        { "phrase": "Какая погода на улице?", "pr": "Kakaya pogoda na ulitse?", "en": "What is the weather outside?", "des": "Asks for description." }
+      ]
+    ,"part5":[
+        
+        { "phrase": "Кто это?", "pr": "Kto eto?", "en": "Who is this?", "des": "Asks for the identity of a person." },
+        { "phrase": "Кто пришёл вчера?", "pr": "Kto prishel vchera?", "en": "Who came yesterday?", "des": "Asks about someone’s arrival." },
+        { "phrase": "Кто знает ответ?", "pr": "Kto znayet otvet?", "en": "Who knows the answer?", "des": "Inquires about a knowledgeable person." },
+        { "phrase": "Кто будет вести урок?", "pr": "Kto budet vesti urok?", "en": "Who will lead the lesson?", "des": "Asks about the person in charge." }
+      
+    ,
+        { "phrase": "Что ты делаешь?", "pr": "Chto ty delayesh'?", "en": "What are you doing?", "des": "Asks about an action." },
+        { "phrase": "Что это значит?", "pr": "Chto eto znachit?", "en": "What does this mean?", "des": "Asks for explanation." },
+        { "phrase": "Что ты купил?", "pr": "Chto ty kupil?", "en": "What did you buy?", "des": "Asks about an object or thing." },
+        { "phrase": "Что произошло?", "pr": "Chto proizoshlo?", "en": "What happened?", "des": "Inquires about an event." }
+      ,
+        { "phrase": "Где ты был вчера?", "pr": "Gde ty byl vchera?", "en": "Where were you yesterday?", "des": "Asks about location in the past." },
+        { "phrase": "Где находится музей?", "pr": "Gde nakhoditsya muzey?", "en": "Where is the museum?", "des": "Asks about the position of a place." },
+        { "phrase": "Где моя сумка?", "pr": "Gde moya sumka?", "en": "Where is my bag?", "des": "Asks about the location of an object." },
+        { "phrase": "Где мы встретимся?", "pr": "Gde my vstretimsya?", "en": "Where will we meet?", "des": "Asks about the meeting location." }
+      
+    ,
+        { "phrase": "Когда ты придёшь?", "pr": "Kogda ty pridyesh'?", "en": "When will you come?", "des": "Asks about time of arrival." },
+        { "phrase": "Когда начнётся фильм?", "pr": "Kogda nachnyotsya film?", "en": "When will the movie start?", "des": "Inquires about starting time." },
+        { "phrase": "Когда у тебя день рождения?", "pr": "Kogda u tebya den' rozhdeniya?", "en": "When is your birthday?", "des": "Asks for a date." },
+        { "phrase": "Когда мы поедем в отпуск?", "pr": "Kogda my poedem v otpusk?", "en": "When will we go on vacation?", "des": "Asks about future plans." }
+      
+    ,
+    
+        { "phrase": "Почему ты опоздал?", "pr": "Pochemu ty opozdal?", "en": "Why were you late?", "des": "Asks for reason." },
+        { "phrase": "Почему он плачет?", "pr": "Pochemu on plachet?", "en": "Why is he crying?", "des": "Inquires about cause of emotion." },
+        { "phrase": "Почему мы должны это делать?", "pr": "Pochemu my dolzhny eto delat'?", "en": "Why do we have to do this?", "des": "Asks for justification." },
+        { "phrase": "Почему она ушла?", "pr": "Pochemu ona ushla?", "en": "Why did she leave?", "des": "Asks for reason behind an action." }
+      
+    ,
+    
+        { "phrase": "Как ты это сделал?", "pr": "Kak ty eto sdelal?", "en": "How did you do this?", "des": "Asks about method or manner." },
+        { "phrase": "Как пройти к станции?", "pr": "Kak proyti k stantsii?", "en": "How do I get to the station?", "des": "Asks for directions." },
+        { "phrase": "Как ты себя чувствуешь?", "pr": "Kak ty sebya chuvstvuyesh'?", "en": "How do you feel?", "des": "Inquires about state or condition." },
+        { "phrase": "Как работает этот телефон?", "pr": "Kak rabotayet etot telefon?", "en": "How does this phone work?", "des": "Asks about functioning." }
+      
+    ,
+    
+        { "phrase": "Какой фильм ты хочешь посмотреть?", "pr": "Kakoy film ty khochesh' posmotret'?", "en": "Which movie do you want to watch?", "des": "Asks about choice." },
+        { "phrase": "Какая книга твоя?", "pr": "Kakaya kniga tvoya?", "en": "Which book is yours?", "des": "Asks about identification." },
+        { "phrase": "Какое сегодня число?", "pr": "Kakoye segodnya chislo?", "en": "What is the date today?", "des": "Asks for specification." },
+        { "phrase": "Какая погода на улице?", "pr": "Kakaya pogoda na ulitse?", "en": "What is the weather outside?", "des": "Asks for description." }
+      ],"part6":[
+
+        { "phrase": "Это мой дом.", "pr": "Eto moy dom.", "en": "This is my house.", "des": "Identifies an object or thing." },
+        { "phrase": "Что это?", "pr": "Chto eto?", "en": "What is this?", "des": "Asks about identity of an object." },
+        { "phrase": "Это интересно.", "pr": "Eto interesno.", "en": "This is interesting.", "des": "Describes a situation or thing." },
+        { "phrase": "Это не правильно.", "pr": "Eto ne pravil'no.", "en": "This is not correct.", "des": "Negates a statement about something." }
+      ,
+    
+        { "phrase": "Я живу здесь.", "pr": "Ya zhivu zdes'.", "en": "I live here.", "des": "Indicates current location." },
+        { "phrase": "Здесь холодно.", "pr": "Zdes' kholodno.", "en": "It is cold here.", "des": "Describes the environment at this place." },
+        { "phrase": "Смотри здесь.", "pr": "Smotri zdes'.", "en": "Look here.", "des": "Directs attention to a location." },
+        { "phrase": "Здесь много людей.", "pr": "Zdes' mnogo lyudey.", "en": "There are many people here.", "des": "States quantity at a place." }
+      
+    ,
+        { "phrase": "Он живёт там.", "pr": "On zhivyot tam.", "en": "He lives there.", "des": "Specifies a distant location." },
+        { "phrase": "Там красиво.", "pr": "Tam krasivo.", "en": "It is beautiful there.", "des": "Describes environment at a distance." },
+        { "phrase": "Смотри там.", "pr": "Smotri tam.", "en": "Look there.", "des": "Directs attention to a place farther away." },
+        { "phrase": "Там много деревьев.", "pr": "Tam mnogo derev'yev.", "en": "There are many trees there.", "des": "Indicates quantity at another location." }
+      ,
+        { "phrase": "Я хочу есть.", "pr": "Ya khochu yest'.", "en": "I want to eat.", "des": "First person singular subject." },
+        { "phrase": "Я люблю музыку.", "pr": "Ya lyublyu muzyku.", "en": "I love music.", "des": "Expresses personal preference." },
+        { "phrase": "Я читаю книгу.", "pr": "Ya chitayu knigu.", "en": "I am reading a book.", "des": "Describes ongoing action." },
+        { "phrase": "Я живу в Москве.", "pr": "Ya zhivu v Moskve.", "en": "I live in Moscow.", "des": "States personal location." }
+      ,
+    
+        { "phrase": "Ты работаешь хорошо.", "pr": "Ty rabotayesh' khorosho.", "en": "You work well.", "des": "Second person singular subject." },
+        { "phrase": "Ты где был?", "pr": "Ty gde byl?", "en": "Where were you?", "des": "Asks about location of the listener." },
+        { "phrase": "Ты понимаешь меня?", "pr": "Ty ponimayesh' menya?", "en": "Do you understand me?", "des": "Questions comprehension." },
+        { "phrase": "Ты любишь кофе?", "pr": "Ty lyubish' kofe?", "en": "Do you like coffee?", "des": "Asks about preference." }
+      
+    ,
+    
+        { "phrase": "Он идёт в школу.", "pr": "On idyot v shkolu.", "en": "He is going to school.", "des": "Third person masculine subject." },
+        { "phrase": "Она читает книгу.", "pr": "Ona chitayet knigu.", "en": "She is reading a book.", "des": "Third person feminine subject." },
+        { "phrase": "Он любит спорт.", "pr": "On lyubit sport.", "en": "He likes sports.", "des": "Describes preference of a male." },
+        { "phrase": "Она живёт в Москве.", "pr": "Ona zhivyot v Moskve.", "en": "She lives in Moscow.", "des": "States female subject’s location." }
+      
+    ,
+    
+        { "phrase": "Мы идём в парк.", "pr": "My idyom v park.", "en": "We are going to the park.", "des": "First person plural subject." },
+        { "phrase": "Они играют в футбол.", "pr": "Oni igrayut v futbol.", "en": "They are playing football.", "des": "Third person plural subject." },
+        { "phrase": "Мы готовим ужин.", "pr": "My gotovim uzhin.", "en": "We are preparing dinner.", "des": "Describes action of the group including speaker." },
+        { "phrase": "Они любят музыку.", "pr": "Oni lyubyat muzyku.", "en": "They like music.", "des": "Shows preference of others." }
+      ]
+    
+
+}

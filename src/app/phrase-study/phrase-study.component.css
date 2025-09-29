@@ -1,0 +1,57 @@
+.phrase-card {
+  border: 1px solid #ddd;
+  padding: 1rem;
+  margin: 1rem 0;
+  border-radius: 10px;
+  width: fit-content;
+}
+
+.ko, .pr, .en {
+  margin: 5px 0;
+}
+
+span {
+  margin-right: 10px;
+  cursor: pointer;
+  transition: background 0.2s;
+  padding: 2px 5px;
+  border-radius: 5px;
+}
+
+.highlight {
+  color: rgb(110, 222, 222);
+  background: rgb(94, 169, 209);
+}
+.phrase {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.word {
+  cursor: pointer;
+  padding: 4px 6px;
+  border-radius: 6px;
+  transition: background 0.2s;
+}
+
+.word:hover {
+  background: #e6f0ff;
+}
+
+.popup {
+  position: fixed;
+  top: 20%;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1000;
+}
+
+.popup-card {
+  background: white;
+  color: rgb(24, 103, 103);
+  border-radius: 12px;
+  padding: 16px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+  min-width: 250px;
+}

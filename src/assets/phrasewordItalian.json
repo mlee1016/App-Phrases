@@ -1,0 +1,679 @@
+
+  {"course1":[{
+    "itn": "Il libro è ___ Marco.",
+    "pr": "Eel LEE-broh eh ______ MAR-koh.",
+    "en": "The book belongs to Marco. (lit. [[ is of ]] Marco)",
+    "options": [
+      { "itn": "di", "pr": "dee", "type": "preposition", "en": "of" },
+      { "itn": "da", "pr": "dah", "type": "preposition", "en": "from" },
+      { "itn": "con", "pr": "kohn", "type": "preposition", "en": "with" }
+    ],
+    "answer": [{ "itn": "di", "pr": "dee" }]
+  },
+  {
+    "itn": "Vado al cinema ___ Giulia.",
+    "pr": "VAH-doh ahl CHEE-neh-mah ______ JOO-lyah.",
+    "en": "I go to the cinema [[ with ]] Giulia.",
+    "options": [
+      { "itn": "con", "pr": "kohn", "type": "preposition", "en": "with" },
+      { "itn": "su", "pr": "soo", "type": "preposition", "en": "on" },
+      { "itn": "da", "pr": "dah", "type": "preposition", "en": "from" }
+    ],
+    "answer": [{ "itn": "con", "pr": "kohn" }]
+  },
+  {
+    "itn": "Il bambino scende ___ sedia.",
+    "pr": "Eel bahm-BEE-noh SHEN-deh ______ SEH-dyah.",
+    "en": "The child climbs down [[ from ]] the chair.",
+    "options": [
+      { "itn": "da", "pr": "dah", "type": "preposition", "en": "from" },
+      { "itn": "su", "pr": "soo", "type": "preposition", "en": "on" },
+      { "itn": "di", "pr": "dee", "type": "preposition", "en": "of" }
+    ],
+    "answer": [{ "itn": "da", "pr": "dah" }]
+  },
+  {
+    "itn": "Il gatto è ___ tavolo.",
+    "pr": "Eel GAHT-toh eh ______ TAH-voh-loh.",
+    "en": "The cat is [[ on ]] the table.",
+    "options": [
+      { "itn": "su", "pr": "soo", "type": "preposition", "en": "on" },
+      { "itn": "in", "pr": "een", "type": "preposition", "en": "in" },
+      { "itn": "da", "pr": "dah", "type": "preposition", "en": "from" }
+    ],
+    "answer": [{ "itn": "su", "pr": "soo" }]
+  },
+  {
+    "itn": "Vuoi tè ___ caffè?",
+    "pr": "VWOO-ee teh ______ kah-FEH?",
+    "en": "Do you want tea [[ or ]] coffee?",
+    "options": [
+      { "itn": "o", "pr": "oh", "type": "conjunction", "en": "or" },
+      { "itn": "e", "pr": "eh", "type": "conjunction", "en": "and" },
+      { "itn": "ma", "pr": "mah", "type": "conjunction", "en": "but" }
+    ],
+    "answer": [{ "itn": "o", "pr": "oh" }]
+  },
+  {
+    "itn": "Non vado al parco ___ piove.",
+    "pr": "Non VAH-doh ahl PAR-koh ______ PYOH-veh.",
+    "en": "I don't go to the park [[ because ]] it's raining.",
+    "options": [
+      { "itn": "perché", "pr": "pehr-KEH", "type": "conjunction", "en": "because" },
+      { "itn": "ma", "pr": "mah", "type": "conjunction", "en": "but" },
+      { "itn": "anche", "pr": "AHN-keh", "type": "adverb", "en": "also" }
+    ],
+    "answer": [{ "itn": "perché", "pr": "pehr-KEH" }]
+  },
+  {
+    "itn": "Parlo inglese e ___ spagnolo.",
+    "pr": "PAR-lo een-GLEH-zeh eh ______ spah-NYOH-loh.",
+    "en": "I speak English and [[ also ]] Spanish.",
+    "options": [
+      { "itn": "anche", "pr": "AHN-keh", "type": "adverb", "en": "also" },
+      { "itn": "solo", "pr": "SOH-loh", "type": "adverb", "en": "only" },
+      { "itn": "poi", "pr": "poy", "type": "adverb", "en": "then" }
+    ],
+    "answer": [{ "itn": "anche", "pr": "AHN-keh" }]
+  },
+  {
+    "itn": "Ho ___ un'ora per mangiare.",
+    "pr": "Oh ______ OON-oh-rah pehr mahn-JAH-reh.",
+    "en": "I have [[ only ]] one hour to eat.",
+    "options": [
+      { "itn": "solo", "pr": "SOH-loh", "type": "adverb", "en": "only" },
+      { "itn": "tutto", "pr": "TOOT-toh", "type": "adjective", "en": "all" },
+      { "itn": "alcuni", "pr": "ahl-KOO-nee", "type": "adjective", "en": "some (plural)" }
+    ],
+    "answer": [{ "itn": "solo", "pr": "SOH-loh" }]
+  },
+  {
+    "itn": "Sono stanco, ___ vado a dormire.",
+    "pr": "SOH-noh STAHN-koh, ______ VAH-doh ah dor-MEE-reh.",
+    "en": "I am tired, [[ therefore ]] I go to sleep.",
+    "options": [
+      { "itn": "quindi", "pr": "KWEEN-dee", "type": "conjunction", "en": "therefore" },
+      { "itn": "ma", "pr": "mah", "type": "conjunction", "en": "but" },
+      { "itn": "anche", "pr": "AHN-keh", "type": "adverb", "en": "also" }
+    ],
+    "answer": [{ "itn": "quindi", "pr": "KWEEN-dee" }]
+  },
+  {
+    "itn": "Compro ___ pane per pranzo.",
+    "pr": "COM-proh ______ PAH-neh pehr PRAHN-tsoh.",
+    "en": "I buy [[ some ]] bread for lunch.",
+    "options": [
+      { "itn": "del", "pr": "dehl", "type": "partitive article", "en": "some (masculine singular)" },
+      { "itn": "il", "pr": "eel", "type": "article", "en": "the" },
+      { "itn": "un", "pr": "oon", "type": "article", "en": "a" }
+    ],
+    "answer": [{ "itn": "del", "pr": "dehl" }]
+  }
+],
+
+  "part1":[
+  {
+    "itn": "Non vado al parco ___ piove.",
+    "pr": "Non VAH-doh ahl PAR-koh ______ PYOH-veh.",
+    "en": "I don't go to the park [[because]] it's raining.",
+    "options": [
+      { "itn": "perché", "pr": "per-ke", "type": "conjunction", "en": "because" },
+      { "itn": "ma", "pr": "ma", "type": "conjunction", "en": "but" },
+      { "itn": "anche se", "pr": "an-ke se", "type": "conjunction", "en": "although" }
+    ],
+    "answer": [{ "itn": "perché", "pr": "per-ke" }]
+  },
+  {
+    "itn": "Vuoi tè ___ caffè?",
+    "pr": "VWOY teh ___ KAF-feh?",
+    "en": "Do you want tea [[or]] coffee?",
+    "options": [
+      { "itn": "oppure", "pr": "op-poo-re", "type": "conjunction", "en": "or" },
+      { "itn": "e", "pr": "eh", "type": "conjunction", "en": "and" },
+      { "itn": "inoltre", "pr": "i-nol-tre", "type": "conjunction", "en": "also / moreover" }
+    ],
+    "answer": [{ "itn": "oppure", "pr": "op-poo-re" }]
+  },
+  {
+    "itn": "Vorrei venire, ___ devo lavorare.",
+    "pr": "Vor-REI ve-NEE-re, ___ DEH-vo la-vo-RA-re.",
+    "en": "I would like to come, [[but]] I have to work.",
+    "options": [
+      { "itn": "ma", "pr": "ma", "type": "conjunction", "en": "but" },
+      { "itn": "perché", "pr": "per-ke", "type": "conjunction", "en": "because" },
+      { "itn": "se", "pr": "se", "type": "conjunction", "en": "if" }
+    ],
+    "answer": [{ "itn": "ma", "pr": "ma" }]
+  },
+  {
+    "itn": "Ti aiuterò ___ vuoi venire.",
+    "pr": "Ti a-yu-te-RO ___ VWOY ve-NEE-re.",
+    "en": "I will help you [[if]] you want to come.",
+    "options": [
+      { "itn": "se", "pr": "se", "type": "conjunction", "en": "if" },
+      { "itn": "anche se", "pr": "an-ke se", "type": "conjunction", "en": "although" },
+      { "itn": "e", "pr": "eh", "type": "conjunction", "en": "and" }
+    ],
+    "answer": [{ "itn": "se", "pr": "se" }]
+  },
+  {
+    "itn": "Ha studiato molto, ___ non ha superato l’esame.",
+    "pr": "Ha stu-di-A-to MOL-to, ___ non a SU-pe-RA-to l’e-ZA-me.",
+    "en": "He studied a lot, [[but]] he didn’t pass the exam.",
+    "options": [
+      { "itn": "ma", "pr": "ma", "type": "conjunction", "en": "but" },
+      { "itn": "perché", "pr": "per-ke", "type": "conjunction", "en": "because" },
+      { "itn": "inoltre", "pr": "i-nol-tre", "type": "conjunction", "en": "also / moreover" }
+    ],
+    "answer": [{ "itn": "ma", "pr": "ma" }]
+  },
+  {
+    "itn": "Puoi venire con me, ___ puoi restare a casa.",
+    "pr": "PWOY ve-NEE-re kon me, ___ PWOY res-TA-re a KA-sa.",
+    "en": "You can come with me, [[or]] you can stay at home.",
+    "options": [
+      { "itn": "oppure", "pr": "op-poo-re", "type": "conjunction", "en": "or" },
+      { "itn": "ma", "pr": "ma", "type": "conjunction", "en": "but" },
+      { "itn": "e", "pr": "eh", "type": "conjunction", "en": "and" }
+    ],
+    "answer": [{ "itn": "oppure", "pr": "op-poo-re" }]
+  },
+  {
+    "itn": "Ha fatto un errore, ___ non è grave.",
+    "pr": "Ha FAT-to un e-RRO-re, ___ non e GRA-ve.",
+    "en": "He made a mistake, [[but]] it’s not serious.",
+    "options": [
+      { "itn": "ma", "pr": "ma", "type": "conjunction", "en": "but" },
+      { "itn": "perché", "pr": "per-ke", "type": "conjunction", "en": "because" },
+      { "itn": "inoltre", "pr": "i-nol-tre", "type": "conjunction", "en": "also / moreover" }
+    ],
+    "answer": [{ "itn": "ma", "pr": "ma" }]
+  },
+  {
+    "itn": "Vieni con noi, ___ porti anche i tuoi amici.",
+    "pr": "VE-ni kon noi, ___ POR-ti an-ke i tuoi a-MI-ci.",
+    "en": "Come with us, [[and]] bring your friends too.",
+    "options": [
+      { "itn": "e", "pr": "eh", "type": "conjunction", "en": "and" },
+      { "itn": "oppure", "pr": "op-poo-re", "type": "conjunction", "en": "or" },
+      { "itn": "ma", "pr": "ma", "type": "conjunction", "en": "but" }
+    ],
+    "answer": [{ "itn": "e", "pr": "eh" }]
+  },
+  {
+    "itn": "Studia molto, ___ vuole passare l’esame.",
+    "pr": "STU-dia MOL-to, ___ VO-lle PAS-sa-re l’e-ZA-me.",
+    "en": "He studies a lot, [[because]] he wants to pass the exam.",
+    "options": [
+      { "itn": "perché", "pr": "per-ke", "type": "conjunction", "en": "because" },
+      { "itn": "ma", "pr": "ma", "type": "conjunction", "en": "but" },
+      { "itn": "oppure", "pr": "op-poo-re", "type": "conjunction", "en": "or" }
+    ],
+    "answer": [{ "itn": "perché", "pr": "per-ke" }]
+  },
+  {
+    "itn": "Puoi uscire ___ resti a casa.",
+    "pr": "PWOY U-sci-re ___ RES-ti a KA-sa.",
+    "en": "You can go out [[or]] stay at home.",
+    "options": [
+      { "itn": "oppure", "pr": "op-poo-re", "type": "conjunction", "en": "or" },
+      { "itn": "e", "pr": "eh", "type": "conjunction", "en": "and" },
+      { "itn": "ma", "pr": "ma", "type": "conjunction", "en": "but" }
+    ],
+    "answer": [{ "itn": "oppure", "pr": "op-poo-re" }]
+  }
+]
+,"part2":[
+  {
+    "itn": "Vivo ___ Roma.",
+    "pr": "VI-vo ___ RO-ma.",
+    "en": "I live [[in]] Rome.",
+    "options": [
+      { "itn": "in", "pr": "in", "type": "preposition", "en": "in/at" },
+      { "itn": "su", "pr": "su", "type": "preposition", "en": "on" },
+      { "itn": "con", "pr": "kon", "type": "preposition", "en": "with" }
+    ],
+    "answer": [{ "itn": "in", "pr": "in" }]
+  },
+  {
+    "itn": "Il libro è ___ tavolo.",
+    "pr": "Il LI-bro e ___ TA-vo-lo.",
+    "en": "The book is [[on]] the table.",
+    "options": [
+      { "itn": "su", "pr": "su", "type": "preposition", "en": "on" },
+      { "itn": "da", "pr": "da", "type": "preposition", "en": "from/by" },
+      { "itn": "di", "pr": "di", "type": "preposition", "en": "of/from" }
+    ],
+    "answer": [{ "itn": "su", "pr": "su" }]
+  },
+  {
+    "itn": "Esco ___ amici stasera.",
+    "pr": "ES-co ___ A-mi-ci sta-SE-ra.",
+    "en": "I’m going out [[with]] friends tonight.",
+    "options": [
+      { "itn": "con", "pr": "kon", "type": "preposition", "en": "with" },
+      { "itn": "per", "pr": "per", "type": "preposition", "en": "for" },
+      { "itn": "senza", "pr": "sen-za", "type": "preposition", "en": "without" }
+    ],
+    "answer": [{ "itn": "con", "pr": "kon" }]
+  },
+  {
+    "itn": "Ho ricevuto una lettera ___ mia sorella.",
+    "pr": "O ri-CHE-vo una LET-te-ra ___ MIA SO-rel-la.",
+    "en": "I received a letter [[from]] my sister.",
+    "options": [
+      { "itn": "da", "pr": "da", "type": "preposition", "en": "from/by" },
+      { "itn": "di", "pr": "di", "type": "preposition", "en": "of/from" },
+      { "itn": "in", "pr": "in", "type": "preposition", "en": "in/at" }
+    ],
+    "answer": [{ "itn": "da", "pr": "da" }]
+  },
+  {
+    "itn": "La macchina ___ mio padre è nuova.",
+    "pr": "La MA-chi-na ___ MIO PA-dre e NO-va.",
+    "en": "My father’s car is new ([[of]] my father).",
+    "options": [
+      { "itn": "di", "pr": "di", "type": "preposition", "en": "of/from" },
+      { "itn": "su", "pr": "su", "type": "preposition", "en": "on" },
+      { "itn": "con", "pr": "kon", "type": "preposition", "en": "with" }
+    ],
+    "answer": [{ "itn": "di", "pr": "di" }]
+  },
+  {
+    "itn": "Questo regalo è ___ te.",
+    "pr": "KWE-sto re-GA-lo e ___ TE.",
+    "en": "This gift is [[for]] you.",
+    "options": [
+      { "itn": "per", "pr": "per", "type": "preposition", "en": "for" },
+      { "itn": "senza", "pr": "sen-za", "type": "preposition", "en": "without" },
+      { "itn": "in", "pr": "in", "type": "preposition", "en": "in/at" }
+    ],
+    "answer": [{ "itn": "per", "pr": "per" }]
+  },
+  {
+    "itn": "Non posso fare la torta ___ zucchero.",
+    "pr": "Non POS-so FA-re la TOR-ta ___ ZUC-che-ro.",
+    "en": "I can’t make the cake [[without]] sugar.",
+    "options": [
+      { "itn": "senza", "pr": "sen-za", "type": "preposition", "en": "without" },
+      { "itn": "da", "pr": "da", "type": "preposition", "en": "from/by" },
+      { "itn": "su", "pr": "su", "type": "preposition", "en": "on" }
+    ],
+    "answer": [{ "itn": "senza", "pr": "sen-za" }]
+  },
+  {
+    "itn": "Abbiamo parlato ___ progetto.",
+    "pr": "Ab-bia-mo par-LA-to ___ PRO-jet-to.",
+    "en": "We talked [[about]] the project.",
+    "options": [
+      { "itn": "su riguardo a", "pr": "su ri-guard-o a", "type": "preposition", "en": "about" },
+      { "itn": "di", "pr": "di", "type": "preposition", "en": "of/from" },
+      { "itn": "con", "pr": "kon", "type": "preposition", "en": "with" }
+    ],
+    "answer": [{ "itn": "su riguardo a", "pr": "su ri-guard-o a" }]
+  },
+  {
+    "itn": "Sono arrivato ___ Milano ieri.",
+    "pr": "So-no ar-ri-VA-to ___ Mi-LA-no i-e-ri.",
+    "en": "I arrived [[in]] Milan yesterday.",
+    "options": [
+      { "itn": "a", "pr": "a", "type": "preposition", "en": "to/at" },
+      { "itn": "in", "pr": "in", "type": "preposition", "en": "in/at" },
+      { "itn": "da", "pr": "da", "type": "preposition", "en": "from/by" }
+    ],
+    "answer": [{ "itn": "in", "pr": "in" }]
+  },
+  {
+    "itn": "Ho messo il libro ___ zaino.",
+    "pr": "O MES-so il LI-bro ___ ZAI-no.",
+    "en": "I put the book [[in]] the backpack.",
+    "options": [
+      { "itn": "in", "pr": "in", "type": "preposition", "en": "in/at" },
+      { "itn": "su", "pr": "su", "type": "preposition", "en": "on" },
+      { "itn": "per", "pr": "per", "type": "preposition", "en": "for" }
+    ],
+    "answer": [{ "itn": "in", "pr": "in" }]
+  }
+],"part3":[
+  {
+    "itn": "___ è il tuo amico?",
+    "pr": "___ e il tuo a-MI-co?",
+    "en": "[[Who]] is your friend?",
+    "options": [
+      { "itn": "chi", "pr": "ki", "type": "question word", "en": "who" },
+      { "itn": "dove", "pr": "do-ve", "type": "question word", "en": "where" },
+      { "itn": "quando", "pr": "kwan-do", "type": "question word", "en": "when" }
+    ],
+    "answer": [{ "itn": "chi", "pr": "ki" }]
+  },
+  {
+    "itn": "___ hai fatto ieri?",
+    "pr": "___ ai fa-tto i-e-ri?",
+    "en": "[[What]] did you do yesterday?",
+    "options": [
+      { "itn": "che cosa", "pr": "ke ko-sa", "type": "question word", "en": "what" },
+      { "itn": "come", "pr": "ko-me", "type": "question word", "en": "how" },
+      { "itn": "perché", "pr": "per-ke", "type": "question word", "en": "why" }
+    ],
+    "answer": [{ "itn": "che cosa", "pr": "ke ko-sa" }]
+  },
+  {
+    "itn": "___ abiti?",
+    "pr": "___ a-bi-ti?",
+    "en": "[[Where]] do you live?",
+    "options": [
+      { "itn": "dove", "pr": "do-ve", "type": "question word", "en": "where" },
+      { "itn": "chi", "pr": "ki", "type": "question word", "en": "who" },
+      { "itn": "quando", "pr": "kwan-do", "type": "question word", "en": "when" }
+    ],
+    "answer": [{ "itn": "dove", "pr": "do-ve" }]
+  },
+  {
+    "itn": "___ è il tuo compleanno?",
+    "pr": "___ e il tuo kom-ple-an-no?",
+    "en": "[[When]] is your birthday?",
+    "options": [
+      { "itn": "quando", "pr": "kwan-do", "type": "question word", "en": "when" },
+      { "itn": "come", "pr": "ko-me", "type": "question word", "en": "how" },
+      { "itn": "che cosa", "pr": "ke ko-sa", "type": "question word", "en": "what" }
+    ],
+    "answer": [{ "itn": "quando", "pr": "kwan-do" }]
+  },
+  {
+    "itn": "___ sei triste?",
+    "pr": "___ sei tris-te?",
+    "en": "[[Why]] are you sad?",
+    "options": [
+      { "itn": "perché", "pr": "per-ke", "type": "question word", "en": "why" },
+      { "itn": "chi", "pr": "ki", "type": "question word", "en": "who" },
+      { "itn": "come", "pr": "ko-me", "type": "question word", "en": "how" }
+    ],
+    "answer": [{ "itn": "perché", "pr": "per-ke" }]
+  },
+  {
+    "itn": "___ ti chiami?",
+    "pr": "___ ti ki-a-mi?",
+    "en": "[[What]] is your name?",
+    "options": [
+      { "itn": "come", "pr": "ko-me", "type": "question word", "en": "how" },
+      { "itn": "quale", "pr": "kwa-le", "type": "question word", "en": "which" },
+      { "itn": "chi", "pr": "ki", "type": "question word", "en": "who" }
+    ],
+    "answer": [{ "itn": "come", "pr": "ko-me" }]
+  },
+  {
+    "itn": "___ libro vuoi leggere?",
+    "pr": "___ LI-bro vuoi le-dge-re?",
+    "en": "[[Which]] book do you want to read?",
+    "options": [
+      { "itn": "quale", "pr": "kwa-le", "type": "question word", "en": "which/what kind of" },
+      { "itn": "che cosa", "pr": "ke ko-sa", "type": "question word", "en": "what" },
+      { "itn": "chi", "pr": "ki", "type": "question word", "en": "who" }
+    ],
+    "answer": [{ "itn": "quale", "pr": "kwa-le" }]
+  },
+  {
+    "itn": "___ viene alla festa?",
+    "pr": "___ vie-ne al-la fe-sta?",
+    "en": "[[Who]] is coming to the party?",
+    "options": [
+      { "itn": "chi", "pr": "ki", "type": "question word", "en": "who" },
+      { "itn": "dove", "pr": "do-ve", "type": "question word", "en": "where" },
+      { "itn": "come", "pr": "ko-me", "type": "question word", "en": "how" }
+    ],
+    "answer": [{ "itn": "chi", "pr": "ki" }]
+  },
+  {
+    "itn": "___ hai comprato quella maglietta?",
+    "pr": "___ ai kom-pra-to kwe-lla ma-lyet-ta?",
+    "en": "[[Where]] did you buy that T-shirt?",
+    "options": [
+      { "itn": "dove", "pr": "do-ve", "type": "question word", "en": "where" },
+      { "itn": "quando", "pr": "kwan-do", "type": "question word", "en": "when" },
+      { "itn": "perché", "pr": "per-ke", "type": "question word", "en": "why" }
+    ],
+    "answer": [{ "itn": "dove", "pr": "do-ve" }]
+  },
+  {
+    "itn": "___ hai deciso di partire?",
+    "pr": "___ ai de-chi-so di par-ti-re?",
+    "en": "[[When]] did you decide to leave?",
+    "options": [
+      { "itn": "quando", "pr": "kwan-do", "type": "question word", "en": "when" },
+      { "itn": "come", "pr": "ko-me", "type": "question word", "en": "how" },
+      { "itn": "chi", "pr": "ki", "type": "question word", "en": "who" }
+    ],
+    "answer": [{ "itn": "quando", "pr": "kwan-do" }]
+  }
+]
+,"part4":[
+  {
+    "itn": "Io ___ voglio uscire oggi.",
+    "pr": "Io ___ vo-lyo u-sci-re o-ggi.",
+    "en": "I [[do not]] want to go out today.",
+    "options": [
+      { "itn": "non", "pr": "non", "type": "negation", "en": "not" },
+      { "itn": "già", "pr": "ja", "type": "adverb", "en": "already" },
+      { "itn": "mai", "pr": "mai", "type": "adverb", "en": "never" }
+    ],
+    "answer": [{ "itn": "non", "pr": "non" }]
+  },
+  {
+    "itn": "Non mi piace il tè, e ___ il caffè.",
+    "pr": "Non mi pya-che il te, e ___ il kaf-fe.",
+    "en": "I don’t like tea, and [[neither]] coffee.",
+    "options": [
+      { "itn": "né", "pr": "ne", "type": "negation", "en": "neither/nor" },
+      { "itn": "anche", "pr": "an-ke", "type": "adverb", "en": "also" },
+      { "itn": "sempre", "pr": "sem-pre", "type": "adverb", "en": "always" }
+    ],
+    "answer": [{ "itn": "né", "pr": "ne" }]
+  },
+  {
+    "itn": "Vorrei ___ andare al cinema stasera.",
+    "pr": "Vor-rei ___ an-da-re al ci-ne-ma sta-se-ra.",
+    "en": "I would [[also]] like to go to the cinema tonight.",
+    "options": [
+      { "itn": "anche", "pr": "an-ke", "type": "adverb", "en": "also/too" },
+      { "itn": "ancora", "pr": "an-ko-ra", "type": "adverb", "en": "still/yet" },
+      { "itn": "già", "pr": "ja", "type": "adverb", "en": "already" }
+    ],
+    "answer": [{ "itn": "anche", "pr": "an-ke" }]
+  },
+  {
+    "itn": "Non ho ___ finito i compiti.",
+    "pr": "Non ho ___ fi-ni-to i kom-pi-ti.",
+    "en": "I have [[still / yet]] not finished the homework.",
+    "options": [
+      { "itn": "ancora", "pr": "an-ko-ra", "type": "adverb", "en": "still/yet" },
+      { "itn": "già", "pr": "ja", "type": "adverb", "en": "already" },
+      { "itn": "sempre", "pr": "sem-pre", "type": "adverb", "en": "always" }
+    ],
+    "answer": [{ "itn": "ancora", "pr": "an-ko-ra" }]
+  },
+  {
+    "itn": "Ho ___ mangiato.",
+    "pr": "Ho ___ man-dja-to.",
+    "en": "I have [[already]] eaten.",
+    "options": [
+      { "itn": "già", "pr": "ja", "type": "adverb", "en": "already" },
+      { "itn": "mai", "pr": "mai", "type": "adverb", "en": "never" },
+      { "itn": "non", "pr": "non", "type": "negation", "en": "not" }
+    ],
+    "answer": [{ "itn": "già", "pr": "ja" }]
+  },
+  {
+    "itn": "Vado in palestra ___ due volte a settimana.",
+    "pr": "Va-do in pa-le-stra ___ due vol-te a set-ti-ma-na.",
+    "en": "I go to the gym [[always]] twice a week.",
+    "options": [
+      { "itn": "sempre", "pr": "sem-pre", "type": "adverb", "en": "always" },
+      { "itn": "ancora", "pr": "an-ko-ra", "type": "adverb", "en": "still/yet" },
+      { "itn": "anche", "pr": "an-ke", "type": "adverb", "en": "also/too" }
+    ],
+    "answer": [{ "itn": "sempre", "pr": "sem-pre" }]
+  },
+  {
+    "itn": "Non bevo caffè ___ tè.",
+    "pr": "Non be-vo kaf-fe ___ te.",
+    "en": "I don’t drink coffee [[nor]] tea.",
+    "options": [
+      { "itn": "né", "pr": "ne", "type": "negation", "en": "neither/nor" },
+      { "itn": "non", "pr": "non", "type": "negation", "en": "not" },
+      { "itn": "anche", "pr": "an-ke", "type": "adverb", "en": "also/too" }
+    ],
+    "answer": [{ "itn": "né", "pr": "ne" }]
+  },
+  {
+    "itn": "Non ho ___ visto quel film.",
+    "pr": "Non ho ___ vi-sto kwel film.",
+    "en": "I have [[never]] seen that movie.",
+    "options": [
+      { "itn": "mai", "pr": "mai", "type": "adverb", "en": "never" },
+      { "itn": "già", "pr": "ja", "type": "adverb", "en": "already" },
+      { "itn": "ancora", "pr": "an-ko-ra", "type": "adverb", "en": "still/yet" }
+    ],
+    "answer": [{ "itn": "mai", "pr": "mai" }]
+  },
+  {
+    "itn": "Ho finito i compiti, e lui ___.",
+    "pr": "Ho fi-ni-to i kom-pi-ti, e lui ___.",
+    "en": "I finished the homework, and he [[also]] did.",
+    "options": [
+      { "itn": "anche", "pr": "an-ke", "type": "adverb", "en": "also/too" },
+      { "itn": "sempre", "pr": "sem-pre", "type": "adverb", "en": "always" },
+      { "itn": "già", "pr": "ja", "type": "adverb", "en": "already" }
+    ],
+    "answer": [{ "itn": "anche", "pr": "an-ke" }]
+  },
+  {
+    "itn": "Non ho ___ capito la lezione.",
+    "pr": "Non ho ___ ka-pi-to la le-tsyo-ne.",
+    "en": "I [[did not]] understand the lesson.",
+    "options": [
+      { "itn": "non", "pr": "non", "type": "negation", "en": "not" },
+      { "itn": "ancora", "pr": "an-ko-ra", "type": "adverb", "en": "still/yet" },
+      { "itn": "già", "pr": "ja", "type": "adverb", "en": "already" }
+    ],
+    "answer": [{ "itn": "non", "pr": "non" }]
+  }
+]
+,"part5":[
+  {
+    "itn": "___ vado al mercato ogni sabato.",
+    "pr": "___ va-do al mer-ca-to o-gni sa-ba-to.",
+    "en": "[[I]] go to the market every Saturday.",
+    "options": [
+      { "itn": "io", "pr": "io", "type": "pronoun", "en": "I" },
+      { "itn": "tu", "pr": "tu", "type": "pronoun", "en": "you" },
+      { "itn": "lui", "pr": "lui", "type": "pronoun", "en": "he" }
+    ],
+    "answer": [{ "itn": "io", "pr": "io" }]
+  },
+  {
+    "itn": "Vuoi venire con ___ al cinema?",
+    "pr": "Vuoi ve-ni-re kon ___ al chi-ne-ma?",
+    "en": "[[me]] do you want to come to the cinema?",
+    "options": [
+      { "itn": "me", "pr": "me", "type": "pronoun", "en": "me" },
+      { "itn": "io", "pr": "io", "type": "pronoun", "en": "I" },
+      { "itn": "tu", "pr": "tu", "type": "pronoun", "en": "you" }
+    ],
+    "answer": [{ "itn": "me", "pr": "me" }]
+  },
+  {
+    "itn": "___ ha preparato la cena stasera.",
+    "pr": "___ a pre-pa-ra-to la che-na sta-se-ra.",
+    "en": "[[He]] prepared dinner tonight.",
+    "options": [
+      { "itn": "lui", "pr": "lui", "type": "pronoun", "en": "he" },
+      { "itn": "lei", "pr": "lei", "type": "pronoun", "en": "she" },
+      { "itn": "io", "pr": "io", "type": "pronoun", "en": "I" }
+    ],
+    "answer": [{ "itn": "lui", "pr": "lui" }]
+  },
+  {
+    "itn": "___ andiamo in vacanza la prossima settimana?",
+    "pr": "___ an-dya-mo in va-kan-tsa la pros-si-ma set-ti-ma-na?",
+    "en": "[[Shall we]] go on vacation next week?",
+    "options": [
+      { "itn": "noi", "pr": "noi", "type": "pronoun", "en": "we" },
+      { "itn": "voi", "pr": "voi", "type": "pronoun", "en": "you (pl)" },
+      { "itn": "loro", "pr": "lo-ro", "type": "pronoun", "en": "they" }
+    ],
+    "answer": [{ "itn": "noi", "pr": "noi" }]
+  },
+  {
+    "itn": "La penna è ___ sul tavolo.",
+    "pr": "La pen-na e ___ sul ta-vo-lo.",
+    "en": "The pen is [[here]] on the table.",
+    "options": [
+      { "itn": "qui", "pr": "kwi", "type": "demonstrative", "en": "here" },
+      { "itn": "lì", "pr": "li", "type": "demonstrative", "en": "there" },
+      { "itn": "questo", "pr": "kwes-to", "type": "demonstrative", "en": "this" }
+    ],
+    "answer": [{ "itn": "qui", "pr": "kwi" }]
+  },
+  {
+    "itn": "Vorrei parlare con ___ per favore.",
+    "pr": "Vor-rei par-la-re kon ___ per fa-vo-re.",
+    "en": "I would like to speak with [[him/her]] please.",
+    "options": [
+      { "itn": "lui / lei", "pr": "lui / lei", "type": "pronoun", "en": "him/her" },
+      { "itn": "io", "pr": "io", "type": "pronoun", "en": "I" },
+      { "itn": "tu", "pr": "tu", "type": "pronoun", "en": "you" }
+    ],
+    "answer": [{ "itn": "lui / lei", "pr": "lui / lei" }]
+  },
+  {
+    "itn": "___ siete già stati a Firenze?",
+    "pr": "___ sye-te ja sta-ti a Fi-ren-ze?",
+    "en": "[[Have you (pl)]] already been to Florence?",
+    "options": [
+      { "itn": "voi", "pr": "voi", "type": "pronoun", "en": "you (pl)" },
+      { "itn": "noi", "pr": "noi", "type": "pronoun", "en": "we" },
+      { "itn": "loro", "pr": "lo-ro", "type": "pronoun", "en": "they" }
+    ],
+    "answer": [{ "itn": "voi", "pr": "voi" }]
+  },
+  {
+    "itn": "___ amano giocare a calcio.",
+    "pr": "___ a-ma-no gio-ca-re a kal-cho.",
+    "en": "[[They]] love playing soccer.",
+    "options": [
+      { "itn": "loro", "pr": "lo-ro", "type": "pronoun", "en": "they" },
+      { "itn": "noi", "pr": "noi", "type": "pronoun", "en": "we" },
+      { "itn": "voi", "pr": "voi", "type": "pronoun", "en": "you (pl)" }
+    ],
+    "answer": [{ "itn": "loro", "pr": "lo-ro" }]
+  },
+  {
+    "itn": "___ vuole un gelato?",
+    "pr": "___ vo-le u-n je-la-to?",
+    "en": "[[Who]] wants an ice cream?",
+    "options": [
+      { "itn": "chi", "pr": "ki", "type": "question", "en": "who" },
+      { "itn": "che cosa", "pr": "ke ko-sa", "type": "question", "en": "what" },
+      { "itn": "dove", "pr": "do-ve", "type": "question", "en": "where" }
+    ],
+    "answer": [{ "itn": "chi", "pr": "ki" }]
+  },
+  {
+    "itn": "___ è molto interessante.",
+    "pr": "___ e mol-to in-te-res-san-te.",
+    "en": "[[This]] is very interesting.",
+    "options": [
+      { "itn": "questo", "pr": "kwes-to", "type": "demonstrative", "en": "this" },
+      { "itn": "lì", "pr": "li", "type": "demonstrative", "en": "there" },
+      { "itn": "qui", "pr": "kwi", "type": "demonstrative", "en": "here" }
+    ],
+    "answer": [{ "itn": "questo", "pr": "kwes-to" }]
+  }
+]
+
+
+
+
+
+
+}

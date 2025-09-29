@@ -1,0 +1,31 @@
+.site{
+  color: rgb(111, 185, 238);
+  font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-style: italic;
+  margin-right: 2.5rem;
+}
+.s{
+  color:rgb(47, 244, 244);
+  background-color: rgb(8, 22, 40);
+  border-style: solid;
+  
+  border-radius: 15px;
+  border-color: rgb(47, 244, 244);
+
+}
+
+.s:hover{
+  color: rgb(8, 22, 40);
+  background-color: rgb(47, 244, 244);
+  border-color: rgb(8, 22, 40);
+}
+.user-name{
+  color: rgb(47, 244, 244);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: large;
+}
+img{
+
+  border-radius: 69px;
+}
+

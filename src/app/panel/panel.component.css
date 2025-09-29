@@ -1,0 +1,30 @@
+.kanji-container {
+  display: flex;
+  flex-direction: row; /* default side by side */
+  justify-content: center;
+  align-items: flex-start;
+  gap: 2rem; /* spacing between panel and keyboard */
+  padding: 1rem;
+  flex-wrap: wrap; /* allows stacking on small screens */
+}
+
+.quiz-panel, .keyboard {
+  flex: 1 1 400px; /* grow and shrink, base width 400px */
+  max-width: 400px;
+}
+
+/* Optional: make keyboard slightly smaller for style */
+.keyboard {
+  max-width: 350px;
+}
+
+/* Responsive: stack on small screens */
+@media (max-width: 768px) {
+  .kanji-quiz-container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .quiz-panel, .keyboard {
+    max-width: 100%; /* fill container width */
+  }
+}

@@ -1,0 +1,41 @@
+<p>activation works!</p>
+<div class="flex items-center justify-center min-h-screen bg-gray-50">
+  <div class="bg-white shadow-xl rounded-2xl p-8 w-full max-w-md text-center">
+    <h1 class="text-2xl font-bold text-gray-800 mb-4">
+      Almost Done Email Verification: 
+    </h1>
+          <a class='text-cyan-800' (click)="someActivation()">click activate</a> 
+
+    <div *ngIf="activate() === 'loading'">
+      <p class="text-gray-600">Verifying your account...</p>
+
+      <div class="mt-4">
+        <span class="loader"></span>
+      </div>
+    </div>
+
+    <div *ngIf="activate() === 'success'">
+      <p class="text-green-600 font-semibold mb-4">
+        ✅ Your account has been successfully activated!
+      </p>
+      <app-description 
+        *ngIf="showSurvey" 
+        (close)="showSurvey = false" 
+        (submitSurvey)="handleSurvey($event)">
+      </app-description>
+
+      <a [routerLink]="'/signin'" class="bg-blue-200 text-cyan-800 px-4 py-2 rounded-lg hover:bg-blue-700 hover:text-blue-200 ">
+        Go to Login
+      </a>
+    </div>
+
+    <div *ngIf="activate() === 'error'">
+      <p class="text-red-600 font-semibold mb-4">
+        ❌ Verification failed. The link may be invalid or expired.
+      </p>
+      <a routerLink="/signup" class="bg-gray-600 text-white px-4 py-2 rounded-lg hover:bg-gray-700">
+        Sign Up Again
+      </a>
+    </div>
+  </div>
+</div>

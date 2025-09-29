@@ -1,0 +1,82 @@
+/* General container */
+.slideshow-container {
+  max-width: 500px;
+  margin: 3rem auto;
+  padding: 2rem;
+  border-radius: 16px;
+  text-align: center;
+  transition: background 0.3s, color 0.3s;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+/* Light theme */
+.light {
+  background: #ffffff;
+  color: #333;
+}
+
+/* Dark theme */
+.dark {
+  background: #1e1e1e;
+  color: #f0f0f0;
+}
+
+/* Card content */
+.card h1.kanji {
+  font-size: 4rem;
+  margin-bottom: 1rem;
+  font-weight: bold;
+}
+
+.card p {
+  font-size: 1.2rem;
+  margin: 0.4rem 0;
+}
+
+/* Buttons */
+.nav-buttons {
+  margin-top: 1.5rem;
+}
+
+.nav-buttons button,
+.theme-toggle button {
+  margin: 0 0.5rem;
+  padding: 0.6rem 1.2rem;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 1rem;
+  transition: background 0.3s, transform 0.2s;
+}
+
+/* Light theme buttons */
+.light .nav-buttons button,
+.light .theme-toggle button {
+  background: #f0f0f0;
+  color: #333;
+}
+
+.light .nav-buttons button:hover,
+.light .theme-toggle button:hover {
+  background: #ddd;
+  transform: scale(1.05);
+}
+
+/* Dark theme buttons */
+.dark .nav-buttons button,
+.dark .theme-toggle button {
+  background: #333;
+  color: #f0f0f0;
+}
+
+.dark .nav-buttons button:hover,
+.dark .theme-toggle button:hover {
+  background: #555;
+  transform: scale(1.05);
+}
+
+/* Theme toggle placement */
+.theme-toggle {
+  margin-top: 1rem;
+}

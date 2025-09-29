@@ -1,0 +1,2312 @@
+{
+  "course1-4": [
+    {
+      "phrase": "Il libro [[è]] sul tavolo.",
+      "pr": "Eel LEE-bro [[eh]] sool TAH-vo-lo.",
+      "en": "The book [[is]] on the table.",
+      "des": "",
+      "phrase_name": "phrases",
+      "language": "Italian",
+      "type": "story"
+    },
+    {
+      "phrase": "Il cane [[è]] molto amichevole.",
+      "pr": "Eel CAH-neh [[eh]] MOL-to ah-mee-KEH-vo-leh.",
+      "en": "The dog [[is]] very friendly.",
+      "des": "",
+      "phrase_name": "phrases",
+      "language": "Italian",
+      "type": "story"
+    },
+    {
+      "phrase": "Il ristorante [[è]] vicino alla stazione.",
+      "pr": "Eel ree-sto-RAN-teh [[eh]] vee-CHEE-noh AL-la sta-TSYO-ne.",
+      "en": "The restaurant [[is]] near the station.",
+      "des": "",
+      "phrase_name": "phrases",
+      "language": "Italian",
+      "type": "story"
+    },
+    {
+      "phrase": "Il cielo [[è]] azzurro oggi.",
+      "pr": "Eel CHEH-lo [[eh]] at-ZOOR-ro OJ-jee.",
+      "en": "The sky [[is]] blue today.",
+      "des": "indefinite articles, corresponding to 'a' or 'an' in English.",
+      "phrase_name": "phrases",
+      "language": "Italian",
+      "type": "story"
+    },
+    {
+      "phrase": "La casa [[è]] grande.",
+      "pr": "La CAH-za [[eh]] GRAN-deh.",
+      "en": "The house [[is]] big.",
+      "des": "",
+      "phrase_name": "phrases",
+      "language": "Italian",
+      "type": "story"
+    },
+    {
+      "phrase": "La pizza [[è]] deliziosa.",
+      "pr": "La PEET-tsa [[eh]] de-lee-TSYO-sa.",
+      "en": "The pizza [[is]] delicious.",
+      "des": "",
+      "phrase_name": "phrases",
+      "language": "Italian",
+      "type": "story"
+    },
+    {
+      "phrase": "La macchina [[è]] rossa.",
+      "pr": "La MAH-kee-na [[eh]] ROS-sa.",
+      "en": "The car [[is]] red.",
+      "des": "",
+      "phrase_name": "phrases",
+      "language": "Italian",
+      "type": "story"
+    },
+    {
+      "phrase": "La scuola [[è]] chiusa oggi.",
+      "pr": "La SKWO-la [[eh]] KYOO-za OJ-jee.",
+      "en": "The school [[is]] closed today.",
+      "des": "",
+      "phrase_name": "phrases",
+      "language": "Italian",
+      "type": "story"
+    },
+    {
+      "phrase": "Ho [[un]] gatto.",
+      "pr": "Oh [[oon]] GAT-to.",
+      "en": "I have [[a]] cat.",
+      "des": "",
+      "phrase_name": "phrases",
+      "language": "Italian",
+      "type": "story"
+    },
+    {
+      "phrase": "Voglio comprare [[un]] gelato.",
+      "pr": "VOL-lyo kom-PRA-re [[oon]] je-LA-to.",
+      "en": "I want to buy [[an]] ice cream.",
+      "des": "",
+      "phrase_name": "phrases",
+      "language": "Italian",
+      "type": "story"
+    },
+    {
+      "phrase": "C’è [[un]] problema.",
+      "pr": "Cheh [[oon]] pro-BLEH-ma.",
+      "en": "There is [[a]] problem.",
+      "des": "",
+      "phrase_name": "phrases",
+      "language": "Italian",
+      "type": "story"
+    },
+    {
+      "phrase": "Ha [[un]] amico in Italia.",
+      "pr": "Ah [[oon]] a-MEE-ko een ee-TAH-lya.",
+      "en": "He has [[a]] friend in Italy.",
+      "des": "",
+      "phrase_name": "phrases",
+      "language": "Italian",
+      "type": "story"
+    },
+    {
+      "phrase": "Ho [[una]] sorella.",
+      "pr": "Oh [[OO-na]] so-REL-la.",
+      "en": "I have [[a sister.",
+      "des": "",
+      "phrase_name": "phrases",
+      "language": "Italian",
+      "type": "story"
+    },
+    {
+      "phrase": "Vorrei [[una]] bottiglia d’acqua.",
+      "pr": "Vor-RAY [[OO-na]] bot-TEEL-ya DAH-kwah.",
+      "en": "I would like [[a]] bottle of water.",
+      "des": "",
+      "phrase_name": "phrases",
+      "language": "Italian",
+      "type": "story"
+    },
+    {
+      "phrase": "C’è [[una]] sedia libera.",
+      "pr": "Cheh [[OO-na]] SEH-dya LEE-beh-ra.",
+      "en": "There is [[a]] free chair.",
+      "des": "",
+      "phrase_name": "phrases",
+      "language": "Italian",
+      "type": "story"
+    },
+    {
+      "phrase": "Lei ha [[una]] bella voce.",
+      "pr": "Lay ah [[OO-na]] BEL-la VOH-cheh.",
+      "en": "She has [[a]] beautiful voice.",
+      "des": "",
+      "phrase_name": "phrases",
+      "language": "Italian",
+      "type": "story"
+    },
+    {
+      "phrase": "[[Io]] sono italiano.",
+      "pr": "[[EE-oh]] SO-no ee-ta-LYA-no.",
+      "en": "[[I]] am Italian.",
+      "des": "",
+      "phrase_name": "phrases",
+      "language": "Italian",
+      "type": "story"
+    },
+    {
+      "phrase": "[[Io]] abito a Roma.",
+      "pr": "[[EE-oh]] AH-bee-to a RO-ma.",
+      "en": "[[I]] live in Rome.",
+      "des": "",
+      "phrase_name": "phrases",
+      "language": "Italian",
+      "type": "story"
+    },
+    {
+      "phrase": "[[Io]] studio l’italiano.",
+      "pr": "[[EE-oh]] STU-dyo lee-ta-LYA-no.",
+      "en": "[[I]] study Italian.",
+      "des": "",
+      "phrase_name": "phrases",
+      "language": "Italian",
+      "type": "story"
+    },
+    {
+      "phrase": "[[Io]] voglio viaggiare in Europa.",
+      "pr": "[[EE-oh]] VOL-lyo vyad-JA-re een eh-oo-RO-pa.",
+      "en": "[[I]] want to travel in Europe.",
+      "des": "",
+      "phrase_name": "phrases",
+      "language": "Italian",
+      "type": "story"
+    },
+  {
+    "phrase": "Il mio amico [[è]] molto simpatico.",
+    "pr": "eel mee-oh ah-mee-koh [[eh]] mol-toh seem-pah-tee-koh",
+    "en": "My friend [[is]] very nice.",
+    "des": "Using 'è' (is) to describe a person."
+  },
+  {
+    "phrase": "La stazione [[è]] vicino al centro.",
+    "pr": "lah stah-tsyo-neh [[eh]] vee-chee-no ahl chen-troh",
+    "en": "The station [[is]] near the city center.",
+    "des": "Using 'è' to describe location."
+  },
+  {
+    "phrase": "Il libro [[è]] sul tavolo.",
+    "pr": "eel lee-broh [[eh]] sool tah-voh-loh",
+    "en": "The book [[is]] on the table.",
+    "des": "Using 'è' to indicate position."
+  },
+  {
+    "phrase": "Oggi [[è]] una bella giornata.",
+    "pr": "ohj-jee [[eh]] oo-nah bel-lah jor-nah-tah",
+    "en": "Today [[is]] a beautiful day.",
+    "des": "Using 'è' to talk about the weather."
+  },
+  {
+    "phrase": "La risposta [[è]] corretta.",
+    "pr": "lah ree-spoh-stah [[eh]] kor-ret-tah",
+    "en": "The answer [[is]] correct.",
+    "des": "Using 'è' to confirm correctness."
+  },
+  {
+    "phrase": "Io [[sono]] felice oggi.",
+    "pr": "ee-oh [[soh-noh]] feh-lee-cheh ohj-jee",
+    "en": "I [[am]] happy today.",
+    "des": "Using 'sono' to describe your feelings."
+  },
+  {
+    "phrase": "[[Sono]] a casa adesso.",
+    "pr": "[[soh-noh]] ah kah-sah ah-des-soh",
+    "en": "I [[am]] at home now.",
+    "des": "Using 'sono' to describe current location."
+  },
+  {
+    "phrase": "[[Sono]] pronto per partire.",
+    "pr": "soh-noh pron-toh pehr par-tee-reh",
+    "en": "I [[am]] ready to leave.",
+    "des": "Using 'sono' to express readiness."
+  },
+  {
+    "phrase": "[[Sono]] molto stanco dopo il lavoro.",
+    "pr": "[[soh-noh]] mol-toh stan-koh doh-poh eel lah-voh-roh",
+    "en": "I [[am]] very tired after work.",
+    "des": "Using 'sono' to describe a state after an activity."
+  },
+  {
+    "phrase": "[[Sono]] uno studente di italiano.",
+    "pr": "[[soh-noh]] oo-noh stoo-den-teh dee ee-tah-lyah-noh",
+    "en": "I [[am]] an Italian student.",
+    "des": "Using 'sono' to describe identity."
+  }
+  ],
+  "course1":[
+    
+  {
+    "phrase": "Vado a scuola [[e]] studio.",
+    "pr": "vah-doh ah skwoh-lah [[eh]] stoo-dee-oh",
+    "en": "I go to school [[and]] I study.",
+    "des": "Using 'e' (and) to connect two actions."
+  },
+  {
+    "phrase": "Prendo il caffè [[e]] il panino.",
+    "pr": "pren-doh eel kah-feh [[eh]] eel pah-nee-no",
+    "en": "I take coffee [[and]] the sandwich.",
+    "des": "Listing items with 'e' (and)."
+  },
+  {
+    "phrase": "Lui è gentile [[a]] un po’ timido.",
+    "pr": "loo-ee eh jen-tee-leh [[ah]] oon poh tee-mee-doh",
+    "en": "He is kind but a bit shy.",
+    "des": "'a' used to contrast two qualities, similar to 'but'."
+  },
+  {
+    "phrase": "Amo la pizza [[ma]] non mangio carne.",
+    "pr": "ah-moh lah peet-tsah [[mah]] non mahn-joh kar-neh",
+    "en": "I love pizza but I don’t eat meat.",
+    "des": "Using 'ma' to show contrast (but)."
+  },
+  {
+    "phrase": "Vuoi tè [[o]] caffè?",
+    "pr": "vwoy teh [[oh]] kah-feh",
+    "en": "Do you want tea [[or]] coffee?",
+    "des": "Offering a choice using 'o' (or)."
+  },
+  {
+    "phrase": "Resto a casa [[perché]] piove.",
+    "pr": "reh-stoh ah kah-zah [[pehr-keh]] pyoh-veh",
+    "en": "I stay home [[because]] it's raining.",
+    "des": "Giving a reason using 'perché' (because)."
+  },
+  {
+    "phrase": "Studio l’italiano [[perché]] mi piace.",
+    "pr": "stoo-dee-oh lee-tah-lyah-no [[pehr-keh]] mee pyah-cheh",
+    "en": "I study Italian [[because]] I like it.",
+    "des": "'perché' explains the reason."
+  },
+  {
+    "phrase": "Esco [[anche se]] fa freddo.",
+    "pr": "eh-skoh [[ahn-keh seh]] fah fred-doh",
+    "en": "I go out [[even though]] it's cold.",
+    "des": "'anche se' means 'even though' or 'although'."
+  },
+  {
+    "phrase": "Mangio la pizza [[anche se]] sono a dieta.",
+    "pr": "mahn-joh lah peet-tsah [[ahn-keh seh]] soh-no ah dyeh-tah",
+    "en": "I eat pizza [[even though]] I'm on a diet.",
+    "des": "Contradictory situation with 'anche se'."
+  },
+  {
+    "phrase": "Vengo [[se]] tu vieni.",
+    "pr": "ven-goh [[seh]] too vyeh-nee",
+    "en": "I’ll come [[if]] you come.",
+    "des": "Conditional with 'se' (if)."
+  },
+  {
+    "phrase": "Mangio [[se]] ho fame.",
+    "pr": "mahn-joh [[seh]] oh fah-meh",
+    "en": "I eat [[if]] I'm hungry.",
+    "des": "Basic condition using 'se'."
+  },
+  {
+    "phrase": "Mi piace il gelato, [[ma]] preferisco la frutta.",
+    "pr": "mee pyah-cheh eel jeh-lah-toh, [[mah]] preh-feh-rees-koh lah froot-tah",
+    "en": "I like ice cream, but I prefer fruit.",
+    "des": "Contrast using 'ma' (but)."
+  },
+  {
+    "phrase": "Andiamo al mare [[o]] in montagna?",
+    "pr": "an-dyah-moh ahl mah-reh [[oh]] een mon-tahn-yah",
+    "en": "Shall we go to the sea [[or]] the mountains?",
+    "des": "'o' presents options."
+  },
+  {
+    "phrase": "Leggo il libro [[anche se]] è noioso.",
+    "pr": "leh-goh eel lee-broh [[ahn-keh [[seh]] eh noy-oh-zoh",
+    "en": "I read the book [[even though]] it's boring.",
+    "des": "'anche se' used to express contradiction."
+  },
+  {
+    "phrase": "Chiamo [[se]] ho tempo.",
+    "pr": "kyah-moh [[seh]] oh tem-poh",
+    "en": "I’ll call [[if]] I have time.",
+    "des": "Using 'se' for conditional."
+  }
+
+
+  ],
+  "course1-2":[  {
+    "phrase": "Vado [[a]] scuola.",
+    "pr": "Va-do [[a]] scuo-la",
+    "en": "I go [[to]] school.",
+    "des": "The preposition 'a' means 'to' and is used before places."
+  },
+  {
+    "phrase": "Sono [[di]] Roma.",
+    "pr": "So-no [[di]] Ro-ma",
+    "en": "I am [[from]] Rome.",
+    "des": "'Di' expresses origin or possession, here meaning 'from'."
+  },
+  {
+    "phrase": "Il libro è [[su]] il tavolo.",
+    "pr": "Il li-bro è [[su]] il ta-vo-lo",
+    "en": "The book is [[on]] the table.",
+    "des": "'Su' means 'on' and shows position."
+  },
+  {
+    "phrase": "Parlo [[con]] Maria.",
+    "pr": "Par-lo [[con]] Ma-ri-a",
+    "en": "I speak with Maria.",
+    "des": "'Con' means 'with' and introduces a companion."
+  },
+  {
+    "phrase": "Studio [[per]] l'esame.",
+    "pr": "Stu-dio [[per]] le-sa-me",
+    "en": "I study [[for]] the exam.",
+    "des": "'Per' means 'for' and indicates purpose."
+  },
+  {
+    "phrase": "Vivo [[in]] Italia.",
+    "pr": "Vi-vo [[in]] I-ta-lia",
+    "en": "I live [[in]] Italy.",
+    "des": "'In' means 'in' and is used before countries and regions."
+  },
+  {
+    "phrase": "Cammino [[tra]] gli alberi.",
+    "pr": "Cam-mi-no [[tra]] gli al-be-ri",
+    "en": "I walk [[among]] the trees.",
+    "des": "'Tra' means 'among' or 'between'."
+  },
+  {
+    "phrase": "Il gatto è [[sotto]] il letto.",
+    "pr": "Il gat-to è [[sot-to]] il let-to",
+    "en": "The cat is under the bed.",
+    "des": "'Sotto' means 'under', showing position."
+  },
+  {
+    "phrase": "Arrivo [[dopo]] cena.",
+    "pr": "Ar-ri-vo [[do-po]] ce-na",
+    "en": "I arrive [[after]] dinner.",
+    "des": "'Dopo' means 'after' and is used for time."
+  },
+  {
+    "phrase": "Corro [[verso]] casa.",
+    "pr": "Cor-ro [[ver-so]] ca-sa",
+    "en": "I run [[towards]] home.",
+    "des": "'Verso' means 'towards' and shows direction."
+  }
+],"course1-3":[
+  {
+    "phrase": "Voglio un caffè [[e]] un cornetto.",
+    "pr": "VOH-lyoh oon kah-FEH [[eh]] oon cor-NET-toh",
+    "en": "I want a coffee [[and]] a croissant.",
+    "des": "Using 'e' (and) to join two items.",
+    "phrase_name": "and"
+  },
+  {
+    "phrase": "Mi piace il gelato, [[ma]] fa freddo.",
+    "pr": "mee PYA-cheh eel jeh-LAH-toh, [[mah]] fah FREHD-doh",
+    "en": "I like ice cream, but it’s cold.",
+    "des": "Using 'ma' (but) to contrast two ideas.",
+    "phrase_name": "but"
+  },
+  {
+    "phrase": "Preferisci pizza [[o]] pasta?",
+    "pr": "preh-feh-REE-shee PEET-tsah [[oh]] PAHS-tah?",
+    "en": "Do you prefer pizza [[or]] pasta?",
+    "des": "Using 'o' (or) to offer choices.",
+    "phrase_name": "or"
+  },
+  {
+    "phrase": "Non vado al parco [[perché]] piove.",
+    "pr": "non VAH-doh ahl PAR-koh [[pehr-KEH]] PYOH-veh",
+    "en": "I’m not going to the park [[because]] it’s raining.",
+    "des": "Using 'perché' (because) to give a reason.",
+    "phrase_name": "because"
+  },
+  {
+    "phrase": "Esco [[anche se]] sono stanco.",
+    "pr": "EH-skoh [[AHN-keh seh]] SOH-noh STAN-koh",
+    "en": "I’m going out [[although]] I’m tired.",
+    "des": "Using 'anche se' (although) to show contrast.",
+    "phrase_name": "although"
+  },
+  {
+    "phrase": "[[Se]] vuoi, possiamo studiare insieme.",
+    "pr": "[[seh]] VWOY, pohs-SYAH-moh stoo-DYAH-reen see-NYEH-meh",
+    "en": "[[If]] you want, we can study together.",
+    "des": "Using 'se' (if) to express a condition.",
+    "phrase_name": "if"
+  },
+  {
+    "phrase": "Mi piace il caffè [[e]] il tè.",
+    "pr": "mee pyah-cheh eel kah-feh [[eh]] eel teh",
+    "en": "I like coffee [[and]] tea.",
+    "des": "Using 'e' (and) to join two nouns.",
+    "phrase_name": "and"
+  },
+  {
+    "phrase": "Vado al parco [[ma]] piove.",
+    "pr": "vah-doh ahl pahr-koh [[mah]] pyoh-veh",
+    "en": "I’m going to the park [[but it’s raining.",
+    "des": "Using 'ma' (but) to contrast two ideas.",
+    "phrase_name": "but"
+  },
+  {
+    "phrase": "Preferisci il gelato [[o]] la torta?",
+    "pr": "preh-feh-ree-shee eel jeh-lah-toh [[oh]] lah tor-tah",
+    "en": "Do you prefer ice cream [[or]] cake?",
+    "des": "Using 'o' (or) to offer a choice.",
+    "phrase_name": "or"
+  },
+  {
+    "phrase": "Studio italiano [[perché]] mi piace la lingua.",
+    "pr": "stoo-dee-oh ee-tah-lyah-no [[pehr-keh]] mee pyah-cheh lah leen-gwah",
+    "en": "I study Italian [[because]] I like the language.",
+    "des": "Using 'perché' (because) to express a reason.",
+    "phrase_name": "because"
+  },
+  {
+    "phrase": "Anche se è tardi, usciamo.",
+    "pr": "an-keh seh eh tar-dee, oo-shyah-moh",
+    "en": "Although it's late, we're going out.",
+    "des": "Using 'anche se' (although) to show contrast.",
+    "phrase_name": "although"
+  },
+  {
+    "phrase": "[[Se]] hai fame, c’è della pizza.",
+    "pr": "[[seh]] ai fah-meh, cheh del-lah peet-sah",
+    "en": "[[If]] you're hungry, there's some pizza.",
+    "des": "Using 'se' (if) for a condition.",
+    "phrase_name": "if"
+  }
+]
+
+
+  ,
+  "course2":[
+    
+  {
+    "phrase": "Sono [[in]] casa.",
+    "pr": "soh-no [[een]] kah-zah",
+    "en": "I am at home.",
+    "des": "Using 'in' for location (equivalent to 'в')."
+  },
+  {
+    "phrase": "Lavoro [[in]] ufficio.",
+    "pr": "lah-voh-roh [[een]] oof-fee-cho",
+    "en": "I work [[in]] an office.",
+    "des": "'in' used for being in a place or building."
+  },
+  {
+    "phrase": "Il libro è [[sul]] tavolo.",
+    "pr": "eel lee-broh eh [[sool]] tah-voh-lo",
+    "en": "The book is on the table.",
+    "des": "'su' (on) corresponds to Russian 'на'."
+  },
+  {
+    "phrase": "Metto la tazza [[sul]] piatto.",
+    "pr": "meh-toh lah taht-tsah [[sool]] pyat-toh",
+    "en": "I put the cup [[on]] the plate.",
+    "des": "Preposition 'su' for placement."
+  },
+  {
+    "phrase": "Vado al cinema con Maria.",
+    "pr": "vah-doh ahl chee-neh-mah kon mah-ree-ah",
+    "en": "I go to the cinema with Maria.",
+    "des": "'con' expresses companionship (like 'с')."
+  },
+  {
+    "phrase": "Studio con il mio amico.",
+    "pr": "stoo-dee-oh kon eel mee-oh ah-mee-koh",
+    "en": "I study with my friend.",
+    "des": "Preposition 'con' (with)."
+  },
+  {
+    "phrase": "La casa è [[vicino al]] fiume.",
+    "pr": "lah kah-zah eh [[vee-chee-no ahl]] fyoo-meh",
+    "en": "The house is [[near]] the river.",
+    "des": "'vicino a' functions like 'у' (near)."
+  },
+  {
+    "phrase": "Sono da Marco.",
+    "pr": "soh-no dah mar-koh",
+    "en": "I am at Marco’s (place).",
+    "des": "'da' shows possession or being at someone's place."
+  },
+  {
+    "phrase": "Vengo [[da]] Roma.",
+    "pr": "ven-goh [[dah]] roh-mah",
+    "en": "I come [[from]] Rome.",
+    "des": "Using 'da' to express origin (like 'от')."
+  },
+  {
+    "phrase": "Parto [[da]] casa alle 8.",
+    "pr": "par-toh [[dah]] kah-zah ahl-leh oh-toh",
+    "en": "I leave [[from]] home at 8.",
+    "des": "'da' indicating the point of departure."
+  },
+  {
+    "phrase": "Questo regalo è [[per]] te.",
+    "pr": "kweh-stoh reh-gah-loh eh [[pehr]] teh",
+    "en": "This gift is [[for]] you.",
+    "des": "'per' means 'for' (like 'для')."
+  },
+  {
+    "phrase": "Ho bisogno di una penna [[per]] scrivere.",
+    "pr": "oh bee-zoh-nyoh dee oo-nah pen-nah [[pehr]] skree-veh-reh",
+    "en": "I need a pen [[for]] writing.",
+    "des": "'per' indicating purpose."
+  },
+  {
+    "phrase": "[[Senza]] zucchero, per favore.",
+    "pr": "[[sen-tsah]] zoo-keh-roh pehr fah-voh-reh",
+    "en": "[[Without]] sugar, please.",
+    "des": "'senza' is used for 'without' (like 'без')."
+  },
+  {
+    "phrase": "Bevo il caffè [[senza]] latte.",
+    "pr": "beh-voh eel kah-feh [[sen-tsah]] laht-teh",
+    "en": "I drink coffee [[without]] milk.",
+    "des": "'senza' expresses lack of something."
+  },
+  {
+    "phrase": "Parliamo [[del]] film.",
+    "pr": "par-lyah-moh [[del]] feelm",
+    "en": "We talk about the movie.",
+    "des": "'di' or 'su' used for 'about' depending on context (like 'о')."
+  }
+
+  ],"course3":[
+    
+  {
+    "phrase": "[[Non]] ho fame.",
+    "pr": "[[non]] oh fah-meh",
+    "en": "I am [[not]] hungry.",
+    "des": "'Non' is the Italian equivalent of 'не' for negation."
+  },
+  {
+    "phrase": "[[Non]] voglio né tè né caffè.",
+    "pr": "[[non]] voh-lyoh neh teh neh kah-feh",
+    "en": "I want [[neither]] tea [[nor]] coffee.",
+    "des": "'Né...né' translates 'ни...ни' (neither...nor)."
+  },
+  {
+    "phrase": "[[Anch'io]] vado al mercato.",
+    "pr": "[[an-kee-oh]] vah-doh ahl mehr-kah-toh",
+    "en": "[[I am also]] going to the market.",
+    "des": "'Anch'io' means 'also me', like 'тоже'."
+  },
+  {
+    "phrase": "C'è [[ancora]] pane.",
+    "pr": "cheh [[an-koh-rah]] pah-neh",
+    "en": "There is [[still]] bread.",
+    "des": "'Ancora' can mean 'still' or 'more' like 'ещё'."
+  },
+  {
+    "phrase": "Ho [[già]] finito.",
+    "pr": "oh [[jah]] fee-nee-toh",
+    "en": "I [[already]] finished.",
+    "des": "'Già' corresponds to 'already' like 'уже'."
+  },
+  {
+    "phrase": "Vado [[sempre]] al lavoro alle otto.",
+    "pr": "vah-doh [[sem-preh]] ahl lah-voh-roh ahl-leh ot-toh",
+    "en": "I [[always]] go to work at eight.",
+    "des": "'Sempre' is the word for 'always' like 'всегда'."
+  },
+  {
+    "phrase": "Non arrivo [[mai]] in ritardo.",
+    "pr": "non ar-ree-voh [[mai]] een ree-tar-doh",
+    "en": "I never]] arrive late.",
+    "des": "'Mai' means 'never', used with 'non', like 'никогда'."
+  }
+  ],
+  "course4":[
+    
+  {
+    "phrase": "[[Questo]] è il mio libro.",
+    "pr": "[[kweh-stoh]] eh eel mee-oh lee-broh",
+    "en": "[[This]] is my book.",
+    "des": "'Questo' is used for 'this' (это)."
+  },
+  {
+    "phrase": "È [[qui]] sul tavolo.",
+    "pr": "eh [[kwee]] sool tah-voh-lo",
+    "en": "It is [[here]] on the table.",
+    "des": "'Qui' means 'here' (здесь)."
+  },
+  {
+    "phrase": "La macchina è [[lì]].",
+    "pr": "lah mahk-kee-nah eh [[lee]]",
+    "en": "The car is [[there]].",
+    "des": "'Lì' is used to say 'there' (там)."
+  },
+  {
+    "phrase": "[[Io]] sono stanco.",
+    "pr": "[[ee-oh]] soh-noh stahn-koh",
+    "en": "[[I]] am tired.",
+    "des": "'Io' means 'I' (я), first person singular."
+  },
+  {
+    "phrase": "[[Tu]] parli bene italiano.",
+    "pr": "[[too]] par-lee beh-neh ee-tah-lyah-no",
+    "en": "[[You]] speak Italian well.",
+    "des": "'Tu' is informal 'you' (ты)."
+  },
+  {
+    "phrase": "Lui è mio fratello.",
+    "pr": "loo-ee eh mee-oh frah-tehl-lo",
+    "en": "He is my brother.",
+    "des": "'Lui' means 'he' (он)."
+  },
+  {
+    "phrase": "Lei è mia sorella.",
+    "pr": "lay eh mee-ah soh-rehl-lah",
+    "en": "She is my sister.",
+    "des": "'Lei' is for 'she' (она)."
+  },
+  {
+    "phrase": "[[Noi]] andiamo al cinema.",
+    "pr": "[[noy]] ahn-dee-ah-moh ahl chee-neh-mah",
+    "en": "[[We]] are going to the cinema.",
+    "des": "'Noi' means 'we' (мы)."
+  },
+  {
+    "phrase": "[[Loro]] vivono in Italia.",
+    "pr": "[[loh-roh]] vee-voh-no een ee-tah-lyah",
+    "en": "[[They]] live in Italy.",
+    "des": "'Loro' is for 'they' (они)."
+  }
+
+  ]
+  ,
+  "introduction": [
+    {
+      "phrase": "Ciao! Mi chiamo Luca. E tu?",
+      "pr": "ˈtʃao! mi ˈkjamo ˈluka. e tu?",
+      "en": "Hi! My name is Luca. And you?",
+      "des": "",
+      "phrase_name": "introduction",
+      "language": "Italian",
+      "type": "story"
+    },
+    {
+      "phrase": "Ciao, Luca! Io sono Marco. Piacere di conoscerti!",
+      "pr": "ˈtʃao, ˈluka! ˈio ˈsono ˈmarko. pjaˈtʃɛre di koˈnoʃʃerti!",
+      "en": "Hi, Luca! I am Marco. Nice to meet you!",
+      "des": "",
+      "phrase_name": "introduction",
+      "language": "Italian",
+      "type": "story"
+    },
+    {
+      "phrase": "Piacere, Marco! Di dove sei?",
+      "pr": "pjaˈtʃɛre, ˈmarko! di ˈdove ˈsɛi?",
+      "en": "Nice to meet you, Marco! Where are you from?",
+      "des": "",
+      "phrase_name": "introduction",
+      "language": "Italian",
+      "type": "story"
+    },
+    {
+      "phrase": "Sono di Roma. E tu?",
+      "pr": "ˈsono di ˈroma. e tu?",
+      "en": "I am from Rome. And you?",
+      "des": "",
+      "phrase_name": "introduction",
+      "language": "Italian",
+      "type": "story"
+    },
+    {
+      "phrase": "Io sono di Milano.",
+      "pr": "ˈio ˈsono di miˈlano.",
+      "en": "I am from Milan.",
+      "des": "",
+      "phrase_name": "introduction",
+      "language": "Italian",
+      "type": "story"
+    },
+    {
+      "phrase": "Sei in vacanza qui?",
+      "pr": "ˈsɛi in vaˈkantsa kwi?",
+      "en": "Are you on vacation here?",
+      "des": "",
+      "phrase_name": "introduction",
+      "language": "Italian",
+      "type": "story"
+    },
+    {
+      "phrase": "Sì, sono in vacanza con la mia famiglia.",
+      "pr": "si, ˈsono in vaˈkantsa kon la ˈmia faˈmiʎʎa.",
+      "en": "Yes, I am on vacation with my family.",
+      "des": "",
+      "phrase_name": "introduction",
+      "language": "Italian",
+      "type": "story"
+    },
+    {
+      "phrase": "Bello! Quanto tempo resti?",
+      "pr": "ˈbɛllo! ˈkwanto ˈtɛmpo ˈrɛsti?",
+      "en": "Nice! How long are you staying?",
+      "des": "",
+      "phrase_name": "introduction",
+      "language": "Italian",
+      "type": "story"
+    },
+    {
+      "phrase": "Resto una settimana. E tu?",
+      "pr": "ˈrɛsto ˈuna settiˈmana. e tu?",
+      "en": "I’m staying for a week. And you?",
+      "des": "",
+      "phrase_name": "introduction",
+      "language": "Italian",
+      "type": "story"
+    },
+    {
+      "phrase": "Io vivo qui, ma mi piace conoscere nuove persone!",
+      "pr": "ˈio ˈvivo kwi, ma mi ˈpjatʃe koˈnoʃʃere ˈnwove perˈsone!",
+      "en": "I live here, but I like meeting new people!",
+      "des": "",
+      "phrase_name": "introduction",
+      "language": "Italian",
+      "type": "story"
+    },
+    {
+      "phrase": "Fantastico! Magari possiamo prendere un caffè insieme.",
+      "pr": "fanˈtastiko! maˈɡari posˈsamo ˈprɛndere un kafˈfɛ inˈsjɛme.",
+      "en": "Fantastic! Maybe we can grab a coffee together.",
+      "des": "",
+      "phrase_name": "introduction",
+      "language": "Italian",
+      "type": "story"
+    },
+    {
+      "phrase": "Sì, volentieri! Conosci un buon bar qui vicino?",
+      "pr": "si, volenˈtjɛri! koˈnoʃʃi un bwɔn bar kwi viˈtʃino?",
+      "en": "Yes, I'd love to! Do you know a good café nearby?",
+      "des": "",
+      "phrase_name": "introduction",
+      "language": "Italian",
+      "type": "story"
+    },
+    {
+      "phrase": "Sì! C’è un bar molto carino a due passi da qui.",
+      "pr": "si! tʃɛ un bar ˈmolto kaˈrino a ˈdue ˈpassi da kwi.",
+      "en": "Yes! There's a very nice café just a short walk from here.",
+      "des": "",
+      "phrase_name": "introduction",
+      "language": "Italian",
+      "type": "story"
+    },
+    {
+      "phrase": "Perfetto, andiamo!",
+      "pr": "perˈfɛtto, anˈdjamo!",
+      "en": "Perfect, let’s go!",
+      "des": "",
+      "phrase_name": "introduction",
+      "language": "Italian",
+      "type": "story"
+    }
+  ],
+  "q/a": [
+    {
+      "phrase": "Perché stai imparando l’italiano?",
+      "pr": "perˈke ˈstai imˈparando litaˈljano?",
+      "en": "Why are you learning Italian?",
+      "des": "",
+      "phrase_name": "q/a",
+      "language": "Italian",
+      "type": "story"
+    },
+    {
+      "phrase": "Mi piace la cultura italiana e voglio parlarlo meglio.",
+      "pr": "mi ˈpjatʃe la kulˈtura itaˈljana e ˈvɔʎʎo parˈlarlo ˈmɛʎʎo.",
+      "en": "I like Italian culture, and I want to speak it better.",
+      "des": "",
+      "phrase_name": "q/a",
+      "language": "Italian",
+      "type": "story"
+    },
+    {
+      "phrase": "Da quanto tempo studi italiano?",
+      "pr": "da ˈkwanto ˈtɛmpo ˈstudi itaˈljano?",
+      "en": "How long have you been studying Italian?",
+      "des": "",
+      "phrase_name": "q/a",
+      "language": "Italian",
+      "type": "story"
+    },
+    {
+      "phrase": "Studio italiano da sei mesi.",
+      "pr": "ˈstudio itaˈljano da ˈsɛi ˈmesi.",
+      "en": "I have been studying Italian for six months.",
+      "des": "",
+      "phrase_name": "q/a",
+      "language": "Italian",
+      "type": "story"
+    },
+    {
+      "phrase": "Parli altre lingue?",
+      "pr": "ˈparli ˈaltre ˈliŋɡwe?",
+      "en": "Do you speak other languages?",
+      "des": "",
+      "phrase_name": "q/a",
+      "language": "Italian",
+      "type": "story"
+    },
+    {
+      "phrase": "Sì, parlo inglese e un po’ di spagnolo.",
+      "pr": "si, ˈparlo iŋˈɡleze e un po di spaˈɲolo.",
+      "en": "Yes, I speak English and a little Spanish.",
+      "des": "",
+      "phrase_name": "q/a",
+      "language": "Italian",
+      "type": "story"
+    }
+  ],
+  "q/a2": [
+    {
+      "phrase": "Trovi difficile l’italiano?",
+      "pr": "ˈtrovi difˈfitʃile litaˈljano?",
+      "en": "Do you find Italian difficult?",
+      "des": "",
+      "phrase_name": "q/a2",
+      "language": "Italian",
+      "type": "story"
+    },
+    {
+      "phrase": "Alcune cose sono facili, altre un po’ difficili.",
+      "pr": "alˈkune ˈkoze ˈsono ˈfatʃili, ˈaltre un po difˈfitʃili.",
+      "en": "Some things are easy, others a bit difficult.",
+      "des": "",
+      "phrase_name": "q/a2",
+      "language": "Italian",
+      "type": "story"
+    },
+    {
+      "phrase": "Sei mai stato in Italia?",
+      "pr": "sei mai ˈstato in itaˈljia?",
+      "en": "Have you ever been to Italy?",
+      "des": "",
+      "phrase_name": "q/a2",
+      "language": "Italian",
+      "type": "story"
+    },
+    {
+      "phrase": "Sì, sono stato a Roma e Firenze.",
+      "pr": "si, ˈsono ˈstato a ˈroma e fiˈrɛntse.",
+      "en": "Yes, I have been to Rome and Florence.",
+      "des": "",
+      "phrase_name": "q/a2",
+      "language": "Italian",
+      "type": "story"
+    },
+    {
+      "phrase": "Qual è la tua parola italiana preferita?",
+      "pr": "kwal ɛ la ˈtwa paˈrola itaˈljana prefeˈrita?",
+      "en": "What is your favorite Italian word?",
+      "des": "",
+      "phrase_name": "q/a2",
+      "language": "Italian",
+      "type": "story"
+    },
+    {
+      "phrase": "Mi piace la parola ‘meraviglioso’.",
+      "pr": "mi ˈpjatʃe la paˈrola meraviʎˈʎozo.",
+      "en": "I like the word ‘meraviglioso’ (wonderful).",
+      "des": "",
+      "phrase_name": "q/a2",
+      "language": "Italian",
+      "type": "story"
+    }
+  ],
+  "q/a3": [
+    {
+      "phrase": "Capisci bene quando parliamo velocemente?",
+      "pr": "kaˈpiʃʃi ˈbene ˈkwando parˈljamo veloˈtʃɛmente?",
+      "en": "Do you understand well when we speak fast?",
+      "des": "",
+      "phrase_name": "q/a3",
+      "language": "Italian",
+      "type": "story"
+    },
+    {
+      "phrase": "A volte sì, ma dipende dalla persona.",
+      "pr": "a ˈvolte si, ma diˈpɛnde dalla perˈsona.",
+      "en": "Sometimes yes, but it depends on the person.",
+      "des": "",
+      "phrase_name": "q/a3",
+      "language": "Italian",
+      "type": "story"
+    },
+    {
+      "phrase": "Cosa ti piace della lingua italiana?",
+      "pr": "ˈkɔza ti ˈpjatʃe della ˈliŋɡwa itaˈljana?",
+      "en": "What do you like about the Italian language?",
+      "des": "",
+      "phrase_name": "q/a3",
+      "language": "Italian",
+      "type": "story"
+    },
+    {
+      "phrase": "Mi piace il suono e la musicalità.",
+      "pr": "mi ˈpjatʃe il ˈswɔno e la muziˈkalita.",
+      "en": "I like the sound and musicality.",
+      "des": "",
+      "phrase_name": "q/a3",
+      "language": "Italian",
+      "type": "story"
+    },
+    {
+      "phrase": "Quale dialetto italiano ti interessa?",
+      "pr": "ˈkwale djaˈlɛtto itaˈljano ti interˈessa?",
+      "en": "Which Italian dialect interests you?",
+      "des": "",
+      "phrase_name": "q/a3",
+      "language": "Italian",
+      "type": "story"
+    },
+    {
+      "phrase": "Mi interessa il napoletano, ma è difficile!",
+      "pr": "mi interˈessa il napoleˈtano, ma ɛ difˈfitʃile!",
+      "en": "I’m interested in Neapolitan, but it’s difficult!",
+      "des": "",
+      "phrase_name": "q/a3",
+      "language": "Italian",
+      "type": "story"
+    },
+    {
+      "phrase": "Ti piacerebbe vivere in Italia?",
+      "pr": "ti pjaʧeˈrebbe ˈvivere in itaˈljana?",
+      "en": "Would you like to live in Italy?",
+      "des": "",
+      "phrase_name": "q/a3",
+      "language": "Italian",
+      "type": "story"
+    },
+    {
+      "phrase": "Sì, sarebbe un sogno!",
+      "pr": "si, sareˈbbe un ˈsoɲɲo!",
+      "en": "Yes, it would be a dream!",
+      "des": "",
+      "phrase_name": "q/a3",
+      "language": "Italian",
+      "type": "story"
+    }
+  ],
+  "useful": [
+    {
+      "phrase": "Voglio andare in Italia.",
+      "pr": "VOH-lyoh an-DAH-re een ee-TAH-lya",
+      "en": "I want to go to Italy.",
+      "des": "",
+      "phrase_name": "useful",
+      "language": "Italian",
+      "type": "story"
+    },
+    {
+      "phrase": "Voglio viaggiare a Roma.",
+      "pr": "VOH-lyoh vyah-JAH-reh ah ROH-ma",
+      "en": "I want to travel to Rome.",
+      "des": "",
+      "phrase_name": "useful",
+      "language": "Italian",
+      "type": "story"
+    },
+    {
+      "phrase": "Come si dice questo?",
+      "pr": "KOH-meh see DEE-cheh KWEHS-toh",
+      "en": "How do you say this?",
+      "des": "",
+      "phrase_name": "useful",
+      "language": "Italian",
+      "type": "story"
+    },
+    {
+      "phrase": "Come si pronuncia correttamente questo?",
+      "pr": "KOH-meh see pro-NOON-chah koh-ret-ta-MEN-teh KWEHS-toh",
+      "en": "How is this correctly pronounced?",
+      "des": "",
+      "phrase_name": "useful",
+      "language": "Italian",
+      "type": "story"
+    },
+    {
+      "phrase": "Come faccio a ordinare? (al ristorante)",
+      "pr": "KOH-meh FAHCH-cho ah or-dee-NAH-reh? (ahl ree-stoh-RAHN-teh)",
+      "en": "How do I order? (in a restaurant)",
+      "des": "",
+      "phrase_name": "useful",
+      "language": "Italian",
+      "type": "story"
+    },
+    {
+      "phrase": "Dove si ordina? (al ristorante)",
+      "pr": "DOH-veh see OR-dee-nah? (ahl ree-stoh-RAHN-teh)",
+      "en": "Where do I order? (in a restaurant)",
+      "des": "",
+      "phrase_name": "useful",
+      "language": "Italian",
+      "type": "story"
+    },
+    {
+      "phrase": "Qual è il ristorante consigliato per mangiare qui?",
+      "pr": "kwal EH eel ree-stoh-RAHN-teh con-see-LYAH-toh per man-JAH-reh kwee?",
+      "en": "What is the recommended place/restaurant to eat here?",
+      "des": "",
+      "phrase_name": "useful",
+      "language": "Italian",
+      "type": "story"
+    },
+    {
+      "phrase": "Cosa è consigliato visitare qui?",
+      "pr": "KOH-zah eh con-see-LYAH-toh vee-zee-TAH-reh kwee?",
+      "en": "What is recommended to visit here?",
+      "des": "",
+      "phrase_name": "useful",
+      "language": "Italian",
+      "type": "story"
+    },
+    {
+      "phrase": "Cosa stai facendo adesso?",
+      "pr": "KOH-zah sty fah-CHEN-doh ah-DEHS-so",
+      "en": "What are you doing right now?",
+      "des": "",
+      "phrase_name": "useful",
+      "language": "Italian",
+      "type": "story"
+    },
+    {
+      "phrase": "Sei occupato?",
+      "pr": "SAY oh-koo-PAH-toh?",
+      "en": "Are you busy?",
+      "des": "",
+      "phrase_name": "useful",
+      "language": "Italian",
+      "type": "story"
+    },
+    {
+      "phrase": "Imparare l’italiano è difficile.",
+      "pr": "eem-pah-RAH-reh lee-tah-LYAH-noh eh dee-FEE-cheh-leh",
+      "en": "Learning Italian is difficult.",
+      "des": "",
+      "phrase_name": "useful",
+      "language": "Italian",
+      "type": "story"
+    },
+    {
+      "phrase": "Sono ancora a un livello principiante in italiano.",
+      "pr": "SOH-noh an-KOH-rah ah oon lee-VEHL-loh prin-chee-pee-AHN-teh een ee-tah-LYAH-no",
+      "en": "I am still a beginner level in Italian.",
+      "des": "",
+      "phrase_name": "useful",
+      "language": "Italian",
+      "type": "story"
+    },
+    {
+      "phrase": "Puoi insegnarmi una parola nuova?",
+      "pr": "PWOY een-seh-NYAR-mee OO-nah pah-ROH-lah NWOH-vah?",
+      "en": "Can you teach me a new word?",
+      "des": "",
+      "phrase_name": "useful",
+      "language": "Italian",
+      "type": "story"
+    },
+    {
+      "phrase": "Puoi parlare inglese?",
+      "pr": "PWOY par-LAH-reh een-GLAY-seh?",
+      "en": "Can you speak English?",
+      "des": "",
+      "phrase_name": "useful",
+      "language": "Italian",
+      "type": "story"
+    },
+    {
+      "phrase": "Mi piace il tuo accento.",
+      "pr": "mee PYA-cheh eel TOO-oh ahn-CHEN-toh",
+      "en": "I like your accent.",
+      "des": "",
+      "phrase_name": "useful",
+      "language": "Italian",
+      "type": "story"
+    },
+    {
+      "phrase": "Parli altre lingue?",
+      "pr": "PAR-lee AHL-treh LEEN-gweh?",
+      "en": "Do you speak any other languages?",
+      "des": "",
+      "phrase_name": "useful",
+      "language": "Italian",
+      "type": "story"
+    },
+    {
+      "phrase": "Il tuo inglese è meglio del mio italiano.",
+      "pr": "eel TOO-oh een-GLAY-seh eh MEL-yoh del MEE-oh ee-tah-LYAH-no",
+      "en": "Your English speaking is better than my Italian speaking.",
+      "des": "",
+      "phrase_name": "useful",
+      "language": "Italian",
+      "type": "story"
+    },
+    {
+      "phrase": "Che bello!",
+      "pr": "keh BEL-loh!",
+      "en": "That’s cool/awesome!",
+      "des": "",
+      "phrase_name": "useful",
+      "language": "Italian",
+      "type": "story"
+    },
+    {
+      "phrase": "La tua pronuncia è ottima.",
+      "pr": "lah TOO-ah pro-NOON-chah eh OHT-tee-mah",
+      "en": "Your pronunciation is good/great.",
+      "des": "",
+      "phrase_name": "useful",
+      "language": "Italian",
+      "type": "story"
+    },
+    {
+      "phrase": "Sto imparando la lingua perché suona bene.",
+      "pr": "stoh eem-pah-RAHN-doh lah LEEN-gwah pehr-KEH SWOH-nah BEH-neh",
+      "en": "I am learning the language because it sounds cool.",
+      "des": "",
+      "phrase_name": "useful",
+      "language": "Italian",
+      "type": "story"
+    },
+    {
+      "phrase": "Sto imparando la lingua perché è divertente parlarla.",
+      "pr": "stoh eem-pah-RAHN-doh lah LEEN-gwah pehr-KEH eh dee-vehr-TEN-teh par-LAR-lah",
+      "en": "I am learning the language because it's fun to speak.",
+      "des": "",
+      "phrase_name": "useful",
+      "language": "Italian",
+      "type": "story"
+    },
+    {
+      "phrase": "È questa la fila?",
+      "pr": "eh KWEHS-tah lah FEE-lah?",
+      "en": "Is this the line? (in a store)",
+      "des": "",
+      "phrase_name": "useful",
+      "language": "Italian",
+      "type": "story"
+    },
+    {
+      "phrase": "Dove si fa la fila?",
+      "pr": "DOH-veh see fah lah FEE-lah?",
+      "en": "Where is the line? (in a store)",
+      "des": "",
+      "phrase_name": "useful",
+      "language": "Italian",
+      "type": "story"
+    },
+    {
+      "phrase": "Cos’è quello laggiù?",
+      "pr": "koh-ZEH KWEHL-loh lah-JOO?",
+      "en": "What is that over there?",
+      "des": "",
+      "phrase_name": "useful",
+      "language": "Italian",
+      "type": "story"
+    },
+    {
+      "phrase": "Quale città dovrei visitare in Italia?",
+      "pr": "KWAH-leh chee-TAH doh-VRAY vee-zee-TAH-reh een ee-TAH-lya?",
+      "en": "What city should I visit in Italy?",
+      "des": "",
+      "phrase_name": "useful",
+      "language": "Italian",
+      "type": "story"
+    },
+    {
+      "phrase": "Voglio andare in Italia in futuro.",
+      "pr": "VOH-lyoh an-DAH-reh een ee-TAH-lya een foo-TOO-roh",
+      "en": "I want to go to Italy in the future.",
+      "des": "",
+      "phrase_name": "useful",
+      "language": "Italian",
+      "type": "story"
+    },
+    {
+      "phrase": "C’è una serie TV o un film italiano che consigli?",
+      "pr": "cheh OO-nah SEH-ryeh tee-VOO oh oon feelm ee-tah-LYAH-no keh con-SEEL-yee?",
+      "en": "Is there a specific TV show or movie that you recommend?",
+      "des": "",
+      "phrase_name": "useful",
+      "language": "Italian",
+      "type": "story"
+    }
+  ],"intro":[
+  {
+    "phrase": "Ciao! Sei italiano?",
+    "pr": "Chao! Sei ee-ta-lyano?",
+    "en": "Hi! Are you Italian?",
+    "des": "Informal greeting and present tense of 'essere'.",
+    "phrase_name": "Meeting someone"
+  },
+  {
+    "phrase": "Sì, sono di Roma. E tu?",
+    "pr": "See, so-no dee Ro-ma. Eh too?",
+    "en": "Yes, I'm from Rome. And you?",
+    "des": "Present tense of 'essere' and 'di' to show origin.",
+    "phrase_name": "Meeting someone"
+  },
+  {
+    "phrase": "Sono americano. Mi chiamo Marco.",
+    "pr": "So-no ah-meh-ree-kah-no. Mee kyah-mo Mar-co.",
+    "en": "I'm American. My name is Marco.",
+    "des": "'Mi chiamo' = My name is, reflexive verb.",
+    "phrase_name": "Introducing yourself"
+  },
+  {
+    "phrase": "Piacere, Marco! Io mi chiamo Luca.",
+    "pr": "Pya-che-re, Mar-co! Ee-oh mee kyah-mo Loo-ka.",
+    "en": "Nice to meet you, Marco! My name is Luca.",
+    "des": "'Piacere' is a common way to say 'Nice to meet you'.",
+    "phrase_name": "Introducing yourself"
+  },
+  {
+    "phrase": "Parli italiano molto bene!",
+    "pr": "Par-lee ee-ta-lyano mol-to beh-neh!",
+    "en": "You speak Italian very well!",
+    "des": "Compliment using 'parlare' in present tense.",
+    "phrase_name": "Giving compliments"
+  },
+  {
+    "phrase": "Grazie! Studio da tre mesi.",
+    "pr": "Grah-tsye! Stoo-dee-o dah treh meh-zee.",
+    "en": "Thanks! I've been studying for three months.",
+    "des": "Use of 'da' to express duration (since/for).",
+    "phrase_name": "Talking about experience"
+  },
+  {
+    "phrase": "Ti piace l’Italia?",
+    "pr": "Tee pya-cheh l'Ee-ta-lya?",
+    "en": "Do you like Italy?",
+    "des": "'Ti piace' is used to ask about preferences.",
+    "phrase_name": "Asking preferences"
+  },
+  {
+    "phrase": "Sì, mi piace molto! Il cibo è fantastico.",
+    "pr": "See, mee pya-cheh mol-to! Eel chee-bo eh fan-tas-tee-co.",
+    "en": "Yes, I like it a lot! The food is fantastic.",
+    "des": "'Mi piace' for expressing personal likes.",
+    "phrase_name": "Expressing preferences"
+  },
+  {
+    "phrase": "Hai già visitato altre città?",
+    "pr": "Ai jah vee-zee-tah-to al-treh chee-tah?",
+    "en": "Have you already visited other cities?",
+    "des": "'Hai visitato' is passato prossimo (present perfect).",
+    "phrase_name": "Travel talk"
+  },
+  {
+    "phrase": "Sì, sono stato a Firenze e Venezia.",
+    "pr": "See, so-no stah-to a Fee-ren-tseh eh Veh-ne-tsya.",
+    "en": "Yes, I've been to Florence and Venice.",
+    "des": "Use of 'essere' in passato prossimo for movement verbs.",
+    "phrase_name": "Travel talk"
+  }
+]
+,"asking-directions":[
+    {
+      "speaker": "Turista",
+      "phrase": "Mi scusi, dov'è la stazione?",
+      "pr": "Mee skoo-zee, doh-veh lah stah-tsyo-neh?",
+      "en": "Excuse me, where is the station?"
+    },
+    {
+      "speaker": "Passante",
+      "phrase": "La stazione è vicino. Vai sempre dritto e poi gira a sinistra.",
+      "pr": "Lah stah-tsyo-neh eh vee-chee-no. Vai sem-preh dreet-toh eh poi jee-rah ah seen-eest-rah.",
+      "en": "The station is nearby. Go straight ahead and then turn left."
+    },
+    {
+      "speaker": "Turista",
+      "phrase": "Grazie mille! È lontano a piedi?",
+      "pr": "Grah-tsyeh meel-leh! Eh lon-tah-no ah pyay-dee?",
+      "en": "Thank you very much! Is it far on foot?"
+    },
+    {
+      "speaker": "Passante",
+      "phrase": "No, solo cinque minuti a piedi.",
+      "pr": "Noh, soh-loh cheen-kweh mee-noo-tee ah pyay-dee.",
+      "en": "No, just five minutes on foot."
+    },
+    {
+      "speaker": "Turista",
+      "phrase": "Perfetto. Buona giornata!",
+      "pr": "Pehr-feht-toh. Bwoh-nah jor-nah-tah!",
+      "en": "Perfect. Have a nice day!"
+    },
+    {
+      "speaker": "Passante",
+      "phrase": "Anche a lei, arrivederci!",
+      "pr": "An-keh ah lay, ah-ree-veh-dehr-chee!",
+      "en": "You too, goodbye!"
+    }]
+,"story":[
+  {
+    "phrase_name": "greeting",
+    "phrase": "Ciao! Come stai?",
+    "pr": "chow! koh-meh stai?",
+    "en": "Hi! How are you?",
+    "des": "Basic friendly greeting."
+  },
+  {
+    "phrase_name": "response_feeling",
+    "phrase": "Ciao! Sono molto bene, grazie. E tu?",
+    "pr": "chow! soh-noh mol-toh beh-neh, grah-tsyeh. eh too?",
+    "en": "Hi! I am very well, thank you. And you?",
+    "des": "Using 'sono' to describe personal condition."
+  },
+  {
+    "phrase_name": "response_other_feeling",
+    "phrase": "Anch’io sto bene, ma oggi sono un po’ stanco.",
+    "pr": "an-kee-oh stoh beh-neh, mah ohj-jee soh-noh oon poh stan-koh",
+    "en": "I am fine too, but today I am a bit tired.",
+    "des": "Mixing 'sono' for self-description and 'ma' (but) as a connector."
+  },
+  {
+    "phrase_name": "ask_location",
+    "phrase": "Dove sei adesso?",
+    "pr": "doh-veh sei ah-des-soh?",
+    "en": "Where are you now?",
+    "des": "Simple location question."
+  },
+  {
+    "phrase_name": "answer_location",
+    "phrase": "Sono a Roma, vicino al Colosseo.",
+    "pr": "soh-noh ah roh-mah, vee-chee-no ahl koh-loh-seh-oh",
+    "en": "I am in Rome, near the Colosseum.",
+    "des": "Using 'sono' to indicate location."
+  },
+  {
+    "phrase_name": "ask_about_place",
+    "phrase": "Com’è Roma in questo periodo?",
+    "pr": "koh-meh roh-mah een kweh-stoh peh-ree-oh-doh?",
+    "en": "How is Rome at this time of year?",
+    "des": "Using 'è' to ask about a place."
+  },
+  {
+    "phrase_name": "answer_about_place",
+    "phrase": "È bellissima! Ci sono molti turisti.",
+    "pr": "eh bel-lees-see-mah! chee soh-noh mol-tee too-ree-stee",
+    "en": "It is beautiful! There are many tourists.",
+    "des": "Using 'è' for description and 'ci sono' for existence."
+  },
+  {
+    "phrase_name": "ask_about_weather",
+    "phrase": "Com’è il tempo oggi?",
+    "pr": "koh-meh eel tem-poh ohj-jee?",
+    "en": "How is the weather today?",
+    "des": "Using 'è' to ask about the weather."
+  },
+  {
+    "phrase_name": "answer_about_weather",
+    "phrase": "È molto soleggiato e caldo.",
+    "pr": "eh mol-toh soh-lehj-jah-toh eh kahl-doh",
+    "en": "It is very sunny and warm.",
+    "des": "Using 'è' for weather description."
+  },
+  {
+    "phrase_name": "farewell",
+    "phrase": "Devo andare, ma è stato bello parlare con te.",
+    "pr": "deh-voh an-dah-reh, mah eh stah-toh bel-loh par-lah-reh kon teh",
+    "en": "I have to go, but it was nice talking to you.",
+    "des": "Using 'è stato' (it was) in a polite farewell."
+  }
+],"masculine/plural-nouns":[
+  {
+    "phrase": "I libri sono interessanti.",
+    "pr": "ee lee-bree soh-noh een-teh-reh-sahn-tee",
+    "en": "The books are interesting.",
+    "des": "Talking about books in general.",
+    "phrase_name": "Books are interesting"
+  },
+  {
+    "phrase": "I tavoli sono grandi.",
+    "pr": "ee tah-voh-lee soh-noh grahn-dee",
+    "en": "The tables are big.",
+    "des": "Describing furniture size.",
+    "phrase_name": "Big tables"
+  },
+  {
+    "phrase": "I telefoni sono nuovi.",
+    "pr": "ee teh-leh-foh-nee soh-noh noo-oh-vee",
+    "en": "The telephones are new.",
+    "des": "Talking about new devices.",
+    "phrase_name": "New telephones"
+  },
+  {
+    "phrase": "I vestiti sono belli.",
+    "pr": "ee ve-stee-tee soh-noh beh-lee",
+    "en": "The clothes are beautiful.",
+    "des": "Commenting on clothes.",
+    "phrase_name": "Beautiful clothes"
+  },
+  {
+    "phrase": "I treni sono veloci.",
+    "pr": "ee treh-nee soh-noh veh-loh-chee",
+    "en": "The trains are fast.",
+    "des": "Talking about transport speed.",
+    "phrase_name": "Fast trains"
+  },
+  {
+    "phrase": "I biglietti sono costosi.",
+    "pr": "ee bee-lyet-tee soh-noh koh-stoh-see",
+    "en": "The tickets are expensive.",
+    "des": "Talking about ticket prices.",
+    "phrase_name": "Expensive tickets"
+  },
+  {
+    "phrase": "I ragazzi sono felici.",
+    "pr": "ee rah-gaht-tsee soh-noh feh-lee-chee",
+    "en": "The boys are happy.",
+    "des": "Describing emotions.",
+    "phrase_name": "Happy boys"
+  },
+  {
+    "phrase": "I giorni sono freddi.",
+    "pr": "ee jor-nee soh-noh fred-dee",
+    "en": "The days are cold.",
+    "des": "Talking about weather.",
+    "phrase_name": "Cold days"
+  },
+  {
+    "phrase": "I negozi sono chiusi.",
+    "pr": "ee neh-goht-tsee soh-noh kyoo-zee",
+    "en": "The shops are closed.",
+    "des": "Indicating shop availability.",
+    "phrase_name": "Closed shops"
+  },
+  {
+    "phrase": "I piatti sono puliti.",
+    "pr": "ee pyaht-tee soh-noh poo-lee-tee",
+    "en": "The plates are clean.",
+    "des": "Talking about cleanliness.",
+    "phrase_name": "Clean plates"
+  },
+  {
+    "phrase": "I musei sono famosi.",
+    "pr": "ee moo-zeh-ee soh-noh fah-moh-see",
+    "en": "The museums are famous.",
+    "des": "Talking about tourist attractions.",
+    "phrase_name": "Famous museums"
+  },
+  {
+    "phrase": "I film sono divertenti.",
+    "pr": "ee film soh-noh dee-vehr-ten-tee",
+    "en": "The movies are fun.",
+    "des": "Talking about entertainment.",
+    "phrase_name": "Fun movies"
+  },
+  {
+    "phrase": "I fiori sono colorati.",
+    "pr": "ee fyoh-ree soh-noh koh-loh-rah-tee",
+    "en": "The flowers are colorful.",
+    "des": "Describing flowers.",
+    "phrase_name": "Colorful flowers"
+  },
+  {
+    "phrase": "I gatti sono dolci.",
+    "pr": "ee gaht-tee soh-noh dol-chee",
+    "en": "The cats are sweet.",
+    "des": "Talking about pets.",
+    "phrase_name": "Sweet cats"
+  },
+  {
+    "phrase": "I cani sono intelligenti.",
+    "pr": "ee kah-nee soh-noh een-tell-ee-jen-tee",
+    "en": "The dogs are intelligent.",
+    "des": "Describing animals' traits.",
+    "phrase_name": "Smart dogs"
+  }
+]
+,"masculine/plural-nouns2":[
+  {
+    "phrase": "I ristoranti in città sono economici.",
+    "pr": "ee rees-toh-rahn-tee een cheet-tah soh-noh eh-koh-noh-mee-chee",
+    "en": "The restaurants in the city are cheap.",
+    "des": "Describing restaurants using location and price.",
+    "phrase_name": "Cheap restaurants in the city"
+  },
+  {
+    "phrase": "I ponti sul fiume sono antichi.",
+    "pr": "ee pohn-tee sool fyoo-meh soh-noh an-tee-kee",
+    "en": "The bridges on the river are ancient.",
+    "des": "Talking about historical landmarks.",
+    "phrase_name": "Ancient bridges on the river"
+  },
+  {
+    "phrase": "I parchi vicino alle scuole sono tranquilli.",
+    "pr": "ee par-kee vee-chee-noh ahl-leh skwoh-leh soh-noh trahn-kwee-lee",
+    "en": "The parks near the schools are quiet.",
+    "des": "Describing parks with location and atmosphere.",
+    "phrase_name": "Quiet parks near schools"
+  },
+  {
+    "phrase": "I mercati sono vivaci ma affollati.",
+    "pr": "ee mer-kah-tee soh-noh vee-vah-chee mah aff-oh-lah-tee",
+    "en": "The markets are lively but crowded.",
+    "des": "Contrasting two adjectives using 'ma'.",
+    "phrase_name": "Lively but crowded markets"
+  },
+  {
+    "phrase": "I treni verso Milano sono puntuali.",
+    "pr": "ee treh-nee vehr-soh mee-lah-noh soh-noh poon-too-ah-lee",
+    "en": "The trains to Milan are on time.",
+    "des": "Talking about punctuality and destination.",
+    "phrase_name": "Trains to Milan on time"
+  },
+  {
+    "phrase": "I negozi nel centro sono aperti fino a tardi.",
+    "pr": "ee neh-goht-tsee nel chen-troh soh-noh ah-pehr-tee fee-noh ah tar-dee",
+    "en": "The shops in the center are open until late.",
+    "des": "Describing shop hours and location.",
+    "phrase_name": "Shops in the center open late"
+  },
+  {
+    "phrase": "I villaggi tra le montagne sono pittoreschi.",
+    "pr": "ee veel-lahj-jee trah leh mon-tahn-yeh soh-noh pee-tor-res-kee",
+    "en": "The villages among the mountains are picturesque.",
+    "des": "Talking about villages and landscape.",
+    "phrase_name": "Picturesque mountain villages"
+  },
+  {
+    "phrase": "I teatri con spettacoli serali sono famosi.",
+    "pr": "ee teh-ah-tree kon speht-tah-koh-lee seh-rah-lee soh-noh fah-moh-see",
+    "en": "The theaters with evening shows are famous.",
+    "des": "Talking about theaters and entertainment.",
+    "phrase_name": "Famous theaters with evening shows"
+  },
+  {
+    "phrase": "I corsi di lingua sono utili per il lavoro.",
+    "pr": "ee kor-see dee leen-gwah soh-noh oo-tee-lee pehr eel lah-voh-roh",
+    "en": "The language courses are useful for work.",
+    "des": "Talking about courses and their purpose.",
+    "phrase_name": "Language courses for work"
+  },
+  {
+    "phrase": "I concerti all’aperto sono gratuiti.",
+    "pr": "ee kon-cher-tee ahl-lah-pehr-toh soh-noh grah-too-ee-tee",
+    "en": "The outdoor concerts are free.",
+    "des": "Talking about concerts and cost.",
+    "phrase_name": "Free outdoor concerts"
+  },
+  {
+    "phrase": "I vicoli tra le case vecchie sono stretti.",
+    "pr": "ee vee-koh-lee trah leh kah-seh vek-kee-eh soh-noh streht-tee",
+    "en": "The alleys between the old houses are narrow.",
+    "des": "Describing small streets and location.",
+    "phrase_name": "Narrow alleys between old houses"
+  },
+  {
+    "phrase": "I documenti sulla scrivania sono importanti.",
+    "pr": "ee doh-koo-men-tee sool-lah skree-vah-nee-ah soh-noh eem-por-tahn-tee",
+    "en": "The documents on the desk are important.",
+    "des": "Talking about documents and location.",
+    "phrase_name": "Important documents on the desk"
+  },
+  {
+    "phrase": "I voli per Roma sono frequenti.",
+    "pr": "ee voh-lee pehr roh-mah soh-noh freh-kwen-tee",
+    "en": "The flights to Rome are frequent.",
+    "des": "Talking about flight schedules.",
+    "phrase_name": "Frequent flights to Rome"
+  },
+  {
+    "phrase": "I turisti con guide locali imparano di più.",
+    "pr": "ee too-ree-stee kon gwee-deh loh-kah-lee eem-pah-rah-noh dee pyoo",
+    "en": "Tourists with local guides learn more.",
+    "des": "Talking about tourism and learning.",
+    "phrase_name": "Tourists learn more with local guides"
+  },
+  {
+    "phrase": "I lavori senza strumenti sono difficili.",
+    "pr": "ee lah-voh-ree sen-zah stroo-men-tee soh-noh dee-fee-chee-lee",
+    "en": "Jobs without tools are difficult.",
+    "des": "Describing work conditions.",
+    "phrase_name": "Difficult jobs without tools"
+  }
+],"masculine/plural-nouns3":[
+  {
+    "phrase": "I ristoranti in città sono economici.",
+    "pr": "ee rees-toh-rahn-tee een cheet-tah soh-noh eh-koh-noh-mee-chee",
+    "en": "The restaurants in the city are cheap.",
+    "des": "Describing restaurants using location and price.",
+    "phrase_name": "Cheap restaurants in the city"
+  },
+  {
+    "phrase": "I ponti sul fiume sono antichi.",
+    "pr": "ee pohn-tee sool fyoo-meh soh-noh an-tee-kee",
+    "en": "The bridges on the river are ancient.",
+    "des": "Talking about historical landmarks.",
+    "phrase_name": "Ancient bridges on the river"
+  },
+  {
+    "phrase": "I parchi vicino alle scuole sono tranquilli.",
+    "pr": "ee par-kee vee-chee-noh ahl-leh skwoh-leh soh-noh trahn-kwee-lee",
+    "en": "The parks near the schools are quiet.",
+    "des": "Describing parks with location and atmosphere.",
+    "phrase_name": "Quiet parks near schools"
+  },
+  {
+    "phrase": "I mercati sono vivaci ma affollati.",
+    "pr": "ee mer-kah-tee soh-noh vee-vah-chee mah aff-oh-lah-tee",
+    "en": "The markets are lively but crowded.",
+    "des": "Contrasting two adjectives using 'ma'.",
+    "phrase_name": "Lively but crowded markets"
+  },
+  {
+    "phrase": "I treni verso Milano sono puntuali.",
+    "pr": "ee treh-nee vehr-soh mee-lah-noh soh-noh poon-too-ah-lee",
+    "en": "The trains to Milan are on time.",
+    "des": "Talking about punctuality and destination.",
+    "phrase_name": "Trains to Milan on time"
+  },
+  {
+    "phrase": "I negozi nel centro sono aperti fino a tardi.",
+    "pr": "ee neh-goht-tsee nel chen-troh soh-noh ah-pehr-tee fee-noh ah tar-dee",
+    "en": "The shops in the center are open until late.",
+    "des": "Describing shop hours and location.",
+    "phrase_name": "Shops in the center open late"
+  },
+  {
+    "phrase": "I villaggi tra le montagne sono pittoreschi.",
+    "pr": "ee veel-lahj-jee trah leh mon-tahn-yeh soh-noh pee-tor-res-kee",
+    "en": "The villages among the mountains are picturesque.",
+    "des": "Talking about villages and landscape.",
+    "phrase_name": "Picturesque mountain villages"
+  },
+  {
+    "phrase": "I teatri con spettacoli serali sono famosi.",
+    "pr": "ee teh-ah-tree kon speht-tah-koh-lee seh-rah-lee soh-noh fah-moh-see",
+    "en": "The theaters with evening shows are famous.",
+    "des": "Talking about theaters and entertainment.",
+    "phrase_name": "Famous theaters with evening shows"
+  },
+  {
+    "phrase": "I corsi di lingua sono utili per il lavoro.",
+    "pr": "ee kor-see dee leen-gwah soh-noh oo-tee-lee pehr eel lah-voh-roh",
+    "en": "The language courses are useful for work.",
+    "des": "Talking about courses and their purpose.",
+    "phrase_name": "Language courses for work"
+  },
+  {
+    "phrase": "I concerti all’aperto sono gratuiti.",
+    "pr": "ee kon-cher-tee ahl-lah-pehr-toh soh-noh grah-too-ee-tee",
+    "en": "The outdoor concerts are free.",
+    "des": "Talking about concerts and cost.",
+    "phrase_name": "Free outdoor concerts"
+  },
+  {
+    "phrase": "I vicoli tra le case vecchie sono stretti.",
+    "pr": "ee vee-koh-lee trah leh kah-seh vek-kee-eh soh-noh streht-tee",
+    "en": "The alleys between the old houses are narrow.",
+    "des": "Describing small streets and location.",
+    "phrase_name": "Narrow alleys between old houses"
+  },
+  {
+    "phrase": "I documenti sulla scrivania sono importanti.",
+    "pr": "ee doh-koo-men-tee sool-lah skree-vah-nee-ah soh-noh eem-por-tahn-tee",
+    "en": "The documents on the desk are important.",
+    "des": "Talking about documents and location.",
+    "phrase_name": "Important documents on the desk"
+  },
+  {
+    "phrase": "I voli per Roma sono frequenti.",
+    "pr": "ee voh-lee pehr roh-mah soh-noh freh-kwen-tee",
+    "en": "The flights to Rome are frequent.",
+    "des": "Talking about flight schedules.",
+    "phrase_name": "Frequent flights to Rome"
+  },
+  {
+    "phrase": "I turisti con guide locali imparano di più.",
+    "pr": "ee too-ree-stee kon gwee-deh loh-kah-lee eem-pah-rah-noh dee pyoo",
+    "en": "Tourists with local guides learn more.",
+    "des": "Talking about tourism and learning.",
+    "phrase_name": "Tourists learn more with local guides"
+  },
+  {
+    "phrase": "I lavori senza strumenti sono difficili.",
+    "pr": "ee lah-voh-ree sen-zah stroo-men-tee soh-noh dee-fee-chee-lee",
+    "en": "Jobs without tools are difficult.",
+    "des": "Describing work conditions.",
+    "phrase_name": "Difficult jobs without tools"
+  }
+]
+,"masculine/singular-nouns":[
+  {
+    "phrase": "Il ristorante vicino alla stazione è famoso.",
+    "pr": "eel rees-toh-rahn-teh vee-chee-noh ahl-lah stah-tsyoh-neh eh fah-moh-soh",
+    "en": "The restaurant near the station is famous.",
+    "des": "Describing location and reputation.",
+    "phrase_name": "Famous restaurant near the station"
+  },
+  {
+    "phrase": "Il ponte sul fiume è molto antico.",
+    "pr": "eel pohn-teh sool fyoo-meh eh mol-toh an-tee-koh",
+    "en": "The bridge over the river is very old.",
+    "des": "Talking about a landmark and its age.",
+    "phrase_name": "Old bridge over the river"
+  },
+  {
+    "phrase": "Il parco in centro è tranquillo.",
+    "pr": "eel par-koh een chen-troh eh trahn-kwee-loh",
+    "en": "The park in the center is quiet.",
+    "des": "Describing a park’s location and atmosphere.",
+    "phrase_name": "Quiet park in the center"
+  },
+  {
+    "phrase": "Il mercato è vivace ma piccolo.",
+    "pr": "eel mer-kah-toh eh vee-vah-cheh mah pee-koh-loh",
+    "en": "The market is lively but small.",
+    "des": "Contrasting two characteristics of a market.",
+    "phrase_name": "Lively but small market"
+  },
+  {
+    "phrase": "Il treno per Milano è puntuale.",
+    "pr": "eel treh-noh pehr mee-lah-noh eh poon-too-ah-leh",
+    "en": "The train to Milan is on time.",
+    "des": "Talking about punctuality and destination.",
+    "phrase_name": "Train to Milan on time"
+  },
+  {
+    "phrase": "Il negozio all’angolo è aperto fino a tardi.",
+    "pr": "eel neh-goht-tzyoh ahl-lahn-goh-loh eh ah-pehr-toh fee-noh ah tar-dee",
+    "en": "The shop on the corner is open until late.",
+    "des": "Describing shop hours and position.",
+    "phrase_name": "Shop on the corner open late"
+  },
+  {
+    "phrase": "Il villaggio tra le montagne è pittoresco.",
+    "pr": "eel veel-lahj-joh trah leh mon-tahn-yeh eh pee-tor-res-koh",
+    "en": "The village between the mountains is picturesque.",
+    "des": "Talking about villages and scenery.",
+    "phrase_name": "Picturesque mountain village"
+  },
+  {
+    "phrase": "Il teatro con spettacoli serali è famoso.",
+    "pr": "eel teh-ah-troh kon speht-tah-koh-lee seh-rah-lee eh fah-moh-soh",
+    "en": "The theater with evening shows is famous.",
+    "des": "Talking about theaters and events.",
+    "phrase_name": "Famous theater with evening shows"
+  },
+  {
+    "phrase": "Il corso di lingua è utile per il lavoro.",
+    "pr": "eel kor-soh dee leen-gwah eh oo-tee-leh pehr eel lah-voh-roh",
+    "en": "The language course is useful for work.",
+    "des": "Talking about a course and its benefit.",
+    "phrase_name": "Useful language course for work"
+  },
+  {
+    "phrase": "Il concerto all’aperto è gratuito.",
+    "pr": "eel kon-cher-toh ahl-lah-pehr-toh eh grah-too-ee-toh",
+    "en": "The outdoor concert is free.",
+    "des": "Talking about a concert and its cost.",
+    "phrase_name": "Free outdoor concert"
+  },
+  {
+    "phrase": "Il vicolo dietro la chiesa è stretto.",
+    "pr": "eel vee-koh-loh dyeh-troh lah kyeh-sah eh stret-toh",
+    "en": "The alley behind the church is narrow.",
+    "des": "Describing a street’s location and size.",
+    "phrase_name": "Narrow alley behind the church"
+  },
+  {
+    "phrase": "Il documento sulla scrivania è importante.",
+    "pr": "eel doh-koo-men-toh sool-lah skree-vah-nee-ah eh eem-por-tahn-teh",
+    "en": "The document on the desk is important.",
+    "des": "Talking about a document and its location.",
+    "phrase_name": "Important document on the desk"
+  },
+  {
+    "phrase": "Il volo per Roma è frequente.",
+    "pr": "eel voh-loh pehr roh-mah eh freh-kwen-teh",
+    "en": "The flight to Rome is frequent.",
+    "des": "Talking about flight schedules.",
+    "phrase_name": "Frequent flight to Rome"
+  },
+  {
+    "phrase": "Il turista con la guida locale impara molto.",
+    "pr": "eel too-ree-stah kon lah gwee-dah loh-kah-leh eem-pah-rah mol-toh",
+    "en": "The tourist with the local guide learns a lot.",
+    "des": "Talking about learning experiences for tourists.",
+    "phrase_name": "Tourist learns with local guide"
+  },
+  {
+    "phrase": "Il lavoro senza strumenti è difficile.",
+    "pr": "eel lah-voh-roh sen-zah stroo-men-tee eh dee-fee-chee-leh",
+    "en": "The job without tools is difficult.",
+    "des": "Talking about work and conditions.",
+    "phrase_name": "Difficult job without tools"
+  }
+],"masculine/singular-nouns2":[
+  {
+    "phrase": "[[Il libro]] è interessante.",
+    "pr": "eel lee-broh eh een-teh-res-san-teh",
+    "en": "The book is interesting.",
+    "des": "Describing a book's quality.",
+    "phrase_name": "Interesting book"
+  },
+  {
+    "phrase": "[[Il ragazzo]] compra un gelato.",
+    "pr": "eel rah-gaht-tsoh kom-prah oon jeh-lah-toh",
+    "en": "The boy buys an ice cream.",
+    "des": "Talking about a purchase.",
+    "phrase_name": "Boy buying ice cream"
+  },
+  {
+    "phrase": "[[Il cane]] vede un gatto.",
+    "pr": "eel kah-neh veh-deh oon gaht-toh",
+    "en": "The dog sees a cat.",
+    "des": "Describing an animal's action.",
+    "phrase_name": "Dog sees a cat"
+  },
+  {
+    "phrase": "[[Il turista]] trova la piazza.",
+    "pr": "eel too-ree-stah troh-vah lah pyaht-tsah",
+    "en": "The tourist finds the square.",
+    "des": "Talking about finding a place.",
+    "phrase_name": "Tourist finds square"
+  },
+  {
+    "phrase": "[[Il bambino]] gioca con la palla.",
+    "pr": "eel bahm-bee-noh joh-kah kon lah pahl-lah",
+    "en": "The child plays with the ball.",
+    "des": "Describing a child's activity.",
+    "phrase_name": "Child plays with ball"
+  },
+  {
+    "phrase": "[[Il treno]] parte alle otto.",
+    "pr": "eel treh-noh par-teh ahl-leh oht-toh",
+    "en": "The train leaves at eight.",
+    "des": "Talking about transport schedules.",
+    "phrase_name": "Train leaves at eight"
+  },
+  {
+    "phrase": "[[Il cliente]] aspetta al banco.",
+    "pr": "eel klee-en-teh ah-speht-tah ahl ban-koh",
+    "en": "The customer waits at the counter.",
+    "des": "Talking about waiting in a shop.",
+    "phrase_name": "Customer waits at counter"
+  },
+  {
+    "phrase": "[[Il padre]] lavora in ufficio.",
+    "pr": "eel pah-dreh lah-voh-rah een oof-fee-choh",
+    "en": "The father works in an office.",
+    "des": "Talking about someone's occupation.",
+    "phrase_name": "Father works in office"
+  },
+  {
+    "phrase": "[[Il cuoco]] prepara la pasta.",
+    "pr": "eel kwoh-koh preh-pah-rah lah pah-stah",
+    "en": "The cook prepares pasta.",
+    "des": "Talking about cooking activity.",
+    "phrase_name": "Cook prepares pasta"
+  },
+  {
+    "phrase": "[[Il medico]] aiuta il paziente.",
+    "pr": "eel meh-dee-koh ah-yoo-tah eel pah-tsyen-teh",
+    "en": "The doctor helps the patient.",
+    "des": "Talking about helping someone.",
+    "phrase_name": "Doctor helps patient"
+  },
+  {
+    "phrase": "[[Il vicino]] parla con me.",
+    "pr": "eel vee-chee-noh par-lah kon meh",
+    "en": "The neighbor talks to me.",
+    "des": "Talking about communication.",
+    "phrase_name": "Neighbor talks to me"
+  },
+  {
+    "phrase": "[[Il cameriere]] porta il caffè.",
+    "pr": "eel kah-meh-ryeh-reh por-tah eel kahf-feh",
+    "en": "The waiter brings the coffee.",
+    "des": "Talking about serving food/drink.",
+    "phrase_name": "Waiter brings coffee"
+  },
+  {
+    "phrase": "[[Il fratello]] studia in biblioteca.",
+    "pr": "eel frah-tel-loh stoo-dee-ah een bee-blyoh-teh-kah",
+    "en": "The brother studies in the library.",
+    "des": "Talking about study location.",
+    "phrase_name": "Brother studies in library"
+  },
+  {
+    "phrase": "[[Il musicista]] suona la chitarra.",
+    "pr": "eel moo-see-chees-tah swoh-nah lah kee-tahr-rah",
+    "en": "The musician plays the guitar.",
+    "des": "Talking about music performance.",
+    "phrase_name": "Musician plays guitar"
+  },
+  {
+    "phrase": "[[Il cliente]] paga con la carta.",
+    "pr": "eel klee-en-teh pah-gah kon lah kar-tah",
+    "en": "The customer pays with a card.",
+    "des": "Talking about payment method.",
+    "phrase_name": "Customer pays with card"
+  }
+]
+,
+    "phrases1":[
+  {"phrase":"Ciao!","pr":"chow","en":"Hi!/Bye!"},
+  {"phrase":"Buongiorno.","pr":"bwon-jor-no","en":"Good morning."},
+  {"phrase":"Buon pomeriggio.","pr":"bwon po-me-rid-jo","en":"Good afternoon."},
+  {"phrase":"Buonasera.","pr":"bwo-na-se-ra","en":"Good evening."},
+  {"phrase":"Buonanotte.","pr":"bwo-na-not-te","en":"Good night."},
+  {"phrase":"Come stai?","pr":"ko-me stai","en":"How are you? (informal)"},
+  {"phrase":"Come sta?","pr":"ko-me sta","en":"How are you? (formal)"},
+  {"phrase":"Sto bene, grazie.","pr":"sto be-ne gra-tsye","en":"I’m fine, thanks."},
+  {"phrase":"E tu?","pr":"e tu","en":"And you?"},
+  {"phrase":"Piacere di conoscerti.","pr":"pya-che-re di ko-no-shair-ti","en":"Nice to meet you."},
+  {"phrase":"A presto.","pr":"a pre-sto","en":"See you soon."},
+  {"phrase":"Arrivederci.","pr":"ar-ri-ve-der-chi","en":"Goodbye."},
+  {"phrase":"Scusa.","pr":"sku-za","en":"Excuse me / Sorry (informal)."},
+  {"phrase":"Mi scusi.","pr":"mi sku-zi","en":"Excuse me / Sorry (formal)."},
+  {"phrase":"Grazie.","pr":"gra-tsye","en":"Thank you."},
+  {"phrase":"Grazie mille.","pr":"gra-tsye mil-le","en":"Thanks a lot."},
+  {"phrase":"Prego.","pr":"pre-go","en":"You’re welcome."},
+  {"phrase":"Per favore.","pr":"per fa-vo-re","en":"Please."},
+  {"phrase":"Va bene.","pr":"va be-ne","en":"Okay."},
+  {"phrase":"Non c’è problema.","pr":"non che pro-ble-ma","en":"No problem."},
+  {"phrase":"Di dove sei?","pr":"di do-ve sei","en":"Where are you from? (informal)"},
+  {"phrase":"Sono di…","pr":"so-no di","en":"I’m from…"},
+  {"phrase":"Parli inglese?","pr":"par-li in-gle-ze","en":"Do you speak English?"},
+  {"phrase":"Parlo un po’ d’italiano.","pr":"par-lo un po dee-ta-lya-no","en":"I speak a little Italian."},
+  {"phrase":"Non capisco.","pr":"non ka-pis-ko","en":"I don’t understand."},
+  
+  {"phrase":"Vorrei un caffè.","pr":"vor-rei un kaf-fe","en":"I’d like a coffee."},
+  {"phrase":"Un cappuccino, per favore.","pr":"un kap-pu-chin-o per fa-vo-re","en":"A cappuccino, please."},
+  {"phrase":"Acqua naturale/gassata.","pr":"a-kwah na-tu-ra-le / gas-sa-ta","en":"Still/Sparkling water."},
+  {"phrase":"Il conto, per favore.","pr":"il kon-to per fa-vo-re","en":"The bill, please."},
+  {"phrase":"Possiamo avere il menù?","pr":"pos-sya-mo a-ve-re il me-nu","en":"Can we have the menu?"},
+  {"phrase":"Che cosa mi consiglia?","pr":"ke ko-sa mi kon-si-lya","en":"What do you recommend?"},
+  {"phrase":"Sono vegetariano/a.","pr":"so-no ve-ge-ta-ria-no","en":"I am vegetarian."},
+  {"phrase":"Senza glutine.","pr":"sen-za glu-ti-ne","en":"Gluten-free."},
+  {"phrase":"Niente carne, grazie.","pr":"nyen-te kar-ne gra-tsye","en":"No meat, thank you."},
+  {"phrase":"È piccante?","pr":"e pi-kan-te","en":"Is it spicy?"},
+  {"phrase":"Delizioso!","pr":"de-li-tsyo-so","en":"Delicious!"},
+  {"phrase":"Un tavolo per due.","pr":"un ta-vo-lo per doo-e","en":"A table for two."},
+  {"phrase":"Abbiamo una prenotazione.","pr":"ab-bya-mo u-na pre-no-ta-tsyo-ne","en":"We have a reservation."},
+  {"phrase":"Vorrei pagare con carta.","pr":"vor-rei pa-ga-re kon kar-ta","en":"I’d like to pay by card."},
+  {"phrase":"Contanti o carta?","pr":"kon-tan-ti o kar-ta","en":"Cash or card?"},
+  {"phrase":"Un bicchiere di vino rosso.","pr":"un bik-kye-re di vi-no ros-so","en":"A glass of red wine."},
+  {"phrase":"Posso avere più pane?","pr":"pos-so a-ve-re pyu pa-ne","en":"May I have more bread?"},
+  {"phrase":"Acqua del rubinetto, per favore.","pr":"a-kwah del ru-bi-net-to per fa-vo-re","en":"Tap water, please."},
+  {"phrase":"Vorrei un dolce.","pr":"vor-rei un dol-che","en":"I’d like a dessert."},
+  {"phrase":"Qual è la specialità della casa?","pr":"kwal e la spe-tsya-li-ta del-la ka-sa","en":"What’s the house specialty?"},
+  {"phrase":"Porti il resto.","pr":"por-ti il re-sto","en":"Keep the change."},
+  {"phrase":"Un altro, grazie.","pr":"un al-tro gra-tsye","en":"Another one, please."},
+  {"phrase":"È incluso il servizio?","pr":"e in-clu-so il ser-vi-tsyo","en":"Is service included?"},
+  {"phrase":"Questo è per asporto.","pr":"kwes-to e per a-spor-to","en":"This is for takeaway."},
+  {"phrase":"Siamo pronti per ordinare.","pr":"sya-mo pron-ti per or-di-na-re","en":"We are ready to order."},
+
+  {"phrase":"Dov’è la stazione?","pr":"do-ve la sta-tsyo-ne","en":"Where is the station?"},
+  {"phrase":"Dov’è il bagno?","pr":"do-ve il ban-yo","en":"Where is the bathroom?"},
+  {"phrase":"Quanto costa un biglietto?","pr":"kwan-to kos-ta un bi-lyet-to","en":"How much is a ticket?"},
+  {"phrase":"Un biglietto di andata e ritorno.","pr":"un bi-lyet-to di an-da-ta e ri-tor-no","en":"Round-trip ticket."},
+  {"phrase":"A che ora parte il treno?","pr":"a ke o-ra par-te il tre-no","en":"What time does the train leave?"},
+  {"phrase":"Questo treno ferma a Roma?","pr":"kwes-to tre-no fer-ma a Ro-ma","en":"Does this train stop in Rome?"},
+  {"phrase":"Vorrei un taxi.","pr":"vor-rei un tak-si","en":"I’d like a taxi."},
+  {"phrase":"Portami all’aeroporto.","pr":"por-ta-mi al la-e-ro-por-to","en":"Take me to the airport."},
+  {"phrase":"Quanto tempo ci vuole?","pr":"kwan-to tem-po chi vwo-le","en":"How long does it take?"},
+  {"phrase":"È lontano?","pr":"e lon-ta-no","en":"Is it far?"},
+  {"phrase":"A destra.","pr":"a des-tra","en":"To the right."},
+  {"phrase":"A sinistra.","pr":"a si-nis-tra","en":"To the left."},
+  {"phrase":"Dritto.","pr":"drit-to","en":"Straight ahead."},
+  {"phrase":"Mi sono perso/a.","pr":"mi so-no per-so","en":"I’m lost."},
+  {"phrase":"Può aiutarmi?","pr":"puo a-yu-tar-mi","en":"Can you help me?"},
+  {"phrase":"Ho bisogno di una mappa.","pr":"o bi-so-nio di u-na map-pa","en":"I need a map."},
+  {"phrase":"C’è un autobus per il centro?","pr":"che un ow-to-bus per il chen-tro","en":"Is there a bus to downtown?"},
+  {"phrase":"A che ora chiude?","pr":"a ke o-ra kyu-de","en":"What time does it close?"},
+  {"phrase":"Dove posso noleggiare un’auto?","pr":"do-ve pos-so no-le-dja-re un ow-to","en":"Where can I rent a car?"},
+  {"phrase":"Qual è l’uscita?","pr":"kwal e lu-shi-ta","en":"Which is the exit?"},
+  {"phrase":"Quanto dista?","pr":"kwan-to di-sta","en":"How far is it?"},
+  {"phrase":"C’è un hotel vicino?","pr":"che un o-tel vi-chi-no","en":"Is there a hotel nearby?"},
+  {"phrase":"Ho una prenotazione.","pr":"o u-na pre-no-ta-tsyo-ne","en":"I have a reservation."},
+  {"phrase":"Vorrei una camera singola.","pr":"vor-rei u-na ka-me-ra sin-go-la","en":"I’d like a single room."},
+  {"phrase":"Per quante notti?","pr":"per kwan-te not-ti","en":"For how many nights?"},
+
+  {"phrase":"Quanto costa?","pr":"kwan-to kos-ta","en":"How much does it cost?"},
+  {"phrase":"È troppo caro.","pr":"e trop-po ka-ro","en":"It’s too expensive."},
+  {"phrase":"Posso pagare con carta?","pr":"pos-so pa-ga-re kon kar-ta","en":"Can I pay by card?"},
+  {"phrase":"Avete taglie più grandi?","pr":"a-ve-te tal-ye pyu gran-di","en":"Do you have bigger sizes?"},
+  {"phrase":"Posso provarlo?","pr":"pos-so pro-var-lo","en":"Can I try it on?"},
+  {"phrase":"È in saldo?","pr":"e in sal-do","en":"Is it on sale?"},
+  {"phrase":"Cerco un regalo.","pr":"cher-ko un re-ga-lo","en":"I’m looking for a gift."},
+  {"phrase":"Mi piace questo.","pr":"mi pya-che kwes-to","en":"I like this one."},
+  {"phrase":"Accettate contanti?","pr":"a-chet-ta-te kon-tan-ti","en":"Do you accept cash?"},
+  {"phrase":"Vorrei cambiare soldi.","pr":"vor-rei kam-bya-re sol-di","en":"I’d like to exchange money."},
+  {"phrase":"Dove si paga?","pr":"do-ve si pa-ga","en":"Where do I pay?"},
+  {"phrase":"Solo guardo, grazie.","pr":"so-lo guar-do gra-tsye","en":"I’m just looking, thanks."},
+  {"phrase":"Avete un sacchetto?","pr":"a-ve-te un sa-ket-to","en":"Do you have a bag?"},
+  {"phrase":"Vorrei una ricevuta.","pr":"vor-rei u-na ri-ce-vu-ta","en":"I’d like a receipt."},
+  {"phrase":"È disponibile in un altro colore?","pr":"e dis-po-ni-bi-le in un al-tro ko-lo-re","en":"Is it available in another color?"},
+  {"phrase":"Quanto è lo sconto?","pr":"kwan-to e lo skon-to","en":"How much is the discount?"},
+  {"phrase":"Prendo questo.","pr":"pren-do kwes-to","en":"I’ll take this."},
+  {"phrase":"È troppo piccolo.","pr":"e trop-po pi-ko-lo","en":"It’s too small."},
+  {"phrase":"Avete qualcosa di simile?","pr":"a-ve-te kwal-ko-sa di si-mi-le","en":"Do you have something similar?"},
+  {"phrase":"Questo è perfetto.","pr":"kwes-to e per-fet-to","en":"This is perfect."},
+  {"phrase":"Mi serve una borsa.","pr":"mi ser-ve u-na bor-sa","en":"I need a bag."},
+  {"phrase":"Accettate carte di credito?","pr":"a-chet-ta-te kar-te di kre-di-to","en":"Do you accept credit cards?"},
+  {"phrase":"Vorrei pagare in contanti.","pr":"vor-rei pa-ga-re in kon-tan-ti","en":"I’d like to pay in cash."},
+  {"phrase":"Può farmi uno sconto?","pr":"puo far-mi u-no skon-to","en":"Can you give me a discount?"},
+  {"phrase":"Questa è la mia taglia.","pr":"kwes-ta e la mia tal-ya","en":"This is my size."},
+
+  {"phrase":"Aiuto!","pr":"a-yu-to","en":"Help!"},
+  {"phrase":"Chiamate un dottore!","pr":"kya-ma-te un dot-to-re","en":"Call a doctor!"},
+  {"phrase":"Chiamate la polizia!","pr":"kya-ma-te la po-li-tsia","en":"Call the police!"},
+  {"phrase":"Ho bisogno di un medico.","pr":"o bi-so-nio di un me-di-ko","en":"I need a doctor."},
+  {"phrase":"Sto male.","pr":"sto ma-le","en":"I feel sick."},
+  {"phrase":"Ho un’emergenza.","pr":"o un e-mer-gen-za","en":"I have an emergency."},
+  {"phrase":"Mi sono ferito/a.","pr":"mi so-no fe-ri-to","en":"I am hurt."},
+  {"phrase":"Dove è l’ospedale?","pr":"do-ve e los-pe-da-le","en":"Where is the hospital?"},
+  {"phrase":"Mi fa male qui.","pr":"mi fa ma-le kwi","en":"It hurts here."},
+  {"phrase":"Sono allergico/a a…","pr":"so-no al-ler-ji-ko a","en":"I’m allergic to…"},
+  {"phrase":"Ho bisogno di medicine.","pr":"o bi-so-nio di me-di-si-ne","en":"I need medicine."},
+  {"phrase":"Serve un’ambulanza.","pr":"ser-ve un am-bu-lan-za","en":"An ambulance is needed."},
+  {"phrase":"È urgente.","pr":"e ur-gen-te","en":"It’s urgent."},
+  {"phrase":"Posso usare il telefono?","pr":"pos-so u-za-re il te-le-fo-no","en":"May I use the phone?"},
+  {"phrase":"Ho perso il passaporto.","pr":"o per-so il pas-sa-por-to","en":"I lost my passport."},
+  {"phrase":"Mi hanno rubato.","pr":"mi an-no ru-ba-to","en":"I’ve been robbed."},
+  {"phrase":"C’è una farmacia vicina?","pr":"che u-na far-ma-tsia vi-chi-na","en":"Is there a pharmacy nearby?"},
+  {"phrase":"Serve una ricetta.","pr":"ser-ve u-na ri-che-ta","en":"A prescription is needed."},
+  {"phrase":"Mi sento svenire.","pr":"mi sen-to sve-ni-re","en":"I feel faint."},
+  {"phrase":"C’è un pronto soccorso?","pr":"che un pron-to so-cor-so","en":"Is there an emergency room?"},
+  {"phrase":"Ho bisogno di acqua.","pr":"o bi-so-nio di a-kwa","en":"I need water."},
+  {"phrase":"Sono in pericolo.","pr":"so-no in pe-ri-ko-lo","en":"I am in danger."},
+  {"phrase":"Aiutami, per favore.","pr":"a-yu-ta-mi per fa-vo-re","en":"Help me, please."},
+  {"phrase":"Chiamate i vigili del fuoco!","pr":"kya-ma-te i vi-ji-li del fuo-ko","en":"Call the fire department!"},
+  {"phrase":"Ho bisogno di aiuto subito.","pr":"o bi-so-nio di a-yu-to su-bi-to","en":"I need help immediately."},
+
+  {"phrase":"Che ore sono?","pr":"ke o-re so-no","en":"What time is it?"},
+  {"phrase":"Oggi è una bella giornata.","pr":"oj-ji e u-na bel-la jor-na-ta","en":"Today is a beautiful day."},
+  {"phrase":"Domani piove.","pr":"do-ma-ni pjo-ve","en":"It will rain tomorrow."},
+  {"phrase":"Ho fame.","pr":"o fa-me","en":"I’m hungry."},
+  {"phrase":"Ho sete.","pr":"o se-te","en":"I’m thirsty."},
+  {"phrase":"Ho sonno.","pr":"o son-no","en":"I’m sleepy."},
+  {"phrase":"Mi piace leggere.","pr":"mi pya-che led-ge-re","en":"I like reading."},
+  {"phrase":"Mi piace viaggiare.","pr":"mi pya-che vyag-ja-re","en":"I like traveling."},
+  {"phrase":"Ti amo.","pr":"ti a-mo","en":"I love you."},
+  {"phrase":"Mi manchi.","pr":"mi man-ki","en":"I miss you."},
+  {"phrase":"Buona fortuna.","pr":"bwo-na for-tu-na","en":"Good luck."},
+  {"phrase":"Buon compleanno.","pr":"bwon kom-ple-an-no","en":"Happy birthday."},
+  {"phrase":"Felice anno nuovo.","pr":"fe-li-che an-no nuo-vo","en":"Happy New Year."},
+  {"phrase":"Buone vacanze.","pr":"bwo-ne va-kan-tse","en":"Happy holidays."},
+  {"phrase":"Che peccato!","pr":"ke pek-ka-to","en":"What a shame!"},
+  {"phrase":"Che bello!","pr":"ke bel-lo","en":"How nice!"},
+  {"phrase":"Davvero?","pr":"dav-ve-ro","en":"Really?"},
+  {"phrase":"È fantastico!","pr":"e fan-ta-sti-ko","en":"That’s fantastic!"},
+  {"phrase":"Va tutto bene.","pr":"va tut-to be-ne","en":"Everything is fine."},
+  {"phrase":"Non lo so.","pr":"non lo so","en":"I don’t know."},
+  {"phrase":"Vediamoci domani.","pr":"ve-di-ya-mo-chi do-ma-ni","en":"Let’s meet tomorrow."},
+  {"phrase":"Andiamo!","pr":"an-dya-mo","en":"Let’s go!"},
+  {"phrase":"Aspetta un attimo.","pr":"a-spet-ta un at-ti-mo","en":"Wait a moment."},
+  {"phrase":"Fai attenzione.","pr":"fai at-ten-tsyo-ne","en":"Be careful."},
+  {"phrase":"Benvenuto/a!","pr":"ben-ve-nu-to","en":"Welcome!"}],
+
+  "phrases2":[
+  {"phrase":"Ciao! Come va?","pr":"chow! ko-me va","en":"Hi! How's it going?"},
+  {"phrase":"Tutto bene, grazie. E tu?","pr":"tut-to be-ne, gra-tsye. e tu","en":"All good, thanks. And you?"},
+  {"phrase":"Che fai di bello oggi?","pr":"ke fai di bel-lo o-ggi","en":"What are you up to today?"},
+  {"phrase":"Niente di speciale, e tu?","pr":"nyen-te di spe-cha-le, e tu","en":"Nothing special, and you?"},
+  {"phrase":"Hai fatto qualcosa di interessante questo weekend?","pr":"ai fat-to kwal-ko-sa di in-ter-ess-an-te kwes-to wee-kend","en":"Did you do anything interesting this weekend?"},
+  {"phrase":"Sì, sono andato/a al mare.","pr":"si, so-no an-da-to/ a al ma-re","en":"Yes, I went to the beach."},
+  {"phrase":"Che bello! Io sono rimasto/a a casa.","pr":"ke bel-lo! io so-no ri-ma-sto/ a a ka-sa","en":"Nice! I stayed at home."},
+  {"phrase":"Ti piace il tempo oggi?","pr":"ti pya-che il tem-po o-ggi","en":"Do you like the weather today?"},
+  {"phrase":"Sì, è molto bello.","pr":"si, e mol-to bel-lo","en":"Yes, it's very nice."},
+  {"phrase":"Fa troppo caldo/freddo per me.","pr":"fa trop-po kal-do/fred-do per me","en":"It's too hot/cold for me."},
+  {"phrase":"Hai visto l’ultimo film?","pr":"ai vis-to lul-ti-mo film","en":"Did you see the latest movie?"},
+  {"phrase":"No, non ancora. È bello?","pr":"no, non an-ko-ra. e bel-lo","en":"No, not yet. Is it good?"},
+  {"phrase":"Sì, lo consiglio!","pr":"si, lo kon-si-lyo","en":"Yes, I recommend it!"},
+  {"phrase":"Che musica ti piace?","pr":"ke mu-zi-ka ti pya-che","en":"What kind of music do you like?"},
+  {"phrase":"Mi piace il rock/pop/jazz.","pr":"mi pya-che il rok/pop/jazz","en":"I like rock/pop/jazz."},
+  {"phrase":"Hai qualche hobby?","pr":"ai kwal-ke ho-bby","en":"Do you have any hobbies?"},
+  {"phrase":"Sì, mi piace leggere e cucinare.","pr":"si, mi pya-che led-ge-re e ku-ci-na-re","en":"Yes, I like reading and cooking."},
+  {"phrase":"Io preferisco lo sport.","pr":"io pre-fe-ris-ko lo sport","en":"I prefer sports."},
+  {"phrase":"Che lavoro fai?","pr":"ke la-vo-ro fai","en":"What do you do for work?"},
+  {"phrase":"Lavoro come insegnante.","pr":"la-vo-ro ko-me in-se-gna-te","en":"I work as a teacher."},
+  {"phrase":"Davvero? È interessante!","pr":"dav-ve-ro? e in-ter-ess-an-te","en":"Really? That’s interesting!"},
+  {"phrase":"Sì, mi piace molto.","pr":"si, mi pya-che mol-to","en":"Yes, I like it a lot."},
+  {"phrase":"Hai fratelli o sorelle?","pr":"ai fra-tel-li o so-rel-le","en":"Do you have brothers or sisters?"},
+  {"phrase":"Ho un fratello e una sorella.","pr":"o un fra-tel-lo e u-na so-rel-la","en":"I have a brother and a sister."},
+  {"phrase":"Che bel gruppo!","pr":"ke bel gru-ppo","en":"What a nice group!"},
+  {"phrase":"Di dove sei?","pr":"di do-ve sei","en":"Where are you from?"},
+  {"phrase":"Sono di Roma, e tu?","pr":"so-no di Ro-ma, e tu","en":"I’m from Rome, and you?"},
+  {"phrase":"Io sono di Milano.","pr":"io so-no di Mi-la-no","en":"I’m from Milan."},
+  {"phrase":"Ti piace viaggiare?","pr":"ti pya-che vyag-ja-re","en":"Do you like traveling?"},
+  {"phrase":"Sì, adoro visitare posti nuovi.","pr":"si, a-do-ro vi-zi-ta-re pos-ti nuo-vi","en":"Yes, I love visiting new places."},
+  {"phrase":"Io preferisco rilassarmi a casa.","pr":"io pre-fe-ris-ko ri-las-sar-mi a ka-sa","en":"I prefer relaxing at home."},
+  {"phrase":"Che cibo ti piace?","pr":"ke chi-bo ti pya-che","en":"What food do you like?"},
+  {"phrase":"Mi piace la pasta e la pizza.","pr":"mi pya-che la pas-ta e la pit-za","en":"I like pasta and pizza."},
+  {"phrase":"Hai animali domestici?","pr":"ai a-ni-ma-li do-mes-ti-chi","en":"Do you have pets?"},
+  {"phrase":"Sì, ho un cane/gatto.","pr":"si, o un ka-ne/ gat-to","en":"Yes, I have a dog/cat."},
+  {"phrase":"Che tipo di film ti piacciono?","pr":"ke ti-po di film ti pya-cho-no","en":"What type of movies do you like?"},
+  {"phrase":"Mi piacciono i film comici e d’azione.","pr":"mi pya-cho-no i film ko-mi-chi e da-tsyo-ne","en":"I like comedies and action movies."},
+  {"phrase":"Hai fatto sport oggi?","pr":"ai fat-to sport o-ggi","en":"Did you do sports today?"},
+  {"phrase":"Sì, ho corso al parco.","pr":"si, o kor-so al par-ko","en":"Yes, I ran at the park."},
+  {"phrase":"Io ho fatto yoga.","pr":"io o fat-to yo-ga","en":"I did yoga."},
+  {"phrase":"Che libri stai leggendo?","pr":"ke li-bri stai led-ge-ndo","en":"Which books are you reading?"},
+  {"phrase":"Sto leggendo un romanzo giallo.","pr":"sto led-ge-ndo un ro-man-tso jial-lo","en":"I’m reading a mystery novel."},
+  {"phrase":"Ti piace cucinare?","pr":"ti pya-che ku-ci-na-re","en":"Do you like cooking?"},
+  {"phrase":"Sì, mi piace provare nuove ricette.","pr":"si, mi pya-che pro-va-re nuo-ve ri-chet-te","en":"Yes, I like trying new recipes."},
+  {"phrase":"Io preferisco mangiare fuori.","pr":"io pre-fe-ris-ko man-ja-re fuo-ri","en":"I prefer eating out."},
+  {"phrase":"Che programmi hai per il weekend?","pr":"ke pro-gra-mi ai per il wee-kend","en":"What plans do you have for the weekend?"},
+  {"phrase":"Niente di speciale, forse una passeggiata.","pr":"nyen-te di spe-cha-le, for-se u-na pas-sej-ja-ta","en":"Nothing special, maybe a walk."},
+  {"phrase":"Hai visto qualche serie TV interessante?","pr":"ai vis-to kwal-ke se-ri-e TV in-ter-ess-an-te","en":"Have you seen any interesting TV series?"},
+  {"phrase":"Sì, ho visto una serie fantastica su Netflix.","pr":"si, o vis-to u-na se-ri-e fan-ta-sti-ca su Netflix","en":"Yes, I watched a fantastic series on Netflix."},
+  {"phrase":"È bello parlarti!","pr":"e bel-lo par-lar-ti","en":"It’s nice talking to you!"},
+  {"phrase":"Sì, a presto!","pr":"si, a pre-sto","en":"Yes, see you soon!"}
+],
+  "phrases3":[
+  {"phrase":"Che fai di lavoro?","pr":"ke fai di la-vo-ro","en":"What do you do for work?"},
+  {"phrase":"Lavoro in ufficio.","pr":"la-vo-ro in uf-fi-cho","en":"I work in an office."},
+  {"phrase":"Io lavoro come infermiere/infermiera.","pr":"io la-vo-ro ko-me in-fer-mi-e-re/in-fer-mi-e-ra","en":"I work as a nurse."},
+  {"phrase":"Ti piace il tuo lavoro?","pr":"ti pya-che il tuo la-vo-ro","en":"Do you like your job?"},
+  {"phrase":"Sì, molto!","pr":"si, mol-to","en":"Yes, very much!"},
+  {"phrase":"No, non molto.","pr":"no, non mol-to","en":"No, not really."},
+  {"phrase":"Che fai nel tempo libero?","pr":"ke fai nel tem-po li-be-ro","en":"What do you do in your free time?"},
+  {"phrase":"Mi piace ascoltare musica.","pr":"mi pya-che as-co-lta-re mu-zi-ka","en":"I like listening to music."},
+  {"phrase":"Io preferisco fare sport.","pr":"io pre-fe-ris-ko fa-re sport","en":"I prefer doing sports."},
+  {"phrase":"Ti piace leggere libri?","pr":"ti pya-che led-ge-re li-bri","en":"Do you like reading books?"},
+  {"phrase":"Sì, soprattutto romanzi.","pr":"si, su-prat-tut-to ro-man-zi","en":"Yes, especially novels."},
+  {"phrase":"Hai animali domestici?","pr":"ai a-ni-ma-li do-mes-ti-chi","en":"Do you have pets?"},
+  {"phrase":"Sì, ho un cane e un gatto.","pr":"si, o un ka-ne e un gat-to","en":"Yes, I have a dog and a cat."},
+  {"phrase":"Io non ho animali.","pr":"io non o a-ni-ma-li","en":"I don’t have pets."},
+  {"phrase":"Cosa fai nel weekend?","pr":"ko-sa fai nel wee-kend","en":"What do you do on weekends?"},
+  {"phrase":"Mi piace uscire con gli amici.","pr":"mi pya-che u-sci-re kon gli a-mi-ci","en":"I like going out with friends."},
+  {"phrase":"Io resto a casa e guardo film.","pr":"io res-to a ka-sa e guar-do film","en":"I stay home and watch movies."},
+  {"phrase":"Hai visto qualche film di recente?","pr":"ai vis-to kwal-ke film di re-chen-te","en":"Have you seen any movies recently?"},
+  {"phrase":"Sì, ho visto un film interessante.","pr":"si, o vis-to un film in-ter-ess-an-te","en":"Yes, I watched an interesting movie."},
+  {"phrase":"No, non ancora.","pr":"no, non an-ko-ra","en":"No, not yet."},
+  {"phrase":"Qual è il tuo ristorante preferito?","pr":"kwal e il tuo re-sto-ran-te pre-fe-ri-to","en":"What is your favorite restaurant?"},
+  {"phrase":"Mi piace il ristorante italiano vicino a casa.","pr":"mi pya-che il re-sto-ran-te i-ta-lia-no vi-ci-no a ka-sa","en":"I like the Italian restaurant near home."},
+  {"phrase":"Ti piace cucinare?","pr":"ti pya-che ku-ci-na-re","en":"Do you like cooking?"},
+  {"phrase":"Sì, adoro provare nuove ricette.","pr":"si, a-do-ro pro-va-re nuo-ve ri-chet-te","en":"Yes, I love trying new recipes."},
+  {"phrase":"Io preferisco ordinare fuori.","pr":"io pre-fe-ris-ko or-di-na-re fuo-ri","en":"I prefer ordering takeout."},
+  {"phrase":"Che tipo di musica ascolti?","pr":"ke ti-po di mu-zi-ka as-col-ti","en":"What kind of music do you listen to?"},
+  {"phrase":"Mi piace il rock e il pop.","pr":"mi pya-che il rok e il pop","en":"I like rock and pop."},
+  {"phrase":"Preferisci ascoltare musica o guardare film?","pr":"pre-fe-ris-ki as-col-ta-re mu-zi-ka o guar-da-re film","en":"Do you prefer listening to music or watching movies?"},
+  {"phrase":"Io preferisco ascoltare musica.","pr":"io pre-fe-ris-ko as-col-ta-re mu-zi-ka","en":"I prefer listening to music."},
+  {"phrase":"Hai viaggiato recentemente?","pr":"ai viad-ja-to re-chen-te-men-te","en":"Have you traveled recently?"},
+  {"phrase":"Sì, sono andato/a a Firenze.","pr":"si, so-no an-da-to/a a Fi-ren-ze","en":"Yes, I went to Florence."},
+  {"phrase":"Io sono rimasto/a a casa.","pr":"io so-no ri-ma-sto/a a ka-sa","en":"I stayed at home."},
+  {"phrase":"Ti piace il tempo oggi?","pr":"ti pya-che il tem-po o-ggi","en":"Do you like the weather today?"},
+  {"phrase":"Sì, è molto bello.","pr":"si, e mol-to bel-lo","en":"Yes, it’s very nice."},
+  {"phrase":"No, preferisco il sole.","pr":"no, pre-fe-ris-ko il so-le","en":"No, I prefer sunny weather."},
+  {"phrase":"Hai letto qualche libro interessante?","pr":"ai let-to kwal-ke li-bro in-ter-ess-an-te","en":"Have you read any interesting books?"},
+  {"phrase":"Sì, sto leggendo un romanzo giallo.","pr":"si, sto led-ge-ndo un ro-man-tso jial-lo","en":"Yes, I’m reading a mystery novel."},
+  {"phrase":"Io sto leggendo una biografia.","pr":"io sto led-ge-ndo u-na bio-gra-fi-a","en":"I’m reading a biography."},
+  {"phrase":"Ti piace fare sport?","pr":"ti pya-che fa-re sport","en":"Do you like playing sports?"},
+  {"phrase":"Sì, gioco a calcio e nuoto.","pr":"si, gio-ko a kal-cho e nuo-to","en":"Yes, I play soccer and swim."},
+  {"phrase":"Io preferisco andare in palestra.","pr":"io pre-fe-ris-ko an-da-re in pa-le-stra","en":"I prefer going to the gym."},
+  {"phrase":"Cosa fai dopo il lavoro?","pr":"ko-sa fai do-po il la-vo-ro","en":"What do you do after work?"},
+  {"phrase":"Mi rilasso a casa.","pr":"mi ri-las-so a ka-sa","en":"I relax at home."},
+  {"phrase":"Io esco con gli amici.","pr":"io es-ko kon gli a-mi-ci","en":"I go out with friends."},
+  {"phrase":"Hai programmi per stasera?","pr":"ai pro-gra-mi per sta-se-ra","en":"Do you have plans for tonight?"},
+  {"phrase":"Sì, vado al cinema.","pr":"si, va-do al chi-ne-ma","en":"Yes, I’m going to the cinema."},
+  {"phrase":"No, resterò a casa a leggere.","pr":"no, re-ste-ro a ka-sa a led-ge-re","en":"No, I’ll stay home and read."},
+  {"phrase":"Parli altre lingue?","pr":"par-li al-tre lin-gue","en":"Do you speak other languages?"},
+  {"phrase":"Sì, parlo inglese e francese.","pr":"si, par-lo in-gle-ze e fran-che-ze","en":"Yes, I speak English and French."},
+  {"phrase":"Io parlo solo italiano.","pr":"io par-lo so-lo i-ta-lia-no","en":"I only speak Italian."},
+  {"phrase":"È stato bello parlare con te.","pr":"e sta-to bel-lo par-la-re kon te","en":"It was nice talking to you."}]
+,
+
+
+"part1":[    
+        { "phrase": "Non voglio uscire.", "pr": "Non vo-glio u-sci-re.", "en": "I do not want to go out.", "des": "Used to negate a verb." },
+        { "phrase": "Non ho fame.", "pr": "Non ho fa-me.", "en": "I am not hungry.", "des": "Negates a state or condition." },
+        { "phrase": "Non capisco.", "pr": "Non ca-pi-sco.", "en": "I do not understand.", "des": "Used to express lack of understanding." },
+        { "phrase": "Non posso venire.", "pr": "Non pos-so ve-ni-re.", "en": "I cannot come.", "des": "Used to indicate inability." }
+      
+    ,
+    
+        { "phrase": "Non voglio tè né caffè.", "pr": "Non vo-glio tè ne caf-fè.", "en": "I want neither tea nor coffee.", "des": "Connects two negative options." },
+        { "phrase": "Non canta né balla.", "pr": "Non can-ta ne bal-la.", "en": "He/She neither sings nor dances.", "des": "Indicates two negated actions." },
+        { "phrase": "Non ho né tempo né soldi.", "pr": "Non ho ne tem-po ne sol-di.", "en": "I have neither time nor money.", "des": "Negates multiple things." }
+      
+    ,
+    
+        { "phrase": "Io vado al cinema, anche Luca.", "pr": "Io va-do al chi-ne-ma, an-ke Lu-ca.", "en": "I go to the cinema, and Luca too.", "des": "Includes someone additionally." },
+        { "phrase": "Mi piace il gelato, anche a te.", "pr": "Mi pia-ce il ge-la-to, an-ke a te.", "en": "I like ice cream, and you too.", "des": "Indicates similarity." },
+        { "phrase": "Anche oggi è caldo.", "pr": "An-ke o-ggi è cal-do.", "en": "Today is hot too.", "des": "Adds emphasis to a situation." }
+      
+    ,
+    
+        { "phrase": "Non ho finito ancora.", "pr": "Non ho fi-ni-to an-ko-ra.", "en": "I haven’t finished yet.", "des": "Indicates ongoing action." },
+        { "phrase": "Lui è ancora a casa.", "pr": "Lui è an-ko-ra a ca-sa.", "en": "He is still at home.", "des": "Expresses continuation." },
+        { "phrase": "Vuoi ancora un po’ di torta?", "pr": "Vuoi an-ko-ra un po’ di tor-ta?", "en": "Do you want more cake?", "des": "Indicates additional quantity." }
+      
+    ,
+    
+        { "phrase": "Ho già finito i compiti.", "pr": "Ho già fi-ni-to i com-pi-ti.", "en": "I have already finished the homework.", "des": "Indicates completed action." },
+        { "phrase": "Siamo già arrivati.", "pr": "Sia-mo già ar-ri-va-ti.", "en": "We have already arrived.", "des": "Indicates completion." },
+        { "phrase": "Hai già visto questo film?", "pr": "Hai già vi-sto que-sto film?", "en": "Have you already seen this movie?", "des": "Asks if an action is completed." }
+      
+    ,
+    
+        { "phrase": "Sono sempre felice.", "pr": "So-no sem-pre fe-li-ce.", "en": "I am always happy.", "des": "Indicates a constant state." },
+        { "phrase": "Lui è sempre puntuale.", "pr": "Lui è sem-pre pun-tua-le.", "en": "He is always punctual.", "des": "Describes habitual action." },
+        { "phrase": "Vado sempre a scuola a piedi.", "pr": "Va-do sem-pre a sco-la a pie-di.", "en": "I always go to school on foot.", "des": "Indicates repetition." }
+      ,
+        { "phrase": "Non ho mai visitato Roma.", "pr": "Non ho mai vi-si-ta-to Ro-ma.", "en": "I have never visited Rome.", "des": "Indicates action never done." },
+        { "phrase": "Non mangio mai carne.", "pr": "Non man-gio mai car-ne.", "en": "I never eat meat.", "des": "Expresses habitual negation." },
+        { "phrase": "Mai dire mai.", "pr": "Mai di-re mai.", "en": "Never say never.", "des": "Proverbial expression." }
+        
+        ,{ "phrase": "Questo è il mio libro.", "pr": "Kwes-to è il mio li-bro.", "en": "This is my book.", "des": "Indicates a specific object close by." },
+        { "phrase": "Non mi piace questo film.", "pr": "Non mi pia-ce kwes-to film.", "en": "I don’t like this movie.", "des": "Refers to a specific thing." },
+        { "phrase": "Prendi questo.", "pr": "Pren-di kwes-to.", "en": "Take this.", "des": "Used to point out an item." }
+      
+    ,
+    
+        { "phrase": "Vieni qui!", "pr": "Vie-ni kwi!", "en": "Come here!", "des": "Indicates location close to speaker." },
+        { "phrase": "Metti la sedia qui.", "pr": "Met-ti la sie-dia kwi.", "en": "Put the chair here.", "des": "Indicates placement." },
+        { "phrase": "Resta qui con me.", "pr": "Re-sta kwi kon me.", "en": "Stay here with me.", "des": "Indicates proximity." }
+      ,
+    
+        { "phrase": "Non sono andato a scuola perché ero malato.", "pr": "Non so-no an-da-to a sco-la per-ke e-ro ma-la-to.", "en": "I didn’t go to school because I was sick.", "des": "Gives a reason for an action." },
+        { "phrase": "Ho fame perché non ho mangiato.", "pr": "Ho fa-me per-ke non ho man-gia-to.", "en": "I’m hungry because I didn’t eat.", "des": "Indicates cause or explanation." },
+        { "phrase": "Lui piange perché è triste.", "pr": "Lui pjan-ge per-ke è tris-te.", "en": "He is crying because he is sad.", "des": "Shows cause of emotion." }
+      
+    ,
+        { "phrase": "Parla piano così che tutti capiscano.", "pr": "Par-la pia-no ko-zi ke tut-ti ca-pi-sca-no.", "en": "Speak slowly so that everyone understands.", "des": "Indicates purpose." },
+        { "phrase": "Ho studiato molto così che potessi superare l’esame.", "pr": "Ho stu-dia-to mol-to ko-zi ke po-tes-si su-pe-ra-re l’e-sa-me.", "en": "I studied a lot so that I could pass the exam.", "des": "Shows intended result." },
+        { "phrase": "Scrivo una lista così che non dimentichi nulla.", "pr": "Scri-vo u-na li-sta ko-zi ke non di-men-ti-chi nul-la.", "en": "I write a list so that I don’t forget anything.", "des": "Purpose of action." }
+      ,
+    
+        { "phrase": "Ascolto musica mentre studio.", "pr": "As-col-to mu-si-ca men-tre stu-dio.", "en": "I listen to music while I study.", "des": "Simultaneous actions." },
+        { "phrase": "Parla mentre guida.", "pr": "Par-la men-tre gui-da.", "en": "He talks while driving.", "des": "Indicates two things happening together." },
+        { "phrase": "Lui cucina mentre io apparecchio la tavola.", "pr": "Lui cu-ci-na men-tre io ap-pa-rec-chio la ta-vo-la.", "en": "He cooks while I set the table.", "des": "Shows simultaneous tasks." }
+      
+    ,
+    
+        { "phrase": "Ho finito i compiti, allora posso uscire.", "pr": "Ho fi-ni-to i com-pi-ti, al-lo-ra pos-so u-sci-re.", "en": "I finished my homework, then I can go out.", "des": "Indicates consequence." },
+        { "phrase": "Se vuoi venire, allora andiamo.", "pr": "Se vuoi ve-ni-re, al-lo-ra an-dia-mo.", "en": "If you want to come, then let's go.", "des": "Shows sequence or result." },
+        { "phrase": "Allora, cosa facciamo?", "pr": "Al-lo-ra, co-sa fa-ccia-mo?", "en": "So, what do we do?", "des": "Introduces next step or conclusion." }
+      
+    ,
+  
+        { "phrase": "Non ho soldi, quindi non posso comprare il libro.", "pr": "Non ho sol-di, kwi-n-di non pos-so com-pra-re il li-bro.", "en": "I have no money, therefore I cannot buy the book.", "des": "Shows logical result." },
+        { "phrase": "Piove, quindi restiamo a casa.", "pr": "Pjo-ve, kwi-n-di re-stia-mo a ca-sa.", "en": "It’s raining, so we stay home.", "des": "Cause and effect." },
+        { "phrase": "Ha studiato molto, quindi ha superato l’esame.", "pr": "Ha stu-dia-to mol-to, kwi-n-di ha su-pe-ra-to l’e-sa-me.", "en": "He studied a lot, so he passed the exam.", "des": "Indicates result." }
+      
+    ,
+    
+        { "phrase": "Vado a correre anche se piove.", "pr": "Va-do a cor-re-re an-ke se pjo-ve.", "en": "I go running although it’s raining.", "des": "Shows contrast to expectation." },
+        { "phrase": "Mangio la pizza anche se non ho fame.", "pr": "Man-gio la piz-za an-ke se non ho fa-me.", "en": "I eat pizza although I’m not hungry.", "des": "Indicates contrast." },
+        { "phrase": "Studia, anche se è stanco.", "pr": "Stu-dia, an-ke se è stan-co.", "en": "He studies, although he is tired.", "des": "Shows contrast to condition." }
+      
+    ,
+    
+        { "phrase": "Io leggo mentre che lui guarda la TV.", "pr": "Io le-ggo men-tre ke lui guar-da la TV.", "en": "I read whereas he watches TV.", "des": "Contrasts two simultaneous actions." },
+        { "phrase": "Lei cucina mentre che lui pulisce.", "pr": "Lei cu-ci-na men-tre ke lui pu-li-sce.", "en": "She cooks whereas he cleans.", "des": "Shows contrasting roles." },
+        { "phrase": "Loro parlano mentre che noi ascoltiamo.", "pr": "Lo-ro par-la-no men-tre ke noi as-col-tia-mo.", "en": "They talk whereas we listen.", "des": "Indicates contrast." }
+      ]
+
+}

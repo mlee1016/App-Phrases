@@ -1,0 +1,643 @@
+{
+  "course1":[{
+    "question": "Choose the best expression using ほうがいい (hou ga ii).",
+    "jp": "早く 帰った___。",
+    "pr": "はやく かえった＿＿。",
+    "en": "[[You’d better]] go home early.",
+    "options": [
+      { "jp": "ほうがいい", "pr": "ほうがいい" },
+      { "jp": "ことがある", "pr": "ことがある" },
+
+      { "jp": "べきです", "pr": "べきです" }
+    ],
+    "answer": [{ "jp": "ほうがいい", "pr": "ほうがいい" }]
+  },
+  {
+    "question": "Choose the correct form of だけ (only).",
+    "jp": "水___飲みました。",
+    "pr": "みず＿＿ のみました。",
+    "en": "I [[only]] drank water.",
+    "options": [
+      { "jp": "しか", "pr": "しか" },
+      { "jp": "だけ", "pr": "だけ" },
+      { "jp": "でも", "pr": "でも" }
+    ],
+    "answer": [{ "jp": "だけ", "pr": "だけ" }]
+  },
+  {
+    "question": "Choose the appropriate だろう (probably) form.",
+    "jp": "明日 は 雨 が 降る___。",
+    "pr": "あした は あめ が ふる＿＿。",
+    "en": "It will [[probably]] rain tomorrow.",
+    "options": [
+      { "jp": "です", "pr": "です" },
+      { "jp": "だろう", "pr": "だろう" },
+      { "jp": "ましょう", "pr": "ましょう" }
+    ],
+    "answer":[{ "jp": "だろう", "pr": "だろう" }]
+  },
+  {
+    "question": "Select the correct use of で for location.",
+    "jp": "学校___勉強します。",
+    "pr": "がっこう＿＿ べんきょうします。",
+    "en": "I study [[at]] school.",
+    "options": [
+      { "jp": "で", "pr": "で" },
+      { "jp": "に", "pr": "に" },
+      { "jp": "が", "pr": "が" }
+    ],
+    "answer": [{ "jp": "で", "pr": "で" }]
+  },
+  {
+    "question": "Select the correct use of で for means.",
+    "jp": "箸___ 食べます。",
+    "pr": "はし＿＿ たべます。",
+    "en": "I eat [[with]] chopsticks.",
+    "options": [
+      { "jp": "で", "pr": "で" },
+      { "jp": "に", "pr": "に" },
+      { "jp": "と", "pr": "と" }
+    ],
+    "answer":[{ "jp": "で", "pr": "で" }]
+  },
+  {
+    "question": "Select the correct ending for でしょう (probability/politeness).",
+    "jp": "彼 は 学生___。",
+    "pr": "かれ は がくせい＿＿。",
+    "en": "He is [[probably]] a student.",
+    "options": [
+      { "jp": "ですね", "pr": "ですね" },
+      { "jp": "でしょう", "pr": "でしょう" },
+      { "jp": "でした", "pr": "でした" }
+    ],
+
+    "answer": [{ "jp": "でしょう", "pr": "でしょう" }]
+  },
+  {
+    "question": "Pick the correct subject marker が.",
+    "jp": "猫___います。",
+    "pr": "ねこ＿＿ います。",
+    "en": "[[There is]] a cat.",
+    "options": [
+      { "jp": "は", "pr": "は" },
+      { "jp": "が", "pr": "が" },
+      { "jp": "を", "pr": "を" }
+    ],
+    "answer": [{ "jp": "が", "pr": "が" }]
+  },
+  {
+    "question": "Choose the correct connector for contrast.",
+    "jp": "行きたい___、行けません。",
+    "pr": "いきたい＿＿、いけません。",
+
+    "en": "I want to go, [[but]] I can’t.",
+    "options": [
+      { "jp": "が", "pr": "が" },
+      { "jp": "で", "pr": "で" },
+      { "jp": "の", "pr": "の" }
+    ],
+    "answer": [{ "jp": "が", "pr": "が" }]
+  },
+  {
+    "question": "Use がある for inanimate things.",
+    "jp": "部屋 に 机 が___。",
+    "pr": "へや に つくえ が＿＿。",
+    "en": "[[There is]] a desk in the room.",
+    "options": [
+      { "jp": "あります", "pr": "あります" },
+      { "jp": "います", "pr": "います" },
+      { "jp": "なります", "pr": "なります" }
+    ],
+    "answer": [{ "jp": "あります", "pr": "あります" }]
+  },
+  {
+    "question": "Use がいる for animate things.",
+    "jp": "猫 が___。",
+    "pr": "ねこ が＿＿。",
+    "en": "[[There is]] a cat.",
+    "options": [
+      { "jp": "あります", "pr": "あります" },
+      { "jp": "います", "pr": "います" },
+      { "jp": "します", "pr": "します" }
+    ],
+    "answer": [{ "jp": "います", "pr": "います" }]
+  }],"part1":[
+  {
+    "question": "Choose the correct copula for present tense.",
+    "jp": "これはペン___。",
+    "pr": "これはペン＿＿。",
+    "en": "This [[is]] a pen.",
+    "options": [
+      { "jp": "です", "pr": "です" },
+      { "jp": "だ", "pr": "だ" },
+      { "jp": "だった", "pr": "だった" }
+    ],
+    "answer": [{ "jp": "です", "pr": "です" }]
+  },
+  {
+    "question": "Choose the correct copula for past tense.",
+    "jp": "昨日は雨___。",
+    "pr": "きのうはあめ＿＿。",
+    "en": "It [[was]] raining yesterday.",
+    "options": [
+      { "jp": "です", "pr": "です" },
+      { "jp": "だ", "pr": "だ" },
+      { "jp": "でした", "pr": "でした" },
+      { "jp": "だった", "pr": "だった" }
+    ],
+    "answer": [{ "jp": "でした", "pr": "でした" }]
+  },
+  {
+    "question": "Choose the correct verb for 'to become'.",
+    "jp": "彼は医者___。",
+    "pr": "かれはいしゃ＿＿。",
+    "en": "He [[became]] a doctor.",
+    "options": [
+      { "jp": "なる", "pr": "なる" },
+      { "jp": "です", "pr": "です" },
+      { "jp": "だ", "pr": "だ" }
+    ],
+    "answer": [{ "jp": "なる", "pr": "なる" }]
+  },
+  {
+    "question": "Choose the correct subject marker.",
+    "jp": "猫___寝ています。",
+    "pr": "ねこ＿＿ねています。",
+    "en": "The cat [[is]] sleeping.",
+    "options": [
+      { "jp": "が", "pr": "が" },
+      { "jp": "は", "pr": "は" },
+      { "jp": "を", "pr": "を" }
+    ],
+    "answer": [{ "jp": "が", "pr": "が" }]
+  },
+  {
+    "question": "Choose the correct question marker.",
+    "jp": "これは何___？",
+    "pr": "これはなに＿＿？",
+    "en": "What [[is]] this?",
+    "options": [
+      { "jp": "か", "pr": "か" },
+      { "jp": "も", "pr": "も" },
+      { "jp": "が", "pr": "が" }
+    ],
+    "answer": [{ "jp": "か", "pr": "か" }]
+  },
+  {
+    "question": "Choose the correct 'or' expression for choice.",
+    "jp": "紅茶___コーヒー、どちらがいいですか？",
+    "pr": "こうちゃ＿＿コーヒー、どちらがいいですか？",
+    "en": "Tea [[or]] coffee, which do you prefer?",
+    "options": [
+      { "jp": "か", "pr": "か" },
+      { "jp": "も", "pr": "も" },
+      { "jp": "が", "pr": "が" }
+    ],
+    "answer": [{ "jp": "か", "pr": "か" }]
+  }
+]
+,"part2":[
+  {
+    "question": "Choose the correct particle for the object of a verb (direct object).",
+    "jp": "りんご___食べます。",
+    "pr": "りんご＿＿たべます。",
+    "en": "I eat an apple.",
+    "options": [
+      { "jp": "を", "pr": "を" },
+      { "jp": "が", "pr": "が" },
+      { "jp": "に", "pr": "に" }
+    ],
+    "answer": [{ "jp": "を", "pr": "を" }]
+  },
+  {
+    "question": "Choose the correct particle indicating location.",
+    "jp": "学校___行きます。",
+    "pr": "がっこう＿＿いきます。",
+    "en": "I go to school.",
+    "options": [
+      { "jp": "へ", "pr": "へ" },
+      { "jp": "で", "pr": "で" },
+      { "jp": "に", "pr": "に" }
+    ],
+    "answer": [{ "jp": "に", "pr": "に" }]
+  },
+  {
+    "question": "Choose the correct particle indicating place of action.",
+    "jp": "図書館___勉強します。",
+    "pr": "としょかん＿＿べんきょうします。",
+    "en": "I study at the library.",
+    "options": [
+      { "jp": "で", "pr": "で" },
+      { "jp": "に", "pr": "に" },
+      { "jp": "へ", "pr": "へ" }
+    ],
+    "answer": [{ "jp": "で", "pr": "で" }]
+  },
+  {
+    "question": "Choose the correct particle indicating the subject of the sentence.",
+    "jp": "猫___可愛いです。",
+    "pr": "ねこ＿＿かわいいです。",
+    "en": "The cat is cute.",
+    "options": [
+      { "jp": "は", "pr": "は" },
+      { "jp": "を", "pr": "を" },
+      { "jp": "が", "pr": "が" }
+    ],
+    "answer": [{ "jp": "は", "pr": "は" }]
+  },
+  {
+    "question": "Choose the correct particle indicating the subject (emphasis).",
+    "jp": "誰___来ましたか？",
+    "pr": "だれ＿＿きましたか？",
+    "en": "Who came?",
+    "options": [
+      { "jp": "が", "pr": "が" },
+      { "jp": "は", "pr": "は" },
+      { "jp": "を", "pr": "を" }
+    ],
+    "answer": [{ "jp": "が", "pr": "が" }]
+  },
+  {
+    "question": "Choose the correct particle meaning 'also / too'.",
+    "jp": "私___行きます。",
+    "pr": "わたし＿＿いきます。",
+    "en": "I [[also]] will go.",
+    "options": [
+      { "jp": "も", "pr": "も" },
+      { "jp": "は", "pr": "は" },
+      { "jp": "が", "pr": "が" }
+    ],
+    "answer": [{ "jp": "も", "pr": "も" }]
+  },
+  {
+    "question": "Choose the correct particle for possession / belonging.",
+    "jp": "これは私___本です。",
+    "pr": "これはわたし＿＿ほんです。",
+    "en": "This is my book.",
+    "options": [
+      { "jp": "の", "pr": "の" },
+      { "jp": "が", "pr": "が" },
+      { "jp": "を", "pr": "を" }
+    ],
+    "answer": [{ "jp": "の", "pr": "の" }]
+  }
+],
+"part3":[
+  {
+    "question": "Choose the correct word to express 'about / approximately'.",
+    "jp": "この本は10分___で読めます。",
+    "pr": "この ほん は 10ぷん＿＿で よめます。",
+    "en": "You can read this book in [[about]] 10 minutes.",
+    "options": [
+      { "jp": "くらい", "pr": "くらい" },
+      { "jp": "だけ", "pr": "だけ" },
+      { "jp": "も", "pr": "も" }
+    ],
+    "answer": [{ "jp": "くらい", "pr": "くらい" }]
+  },
+  {
+    "question": "Choose the correct word meaning 'the most'.",
+    "jp": "富士山は日本で___高い山です。",
+    "pr": "ふじさん は にほん で＿＿たかい やま です。",
+    "en": "Mount Fuji is [[the most]] tallest mountain in Japan.",
+    "options": [
+      { "jp": "いちばん", "pr": "いちばん" },
+      { "jp": "より", "pr": "より" },
+      { "jp": "だけ", "pr": "だけ" }
+    ],
+    "answer": [{ "jp": "いちばん", "pr": "いちばん" }]
+  },
+  {
+    "question": "Choose the correct structure to say 'is more ~ than'.",
+    "jp": "日本語は英語___難しいです。",
+    "pr": "にほんご は えいご＿＿むずかしい です。",
+    "en": "Japanese is [[more]] difficult than English.",
+    "options": [
+      { "jp": "より〜のほうが〜", "pr": "より〜のほうが〜" },
+      { "jp": "だけ", "pr": "だけ" },
+      { "jp": "も", "pr": "も" }
+    ],
+    "answer": [{ "jp": "より〜のほうが〜", "pr": "より〜のほうが〜" }]
+  },
+  {
+    "question": "Choose the correct word to express 'only / just'.",
+    "jp": "今日___勉強しました。",
+    "pr": "きょう＿＿べんきょうしました。",
+    "en": "I studied [[only / just]] today.",
+    "options": [
+      { "jp": "だけ", "pr": "だけ" },
+      { "jp": "くらい", "pr": "くらい" },
+      { "jp": "も", "pr": "も" }
+    ],
+    "answer": [{ "jp": "だけ", "pr": "だけ" }]
+  },
+  {
+    "question": "Choose the correct word to express 'already / anymore'.",
+    "jp": "宿題は___終わりました。",
+    "pr": "しゅくだい は＿＿おわりました。",
+    "en": "I have [[already]] finished my homework.",
+    "options": [
+      { "jp": "もう", "pr": "もう" },
+      { "jp": "だけ", "pr": "だけ" },
+      { "jp": "も", "pr": "も" }
+    ],
+    "answer": [{ "jp": "もう", "pr": "もう" }]
+  },
+  {
+    "question": "Choose the correct word meaning 'also / too'.",
+    "jp": "私も行きます。",
+    "pr": "わたし＿＿いきます。",
+    "en": "I [[also]] will go.",
+    "options": [
+      { "jp": "も", "pr": "も" },
+      { "jp": "だけ", "pr": "だけ" },
+      { "jp": "くらい", "pr": "くらい" }
+    ],
+    "answer": [{ "jp": "も", "pr": "も" }]
+  }
+],
+"part4":[
+  {
+    "question": "Choose the correct expression meaning 'probably'.",
+    "jp": "明日は雨が降る___。",
+    "pr": "あした は あめ が ふる＿＿。",
+    "en": "It will [[probably]] rain tomorrow.",
+    "options": [
+      { "jp": "だろう", "pr": "だろう" },
+      { "jp": "でしょう", "pr": "でしょう" },
+      { "jp": "つもりだ", "pr": "つもりだ" }
+    ],
+    "answer": [{ "jp": "だろう", "pr": "だろう" }]
+  },
+  {
+    "question": "Choose the correct expression meaning 'probably / I think'.",
+    "jp": "彼は来る___。",
+    "pr": "かれ は くる＿＿。",
+    "en": "He will [[probably / I think]] come.",
+    "options": [
+      { "jp": "でしょう", "pr": "でしょう" },
+      { "jp": "だろう", "pr": "だろう" },
+      { "jp": "ほうがいい", "pr": "ほうがいい" }
+    ],
+    "answer": [{ "jp": "でしょう", "pr": "でしょう" }]
+  },
+  {
+    "question": "Choose the correct expression meaning 'it’d be better to'.",
+    "jp": "早く寝た___。",
+    "pr": "はやく ねた＿＿。",
+    "en": "[[You’d better]] go to bed early.",
+    "options": [
+      { "jp": "ほうがいい", "pr": "ほうがいい" },
+      { "jp": "つもりだ", "pr": "つもりだ" },
+      { "jp": "だろう", "pr": "だろう" }
+    ],
+    "answer": [{ "jp": "ほうがいい", "pr": "ほうがいい" }]
+  },
+  {
+    "question": "Choose the correct expression meaning 'it’d be better not to'.",
+    "jp": "無理をしない___。",
+    "pr": "むり を しない＿＿。",
+    "en": "[[You’d better not]] overdo it.",
+    "options": [
+      { "jp": "ほうがいい", "pr": "ほうがいい" },
+      { "jp": "だろう", "pr": "だろう" },
+      { "jp": "つもりだ", "pr": "つもりだ" }
+    ],
+    "answer": [{ "jp": "ほうがいい", "pr": "ほうがいい" }]
+  },
+  {
+    "question": "Choose the correct expression meaning 'plan to / intend to'.",
+    "jp": "明日買い物に行く___。",
+    "pr": "あした かいもの に いく＿＿。",
+    "en": "I [[plan to / intend to]] go shopping tomorrow.",
+    "options": [
+      { "jp": "つもりだ", "pr": "つもりだ" },
+      { "jp": "だろう", "pr": "だろう" },
+      { "jp": "ほうがいい", "pr": "ほうがいい" }
+    ],
+    "answer": [{ "jp": "つもりだ", "pr": "つもりだ" }]
+  }
+]
+,"part5":[
+  {
+    "question": "Choose the correct expression meaning 'before'.",
+    "jp": "寝る___歯を磨きます。",
+    "pr": "ねる＿＿ は を みがきます。",
+    "en": "I brush my teeth [[before]] sleeping.",
+    "options": [
+      { "jp": "まえに", "pr": "まえに" },
+      { "jp": "てから", "pr": "てから" },
+      { "jp": "てください", "pr": "てください" }
+    ],
+    "answer": [{ "jp": "まえに", "pr": "まえに" }]
+  },
+  {
+    "question": "Choose the correct expression meaning 'after doing'.",
+    "jp": "宿題をした___遊びます。",
+    "pr": "しゅくだい を した＿＿ あそびます。",
+    "en": "I will play [[after doing]] my homework.",
+    "options": [
+      { "jp": "てから", "pr": "てから" },
+      { "jp": "まえに", "pr": "まえに" },
+      { "jp": "てください", "pr": "てください" }
+    ],
+    "answer": [{ "jp": "てから", "pr": "てから" }]
+  },
+  {
+    "question": "Choose the correct expression meaning 'is/are doing'.",
+    "jp": "彼は今本を読んで___。",
+    "pr": "かれ は いま ほん を よんで＿＿。",
+    "en": "He [[is]] reading a book now.",
+    "options": [
+      { "jp": "ている", "pr": "ている" },
+      { "jp": "てください", "pr": "てください" },
+      { "jp": "てもいい", "pr": "てもいい" }
+    ],
+    "answer": [{ "jp": "ている", "pr": "ている" }]
+  },
+  {
+    "question": "Choose the correct expression meaning 'please do…'.",
+    "jp": "ここに名前を書い___。",
+    "pr": "ここ に なまえ を かい＿＿。",
+    "en": "[[Please]] write your name here.",
+    "options": [
+      { "jp": "てください", "pr": "てください" },
+      { "jp": "てもいい", "pr": "てもいい" },
+      { "jp": "てはいけない", "pr": "てはいけない" }
+    ],
+    "answer": [{ "jp": "てください", "pr": "てください" }]
+  },
+  {
+    "question": "Choose the correct expression meaning 'may, is okay to'.",
+    "jp": "ここに座っ___。",
+    "pr": "ここ に すわっ＿＿。",
+    "en": "You [[may]] sit here.",
+    "options": [
+      { "jp": "てもいい", "pr": "てもいい" },
+      { "jp": "てはいけない", "pr": "てはいけない" },
+      { "jp": "てください", "pr": "てください" }
+    ],
+    "answer": [{ "jp": "てもいい", "pr": "てもいい" }]
+  },
+  {
+    "question": "Choose the correct expression meaning 'must not, may not'.",
+    "jp": "ここにゴミを捨て___。",
+    "pr": "ここ に ごみ を すて＿＿。",
+    "en": "You [[must not]] throw garbage here.",
+    "options": [
+      { "jp": "てはいけない", "pr": "てはいけない" },
+      { "jp": "てもいい", "pr": "てもいい" },
+      { "jp": "てください", "pr": "てください" }
+    ],
+    "answer": [{ "jp": "てはいけない", "pr": "てはいけない" }]
+  }
+],
+"part6":[
+  {
+    "question": "Choose the correct particle meaning 'in, at, to, for'.",
+    "jp": "東京___行きます。",
+    "pr": "とうきょう＿＿ いきます。",
+    "en": "I am going [[to]] Tokyo.",
+    "options": [
+      { "jp": "に", "pr": "に" },
+      { "jp": "で", "pr": "で" },
+      { "jp": "と", "pr": "と" }
+    ],
+    "answer": [{ "jp": "に", "pr": "に" }]
+  },
+  {
+    "question": "Choose the correct particle meaning 'to (direction)'.",
+    "jp": "学校___行きます。",
+    "pr": "がっこう＿＿ いきます。",
+    "en": "I am going [[to]] school.",
+    "options": [
+      { "jp": "に／へ", "pr": "に／へ" },
+      { "jp": "で", "pr": "で" },
+      { "jp": "や", "pr": "や" }
+    ],
+    "answer": [{ "jp": "に／へ", "pr": "に／へ" }]
+  },
+  {
+    "question": "Choose the correct expression meaning 'to go in order to'.",
+    "jp": "買い物___スーパーに行きます。",
+    "pr": "かいもの＿＿ スーパー に いきます。",
+    "en": "I am going to the supermarket [[to do]] shopping.",
+    "options": [
+      { "jp": "にいく", "pr": "にいく" },
+      { "jp": "にする", "pr": "にする" },
+      { "jp": "で", "pr": "で" }
+    ],
+    "answer": [{ "jp": "にいく", "pr": "にいく" }]
+  },
+  {
+    "question": "Choose the correct expression meaning 'to decide on'.",
+    "jp": "今日の昼ご飯はカレー___。",
+    "pr": "きょう の ひるごはん は カレー＿＿。",
+    "en": "I will [[decide on]] curry for lunch today.",
+    "options": [
+      { "jp": "にする", "pr": "にする" },
+      { "jp": "にいく", "pr": "にいく" },
+      { "jp": "と", "pr": "と" }
+    ],
+    "answer": [{ "jp": "にする", "pr": "にする" }]
+  },
+  {
+    "question": "Choose the correct particle meaning 'at, in (location)'.",
+    "jp": "図書館___勉強します。",
+    "pr": "としょかん＿＿ べんきょう します。",
+    "en": "I study [[at]] the library.",
+    "options": [
+      { "jp": "で", "pr": "で" },
+      { "jp": "に", "pr": "に" },
+      { "jp": "や", "pr": "や" }
+    ],
+    "answer": [{ "jp": "で", "pr": "で" }]
+  },
+  {
+    "question": "Choose the correct particle meaning 'with, by (means/method)'.",
+    "jp": "箸___食べます。",
+    "pr": "はし＿＿ たべます。",
+    "en": "I eat [[with]] chopsticks.",
+    "options": [
+      { "jp": "で", "pr": "で" },
+      { "jp": "に", "pr": "に" },
+      { "jp": "と", "pr": "と" }
+    ],
+    "answer": [{ "jp": "で", "pr": "で" }]
+  },
+  {
+    "question": "Choose the correct particle meaning 'and, with'.",
+    "jp": "友達___遊びます。",
+    "pr": "ともだち＿＿ あそびます。",
+    "en": "I play [[with]] my friend.",
+    "options": [
+      { "jp": "と", "pr": "と" },
+      { "jp": "や", "pr": "や" },
+      { "jp": "で", "pr": "で" }
+    ],
+    "answer": [{ "jp": "と", "pr": "と" }]
+  },
+  {
+    "question": "Choose the correct particle meaning 'and (listing)'.",
+    "jp": "りんご___バナナを買いました。",
+    "pr": "りんご＿＿ バナナ を かいました。",
+    "en": "I bought apples [[and]] bananas.",
+    "options": [
+      { "jp": "や", "pr": "や" },
+      { "jp": "と", "pr": "と" },
+      { "jp": "で", "pr": "で" }
+    ],
+    "answer": [{ "jp": "や", "pr": "や" }]
+  }
+],"part7":[
+  {
+    "question": "Choose the correct expression meaning 'don’t do (casual)'.",
+    "jp": "ここで遊ぶ___。",
+    "pr": "ここで あそぶ＿＿。",
+    "en": "[[Don’t]] play here. (casual)",
+    "options": [
+      { "jp": "な", "pr": "な" },
+      { "jp": "ないでください", "pr": "ないでください" },
+      { "jp": "ましょう", "pr": "ましょう" }
+    ],
+    "answer": [{ "jp": "な", "pr": "な" }]
+  },
+  {
+    "question": "Choose the correct expression meaning 'please don’t'.",
+    "jp": "写真を撮ら___。",
+    "pr": "しゃしん を とら＿＿。",
+    "en": "[[Please don’t]] take photos.",
+    "options": [
+      { "jp": "ないでください", "pr": "ないでください" },
+      { "jp": "な", "pr": "な" },
+      { "jp": "ませんか", "pr": "ませんか" }
+    ],
+    "answer": [{ "jp": "ないでください", "pr": "ないでください" }]
+  },
+  {
+    "question": "Choose the correct expression meaning 'let’s, won’t you'.",
+    "jp": "一緒に映画を見___。",
+    "pr": "いっしょに えいが を み＿＿。",
+    "en": "[[Won’t you]] watch a movie together?",
+    "options": [
+      { "jp": "ませんか", "pr": "ませんか" },
+      { "jp": "ましょう", "pr": "ましょう" },
+      { "jp": "な", "pr": "な" }
+    ],
+    "answer": [{ "jp": "ませんか", "pr": "ませんか" }]
+  },
+  {
+    "question": "Choose the correct expression meaning 'let’s, shall we'.",
+    "jp": "公園で散歩し___。",
+    "pr": "こうえん で さんぽ し＿＿。",
+    "en": "[[Let’s]] take a walk in the park.",
+    "options": [
+      { "jp": "ましょう", "pr": "ましょう" },
+      { "jp": "ませんか", "pr": "ませんか" },
+      { "jp": "な", "pr": "な" }
+    ],
+    "answer": [{ "jp": "ましょう", "pr": "ましょう" }]
+  }
+]
+
+  }

@@ -1,1 +1,159 @@
 /* You can add global styles to this file, and also import other style files */
+
+
+
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities; 
+
+
+html, body, * {
+  font-family: sans-serif ;
+}
+
+body{
+
+
+
+
+
+
+  background-color: rgb(1, 10, 14);
+
+}
+.active{
+  color: rgb(238, 241, 241);
+  border: none;
+  text-shadow: 0px 2px 2px rgb(123, 206, 241);
+  font-size: larger;
+}
+/* Firefox */
+* {
+  scrollbar-width: thin; /* Makes scrollbar slim */
+  scrollbar-color: #7cb6cf #1e1e1e; /* Thumb color | Track color */
+}
+
+/* Chrome, Edge, Safari */
+*::-webkit-scrollbar {
+  width: 8px;   /* Vertical scrollbar */
+  height: 8px;  /* Horizontal scrollbar */
+}
+
+*::-webkit-scrollbar-track {
+  background: #1e1e1e; /* Dark track */
+}
+
+*::-webkit-scrollbar-thumb {
+  background: #9febe9; /* Accent color thumb */
+  border-radius: 4px;
+}
+
+*::-webkit-scrollbar-thumb:hover {
+  background: #1bc1ef; /* Darker on hover */
+}
+/* Correct Answer: pulse glow */
+@keyframes pulse-glow {
+  0% { box-shadow: 0 0 0 0 rgba(34,197,94, 0.7); }
+  70% { box-shadow: 0 0 0 10px rgba(34,197,94, 0); }
+  100% { box-shadow: 0 0 0 0 rgba(34,197,94, 0); }
+}
+
+.correct-a {
+  animation: pulse-glow 0.8s ease-out;
+}
+
+/* Wrong Answer: shake */
+@keyframes shake {
+  0%, 100% { transform: translateX(0); }
+  20% { transform: translateX(-6px); }
+  40% { transform: translateX(6px); }
+  60% { transform: translateX(-4px); }
+  80% { transform: translateX(4px); }
+}
+.wrong-a {
+  animation: shake 0.5s ease;
+}
+/* Glow Pulse */
+@keyframes pulse-glow {
+  0% { box-shadow: 0 0 0 0 rgba(254, 254, 254, 0.7); }
+  70% { box-shadow: 0 0 0 12px rgba(16, 185, 129, 0); }
+  100% { box-shadow: 0 0 0 0 rgba(16, 185, 129, 0); }
+}
+.correct-glow:hover {
+  animation: pulse-glow 1s ease-out;
+}
+
+/* Pop Scale */
+@keyframes pop {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.15); }
+  100% { transform: scale(1); }
+}
+.correct-pop {
+  animation: pop 0.4s ease;
+}
+
+/* Confetti Burst (simple dots) */
+@keyframes confetti {
+  0% { transform: translateY(0) scale(1); opacity: 1; }
+  100% { transform: translateY(50px) scale(0.5); opacity: 0; }
+}
+.confetti {
+  width: 6px; height: 6px;
+  background: limegreen;
+  position: absolute;
+  border-radius: 50%;
+  animation: confetti 1s ease-out forwards;
+ }/*
+.confetti:nth-child(1) { left: 20%; animation-delay: 0s; }
+.confetti:nth-child(2) { left: 40%; animation-delay: 0.2s; }
+.confetti:nth-child(3) { left: 60%; animation-delay: 0.4s; }
+.confetti:nth-child(4) { left: 80%; animation-delay: 0.6s; }
+.confetti:nth-child(5) { left: 50%; animation-delay: 0.8s; } */
+
+.correct-answer {
+  background-color: rgb(22, 163, 74);
+  color: white;
+  border: none;
+  text-shadow: 0px 2px 2px rgb(34,197,94);
+  font-size: larger;
+}
+
+/* Shake */
+@keyframes shake {
+  0%, 100% { transform: translateX(0); }
+  20% { transform: translateX(-6px); }
+  40% { transform: translateX(6px); }
+  60% { transform: translateX(-4px); }
+  80% { transform: translateX(4px); }
+}
+.wrong-shake {
+  animation: shake 0.5s ease;
+}
+
+/* Wiggle */
+@keyframes wiggle {
+  0% { transform: rotate(0); }
+  25% { transform: rotate(3deg); }
+  50% { transform: rotate(-3deg); }
+  75% { transform: rotate(2deg); }
+  100% { transform: rotate(0); }
+}
+.show-wiggle:hover {
+  animation: wiggle 0.7s ease;
+}
+@keyframes s-wrong {
+  from { opacity: 1; background-color: rgba(239, 68, 68, 0.2); }
+  to { opacity: 0.5; background-color: transparent; }
+}
+.wrong-s {
+  animation: s-wrong 1s ease forwards;
+}
+@keyframes s-correct {
+  from { opacity: 1; background-color: rgba(34, 197, 94, 0.2); }
+  to { opacity: 0.5; background-color: transparent; }
+}
+.correct-s {
+  animation: s-correct 1s ease forwards;
+}

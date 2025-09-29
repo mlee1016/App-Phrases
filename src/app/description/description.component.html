@@ -1,0 +1,29 @@
+<div *ngIf="showSurvey" class="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50 z-50">
+  <div class="bg-white text-black rounded-xl shadow-lg p-6 w-full max-w-md">
+    <h2 class="text-xl font-semibold mb-4"> Survey</h2>
+
+    <!-- Heard From -->
+    <label class="block mb-2">How did you hear about us?</label>
+    <select [(ngModel)]="surveyData.heardFrom" class="w-full mb-4 border p-2 rounded">
+      <option *ngFor="let option of heardOptions" [value]="option">{{ option }}</option>
+    </select>
+
+    <!-- Language -->
+    <label class="block mb-2">What language are you learning?</label>
+    <select [(ngModel)]="surveyData.language" class="w-full mb-4 border p-2 rounded">
+      <option *ngFor="let lang of languageOptions" [value]="lang">{{ lang }}</option>
+    </select>
+
+    <!-- Subscription -->
+    <label class="block mb-2">Choose a subscription</label>
+    <select [(ngModel)]="surveyData.subscription" class="w-full mb-4 border p-2 rounded">
+      <option *ngFor="let sub of subscriptionOptions" [value]="sub.value">{{ sub.label }}</option>
+    </select>
+
+    <!-- Buttons -->
+    <div class="flex justify-end space-x-2">
+      <button (click)="close.emit()" class="px-4 py-2 bg-gray-400 rounded">Cancel</button>
+      <button (click)="submitSurvey()" class="px-4 py-2 bg-indigo-600 text-white rounded">Submit</button>
+    </div>
+  </div>
+</div>

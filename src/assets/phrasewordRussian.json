@@ -1,0 +1,680 @@
+
+{        
+        "questions": [
+  {
+    "ru": "Я пошёл в магазин _____ мамой.",
+    "pr": "Ya poshyol v magazin _____ mamoy.",
+    "en": "I went to the store [[ with ]] mom.",
+    "options": [
+      { "ru": "и", "pr": "i", "desc": "and" },
+      { "ru": "но", "pr": "no", "desc": "but" },
+      { "ru": "с", "pr": "s", "desc": "with" }
+    ],
+    "answer": { "ru": "с", "pr": "s" }
+  },
+  {
+    "ru": "Он был дома, _____ не работал.",
+    "pr": "On byl doma, _____ ne rabotal.",
+    "en": "He was at home,[[ but ]] not working.",
+    "options": [
+      { "ru": "и", "pr": "i", "desc": "and" },
+      { "ru": "но", "pr": "no", "desc": "but" },
+      { "ru": "или", "pr": "ili", "desc": "or" }
+    ],
+    "answer": { "ru": "но", "pr": "no" }
+  },
+  {
+    "ru": "Мы поехали на дачу, _____ было тепло.",
+    "pr": "My poyekhali na dachu, _____ bylo teplo.",
+    "en": "We went to the dacha [[ because ]] it was warm.",
+    "options": [
+      { "ru": "если", "pr": "yesli", "desc": "if" },
+      { "ru": "потому что", "pr": "potomu chto", "desc": "because" },
+      { "ru": "но", "pr": "no", "desc": "but" }
+    ],
+    "answer": { "ru": "потому что", "pr": "potomu chto" }
+  },
+  {
+    "ru": "Я буду пить чай _____ кофе.",
+    "pr": "Ya budu pit' chay _____ kofe.",
+    "en": "I will drink tea [[ or ]] coffee.",
+    "options": [
+      { "ru": "и", "pr": "i", "desc": "and" },
+      { "ru": "или", "pr": "ili", "desc": "or" },
+      { "ru": "но", "pr": "no", "desc": "but" }
+    ],
+    "answer": { "ru": "или", "pr": "ili" }
+  },
+  {
+    "ru": "Мы живём _____ Москве.",
+    "pr": "My zhivyom _____ Moskve.",
+    "en": "We live [[ in ]] Moscow.",
+    "options": [
+      { "ru": "в", "pr": "v", "desc": "in" },
+      { "ru": "на", "pr": "na", "desc": "on" },
+      { "ru": "с", "pr": "s", "desc": "with" }
+    ],
+    "answer": { "ru": "в", "pr": "v" }
+  },
+  {
+    "ru": "Он _____ дома, он не ушёл.",
+    "pr": "On _____ doma, on ne ushyol.",
+    "en": "He is [[ still ]] at home, he hasn’t left.",
+    "options": [
+      { "ru": "ещё", "pr": "eshchyo", "desc": "still" },
+      { "ru": "тоже", "pr": "tozhe", "desc": "also" },
+      { "ru": "там", "pr": "tam", "desc": "there" }
+    ],
+    "answer": { "ru": "ещё", "pr": "eshchyo" }
+  },
+  {
+    "ru": "Я студент, мой брат _____ студент.",
+    "pr": "Ya student, moy brat _____ student.",
+    "en": "I’m a student, my brother is [[ also ]] a student.",
+    "options": [
+      { "ru": "там", "pr": "tam", "desc": "there" },
+      { "ru": "ещё", "pr": "eshchyo", "desc": "still" },
+      { "ru": "тоже", "pr": "tozhe", "desc": "also" }
+    ],
+    "answer": { "ru": "тоже", "pr": "tozhe" }
+  },
+  {
+    "ru": "Моя книга _____, на столе.",
+    "pr": "Moya kniga _____, na stole.",
+    "en": "My book is [[ here ]] , on the table.",
+    "options": [
+      { "ru": "здесь", "pr": "zdes'", "desc": "here" },
+      { "ru": "там", "pr": "tam", "desc": "there" },
+      { "ru": "у", "pr": "u", "desc": "at (someone's place)" }
+    ],
+    "answer": { "ru": "здесь", "pr": "zdes'" }
+  },
+  {
+    "ru": "Он живёт _____ бабушки.",
+    "pr": "On zhivyot _____ babushki.",
+    "en": "He lives [[ at ]] his grandma’s place.",
+    "options": [
+      { "ru": "на", "pr": "na", "desc": "on" },
+      { "ru": "у", "pr": "u", "desc": "at (someone's place)" },
+      { "ru": "с", "pr": "s", "desc": "with" }
+    ],
+    "answer": { "ru": "у", "pr": "u" }
+  },
+  {
+    "ru": "Твой телефон не здесь, он _____ на диване.",
+    "pr": "Tvoy telefon ne zdes’, on _____ na divane.",
+    "en": "Your phone isn’t here, it’s [[ there ]] on the couch.",
+    "options": [
+      { "ru": "там", "pr": "tam", "desc": "there" },
+      { "ru": "здесь", "pr": "zdes'", "desc": "here" },
+      { "ru": "ещё", "pr": "eshchyo", "desc": "still" }
+    ],
+    "answer": { "ru": "там", "pr": "tam" }
+  }
+],
+"course1":[{
+  "question": "Выберите правильное слово для завершения предложения.",
+  "ru": "У меня есть ___ один брат.",
+  "pr": "U menya yest' _____ odin brat.",
+  "en": "I have [[only]] one brother.",
+  "options": [
+    { "ru": "только", "pr": "tol'ko" },
+    { "ru": "ещё", "pr": "eshchyo" },
+    { "ru": "даже", "pr": "dazhe" }
+  ],
+  "answer":[{ "ru": "только", "pr": "tol'ko" }]
+},{
+  "question": "Выберите слово, которое выражает предположение.",
+  "ru": "Он ___ дома.",
+  "pr": "On _____ doma.",
+  "en": "He is [[probably]] at home.",
+  "options": [
+    { "ru": "наверное", "pr": "navernoye" },
+    { "ru": "всегда", "pr": "vsegda" },
+    { "ru": "точно", "pr": "tochno" }
+  ],
+  "answer": [{ "ru": "наверное", "pr": "navernoye" }]
+}
+,{
+  "question": "Где он работает?",
+  "ru": "Он работает ___ офисе.",
+  "pr": "On rabotayet _____ ofise.",
+  "en": "He works [[at]] the office.",
+  "options": [
+    { "ru": "в", "pr": "v" },
+    { "ru": "на", "pr": "na" },
+    { "ru": "с", "pr": "s" }
+  ],
+  "answer": [{ "ru": "в", "pr": "v" }]
+}
+,{
+  "question": "С кем он пришёл?",
+  "ru": "Он пришёл ___ другом.",
+  "pr": "On prishyol _____ drugom.",
+  "en": "He came [[with]] a friend.",
+  "options": [
+    { "ru": "с", "pr": "s" },
+    { "ru": "от", "pr": "ot" },
+    { "ru": "у", "pr": "u" }
+  ],
+  "answer": [{ "ru": "с", "pr": "s" }]
+}
+,{
+  "question": "Выберите союз 'но'.",
+  "ru": "Я хочу чай, ___ нет сахара.",
+  "pr": "Ya khochu chai, _____ net sakhara.",
+  "en": "I want tea, but there is no sugar.",
+  "options": [
+    { "ru": "но", "pr": "no" },
+    { "ru": "и", "pr": "i" },
+    { "ru": "или", "pr": "ili" }
+  ],
+  "answer": [{ "ru": "но", "pr": "no" }]
+}
+,{
+  "question": "Что есть на столе?",
+  "ru": "На столе ___ книга.",
+  "pr": "Na stole _____ kniga.",
+  "en": "There is a book on the table.",
+  "options": [
+    { "ru": "есть", "pr": "yest'" },
+    { "ru": "идёт", "pr": "idyot" },
+    { "ru": "читает", "pr": "chitayet" }
+  ],
+  "answer": [{ "ru": "есть", "pr": "yest'" }]
+}
+,{
+  "question": "Кто дома?",
+  "ru": "Дома ___ кошка.",
+  "pr": "Doma _____ koshka.",
+  "en": "There is a cat at home.",
+  "options": [
+    { "ru": "есть", "pr": "yest'" },
+    { "ru": "живет", "pr": "zhivyot" },
+    { "ru": "идёт", "pr": "idyot" }
+  ],
+  "answer": [{ "ru": "есть", "pr": "yest'" }]
+}
+,{
+  "question": "Выберите выражение, которое означает 'лучше'.",
+  "ru": "Тебе ___ остаться дома.",
+  "pr": "Tebe _____ ostatsya doma.",
+  "en": "It would be better for you to stay home.",
+  "options": [
+    { "ru": "лучше", "pr": "luchshe" },
+    { "ru": "можно", "pr": "mozhno" },
+    { "ru": "нельзя", "pr": "nel'zya" }
+  ],
+  "answer": [{ "ru": "лучше", "pr": "luchshe" }]
+}
+,{
+  "question": "Что делает акцент на подлежащее?",
+  "ru": "___ читает книгу, а не я.",
+  "pr": "_____ chitayet knigu, a ne ya.",
+  "en": "[He] is reading the book, not me.",
+  "options": [
+    { "ru": "Он", "pr": "On" },
+    { "ru": "Я", "pr": "Ya" },
+    { "ru": "Мы", "pr": "My" }
+  ],
+  "answer": [{ "ru": "Он", "pr": "On" }]
+}
+,{
+  "question": "Выберите слово, которое означает 'только'.",
+  "ru": "У меня есть ___ один билет.",
+  "pr": "U menya yest' _____ odin bilet.",
+  "en": "I have only one ticket.",
+  "options": [
+    { "ru": "только", "pr": "tol'ko" },
+    { "ru": "всегда", "pr": "vsegda" },
+    { "ru": "уже", "pr": "uzhe" }
+  ],
+  "answer": [{ "ru": "только", "pr": "tol'ko" }]
+}
+
+]
+,"part1":[
+  {
+    "question": "Как соединить два похожих факта?",
+    "ru": "Я люблю чай ___ кофе.",
+    "pr": "Ya lyublyu chai ___ kofe.",
+    "en": "I like tea ___ coffee.",
+    "options": [
+      { "ru": "и", "pr": "i" },
+      { "ru": "а", "pr": "a" },
+      { "ru": "но", "pr": "no" }
+    ],
+    "answer": [{ "ru": "и", "pr": "i" }]
+  },
+  {
+    "question": "Как противопоставить две идеи?",
+    "ru": "Он много работает, ___ мало отдыхает.",
+    "pr": "On mnogo rabotaet, ___ malo otdykhayet.",
+    "en": "He works a lot, ___ he rests little.",
+    "options": [
+      { "ru": "и", "pr": "i" },
+      { "ru": "а", "pr": "a" },
+      { "ru": "но", "pr": "no" }
+    ],
+    "answer": [{ "ru": "а", "pr": "a" }]
+  },
+  {
+    "question": "Как выразить противопоставление (но)?",
+    "ru": "Я хотел пойти, ___ было холодно.",
+    "pr": "Ya khotel poyti, ___ bylo kholodno.",
+    "en": "I wanted to go, ___ it was cold.",
+    "options": [
+      { "ru": "но", "pr": "no" },
+      { "ru": "а", "pr": "a" },
+      { "ru": "если", "pr": "yesli" }
+    ],
+    "answer": [{ "ru": "но", "pr": "no" }]
+  },
+  {
+    "question": "Как объяснить причину?",
+    "ru": "Мы не вышли, ___ шёл дождь.",
+    "pr": "My ne vyshli, ___ shyol dozhd'.",
+    "en": "We didn’t go out, ___ it was raining.",
+    "options": [
+      { "ru": "потому что", "pr": "potomu chto" },
+      { "ru": "хотя", "pr": "khotya" },
+      { "ru": "если", "pr": "yesli" }
+    ],
+    "answer": [{ "ru": "потому что", "pr": "potomu chto" }]
+  },
+  {
+    "question": "Как выразить контраст типа 'хотя'?",
+    "ru": "___ было холодно, мы пошли гулять.",
+    "pr": "___ bylo kholodno, my poshli gulyat'.",
+    "en": "___ it was cold, we went for a walk.",
+    "options": [
+      { "ru": "хотя", "pr": "khotya" },
+      { "ru": "если", "pr": "yesli" },
+      { "ru": "но", "pr": "no" }
+    ],
+    "answer": [{ "ru": "хотя", "pr": "khotya" }]
+  },
+  {
+    "question": "Как выразить условие?",
+    "ru": "___ будет дождь, мы останемся дома.",
+    "pr": "___ budet dozhd', my ostanemsya doma.",
+    "en": "___ it rains, we will stay home.",
+    "options": [
+      { "ru": "если", "pr": "yesli" },
+      { "ru": "и", "pr": "i" },
+      { "ru": "а", "pr": "a" }
+    ],
+    "answer": [{ "ru": "если", "pr": "yesli" }]
+  }
+]
+,"part2":[
+  {
+    "question": "Какой предлог указывает на нахождение внутри?",
+    "ru": "Мы живём ___ Москве.",
+    "pr": "My zhivyom ___ Moskve.",
+    "en": "We live ___ Moscow.",
+    "options": [
+      { "ru": "в", "pr": "v" },
+      { "ru": "на", "pr": "na" },
+      { "ru": "с", "pr": "s" }
+    ],
+    "answer": [{ "ru": "в", "pr": "v" }]
+  },
+  {
+    "question": "Какой предлог указывает на поверхность или мероприятие?",
+    "ru": "Он сейчас ___ работе.",
+    "pr": "On seychas ___ rabote.",
+    "en": "He is ___ work now.",
+    "options": [
+      { "ru": "на", "pr": "na" },
+      { "ru": "в", "pr": "v" },
+      { "ru": "у", "pr": "u" }
+    ],
+    "answer": [{ "ru": "на", "pr": "na" }]
+  },
+  {
+    "question": "Какой предлог означает «с кем-то»?",
+    "ru": "Я гуляю ___ другом.",
+    "pr": "Ya gulyayu ___ drugom.",
+    "en": "I am walking ___ a friend.",
+    "options": [
+      { "ru": "с", "pr": "s" },
+      { "ru": "у", "pr": "u" },
+      { "ru": "от", "pr": "ot" }
+    ],
+    "answer": [{ "ru": "с", "pr": "s" }]
+  },
+  {
+    "question": "Какой предлог выражает близость или обладание?",
+    "ru": "___ меня есть кошка.",
+    "pr": "___ menya yest' koshka.",
+    "en": "I have a cat. (Literally: ___ me there is a cat.)",
+    "options": [
+      { "ru": "у", "pr": "u" },
+      { "ru": "для", "pr": "dlya" },
+      { "ru": "без", "pr": "bez" }
+    ],
+    "answer": [{ "ru": "у", "pr": "u" }]
+  },
+  {
+    "question": "Какой предлог показывает источник или отправную точку?",
+    "ru": "Письмо ___ друга.",
+    "pr": "Pis'mo ___ druga.",
+    "en": "A letter ___ a friend.",
+    "options": [
+      { "ru": "от", "pr": "ot" },
+      { "ru": "без", "pr": "bez" },
+      { "ru": "о", "pr": "o" }
+    ],
+    "answer": [{ "ru": "от", "pr": "ot" }]
+  },
+  {
+    "question": "Какой предлог обозначает «для кого/чего»?",
+    "ru": "Это подарок ___ мамы.",
+    "pr": "Eto podarok ___ mamy.",
+    "en": "This is a gift ___ mom.",
+    "options": [
+      { "ru": "для", "pr": "dlya" },
+      { "ru": "у", "pr": "u" },
+      { "ru": "с", "pr": "s" }
+    ],
+    "answer": [{ "ru": "для", "pr": "dlya" }]
+  },
+  {
+    "question": "Какой предлог выражает отсутствие?",
+    "ru": "Чай ___ сахара невкусный.",
+    "pr": "Chay ___ sakhara nevkusnyy.",
+    "en": "Tea ___ sugar is not tasty.",
+    "options": [
+      { "ru": "без", "pr": "bez" },
+      { "ru": "от", "pr": "ot" },
+      { "ru": "в", "pr": "v" }
+    ],
+    "answer": [{ "ru": "без", "pr": "bez" }]
+  },
+  {
+    "question": "Какой предлог означает «о чём-то»?",
+    "ru": "Мы говорили ___ фильме.",
+    "pr": "My govorili ___ fil'me.",
+    "en": "We talked ___ the movie.",
+    "options": [
+      { "ru": "о / об", "pr": "o / ob" },
+      { "ru": "на", "pr": "na" },
+      { "ru": "с", "pr": "s" }
+    ],
+    "answer": [{ "ru": "о / об", "pr": "o / ob" }]
+  }
+]
+,"part3":[
+  {
+    "question": "Какой вопрос задаётся о человеке?",
+    "ru": "___ пришёл к тебе вчера?",
+    "pr": "___ prishel k tebe vchera?",
+    "en": "___ came to you yesterday?",
+    "options": [
+      { "ru": "Кто", "pr": "Kto" },
+      { "ru": "Что", "pr": "Chto" },
+      { "ru": "Где", "pr": "Gde" }
+    ],
+    "answer": [{ "ru": "Кто", "pr": "Kto" }]
+  },
+  {
+    "question": "Какое слово спрашивает о предмете или действии?",
+    "ru": "___ ты читаешь?",
+    "pr": "___ ty chitayesh'?",
+    "en": "___ are you reading?",
+    "options": [
+      { "ru": "Что", "pr": "Chto" },
+      { "ru": "Когда", "pr": "Kogda" },
+      { "ru": "Почему", "pr": "Pochemu" }
+    ],
+    "answer": [{ "ru": "Что", "pr": "Chto" }]
+  },
+  {
+    "question": "Как спросить о месте?",
+    "ru": "___ находится библиотека?",
+    "pr": "___ nakhoditsya biblioteka?",
+    "en": "___ is the library located?",
+    "options": [
+      { "ru": "Где", "pr": "Gde" },
+      { "ru": "Как", "pr": "Kak" },
+      { "ru": "Кто", "pr": "Kto" }
+    ],
+    "answer": [{ "ru": "Где", "pr": "Gde" }]
+  },
+  {
+    "question": "Как задать вопрос о времени?",
+    "ru": "___ начнётся концерт?",
+    "pr": "___ nachnyotsya kontsert?",
+    "en": "___ will the concert start?",
+    "options": [
+      { "ru": "Когда", "pr": "Kogda" },
+      { "ru": "Почему", "pr": "Pochemu" },
+      { "ru": "Какой", "pr": "Kakoy" }
+    ],
+    "answer": [{ "ru": "Когда", "pr": "Kogda" }]
+  },
+  {
+    "question": "Как спросить о причине?",
+    "ru": "___ ты опоздал?",
+    "pr": "___ ty opozdal?",
+    "en": "___ were you late?",
+    "options": [
+      { "ru": "Почему", "pr": "Pochemu" },
+      { "ru": "Как", "pr": "Kak" },
+      { "ru": "Кто", "pr": "Kto" }
+    ],
+    "answer": [{ "ru": "Почему", "pr": "Pochemu" }]
+  },
+  {
+    "question": "Как задать вопрос о способе действия?",
+    "ru": "___ вы готовите этот суп?",
+    "pr": "___ vy gotovite etot sup?",
+    "en": "___ do you cook this soup?",
+    "options": [
+      { "ru": "Как", "pr": "Kak" },
+      { "ru": "Когда", "pr": "Kogda" },
+      { "ru": "Что", "pr": "Chto" }
+    ],
+    "answer": [{ "ru": "Как", "pr": "Kak" }]
+  },
+  {
+    "question": "Как спросить о характеристике или выборе?",
+    "ru": "___ фильм тебе больше нравится?",
+    "pr": "___ film tebe bol'she nravitsya?",
+    "en": "___ movie do you like more?",
+    "options": [
+      { "ru": "Какой", "pr": "Kakoy" },
+      { "ru": "Кто", "pr": "Kto" },
+      { "ru": "Где", "pr": "Gde" }
+    ],
+    "answer": [{ "ru": "Какой", "pr": "Kakoy" }]
+  }
+],
+"part4":[
+  {
+    "question": "Which word makes the sentence negative?",
+    "ru": "Я ___ знаю ответа.",
+    "pr": "Ya ___ znayu otveta.",
+    "en": "I ___ know the answer. (Choose the word meaning 'not')",
+    "options": [
+      { "ru": "не", "pr": "ne", "en": "not" },
+      { "ru": "ни", "pr": "ni", "en": "neither / nor" },
+      { "ru": "тоже", "pr": "tozhe", "en": "also / too" }
+    ],
+    "answer": [{ "ru": "не", "pr": "ne", "en": "not" }]
+  },
+  {
+    "question": "Which word means “neither / nor”?",
+    "ru": "Он любит ___ чай ___ кофе.",
+    "pr": "On lyubit ___ chai ___ kofe.",
+    "en": "He likes ___ tea ___ coffee. (Choose the word meaning 'neither / nor')",
+    "options": [
+      { "ru": "ни", "pr": "ni", "en": "neither / nor" },
+      { "ru": "ещё", "pr": "eshchyo", "en": "still / more" },
+      { "ru": "уже", "pr": "uzhe", "en": "already" }
+    ],
+    "answer": [{ "ru": "ни", "pr": "ni", "en": "neither / nor" }]
+  },
+  {
+    "question": "Which word adds the idea “also / too”?",
+    "ru": "Я люблю этот фильм, и он его ___ любит.",
+    "pr": "Ya lyublyu etot film, i on ego ___ lyubit.",
+    "en": "I love this movie, and he ___ loves it. (Choose the word meaning 'also / too')",
+    "options": [
+      { "ru": "тоже", "pr": "tozhe", "en": "also / too" },
+      { "ru": "всегда", "pr": "vsegda", "en": "always" },
+      { "ru": "никогда", "pr": "nikogda", "en": "never" }
+    ],
+    "answer": [{ "ru": "тоже", "pr": "tozhe", "en": "also / too" }]
+  },
+  {
+    "question": "Which word means “still / yet”?",
+    "ru": "Она ___ работает в той компании.",
+    "pr": "Ona ___ rabotayet v toy kompanii.",
+    "en": "She ___ works at that company. (Choose the word meaning 'still / yet')",
+    "options": [
+      { "ru": "ещё", "pr": "eshchyo", "en": "still / yet" },
+      { "ru": "уже", "pr": "uzhe", "en": "already" },
+      { "ru": "не", "pr": "ne", "en": "not" }
+    ],
+    "answer": [{ "ru": "ещё", "pr": "eshchyo", "en": "still / yet" }]
+  },
+  {
+    "question": "Which word means “already”?",
+    "ru": "Мы ___ закончили проект.",
+    "pr": "My ___ zakonchili proyekt.",
+    "en": "We have ___ finished the project. (Choose the word meaning 'already')",
+    "options": [
+      { "ru": "уже", "pr": "uzhe", "en": "already" },
+      { "ru": "ещё", "pr": "eshchyo", "en": "still / yet" },
+      { "ru": "ни", "pr": "ni", "en": "neither / nor" }
+    ],
+    "answer": [{ "ru": "уже", "pr": "uzhe", "en": "already" }]
+  },
+  {
+    "question": "Which word means “always”?",
+    "ru": "Он ___ приходит вовремя.",
+    "pr": "On ___ prikhodit vovremya.",
+    "en": "He ___ arrives on time. (Choose the word meaning 'always')",
+    "options": [
+      { "ru": "всегда", "pr": "vsegda", "en": "always" },
+      { "ru": "никогда", "pr": "nikogda", "en": "never" },
+      { "ru": "тоже", "pr": "tozhe", "en": "also / too" }
+    ],
+    "answer": [{ "ru": "всегда", "pr": "vsegda", "en": "always" }]
+  },
+  {
+    "question": "Which word means “never”?",
+    "ru": "Я ___ не был в Японии.",
+    "pr": "Ya ___ ne byl v Yaponii.",
+    "en": "I have ___ been to Japan. (Choose the word meaning 'never')",
+    "options": [
+      { "ru": "никогда", "pr": "nikogda", "en": "never" },
+      { "ru": "всегда", "pr": "vsegda", "en": "always" },
+      { "ru": "не", "pr": "ne", "en": "not" }
+    ],
+    "answer": [{ "ru": "никогда", "pr": "nikogda", "en": "never" }]
+  }
+]
+
+,"part5":[
+  {
+    "question": "Which word means “this / it”?",
+    "ru": "___ моя книга.",
+    "pr": "___ moya kniga.",
+    "en": "___ is my book. (Choose the word meaning 'this / it')",
+    "options": [
+      { "ru": "это", "pr": "eto", "en": "this / it" },
+      { "ru": "там", "pr": "tam", "en": "there" },
+      { "ru": "здесь", "pr": "zdes'", "en": "here" }
+    ],
+    "answer": [{ "ru": "это", "pr": "eto", "en": "this / it" }]
+  },
+  {
+    "question": "Which word means “here”?",
+    "ru": "Я живу ___ в городе.",
+    "pr": "Ya zhivu ___ v gorode.",
+    "en": "I live ___ in the city. (Choose the word meaning 'here')",
+    "options": [
+      { "ru": "здесь", "pr": "zdes'", "en": "here" },
+      { "ru": "там", "pr": "tam", "en": "there" },
+      { "ru": "это", "pr": "eto", "en": "this / it" }
+    ],
+    "answer": [{ "ru": "здесь", "pr": "zdes'", "en": "here" }]
+  },
+  {
+    "question": "Which word means “there”?",
+    "ru": "Магазин находится ___, за углом.",
+    "pr": "Magazin nakhoditsya ___, za uglom.",
+    "en": "The shop is ___, around the corner. (Choose the word meaning 'there')",
+    "options": [
+      { "ru": "там", "pr": "tam", "en": "there" },
+      { "ru": "здесь", "pr": "zdes'", "en": "here" },
+      { "ru": "это", "pr": "eto", "en": "this / it" }
+    ],
+    "answer": [{ "ru": "там", "pr": "tam", "en": "there" }]
+  },
+  {
+    "question": "Which word means “I”?",
+    "ru": "___ учусь в университете.",
+    "pr": "___ uchus' v universitete.",
+    "en": "___ study at the university. (Choose the word meaning 'I')",
+    "options": [
+      { "ru": "я", "pr": "ya", "en": "I" },
+      { "ru": "ты", "pr": "ty", "en": "you" },
+      { "ru": "он / она", "pr": "on / ona", "en": "he / she" }
+    ],
+    "answer": [{ "ru": "я", "pr": "ya", "en": "I" }]
+  },
+  {
+    "question": "Which word means “you” (singular informal)?",
+    "ru": "___ говоришь по-русски?",
+    "pr": "___ govorish po-russki?",
+    "en": "Do ___ speak Russian? (Choose the word meaning 'you')",
+    "options": [
+      { "ru": "ты", "pr": "ty", "en": "you" },
+      { "ru": "я", "pr": "ya", "en": "I" },
+      { "ru": "мы / они", "pr": "my / oni", "en": "we / they" }
+    ],
+    "answer": [{ "ru": "ты", "pr": "ty", "en": "you" }]
+  },
+  {
+    "question": "Which word means “he / she”?",
+    "ru": "___ читает книгу.",
+    "pr": "___ chitayet knigu.",
+    "en": "___ is reading a book. (Choose the word meaning 'he / she')",
+    "options": [
+      { "ru": "он / она", "pr": "on / ona", "en": "he / she" },
+      { "ru": "ты", "pr": "ty", "en": "you" },
+      { "ru": "я", "pr": "ya", "en": "I" }
+    ],
+    "answer": [{ "ru": "он / она", "pr": "on / ona", "en": "he / she" }]
+  },
+  {
+    "question": "Which word means “we / they”?",
+    "ru": "___ идём в парк.",
+    "pr": "___ idyom v park.",
+    "en": "___ are going to the park. (Choose the word meaning 'we / they')",
+    "options": [
+      { "ru": "мы / они", "pr": "my / oni", "en": "we / they" },
+      { "ru": "ты", "pr": "ty", "en": "you" },
+      { "ru": "я", "pr": "ya", "en": "I" }
+    ],
+    "answer": [{ "ru": "мы / они", "pr": "my / oni", "en": "we / they" }]
+  },
+  {
+    "question": "Кто дома?",
+    "ru": "Дома ___ кошка.",
+    "pr": "Doma ___ koshka.",
+    "en": "There is a cat at home. (Choose the word meaning 'there is / exists')",
+    "options": [
+      { "ru": "есть", "pr": "yest'", "en": "there is / exists" },
+      { "ru": "живет", "pr": "zhivyot", "en": "lives" },
+      { "ru": "идёт", "pr": "idyot", "en": "goes / is going" }
+    ],
+    "answer": [{ "ru": "есть", "pr": "yest'", "en": "there is / exists" }]
+  }
+]
+
+}

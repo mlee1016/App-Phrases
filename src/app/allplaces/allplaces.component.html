@@ -1,0 +1,80 @@
+<div class="min-h-screen flex flex-col items-center justify-center bg-gradient-to-r from-cyan-500 to-blue-700 p-6">
+  <h2 class="text-4xl font-bold text-white mb-10">Subscribe</h2>
+
+  <div class="grid md:grid-cols-3 gap-8">
+
+    <!-- Tier 1 -->
+    <div class="flex flex-col items-center justify-between bg-white rounded-2xl shadow-lg p-6 w-80 transition transform hover:scale-105">
+      <h3 class="text-2xl font-bold text-cyan-700 mb-4">Free</h3>
+      <ul class="text-gray-600 mb-6 space-y-2 text-center">
+        <li class="font-semibold text-lg text-cyan-600">0$</li>
+        <li>Limited access to phrases</li>
+      </ul>
+      <button class="bg-emerald-500 text-white px-6 py-2 rounded-lg shadow hover:bg-emerald-600 transition">
+        Subscribe
+      </button>
+    </div>
+
+    <!-- Tier 2 (Highlighted Plan) -->
+    <div class="flex flex-col items-center justify-between bg-white rounded-2xl shadow-2xl p-6 w-80 border-4 border-cyan-500 transform scale-105">
+      <h3 class="text-2xl font-bold text-cyan-700 mb-4">Tier 2</h3>
+      <ul class="text-gray-600 mb-6 space-y-2 text-center">
+        <li class="font-semibold text-lg text-cyan-600">3$ / 6 months</li>
+        <li>access to all phrases</li>
+
+
+        <li>some features to help</li>
+        <li>no ads</li>
+
+
+      </ul>
+      <div class="flex gap-4">
+        <button class="bg-cyan-600 text-white px-6 py-2 rounded-lg shadow hover:bg-cyan-700 transition" (click)="checkout()">
+          Card
+        </button>
+        <button (click)="createSubscription()" class="bg-emerald-500 text-white px-6 py-2 rounded-lg shadow hover:bg-emerald-600 transition">
+          Paypal
+        </button>
+
+
+              <!-- paypal.component.html -->
+
+      </div>
+    </div>
+
+    <!-- Tier 3 -->
+    <div class="flex flex-col items-center justify-between bg-white border-4 border-cyan-500 rounded-2xl shadow-lg p-6 w-80 transition transform hover:scale-105">
+      <h3 class="text-2xl font-bold text-cyan-700 mb-4">Tier 3</h3>
+      <ul class="text-gray-600 mb-6 space-y-2 text-center">
+        <li class="font-semibold text-lg text-cyan-600">5$ / 1 year</li>
+        <li>Full access to all phrases</li>
+
+        
+
+        <li>some features to help</li>
+        <li>no ads</li>
+
+      </ul>
+      <div class="flex gap-4">
+        <button class="bg-cyan-600 text-white px-6 py-2 rounded-lg shadow hover:bg-cyan-700 transition" (click)="checkout()">
+          Card
+        </button>
+        <button class="bg-emerald-500 text-white px-6 py-2 rounded-lg shadow hover:bg-emerald-600 transition">
+          Paypal
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Cancel Button -->
+  <button class="mt-10 bg-red-500 text-white px-6 py-2 rounded-lg shadow hover:bg-red-600 transition">
+    Cancel Subscription
+  </button>
+
+
+
+
+
+
+  
+</div>

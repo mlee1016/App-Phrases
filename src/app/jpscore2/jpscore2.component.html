@@ -1,0 +1,99 @@
+<!-- Header -->
+<header class="flex justify-between items-center p-4 bg-[#0F1F26] shadow-md text-cyan-100">
+  <h2 class="text-lg md:text-xl font-bold">
+    {{ selectedPhrases() === '' ? '📚 Pick a list →' : 'Currently studying: ' + selectedPhrases() }}
+  </h2>
+  <button
+    (click)="toggleSidebar()"
+    class="bg-cyan-500 hover:bg-cyan-400 text-black px-3 py-2 rounded-lg shadow transition"
+  >
+    {{ sideBar ? '✖ Close' : '☰ Menu' }}
+  </button>
+</header>
+
+<!-- Sidebar -->
+<div *ngIf="sideBar" class="fixed inset-0 bg-black/70 z-40 flex items-center justify-center">
+  <div class="bg-[#112830] text-white w-[90%] max-w-lg rounded-xl shadow-2xl p-6 animate-fade-in space-y-6">
+    <!-- Close -->
+    <div class="flex justify-end">
+      <button
+        class="text-sm bg-cyan-700 hover:bg-cyan-600 px-3 py-1 rounded-lg transition"
+        (click)="close()"
+      >
+        ✖ Close
+      </button>
+    </div>
+
+    <!-- Kanji Set -->
+    <div>
+      <h2 class="text-lg font-semibold mb-2">
+        {{ selectedPhrases() === '' ? 'Pick a list' : 'Currently studying: ' + selectedPhrases() }}
+      </h2>
+      <h3 class="text-base font-bold mb-3 border-b border-cyan-600 pb-1">📘 Kanji Sets</h3>
+      <div class="grid grid-cols-2 gap-3">
+        <button
+          *ngFor="let item of kanji2"
+          (click)="selectKanji(item)"
+          class="bg-cyan-600 hover:bg-cyan-500 text-white px-4 py-2 rounded-lg text-center shadow-md transition"
+        >
+          {{ item }}
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Start Button -->
+<div *ngIf="isReadyToStart && !started" class="flex-1 flex items-center justify-center mt-12">
+  <button
+    (click)="start()"
+    class="bg-green-600 hover:bg-green-500 text-white px-8 py-4 rounded-full shadow-lg text-xl font-semibold transition"
+  >
+    ▶ Start Practice
+  </button>
+</div>
+
+<!-- Slideshow / Flashcards -->
+<div *ngIf="started" class="flex flex-col items-center justify-center p-6 text-cyan-100" [ngClass]="theme">
+  <div *ngIf="currentCard" 
+    class="bg-[#132D3A] rounded-2xl shadow-2xl p-8 w-full max-w-xl text-center space-y-4 transition">
+    
+    <!-- Card Counter -->
+    <p class="text-sm text-cyan-300 font-medium">Card {{ index + 1 }} / {{ cards.length }}</p>
+
+    <!-- Kanji -->
+    <h1 class="text-7xl font-extrabold tracking-wide text-cyan-200">{{ currentCard.phrase }}</h1>
+
+    <!-- Onyomi -->
+    <p class="text-lg text-blue-300">
+      <strong>On’yomi:</strong> {{ currentCard.pr }}
+    </p>
+
+    <!-- Kunyomi -->
+    <p class="text-lg text-green-300">
+      <strong>Kun’yomi:</strong> {{ currentCard.en }}
+    </p>
+
+    <!-- Meaning -->
+    <p class="text-base text-cyan-200 italic">
+      <strong>Meaning:</strong> {{ currentCard.des }}
+    </p>
+  </div>
+
+  <!-- Navigation -->
+  <div class="flex gap-6 mt-6">
+    <button
+      (click)="prevCard()"
+      class="bg-cyan-600 hover:bg-cyan-500 text-white px-6 py-2 rounded-lg shadow-md transition"
+    >
+      ⟨ Prev
+    </button>
+    <button
+      (click)="nextCard()"
+      class="bg-cyan-600 hover:bg-cyan-500 text-white px-6 py-2 rounded-lg shadow-md transition"
+    >
+      Next ⟩
+    </button>
+  </div>
+
+</div>

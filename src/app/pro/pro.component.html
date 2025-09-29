@@ -1,0 +1,65 @@
+<div *ngIf="authLoaded" class="p-6 text-white">
+
+  <!-- 🔹 Signed-in User Info -->
+  <ng-container *ngIf="status2() === 'signed in'; else elseTemplate">
+
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+
+      <!-- 🟦 User Info Card -->
+      <div class="bg-gray-800 rounded-xl shadow p-4">
+        <h3 class="text-lg font-semibold mb-3">User Info</h3>
+        <p><strong>Username:</strong> {{ user() }}</p>
+        <p><strong>Email:</strong> {{ email }}</p>
+        <p><strong>User ID:</strong> {{ id }}</p>
+        <p [routerLink]="'set-new-password'"><strong>new password</strong></p>
+      </div>
+
+      <!-- 🟩 Subscription Card -->
+      <div class="bg-gray-800 rounded-xl shadow p-4">
+        <h3 class="text-lg font-semibold mb-3">Subscription</h3>
+        <p><strong>Type:</strong> {{ subscription }}</p>
+        <a [routerLink]="'subscriptions'" class="text-indigo-400 underline">Manage subscription</a>
+
+        <!-- 🔹 Upgrade Prompt for Free Tier -->
+        <div *ngIf="subscription === 'free'" class="mt-4 p-3 bg-yellow-600 text-white rounded">
+          Upgrade to a paid plan for more features!
+          <a [routerLink]="'subscriptions'" class="underline ml-1">Upgrade now</a>
+        </div>
+      </div>
+
+      <!-- 🟨 Survey Card -->
+      <div class="bg-gray-800 rounded-xl shadow p-4">
+        <h3 class="text-lg font-semibold mb-3">Survey</h3>
+
+        <div *ngIf="surveyExists(); else noSurvey">
+          <p><strong>Places:</strong> {{ surveyData()?.places }}</p>
+          <p><strong>Language:</strong> {{ surveyData()?.language }}</p>
+          <p><strong>Plan Chosen:</strong> {{ surveyData()?.subscription }}</p>
+          <p><strong>Created:</strong> {{ surveyData()?.created_at | date }}</p>
+        </div>
+
+        <ng-template #noSurvey>
+          <p>You haven’t completed a survey yet.</p>
+          <button (click)="goToCreateSurvey()" 
+                  class="mt-2 px-4 py-2 bg-indigo-600 text-white rounded">
+            Create Survey
+          </button>
+          <app-description
+            [showSurvey]="surveyModalOpen"
+            (close)="surveyModalOpen = false"
+            (submitSurvey2)="getSurvey()">   <!-- refresh survey after submit -->
+          </app-description>
+
+        </ng-template>
+      </div>
+    </div>
+  </ng-container>
+
+  <!-- 🔹 Guest View -->
+  <ng-template #elseTemplate>
+    <div class="flex flex-col justify-center items-center text-cyan-200 text-3xl mt-20">
+      <p>You are not signed in</p>
+      <a href="signin/" class="mt-4 bg-blue-600 px-6 py-2 rounded hover:bg-blue-500 text-white">Sign In</a>
+    </div>
+  </ng-template>
+</div>

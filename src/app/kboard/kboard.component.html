@@ -1,0 +1,115 @@
+<div class="p-4 bg-slate-900 text-white rounded space-y-4 shadow-lg">
+  <!--<div class="flex justify-between items-center">
+    <h2 class="text-xl font-bold">🧩 Virtual Keyboard</h2>
+    <button (click)="toggleLang()" class="bg-cyan-700 px-3 py-1 rounded">
+      Switch to {{ langMode() === 'Korean' ? 'Russian' : 'Korean' }}
+    </button>
+  </div>
+
+  <!-- Display phrase preview -->
+  <div class="bg-black/30 p-3 rounded text-lg font-mono">
+    <div *ngIf="langMode() === 'Korean'">
+      <div>🟨  자모 - Jamo: {{ jamos() }}</div>
+      <div>🟩 Syllables: {{ assembledKorean() }}</div>
+      <button (click)="sendChar(assembledKorean())" class="bg-emerald-200 px-4 py-2 text-cyan-700 mt-1 rounded">send syllable</button>
+          
+      <button (click)="deleteLast()" class="bg-yellow-600 px-4 py-2 mt-2 rounded">⌫ Delete</button>
+      <button (click)="clearAll()" class="bg-red-600 px-4 py-2 mt-2 rounded">🗑️ Clear</button>
+    </div><!--
+    <div *ngIf="langMode() === 'Russian'">
+      <div>🇷🇺: {{ russianInput() }}</div>
+    </div>
+
+
+    <div *ngIf="langMode() === 'Japanese'">
+      <div>JP: {{ finalJapanese() }}</div>
+    </div>
+  </div>
+  <!-- Korean Keyboard -->
+<!-- Korean Keyboard -->
+<div *ngIf="langMode() === 'Korean'" class="space-y-4">
+
+  <!-- Choseong (Initial Consonants) -->
+  <div>
+    <h3 class="font-semibold text-sm text-white">Consonants (Choseong)</h3>
+    <div class="grid grid-cols-7 gap-2">
+      <button *ngFor="let ch of chosung" (click)="addJamo(ch.char)"
+        class="bg-cyan-800 hover:bg-cyan-600 px-2 py-1 rounded text-white">{{ ch.char }}</button>
+    </div>
+  </div>
+
+  <!-- Jungseong (Vowels) -->
+  <div>
+    <h3 class="font-semibold text-sm text-white">Vowels (Jungseong)</h3>
+    <div class="grid grid-cols-9 gap-2">
+      <button *ngFor="let ju of jungsung" (click)="addJamo(ju.char)"
+        class="bg-cyan-800 hover:bg-cyan-600 px-2 py-1 rounded text-white">{{ ju.char }}</button>
+    </div>
+  </div>
+
+  <!-- Jongseong (Final Consonants) -->
+  <div>
+    <h3 class="font-semibold text-sm text-white">Final Consonants (Batchim / Jongseong)</h3>
+    <div class="grid grid-cols-9 gap-2">
+      <button *ngFor="let jo of jongsung" (click)="addJamo(jo.char)"
+        class="bg-cyan-700 hover:bg-cyan-500 px-2 py-1 rounded text-white">{{ jo.char }}</button>
+    </div>
+  </div>
+
+</div>
+
+  <!-- Russian Keyboard -->
+  <div *ngIf="langMode() === 'Russian'" class="grid grid-cols-9 gap-2 text-center">
+    <button *ngFor="let r of russianLetters" (click)="sendChar(r.letter)"
+      class="bg-cyan-700 hover:bg-cyan-500 px-2 py-1 rounded">
+      {{ r.letter }}<br><small class="text-xs opacity-70">({{ r.key }})</small>
+    </button>
+  </div>
+
+<!--   
+  <div class="text-right space-x-2">
+  <button (click)="deleteLast()" class="bg-yellow-600 px-4 py-2 mt-2 rounded">⌫ Delete</button>
+  <button (click)="clearAll()" class="bg-red-600 px-4 py-2 mt-2 rounded">🗑️ Clear</button>
+  </div> -->
+  <div *ngIf="lang === 'Japanese'" class="space-y-4">
+  <!-- Tabs -->
+  <div class="flex gap-2 border-b border-gray-700 overflow-x-auto">
+    <button 
+      *ngFor="let tab of getKanaTabs(); let i = index" 
+      (click)="activeTab = i"
+      class="px-3 py-2 rounded-t text-sm font-medium whitespace-nowrap "
+      [class.bg-gray-800]="activeTab === i"
+      [class.text-white]="activeTab === i"
+      [class.text-gray-400]="activeTab !== i"
+      [class.hover\:text-white]="activeTab !== i"
+    >
+      {{ tab.label }}
+    </button>
+  </div>
+
+  <!-- Kana Grid -->
+  <div class="grid grid-cols-5 gap-2">
+    <button 
+      *ngFor="let kana of getKanaTabs()[activeTab].set" 
+      (click)="sendChar(kana.char)" 
+      class="bg-gray-800 px-3 py-2 rounded text-white text-lg hover:bg-gray-700"
+    >
+      {{ kana.char }}
+      <span *ngIf="romajiHints()" class="block text-xs text-cyan-300">
+        {{ kana.romaji }}
+      </span>
+    </button>
+  </div>
+
+  <!-- Controls -->
+  <div class="flex gap-4 mt-4">
+    <button (click)="switchJPMode()" class="bg-blue-600 px-4 py-2 rounded">
+      {{ japaneseMode() === 'hiragana' ? 'あ (Hiragana)' : 'ア (Katakana)' }}
+    </button>
+    <button (click)="romajiHints.set(!romajiHints())" class="bg-green-600 px-4 py-2 rounded">
+      {{ romajiHints() ? 'Hide Romaji' : 'Show Romaji' }}
+    </button>
+  </div>
+</div>
+
+</div>

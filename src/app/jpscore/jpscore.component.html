@@ -1,0 +1,138 @@
+<div class="flex flex-col h-screen text-cyan-100 font-sans">
+  <!-- Header -->
+  <header class="flex justify-between items-center p-4 bg-[#0F1F26] shadow-md">
+    <h2 class="text-lg md:text-xl font-bold">
+      {{ selectedPhrases() === '' ? '📚 Pick a list →' : 'Currently studying: ' + selectedPhrases() }}
+    </h2>
+    <button
+      (click)="toggleSidebar()"
+      class="bg-cyan-500 hover:bg-cyan-400 text-black px-3 py-2 rounded-lg shadow transition"
+    >
+      {{ sideBar ? '✖ Close' : '☰ Menu' }}
+    </button>
+  </header>
+
+  <!-- Sidebar Modal -->
+  <div *ngIf="sideBar" class="fixed inset-0 bg-black/70 z-40 flex items-center justify-center">
+    <div class="bg-[#112830] text-white w-[90%] max-w-lg rounded-xl shadow-2xl p-6 animate-fade-in space-y-6">
+      <!-- Close -->
+      <div class="flex justify-end">
+        <button
+          class="text-sm bg-cyan-700 hover:bg-cyan-600 px-3 py-1 rounded-lg transition"
+          (click)="close()"
+        >
+          ✖ Close
+        </button>
+      </div>
+
+      <!-- Lists -->
+      <div>
+        <h2 class="text-lg font-semibold mb-2">
+          {{ selectedPhrases() === '' ? 'Pick a list' : 'Currently studying: ' + selectedPhrases() }}
+        </h2>
+        <h3 class="text-base font-bold mb-3 border-b border-cyan-600 pb-1">📘 Kanji Sets</h3>
+        <div class="grid grid-cols-2 gap-3">
+          <button
+            *ngFor="let item of kanji2"
+            (click)="selectKanji(item)"
+            class="bg-cyan-600 hover:bg-cyan-500 text-white px-4 py-2 rounded-lg text-center shadow-md transition"
+          >
+            {{ item }}
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Start Button -->
+  <div *ngIf="isReadyToStart && !started" class="flex-1 flex items-center justify-center">
+    <button
+      (click)="start()"
+      class="bg-green-600 hover:bg-green-500 text-white px-8 py-4 rounded-full shadow-lg text-xl font-semibold transition"
+    >
+      ▶ Start Practice
+    </button>
+  </div>
+
+  <!-- Quiz -->
+  <main *ngIf="started" class="flex-1 p-6 overflow-y-auto">
+    <div class="bg-[#132D3A] p-8 rounded-2xl shadow-xl max-w-3xl mx-auto text-center space-y-6">
+      <!-- Kanji -->
+      <h2 class="text-7xl font-extrabold tracking-wide">{{ selectedKanji?.phrase }}</h2>
+
+      <!-- Multiple Choice -->
+      <div *ngIf="mode === 'mc'" class="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <!-- Kunyomi -->
+        <div>
+          <h3 class="text-lg font-semibold mb-3 text-green-300">🟩 Kunyomi</h3>
+          <div class="grid grid-cols-2 gap-3">
+            <button
+              *ngFor="let opt of kunyomiOptions"
+              (click)="checkSKun(opt)"
+              [ngClass]="{
+                'bg-green-400 text-black': kunSelected === opt && isCorrect('kunyomi', opt),
+                'bg-red-400 text-black': kunSelected === opt && !isCorrect('kunyomi', opt),
+                'bg-cyan-100 text-black hover:bg-cyan-200': kunSelected !== opt
+              }"
+              class="p-2 rounded-lg shadow transition"
+            >
+              {{ opt }}
+            </button>
+          </div>
+        </div>
+
+        <!-- Onyomi -->
+        <div>
+          <h3 class="text-lg font-semibold mb-3 text-blue-300">🟦 Onyomi</h3>
+          <div class="grid grid-cols-2 gap-3">
+            <button
+              *ngFor="let opt of onyomiOptions" 
+              (click)="checkSOn(opt)"
+              [ngClass]="{
+                'bg-green-400 text-black': onSelected === opt && isCorrect('onyomi', opt),
+                'bg-red-400 text-black': onSelected === opt && !isCorrect('onyomi', opt),
+                'bg-cyan-100 text-black hover:bg-cyan-200': onSelected !== opt
+              }"
+              class="p-2 rounded-lg shadow transition"
+            >
+              {{ opt }}
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Feedback -->
+      <div class="space-y-2">
+        <p class="mt-4 text-lg font-semibold" [ngClass]="{
+          'text-green-400': feedback.includes('Correct'),
+          'text-red-400': feedback.includes('❌'),
+          'text-yellow-300': feedback.includes('Half')
+        }">
+          {{ feedback }}
+        </p>
+        <p [class.text-green-400]="kunFeedback === 'Correct!'" [class.text-red-400]="kunFeedback === 'Try again'">
+          {{ kunFeedback }}
+        </p>
+        <p [class.text-green-400]="onFeedback === 'Correct!'" [class.text-red-400]="onFeedback === 'Try again'">
+          {{ onFeedback }}
+        </p>
+      </div>
+
+      <!-- Stats -->
+      <div class="flex justify-center gap-6 text-sm text-cyan-200">
+        <p>📚 Remaining: <span class="font-bold">{{ remainingKanji.length }}</span></p>
+        <p>❌ Wrong Attempts: <span class="font-bold">{{ wrongAttempts }}</span></p>
+      </div>
+
+      <!-- Next Button -->
+      <div *ngIf="canNext" class="mt-6">
+        <button
+          (click)="nextQuestion()"
+          class="bg-cyan-500 hover:bg-cyan-400 text-black font-semibold px-6 py-2 rounded-lg shadow transition"
+        >
+          🔁 Next
+        </button>
+      </div>
+    </div>
+  </main>
+</div>

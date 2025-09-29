@@ -1,0 +1,214 @@
+
+<header class="flex justify-between items-center p-4 bg-[#0F1F26] shadow-md text-cyan-100">
+  <h2 class="text-lg md:text-xl font-bold">
+    {{ selectedPhrases() === '' ? '📚 Pick a list →' : 'Currently studying: ' + selectedPhrases() }}
+  </h2>
+  <button
+  
+    (click)="toggleS()"
+    class="bg-cyan-500 hover:bg-cyan-400 text-black px-3 py-2 rounded-lg shadow transition"
+  >
+    {{ sideBar ? '✖ Close' : '☰ Menu' }}
+  </button>
+</header>
+<!-- BACKDROP -->
+<div *ngIf="sideBar" class="fixed inset-0 bg-black bg-opacity-60 z-40 flex items-center justify-center ">
+  
+  <!-- MODAL PANEL -->
+  <div class="bg-cyan-950 text-white w-[90%] max-w-lg rounded-lg shadow-xl p-6 space-y-6 z-50 animate-fade-in">
+    
+    <!-- Close Button -->
+    <div class="text-right">
+      <button
+        class="text-sm bg-cyan-800 hover:bg-cyan-700 text-white px-3 py-1 rounded"
+        (click)="toggleSidebar()"
+      >
+        ✖ Close
+      </button>
+    </div>
+    <!-- Story Section -->
+    <div class="overflow-y-auto max-h-80">
+
+      <h2  class="text-xl font-bold mb-2 ">{{selectedPhrases()===''?'pick a phrase': 'selected: ' + selectedPhrases()}}</h2>
+
+      <h2 class="text-lg font-bold mt-4 mb-2 border-b border-cyan-600 pb-1">Story</h2>
+      <div class="flex flex-col gap-2">
+        <button
+          *ngFor="let item of storyList"
+          (click)="getPhrase(item.s)"
+          class="hover:bg-cyan-500 text-white px-3 py-2 rounded transition"
+          [ngClass]="item.isDone ? 'bg-[#0f765e]' : 'bg-cyan-500'"
+        >
+          {{ item.s }}
+        </button>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+
+  <!-- <button class="w-20 text-left px-6 py-2 m-[1.5rem] rounded bg-cyan-300 hover:bg-cyan-400 text-cyan-900 shadow" -->
+  <!-- (click)="toggleS()">{{!sideBar?'open':'close'}}</button>  -->
+<!-- Only show Start button if list is selected and quiz hasn't started -->
+<div *ngIf="isReadyToStart() && !startNow" class="text-center mt-6 pulse">
+  
+  <button (click)="startStudy()"
+          class="bg-green-600 hover:bg-green-700 text-white px-6 py-3 rounded shadow">
+    ▶ Start
+  </button>
+  
+    <!-- Role Selection -->
+  <div *ngIf="!startNow" class="text-center mt-4">
+    <label class="font-semibold mr-2">Choose Role:</label>
+    <select [(ngModel)]="userRole"
+            class="border px-2 py-1 rounded text-gray-200">
+      <option value="lead">👤 I Lead</option>
+      <option value="follow">🤖 Bot Leads</option>
+    </select>
+    
+
+  <!-- MODE TOGGLE -->
+  <div class="flex justify-center flex-wrap gap-3 mt-6 mb-4">
+    <button (click)="setMode('type')" [class.bg-cyan-700]="inputMode === 'type'"
+            class="bg-cyan-500 hover:bg-cyan-600 text-white px-4 py-2 rounded-full shadow transition">
+      ✍️ Type
+    </button>
+    <button (click)="setMode('speech')" [class.bg-cyan-700]="inputMode === 'speech'"
+            class="bg-cyan-500 hover:bg-cyan-600 text-white px-4 py-2 rounded-full shadow transition">
+      🎤 Speak
+    </button>
+    <button (click)="setMode('practice')" [class.bg-cyan-700]="inputMode === 'practice'"
+            class="bg-cyan-500 hover:bg-cyan-600 text-white px-4 py-2 rounded-full shadow transition">
+      ▶ Practice
+    </button>
+  </div>
+  <!-- Pronunciation Toggle -->
+  <div *ngIf="inputMode==='type'" class="text-center">
+    <button (click)="showPro()"
+            class="bg-cyan-500 hover:bg-cyan-600 text-white px-4 py-2 rounded-full shadow transition"
+            [ngClass]="showPronunciation?'bg-cyan-700':'bg-cyan-500'">
+      {{showPronunciation?'hide':'show'}} Pronunciation
+    </button>
+  </div>
+  </div>
+
+</div>
+
+<!-- ////////////////////////////////////////////////////// -->
+ <div *ngIf="startNow" class="px-4">
+  <!-- CHAT CONTAINER -->
+  <div class="flex flex-col h-[90vh] sm:h-[80vh] w-full max-w-2xl mx-auto bg-white rounded-xl shadow-lg overflow-hidden">
+
+    <!-- CHAT HISTORY -->
+    <div #chatContainer class="flex-1 overflow-y-auto px-4 py-4 space-y-4 bg-gray-50 overflow-x-hidden">
+  <div *ngFor="let msg of chatHistory" class="flex"
+     [ngClass]="{ 'justify-end': msg.sender === 'user', 'justify-start': msg.sender === 'bot' }">
+    <div
+      class="max-w-[80%] md:max-w-[70%] px-4 py-2 rounded-2xl shadow-md cursor-pointer relative"
+      [ngClass]="[
+        msg.sender === 'user'
+          ? 'bg-cyan-600 text-white rounded-br-none animate-fade-user'
+          : 'bg-gray-200 text-gray-900 rounded-bl-none animate-fade-bot'
+      ]"
+        (click)="playSpeech(msg)">
+      <!-- Message Content -->
+        <div class="font-medium text-sm">
+          <!-- Always show text -->
+          {{ msg.text }}
+
+          <!-- Show status if provided -->
+              <ng-container *ngIf="msg.correct !== undefined">
+                <span class="ml-2" [ngClass]="msg.correct ? 'text-green-300' : 'text-red-300'">
+                  {{ msg.correct ? '✅' : '❌' }}
+                </span>
+              </ng-container>
+        </div>
+
+
+        <div *ngIf="msg.pr" class="text-xs mt-1 text-cyan-100" [ngClass]="msg.sender==='user'?'sm:text-gray-200':'sm:text-gray-600'">🔈 {{ msg.pr }}</div>
+        <div *ngIf="msg.en" class="text-xs mt-1 text-black">💬 {{ msg.en }}</div>
+      </div>
+    </div>
+    </div>
+    <!-- INPUT AREA -->
+    <div class="bg-cyan-500 px-4 py-3 border-t">
+      <div class="flex flex-col sm:flex-row items-stretch gap-3">
+        <!-- <button (click)="userReady()">play</button> -->
+        <!-- Text Input Mode -->
+        <ng-container *ngIf="inputMode === 'type'">
+          <!-- Input + Button Row -->
+          <div class="flex gap-2 items-center">
+            <input [(ngModel)]="userInput"
+                    #inputRef
+                    (input)="updateCursor(inputRef)"
+                    (click)="updateCursor(inputRef)"
+                  class="flex-1 text-sm px-3 py-2 rounded-lg border bg-cyan-800 border-emerald-300 
+                          focus:outline-none focus:ring-2 focus:ring-emerald-500 shadow-sm"
+                  placeholder="Type your answer..." />
+            <button (click)="submit()"
+                    class="bg-emerald-600 hover:bg-emerald-700 text-white px-4 py-2 
+                          rounded-lg transition shadow-md">
+              Submit
+            </button>
+          </div>
+
+          <!-- Hint Characters -->
+          <div *ngIf="getSpeaker(storyTurn())==='user'" class="mt-4">
+            <p (click)="generateHint1()" title="if no keyboard" class="text-sm font-semibold text-gray-200 bg-cyan-800 rounded p-2 mb-2">click:</p>
+          
+            <div *ngIf="hint1" class="flex flex-wrap gap-2">
+            
+              <button *ngFor="let char of hint1Array"
+                    (click)="appendToInput(char, inputRef)"
+                    class="bg-emerald-100 hover:bg-emerald-200 text-emerald-800 
+                          font-medium px-3 py-1 rounded-lg shadow-sm transition">
+                {{ char }}
+              </button>
+            </div>
+          </div>
+        </ng-container>
+
+        <!-- Speech Mode -->
+        <button *ngIf="inputMode === 'speech'" (click)="startSpeechToText()"
+                class="w-full sm:w-auto bg-cyan-700 hover:bg-cyan-800 text-white px-4 py-2 rounded-full shadow transition">
+          🎙 Speak
+        </button>
+
+        <!-- Practice Mode -->
+        <button *ngIf="inputMode === 'practice'&& !ToBegin" (click)="advanceStory()"
+                class="w-full sm:w-auto bg-cyan-700  hover:bg-cyan-800 text-white px-4 py-2 rounded-md shadow transition">
+          ▶ Next
+        </button>
+      </div>
+
+      <div class="text-sm text-cyan-900 self-center m-3">
+        <ng-container *ngIf="getSpeaker(storyTurn()) === 'user'; else botTurn">
+          {{ userRole === 'lead' ? 'Say in' : 'Reply in' }} {{ id }}:
+          <strong>{{ chatData[index]?.[storyTurn()]?.en }}</strong>
+        </ng-container>
+        <ng-template #botTurn>
+          🤖 Robot's turn...<div *ngIf="botTyping" class="bot-typing">
+                                  <span class="dot"></span>
+                                  <span class="dot"></span>
+                                  <span class="dot"></span>
+                                </div>
+
+        </ng-template>
+      </div>
+      <!-- BEGIN BUTTON for USER -->
+      <div *ngIf="ToBegin && getSpeaker(storyTurn()) === 'user'" class="text-center my-4">
+          <!-- <div class="text-sm text-cyan-900 mb-2"> -->
+        <!-- 🧠 Your Turn: Say in {{ id }}: -->
+          <!-- <strong>{{ chatData[index]?.[storyTurn()]?.en || '' }}</strong> -->
+        <!-- </div> -->
+        <button *ngIf="inputMode ==='practice'" (click)="startUserTurn()"
+                class="bg-emerald-600 hover:bg-emerald-700 text-white px-4 py-2 rounded shadow">
+          ▶  
+        </button>
+      </div>
+
+    </div>
+
+  </div>
+</div>
