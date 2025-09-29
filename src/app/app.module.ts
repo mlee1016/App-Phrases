@@ -39,7 +39,7 @@ import { AlloptionsComponent } from './alloptions/alloptions.component';
 import { KanjiComponent } from './kanji/kanji.component';
 import { EdComponent } from './ed/ed.component';
 import { NotFoundComponent } from './not-found/not-found.component';
-import { AresponseComponent } from './aresponse/aresponse.component';
+// import { AresponseComponent } from './aresponse/aresponse.component';
 
 
 /*const routes:Routes=[
@@ -95,7 +95,7 @@ import { AresponseComponent } from './aresponse/aresponse.component';
     KanjiComponent,
     EdComponent,
     NotFoundComponent,
-    AresponseComponent
+    // AresponseComponent
   ],
   imports: [
     BrowserModule,
