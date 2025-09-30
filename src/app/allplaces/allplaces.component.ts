@@ -39,7 +39,7 @@ export class AllplacesComponent {
 
 
 
-    this.paypal.Buttons({
+    /*this.paypal.Buttons({
       createOrder: (data: any, actions: any) => {
         return actions.order.create({
           purchase_units: [{
@@ -59,7 +59,7 @@ export class AllplacesComponent {
           });
         });
       }
-    }).render('#paypal-button-container');
+    }).render('#paypal-button-container');*/
 
 
   }
