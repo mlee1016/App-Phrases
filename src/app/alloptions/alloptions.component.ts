@@ -13,7 +13,7 @@ export class AlloptionsComponent {
     allSites = [
   
       
-      {"s":"All List","des":"Look over all the list"},
+      {"s":"All List","des":"Look over all the list"}, 
       // {"s":"Study Cards","des":"Allows to individual phrases and words"},
       {"s":"Fill in the blank","des":"given a phrase with a missing section place the correct word in to the spot"},
 

@@ -30,7 +30,7 @@
   </div>-->
 </header>
 
-  <aside class="fixed top-14 left-0 h-[calc(100%-3.5rem)] bg-[#030a0e] border-r border-cyan-800 flex flex-col items-center text-cyan-400 pt-6 space-y-6 z-50" [ngClass]="seePhrases?'w-40':'w-25'">
+  <aside class="fixed top-14 left-0 h-[calc(100%-3.5rem)] bg-[#030a0e] border-r border-cyan-800 flex flex-col items-center text-cyan-400 pt-6 space-y-6 z-50" [ngClass]="seePhrases?'w-38':'w-[5rem]'">
     <ng-container *ngFor="let item of sidebarItems">
       <div class="flex flex-col items-center hover:text-emerald-300 cursor-pointer">
         <button [routerLink]="item.route" routerLinkActive="text-emerald-300" class="text-xl">
@@ -60,7 +60,7 @@
   </aside>
 
   <!-- 🔹 Main Content Area -->
-  <main class="ml-20 mt-14">
+  <main class="ml-16 mt-14">
     <router-outlet></router-outlet>
   </main>
 

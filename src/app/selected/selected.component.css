@@ -56,7 +56,7 @@ input{
 
 
 
-/*! tailwindcss v4.1.4 | MIT License | https://tailwindcss.com */
+/*! tailwindcss v4.1.4 | MIT License | https://tailwindcss.com 
 @layer properties;
 @layer theme, base, components, utilities;
 @layer theme {
@@ -347,9 +347,6 @@ input{
     }
   }
 }*/
-body {
-  background-color: black;
-}
 @property --tw-border-style {
   syntax: "*";
   inherits: false;
@@ -425,7 +422,7 @@ body {
       --tw-gradient-to-position: 100%;
       --tw-font-weight: initial;
       --tw-text-shadow-color: initial;
-      --tw-text-shadow-alpha: 100%;
+      --tw-text-shadow-alpha: 100%; 
     }
   }
 }

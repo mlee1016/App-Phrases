@@ -388,30 +388,7 @@ startSpeechToText(expectedRaw: string) {
 
   this.listening = true;
   this.pronunciationFeedback = '';
-/*
-  recognition.onresult = (event: any) => {
-    const transcript: string = event.results[0][0].transcript || '';
-    const heardNorm = normalize(transcript);
 
-    // ✅ compare normalized vs normalized
-    const correct = heardNorm === expected;
-
-    this.ngZone.run(() => {
-      this.userInput = transcript; // keep raw for display
-      this.pronunciationFeedback = correct
-        ? '✅ Correct pronunciation!'
-        : `❌ Try again. Expected: "${expectedRaw}"`;
-
-      // if you use signals elsewhere
-      if (this.lastResult) this.lastResult.set(this.pronunciationFeedback);
-      if (this.answered) this.answered.set(true);
-
-      this.listening = false;
-    });
-
-    // optional: stop explicitly
-    try { recognition.stop(); } catch {}
-  };*/
 recognition.onresult = (event: any) => {
   const transcript: string = event.results[0][0].transcript || '';
   const heardNorm = normalize(transcript);
@@ -438,18 +415,12 @@ recognition.onresult = (event: any) => {
 
   this.ngZone.run(() => {
     this.userInput = transcript; // raw transcript
-    /*this.pronunciationFeedback = allCorrect
-      ? '✅ Perfect match!'
-      : `❌ Some differences found ,Expected: "${expectedRaw}"`;*/
-
-    // if you want to display char-by-char highlights
-
+  
   
     this.comparisonResult = comparison;
     // console.log(comparison)
     this.proportionCorrect = comparison.filter(c => c.correct).length / comparison.length*100;
 
-    // console.log(this.proportionCorrect)
     if(this.proportionCorrect ===100){
       this.pronunciationFeedback = '✅ Perfect match!'
     }else if(this.proportionCorrect >=80){
@@ -457,10 +428,10 @@ recognition.onresult = (event: any) => {
       this.pronunciationFeedback = `❌ so close! Some differences found ,Expected: "${expectedRaw}"`;
 
     }else if(this.proportionCorrect >=50){
-      this.pronunciationFeedback = `❌ keep trying, Some differences found ,Expected: "${expectedRaw}"`;
+      this.pronunciationFeedback = `❌ keep trying, Some differences found ,\n Expected: "${expectedRaw}"`;
 
     }else{
-      this.pronunciationFeedback = `❌ nope, not close. Expected: "${expectedRaw}"`;
+      this.pronunciationFeedback = `❌ nope, not close. \n Expected: "${expectedRaw}"`;
     }
 
 

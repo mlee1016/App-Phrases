@@ -300,7 +300,10 @@ ngOnInit(): void {
     this.loadPhrasesById();
   });
     this.selectPhraseList()
+    // this.voice = window.speechSynthesis.getVoices()
+    // console.log(this.voice)
 }
+ voice
 setUnifiedPhrases(lang: string, phraseList: any[]) {
   this.phrases.set(phraseList);
 }
@@ -737,6 +740,8 @@ next() {
     text2 =  text.replace(/\[\[|\]\]/g, ' ');
     // console.log(text2)
     const soundAudio = new SpeechSynthesisUtterance(text2);
+
+    
     soundAudio.lang = lang2;
     soundAudio.rate = 0.9;    // s 
 
@@ -919,7 +924,16 @@ phraseOn = true
 phraseOnMode(){
   this.phraseOn = !this.phraseOn
 }
-
+theVoices(){
+  
+  const voices = window.speechSynthesis.getVoices();
+  const maleKoreanVoices = voices.filter(voice =>
+    voice.lang === 'ko-KR' && voice.name.toLowerCase().includes('male')
+    // Or, if a specific male voice name is known, like "Yura" (though Yura is typically female in Google's TTS)
+    // voice.lang === 'ko-KR' && voice.name.includes('Yura') 
+  );
+  console.log('these are the:', maleKoreanVoices)
+}
 
 
 }

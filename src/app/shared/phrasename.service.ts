@@ -47,6 +47,9 @@ export class PhrasenameService {
     // { s:'part4-2',isDone:false},
     // { s: "part5", isDone: false },
     // { s: "part5-2", isDone: false },
+    
+    { s: "1-50", isDone: false},
+    { s: "51-100", isDone: false},
     { s: "course1", isDone:false},
     { s: "course2", isDone:false},
     { s: "course3", isDone:false},
@@ -59,35 +62,32 @@ export class PhrasenameService {
 
     
     { s: "course15", isDone:false},
-    { s: "Honorifics", isDone: false },
-    { s: "Conjunctions", isDone: false },
+    // { s: "Honorifics", isDone: false },
+    // { s: "Conjunctions", isDone: false },
 
-    
-    { s: "tense", isDone: true},
-    { s: "presentTense", isDone: true},
-    { s: "Koreanpart", isDone: false},
-    { s: "startphrases1", isDone:false},
-    { s: "1-50", isDone: true},
-    { s: "51-100", isDone: false},
+    // { s: "tense", isDone: true},
+    // { s: "presentTense", isDone: true},
+    // { s: "Koreanpart", isDone: false},
     { s: "1-50verbs-current-present",isDone:false},
     { s: "1-50present-verbs", isDone: false},
-    { s: "and-verb-conjugation", isDone: false },
-    { s: "and-verb-conjugation2",isDone:false},
-    { s: "and-verb-conjugation3", isDone: false },
-    { s: "this way/that way", isDone:false},
+    { s: "popular phrases 1", isDone:false},
+    { s: "popular phrases 2", isDone:false},
     { s: "phrases1", isDone:false},
-
     { s: "phrase2", isDone:false},
     { s: "pronounce", isDone:false},
     { s: "phrases3", isDone:false},
     { s: "phrases4", isDone:false},
     { s: "phrases5", isDone:false},
- 
+
     { s: "phrases6", isDone:false}, 
     { s: "phrases7", isDone:false},
     { s: "phrases8", isDone:false},
     { s: "phrases9", isDone:false},
-
+    
+    { s: "and-verb-conjugation", isDone: false },
+    { s: "and-verb-conjugation2",isDone:false},
+    { s: "and-verb-conjugation3", isDone: false },
+    { s: "this way/that way", isDone:false},
 
 
 
@@ -115,7 +115,8 @@ export class PhrasenameService {
   ];
 
   allListRussiangrammer: PhraseListItem[] = [
-    
+    { s: "phrases1", isDone: false },
+
     { s: "part1", isDone: false },
     { s: "part2", isDone:false},
     { s: "part3", isDone: false },
@@ -133,9 +134,6 @@ export class PhrasenameService {
     { s: "usefulRussian", isDone: false },
     { s: "ya-verb-conjugation", isDone: false },
     { s: "tbl-verb-conjugation", isDone: false },
-
-    { s: "phrases1", isDone: false },
-
   ];
 
   allListRussianStory: PhraseListItem[] = [
@@ -202,6 +200,12 @@ export class PhrasenameService {
   ];
   allListJapanesegrammer: PhraseListItem[] = [
 //{ s: "n5", isDone: false },
+    
+    { s: "phrases1", isDone:false},
+    { s: "phrases2", isDone:false},
+    { s: "phrases3", isDone:false},
+    { s: "phrases4", isDone:false},
+    { s: "phrases5", isDone:false},
     { s: "part1", isDone: false },
     { s: "part2", isDone: false },
     { s: "part3", isDone: false },

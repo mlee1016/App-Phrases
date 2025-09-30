@@ -197,7 +197,7 @@ a{
   display: flex;
   gap: 1.5rem;
 }
-
+ 
 .nav-links a {
   color: white;
   text-decoration: none;
@@ -217,7 +217,7 @@ a{
 
 .menu-toggle {
   display: none;
-  font-size: 1.5rem;
+  font-size: 1.5rem; 
   color: white;
   cursor: pointer;
 }

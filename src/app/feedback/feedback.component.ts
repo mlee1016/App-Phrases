@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { ReactiveFormsModule } from '@angular/forms';
+import emailjs from 'emailjs-com';
 
 @Component({
   selector: 'app-feedback',
@@ -22,7 +23,7 @@ export class FeedbackComponent {
     });
   }
 
-  onSubmit() {
+  /*onSubmit() {
     if (this.feedbackForm.valid) {
       console.log('Submitted:', this.feedbackForm.value);
       this.submitted = true;
@@ -33,5 +34,25 @@ export class FeedbackComponent {
         this.submitted = false;
       }, 4000);
     }
+  }*/
+  onSubmit() {
+    if (this.feedbackForm.valid) {
+      const formData = this.feedbackForm.value;
+
+      emailjs.send(
+        'service_unpu4rw',
+        'template_k06pp8g',
+        formData,
+        'xtgUnpev6l3Yu5vX_'
+      ).then(() => {
+        this.submitted = true;
+        this.feedbackForm.reset();
+        setTimeout(() => this.submitted = false, 4000);
+      }).catch(err => {
+        console.error('EmailJS error:', err);
+        alert('⚠️ Something went wrong. Try again later.');
+      });
+    }
   }
+
 }

@@ -1610,10 +1610,9 @@
   { "phrase": "アメリカから来ました", "pr": "アメリカからきました", "en": "I’m from America.", "des": "Answering origin." },
   { "phrase": "趣味は何ですか", "pr": "しゅみはなんですか", "en": "What’s your hobby?", "des": "Asking about hobbies." },
   { "phrase": "音楽が好きです", "pr": "おんがくがすきです", "en": "I like music.", "des": "Talking about likes." },
-  { "phrase": "友達になりましょう", "pr": "ともだちになりましょう", "en": "Let’s be friends.", "des": "Proposing friendship." },
   { "phrase": "写真を撮ってもいいですか", "pr": "しゃしんをとってもいいですか", "en": "May I take a photo?", "des": "Asking permission to take pictures." }
 ],
-"phrase3":[
+"phrases3":[
   { "phrase": "助けてください", "pr": "たすけてください", "en": "Please help!", "des": "Requesting urgent help." },
   { "phrase": "警察を呼んでください", "pr": "けいさつをよんでください", "en": "Call the police, please.", "des": "Requesting police assistance." },
   { "phrase": "救急車を呼んでください", "pr": "きゅうきゅうしゃをよんでください", "en": "Call an ambulance, please.", "des": "Requesting an ambulance." },
@@ -1726,7 +1725,7 @@
   {"phrase": "ぜひ行ってみたいです。", "pr": "ぜひ いってみたいです。", "en": "I definitely want to go."},
   {"phrase": "写真を見せてもらえますか？", "pr": "しゃしんを みせてもらえますか？", "en": "Can you show me a photo?"}
 
-],"phrase5":[
+],"phrases5":[
   {"phrase": "駅はどこですか。", "pr": "えきはどこですか。", "en": "Where is the station?"},
   {"phrase": "東京駅までどうやって行きますか。", "pr": "とうきょうえきまでどうやっていきますか。", "en": "How do I get to Tokyo Station?"},
   {"phrase": "この近くに駅はありますか。", "pr": "このちかくにえきはありますか。", "en": "Is there a station nearby?"},
@@ -1760,11 +1759,11 @@
 ,
   "part1":[
   
-          { "phrase": "これはペンです。", "pr": "これ は ぺん です。", "en": "This is a pen." },
-          { "phrase": "私は学生です。", "pr": "わたし は がくせい です。", "en": "I am a student." },
-          { "phrase": "彼は先生だ。", "pr": "かれ は せんせい だ。", "en": "He is a teacher." },
-          { "phrase": "それは本ですか？", "pr": "それ は ほん です か？", "en": "Is that a book?" },
-          { "phrase": "今日は日曜日です。", "pr": "きょう は にちようび です。", "en": "Today is Sunday." }
+          { "phrase": "これ は ペン です。", "pr": "これ は ぺん です。", "en": "This is a pen." },
+          { "phrase": "私 は 学生 です。", "pr": "わたし は がくせい です。", "en": "I am a student." },
+          { "phrase": "彼 は 先生 だ。", "pr": "かれ は せんせい だ。", "en": "He is a teacher." },
+          { "phrase": "それ は 本 ですか？", "pr": "それ は ほん です か？", "en": "Is that a book?" },
+          { "phrase": "今日 は 日曜日 です。", "pr": "きょう は にちようび です。", "en": "Today is Sunday." }
         
       ,
       
