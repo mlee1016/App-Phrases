@@ -40,7 +40,7 @@ const routes: Routes = [
     {path:'lists/:id',component:AllComponent},
     {path:'type/:id',component:TypeComponent},
     {path:'choice/:id',component:ChoiceComponent},
-    {path:'language/:id',component:AlloptionsComponent},
+    {path:'language/:id',component:AlloptionsComponent}, 
     {path:'kanji/Japanese',component:KanjiComponent},
     {path:'feedback',component:FeedbackComponent},
     {path:'fillintheblank/:id',component:PhrasewordComponent},

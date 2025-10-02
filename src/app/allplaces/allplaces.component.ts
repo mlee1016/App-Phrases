@@ -137,7 +137,7 @@ export class AllplacesComponent {
 
   }
 
-  product_id = ''
+  product_id = '' 
   product_price = 0
 
   createSubscription() {
