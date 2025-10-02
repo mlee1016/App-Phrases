@@ -133,7 +133,7 @@ export class AllplacesComponent {
       username: '',
     })
     })
-
+ 
 
   }
 
