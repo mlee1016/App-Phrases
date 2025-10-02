@@ -58,7 +58,7 @@ export class AllComponent{
   allListJapanesegrammer//= this.phraseName.allListJapanesegrammer
   allListJapaneseStory//= this.phraseName.allListJapaneseStory
   korean = [
-  { category: "part1", lessons: [
+  { category: "course1", lessons: [
       { phrase: "에서 (eseo)", pr: "eseo", en: "at, in (location of action)" },
       { phrase: "에서 (eseo)", pr: "eseo", en: "from" },
       { phrase: "하지만 / 그러나 (hajiman / geureona)", pr: "hajiman / geureona", en: "but, however" },
@@ -68,7 +68,7 @@ export class AllComponent{
       { phrase: "이제부터 (ijebuteo)", pr: "ijebuteo", en: "from now, soon" }
   ]},
 
-  { category: "part2", lessons: [
+  { category: "course2", lessons: [
       { phrase: "있다 (itda)", pr: "itda", en: "there is (non-living)" },
       { phrase: "있다 (itda)", pr: "itda", en: "there is (living)" },
       { phrase: "…는 게 좋다 (neun ge jota)", pr: "neun ge jota", en: "it’d be better to" },
@@ -78,11 +78,11 @@ export class AllComponent{
       { phrase: "…까? (kka?)", pr: "kka?", en: "question marker" }
   ]},
 
-  { category: "part3", lessons: [
+  // { category: "course3", lessons: [
       // extend later
-  ]},
+  // ]},
 
-  { category: "part4", lessons: [
+  { category: "course3", lessons: [
       { phrase: "만 (man)", pr: "man", en: "only, just" },
       { phrase: "…ㄹ/을 거예요 (…l/eul geoyeyo)", pr: "geoyeyo", en: "probably" },
       { phrase: "에서 (eseo)", pr: "eseo", en: "at, in" },
@@ -92,7 +92,7 @@ export class AllComponent{
       { phrase: "하지만 (hajiman)", pr: "hajiman", en: "but, however" }
   ]},
 
-  { category: "part5", lessons: [
+  { category: "course4", lessons: [
       { phrase: "…기 전에 (gi jeone)", pr: "gi jeone", en: "before" },
       { phrase: "…지 않을래요? (ji anheullae-yo?)", pr: "ji anheullae yo?", en: "won’t you, let’s" },
       { phrase: "…ㅂ시다/…자 (…bshida / …ja)", pr: "bshida / ja", en: "let’s, shall we" },
@@ -102,7 +102,7 @@ export class AllComponent{
       { phrase: "…지 마세요 (ji maseyo)", pr: "ji maseyo", en: "please don’t" }
   ]},
 
-  { category: "part6", lessons: [
+  { category: "course5", lessons: [
       { phrase: "되다 (doeda)", pr: "doeda", en: "to become" },
       { phrase: "이다 / 입니다 (ida / imnida)", pr: "ida / imnida", en: "is, am, are" },
       { phrase: "이었다 / 이었어요 (ieotda / ieosseoyo)", pr: "ieotda / ieosseoyo", en: "was, were" },
@@ -114,7 +114,7 @@ export class AllComponent{
       { phrase: "…는 것 (neun geot)", pr: "neun geot", en: "nominalizer (turns verb into noun)" }
   ]},
 
-  { category: "part7", lessons: [
+  { category: "course6", lessons: [
       { phrase: "…고 있다 (go itda)", pr: "go itda", en: "is/are doing" },
       { phrase: "…주세요 (juseyo)", pr: "juseyo", en: "please do…" },
       { phrase: "…도 된다 (do doenda)", pr: "do doenda", en: "may, is okay to" },
@@ -126,7 +126,7 @@ export class AllComponent{
       { phrase: "보다 ~ 더 (boda ~ deo)", pr: "boda ~ deo", en: "is more ~ than" }
   ]},
 
-  { category: "part8", lessons: [
+  { category: "course7", lessons: [
       { phrase: "…는 것 (neun geot)", pr: "neun geot", en: "the act of ... / doing ..." },
       { phrase: "…니까 (nikka)", pr: "nikka", en: "because of, since" },
       { phrase: "…는 걸 잘하다 (neun geol jalhada)", pr: "neun geol jalhada", en: "to be good at doing" },

@@ -40,7 +40,8 @@ export class FeedbackComponent {
       const formData = this.feedbackForm.value;
 
       emailjs.send(
-        'service_unpu4rw',
+
+        'service_e9hdlvv',
         'template_k06pp8g',
         formData,
         'xtgUnpev6l3Yu5vX_'
