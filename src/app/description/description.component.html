@@ -10,7 +10,7 @@
 
     <!-- Language -->
     <label class="block mb-2">What language are you learning?</label>
-    <select [(ngModel)]="surveyData.language" class="w-full mb-4 border p-2 rounded">
+    <select [(ngModel)]="surveyData.language" class="w-full mb-4 border p-2 rounded"> 
       <option *ngFor="let lang of languageOptions" [value]="lang">{{ lang }}</option>
     </select>
 
