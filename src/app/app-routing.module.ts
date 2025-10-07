@@ -19,7 +19,7 @@ import { PhraseStudyComponent } from './phrase-study/phrase-study.component';
 
 import { SCardComponent } from './s-card/s-card.component';
 import { ActivationComponent } from './activation/activation.component';
-
+import { EdComponent } from './ed/ed.component';
 import { SetnewpasswordComponent } from './setnewpassword/setnewpassword.component';
 import { DescriptionComponent } from './description/description.component';
 import { AlloptionsComponent } from './alloptions/alloptions.component';
@@ -30,9 +30,9 @@ import { NotFoundComponent } from './not-found/not-found.component';
 import { ProgressComponent } from './progress/progress.component';
 const routes: Routes = [
   
-    {path:'home',component:SelectedComponent},
+    {path:'home',component:EdComponent},
 
-    {path:'',component:SelectedComponent},
+    {path:'',component:EdComponent},
     //{path:'profile',redirectTo:'profile',pathMatch:'full'},
     // {path:'profile',component:ProComponent},
     {path:'chat/:id',component:ChatComponent},

@@ -1,16 +1,5 @@
-<!-- 📌 Selected Phrase Name -->
-<!-- <div class="text-2xl text-cyan-200 ml-16">Selected: {{ phraseName() }} ::</div> -->
 
-<!-- BACKDROP --
- <h2 [ngClass]="{'animate-bounce':inputh()===''}" class="text-xl font-bold mb-2 ml-4 mt-1">{{inputh()===''?'pick a phrase →': 'currently studying: ' + inputh()}}</h2>
-
-<button
-  class="bg-cyan-200 text-cyan-900 px-4 py-2 rounded fixed top-15 mt-1 right-9 z-50 shadow-md hover:bg-cyan-300 transition"
-  (click)="toggleSidebar()"
->
-  {{ sideBar ? 'Close Menu' : 'Open Menu' }}
-</button>-->
-
+<!----
 <header class="flex justify-between items-center p-4 bg-[#0F1F26] shadow-md text-cyan-100">
   <h2 class="text-lg md:text-xl font-bold">
     {{ inputh() === '' ? '📚 Pick a list →' : 'Currently studying: ' + inputh() }}
@@ -24,10 +13,10 @@
 </header>
 <div *ngIf="sideBar" class="fixed inset-0 bg-black bg-opacity-60 z-40 flex items-center justify-center">
   
-  <!-- MODAL PANEL -->
-  <div class="bg-cyan-950 text-white w-[90%] max-w-lg rounded-lg shadow-xl p-6 space-y-6 z-50 animate-fade-in mt-[4rem] overflow-y-scroll h-[34rem] ">
+  <!-- MODAL PANEL --
+  <div class="bg-cyan-950 text-white w-[90%] max-w-lg rounded-lg shadow-xl p-6 space-y-6 z-50 animate-fade-in mt-[4rem] overflow-y-auto max-h-[80vh]">
     
-    <!-- Close Button -->
+    <!-- Close Button --
     <div class="text-right">
       <button
         class="text-sm bg-cyan-800 hover:bg-cyan-700 text-white px-3 py-1 rounded"
@@ -37,7 +26,7 @@
       </button>
     </div>
 
-    <!-- Lists Section -->
+    <!-- Lists Section --
     <div>
       <h2  class="text-xl font-bold mb-2 ">{{inputh()===''?'pick a phrase': 'selected: ' + inputh()}}</h2>
       <h2 class="text-lg font-bold mb-2 border-b border-cyan-600 pb-1">Lists</h2>
@@ -59,7 +48,7 @@
       </div>
     </div>
 
-    <!-- Story Section -->
+    <!-- Story Section --
     <div>
       <h2 class="text-lg font-bold mt-4 mb-2 border-b border-cyan-600 pb-1">Story</h2>
       <div class="flex flex-col gap-2 overflow-y-scroll h-[15rem]">
@@ -71,6 +60,68 @@
         >
                 {{ item.s}}
 
+        </button>
+      </div>
+    </div>
+
+  </div>
+</div>-->
+
+<header class="flex justify-between items-center p-4 bg-[#0F1F26] shadow-md text-cyan-100">
+
+  <h2 class="text-lg md:text-xl font-bold">
+    {{ inputh() === '' ? '📚 Pick a list →' : 'Currently studying: ' + inputh() }}
+  </h2>
+  <button
+  
+    (click)="toggleSidebar()"
+    class="bg-cyan-500 hover:bg-cyan-400 text-black px-3 py-2 rounded-lg shadow transition"
+  >
+    {{ sideBar ? '✖ Close' : '☰ Menu' }}
+  </button>
+</header>
+<!-- BACKDROP -->
+<div *ngIf="sideBar" class="fixed inset-0 bg-black bg-opacity-60 z-40 flex items-center justify-center ">
+  
+  <!-- MODAL PANEL -->
+
+
+  <div class="bg-cyan-950 text-white w-[90%] max-w-lg rounded-lg shadow-xl p-6 space-y-6 z-50 animate-fade-in overflow-y-auto max-h-[80vh]">
+
+    
+    <!-- Close Button -->
+    <div class="text-right">
+      <button
+        class="text-sm bg-cyan-800 hover:bg-cyan-700 text-white px-3 py-1 rounded"
+        (click)="close2()"
+      >
+        ✖ Close
+      </button>
+    </div>
+    <!-- Story Section -->
+    <div class="overflow-y-auto max-h-80">
+      
+      <h2  class="text-xl font-bold mb-2 ">{{inputh()===''?'pick a phrase': 'selected: ' + inputh()}}</h2>
+      <h2 class="text-lg font-bold mt-4 mb-2 border-b border-cyan-600 pb-1">Lists</h2>
+      <div class="flex flex-col gap-2">
+        <button
+          *ngFor="let item of allgrammer"
+          (click)="getSpecificPhrases(item.s)"
+          class="hover:bg-cyan-600 text-white px-3 py-2 rounded transition"
+          [ngClass]="item.isDone ? 'bg-blue-600' : 'bg-cyan-700'"
+        >
+          {{ item.s }}
+        </button>
+      </div>
+      <h2 class="text-lg font-bold mt-4 mb-2 border-b border-cyan-600 pb-1">Story</h2>
+      <div class="flex flex-col gap-2">
+        <button
+          *ngFor="let item of allStory"
+          (click)="getSpecificPhrases(item.s)"
+          class="hover:bg-cyan-500 text-white px-3 py-2 rounded transition"
+          [ngClass]="item.isDone ? 'bg-[#0f765e]' : 'bg-cyan-500'"
+        >
+          {{ item.s }}
         </button>
       </div>
     </div>

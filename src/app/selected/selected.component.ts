@@ -174,7 +174,7 @@ export class SelectedComponent {
       },
       error:(error:any)=>{
         alert("you are signed in still")
-      }
+      } 
     });
   }
 

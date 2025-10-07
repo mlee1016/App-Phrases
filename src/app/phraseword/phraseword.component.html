@@ -1,28 +1,25 @@
-<!-- 📌 Current Phrase --
-<h2 class="text-2xl font-semibold mb-4 ml-4 text-cyan-200">
-  {{ selectedPhrases() === '' ? '📖 Pick a phrase' : '📘 Currently studying: ' + selectedPhrases() }}
-</h2>-->
-<header class="flex justify-between items-center p-4 bg-[#0F1F26] shadow-md text-cyan-100">
-  <h2 class="text-lg md:text-xl font-bold">
-    {{ selectedPhrases() === '' ? '📚 Pick a list →' : 'Currently studying: ' + selectedPhrases() }}
+<!-- 📱 HEADER -->
+<header class="flex justify-between items-center px-4 py-3 bg-[#0F1F26] shadow-md text-cyan-100 sticky top-0 z-30">
+  <h2 class="text-base sm:text-lg font-bold truncate max-w-[70%]">
+    {{ selectedPhrases() === '' ? '📚 Pick a list →' : 'Studying: ' + selectedPhrases() }}
   </h2>
   <button
-
     (click)="open()"
-    class="bg-cyan-500 hover:bg-cyan-400 text-black px-3 py-2 rounded-lg shadow transition"
+    class="bg-cyan-500 hover:bg-cyan-400 text-black px-3 py-1.5 rounded-lg shadow text-sm sm:text-base transition"
   >
-    {{ sideBar ? '✖ Close' : '☰ Menu' }}
+    {{ sideBar ? '✖' : '☰' }}
   </button>
 </header>
-<!-- 🔹 Sidebar Backdrop -->
+
+<!-- 📂 SIDE-->
 <div *ngIf="sideBar" class="fixed inset-0 bg-black bg-opacity-70 z-40 flex items-center justify-center">
-  <!-- Modal Panel -->
-  <div class="bg-gradient-to-br from-cyan-950 to-cyan-900 text-white w-[90%] max-w-lg rounded-2xl shadow-2xl p-6 space-y-6 z-50 animate-fadeInUp">
-    
-    <!-- Close Button -->
+  <div
+    class="bg-gradient-to-br from-cyan-950 to-cyan-900 text-white w-[90%] sm:w-[400px] rounded-2xl shadow-2xl p-5 space-y-5 z-50 animate-fadeInUp overflow-y-auto max-h-[80vh]"
+  >
+    <!-- Close -->
     <div class="text-right">
       <button
-        class="text-sm bg-cyan-800 hover:bg-cyan-700 px-3 py-1 rounded-full shadow transition"
+        class="text-xs sm:text-sm bg-cyan-800 hover:bg-cyan-700 px-3 py-1 rounded-full shadow transition"
         (click)="close()"
       >
         ✖ Close
@@ -31,15 +28,17 @@
 
     <!-- Sidebar Content -->
     <div>
-      <h2 class="text-lg font-bold mb-2 text-cyan-300">
+      <h2 class="text-lg font-bold mb-3 text-cyan-300 text-center">
         {{ selectedPhrases() === '' ? 'Select a phrase' : 'Selected: ' + selectedPhrases() }}
       </h2>
-      <h3 class="text-md font-semibold mb-2 border-b border-cyan-600 pb-1">📚 Course</h3>
-      <div class="flex flex-col gap-2 max-h-[15rem] overflow-y-auto pr-2">
+
+      <h3 class="text-md font-semibold mb-2 border-b border-cyan-600 pb-1 text-cyan-200">📚 Course</h3>
+
+      <div class="flex flex-col gap-2 max-h-[15rem] overflow-y-auto pr-1">
         <button
           *ngFor="let item of phraseStory"
           (click)="getSpecificPhrases(item.s)"
-          class="px-3 py-2 rounded-lg transition shadow "
+          class="px-3 py-2 rounded-lg transition text-sm sm:text-base shadow"
           [ngClass]="item.isDone ? 'bg-emerald-600 hover:bg-emerald-500' : 'bg-cyan-600 hover:bg-cyan-500'"
         >
           {{ item.s }}
@@ -49,30 +48,24 @@
   </div>
 </div>
 
-<!-- 🔹 Open Sidebar Button --
-<button
-  class="px-6 py-2 m-[1.8rem] fixed rounded-lg bg-cyan-400 hover:bg-cyan-500 text-cyan-900 font-semibold shadow-md transition"
-  (click)="open()"
->
-  📂 Open
-</button>-->
-
-<!-- 🔹 Start Quiz -->
+<!-- ▶ START QUIZ -->
 <div *ngIf="isReadyToStart && !quizStarted" class="text-center mt-10">
-  <button (click)="startQuiz()"
-          class="bg-emerald-600 hover:bg-emerald-700 text-white px-8 py-3 rounded-lg shadow-lg text-lg font-semibold transition hover:scale-105">
-    ▶ Start 
+  <button
+    (click)="startQuiz()"
+    class="bg-emerald-600 hover:bg-emerald-700 text-white px-8 py-3 rounded-lg shadow-lg text-lg font-semibold transition hover:scale-105"
+  >
+    ▶ Start
   </button>
 </div>
 
-<!-- 🔹 Quiz Container -->
-<div *ngIf="quizStarted" class="max-w-xl mx-auto mt-12 px-6 py-8 rounded-2xl shadow-xl bg-cyan-950 border border-cyan-600">
+<!-- 🧠 QUIZ -->
+<div *ngIf="quizStarted" class="max-w-xl mx-auto mt-8 sm:mt-12 px-4 sm:px-6 py-6 sm:py-8 rounded-2xl shadow-xl bg-cyan-950 border border-cyan-600">
 
   <ng-container *ngIf="!quizComplete; else results">
     <!-- Question -->
-    <p class="text-xl font-bold text-cyan-100 mb-3 text-center" [innerHTML]="formatEnglish(currentQuestion.en)"></p>
+    <p class="text-lg sm:text-xl font-bold text-cyan-100 mb-3 text-center" [innerHTML]="formatEnglish(currentQuestion.en)"></p>
 
-    <p class="text-lg font-mono text-gray-200 mb-2 text-center">
+    <p class="text-base sm:text-lg font-mono text-gray-200 mb-2 text-center break-words">
       {{ currentQuestion[initial].replace('___', '___') }}
     </p>
 
@@ -86,7 +79,7 @@
         *ngFor="let option of shuffledOptions; let i = index"
         (click)="selectAnswer4(i)"
         [disabled]="selectedIndex !== null"
-        class="w-full px-5 py-3 border rounded-lg text-left transition duration-200 font-medium shadow-sm"
+        class="w-full px-4 py-2 sm:py-3 border rounded-lg text-left transition text-sm sm:text-base font-medium shadow-sm"
         [ngClass]="{
           'bg-green-100 border-green-500 text-green-800 correct-a': answerChecked && sub && selectedIndex === i,
           'bg-red-100 border-red-500 text-red-800 wrong': answerChecked && !sub && selectedIndex === i,
@@ -95,43 +88,46 @@
         }"
       >
         {{ option[initial] }}
-        <span *ngIf="pro" class="text-sm text-indigo-400 hover:text-indigo-800 ml-2">({{ option.pr }})</span>
+        <span *ngIf="pro" class="text-xs sm:text-sm text-indigo-400 ml-2">({{ option.pr }})</span>
       </button>
     </div>
-    <div *ngIf="answerChecked && !sub" class="mt-4 p-3 rounded-lg bg-emerald-900/30 border border-emerald-600 text-emerald-300 text-center">
-      ✅ Correct Answer: 
-      <span class="font-bold text-white">{{ currentQuestion.answer[0][initial] }}{{currentQuestion.answer[1]?','+currentQuestion.answer[1][initial]:''}}</span>
-      <span *ngIf="pro" class="italic text-sm text-gray-300 ml-2">
-        ({{ currentQuestion.answer[0].pr }}){{currentQuestion.answer[1]?',('+currentQuestion.answer[1].pr+')':''}}
+
+    <!-- Correct Answer -->
+    <div *ngIf="answerChecked && !sub" class="mt-4 p-3 rounded-lg bg-emerald-900/30 border border-emerald-600 text-emerald-300 text-center text-sm sm:text-base">
+      ✅ Correct: 
+      <span class="font-bold text-white">{{ currentQuestion.answer[0][initial] }}{{ currentQuestion.answer[1] ? ',' + currentQuestion.answer[1][initial] : '' }}</span>
+      <span *ngIf="pro" class="italic text-gray-300 ml-2 text-xs sm:text-sm">
+        ({{ currentQuestion.answer[0].pr }}){{ currentQuestion.answer[1] ? ', (' + currentQuestion.answer[1].pr + ')' : '' }}
       </span>
     </div>
+
     <!-- Controls -->
-    <div class="flex flex-wrap justify-center gap-4 mt-6">
-      <p class="text-sm text-gray-300 self-center">⭐ Score: {{ score }} / {{ phrases().length }}</p>
+    <div class="flex flex-wrap justify-center gap-3 sm:gap-4 mt-6">
+      <p class="text-xs sm:text-sm text-gray-300 self-center">⭐ {{ score }} / {{ phrases().length }}</p>
       <button *ngIf="answerChecked2"
               (click)="nextQuestion()"
-              class="bg-cyan-600 hover:bg-cyan-700 text-white px-5 py-2 rounded-lg shadow transition hover:scale-105">
+              class="bg-cyan-600 hover:bg-cyan-700 text-white px-4 sm:px-5 py-2 rounded-lg shadow transition text-sm sm:text-base">
         ➡ Next
       </button>
-      <button (click)="togglePr()" class="bg-blue-600 hover:bg-blue-700 text-white px-5 py-2 rounded-lg shadow transition">
+      <button (click)="togglePr()" class="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg shadow transition text-sm sm:text-base">
         🔤 Pronunciation
       </button>
       <button *ngIf="answerChecked2"
               (click)="playSpeechForQuestion(currentQuestion)"
-              class="bg-indigo-600 hover:bg-indigo-700 text-white px-4 py-2 rounded-lg shadow transition">
+              class="bg-indigo-600 hover:bg-indigo-700 text-white px-4 py-2 rounded-lg shadow transition text-sm sm:text-base">
         🔊 Play
       </button>
     </div>
   </ng-container>
 
-  <!-- Results -->
+  <!-- 🎯 Results -->
   <ng-template #results>
     <div class="text-center space-y-4">
-      <h2 class="text-3xl font-bold text-emerald-400">🎉 Quiz Complete!</h2>
-      <p class="text-lg text-gray-200">Final Score: <span class="font-bold text-cyan-400">{{ score }}</span> / {{ phrases().length }}</p>
+      <h2 class="text-2xl sm:text-3xl font-bold text-emerald-400">🎉 Quiz Complete!</h2>
+      <p class="text-base sm:text-lg text-gray-200">Final Score: <span class="font-bold text-cyan-400">{{ score }}</span> / {{ phrases().length }}</p>
       <button
         (click)="againQuiz()"
-        class="bg-emerald-600 hover:bg-emerald-700 text-white px-8 py-3 rounded-lg shadow-lg font-semibold transition hover:scale-105"
+        class="bg-emerald-600 hover:bg-emerald-700 text-white px-6 sm:px-8 py-2.5 sm:py-3 rounded-lg shadow-lg font-semibold transition hover:scale-105 text-sm sm:text-base"
       >
         🔁 Try Again
       </button>

@@ -74,4 +74,9 @@
   }
 }
 
+@media (max-width: 640px) {
+  .chat-container {
+    height: calc(100vh - 80px);
+  }
+}
 

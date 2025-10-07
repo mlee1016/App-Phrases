@@ -1,28 +1,30 @@
-<div class="flex items-center justify-center min-h-screen">
-  <div class="quiz-container shadow-2xl rounded-3xl p-8 w-full max-w-lg text-center relative overflow-hidden">
+<div class="flex flex-col items-center justify-center min-h-screen px-3 sm:px-6 py-6 bg-gray-900">
+  <div class="quiz-container relative w-full max-w-md sm:max-w-lg p-6 sm:p-8 text-center rounded-3xl shadow-2xl overflow-hidden">
 
-    <!-- Decorative Gradient Border -->
-    <div class="absolute -top-10 -right-10 w-40 h-40 bg-indigo-200 rounded-full blur-3xl opacity-30"></div>
-    <div class="absolute -bottom-12 -left-12 w-44 h-44 bg-purple-200 rounded-full blur-3xl opacity-30"></div>
+    <!-- Decorative Gradient Blobs -->
+    <div class="absolute -top-8 -right-8 w-32 h-32 sm:w-40 sm:h-40 bg-indigo-200 rounded-full blur-3xl opacity-30"></div>
+    <div class="absolute -bottom-10 -left-10 w-36 h-36 sm:w-44 sm:h-44 bg-purple-200 rounded-full blur-3xl opacity-30"></div>
 
-    <div *ngIf="currentKanji" class="relative z-10">
+    <div *ngIf="currentKanji" class="relative z-10 space-y-6">
 
       <!-- Word Section -->
-      <div class="mb-6">
-        <p class="text-6xl font-extrabold text-gray-200 drop-shadow-sm">{{ currentKanji.word }}</p>
-        <p class="text-3xl font-semibold text-gray-400 mt-2 tracking-wide">
+      <div class="space-y-2">
+        <p class="text-5xl sm:text-6xl font-extrabold text-gray-200 drop-shadow-sm break-words">
+          {{ currentKanji.word }}
+        </p>
+        <p class="text-2xl sm:text-3xl font-semibold text-gray-400 tracking-wide">
           {{ maskKanjiReading(currentKanji) }}
         </p>
       </div>
 
       <!-- Hint Section -->
-      <div class="mb-6">
+      <div class="flex flex-wrap justify-center items-center gap-3">
         <span 
           class="inline-block border border-indigo-200 px-3 py-1 rounded-full text-sm text-indigo-600 bg-indigo-50 cursor-pointer hover:bg-indigo-100 hover:text-indigo-800 transition"
           (click)="hint()">
           💡 Hint
         </span>
-        <span *ngIf="hintEnglish" class="ml-3 text-gray-700 font-medium">
+        <span *ngIf="hintEnglish" class="text-gray-300 font-medium text-sm sm:text-base">
           {{ currentKanji.meaning }}
         </span>
       </div>
@@ -34,59 +36,58 @@
         (click)="updateCursor(inputRef)"
         [(ngModel)]="userInput"
         placeholder="Type the reading..."
-        class="w-full px-4 py-3 border rounded-xl mb-5 text-indigo-200 text-center text-lg shadow-sm focus:ring-2 focus:ring-indigo-400 focus:outline-none"
+        class="w-full px-4 py-3 rounded-xl mb-4 text-center text-indigo-200 text-lg sm:text-xl border focus:ring-2 focus:ring-indigo-400 focus:outline-none shadow-sm"
       />
 
       <!-- Feedback -->
-      <div *ngIf="answerChecked && !showAnswer" class="mb-6">
-        <p *ngIf="isCorrect" class="text-green-600 font-semibold animate-bounce">
+      <div *ngIf="answerChecked && !showAnswer" class="mb-4">
+        <p *ngIf="isCorrect" class="text-green-500 font-semibold animate-bounce text-base sm:text-lg">
           ✅ Correct! Great job.
         </p>
-        <p *ngIf="!isCorrect" class="text-red-600 font-semibold">
+        <p *ngIf="!isCorrect" class="text-red-500 font-semibold text-base sm:text-lg">
           ❌ Not quite... Try again or reveal the answer.
         </p>
       </div>
 
       <!-- Answer Section -->
-      <div *ngIf="showAnswer" class="bg-gradient-to-br from-gray-800 to-gray-700 text-gray-100 rounded-xl p-5 mb-6 shadow-md text-left space-y-2">
+      <div *ngIf="showAnswer" class="bg-gradient-to-br from-gray-800 to-gray-700 text-gray-100 rounded-xl p-4 sm:p-5 mb-4 shadow-md text-left space-y-2 text-sm sm:text-base">
         <p><span class="font-semibold">📖 Full Reading:</span> {{ currentKanji.reading }}</p>
-        <p>
-          <span class="font-semibold">🈶 Tested Kanji:</span> {{ currentKanji.kanji }} 
-          <span class="text-indigo-200">({{ currentKanji.kanjiReading }})</span>
-        </p>
+        <p><span class="font-semibold">🈶 Tested Kanji:</span> {{ currentKanji.kanji }} <span class="text-indigo-200">({{ currentKanji.kanjiReading }})</span></p>
         <p><span class="font-semibold">💡 Meaning:</span> {{ currentKanji.meaning }}</p>
       </div>
 
       <!-- Action Buttons -->
-      <div class="flex justify-center gap-4 mb-8">
+      <div class="flex flex-col sm:flex-row justify-center gap-3 sm:gap-4 mb-4">
         <button 
           (click)="checkAnswer()" 
-          class="px-6 py-2.5 rounded-xl font-semibold shadow-md transition bg-indigo-600 text-white hover:bg-indigo-700 active:scale-95">
+          class="px-5 py-2 sm:px-6 sm:py-2.5 rounded-xl font-semibold shadow-md transition bg-indigo-600 text-white hover:bg-indigo-700 active:scale-95">
           ✅ Check
         </button>
         <button 
           (click)="reveal()" 
           [disabled]="showAnswer"
-          class="px-6 py-2.5 rounded-xl font-semibold shadow-md transition disabled:opacity-50 disabled:cursor-not-allowed bg-indigo-500 text-white hover:bg-indigo-600 active:scale-95">
+          class="px-5 py-2 sm:px-6 sm:py-2.5 rounded-xl font-semibold shadow-md transition disabled:opacity-50 disabled:cursor-not-allowed bg-indigo-500 text-white hover:bg-indigo-600 active:scale-95">
           👀 Reveal
         </button>
         <button 
           (click)="nextWord()" 
           [disabled]="!isCorrect && !showAnswer" 
-          class="px-6 py-2.5 rounded-xl font-semibold shadow-md transition disabled:opacity-50 disabled:cursor-not-allowed bg-gray-200 text-gray-800 hover:bg-gray-300 active:scale-95">
+          class="px-5 py-2 sm:px-6 sm:py-2.5 rounded-xl font-semibold shadow-md transition disabled:opacity-50 disabled:cursor-not-allowed bg-gray-200 text-gray-800 hover:bg-gray-300 active:scale-95">
           🔁 Next
         </button>
       </div>
 
       <!-- Japanese Keyboard -->
-      <div class="mt-6 border-t pt-4">
+      <div class="mt-4 border-t pt-3">
         <app-kboard 
           [lang]="'Japanese'" 
           (charSelected)="appendToInput($event, inputRef)" 
-          class="Keyboard">
+          class="Keyboard w-full">
         </app-kboard>
       </div>
-      cards:{{remainingExamples.length}}
+
+      <p class="text-sm text-gray-400 mt-2">Cards remaining: {{ remainingExamples.length }}</p>
+
     </div>
   </div>
 </div>

@@ -1,59 +1,52 @@
-<!-- PROGRESS COMPONENT HTML -->
-<!-- HEADER -->
-<header class="flex justify-between items-center px-6 py-4 bg-[#0F1F26] shadow-md text-cyan-100">
-  <h2 class="text-lg md:text-xl font-bold">
+<!-- HEADER --
+<header class="flex flex-wrap justify-between items-center px-4 sm:px-6 py-3 sm:py-4 bg-[#0F1F26] shadow-md text-cyan-100">
+  <h2 class="text-base sm:text-lg md:text-xl font-bold mb-2 sm:mb-0 text-center sm:text-left w-full sm:w-auto">
     {{ selectedPhrases() === '' ? '📚 Pick a list →' : 'Currently studying: ' + selectedPhrases() }}
   </h2>
   <button
     (click)="toggleSidebar()"
-    class="bg-cyan-500 hover:bg-cyan-400 text-black px-4 py-2 rounded-xl shadow transition font-semibold"
+    class="bg-cyan-500 hover:bg-cyan-400 text-black px-3 sm:px-4 py-2 rounded-lg shadow transition font-semibold w-full sm:w-auto"
   >
     {{ sideBar ? '✖ Close' : '☰ Menu' }}
   </button>
 </header>
-
-<!-- BACKDROP + SIDEBAR MODAL -->
-<div *ngIf="sideBar" class="fixed inset-0 bg-black/60 z-40 flex items-start justify-center">
+<!-- SIDEBAR MODAL --
+<div *ngIf="sideBar" class="fixed inset-0 bg-black/60 z-40 flex justify-center items-start sm:items-center">
   <div
-    class="bg-cyan-950 text-white w-[90%] max-w-lg rounded-2xl shadow-xl mt-[5rem] overflow-y-auto h-[34rem] z-50 animate-fade-in p-6"
+    class="bg-cyan-950 text-white w-[95%] sm:w-[90%] max-w-lg rounded-2xl shadow-xl mt-[4rem] sm:mt-0 overflow-y-auto max-h-[85vh] animate-fade-in p-4 sm:p-6 z-50"
   >
-    <!-- Close Button -->
-    <div class="flex justify-end">
-      <button
-        class="text-sm bg-cyan-800 hover:bg-cyan-700 px-3 py-1 rounded-lg"
-        (click)="close()"
-      >
+    <!-- Close Button --
+    <div class="flex justify-end mb-2">
+      <button class="text-sm bg-cyan-800 hover:bg-cyan-700 px-3 py-1 rounded-lg" (click)="close()">
         ✖ Close
       </button>
     </div>
-    <!-- Title -->
-    <h2 class="text-xl font-bold mb-4">
+    <!-- Title --
+    <h2 class="text-lg sm:text-xl font-bold mb-4 text-center sm:text-left">
       {{ selectedPhrases() === '' ? 'Pick a phrase' : 'Selected: ' + selectedPhrases() }}
     </h2>
-
-    <!-- Lists -->
+    <!-- Lists --
     <section>
-      <h2 class="text-lg font-semibold mb-2 border-b border-cyan-600 pb-1">📖 Lists</h2>
-      <div class="flex flex-col gap-2 h-[15rem] overflow-y-auto pr-1">
+      <h2 class="text-base sm:text-lg font-semibold mb-2 border-b border-cyan-600 pb-1">📖 Lists</h2>
+      <div class="flex flex-col gap-2 h-[12rem] sm:h-[15rem] overflow-y-auto pr-1">
         <button
           *ngFor="let item of phraseCourse"
           (click)="getSpecificPhrases(item.s)"
-          class="px-4 py-2 rounded-lg transition font-medium shadow-sm"
+          class="px-3 sm:px-4 py-2 rounded-lg transition font-medium shadow-sm text-sm sm:text-base"
           [ngClass]="item.isDone ? 'bg-blue-600 text-white' : 'bg-cyan-700 hover:bg-cyan-600'"
         >
           {{ item.s }}
         </button>
       </div>
     </section>
-
-    <!-- Stories -->
+    <!-- Stories --
     <section class="mt-6">
-      <h2 class="text-lg font-semibold mb-2 border-b border-cyan-600 pb-1">📚 Story</h2>
-      <div class="flex flex-col gap-2 h-[15rem] overflow-y-auto pr-1">
+      <h2 class="text-base sm:text-lg font-semibold mb-2 border-b border-cyan-600 pb-1">📚 Story</h2>
+      <div class="flex flex-col gap-2 h-[12rem] sm:h-[15rem] overflow-y-auto pr-1">
         <button
           *ngFor="let item of phraseStory"
           (click)="getSpecificPhrases(item.s)"
-          class="px-4 py-2 rounded-lg transition font-medium shadow-sm"
+          class="px-3 sm:px-4 py-2 rounded-lg transition font-medium shadow-sm text-sm sm:text-base"
           [ngClass]="item.isDone ? 'bg-emerald-700 text-white' : 'bg-cyan-500 hover:bg-cyan-400 text-black'"
         >
           {{ item.s }}
@@ -61,121 +54,117 @@
       </div>
     </section>
   </div>
+</div>-->
+<!-- MAIN CONTENT -->
+
+<header class="flex justify-between items-center p-4 bg-[#0F1F26] shadow-md text-cyan-100">
+
+  <h2 class="text-lg md:text-xl font-bold">
+    {{ selectedPhrases() === '' ? '📚 Pick a list →' : 'Currently studying: ' + selectedPhrases() }}
+  </h2>
+  <button
+  
+    (click)="toggleSidebar()"
+    class="bg-cyan-500 hover:bg-cyan-400 text-black px-3 py-2 rounded-lg shadow transition"
+  >
+    {{ sideBar ? '✖ Close' : '☰ Menu' }}
+  </button>
+</header>
+<!-- BACKDROP -->
+<div *ngIf="sideBar" class="fixed inset-0 bg-black bg-opacity-60 z-40 flex items-center justify-center ">
+  
+  <!-- MODAL PANEL -->
+
+
+  <div class="bg-cyan-950 text-white w-[90%] max-w-lg rounded-lg shadow-xl p-6 space-y-6 z-50 animate-fade-in overflow-y-auto max-h-[80vh]">
+
+    
+    <!-- Close Button -->
+    <div class="text-right">
+      <button
+        class="text-sm bg-cyan-800 hover:bg-cyan-700 text-white px-3 py-1 rounded"
+        (click)="close()"
+      >
+        ✖ Close
+      </button>
+    </div>
+    <!-- Story Section -->
+    <div class="overflow-y-auto max-h-80">
+      
+      <h2  class="text-xl font-bold mb-2 ">{{selectedPhrases()===''?'pick a phrase': 'selected: ' + selectedPhrases()}}</h2>
+      <h2 class="text-lg font-bold mt-4 mb-2 border-b border-cyan-600 pb-1">Lists</h2>
+      <div class="flex flex-col gap-2">
+        <button
+          *ngFor="let item of phraseCourse"
+          (click)="getSpecificPhrases(item.s)"
+          class="hover:bg-cyan-600 text-white px-3 py-2 rounded transition"
+          [ngClass]="item.isDone ? 'bg-blue-600' : 'bg-cyan-700'"
+        >
+          {{ item.s }}
+        </button>
+      </div>
+      <h2 class="text-lg font-bold mt-4 mb-2 border-b border-cyan-600 pb-1">Story</h2>
+      <div class="flex flex-col gap-2">
+        <button
+          *ngFor="let item of phraseStory"
+          (click)="getSpecificPhrases(item.s)"
+          class="hover:bg-cyan-500 text-white px-3 py-2 rounded transition"
+          [ngClass]="item.isDone ? 'bg-[#0f765e]' : 'bg-cyan-500'"
+        >
+          {{ item.s }}
+        </button>
+      </div>
+    </div>
+
+  </div>
 </div>
 
+
 <!-- START QUIZ -->
-<div *ngIf="isReadyToStart && !quizStarted" class="text-center mt-10">
+<div *ngIf="isReadyToStart && !quizStarted" class="text-center mt-8 sm:mt-10 px-3">
   <button
     (click)="startQuiz()"
-    class="bg-green-600 hover:bg-green-700 text-white px-8 py-3 rounded-xl shadow-lg font-semibold text-lg transition"
+    class="bg-green-600 hover:bg-green-700 text-white px-6 sm:px-8 py-3 rounded-xl shadow-lg font-semibold text-base sm:text-lg transition w-full sm:w-auto"
   >
     ▶ Start
   </button>
 </div>
 
-<!-- QUIZ IN PROGRESS --
-<div *ngIf="quizStarted" class="mt-10 text-center space-y-6">
-  <div>
-    <p class="text-xl font-semibold">🎯 Say this phrase:</p>
-    <p class="text-3xl font-bold text-cyan-400 mt-2">{{ formatPhrase(getProgress()) }}</p>
-  </div>
-
-  <div class="space-y-1">
-    <p class="text-2xl text-cyan-200">{{ formatPhrase(currentPhrase.pr) }}</p>
-    <p class="text-lg italic text-gray-300">{{ formatPhrase(currentPhrase.en) }}</p>
-  </div>
-
-  <!-- Buttons --
-  <div class="flex justify-center gap-4 mt-6">
-    <button
-      (click)="playAudio(formatPhrase(getProgress()))"
-      class="bg-cyan-600 hover:bg-cyan-700 text-white px-6 py-2 rounded-xl shadow-md transition"
-    >
-      🔊 Hear
-    </button>
-    <button
-      (click)="startSpeechToText(formatPhrase(getProgress()))"
-      class="bg-indigo-600 hover:bg-indigo-700 text-white px-6 py-2 rounded-xl shadow-md transition"
-    >
-      {{ listening ? '🎤 Listening...' : '🎙 Pronunciation' }}
-    </button>
-  </div>
-
-  <!-- Feedback --
-  <div *ngIf="userInput" class="mt-6">
-    <p class="text-lg"><strong>You said:</strong> {{ userInput }}</p>
-    <p
-      class="font-semibold text-lg mt-2"
-      [ngClass]="{
-        'text-green-400': pronunciationFeedback.includes('✅'),
-        'text-red-400': pronunciationFeedback.includes('❌')
-      }"
-    >
-    </p>
-
-        {{ pronunciationFeedback }}
-        <div *ngIf="comparisonResult?.length">
-          <span *ngFor="let c of comparisonResult" 
-              [ngClass]="c.correct ? 'text-green-600' : 'text-red-600'">
-              {{ c.char }}
-          </span>
-        </div>
-
-    
-  
-    <button
-      (click)="next()"
-      class="bg-blue-600 hover:bg-blue-700 text-white px-6 py-2 mt-6 rounded-xl shadow-md transition"
-    >
-       Next ➡
-    </button>
-    <p class="mt-4 text-sm text-gray-400">
-      {{ remainingPhrases().length }} cards remaining.
-    </p>
-    <p>
-
-      Progress: {{ ((phrases().length - remainingPhrases().length) / phrases().length * 100) | number:'1.0-0' }}%
-      <span *ngIf="proportionCorrect">| Pronunciation Accuracy: {{ proportionCorrect | number:'1.0-0' }}%</span>
-    </p>
-  </div>
-</div>-->
 <!-- QUIZ IN PROGRESS -->
-<div *ngIf="quizStarted" class="mt-10 flex flex-col items-center space-y-8">
-
+<div *ngIf="quizStarted" class="mt-8 sm:mt-10 flex flex-col items-center space-y-6 sm:space-y-8 px-3">
   <!-- Phrase Card -->
-  <div class="bg-[#0F1F26] text-white p-6 rounded-2xl shadow-xl w-full max-w-2xl animate-fade-in">
-    <p class="text-xl font-semibold">🎯 Say this phrase:</p>
-    <p class="text-4xl font-bold text-cyan-400 mt-3">{{ formatPhrase(getProgress()) }}</p>
+  <div class="bg-[#0F1F26] text-white p-4 sm:p-6 rounded-2xl shadow-xl w-full max-w-2xl animate-fade-in">
+    <p class="text-lg sm:text-xl font-semibold text-center">🎯 Say this phrase:</p>
+    <p class="text-2xl sm:text-4xl font-bold text-cyan-400 mt-3 text-center break-words">
+      {{ formatPhrase(getProgress()) }}
+    </p>
 
-    <div class="mt-4 space-y-2">
-      <p class="text-2xl text-cyan-200">{{ formatPhrase(currentPhrase.pr) }}</p>
-      <p class="text-lg italic text-gray-300">{{ formatPhrase(currentPhrase.en) }}</p>
+    <div class="mt-4 space-y-2 text-center">
+      <p class="text-lg sm:text-2xl text-cyan-200 break-words">{{ formatPhrase(currentPhrase.pr) }}</p>
+      <p class="text-base sm:text-lg italic text-gray-300 break-words">{{ formatPhrase(currentPhrase.en) }}</p>
     </div>
   </div>
 
   <!-- Action Buttons -->
-  <div class="flex gap-6">
+  <div class="flex flex-col sm:flex-row gap-4 sm:gap-6 w-full sm:w-auto justify-center">
     <button
       (click)="playAudio(formatPhrase(getProgress()))"
-      class="flex items-center gap-2 bg-cyan-600 hover:bg-cyan-700 text-white px-6 py-3 rounded-xl shadow-lg transition transform hover:scale-105"
+      class="flex items-center justify-center gap-2 bg-cyan-600 hover:bg-cyan-700 text-white px-6 py-3 rounded-xl shadow-lg transition transform hover:scale-105 w-full sm:w-auto"
     >
       🔊 Hear
     </button>
     <button
       (click)="startSpeechToText(formatPhrase(getProgress()))"
-      class="flex items-center gap-2 bg-indigo-600 hover:bg-indigo-700 text-white px-6 py-3 rounded-xl shadow-lg transition transform hover:scale-105"
+      class="flex items-center justify-center gap-2 bg-indigo-600 hover:bg-indigo-700 text-white px-6 py-3 rounded-xl shadow-lg transition transform hover:scale-105 w-full sm:w-auto"
     >
       {{ listening ? '🎤 Listening...' : '🎙 Pronounce' }}
     </button>
   </div>
 
   <!-- Feedback Section -->
-  <div *ngIf="userInput" class="w-full max-w-2xl bg-white rounded-xl shadow-lg p-6 text-center animate-fade-in">
-    <!-- <p class="text-lg mb-2 text-gray-700"><strong>You said:</strong> <span class="font-semibold">{{ userInput }}</span></p> -->
-
-    <!-- Big Feedback -->
+  <div *ngIf="userInput" class="w-full max-w-2xl bg-white rounded-xl shadow-lg p-4 sm:p-6 text-center animate-fade-in">
     <p
-      class="text-2xl font-bold mb-4"
+      class="text-xl sm:text-2xl font-bold mb-4"
       [ngClass]="{
         'text-green-500 animate-pulse': pronunciationFeedback.includes('✅'),
         'text-red-500 animate-shake': pronunciationFeedback.includes('❌')
@@ -185,7 +174,7 @@
     </p>
 
     <!-- Per-character comparison -->
-    <div *ngIf="comparisonResult?.length" class="flex flex-wrap justify-center gap-1 text-lg">
+    <div *ngIf="comparisonResult?.length" class="flex flex-wrap justify-center gap-1 text-base sm:text-lg">
       <span *ngFor="let c of comparisonResult"
             class="px-2 py-1 rounded-md"
             [ngClass]="c.correct ? 'bg-green-100 text-green-700' : 'bg-red-100 text-red-700'">
@@ -196,23 +185,22 @@
     <!-- Next button -->
     <button
       (click)="next()"
-      class="mt-6 bg-blue-600 hover:bg-blue-700 text-white px-8 py-3 rounded-xl shadow-md font-semibold transition transform hover:scale-105"
+      class="mt-5 sm:mt-6 bg-blue-600 hover:bg-blue-700 text-white px-6 sm:px-8 py-3 rounded-xl shadow-md font-semibold transition transform hover:scale-105 w-full sm:w-auto"
     >
       Next ➡
     </button>
 
     <!-- Progress -->
-    <div class="mt-6">
+    <div class="mt-5 sm:mt-6">
       <div class="w-full bg-gray-300 rounded-full h-3 overflow-hidden">
         <div class="bg-green-500 h-3 transition-all"
              [style.width.%]="(phrases().length - remainingPhrases().length) / phrases().length * 100">
         </div>
       </div>
-      <p class="mt-2 text-sm text-gray-500">
+      <p class="mt-2 text-xs sm:text-sm text-gray-500">
         Progress: {{ ((phrases().length - remainingPhrases().length) / phrases().length * 100) | number:'1.0-0' }}%
         <span *ngIf="proportionCorrect" class="ml-2">| Accuracy: {{ proportionCorrect | number:'1.0-0' }}%</span>
       </p>
     </div>
   </div>
 </div>
-

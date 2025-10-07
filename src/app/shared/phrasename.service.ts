@@ -74,7 +74,7 @@ export class PhrasenameService {
     { s: "popular phrases 2", isDone:false},
     { s: "phrases1", isDone:false},
     { s: "phrase2", isDone:false},
-    { s: "pronounce", isDone:false},
+    // { s: "pronounce", isDone:false},
     { s: "phrases3", isDone:false},
     { s: "phrases4", isDone:false},
     { s: "phrases5", isDone:false},

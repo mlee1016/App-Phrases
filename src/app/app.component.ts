@@ -10,13 +10,14 @@ import { statSync } from 'fs';
   styleUrl: './app.component.css'
 })
 export class AppComponent {
+[x: string]: any;
   title = 'Phrases';
   
   
   reactiveForm : FormGroup
 
   //languages= [{"id":"Korean"},{"id":"Russian"},{"id":"Italian"},{"id":"Japanese"},{"id":"German"}]
-  navBar = ["Home","Profile","About","Feedback"]
+  navBar = ["Home","Profile","About","Feedback"];
   styleWidth:string = '';
   styleleft: string = ''
   status:any = ''
@@ -139,6 +140,7 @@ export class AppComponent {
     handleEvent(data: any) {
       console.log('Received data from child:', data);
     }
+  
   seePhrases = false
   open(){
     this.seePhrases = !this.seePhrases
@@ -148,7 +150,15 @@ export class AppComponent {
   seeLanguages(){
     this.slanguages = !this.slanguages
   }
-    
+  side = false
+openSidebar() {
+  this.seePhrases = true;
+}
+
+closeSidebar() {
+  this.seePhrases = false;
+}
+
   signOut(){
     this.http.post(this.url_sign_out,this.reactiveForm.getRawValue()).subscribe({
       next:(res:any)=>{

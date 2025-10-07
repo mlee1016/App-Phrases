@@ -1,2 +1,178 @@
-<p>ed works!</p>
-  
+  <!-- 🌍 Wrapper -->
+<div *ngIf="authLoaded" class="min-h-screen text-white ">
+
+  <!-- 🧍 Signed-In State -->
+  <div
+    *ngIf="check() === 'signed in'; else guestHero"
+    class="flex flex-col items-center justify-start text-center animate-fadeIn px-4 sm:px-6 md:px-10 pt-10 md:pt-16 space-y-8 sm:space-y-10"
+  >
+
+    <!-- 👋 Welcome -->
+    <h1 class="text-3xl sm:text-4xl md:text-5xl font-bold text-cyan-200 drop-shadow">
+      Welcome{{ user() ? ', ' + user() : '' }}!
+    </h1>
+    <p class="text-base sm:text-lg md:text-xl text-cyan-100 mb-6">
+      Continue your phrase mastery journey
+    </p>
+
+    <div class="w-full max-w-6xl mx-auto space-y-8 sm:space-y-10">
+
+      <!-- 🌐 Language Selector -->
+      <div class="text-center">
+        <label for="language" class="block text-lg font-semibold text-cyan-200 mb-3">
+          🌍 Select Language Progress
+        </label>
+        <select
+          id="language"
+          [(ngModel)]="selectedLanguage"
+          class="w-full sm:w-72 px-4 py-3 rounded-xl bg-[#0a1a23] text-cyan-100 border border-cyan-600 
+                 focus:ring-2 focus:ring-cyan-400 focus:outline-none shadow-md"
+        >
+          <option *ngFor="let lang of language" [ngValue]="lang">
+            {{ lang.name }}
+          </option>
+        </select>
+      </div>
+
+      <!-- 📘 Grammar Section -->
+      <div class="bg-[#0a1a23] shadow-xl rounded-2xl p-5 sm:p-8">
+        <h2 class="text-xl sm:text-2xl font-bold text-emerald-300 mb-4 sm:mb-6 flex items-center gap-2">
+          📘 Grammar
+        </h2>
+
+        <!-- Stats -->
+        <div class="flex flex-wrap justify-center gap-4 sm:gap-6 mb-6 sm:mb-8">
+          <div
+            class="bg-[#030a0e] shadow-lg rounded-xl p-5 sm:p-6 w-40 sm:w-52 text-center hover:scale-105 transition-transform"
+          >
+            <h3 class="font-semibold text-base sm:text-lg text-emerald-200">Completed</h3>
+            <p class="text-2xl sm:text-3xl font-bold text-cyan-200 mt-2">
+              {{ getDonePhrasesByType('grammar').length }}
+            </p>
+            <p class="text-sm text-emerald-500">out of {{ total() }}</p>
+          </div>
+        </div>
+
+        <!-- Grammar List -->
+        <ul class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-3 sm:gap-4">
+          <li
+            *ngFor="let phrase of getDonePhrasesByType('grammar')"
+            class="bg-[#030a0e] p-4 sm:p-5 rounded-xl shadow-md hover:scale-105 transition-transform text-left border border-cyan-800"
+          >
+            <p class="text-cyan-200 font-semibold text-sm sm:text-base">{{ phrase.name }}</p>
+          </li>
+        </ul>
+
+        <p
+          *ngIf="getDonePhrasesByType('grammar').length === 0"
+          class="text-cyan-400 mt-4 text-center"
+        >
+          🚀 No grammar phrases completed yet.
+        </p>
+      </div>
+
+      <!-- 📖 Story Section -->
+      <div class="bg-[#0a1a23] shadow-xl rounded-2xl p-5 sm:p-8">
+        <h2 class="text-xl sm:text-2xl font-bold text-purple-300 mb-4 sm:mb-6 flex items-center gap-2">
+          📖 Stories
+        </h2>
+
+        <!-- Stats -->
+        <div class="flex flex-wrap justify-center gap-4 sm:gap-6 mb-6 sm:mb-8">
+          <div
+            class="bg-[#030a0e] shadow-lg rounded-xl p-5 sm:p-6 w-40 sm:w-52 text-center hover:scale-105 transition-transform"
+          >
+            <h3 class="font-semibold text-base sm:text-lg text-emerald-200">Completed</h3>
+            <p class="text-2xl sm:text-3xl font-bold text-cyan-200 mt-2">
+              {{ getDonePhrasesByType('story').length }}
+            </p>
+            <p class="text-sm text-emerald-500">out of 20</p>
+          </div>
+        </div>
+
+        <!-- Story List -->
+        <ul class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-3 sm:gap-4">
+          <li
+            *ngFor="let phrase of getDonePhrasesByType('story')"
+            class="bg-[#030a0e] p-4 sm:p-5 rounded-xl shadow-md hover:scale-105 transition-transform text-left border border-purple-800"
+          >
+            <p class="text-cyan-200 font-semibold text-sm sm:text-base">{{ phrase.name }}</p>
+          </li>
+        </ul>
+
+        <p
+          *ngIf="getDonePhrasesByType('story').length === 0"
+          class="text-cyan-400 mt-4 text-center"
+        >
+          🚀 No stories completed yet.
+        </p>
+      </div>
+
+      <!-- 🚀 Quick Links -->
+      <div class="flex flex-col sm:flex-row justify-center items-center gap-4 sm:gap-6 w-full mt-8">
+        <button class="bg-cyan-700 hover:bg-cyan-600 px-6 py-3 rounded-xl text-white shadow-md hover:shadow-lg transition w-full sm:w-auto">
+          Continue Grammar
+        </button>
+        <button class="bg-emerald-700 hover:bg-emerald-600 px-6 py-3 rounded-xl text-white shadow-md hover:shadow-lg transition w-full sm:w-auto">
+          Continue Stories
+        </button>
+        <button class="bg-blue-700 hover:bg-blue-600 px-6 py-3 rounded-xl text-white shadow-md hover:shadow-lg transition w-full sm:w-auto">
+          Review Favorites
+        </button>
+      </div>
+
+      <!-- ✨ Recent Phrases -->
+      <div class="w-full mt-10 sm:mt-12">
+        <h2 class="text-xl sm:text-2xl font-semibold text-cyan-200 mb-4 sm:mb-6">✨ Recent Phrases</h2>
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 sm:gap-6">
+          <div
+            *ngFor="let phrase of recentPhrases"
+            class="bg-[#0a1a23] rounded-xl p-5 shadow-md hover:scale-105 transition-transform text-left border border-cyan-800"
+          >
+            <p class="font-medium text-emerald-200 text-sm sm:text-base">{{ phrase.s }}</p>
+            <p class="text-xs sm:text-sm text-cyan-100 mt-1">{{ phrase.content }}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 👤 Guest View -->
+  <ng-template #guestHero>
+    <section class="py-16 sm:py-20 bg-gradient-to-br from-gray-900 via-[#030a0e] to-gray-800 text-center">
+      <div class="container mx-auto px-4 font-sans">
+
+        <h1 class="text-3xl sm:text-4xl md:text-5xl font-extrabold text-emerald-300 leading-tight mb-6 tracking-wide animate-fadeInUp">
+          Master Languages with Ease
+        </h1>
+
+        <p (click)="clickSee()" class="text-base sm:text-lg md:text-xl text-emerald-400 mb-10 animate-fadeInUp">
+          Explore hundreds of practical phrases  
+          <span [@fadeInOut] *ngIf="currentLang" class="langs font-bold text-lime-200 inline-block">
+            {{ currentLang }}
+          </span>.
+        </p>
+
+        <!-- 🌏 Language Cards -->
+        <div class="flex flex-wrap justify-center gap-6 sm:gap-8 mb-10">
+          <div
+            *ngFor="let card of [
+              {flag:'kr',name:'Korean',native:'한국어',color:'bg-cyan-700',id:1},
+              {flag:'ru',name:'Russian',native:'Русский',color:'bg-blue-700',id:3},
+              {flag:'it',name:'Italian',native:'Italiano',color:'bg-gradient-to-tr from-rose-900 to-rose-700',id:2},
+              {flag:'jp',name:'Japanese',native:'日本語',color:'bg-gradient-to-tr from-purple-900 to-purple-700',id:0}
+            ]"
+            (click)="navToSite(card.id)"
+            [ngClass]="card.color"
+            class="shadow-lg rounded-xl p-5 sm:p-6 w-40 sm:w-52 text-center cursor-pointer transform transition hover:scale-105 hover:shadow-2xl animate-fadeInUp"
+          >
+            <img [src]="'https://flagcdn.com/' + card.flag + '.svg'" class="mx-auto w-10 sm:w-12 h-6 sm:h-8 mb-3" alt="{{ card.name }} Flag">
+            <h3 class="font-semibold text-lg text-emerald-100">{{ card.name }}</h3>
+            <p class="text-sm text-emerald-400">{{ card.native }}</p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+  </ng-template>
+</div>

@@ -807,6 +807,10 @@ tryAgain() {
   this.currentIndex = 0;
   this.quizFinished = false;
   this.quizStarted = true; // restart immediately
+
+  this.shuffleQuestions();
+  this.generateOptions();
+  this.showAnswer = false;
 }
 
 isReadyToStart = false;
