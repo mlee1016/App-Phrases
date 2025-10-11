@@ -35,6 +35,17 @@
         : {{ allCourse[phrase_ind()['ind']].isDone ? 'Completed!' : 'Not Completed' }}
       </span>
     </ng-container>
+    <ng-container *ngIf="phrase_ind()['name'] == 'p'">
+      <span class="font-semibold text-purple-300">
+        {{ allPopular[phrase_ind()['ind']].s }}
+      </span>
+      <span
+        *ngIf="status === 'signed in'"
+        [class.text-green-400]="allPopular[phrase_ind()['ind']].isDone"
+        [class.text-red-400]="!allPopular[phrase_ind()['ind']].isDone">
+        : {{ allPopular[phrase_ind()['ind']].isDone ? 'Completed!' : 'Not Completed' }}
+      </span>
+      </ng-container>
   </div>
 
   <div class="flex items-center gap-3">
@@ -93,6 +104,24 @@
       </ul>
     </div>
 
+    
+    <!-- Story -->
+    <div class="p-4 overflow-y-auto">
+      <h2 class="text-xl font-semibold text-blue-400 mb-3">📘 Popular Phrases</h2>
+      <ul class="space-y-2">
+        <li
+          *ngFor="let story of allPopular; let i = index"
+          class="cursor-pointer transition hover:text-blue-300"
+          [ngClass]="{
+            'text-green-400 font-semibold': story.isDone,
+            'text-blue-200': !story.isDone
+          }"
+          (click)="aPhrase(story.s, i, 'p')">
+          {{ story.s }}
+        </li>
+      </ul>
+    </div>
+
     <!-- Story -->
     <div class="p-4 overflow-y-auto">
       <h2 class="text-xl font-semibold text-blue-400 mb-3">📘 Story</h2>
@@ -113,7 +142,7 @@
 </div>
 
 <!-- Phrase Cards Grid -->
-<main class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 p-6 mt-[6.5rem] ml-[5rem]">
+<main *ngIf="selectedPhraseName()!=null else howTo" class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 p-6 mt-[6.5rem] ml-[5rem]">
   <div
     *ngFor="let item of phrases(); let i = index"
     [ngClass]="{
@@ -135,3 +164,54 @@
     <div class="text-xs mt-2 text-cyan-500">{{ item.phrase_name }}</div>
   </div>
 </main>
+
+<ng-template #howTo>
+  <div class="flex flex-col items-center justify-center min-h-screen px-4 py-8 text-center overflow-y-auto sm:overflow-visible">
+    <div class="max-w-md w-full space-y-6">
+      <h1 class="text-2xl sm:text-3xl font-bold text-cyan-200">
+        Welcome to the Phrase Itera App!
+      </h1>
+
+      <p class="text-base sm:text-lg text-cyan-600">
+        To preview each phrase, please select a phrase list from the sections above.
+      </p>
+
+      <p class="text-sm sm:text-md text-cyan-500">
+        Once you've selected a list, you'll see a preview of the phrases displayed here.
+      </p>
+
+      <div>
+        <h2 class="text-xl sm:text-2xl text-cyan-200 mb-2">There are three sections:</h2>
+        <ul class="list-disc list-inside text-left text-cyan-500 space-y-3">
+          <li>
+            <strong class="text-emerald-200">Table of Contents / Course:</strong>
+            Study phrases organized by grammar points. See what grammar will be learned in each phrase.
+          </li>
+          <li>
+            <strong class="text-indigo-200">Popular Phrases:</strong>
+            Access commonly used phrases for everyday conversations.
+          </li>
+          <li>
+            <strong class="text-red-200">Story:</strong>
+            Explore phrases used in stories to enhance your learning experience.
+          </li>
+        </ul>
+      </div>
+
+      <div class="bg-cyan-900/30 border border-cyan-700 rounded-xl p-4 shadow-lg">
+        <h2 class="text-xl sm:text-2xl text-cyan-200 mb-3">Places to study:</h2>
+        <ul class="list-disc list-inside text-left text-cyan-400 space-y-2 text-sm sm:text-base">
+          <li>
+            <span class="text-indigo-300 font-semibold">Popular Phrases:</span> type, card, multi, speech
+          </li>
+          <li>
+            <span class="text-emerald-300 font-semibold">Course phrases:</span> type, card, multi, speech, fill-in-the-blank
+          </li>
+          <li>
+            <span class="text-rose-300 font-semibold">Story phrases:</span> type, card, multi, speech, chat
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</ng-template>

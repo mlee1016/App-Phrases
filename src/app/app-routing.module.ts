@@ -28,6 +28,8 @@ import { PanelComponent } from './panel/panel.component';
 import { KanjiComponent } from './kanji/kanji.component';
 import { NotFoundComponent } from './not-found/not-found.component';
 import { ProgressComponent } from './progress/progress.component';
+import { PrivacyPolicyComponent } from './privacy-policy/privacy-policy.component';
+import { TermsOfServiceComponent } from './terms-of-service/terms-of-service.component';
 const routes: Routes = [
   
     {path:'home',component:EdComponent},
@@ -38,7 +40,7 @@ const routes: Routes = [
     {path:'chat/:id',component:ChatComponent},
     {path:'study/:id',component:PhraseStudyComponent},
     {path:'lists/:id',component:AllComponent},
-    {path:'type/:id',component:TypeComponent},
+    {path:'type/:id',component:TypeComponent}, 
     {path:'choice/:id',component:ChoiceComponent},
     {path:'language/:id',component:AlloptionsComponent}, 
     {path:'kanji/Japanese',component:KanjiComponent},
@@ -46,7 +48,7 @@ const routes: Routes = [
     {path:'fillintheblank/:id',component:PhrasewordComponent},
     // {path: 'signup',component:SignupComponent},
     // {path: 'signin',component:SigninComponent},
-
+    {path: 'privacy-policy', component:PrivacyPolicyComponent },
     {path: 'about',component:AboutComponent},
     {path: 'cards/:id',component:SCardComponent},
     {path: 'verify-email/:uidb64/:token', component: ActivationComponent },
@@ -57,6 +59,7 @@ const routes: Routes = [
     {path: 'kanji/Japanese/kanji-words',component:Jpscore2Component},
     {path: 'kanji/Japanese/studykanji-2',component:PanelComponent},
     {path: 'speech/:id',component:ProgressComponent},
+    {path: 'terms-of-service', component: TermsOfServiceComponent },
     { path: '**', component: NotFoundComponent } // 👈 Catch-all, must be last
 
 ];

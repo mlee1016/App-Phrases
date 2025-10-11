@@ -34,18 +34,22 @@ export class ChoiceComponent {
   phrases = signal<UnifiedPhrase[]>([]);
 
   allListgrammer:any//: PhraseListItem[] = this.phraseNames.allListgrammer
+  allPopularR:any//: PhraseListItem[] = this.phraseNames.allPopularPhrases
+  allPopular:any//: PhraseListItem[] = this.phraseNames.allPopularPhrases
   allListStory:any//: PhraseListItem[] = this.phraseNames.allListStory
  
   allListRussiangrammer:any//:PhraseListItem[] = this.phraseNames.allListRussiangrammer
   allListRussianStory:any//:PhraseListItem[] = this.phraseNames.allListRussianStory
-
+  allListPopularRussian:any//:PhraseListItem[] = this.phraseNames.allPopularRussianPhrases
   allListItaliangrammer:any//:PhraseListItem[] = this.phraseNames.allListItaliangrammer
   allListItalianStory:any//:PhraseListItem[] = this.phraseNames.allListItalianStory
+  allListPopularItalian:any//:PhraseListItem[] = this.phraseNames.allPopularItalianPhrases
   allListGermangrammer:any//:PhraseListItem[] = this.phraseNames.allListGermangrammer
   allListGermanStory:any//:PhraseListItem[] = this.phraseNames.allListGermanStory
+
   allListJapanesegrammer:any//:PhraseListItem[] = this.phraseNames.allListJapanesegrammer
   allListJapaneseStory:any//:PhraseListItem[] = this.phraseNames.allListJapaneseStory
-  
+  allListPopularJapanese:any//:PhraseListItem[] = this.phraseNames.allPopularJapanesePhrases
 
 
   allStory =[]
@@ -303,16 +307,22 @@ ngOnInit(): void {
     else{
             
         this.allListgrammer  = this.phraseNames.allListgrammer
+        this.allPopularR  = this.phraseNames.allPopularPhrases
         this.allListStory = this.phraseNames.allListStory
       
         this.allListRussiangrammer = this.phraseNames.allListRussiangrammer
+        this.allListPopularRussian = this.phraseNames.allPopularRussianPhrases
         this.allListRussianStory = this.phraseNames.allListRussianStory
 
         this.allListItaliangrammer = this.phraseNames.allListItaliangrammer
+        this.allListPopularItalian = this.phraseNames.allPopularItalianPhrases
         this.allListItalianStory = this.phraseNames.allListItalianStory
+        
         this.allListGermangrammer = this.phraseNames.allListGermangrammer
         this.allListGermanStory = this.phraseNames.allListGermanStory
+
         this.allListJapanesegrammer = this.phraseNames.allListJapanesegrammer
+        this.allListPopularJapanese = this.phraseNames.allPopularJapanesePhrases
         this.allListJapaneseStory  = this.phraseNames.allListJapaneseStory
         
 
@@ -323,6 +333,7 @@ ngOnInit(): void {
           case'Korean':
             
             this.allStory = this.allListStory
+            this.allPopular = this.allPopularR
             this.allgrammer= this.allListgrammer
             this.direction1= 'ko-to-en'; // can be toggled
             this.direction =  'ko-to-en';
@@ -334,12 +345,14 @@ ngOnInit(): void {
               this.direction = 'ru-to-en';
 
               this.allStory = this.allListRussianStory
+              this.allPopular = this.allListPopularRussian
               this.allgrammer = this.allListRussiangrammer
               break
           
           case 'German':
               this.direction1='ge-to-en'; // can be toggled
               this.allStory = this.allListGermanStory
+              
               this.allgrammer = this.allListGermangrammer
               this.lang='fr-FR'
 
@@ -350,6 +363,7 @@ ngOnInit(): void {
               this.direction =  'jp-to-en';
 
               this.allStory = this.allListJapaneseStory
+              this.allPopular = this.allListPopularJapanese
               this.allgrammer = this.allListJapanesegrammer
               this.lang ='ja-JP'
               break
@@ -361,6 +375,7 @@ ngOnInit(): void {
             
               this.direction =  'itn-to-en';
               this.allStory = this.allListItalianStory
+              this.allPopular = this.allListPopularItalian
               this.allgrammer = this.allListItaliangrammer
 
               this.lang='it-IT'

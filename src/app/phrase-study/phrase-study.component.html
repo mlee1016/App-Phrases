@@ -1,11 +1,25 @@
 <!-- Outer Wrapper -->
-<div class="flex h-screen">
-  
-  <!-- Sidebar -->
-  <div *ngIf="sidebarOpen" class="w-72 bg-cyan-900 text-white p-5 shadow-xl overflow-y-auto">
-    <h2 class="text-lg font-bold mb-3 border-b border-cyan-700 pb-1">📘 Grammar</h2>
-    <ul class="mb-6 space-y-1">
-      <li *ngFor="let item of allList"
+<div class="flex flex-col md:flex-row h-screen overflow-hidden">
+
+  <!-- 🔹 Backdrop (mobile only) -->
+  <div *ngIf="sidebarOpen" 
+       class="fixed inset-0 bg-white bg-opacity-50 z-30 md:hidden"
+       (click)="toggleSidebar()">
+  </div>
+
+  <!-- 🔹 Sidebar -->
+  <div *ngIf="sidebarOpen"
+       class="w-72 bg-cyan-900 text-white p-5 shadow-xl overflow-y-auto z-40
+              fixed top-0 left-0 h-full md:static md:h-auto md:block transition-transform duration-300">
+    
+    <div class="flex justify-between items-center mb-4 md:hidden">
+      <h2 class="text-lg font-bold">📚 Menu</h2>
+      <button (click)="toggleSidebar()" class="text-white text-2xl">&times;</button>
+    </div>
+
+    <h2 class="text-lg font-bold mb-3 border-b border-cyan-700 pb-1">📖 Stories</h2>
+    <ul class="space-y-1 mb-6">
+      <li *ngFor="let item of allListS"
           (click)="selectItem(item.s)"
           [class.bg-cyan-700]="selectedItem === item.s"
           class="cursor-pointer px-3 py-1.5 rounded hover:bg-cyan-700 transition">
@@ -13,9 +27,9 @@
       </li>
     </ul>
 
-    <h2 class="text-lg font-bold mb-3 border-b border-cyan-700 pb-1">📖 Stories</h2>
+    <h2 class="text-lg font-bold mb-3 border-b border-cyan-700 pb-1">📘 Grammar</h2>
     <ul class="space-y-1">
-      <li *ngFor="let item of allListS"
+      <li *ngFor="let item of allList"
           (click)="selectItem(item.s)"
           [class.bg-cyan-700]="selectedItem === item.s"
           class="cursor-pointer px-3 py-1.5 rounded hover:bg-cyan-700 transition">
@@ -24,45 +38,46 @@
     </ul>
   </div>
 
-  <!-- Main Panel -->
-  <div class="flex-1 p-8 space-y-8 overflow-y-auto">
+  <!-- 🔹 Main Panel -->
+  <div class="flex-1 p-6 md:p-8 space-y-8 overflow-y-auto min-h-screen md:min-h-0 relative z-10">
+    
+    <!-- Top Bar -->
+    <div class="flex justify-between items-center top-0 backdrop-blur-md py-2 z-30 bg-[#0F1F26] shadow-md text-cyan-100 ">
+      <button (click)="toggleSidebar()"
+              class="bg-cyan-600 text-white px-5 py-2 rounded-lg shadow hover:bg-cyan-700 transition active:scale-95">
+        {{ sidebarOpen ? '▶ Start' : '☰ Menu' }}
+      </button>
+      <h1 class="hidden md:block text-2xl font-semibold text-cyan-800">
+        📌 Selected: <span class="font-bold">{{ selectedItem || 'None' }}</span>
+      </h1>
+    </div>
 
-    <!-- Toggle Sidebar -->
-    <button (click)="toggleSidebar()"
-            class="bg-cyan-600 text-white px-5 py-2 rounded-lg shadow hover:bg-cyan-700 transition active:scale-95">
-      {{ sidebarOpen ? '▶ Start' : '☰ Menu' }}
-    </button>
-
-    <!-- Selected Item -->
-    <h1 class="text-2xl font-semibold text-cyan-800">
+    <!-- Selected Item (Mobile) -->
+    <h1 class="block md:hidden text-xl font-semibold text-cyan-800 mt-2">
       📌 Selected: <span class="font-bold">{{ selectedItem || 'None' }}</span>
     </h1>
+
     <!-- Audio Controls -->
-<div *ngIf="!sidebarOpen" class="flex justify-center gap-3 mt-5">
-  <!-- Play Main Language -->
-  <button (click)="playAudio(currentPhrase[selectLang].join(' '), playLanguage)" 
-          class="px-4 py-2 bg-emerald-600 text-white rounded-lg shadow hover:bg-emerald-700 transition">
-    ▶ Play {{ selectLang | titlecase }}
-  </button>
+    <div *ngIf="!sidebarOpen" class="flex justify-center gap-3 mt-5">
+      <button (click)="playAudio(currentPhrase[selectLang].join(' '), playLanguage)" 
+              class="px-4 py-2 bg-emerald-600 text-white rounded-lg shadow hover:bg-emerald-700 transition">
+        ▶ Play {{ selectLang | titlecase }}
+      </button>
+      <button (click)="stopAudio()" 
+              class="px-4 py-2 bg-gray-400 text-white rounded-lg shadow hover:bg-gray-500 transition">
+        ⏹ Stop
+      </button>
+    </div>
+    <!-- Phrase Card 
+              (mouseover)="onHover(i, selectLang, currentPhrase)"
+              (mouseleave)="clearHover()"-->
 
-  <!-- Play Pronunciation --> 
-  <!-- Play English -->
-  <button (click)="stopAudio()" 
-          class="px-4 py-2 bg-gray-400 text-white rounded-lg shadow hover:bg-gray-500 transition">
-    ⏹ Stop
-  </button>
-</div>
-
-    <!-- Phrase Card -->
     <div *ngIf="!sidebarOpen" 
          class="bg-white shadow-lg rounded-2xl p-6 text-center border border-cyan-200 max-w-2xl mx-auto">
       
-         <!-- //////////////////////////////////////////////////////// -->
-      <!-- Korean / JP / etc -->
       <div class="mb-3 text-xl font-semibold text-cyan-700 space-x-1 tracking-wide">
         <span *ngFor="let word of currentPhrase[selectLang]; let i = index"
-              (mouseover)="onHover(i, selectLang, currentPhrase)"
-              (mouseleave)="clearHover()"
+
               [ngClass]="{
                 'bg-cyan-500 text-white': isActive(i, selectLang),
                 'inline-block px-2 py-1 rounded-lg cursor-pointer transition': true
@@ -72,7 +87,6 @@
         </span>
       </div>
 
-      <!-- Pronunciation -->
       <div class="mb-2 text-gray-600 space-x-1">
         <span *ngFor="let word of currentPhrase[pro()]; let i = index"
               [ngClass]="{
@@ -83,7 +97,6 @@
         </span>
       </div>
 
-      <!-- English -->
       <div class="mb-4 text-gray-800 space-x-1 text-lg">
         <span *ngFor="let word of currentPhrase.en; let i = index"
               [ngClass]="{
@@ -94,37 +107,20 @@
         </span>
       </div>
 
-      <!-- Grammar Note -->
-      <div *ngIf="currentPhrase.des" class="text-sm text-cyan-800 italic">
+      
+      <!--<div *ngIf="currentPhrase.des" class="text-sm text-cyan-800 italic">
         🧠 <span class="font-semibold">Grammar Note:</span> {{ currentPhrase.des }}
       </div>
-      
-      <!-- Popup -->
-      <div class="fixed inset-0 bg-black bg-opacity-40 flex items-center justify-center z-50"
-           *ngIf="selectedWord">
-        <div class="bg-white rounded-2xl shadow-2xl p-6 w-[90%] max-w-md">
-          <h2 class="text-lg font-bold text-cyan-800 mb-3">
-            {{ selectedWord[selectLang].join('') }} 
-            <span class="text-gray-500">({{ selectedWord[pro()].join('') }})</span>
-          </h2>
-          <p class="mb-1"><b>Meaning:</b> {{ selectedWord.en.join('') }}</p>
-          <p class="mb-4"><b>Details:</b> {{ selectedWord.des }}</p>
-          <button (click)="closePopup()" 
-                  class="bg-cyan-600 text-white px-4 py-2 rounded-lg hover:bg-cyan-700 transition">
-            ✖ Close
-          </button>
-        </div>
-      </div>
-    </div>
+    </div>-->
 
     <!-- Navigation -->
-    <div *ngIf="!sidebarOpen" class="flex justify-between max-w-xl mx-auto">
+    <div *ngIf="!sidebarOpen" class="flex justify-between max-w-xl mx-auto mb-10">
       <button (click)="prevCard()"
-              class="px-5 py-2 bg-cyan-500 rounded-lg shadow hover:bg-cyan-300  transition">
+              class="px-5 py-2 bg-cyan-500 rounded-lg shadow hover:bg-cyan-300 transition">
         ◀ Prev
       </button>
       <button (click)="nextCard()" 
-              class="px-5 py-2 bg-cyan-500 rounded-lg shadow hover:bg-cyan-300  transition">
+              class="px-5 py-2 bg-cyan-500 rounded-lg shadow hover:bg-cyan-300 transition">
         Next ▶
       </button>
     </div>

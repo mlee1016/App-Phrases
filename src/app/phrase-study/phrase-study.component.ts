@@ -2,8 +2,7 @@ import { Component, Input, signal } from '@angular/core';
 import { AllphrasesService } from '../allphrases.service';
 import { identifierName } from '@angular/compiler';
 import { ActivatedRoute, ParamMap, Route } from '@angular/router';
-
-
+import { PhrasenameService } from '../shared/phrasename.service';
 
 interface PhraseMapping {
   [key: number]: {
@@ -39,41 +38,36 @@ interface Phrase {
   styleUrl: './phrase-study.component.css'
 })
 export class PhraseStudyComponent {
-
+  Popular:any = [{s:''}]
   id =''
   sidebarOpen: boolean = true;
-  allListGrammer:any = [
 
-    
-    { 's': "tense" }, { 's': "presentTense" }, { 's': "Particles" },
-    { 's': "part1" }, { 's': "Structure" }, { 's': "part2" },
-    { 's': "part3" }, { 's': "part4" }, { 's': "part5" },
-    { s: "Honorifics" }, { s: "Koreanpart" },{s:"phrase"},{s:"course1"},{s:"days"}
-  ];
 
-  allListStory: any[] = [
-    { s: "qA" }, { s: "asking_directions" }, { s: "plans_about_future" },
-    {s:"dialogues"}, {s:"dialogues2"},{s: "dialogues3"}, {s:"dialogues4"},
-    { s: "dialogues5" }
-  ];
 
-  phrasesListRu:any[] = [{s:'usefulRussian'}];
-  phrasesListRussian:any[] = [{s:'conversation'},{s:"conversationQA2"},{s:"conversationQA2-1"},{s:"conversation1"},{s:"Restaurant"}];
+
+  allListGrammer:any = this.phraseName.allListgrammer
+  allListPopularKorean:any[] = this.phraseName.allPopularPhrases
+  allListStory: any[] = this.phraseName.allListStory
+
+  phrasesListRu:any[] = this.phraseName.allListRussiangrammer;
+  phrasePopularRussian:any[] = this.phraseName.allPopularRussianPhrases;
+  phrasesListRussian:any[] = this.phraseName.allListRussianStory;
   playLanguage = '' // Default to Japanese
   allList = [{s:''}]
   allListS = [{s:''}]
 
-  phrasesListItalian:any[] = [{'s':"phrases",'isDone':false}]
-  phrasesListItalian2:any[] = [{'s':"introduction",'isDone':false},{"s":"q/a",isDone:false},{"s":"q/a2",isDone:false},{'s':"q/a3",'isDone':false}]
+  phrasesListItalian:any[] = this.phraseName.allListItaliangrammer;
+  phrasePopularItalian:any[] = this.phraseName.allPopularItalianPhrases;
+  phrasesListItalian2:any[] = this.phraseName.allListItalianStory;
 
-  phrasesListGerman:any[] = [{"s":"usefulGerman",isDone:false}]
+  phrasesListGerman:any[] = this.phraseName.allListGermangrammer;
   phrasesListGerman2:any[] = [{"s":"conversation",isDone:false},{"s":"askingDirections",isDone:false},{"s":"germanQuestionsForLearners",isDone:false},{"s":"germanQuestionsForLearners2",isDone:false},{"s":"germanQuestionsForLearners3",isDone:false},{"s":"germanQuestionsForLearners4",isDone:false},{"s":"germanQuestionsForLearners5",isDone:false}]
 
-  allListJapanesegrammer:any[] = [{'s':'phrases'},{"s":"n5","isDone":false},{"s":"n4","isDone":false},{"s":"part1","isDone":false},{s:"part2",isDone:false},{s:"part3",isDone:false},{s:"part4",isDone:false},{s:"part5",isDone:false},{s:"part6",isDone:false},{s:"part7",isDone:false},{"s":"part8",isDone:false}]
-  allListJapaneseStory:any[] = [{"s":"asking_directions",isDone:false},{"s":"conversation2",isDone:false},{"s":"conversation",isDone:false},{"s":"JapaneseStory","isDone":false},{"s":"conversation3",isDone:false},{"s":"casual",isDone:false}]
-
+  allListJapanesegrammer:any[] = this.phraseName.allListJapanesegrammer;
+  allPopularJapanesePhrases:any[] = this.phraseName.allPopularJapanesePhrases
+  allListJapaneseStory:any[] = this.phraseName.allListJapaneseStory;
   
-  constructor(private phrasesService:AllphrasesService,private activateRoute:ActivatedRoute){
+  constructor(private phrasesService:AllphrasesService,private activateRoute:ActivatedRoute,private phraseName:PhrasenameService){
 
   }
   selectLang:any

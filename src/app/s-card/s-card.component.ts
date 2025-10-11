@@ -49,18 +49,21 @@ export class SCardComponent {
   phrasesList//:PhraseListItem[] = this.phraseNames.allListgrammer;
   allPhrase//:PhraseListItem[] = this.phraseNames.allListStory;
   phraseStory
+  phrasePopular
   phraseCourse
   phrases = signal<UnifiedPhrase[]>([]);
 
   phrasesListRussian//:PhraseListItem[] = this.phraseNames.allListRussiangrammer;
   phraseListRussian2//:PhraseListItem[] = this.phraseNames.allListRussianStory;
+  phraseListPopularRussian//:PhraseListItem[] = this.phraseNames.allListPopularRussian;
   phrasesListItalian//:PhraseListItem[] = this.phraseNames.allListItaliangrammer;
   phraseListItalian2//:PhraseListItem[] = this.phraseNames.allListItalianStory;
-  
+  phraseListPopularItalian//:PhraseListItem[] = this.phraseNames.allListPopularItalian;
   phrasesListGerman//:PhraseListItem[] = [{s:'course1',isDone:false}];
   phrasesListGerman2//:PhraseListItem[] = this.phraseNames.allListGermanStory;
   phrasesListJapanese//:PhraseListItem[] = this.phraseNames.allListJapanesegrammer;
   japaneseStory//:PhraseListItem[] = this.phraseNames.allListJapaneseStory ;
+  phraseListPopularJapanese//:PhraseListItem[] = this.phraseNames.allListPopularJapanese;
   directionModeC :string=""
   directionModeE:string =""
   id:string=""
@@ -305,16 +308,19 @@ ngOnInit(): void {
     else{
             
         this.phrasesList  = this.phraseNames.allListgrammer
+        this.phrasePopular  = this.phraseNames.allPopularPhrases
         this.allPhrase = this.phraseNames.allListStory
       
-        this.phrasesListRussian = this.phraseNames.allListRussiangrammer
-        this.phraseListRussian2 = this.phraseNames.allListRussianStory
-
+        this.phrasesListRussian = this.phraseNames.allListRussiangrammer;
+        this.phraseListRussian2 = this.phraseNames.allListRussianStory;
+        this.phraseListPopularRussian = this.phraseNames.allPopularRussianPhrases;
         this.phrasesListItalian = this.phraseNames.allListItaliangrammer
+        this.phraseListPopularItalian = this.phraseNames.allPopularItalianPhrases;
         this.phraseListItalian2 = this.phraseNames.allListItalianStory
         this.phrasesListGerman = this.phraseNames.allListGermangrammer
         this.phrasesListGerman2 = this.phraseNames.allListGermanStory
         this.phrasesListJapanese = this.phraseNames.allListJapanesegrammer
+        this.phraseListPopularJapanese = this.phraseNames.allPopularJapanesePhrases
         this.japaneseStory  = this.phraseNames.allListJapaneseStory
         
 
@@ -324,6 +330,7 @@ ngOnInit(): void {
         switch(this.id){
     case 'Korean':
       this.phraseStory = this.allPhrase;
+      this.phrasePopular = this.phrasePopular
       this.phraseCourse =this.phrasesList;
       this.directionMode = 'kor-to-eng';
       this.directionModeE = 'kor-to-eng';
@@ -333,6 +340,7 @@ ngOnInit(): void {
 
     case 'Japanese':
       this.phraseStory = this.japaneseStory;
+      this.phrasePopular = this.phraseListPopularJapanese
       this.phraseCourse = this.phrasesListJapanese;
       this.directionMode = 'jp-to-eng';
       this.directionModeE = 'jp-to-eng';
@@ -343,6 +351,7 @@ ngOnInit(): void {
 
     case 'Italian':
       this.phraseStory = this.phraseListItalian2;
+      this.phrasePopular = this.phraseListPopularItalian;
       this.phraseCourse = this.phrasesListItalian;
 
       this.directionMode = 'itn-to-eng';
@@ -364,6 +373,7 @@ ngOnInit(): void {
     case 'Russian':
     default:
       this.phraseStory = this.phraseListRussian2;
+      this.phrasePopular = this.phraseListPopularRussian;
       this.phraseCourse = this.phrasesListRussian;
       this.directionMode = 'rus-to-eng';
       this.directionModeE = 'rus-to-eng';

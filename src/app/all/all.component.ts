@@ -43,6 +43,7 @@ export class AllComponent{
   id : string|null= ""
   //phrases:allphrases[]
   allListgrammer//= this.phraseName.allListgrammer
+  allPopular//= this.phraseName.allPopular
   allListStory// = this.phraseName.allListStory
   
   allListRussiangrammer// = this.phraseName.allListRussiangrammer
@@ -126,7 +127,7 @@ export class AllComponent{
       { phrase: "보다 ~ 더 (boda ~ deo)", pr: "boda ~ deo", en: "is more ~ than" }
   ]},
 
-  { category: "course7", lessons: [
+  { category: "part8", lessons: [
       { phrase: "…는 것 (neun geot)", pr: "neun geot", en: "the act of ... / doing ..." },
       { phrase: "…니까 (nikka)", pr: "nikka", en: "because of, since" },
       { phrase: "…는 걸 잘하다 (neun geol jalhada)", pr: "neun geol jalhada", en: "to be good at doing" },
@@ -584,6 +585,7 @@ export class AllComponent{
       
           
       this.allListgrammer= this.phraseName.allListgrammer
+      this.allPopular = this.phraseName.allPopularPhrases
       this.allListStory = this.phraseName.allListStory
       this.allListRussiangrammer = this.phraseName.allListRussiangrammer
       this.allListRussianStory = this.phraseName.allListRussianStory;
@@ -924,6 +926,8 @@ saveCompleted() {
 
   getDoneStatus() {
     if (this.selectedType === 's') return this.allStory[this.selectedIndex]?.isDone;
+    if (this.selectedType === 'p') return this.allPopular[this.selectedIndex]?.isDone;
+
     if (this.selectedType === 'c') return this.allCourse[this.selectedIndex]?.isDone;
     return false;
   }
@@ -932,7 +936,7 @@ saveCompleted() {
   if (this.selectedIndex < 0) return;
 
   let selectedArray;
-  let type: 'story' | 'grammar';
+  let type: 'story' | 'grammar'|'popular';
 
   if (this.selectedType === 's') {
     selectedArray = this.allStory;
@@ -940,7 +944,11 @@ saveCompleted() {
   } else if (this.selectedType === 'c') {
     selectedArray = this.allCourse;
     type = 'grammar';
-  } else {
+  } else if (this.selectedType === 'p') {
+    selectedArray = this.allPopular;
+    type = 'popular';
+  }  
+  else {
     return;
   }
   const phrase = selectedArray[this.selectedIndex];

@@ -88,7 +88,7 @@
         ✖ Close
       </button>
     </div>
-    <!-- Story Section -->
+    <!-- List Section -->
     <div class="overflow-y-auto max-h-80">
       
       <h2  class="text-xl font-bold mb-2 ">{{selectedPhrases()===''?'pick a phrase': 'selected: ' + selectedPhrases()}}</h2>
@@ -103,6 +103,24 @@
           {{ item.s }}
         </button>
       </div>
+    </div>
+    <!-- Popular Section -->
+    <div class="overflow-y-auto max-h-80">
+      <h2 class="text-lg font-bold mt-4 mb-2 border-b border-cyan-600 pb-1">Popular/Useful</h2>
+      <div class="flex flex-col gap-2">
+        <button
+          *ngFor="let item of phrasePopular"
+          (click)="getSpecificPhrases(item.s)"
+          class="hover:bg-cyan-500 text-white px-3 py-2 rounded transition"
+          [ngClass]="item.isDone ? 'bg-[#0f765e]' : 'bg-cyan-500'"
+        >
+          {{ item.s }}
+        </button>
+
+      </div>
+    </div>
+    <!-- Story Section -->
+    <div class="overflow-y-auto max-h-80">
       <h2 class="text-lg font-bold mt-4 mb-2 border-b border-cyan-600 pb-1">Story</h2>
       <div class="flex flex-col gap-2">
         <button

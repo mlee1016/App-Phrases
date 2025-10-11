@@ -48,8 +48,6 @@ export class PhrasenameService {
     // { s: "part5", isDone: false },
     // { s: "part5-2", isDone: false },
     
-    { s: "1-50", isDone: false},
-    { s: "51-100", isDone: false},
     { s: "course1", isDone:false},
     { s: "course2", isDone:false},
     { s: "course3", isDone:false},
@@ -70,6 +68,19 @@ export class PhrasenameService {
     // { s: "Koreanpart", isDone: false},
     { s: "1-50verbs-current-present",isDone:false},
     { s: "1-50present-verbs", isDone: false},
+    { s: "and-verb-conjugation", isDone: false },
+    { s: "and-verb-conjugation2",isDone:false},
+    { s: "and-verb-conjugation3", isDone: false },
+    { s: "this way/that way", isDone:false},
+
+
+
+
+  ];
+  allPopularPhrases:PhraseListItem[]=[
+    
+    { s: "1-50", isDone: false},
+    { s: "51-100", isDone: false},
     { s: "popular phrases 1", isDone:false},
     { s: "popular phrases 2", isDone:false},
     { s: "phrases1", isDone:false},
@@ -84,15 +95,7 @@ export class PhrasenameService {
     { s: "phrases8", isDone:false},
     { s: "phrases9", isDone:false},
     
-    { s: "and-verb-conjugation", isDone: false },
-    { s: "and-verb-conjugation2",isDone:false},
-    { s: "and-verb-conjugation3", isDone: false },
-    { s: "this way/that way", isDone:false},
-
-
-
-
-  ];
+  ]
   allListStory: PhraseListItem[] = [
     { s: "story1", isDone: false },
     { s: "story2", isDone: false },
@@ -115,7 +118,6 @@ export class PhrasenameService {
   ];
 
   allListRussiangrammer: PhraseListItem[] = [
-    { s: "phrases1", isDone: false },
 
     { s: "part1", isDone: false },
     { s: "part2", isDone:false},
@@ -131,11 +133,15 @@ export class PhrasenameService {
     // { s: "course5", isDone: false },
     // { s: "course6", isDone: false },
     // { s: "course7", isDone: false },
-    { s: "usefulRussian", isDone: false },
     { s: "ya-verb-conjugation", isDone: false },
     { s: "tbl-verb-conjugation", isDone: false },
   ];
+  allPopularRussianPhrases:PhraseListItem[]=[
+        { s: "usefulRussian", isDone: false },
+        { s: "phrases1", isDone: false },
 
+
+  ]
   allListRussianStory: PhraseListItem[] = [
     { s: "conversation", isDone: false },
     { s: "conversationQA", isDone: false },
@@ -162,11 +168,13 @@ export class PhrasenameService {
     { s: "masculine/plural-nouns2", isDone: false },
     { s: "masculine/singular-nouns", isDone: false },
     { s: "masculine/singular-nouns2", isDone: false },
+  ];
+  allPopularItalianPhrases:PhraseListItem[]=[
+    
     { s: "useful", isDone: false },
     { s: "phrases1", isDone: false }
 
-  ];
-
+  ]
   allListItalianStory: PhraseListItem[] = [
     { s: "introduction", isDone: false },
     { s: "intro", isDone: false },
@@ -201,11 +209,6 @@ export class PhrasenameService {
   allListJapanesegrammer: PhraseListItem[] = [
 //{ s: "n5", isDone: false },
     
-    { s: "phrases1", isDone:false},
-    { s: "phrases2", isDone:false},
-    { s: "phrases3", isDone:false},
-    { s: "phrases4", isDone:false},
-    { s: "phrases5", isDone:false},
     { s: "part1", isDone: false },
     { s: "part2", isDone: false },
     { s: "part3", isDone: false },
@@ -214,21 +217,31 @@ export class PhrasenameService {
     { s: "part6", isDone: false },
     { s: "part7", isDone: false },
     { s: "part8", isDone: false },
-    { s: "useful", isDone: false },
-    { s: "useful4", isDone: false },
-    { s: "n4-part1", isDone: false },
+    // { s: "n4-part1", isDone: false },
 
     { s: "te-form-verbs", isDone: false },
     { s: "this way / that way", isDone: false},
     { s: "I think-", isDone: false },
-    { s: "part15", isDone:false},
+    // { s: "part15", isDone:false},
     { s: "adjectives", isDone:false},
     { s: "adjectives2", isDone:false},
     { s: "time", isDone:false},
-    { s:"practice", isDone:false}
 
   ];
+  allPopularJapanesePhrases:PhraseListItem[]=[
 
+    
+    { s: "phrases1", isDone:false},
+    { s: "phrases2", isDone:false},
+    { s: "phrases3", isDone:false},
+    { s: "phrases4", isDone:false},
+    { s: "phrases5", isDone:false},
+    
+    { s: "useful", isDone: false },
+    { s: "useful4", isDone: false },
+    { s:"practice", isDone:false}
+
+  ]
   allListJapaneseStory: PhraseListItem[] = [
     { s: "asking_directions", isDone: false },
     { s: "conversation2", isDone: false },

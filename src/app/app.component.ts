@@ -4,6 +4,8 @@ import { AuthenticationUser } from './emitters/emittters';
 import { HttpClient } from '@angular/common/http';
 import { FormBuilder, FormGroup } from '@angular/forms';
 import { statSync } from 'fs';
+import { isPlatformBrowser } from '@angular/common';
+import { Inject, PLATFORM_ID } from '@angular/core';
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -41,12 +43,13 @@ export class AppComponent {
   toggleMenu() {
     this.menuOpen = !this.menuOpen;
   }
-  constructor(private http: HttpClient,public auth_U:AuthenticationUser,private formBuilder:FormBuilder){
+  constructor(private http: HttpClient,public auth_U:AuthenticationUser,private formBuilder:FormBuilder, @Inject(PLATFORM_ID) private platformId: Object){
     
   }
   toggleButton(){
     this.toggle = !this.toggle
   }
+  screenWidth = 0;
 
 
  
@@ -62,6 +65,8 @@ export class AppComponent {
     authLoaded = false;
     isSignedIn = false;
 
+
+  // screenWidth = window.innerWidth;
 
 
   ngOnInit(): void {
@@ -119,6 +124,16 @@ export class AppComponent {
 
 
     */
+
+
+    if (isPlatformBrowser(this.platformId)) {
+      this.screenWidth = window.innerWidth;
+
+      window.addEventListener('resize', () => {
+        this.screenWidth = window.innerWidth;
+      });
+    }
+  
     // this.upload()
   }
  getopenNav() {

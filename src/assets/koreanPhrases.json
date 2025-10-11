@@ -7681,99 +7681,99 @@
 
   "course1": [
     {
-      "phrase": "학교에서 공부해요.",
-      "pr": "hak-gyo-eseo gong-bu-hae-yo",
-      "en": "I study at school.",
+      "phrase": "학교[[에서]] 공부해요.",
+      "pr": "hak-gyo-[[eseo]] gong-bu-hae-yo",
+      "en": "I study [[at]] school.",
       "des": "에서 marks the place where an action occurs."
     },
     {
-      "phrase": "공원에서 운동했어요.",
-      "pr": "gong-won-eseo un-dong-hae-sseo-yo",
-      "en": "I exercised in the park.",
+      "phrase": "공원[[에서]] 운동했어요.",
+      "pr": "gong-won-[[eseo]] un-dong-hae-sseo-yo",
+      "en": "I exercised [[in]] the park.",
       "des": "Action location."
     },
     {
-      "phrase": "카페에서 친구를 만났어요.",
-      "pr": "ka-pe-eseo chin-gu-reul man-nat-sseo-yo",
-      "en": "I met a friend at the café.",
+      "phrase": "카페[[에서]] 친구를 만났어요.",
+      "pr": "ka-pe-[[eseo]] chin-gu-reul man-nat-sseo-yo",
+      "en": "I met a friend [[at]] the café.",
       "des": "Meeting place."
     },
     {
-      "phrase": "도서관에서 책을 읽어요.",
-      "pr": "do-seo-gwan-eseo chaek-eul il-geo-yo",
-      "en": "I read a book in the library.",
+      "phrase": "도서관[[에서]] 책을 읽어요.",
+      "pr": "do-seo-gwan-[[eseo]] chaek-eul il-geo-yo",
+      "en": "I read a book [[in]] the library.",
       "des": "Reading location."
     },
     {
-      "phrase": "집에서 회사까지 걸어요.",
-      "pr": "jib-eseo hoe-sa-kkaji geo-reo-yo",
-      "en": "I walk from home to work.",
+      "phrase": "집[[에서]] 회사[[까지]] 걸어요.",
+      "pr": "jib-[[eseo]] hoe-sa-[[kkaji]] geo-reo-yo",
+      "en": "I walk [[from]] home [[to]] work.",
       "des": "Starting point: 집에서."
     },
     {
-      "phrase": "서울에서 부산까지 기차로 갔어요.",
-      "pr": "seo-ul-eseo bu-san-kkaji gi-cha-ro gat-sseo-yo",
-      "en": "I went from Seoul to Busan by train.",
+      "phrase": "서울[[에서]] 부산[[까지]] 기차로 갔어요.",
+      "pr": "seo-ul-[[eseo]] bu-san-[[kkaji]] gi-cha-ro gat-sseo-yo",
+      "en": "I went [[from]] Seoul [[to]] Busan by train.",
       "des": "From–to movement."
     },
     {
-      "phrase": "친구 집에서 바로 왔어요.",
-      "pr": "chin-gu jib-eseo ba-ro wa-sseo-yo",
-      "en": "I came straight from my friend’s house.",
+      "phrase": "친구 집[[에서]] 바로 왔어요.",
+      "pr": "chin-gu jib-[[eseo]] ba-ro wa-sseo-yo",
+      "en": "I came straight [[from]] my friend’s house.",
       "des": "Origin point."
     },
     {
-      "phrase": "회사에서 전화가 왔어요.",
-      "pr": "hoe-sa-eseo jeon-hwa-ga wa-sseo-yo",
-      "en": "A call came from the office.",
+      "phrase": "회사[[에서]] 전화가 왔어요.",
+      "pr": "hoe-sa-[[eseo]] jeon-hwa-ga wa-sseo-yo",
+      "en": "A call came [[from]] the office.",
       "des": "Source of an action."
     },
     {
-      "phrase": "비가 와요. 하지만 갈 거예요.",
-      "pr": "bi-ga wa-yo. ha-ji-man gal geo-ye-yo",
-      "en": "It’s raining, but I will go.",
+      "phrase": "비가 와요. [[하지만]] 갈 거예요.",
+      "pr": "bi-ga wa-yo. [[ha-ji-man]] gal geo-ye-yo",
+      "en": "It’s raining, [[but]] I will go.",
       "des": "Contrast of rain vs. going."
     },
     {
-      "phrase": "맛있어요. 그러나 비싸요.",
-      "pr": "ma-si-sseo-yo. geu-reo-na bi-ssa-yo",
-      "en": "It’s delicious, however it’s expensive.",
+      "phrase": "맛있어요. [[그러나]] 비싸요.",
+      "pr": "ma-si-sseo-yo. [[geu-reo-na]] bi-ssa-yo",
+      "en": "It’s delicious, [[however]] it’s expensive.",
       "des": "Opposite feelings."
     },
     {
-      "phrase": "피곤해요. 하지만 숙제를 해야 해요.",
-      "pr": "pi-gon-hae-yo. ha-ji-man suk-je-reul hae-ya hae-yo",
-      "en": "I’m tired, but I must do homework.",
+      "phrase": "피곤해요. [[하지만]] 숙제를 해야 해요.",
+      "pr": "pi-gon-hae-yo. [[ha-ji-man]] suk-je-reul hae-ya hae-yo",
+      "en": "I’m tired, [[but]] I must do homework.",
       "des": "Obligation despite tiredness."
     },
     {
-      "phrase": "책을 샀어요. 그러나 안 읽었어요.",
-      "pr": "chaek-eul sat-sseo-yo. geu-reo-na an il-geo-sseo-yo",
-      "en": "I bought a book, but I didn’t read it.",
+      "phrase": "책을 샀어요. [[그러나]] 안 읽었어요.",
+      "pr": "chaek-eul sat-sseo-yo. [[geu-reo-na]] an il-geo-sseo-yo",
+      "en": "I bought a book, [[but]] I didn’t read it.",
       "des": "Action vs. lack of follow-up."
     },
     {
-      "phrase": "세 시쯤 만나요.",
-      "pr": "se si-jjeum man-na-yo",
-      "en": "Let’s meet around 3 o’clock.",
+      "phrase": "세 시[[쯤]] 만나요.",
+      "pr": "se si-[[jjeum]] man-na-yo",
+      "en": "Let’s meet [[around]] 3 o’clock.",
       "des": "Approximate time."
     },
     {
-      "phrase": "열 명쯤 왔어요.",
-      "pr": "yeol myeong-jjeum wa-sseo-yo",
-      "en": "About ten people came.",
+      "phrase": "열 명[[쯤]] 왔어요.",
+      "pr": "yeol myeong-[[jjeum]] wa-sseo-yo",
+      "en": "[[About]] ten people came.",
       "des": "Approximate number of people."
     },
     {
-      "phrase": "한 시간쯤 걸려요.",
-      "pr": "han si-gan-jjeum geol-lyeo-yo",
-      "en": "It takes about an hour.",
+      "phrase": "한 시간[[쯤]] 걸려요.",
+      "pr": "han si-gan-[[jjeum]] geol-lyeo-yo",
+      "en": "It takes [[about]] an hour.",
       "des": "Approximate duration."
     },
     {
-      "phrase": "오천 원쯤 있어요.",
-      "pr": "o-cheon won-jjeum i-sseo-yo",
-      "en": "I have about 5,000 won.",
+      "phrase": "오천 원[[쯤]] 있어요.",
+      "pr": "o-cheon won-[[jjeum]] i-sseo-yo",
+      "en": "I have [[about]] 5,000 won.",
       "des": "Approximate amount of money."
     }
   ],

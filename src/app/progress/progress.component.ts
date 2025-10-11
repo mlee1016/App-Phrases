@@ -72,16 +72,18 @@ import { ParamMap } from '@angular/router';
     //allPhrase :string[] = []
     
     allPhrase
-  
+    Popular
     phrasesList
     phraseListRussian2
+    phraseListRussianPopular
     phrasesListRussian
     phrasesListItalian 
+    phraseListPopularItalian
     phraseListItalian2  
     phrasesListGerman
     phrasesListGerman2
     japaneseStory
-  
+    phrasesListJapanesePopular
     phrasesListJapanese=this.phraseNames.allListJapanesegrammer  
   
     check = signal<string>('')
@@ -93,7 +95,9 @@ import { ParamMap } from '@angular/router';
     
     la:string = ""
     lang:string = ""
+
     phraseStory: any;
+    phrasePopular: any;
     phraseCourse: any;
     phrases = signal<any>([]);
     a_load = false
@@ -244,24 +248,27 @@ import { ParamMap } from '@angular/router';
         
         
         this.allPhrase = this.phraseNames.allListStory
-  
+        this.Popular  = this.phraseNames.allPopularPhrases
         this.phrasesList = this.phraseNames.allListgrammer
         this.phraseListRussian2 = this.phraseNames.allListRussianStory
+        this.phraseListRussianPopular = this.phraseNames.allPopularRussianPhrases
         this.phrasesListRussian = this.phraseNames.allListRussiangrammer
         this.phrasesListItalian = this.phraseNames.allListItaliangrammer
+        this.phraseListPopularItalian = this.phraseNames.allPopularItalianPhrases
         this.phraseListItalian2  = this.phraseNames.allListItalianStory
         this.phrasesListGerman = this.phraseNames.allListGermangrammer
         this.phrasesListGerman2 = this.phraseNames.allListGermanStory
         this.japaneseStory = this.phraseNames.allListJapaneseStory
-  
+        this.phrasesListJapanesePopular = this.phraseNames.allPopularJapanesePhrases
         this.phrasesListJapanese = this.phraseNames.allListJapanesegrammer  
         
   
       switch (this.id) {
         case 'Korean':
           this.phraseStory = this.allPhrase;
+          this.phrasePopular = this.Popular
           this.phraseCourse = this.phrasesList;
-          console.log(this.phraseStory)
+          // console.log(this.phraseStory)
           this.directionMode = 'kor-to-eng';
           this.directionModeE = 'kor-to-eng';
           this.directionModeC = 'eng-to-kor';
@@ -271,6 +278,7 @@ import { ParamMap } from '@angular/router';
           break;
         case 'Japanese':
           this.phraseStory = this.japaneseStory;
+          this.phrasePopular = this.phrasesListJapanesePopular
           this.phraseCourse = this.phrasesListJapanese;
           this.directionMode = 'jp-to-eng';
           this.directionModeE = 'jp-to-eng';
@@ -280,6 +288,7 @@ import { ParamMap } from '@angular/router';
           break;
         case 'Italian':
           this.phraseStory = this.phraseListItalian2;
+          this.phrasePopular = this.phraseListPopularItalian
           this.phraseCourse = this.phrasesListItalian;
           this.directionMode = 'itn-to-eng';
           this.directionModeE = 'itn-to-eng';
@@ -299,6 +308,7 @@ import { ParamMap } from '@angular/router';
         case 'Russian':
         default:
           this.phraseStory = this.phraseListRussian2;
+          this.phrasePopular = this.phraseListRussianPopular
           this.phraseCourse = this.phrasesListRussian;
           this.directionMode = 'rus-to-eng';
           this.directionModeE = 'rus-to-eng';

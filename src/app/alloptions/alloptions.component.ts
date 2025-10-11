@@ -14,21 +14,21 @@ export class AlloptionsComponent {
   
       
       {"s":"All List","des":"Look over all the list"}, 
-      // {"s":"Study Cards","des":"Allows to individual phrases and words"},
       {"s":"Fill in the blank","des":"given a phrase with a missing section place the correct word in to the spot"},
+
+      // {"s":"Study Cards","des":"Allows to individual phrases and words"},
 
       {"s":"Multi","des":"Study with multiple choice questions"},
   
       {"s":"Type","des":"Study by typing in your answers"},
   
-      {"s":"Chat","des":"Allows you to chat with a bot with predetermined conversations"},
-  
       {"s":"Card","des":"allows you to study cards"},
       {"s":"Study kanji","des":"Study some from kanji from n5 - n1"},
       {"s":"Speech pronuciation","des":"Practice speaking and pronunciation"},
+      {"s":"Chat","des":"Allows you to chat with a bot with predetermined conversations"},
+
 
     ]
-  
     route:Router = inject(Router)
     authentication = inject(AuthenticationUser) 
     id: string|null = ""
@@ -64,10 +64,10 @@ export class AlloptionsComponent {
     
       }
       
-      if(s === 'Study Cards'){
+      /*if(s === 'Study Cards'){
         this.route.navigate(['study',this.id])
       
-        }
+        }*/
         
       if(s === 'Chat'){
         this.route.navigate(['chat',this.id])

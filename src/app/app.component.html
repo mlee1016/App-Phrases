@@ -1,12 +1,12 @@
 <!-- Font Awesome CDN -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
 
-<div class="min-h-screen mb-[4rem] flex flex-col bg-gradient-to-br from-[#041017] to-[#0a1a25]stext-white font-sans">
+<div class="min-h-screen mb-[4rem] flex flex-col bg-gradient-to-br from-[#041017] to-[#0a1a25] text-white font-sans">
 
   <!-- 🔹 Top Navbar -->
   <header class="flex items-center h-14 px-4 bg-[#030a0e] border-b border-cyan-200 fixed top-0 left-0 right-0 z-50">
     <div class="flex items-center gap-4">
-      <!-- Hamburger Toggle (mobile) --
+      <!-- Hamburger Toggle (mobile) -->
       <button class="text-xl text-cyan-100 hover:text-emerald-400 sm:hidden"
               (click)="side = !side">
         <i class="fas fa-bars"></i>
@@ -17,7 +17,7 @@
   </header>
 
   <!-- 🔹 Mobile Backdrop -->
-  <div *ngIf="side" class="fixed inset-0 bg-black bg-opacity-50 z-40 sm:hidden" (click)="side = false"></div>
+  <div *ngIf="side" class="fixed inset-0 bg-white bg-opacity-50 z-40 sm:hidden" (click)="side = false"></div>
 
   <!-- 🔹 Sidebar -->
   <aside
@@ -45,20 +45,58 @@
     </div>  
 
     <!-- Language Options -->
-    <div class="flex flex-col text-sm text-center overflow-hidden transition-all duration-300 ease-in-out w-[90%]"
-         [ngClass]="slanguages ? 'h-40' : 'h-0'">
-      <a *ngFor="let lang of languages; let i = index"
+    <div class="flex flex-col text-sm text-center overflow-hidden transition-all duration-300 ease-in-out w-[90%] overflow-y-auto"
+         [ngClass]="slanguages ? 'h-50' : 'h-0'">
+      <!--<a *ngFor="let lang of languages; let i = index"
          (click)="navToSite(i)"
          class="hover:text-emerald-300 cursor-pointer py-1">
         {{ lang }}
+      </a>-->
+
+
+      
+    <!-- Left: Copyright -->
+    <div class="text-center md:text-left">
+      © 2025 <span class="font-semibold">PhraseItera</span>. All rights reserved.
+    </div>
+
+    <!-- Center: Navigation Links -->
+    <div class=" text-center">
+      <button [routerLink]="'/privacy-policy'" class="hover:text-white transition">Privacy Policy</button>
+      <button [routerLink]="'/terms-of-service'" class="hover:text-white transition">Terms of Service</button>
+      <button [routerLink]="'/feedback'" class="hover:text-white transition">Contact</button>
+    </div>
+
+    <!-- Right: Socials -->
+    <div class="flex">
+      <a href="https://instagram.com/phraseitera/" target="_blank" aria-label="Instagram" class="hover:text-white transition">
+        <i class="fa-brands fa-instagram"></i>
+      </a>
+      <!--<a href="https://github.com" target="_blank" aria-label="GitHub" class="hover:text-white transition">
+        <i class="fa-brands fa-github"></i>
+      </a>-->
+      <a href="https://youtube.com" target="_blank" aria-label="YouTube" class="hover:text-white transition">
+        <i class="fa-brands fa-youtube"></i>
+
+        
       </a>
     </div>
+    </div>
+
+    
   </aside>
 
-  <!-- 🔹 Main Content Area -->
+  <!-- 🔹 Main Content Area --
   <main class="flex-1 ml-0 sm:ml-40 mt-14 p-4">
     <router-outlet></router-outlet>
-  </main>
+  </main>-->
+  <!-- 🔹 Main Content Area -->
+<main
+  class="flex-1 mt-14 p-4 transition-all duration-300 ease-in-out"
+  [ngClass]="{ 'ml-[5rem]': !side && screenWidth >= 640, 'ml-0': screenWidth < 640 }"
+>
+  <router-outlet></router-outlet>
+</main>
 
 </div>
 <!-- 🔹 Bottom Mobile Tab Bar -->
