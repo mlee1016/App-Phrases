@@ -7680,6 +7680,13 @@
 ],
 
   "course1": [
+
+    {
+      "phrase": "비가 와요. [[하지만]] 갈 거예요.",
+      "pr": "bi-ga wa-yo. [[ha-ji-man]] gal geo-ye-yo",
+      "en": "It’s raining, [[but]] I will go.",
+      "des": "Contrast of rain vs. going."
+    },
     {
       "phrase": "학교[[에서]] 공부해요.",
       "pr": "hak-gyo-[[eseo]] gong-bu-hae-yo",
@@ -7728,12 +7735,7 @@
       "en": "A call came [[from]] the office.",
       "des": "Source of an action."
     },
-    {
-      "phrase": "비가 와요. [[하지만]] 갈 거예요.",
-      "pr": "bi-ga wa-yo. [[ha-ji-man]] gal geo-ye-yo",
-      "en": "It’s raining, [[but]] I will go.",
-      "des": "Contrast of rain vs. going."
-    },
+    
     {
       "phrase": "맛있어요. [[그러나]] 비싸요.",
       "pr": "ma-si-sseo-yo. [[geu-reo-na]] bi-ssa-yo",
