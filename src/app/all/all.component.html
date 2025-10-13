@@ -167,7 +167,7 @@
 
 <ng-template #howTo>
   <div class="flex flex-col items-center justify-center min-h-screen px-4 py-8 text-center overflow-y-auto sm:overflow-visible">
-    <div class="max-w-md w-full space-y-6">
+    <!--<div class="max-w-md w-full space-y-6">
       <h1 class="text-2xl sm:text-3xl font-bold text-cyan-200">
         Welcome to the Phrase Itera App!
       </h1>
@@ -202,7 +202,7 @@
         <h2 class="text-xl sm:text-2xl text-cyan-200 mb-3">Places to study:</h2>
         <ul class="list-disc list-inside text-left text-cyan-400 space-y-2 text-sm sm:text-base">
           <li>
-            <span class="text-indigo-300 font-semibold">Popular Phrases:</span> type, card, multi, speech
+            <span class="text-indigo-300 font-semibold">Popular Phrases:</span> type &rarr; card, multi, speech
           </li>
           <li>
             <span class="text-emerald-300 font-semibold">Course phrases:</span> type, card, multi, speech, fill-in-the-blank
@@ -212,6 +212,61 @@
           </li>
         </ul>
       </div>
-    </div>
+    </div>-->
+    <!-- 🌟 Welcome Section -->
+<section class="max-w-2xl w-full mx-auto bg-gray-900/40 backdrop-blur-sm rounded-2xl p-8 sm:p-10 shadow-lg border border-cyan-800/40 text-center animate-fadeInUp">
+  <h1 class="text-3xl sm:text-4xl font-extrabold text-cyan-200 mb-3 tracking-wide">
+    Welcome to <span class="text-emerald-300">Phrase Itera</span>!
+  </h1>
+  <p class="text-cyan-400 text-base sm:text-lg mb-2">
+    Choose a phrase list from the sections above to start exploring.
+  </p>
+  <p class="text-cyan-500 text-sm sm:text-base mb-8">
+    Once selected, you’ll see a preview of structured phrases with pronunciation, meaning, and grammar details.
+  </p>
+
+  <!-- 📘 Section Overview -->
+  <div class="bg-gray-800/60 rounded-xl p-6 mb-8 text-left sm:text-center border border-cyan-700/30 shadow-inner">
+    <h2 class="text-2xl font-bold text-cyan-200 mb-3">Sections Overview</h2>
+    <ul class="space-y-4 text-cyan-400 text-base sm:text-lg list-disc list-inside sm:list-none">
+      <li>
+        <span class="text-emerald-300 font-semibold">📗 Course / Table of Contents:</span>
+        Organized by grammar points — learn structure, usage, and related phrases.
+      </li>
+      <li>
+        <span class="text-indigo-300 font-semibold">💬 Popular Phrases:</span>
+        Everyday conversation phrases to use in real-life situations.
+      </li>
+      <li>
+        <span class="text-rose-300 font-semibold">📖 Story Mode:</span>
+        Learn through context and storytelling to deepen understanding.
+      </li>
+    </ul>
+  </div>
+
+  <!-- 🧭 Study Areas -->
+  <div class="bg-cyan-900/30 border border-cyan-700 rounded-xl p-6 shadow-md text-left sm:text-center">
+    <h2 class="text-2xl text-cyan-200 font-semibold mb-4">Places to Study</h2>
+    <ul class="text-cyan-300 space-y-3 text-sm sm:text-base list-disc list-inside sm:list-none">
+      <li>
+        <span class="text-indigo-300 font-semibold">💬 Popular Phrases:</span>
+        <span class="text-emerald-200">card, multiple choice, speech</span>
+      </li>
+      <li>
+        <span class="text-emerald-300 font-semibold">📘 Course Phrases:</span>
+        <span class="text-emerald-200">type-in, card, multiple choice, speech, fill-in-the-blank</span>
+      </li>
+      <li>
+        <span class="text-rose-300 font-semibold">📖 Story Phrases:</span>
+        <span class="text-emerald-200">type-in, card, multiple choice, speech, chat</span>
+      </li>
+    </ul>
+  </div>
+
+  <p class="text-cyan-400 mt-8 text-xs italic">
+    💡 Tip: Works best in modern browsers like <span class="text-emerald-300">Chrome</span> and <span class="text-emerald-300">Edge</span> for full audio and speech features.
+  </p>
+</section>
+
   </div>
 </ng-template>

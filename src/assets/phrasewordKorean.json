@@ -661,10 +661,11 @@
     "answer": [{ "ko": "에서", "pr": "eseo" }]
   },
   {
+
     "question": "Choose the correct word to complete the sentence.",
     "ko": "서울 ___ 부산까지 기차로 갔어요.",
     "pr": "Seoul ___ Busan-kkaji gicharo gasseoyo.",
-    "en": "I went by train from Seoul to Busan.",
+    "en": "I went by train [[from]] Seoul to Busan.",
     "options": [
       { "ko": "에서", "pr": "eseo" },
       { "ko": "까지", "pr": "kkaji" },
@@ -676,7 +677,7 @@
     "question": "Choose the correct word to complete the sentence.",
     "ko": "밤 열 시 ___ 집에 돌아왔어요.",
     "pr": "bam yeol si ___ jibe dorawasseoyo.",
-    "en": "I came home around 10 p.m.",
+    "en": "I came home [[around]] 10 p.m.",
     "options": [
       { "ko": "쯤", "pr": "jjeum" },
       { "ko": "아직", "pr": "ajik" },
@@ -689,7 +690,7 @@
 
     "ko": "저는 ___ 밥을 못 먹었어요.",
     "pr": "jeoneun ___ babeul mot meogeosseoyo.",
-    "en": "I still haven’t eaten yet.",
+    "en": "I [[still]] haven’t eaten yet.",
     "options": [
       { "ko": "아직", "pr": "ajik" },
       { "ko": "에서", "pr": "eseo" },
@@ -701,7 +702,7 @@
     "question": "Choose the correct word to complete the sentence.",
     "ko": "회의는 오후 다섯 시 ___ 끝나요.",
     "pr": "hoeui-neun ohu daseot si ___ kkeunnayo.",
-    "en": "The meeting ends at 5 p.m.",
+    "en": "The meeting ends [[at]] 5 p.m.[[(up until)]]",
     "options": [
       { "ko": "까지", "pr": "kkaji" },
       { "ko": "에서", "pr": "eseo" },
@@ -713,7 +714,7 @@
     "question": "Choose the correct word to complete the sentence.",
     "ko": "___ 열심히 공부할 거예요.",
     "pr": "___ yeolsimhi gongbuhal geoyeyo.",
-    "en": "I will study hard from now on.",
+    "en": "I will study hard [[from now on]].",
     "options": [
       { "ko": "이제부터", "pr": "ijebuteo" },
       { "ko": "아직", "pr": "ajik" },
@@ -725,7 +726,7 @@
     "question": "Choose the correct word to complete the sentence.",
     "ko": "저는 피곤해요, ___ 영화를 보러 갈 거예요.",
     "pr": "jeoneun pigonhaeyo, ___ yeonghwareul boreo gal geoyeyo.",
-    "en": "I am tired, but I will go watch a movie.",
+    "en": "I am tired, [[but]] I will go watch a movie.",
     "options": [
       { "ko": "하지만", "pr": "hajiman" },
       { "ko": "쯤", "pr": "jjeum" },
@@ -738,21 +739,23 @@
 "course2":[
   {
     "question": "Choose the correct word to complete the sentence.",
-    "ko": "방 안에 책상이 ___ 있어요.",
-    "pr": "bang an-e chaeksang-i ___ isseoyo.",
-    "en": "There is a desk in the room.",
+    "ko": "방 안에 책상이 ___ .",
+    "pr": "bang an-e chaeksang-i ___ .",
+    "en": "[[There is]] a desk in the room. (polite form)",
     "options": [
       { "ko": "있다", "pr": "itda" },
       { "ko": "제일", "pr": "jeil" },
-      { "ko": "거나", "pr": "geona" }
+      { "ko": "거나", "pr": "geona" },
+      { "ko": "있어요", "pr": "isseoyo" }
+
     ],
-    "answer": [{ "ko": "있다", "pr": "itda" }]
+    "answer": [{ "ko": "있어요", "pr": "isseoyo" }]
   },
   {
     "question": "Choose the correct word to complete the sentence.",
-    "ko": "도서관에 사람이 많이 ___ 있어요.",
-    "pr": "doseogwan-e sarami mani ___ isseoyo.",
-    "en": "There are many people in the library.",
+    "ko": "도서관에 사람이 많이 ___ .",
+    "pr": "doseogwan-e sarami mani ___ .",
+    "en": "[[There are]] many people in the library.(casual form)",
     "options": [
       { "ko": "있다", "pr": "itda" },
       { "ko": "제일", "pr": "jeil" },
@@ -764,7 +767,7 @@
     "question": "Choose the correct word to complete the sentence.",
     "ko": "피곤하면 오늘은 일찍 쉬는 ___ 좋아요.",
     "pr": "pigonhamyeon oneureun iljjik swineun ___ joayo.",
-    "en": "If you are tired, it’s better to rest early today.",
+    "en": "If you are tired, [[it’s better]] to rest early today.",
     "options": [
       { "ko": "…는 게 좋다", "pr": "neun ge jota" },
       { "ko": "…지 않는 게 좋다", "pr": "ji anneun ge jota" },
@@ -776,7 +779,7 @@
     "question": "Choose the correct word to complete the sentence.",
     "ko": "밤에 너무 늦게 먹지 ___ 좋아요.",
     "pr": "bame neomu neutge meokji ___ joayo.",
-    "en": "It’s better not to eat too late at night.",
+    "en": "[[It’s better not]] to eat too late at night.",
     "options": [
       { "ko": "…지 않는 게 좋다", "pr": "ji anneun ge jota" },
       { "ko": "…는 게 좋다", "pr": "neun ge jota" },
@@ -788,7 +791,7 @@
     "question": "Choose the correct word to complete the sentence.",
     "ko": "한국에서 ___ 예쁜 도시는 어디예요?",
     "pr": "hangug-eseo ___ yeppeun dosineun eodiyeyo?",
-    "en": "Which city is the most beautiful in Korea?",
+    "en": "Which city is the [[most]] beautiful in Korea?",
     "options": [
       { "ko": "제일", "pr": "jeil" },
       { "ko": "있다", "pr": "itda" },
@@ -800,7 +803,7 @@
     "question": "Choose the correct word to complete the sentence.",
     "ko": "주말에 영화 보러 갈까요 ___ 쇼핑하러 갈까요?",
     "pr": "jumare yeonghwa boreo galkkayo ___ syopinghareo galkkayo?",
-    "en": "Shall we go see a movie or go shopping this weekend?",
+    "en": "Shall we go see a movie [[or]] go shopping this weekend?",
     "options": [
       { "ko": "거나", "pr": "geona" },
       { "ko": "제일", "pr": "jeil" },
@@ -812,7 +815,7 @@
     "question": "Choose the correct word to complete the sentence.",
     "ko": "오늘 저녁에 같이 영화 볼까요___?",
     "pr": "oneul jeonyeoge gachi yeonghwa bolkkayo___?",
-    "en": "Shall we watch a movie together this evening?",
+    "en": "[[Shall]] we watch a movie together this evening?",
     "options": [
       { "ko": "…까?", "pr": "kka?" },
       { "ko": "제일", "pr": "jeil" },
@@ -828,7 +831,7 @@
     "question": "Choose the correct word to complete the sentence.",
     "ko": "저는 커피___ 마실 거예요.",
     "pr": "jeoneun keopi___ masil geoyeyo.",
-    "en": "I will drink only coffee.",
+    "en": "I will drink [[only]] coffee.",
     "options": [
       { "ko": "만", "pr": "man" },
       { "ko": "에서", "pr": "eseo" },
@@ -840,7 +843,7 @@
     "question": "Choose the correct word to complete the sentence.",
     "ko": "학교___ 공부해요.",
     "pr": "hakgyo___ gongbuhaeyo.",
-    "en": "I study at school.",
+    "en": "I study [[at]] school.",
     "options": [
       { "ko": "으로", "pr": "euro" },
       { "ko": "에서", "pr": "eseo" },
@@ -852,7 +855,7 @@
     "question": "Choose the correct word to complete the sentence.",
     "ko": "지금 비가 올 ___ 같아요.",
     "pr": "jigeum biga ol ___ gatayo.",
-    "en": "It will probably rain now.",
+    "en": "It will probably rain now. (tense future)",
     "options": [
       { "ko": "でしょう", "pr": "deshou" },
       { "ko": "…ㄹ/을 거예요", "pr": "geoyeyo" },
@@ -864,7 +867,7 @@
     "question": "Choose the correct word to complete the sentence.",
     "ko": "버스로 회사___ 갑니다.",
     "pr": "beoseuro hoesa___ gamnida.",
-    "en": "I go to the office by bus.",
+    "en": "I go to the office [[by]] bus.",
     "options": [
       { "ko": "에서", "pr": "eseo" },
       { "ko": "으로/로", "pr": "euro/ro" },
@@ -876,7 +879,7 @@
     "question": "Choose the correct word to complete the sentence.",
     "ko": "저는 김치___ 좋아해요.",
     "pr": "jeoneun gimchi___ joahaeyo.",
-    "en": "I like kimchi, but …",
+    "en": "I like kimchi, [[but]] …",
     "options": [
       { "ko": "하지만", "pr": "hajiman" },
       { "ko": "이/가", "pr": "i/ga" },
@@ -890,7 +893,7 @@
     "question": "Choose the correct word to complete the sentence.",
     "ko": "밥을 먹___ 운동했어요.",
     "pr": "babeul meok___ undonghaesseoyo.",
-    "en": "I exercised before eating.",
+    "en": "I exercised [[before]] eating.",
     "options": [
       { "ko": "기 전에", "pr": "gi jeone" },
       { "ko": "도", "pr": "do" },
@@ -902,7 +905,7 @@
     "question": "Choose the correct word to complete the sentence.",
     "ko": "우리 같이 영화 볼___?",
     "pr": "uri gachi yeonghwa bol___?",
-    "en": "Won’t you watch a movie with me?",
+    "en": "[[Won’t]] you watch a movie with me?",
     "options": [
       { "ko": "지 않을래요?", "pr": "ji anheullae-yo?" },
       { "ko": "도", "pr": "do" },
@@ -914,7 +917,7 @@
     "question": "Choose the correct word to complete the sentence.",
     "ko": "주말에 등산합___!",
     "pr": "jumare deungsan hap___!",
-    "en": "Let’s go hiking this weekend!",
+    "en": "[[Let’s]] go hiking this weekend!",
     "options": [
       { "ko": "ㅂ시다", "pr": "bshida" },
       { "ko": "자", "pr": "ja" },
@@ -926,7 +929,7 @@
     "question": "Choose the correct word to complete the sentence.",
     "ko": "저도 커피___ 마실래요.",
     "pr": "jeodo keopi___ masillaeyo.",
-    "en": "I will drink coffee too.",
+    "en": "I will drink coffee [[too]].",
     "options": [
       { "ko": "도", "pr": "do" },
       { "ko": "지 마", "pr": "ji ma" },
@@ -938,7 +941,7 @@
     "question": "Choose the correct word to complete the sentence.",
     "ko": "그 소식은 ___ 들었어요.",
     "pr": "geu sosigeun ___ deureosseoyo.",
-    "en": "I already heard that news.",
+    "en": "I [[already]] heard that news.",
     "options": [
       { "ko": "벌써", "pr": "beolsseo" },
       { "ko": "도", "pr": "do" },
@@ -950,7 +953,7 @@
     "question": "Choose the correct word to complete the sentence.",
     "ko": "거기 가지 ___!",
     "pr": "geogi gaji ___!",
-    "en": "Don’t go there! (casual)",
+    "en": "[[Don’t]] go there! (casual)",
     "options": [
       { "ko": "지 마", "pr": "ji ma" },
       { "ko": "지 마세요", "pr": "ji maseyo" },
@@ -962,7 +965,7 @@
     "question": "Choose the correct word to complete the sentence.",
     "ko": "휴대폰을 사용하지 ___.",
     "pr": "hyudaepon-eul sayonghaji ___",
-    "en": "Please don’t use your cellphone.",
+    "en": "[[Please don’t]] use your cellphone.",
     "options": [
       { "ko": "지 마세요", "pr": "ji maseyo" },
       { "ko": "지 마", "pr": "ji ma" },
@@ -974,7 +977,7 @@
     "question": "Choose the correct word to complete the sentence.",
     "ko": "같이 밥 먹___!",
     "pr": "gachi bap meok___!",
-    "en": "Let’s eat together! (casual)",
+    "en": "[[Let’s]] eat together! (casual)",
     "options": [
       { "ko": "자", "pr": "ja" },
       { "ko": "ㅂ시다", "pr": "bshida" },
@@ -988,7 +991,7 @@
     "question": "Choose the correct word to complete the sentence.",
     "ko": "그는 의사가 ___ 싶어요.",
     "pr": "geuneun uisaga ___ sipeoyo.",
-    "en": "He wants to become a doctor.",
+    "en": "He wants to [[become]] a doctor.",
     "options": [
       { "ko": "되다", "pr": "doeda" },
       { "ko": "이다", "pr": "ida" },
@@ -998,9 +1001,9 @@
   },
   {
     "question": "Choose the correct word to complete the sentence.",
-    "ko": "제 이름___ 마이클입니다.",
-    "pr": "je ireum___ Michael imnida.",
-    "en": "My name is Michael.",
+    "ko": "제 이름 --- ___.",
+    "pr": "je ireum --- ____. (is - tense formal)",
+    "en": "My name [[is]] ---.",
     "options": [
       { "ko": "은", "pr": "eun" },
       { "ko": "입니다", "pr": "imnida" },
@@ -1024,7 +1027,7 @@
     "question": "Choose the correct word to complete the sentence.",
     "ko": "책이 책상___ 있어요.",
     "pr": "chaegi chaeksang___ isseoyo.",
-    "en": "The book is on the desk.",
+    "en": "The book is [[on]] the desk.",
     "options": [
       { "ko": "에", "pr": "e" },
       { "ko": "의", "pr": "ui" },

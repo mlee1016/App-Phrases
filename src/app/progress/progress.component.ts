@@ -681,7 +681,7 @@ next() {
     const soundAudio = new SpeechSynthesisUtterance(text2);
     soundAudio.lang = lang2;
     soundAudio.rate = 0.9;    // s 
-
+    speechSynthesis.cancel(); // stop prior if still speaking
     speechSynthesis.speak(soundAudio);
   }
 }

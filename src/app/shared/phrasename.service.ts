@@ -235,7 +235,7 @@ export class PhrasenameService {
     { s: "phrases2", isDone:false},
     { s: "phrases3", isDone:false},
     { s: "phrases4", isDone:false},
-    { s: "phrases5", isDone:false},
+    { s: "phrase5", isDone:false},
     
     { s: "useful", isDone: false },
     { s: "useful4", isDone: false },
@@ -244,6 +244,7 @@ export class PhrasenameService {
   ]
   allListJapaneseStory: PhraseListItem[] = [
     { s: "asking_directions", isDone: false },
+    { s: "restaurant", isDone: false },
     { s: "conversation2", isDone: false },
     { s: "conversation", isDone: false },
     { s: "JapaneseStory", isDone: false },

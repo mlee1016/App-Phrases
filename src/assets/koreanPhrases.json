@@ -7779,39 +7779,39 @@
   ],
   "course2": [
     {
-      "phrase": "책상 위에 책이 있어요.",
-      "pr": "chaek-sang wi-e chaek-i i-sseo-yo",
-      "en": "There is a book on the desk.",
+      "phrase": "책상 위에 책이 [[있어요]].",
+      "pr": "chaek-sang wi-e chaek-i [[i-sseo-yo]]",
+      "en": "[[There is]] a book on the desk.",
       "des": "Indicates the presence of a non-living object."
     },
     {
-      "phrase": "가방 안에 지갑이 있어요.",
-      "pr": "ga-bang an-e ji-gap-i i-sseo-yo",
-      "en": "There is a wallet in the bag.",
+      "phrase": "가방 안에 지갑이 [[있어요]].",
+      "pr": "ga-bang an-e ji-gap-i [[i-sseo-yo]]",
+      "en": "[[There is]] a wallet in the bag.",
       "des": "Shows location of an item."
     },
     {
-      "phrase": "냉장고에 우유가 있어요.",
-      "pr": "naeng-jang-go-e u-yu-ga i-sseo-yo",
-      "en": "There is milk in the fridge.",
+      "phrase": "냉장고에 우유가 [[있어요]].",
+      "pr": "naeng-jang-go-e u-yu-ga [[i-sseo-yo]]",
+      "en": "[[There is]] milk in the fridge.",
       "des": "Existence of milk inside the fridge."
     },
     {
-      "phrase": "문제에 답이 있어요.",
-      "pr": "mun-je-e dap-i i-sseo-yo",
-      "en": "There is an answer to the question.",
+      "phrase": "문제에 답이 [[있어요]].",
+      "pr": "mun-je-e dap-i [[i-sseo-yo]]",
+      "en": "[[There is]] an answer to the question.",
       "des": "Presence of a solution."
     },
     {
-      "phrase": "집에 고양이가 있어요.",
-      "pr": "jib-e go-yang-i-ga i-sseo-yo",
-      "en": "There is a cat at home.",
+      "phrase": "집에 고양이가 [[있어요]].",
+      "pr": "jib-e go-yang-i-ga [[i-sseo-yo]]",
+      "en": "[[There is]] a cat at home.",
       "des": "Living being exists in a place."
     },
     {
-      "phrase": "학교에 학생이 있어요.",
-      "pr": "hak-gyo-e hak-saeng-i i-sseo-yo",
-      "en": "There are students at school.",
+      "phrase": "학교에 학생이 [[있어요]].",
+      "pr": "hak-gyo-e hak-saeng-i [[i-sseo-yo]]",
+      "en": "[[There are]] students at school.",
       "des": "Students are present."
     },
     {
@@ -7821,81 +7821,81 @@
       "des": "Living people present."
     },
     {
-      "phrase": "이 집에 강아지가 두 마리 있어요.",
-      "pr": "i jib-e gang-a-ji-ga du ma-ri i-sseo-yo",
-      "en": "There are two puppies in this house.",
+      "phrase": "이 집에 강아지가 두 마리 [[있어요]].",
+      "pr": "i jib-e gang-a-ji-ga du ma-ri [[i-sseo-yo]]",
+      "en": "[[There are]] two puppies in this house.",
       "des": "Counts living beings."
     },
     {
-      "phrase": "지금 가는 게 좋아요.",
-      "pr": "ji-geum ga-neun ge jo-a-yo",
-      "en": "It’s better to go now.",
+      "phrase": "지금 [[가는 게]] 좋아요.",
+      "pr": "ji-geum [[ga-neun ge]] jo-a-yo",
+      "en": "It’s [[better]] to go now.",
       "des": "Recommending an action."
     },
     {
-      "phrase": "일찍 자는 게 좋습니다.",
-      "pr": "il-jjik ja-neun ge jot-seum-ni-da",
-      "en": "It’s better to sleep early.",
+      "phrase": "일찍 [[자는 게]] 좋습니다.",
+      "pr": "il-jjik [[ja-neun ge]] jot-seum-ni-da",
+      "en": "It’s [[better]] to sleep early.",
       "des": "Polite suggestion."
     },
     {
-      "phrase": "미리 예약하는 게 좋아요.",
-      "pr": "mi-ri ye-yak-ha-neun ge jo-a-yo",
-      "en": "It’s better to reserve in advance.",
+      "phrase": "미리 예약[[하는 게]] 좋아요.",
+      "pr": "mi-ri ye-yak-[[ha-neun ge]] jo-a-yo",
+      "en": "It’s [[better]] to reserve in advance.",
       "des": "Advice for preparation."
     },
     {
-      "phrase": "버스를 타는 게 더 빨라요.",
-      "pr": "beo-seu-reul ta-neun ge deo ppal-la-yo",
-      "en": "It’s better to take the bus (faster).",
+      "phrase": "버스를 [[타는 게]] 더 빨라요.",
+      "pr": "beo-seu-reul [[ta-neun ge]] deo ppal-la-yo",
+      "en": "It’s [[better]] to take the bus (faster).",
       "des": "Comparison-based suggestion."
     },
     {
-      "phrase": "밤에 너무 늦게 먹지 않는 게 좋아요.",
-      "pr": "bam-e neo-mu neut-ge meok-ji an-neun ge jo-a-yo",
-      "en": "It’s better not to eat too late at night.",
+      "phrase": "밤에 너무 늦게 먹지 [[않는 게]] 좋아요.",
+      "pr": "bam-e neo-mu neut-ge meok-ji [[an-neun ge]] jo-a-yo",
+      "en": "[[It’s better not]] to eat too late at night.",
       "des": "Advising against a habit."
     },
     {
-      "phrase": "거짓말하지 않는 게 좋아요.",
-      "pr": "geo-jit-mal-ha-ji an-neun ge jo-a-yo",
-      "en": "It’s better not to lie.",
+      "phrase": "거짓말하지 [[않는 게]] 좋아요.",
+      "pr": "geo-jit-mal-ha-ji [[an-neun ge]] jo-a-yo",
+      "en": "[[It’s better not]] to lie.",
       "des": "Moral suggestion."
     },
     {
-      "phrase": "비 오는 날 운전하지 않는 게 좋습니다.",
-      "pr": "bi o-neun nal un-jeon-ha-ji an-neun ge jot-seum-ni-da",
-      "en": "It’s better not to drive on a rainy day.",
+      "phrase": "비 오는 날 운전하지 [[않는 게]] 좋습니다.",
+      "pr": "bi o-neun nal un-jeon-ha-ji [[an-neun ge]] jot-seum-ni-da",
+      "en": "[[It’s better not]] to drive on a rainy day.",
       "des": "Safety advice."
     },
     {
-      "phrase": "너무 많이 마시지 않는 게 좋아요.",
-      "pr": "neo-mu ma-ni ma-si-ji an-neun ge jo-a-yo",
-      "en": "It’s better not to drink too much.",
+      "phrase": "너무 많이 마시지 [[않는 게]] 좋아요.",
+      "pr": "neo-mu ma-ni ma-si-ji [[an-neun ge]] jo-a-yo",
+      "en": "[[It’s better not]] to drink too much.",
       "des": "Health-related advice."
     },
     {
-      "phrase": "지금 갈까요?",
-      "pr": "ji-geum gal-kka-yo",
-      "en": "Shall we go now?",
+      "phrase": "지금 [[갈까요]]?",
+      "pr": "ji-geum [[gal-kka-yo]]",
+      "en": "[[Shall we go]] now?",
       "des": "Making a polite suggestion."
     },
     {
-      "phrase": "뭐 먹을까요?",
-      "pr": "mwo meo-geul-kka-yo",
-      "en": "What shall we eat?",
+      "phrase": "뭐 [[먹을까요]]?",
+      "pr": "mwo [[meo-geul-kka-yo]]",
+      "en": "What [[shall we eat]]?",
       "des": "Asking for opinion."
     },
     {
-      "phrase": "도와줄까요?",
-      "pr": "do-wa-jul-kka-yo",
-      "en": "Shall I help you?",
+      "phrase": "[[도와줄까요]]?",
+      "pr": "[[do-wa-jul-kka-yo]]",
+      "en": "[[Shall I help you]]?",
       "des": "Offering help."
     },
     {
-      "phrase": "이 옷이 어울릴까요?",
-      "pr": "i ot-i eo-ul-lil-kka-yo",
-      "en": "Do you think these clothes will suit me?",
+      "phrase": "이 옷이 [[어울릴까요]]?",
+      "pr": "i ot-i [[eo-ul-lil-kka-yo]]",
+      "en": "[[Do you think]] these clothes [[will suit]] me?",
       "des": "Seeking someone’s view."
     }
   ]
@@ -7903,76 +7903,76 @@
 
   "course3":[
     
-    { "phrase": "저만 왔어요.", "pr": "jeo-man wasseoyo", "en": "Only I came.", "des": "‘만’ attaches to a noun to mean ‘only/just’." },
-    { "phrase": "물만 마셨어요.", "pr": "mul-man masyeosseoyo", "en": "I drank only water.", "des": "Limits the action to water alone." },
-    { "phrase": "이 방만 깨끗해요.", "pr": "i bang-man kkaekkeutaeyo", "en": "Only this room is clean.", "des": "Specifies exclusivity of cleanliness." },
-    { "phrase": "하루만 기다려 주세요.", "pr": "haru-man gidaryeo juseyo", "en": "Please wait just one day.", "des": "Shows restriction of time to one day." }
+    { "phrase": "저[[만]] 왔어요.", "pr": "jeo-[[man]] wasseoyo", "en": "Only I came.", "des": "‘만’ attaches to a noun to mean ‘only/just’." },
+    { "phrase": "물[[만]] 마셨어요.", "pr": "mul-[[man]] masyeosseoyo", "en": "I drank only water.", "des": "Limits the action to water alone." },
+    { "phrase": "이 방[[만]] 깨끗해요.", "pr": "i bang-[[man]] kkaekkeutaeyo", "en": "Only this room is clean.", "des": "Specifies exclusivity of cleanliness." },
+    { "phrase": "하루[[만]] 기다려 주세요.", "pr": "haru-[[man]] gidaryeo juseyo", "en": "Please wait just one day.", "des": "Shows restriction of time to one day." }
   ,
-    { "phrase": "내일 비가 올 거예요.", "pr": "naeil biga ol geoyeyo", "en": "It will probably rain tomorrow.", "des": "Future tense or strong probability." },
-    { "phrase": "저는 갈 거예요.", "pr": "jeoneun gal geoyeyo", "en": "I will probably go.", "des": "Expresses a future plan or likelihood." },
-    { "phrase": "친구가 늦을 거예요.", "pr": "chingu-ga neut-eul geoyeyo", "en": "My friend will probably be late.", "des": "Predicting a friend’s lateness." },
-    { "phrase": "곧 시작할 거예요.", "pr": "got sijak-hal geoyeyo", "en": "It will probably start soon.", "des": "Indicates near-future action." }
+    { "phrase": "내일 [[비가 올 거예요]].", "pr": "naeil [[biga ol geoyeyo]]", "en": "It [[will probably rain]] tomorrow.", "des": "Future tense or strong probability." },
+    { "phrase": "저는 [[갈 거예요]].", "pr": "jeoneun [[gal geoyeyo]]", "en": "I [[will probably go]].", "des": "Expresses a future plan or likelihood." },
+    { "phrase": "친구가 [[늦을 거예요]].", "pr": "chingu-ga [[neut-eul geoyeyo]]", "en": "My friend [[will probably be late]].", "des": "Predicting a friend’s lateness." },
+    { "phrase": "곧 [[시작할 거예요]].", "pr": "got [[sijak-hal geoyeyo]]", "en": "It [[will probably start]] soon.", "des": "Indicates near-future action." }
   ,
-    { "phrase": "학교에서 공부해요.", "pr": "hakgyo-eseo gongbuhaeyo", "en": "I study at school.", "des": "Indicates the place where an action occurs." },
-    { "phrase": "서울에서 왔어요.", "pr": "seoul-eseo wasseoyo", "en": "I came from Seoul.", "des": "Marks the starting point of movement." },
-    { "phrase": "카페에서 친구를 만났어요.", "pr": "kape-eseo chingureul mannasseoyo", "en": "I met my friend at the cafe.", "des": "Action location marker." },
-    { "phrase": "집에서 쉬고 있어요.", "pr": "jib-eseo swigo isseoyo", "en": "I am resting at home.", "des": "Shows ongoing action at a place." }
+    { "phrase": "학교[[에서]] 공부해요.", "pr": "hakgyo-[[eseo]] gongbuhaeyo", "en": "I study [[at]] school.", "des": "Indicates the place where an action occurs." },
+    { "phrase": "서울[[에서]] 왔어요.", "pr": "seoul-[[eseo]] wasseoyo", "en": "I came [[from]] Seoul.", "des": "Marks the starting point of movement." },
+    { "phrase": "카페[[에서]] 친구를 만났어요.", "pr": "kape-[[eseo]] chingureul mannasseoyo", "en": "I met my friend [[at]] the cafe.", "des": "Action location marker." },
+    { "phrase": "집[[에서]] 쉬고 있어요.", "pr": "jib-[[eseo]] swigo isseoyo", "en": "I am resting [[at]] home.", "des": "Shows ongoing action at a place." }
   ,
-    { "phrase": "버스로 학교에 가요.", "pr": "beoseu-ro hakgyoe gayo", "en": "I go to school by bus.", "des": "Indicates means or method of travel." },
-    { "phrase": "연필로 썼어요.", "pr": "yeonpil-ro sseosseoyo", "en": "I wrote with a pencil.", "des": "Shows the tool used for an action." },
-    { "phrase": "오른쪽으로 가세요.", "pr": "oreunjjok-euro gaseyo", "en": "Please go to the right.", "des": "Shows direction of movement." },
-    { "phrase": "택시로 왔어요.", "pr": "taegsi-ro wasseoyo", "en": "I came by taxi.", "des": "Means of transportation." }
+    { "phrase": "버스[[로]] 학교에 가요.", "pr": "beoseu-[[ro]] hakgyoe gayo", "en": "I go to school [[by]] bus.", "des": "Indicates means or method of travel." },
+    { "phrase": "연필[[로]] 썼어요.", "pr": "yeonpil-[[ro]] sseosseoyo", "en": "I wrote [[with]] a pencil.", "des": "Shows the tool used for an action." },
+    { "phrase": "오른쪽[[으로]] 가세요.", "pr": "oreunjjok-[[euro]] gaseyo", "en": "Please go [[to]] the right.", "des": "Shows direction of movement." },
+    { "phrase": "택시[[로]] 왔어요.", "pr": "taegsi-[[ro]] wasseoyo", "en": "I came [[by]] taxi.", "des": "Means of transportation." }
   ,
-    { "phrase": "내일 비가 올 것 같아요.", "pr": "naeil biga ol geot gatda", "en": "It will probably rain tomorrow.", "des": "Korean equivalent for expressing probability, similar to Japanese でしょう." },
-    { "phrase": "그 사람이 맞을 것 같아요.", "pr": "geu sarami majeul geot gatda", "en": "I think that person is correct.", "des": "Used to soften an assumption." },
-    { "phrase": "오늘은 춥지 않을 것 같아요.", "pr": "oneureun chupji anheul geot gatda", "en": "I think it won’t be cold today.", "des": "Prediction or guess about weather." },
-    { "phrase": "시간이 많이 걸릴 것 같아요.", "pr": "sigani mani geollil geot gatda", "en": "I think it will take a long time.", "des": "Speaker’s estimation of duration." }
+    { "phrase": "내일 비가 올 [[것 같아요]].", "pr": "naeil biga [[ol geot gatda]]", "en": "[[It will probably]] rain tomorrow.", "des": "Korean equivalent for expressing probability, similar to Japanese でしょう." },
+    { "phrase": "그 사람이 맞을 [[것 같아요]].", "pr": "geu sarami majeul [[geot gatda]]", "en": "I [[think that]] person is correct.", "des": "Used to soften an assumption." },
+    { "phrase": "오늘은 춥지 않을 [[것 같아요]].", "pr": "oneureun chupji anheul [[geot gatda]]", "en": "I [[think it]] won’t be cold today.", "des": "Prediction or guess about weather." },
+    { "phrase": "시간이 많이 걸릴 [[것 같아요]].", "pr": "sigani mani geollil [[geot gatda]]", "en": "I [[think it]] will take a long time.", "des": "Speaker’s estimation of duration." }
   ,
-    { "phrase": "이 책이 좋아요.", "pr": "i chaek-i joayo", "en": "This book is good.", "des": "Marks the subject of the sentence." },
-    { "phrase": "누가 왔어요?", "pr": "nuga wasseoyo?", "en": "Who came?", "des": "Emphasizes the subject ‘who’." },
-    { "phrase": "고양이가 귀여워요.", "pr": "goyangi-ga gwiyeowoyo", "en": "The cat is cute.", "des": "Subject marker focusing on the cat." },
-    { "phrase": "문이 열렸어요.", "pr": "mun-i yeollyeosseoyo", "en": "The door opened.", "des": "Identifies the door as the subject." }
-    ,{ "phrase": "가고 싶어요. 하지만 시간이 없어요.", "pr": "gago sipeoyo. hajiman sigani eopseoyo", "en": "I want to go, but I don’t have time.", "des": "Connects contrasting ideas." },
-    { "phrase": "맛있어요. 하지만 비싸요.", "pr": "masisseoyo. hajiman bissayo", "en": "It’s delicious, but expensive.", "des": "Used to express a ‘but/however’ contrast." },
-    { "phrase": "비가 왔어요. 하지만 우리는 놀았어요.", "pr": "biga wasseoyo. hajiman urineun norasseoyo", "en": "It rained, but we played.", "des": "Shows contrast between weather and action." },
-    { "phrase": "쉽지 않아요. 하지만 재미있어요.", "pr": "swipji anayo. hajiman jaemiisseoyo", "en": "It’s not easy, but it’s fun.", "des": "Links opposing clauses." }
+    { "phrase": "이 책[[이]] 좋아요.", "pr": "i chaek-[[i]] joayo", "en": "This book is good.", "des": "Marks the subject of the sentence." },
+    { "phrase": "누[[가]] 왔어요?", "pr": "nu[[ga]] wasseoyo?", "en": "Who came?", "des": "Emphasizes the subject ‘who’." },
+    { "phrase": "고양이[[가]] 귀여워요.", "pr": "goyangi-[[ga]] gwiyeowoyo", "en": "The cat is cute.", "des": "Subject marker focusing on the cat." },
+    { "phrase": "문[[이]] 열렸어요.", "pr": "mun-[[i]] yeollyeosseoyo", "en": "The door opened.", "des": "Identifies the door as the subject." }
+  , { "phrase": "가고 싶어요. [[하지만]] 시간이 없어요.", "pr": "gago sipeoyo. [[hajiman]] sigani eopseoyo", "en": "I want to go, [[but]] I don’t have time.", "des": "Connects contrasting ideas." },
+    { "phrase": "맛있어요. [[하지만]] 비싸요.", "pr": "masisseoyo. [[hajiman]] bissayo", "en": "It’s delicious, [[but]] expensive.", "des": "Used to express a ‘but/however’ contrast." },
+    { "phrase": "비가 왔어요. [[하지만]] 우리는 놀았어요.", "pr": "biga wasseoyo. [[hajiman]] urineun norasseoyo", "en": "It rained, [[but]] we played.", "des": "Shows contrast between weather and action." },
+    { "phrase": "쉽지 않아요. [[하지만]] 재미있어요.", "pr": "swipji anayo. [[hajiman]] jaemiisseoyo", "en": "It’s not easy, [[but]] it’s fun.", "des": "Links opposing clauses." }
   
   ],
   "course4":[
-      { "phrase": "자기 전에 책을 읽어요.", "pr": "jagi jeone chaegeul ilgeoyo", "en": "I read a book before sleeping.", "des": "Action done before another action." },
-      { "phrase": "밥 먹기 전에 손 씻으세요.", "pr": "bap meokgi jeone son ssiseuseyo", "en": "Wash your hands before eating.", "des": "Before eating, wash hands." },
-      { "phrase": "출발하기 전에 전화할게요.", "pr": "chulbalhagi jeone jeonhwahalgeyo", "en": "I will call before leaving.", "des": "Before departing, will call." },
-      { "phrase": "공부하기 전에 쉬세요.", "pr": "gongbuhagi jeone swiseyo", "en": "Rest before studying.", "des": "Suggests a break before studying." }
+      { "phrase": "자기 [[전에]] 책을 읽어요.", "pr": "jagi [[jeone]] chaegeul ilgeoyo", "en": "I read a book [[before]] sleeping.", "des": "Action done before another action." },
+      { "phrase": "밥 먹기 [[전에]] 손 씻으세요.", "pr": "bap meokgi [[jeone]] son ssiseuseyo", "en": "Wash your hands [[before]] eating.", "des": "Before eating, wash hands." },
+      { "phrase": "출발하기 [[전에]] 전화할게요.", "pr": "chulbalhagi [[jeone]] jeonhwahalgeyo", "en": "I will call [[before]] leaving.", "des": "Before departing, will call." },
+      { "phrase": "공부하기 [[전에]] 쉬세요.", "pr": "gongbuhagi [[jeone]] swiseyo", "en": "Rest [[before]] studying.", "des": "Suggests a break before studying." }
     ,
-      { "phrase": "같이 점심 먹지 않을래요?", "pr": "gachi jeomsim meokji anheullae-yo?", "en": "Won’t you have lunch together?", "des": "Polite invitation: won't you join?" },
-      { "phrase": "주말에 영화 보지 않을래요?", "pr": "jumare yeonghwa boji anheullae-yo?", "en": "Shall we watch a movie this weekend?", "des": "Inviting someone to watch a movie." },
-      { "phrase": "공원에 가지 않을래요?", "pr": "gong-won-e gaji anheullae-yo?", "en": "Would you like to go to the park?", "des": "Suggests going to the park together." },
-      { "phrase": "산책하지 않을래요?", "pr": "sanchaek-haji anheullae-yo?", "en": "Shall we take a walk?", "des": "Friendly suggestion for a walk." }
+      { "phrase": "같이 점심 먹[[지 않을래요]]?", "pr": "gachi jeomsim meok[[ji anheullae-yo]]?", "en": "[[Won’t you]] have lunch together?", "des": "Polite invitation: won't you join?" },
+      { "phrase": "주말에 영화 보[[지 않을래요]]?", "pr": "jumare yeonghwa bo[[ji anheullae-yo]]?", "en": "[[Shall we]] watch a movie this weekend?", "des": "Inviting someone to watch a movie." },
+      { "phrase": "공원에 가[[지 않을래요]]?", "pr": "gong-won-e ga[[ji anheullae-yo]]?", "en": "Would you like to go to the park?", "des": "Suggests going to the park together." },
+      { "phrase": "산책하[[지 않을래요]]?", "pr": "sanchaek-ha[[ji anheullae-yo]]?", "en": "Shall we take a walk?", "des": "Friendly suggestion for a walk." }
     ,
-      { "phrase": "같이 밥 먹읍시다.", "pr": "gachi bap meogeupsida", "en": "Let’s eat together. (formal)", "des": "Formal suggestion to eat together." },
-      { "phrase": "일찍 출발합시다.", "pr": "iljjik chulbalhapsida", "en": "Let’s leave early. (formal)", "des": "Formal ‘let’s’ form." },
-      { "phrase": "공부합시다.", "pr": "gongbuhapsida", "en": "Let’s study. (formal)", "des": "Polite suggestion to study." },
-      { "phrase": "쉬읍시다.", "pr": "swieupsida", "en": "Let’s rest. (formal)", "des": "Polite ‘let’s rest’." }
+      { "phrase": "같이 밥 먹[[읍시다]].", "pr": "gachi bap meog[[eupsida]]", "en": "[[Let’s]] eat together. (formal)", "des": "Formal suggestion to eat together." },
+      { "phrase": "일찍 출발[[합시다]].", "pr": "iljjik chulbal[[hapsida]]", "en": "[[Let’s]] leave early. (formal)", "des": "Formal ‘let’s’ form." },
+      { "phrase": "공부[[합시다]].", "pr": "gongbu[[hapsida]]", "en": "[[Let’s]] study. (formal)", "des": "Polite suggestion to study." },
+      { "phrase": "쉬[[읍시다]].", "pr": "swi[[eupsida]]", "en": "[[Let’s]] rest. (formal)", "des": "Polite ‘let’s rest’." }
     ,
-      { "phrase": "저도 가고 싶어요.", "pr": "jeo-do gago sipeoyo", "en": "I want to go too.", "des": "Adds ‘also’ to the subject." },
-      { "phrase": "물도 주세요.", "pr": "mul-do juseyo", "en": "Please give me water too.", "des": "Adds an additional request." },
-      { "phrase": "한국어도 재미있어요.", "pr": "hangug-eo-do jaemiisseoyo", "en": "Korean is fun too.", "des": "Includes Korean as another fun thing." },
-      { "phrase": "저는 커피도 좋아해요.", "pr": "jeoneun keopi-do joahaeyo", "en": "I like coffee as well.", "des": "Shows coffee is also liked." }
+      { "phrase": "저[[도]] 가고 싶어요.", "pr": "jeo-[[do]] gago sipeoyo", "en": "I want to go [[too]].", "des": "Adds ‘also’ to the subject." },
+      { "phrase": "물[[도]] 주세요.", "pr": "mul-[[do]] juseyo", "en": "Please give me water [[too]].", "des": "Adds an additional request." },
+      { "phrase": "한국어[[도]] 재미있어요.", "pr": "hangug-eo-[[do]] jaemiisseoyo", "en": "Korean is fun [[too]].", "des": "Includes Korean as another fun thing." },
+      { "phrase": "저는 커피[[도]] 좋아해요.", "pr": "jeoneun keopi-[[do]] joahaeyo", "en": "I like coffee [[as well]].", "des": "Shows coffee is also liked." }
     ,
-      { "phrase": "벌써 도착했어요.", "pr": "beolsseo dochakhaesseoyo", "en": "I already arrived.", "des": "Indicates an action already completed." },
-      { "phrase": "벌써 여름이에요.", "pr": "beolsseo yeoreum-ieyo", "en": "It’s already summer.", "des": "Expresses surprise at time passing." },
-      { "phrase": "벌써 끝났어요?", "pr": "beolsseo kkeutnasseoyo?", "en": "Is it already over?", "des": "Surprised that it’s finished." },
-      { "phrase": "벌써 열 시예요.", "pr": "beolsseo yeol siyeyo", "en": "It’s already 10 o’clock.", "des": "Points out current time with surprise." }
+      { "phrase": "[[벌써]] 도착했어요.", "pr": "[[beolsseo]] dochakhaesseoyo", "en": "I [[already]] arrived.", "des": "Indicates an action already completed." },
+      { "phrase": "[[벌써]] 여름이에요.", "pr": "[[beolsseo]] yeoreum-ieyo", "en": "It’s [[already]] summer.", "des": "Expresses surprise at time passing." },
+      { "phrase": "[[벌써]] 끝났어요?", "pr": "[[beolsseo]] kkeutnasseoyo?", "en": "Is it [[already]] over?", "des": "Surprised that it’s finished." },
+      { "phrase": "[[벌써]] 열 시예요.", "pr": "[[beolsseo]] yeol siyeyo", "en": "It’s [[already]] 10 o’clock.", "des": "Points out current time with surprise." }
     ,
-      { "phrase": "걱정하지 마세요.", "pr": "geokjeong-haji maseyo", "en": "Please don’t worry.", "des": "Polite negative command." },
-      { "phrase": "울지 마세요.", "pr": "ulji maseyo", "en": "Please don’t cry.", "des": "Polite request not to cry." },
-      { "phrase": "늦지 마세요.", "pr": "neutji maseyo", "en": "Please don’t be late.", "des": "Polite request not to be late." },
-      { "phrase": "포기하지 마세요.", "pr": "pogihaji maseyo", "en": "Please don’t give up.", "des": "Polite encouragement." }
+      { "phrase": "걱정하[[지 마세요]].", "pr": "geokjeong-ha[[ji maseyo]]", "en": "[[Please don’t]] worry.", "des": "Polite negative command." },
+      { "phrase": "울[[지 마세요]].", "pr": "ul[[ji maseyo]]", "en": "[[Please don’t]] cry.", "des": "Polite request not to cry." },
+      { "phrase": "늦[[지 마세요]].", "pr": "neut[[ji maseyo]]", "en": "[[Please don’t]] be late.", "des": "Polite request not to be late." },
+      { "phrase": "포기하[[지 마세요]].", "pr": "pogiha[[ji maseyo]]", "en": "[[Please don’t]] give up.", "des": "Polite encouragement." }
     ,
-      { "phrase": "걱정하지 마세요.", "pr": "geokjeong-haji maseyo", "en": "Please don’t worry.", "des": "Polite negative command." },
-      { "phrase": "사진 찍지 마세요.", "pr": "sajin jjikji maseyo", "en": "Please don’t take photos.", "des": "Polite request not to photograph." },
-      { "phrase": "담배 피우지 마세요.", "pr": "dambae piuji maseyo", "en": "Please don’t smoke.", "des": "Formal prohibition on smoking." },
-      { "phrase": "늦지 마세요.", "pr": "neutji maseyo", "en": "Please don’t be late.", "des": "Polite ‘don’t be late’." }
+      { "phrase": "걱정하[[지 마세요]].", "pr": "geokjeong-ha[[ji maseyo]]", "en": "Please don’t worry.", "des": "Polite negative command." },
+      { "phrase": "사진 찍[[지 마세요]].", "pr": "sajin jjik[[ji maseyo]]", "en": "Please don’t take photos.", "des": "Polite request not to photograph." },
+      { "phrase": "담배 피우[[지 마세요]].", "pr": "dambae piu[[ji maseyo]]", "en": "Please don’t smoke.", "des": "Formal prohibition on smoking." },
+      { "phrase": "늦[[지 마세요]].", "pr": "neut[[ji maseyo]]", "en": "Please don’t be late.", "des": "Polite ‘don’t be late’." }
 
   ],
   "course5":[
@@ -7982,67 +7982,67 @@
       { "phrase": "행복해졌어요.", "pr": "haengbokhaejyeosseoyo", "en": "I became happy.", "des": "Describes a state change." },
       { "phrase": "성공이 되었어요.", "pr": "seonggong-i doeeosseoyo", "en": "It became a success.", "des": "Expresses an outcome achieved." }
     ,
-      { "phrase": "저는 학생입니다.", "pr": "jeoneun haksaeng-imnida", "en": "I am a student.", "des": "Formal polite statement of identity." },
-      { "phrase": "이것은 책입니다.", "pr": "igeos-eun chaek-imnida", "en": "This is a book.", "des": "Identifying an object politely." },
-      { "phrase": "오늘은 월요일입니다.", "pr": "oneul-eun wol-yoil-imnida", "en": "Today is Monday.", "des": "Formal statement of date or day." },
-      { "phrase": "저의 이름은 민수입니다.", "pr": "jeo-ui ireum-eun Minsu-imnida", "en": "My name is Minsu.", "des": "Polite introduction of oneself." }
+      { "phrase": "저는 학생[[입니다]].", "pr": "jeoneun haksaeng-[[imnida]]", "en": "I [[am]] a student.", "des": "Formal polite statement of identity." },
+      { "phrase": "이것은 책[[입니다]].", "pr": "igeos-eun chaek-[[imnida]]", "en": "This [[is]] a book.", "des": "Identifying an object politely." },
+      { "phrase": "오늘은 월요일[[입니다]].", "pr": "oneul-eun wol-yoil-[[imnida]]", "en": "Today [[is]] Monday.", "des": "Formal statement of date or day." },
+      { "phrase": "저의 이름은 민수[[입니다]].", "pr": "jeo-ui ireum-eun Minsu-[[imnida]]", "en": "My name [[is]] Minsu.", "des": "Polite introduction of oneself." }
     ,
       { "phrase": "어제는 날씨가 좋았어요.", "pr": "eoje-neun nalssi-ga joasseoyo", "en": "The weather was good yesterday.", "des": "Past description of state or condition." },
-      { "phrase": "그 영화는 재미있었어요.", "pr": "geu yeonghwa-neun jaemiisseosseoyo", "en": "That movie was interesting.", "des": "Past state of an event." },
-      { "phrase": "저는 학생이었어요.", "pr": "jeoneun haksaeng-ieosseoyo", "en": "I was a student.", "des": "Past identity." },
-      { "phrase": "회의는 3시에 있었어요.", "pr": "hoeui-neun 3si-e isseosseoyo", "en": "The meeting was at 3 o’clock.", "des": "Past time/location statement." }
+      { "phrase": "그 영화는 재미있었어요.", "pr": "geu yeonghwa-neun [[jaemiisseosseoyo]]", "en": "That movie [[was interesting]].", "des": "Past state of an event." },
+      { "phrase": "저는 학생이었어요.", "pr": "jeoneun haksaeng-[[ieosseoyo]]", "en": "I [[was]] a student.", "des": "Past identity." },
+      { "phrase": "회의는 3시에 있었어요.", "pr": "hoeui-neun 3si-e [[isseosseoyo]]", "en": "The meeting [[was]] at 3 o’clock.", "des": "Past time/location statement." }
     ,
-      { "phrase": "학교에 가요.", "pr": "hakgyo-e gayo", "en": "I go to school.", "des": "Indicates destination." },
-      { "phrase": "집에 있어요.", "pr": "jib-e isseoyo", "en": "I am at home.", "des": "Shows location of subject." },
-      { "phrase": "도서관에 갑니다.", "pr": "doseogwan-e gamnida", "en": "I go to the library.", "des": "Formal destination." },
-      { "phrase": "회사에 다녀요.", "pr": "hoesa-e danyeoyo", "en": "I work at the company.", "des": "Indicates place of work." }
+      { "phrase": "학교[[에]] 가요.", "pr": "hakgyo-[[e]] gayo", "en": "I go [[to]] school.", "des": "Indicates destination." },
+      { "phrase": "집[[에]] 있어요.", "pr": "jib-[[e]] isseoyo", "en": "I am [[at]] home.", "des": "Shows location of subject." },
+      { "phrase": "도서관[[에]] 갑니다.", "pr": "doseogwan-[[e]] gamnida", "en": "I go [[to]] the library.", "des": "Formal destination." },
+      { "phrase": "회사[[에]] 다녀요.", "pr": "hoesa-[[e]] danyeoyo", "en": "I work [[at]] the company.", "des": "Indicates place of work." }
     ,
-      { "phrase": "학교에 가요.", "pr": "hakgyo-e gayo", "en": "I go to school.", "des": "Destination marker." },
-      { "phrase": "택시로 갑니다.", "pr": "taeksi-ro gamnida", "en": "I go by taxi.", "des": "Means/method of transportation." },
-      { "phrase": "버스로 도서관에 가요.", "pr": "beoseu-ro doseogwan-e gayo", "en": "I go to the library by bus.", "des": "Combination of destination and means." },
-      { "phrase": "자전거로 출근해요.", "pr": "jajeongeo-ro chulgeunhaeyo", "en": "I commute by bicycle.", "des": "Method of transportation." }
+      { "phrase": "학교[[에]] 가요.", "pr": "hakgyo-[[e]] gayo", "en": "I go [[to]] school.", "des": "Destination marker." },
+      { "phrase": "택시[[로]] 갑니다.", "pr": "taeksi-[[ro]] gamnida", "en": "I go [[by]] taxi.", "des": "Means/method of transportation." },
+      { "phrase": "버스[[로]] 도서관에 가요.", "pr": "beoseu-[[ro]] doseogwan-e gayo", "en": "I go to the library [[by]] bus.", "des": "Combination of destination and means." },
+      { "phrase": "자전거[[로]] 출근해요.", "pr": "jajeongeo-[[ro]] chulgeunhaeyo", "en": "I commute [[by]] bicycle.", "des": "Method of transportation." }
     ,
-      { "phrase": "친구를 만나러 가요.", "pr": "chingu-reul mannareo gayo", "en": "I go to meet a friend.", "des": "Indicates purpose of going." },
-      { "phrase": "영화를 보러 갑니다.", "pr": "yeonghwa-reul boreo gamnida", "en": "I go to watch a movie.", "des": "Purpose of going." },
-      { "phrase": "식당에 밥 먹으러 가요.", "pr": "sikdang-e bap meogeureo gayo", "en": "I go to the restaurant to eat.", "des": "Going somewhere with intent to do something." },
-      { "phrase": "도서관에 공부하러 가요.", "pr": "doseogwan-e gongbuhareo gayo", "en": "I go to the library to study.", "des": "Shows reason for going." }
+      { "phrase": "친구를 [[만나러]] 가요.", "pr": "chingu-reul [[mannareo]] gayo", "en": "I go [[to meet]] a friend.", "des": "Indicates purpose of going." },
+      { "phrase": "영화를 [[보러]] 갑니다.", "pr": "yeonghwa-reul [[boreo]] gamnida", "en": "I go [[to watch]] a movie.", "des": "Purpose of going." },
+      { "phrase": "식당에 밥 [[먹으러]] 가요.", "pr": "sikdang-e bap [[meogeureo]] gayo", "en": "I go to the restaurant [[to eat]].", "des": "Going somewhere with intent to do something." },
+      { "phrase": "도서관에 [[공부하러]] 가요.", "pr": "doseogwan-e [[gongbuhareo]] gayo", "en": "I go to the library [[to study]].", "des": "Shows reason for going." }
     ,
-      { "phrase": "오늘 운동하기로 했어요.", "pr": "oneul undong-hagiro haesseoyo", "en": "I decided to exercise today.", "des": "Decision made about future action." },
-      { "phrase": "친구랑 만나기로 했어요.", "pr": "chingu-rang mannagiro haesseoyo", "en": "I decided to meet my friend.", "des": "Plan or agreement." },
-      { "phrase": "저녁에 외식하기로 했어요.", "pr": "jeonyeog-e oesikhagiro haesseoyo", "en": "We decided to eat out for dinner.", "des": "Decision about an activity." },
-      { "phrase": "일찍 자기로 했어요.", "pr": "iljjik jagiro haesseoyo", "en": "I decided to sleep early.", "des": "Decision about personal schedule." }
+      { "phrase": "오늘 운동하[[기로]] 했어요.", "pr": "oneul undong-ha[[giro]] haesseoyo", "en": "I [[decided]] to exercise today.", "des": "Decision made about future action." },
+      { "phrase": "친구랑 만나[[기로]] 했어요.", "pr": "chingu-rang manna[[giro]] haesseoyo", "en": "I [[decided]] to meet my friend.", "des": "Plan or agreement." },
+      { "phrase": "저녁에 외식하[[기로]] 했어요.", "pr": "jeonyeog-e oesikha[[giro]] haesseoyo", "en": "We [[decided]] to eat out for dinner.", "des": "Decision about an activity." },
+      { "phrase": "일찍 자[[기로]] 했어요.", "pr": "iljjik ja[[giro]] haesseoyo", "en": "I [[decided]] to sleep early.", "des": "Decision about personal schedule." }
     ,
-      { "phrase": "민수의 책이에요.", "pr": "Minsu-ui chaeg-ieyo", "en": "It’s Minsu’s book.", "des": "Shows possession." },
-      { "phrase": "한국의 문화가 좋아요.", "pr": "Hangug-ui munhwa-ga joayo", "en": "I like Korean culture.", "des": "Indicates possession or association." },
-      { "phrase": "친구의 이름은 지민이에요.", "pr": "chingu-ui ireum-eun Jimin-ieyo", "en": "My friend’s name is Jimin.", "des": "Polite statement of possession." },
-      { "phrase": "학교의 위치가 좋아요.", "pr": "hakgyo-ui wichi-ga joayo", "en": "The school’s location is good.", "des": "Shows possession or attribute." }
+      { "phrase": "민수[[의]] 책이에요.", "pr": "Minsu-[[ui]] chaeg-ieyo", "en": "It’s Minsu[[’s]] book.", "des": "Shows possession." },
+      { "phrase": "한국[[의]] 문화가 좋아요.", "pr": "Hangug-[[ui]] munhwa-ga joayo", "en": "I like Korean culture.", "des": "Indicates possession or association." },
+      { "phrase": "친구[[의]] 이름은 지민이에요.", "pr": "chingu-[[ui]] ireum-eun Jimin-ieyo", "en": "My friend[[’s]] name is Jimin.", "des": "Polite statement of possession." },
+      { "phrase": "학교[[의]] 위치가 좋아요.", "pr": "hakgyo-[[ui]] wichi-ga joayo", "en": "The school[[’s]] location is good.", "des": "Shows possession or attribute." }
     ,
-      { "phrase": "운동하는 것이 좋아요.", "pr": "undong-haneun geosi joayo", "en": "Exercising is good.", "des": "Nominalizes verb to talk about action as noun." },
-      { "phrase": "읽는 것이 재미있어요.", "pr": "ilg-neun geosi jaemiisseoyo", "en": "Reading is fun.", "des": "Talks about action as a thing." },
-      { "phrase": "공부하는 것이 중요해요.", "pr": "gongbu-haneun geosi jungyohayo", "en": "Studying is important.", "des": "Nominalized action." },
-      { "phrase": "먹는 것이 행복이에요.", "pr": "meok-neun geosi haengbok-ieyo", "en": "Eating is happiness.", "des": "Expresses enjoyment or state of action." }
+      { "phrase": "운동하는 [[것이]] 좋아요.", "pr": "undong-haneun [[geosi]] joayo", "en": "Exercising is good.", "des": "Nominalizes verb to talk about action as noun." },
+      { "phrase": "읽는 [[것이]] 재미있어요.", "pr": "ilg-neun [[geosi]] jaemiisseoyo", "en": "Reading is fun.", "des": "Talks about action as a thing." },
+      { "phrase": "공부하는 [[것이]] 중요해요.", "pr": "gongbu-haneun [[geosi]] jungyohayo", "en": "Studying is important.", "des": "Nominalized action." },
+      { "phrase": "먹는 [[것이]] 행복이에요.", "pr": "meok-neun [[geosi]] haengbok-ieyo", "en": "Eating is happiness.", "des": "Expresses enjoyment or state of action." }
 
   ],"course6":[
 
-      { "phrase": "저는 책을 읽고 있어요.", "pr": "jeoneun chaeg-eul ilgo isseoyo", "en": "I am reading a book.", "des": "Action in progress." },
-      { "phrase": "그는 지금 공부하고 있어요.", "pr": "geuneun jigeum gongbuhago isseoyo", "en": "He is studying now.", "des": "Ongoing action." },
-      { "phrase": "학생들이 운동하고 있어요.", "pr": "haksaengdeul-i undonghago isseoyo", "en": "The students are exercising.", "des": "Current activity." },
-      { "phrase": "저희가 회의하고 있어요.", "pr": "jeohui-ga hoeuihago isseoyo", "en": "We are having a meeting.", "des": "Ongoing meeting." }
+      { "phrase": "저는 책을 읽[[고 있어요]].", "pr": "jeoneun chaeg-eul il[[go isseoyo]]", "en": "I am read[[ing]] a book.", "des": "Action in progress." },
+      { "phrase": "그는 지금 공부하[[고 있어요]].", "pr": "geuneun jigeum gongbuha[[go isseoyo]]", "en": "He is study[[ing]] now.", "des": "Ongoing action." },
+      { "phrase": "학생들이 운동하[[고 있어요]].", "pr": "haksaengdeul-i undongha[[go isseoyo]]", "en": "The students are exercis[[ing]].", "des": "Current activity." },
+      { "phrase": "저희가 회의하[[고 있어요]].", "pr": "jeohui-ga hoeuiha[[go isseoyo]]", "en": "We are having a meet[[ing]].", "des": "Ongoing meeting." }
     ,
-      { "phrase": "물 한 잔 주세요.", "pr": "mul han jan juseyo", "en": "Please give me a glass of water.", "des": "Polite request." },
-      { "phrase": "사진 찍어 주세요.", "pr": "sajin jjigeo juseyo", "en": "Please take a photo.", "des": "Polite request to take a photo." },
-      { "phrase": "도와 주세요.", "pr": "dowa juseyo", "en": "Please help me.", "des": "Asking for assistance politely." },
-      { "phrase": "문을 열어 주세요.", "pr": "mun-eul yeoreo juseyo", "en": "Please open the door.", "des": "Polite request to open." }
+      { "phrase": "물 한 잔 [[주세요]].", "pr": "mul han jan [[juseyo]]", "en": "[[Please]] give me a glass of water.", "des": "Polite request." },
+      { "phrase": "사진 찍어 [[주세요]].", "pr": "sajin jjigeo [[juseyo]]", "en": "[[Please]] take a photo.", "des": "Polite request to take a photo." },
+      { "phrase": "도와 [[주세요]].", "pr": "dowa [[juseyo]]", "en": "[[Please]] help me.", "des": "Asking for assistance politely." },
+      { "phrase": "문을 열어 [[주세요]].", "pr": "mun-eul yeoreo [[juseyo]]", "en": "[[Please]] open the door.", "des": "Polite request to open." }
     ,
-      { "phrase": "여기 앉아도 돼요.", "pr": "yeogi anjado dwaeyo", "en": "You may sit here.", "des": "Permission granted." },
-      { "phrase": "사진을 찍어도 돼요.", "pr": "sajin-eul jjigeodo dwaeyo", "en": "You may take a photo.", "des": "Allowed action." },
-      { "phrase": "늦어도 돼요.", "pr": "neujeodo dwaeyo", "en": "It’s okay to be late.", "des": "Permission or flexibility." },
-      { "phrase": "여기서 쉬어도 돼요.", "pr": "yeogiseo swieodo dwaeyo", "en": "You may rest here.", "des": "Allowed to rest." }
+      { "phrase": "여기 앉아도 [[돼요]].", "pr": "yeogi anjado [[dwaeyo]]", "en": "You may sit here.", "des": "Permission granted." },
+      { "phrase": "사진을 찍어도 [[돼요]].", "pr": "sajin-eul jjigeodo [[dwaeyo]]", "en": "You may take a photo.", "des": "Allowed action." },
+      { "phrase": "늦어도 [[돼요]].", "pr": "neujeodo [[dwaeyo]]", "en": "It’s okay to be late.", "des": "Permission or flexibility." },
+      { "phrase": "여기서 쉬어도 [[돼요]].", "pr": "yeogiseo swieodo [[dwaeyo]]", "en": "You may rest here.", "des": "Allowed to rest." }
     ,
-      { "phrase": "밥을 먹고 나서 공부해요.", "pr": "bap-eul meokgo naseo gongbuhaeyo", "en": "I study after eating.", "des": "Action following another." },
-      { "phrase": "영화를 보고 나서 이야기했어요.", "pr": "yeonghwa-reul bogo naseo iyagihaesseoyo", "en": "We talked after watching the movie.", "des": "Sequence of actions." },
-      { "phrase": "회의가 끝나고 나서 점심 먹어요.", "pr": "hoeui-ga kkeutnago naseo jeomsim meogeoyo", "en": "We have lunch after the meeting.", "des": "Event order." },
-      { "phrase": "운동하고 나서 샤워했어요.", "pr": "undonghago naseo syawohaesseoyo", "en": "I showered after exercising.", "des": "Past action sequence." }
+      { "phrase": "밥을 먹[[고 나서]] 공부해요.", "pr": "bap-eul meok[[go naseo]] gongbuhaeyo", "en": "I study [[after]] eating.", "des": "Action following another." },
+      { "phrase": "영화를 보[[고 나서]] 이야기했어요.", "pr": "yeonghwa-reul bo[[go naseo]] iyagihaesseoyo", "en": "We talked [[after]] watching the movie.", "des": "Sequence of actions." },
+      { "phrase": "회의가 끝나[[고]] 나서 점심 먹어요.", "pr": "hoeui-ga kkeutna[[go naseo]] jeomsim meogeoyo", "en": "We have lunch [[after]] the meeting.", "des": "Event order." },
+      { "phrase": "운동하[[고 나서]] 샤워했어요.", "pr": "undongha[[go naseo]] syawohaesseoyo", "en": "I showered [[after]] exercising.", "des": "Past action sequence." }
     ,
       { "phrase": "여기서 담배를 피우면 안 돼요.", "pr": "yeogiseo dambae-reul piumyeon an dwaeyo", "en": "You must not smoke here.", "des": "Prohibition." },
       { "phrase": "늦으면 안 돼요.", "pr": "neujeumyeon an dwaeyo", "en": "You must not be late.", "des": "Strict rule." },
