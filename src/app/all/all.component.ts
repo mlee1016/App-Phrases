@@ -11,7 +11,7 @@ type PhraseCourse = {
   category: string;
   lessons: [{phrase: string, pr: string, en: string},];
 };
-export interface UnifiedPhrase {
+export interface UnifiedPhrase { 
   phrase: string;
   pr: string;
   en: string;
