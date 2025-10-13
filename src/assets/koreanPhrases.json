@@ -7682,6 +7682,12 @@
   "course1": [
 
     {
+      "phrase": "오천 원[[쯤]] 있어요.",
+      "pr": "o-cheon won-[[jjeum]] i-sseo-yo",
+      "en": "I have [[about]] 5,000 won.",
+      "des": "Approximate amount of money."
+    },
+    {
       "phrase": "비가 와요. [[하지만]] 갈 거예요.",
       "pr": "bi-ga wa-yo. [[ha-ji-man]] gal geo-ye-yo",
       "en": "It’s raining, [[but]] I will go.",
@@ -7771,12 +7777,6 @@
       "pr": "han si-gan-[[jjeum]] geol-lyeo-yo",
       "en": "It takes [[about]] an hour.",
       "des": "Approximate duration."
-    },
-    {
-      "phrase": "오천 원[[쯤]] 있어요.",
-      "pr": "o-cheon won-[[jjeum]] i-sseo-yo",
-      "en": "I have [[about]] 5,000 won.",
-      "des": "Approximate amount of money."
     }
   ],
   "course2": [
