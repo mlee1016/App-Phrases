@@ -619,7 +619,7 @@
   {
     "phrase": "Non arrivo [[mai]] in ritardo.",
     "pr": "non ar-ree-voh [[mai]] een ree-tar-doh",
-    "en": "I never]] arrive late.",
+    "en": "I [[never]] arrive late.",
     "des": "'Mai' means 'never', used with 'non', like 'никогда'."
   }
   ],
@@ -2220,93 +2220,93 @@
 
 
 "part1":[    
-        { "phrase": "Non voglio uscire.", "pr": "Non vo-glio u-sci-re.", "en": "I do not want to go out.", "des": "Used to negate a verb." },
-        { "phrase": "Non ho fame.", "pr": "Non ho fa-me.", "en": "I am not hungry.", "des": "Negates a state or condition." },
-        { "phrase": "Non capisco.", "pr": "Non ca-pi-sco.", "en": "I do not understand.", "des": "Used to express lack of understanding." },
-        { "phrase": "Non posso venire.", "pr": "Non pos-so ve-ni-re.", "en": "I cannot come.", "des": "Used to indicate inability." }
+        { "phrase": "[[Non]] voglio uscire.", "pr": "[[Non]] vo-glio u-sci-re.", "en": "I do [[not]] want to go out.", "des": "Used to negate a verb." },
+        { "phrase": "[[Non]] ho fame.", "pr": "[[Non]] ho fa-me.", "en": "I am [[not]] hungry.", "des": "Negates a state or condition." },
+        { "phrase": "[[Non]] capisco.", "pr": "[[Non]] ca-pi-sco.", "en": "I do [[not]] understand.", "des": "Used to express lack of understanding." },
+        { "phrase": "[[Non]] posso venire.", "pr": "[[Non]] pos-so ve-ni-re.", "en": "I [[cannot]] come.", "des": "Used to indicate inability." }
       
     ,
     
-        { "phrase": "Non voglio tè né caffè.", "pr": "Non vo-glio tè ne caf-fè.", "en": "I want neither tea nor coffee.", "des": "Connects two negative options." },
-        { "phrase": "Non canta né balla.", "pr": "Non can-ta ne bal-la.", "en": "He/She neither sings nor dances.", "des": "Indicates two negated actions." },
-        { "phrase": "Non ho né tempo né soldi.", "pr": "Non ho ne tem-po ne sol-di.", "en": "I have neither time nor money.", "des": "Negates multiple things." }
+        { "phrase": "[[Non]] voglio tè [[né]] caffè.", "pr": "[[Non]] vo-glio tè [[ne]] caf-fè.", "en": "I want [[neither]] tea [[nor]] coffee.", "des": "Connects two negative options." },
+        { "phrase": "[[Non]] canta [[né]] balla.", "pr": "[[Non]] can-ta [[ne]] bal-la.", "en": "He/She [[neither]] sings [[nor]] dances.", "des": "Indicates two negated actions." },
+        { "phrase": "[[Non]] ho [[né]] tempo [[né]] soldi.", "pr": "[[Non]] ho [[ne]] tem-po [[ne]] sol-di.", "en": "I have [[neither]] time [[nor]] money.", "des": "Negates multiple things." }
       
     ,
     
-        { "phrase": "Io vado al cinema, anche Luca.", "pr": "Io va-do al chi-ne-ma, an-ke Lu-ca.", "en": "I go to the cinema, and Luca too.", "des": "Includes someone additionally." },
-        { "phrase": "Mi piace il gelato, anche a te.", "pr": "Mi pia-ce il ge-la-to, an-ke a te.", "en": "I like ice cream, and you too.", "des": "Indicates similarity." },
-        { "phrase": "Anche oggi è caldo.", "pr": "An-ke o-ggi è cal-do.", "en": "Today is hot too.", "des": "Adds emphasis to a situation." }
+        { "phrase": "Io vado al cinema, [[anche]] Luca.", "pr": "Io va-do al chi-ne-ma, an-ke Lu-ca.", "en": "I go to the cinema, [[and]] Luca too.", "des": "Includes someone additionally." },
+        { "phrase": "Mi piace il gelato, [[anche a]] te.", "pr": "Mi pia-ce il ge-la-to, an-ke a te.", "en": "I like ice cream, [[and]] you too.", "des": "Indicates similarity." },
+        { "phrase": "Anche [[oggi]] è caldo.", "pr": "An-ke [[o-ggi]] è cal-do.", "en": "Today is hot [[too]].", "des": "Adds emphasis to a situation." }
       
     ,
     
-        { "phrase": "Non ho finito ancora.", "pr": "Non ho fi-ni-to an-ko-ra.", "en": "I haven’t finished yet.", "des": "Indicates ongoing action." },
-        { "phrase": "Lui è ancora a casa.", "pr": "Lui è an-ko-ra a ca-sa.", "en": "He is still at home.", "des": "Expresses continuation." },
-        { "phrase": "Vuoi ancora un po’ di torta?", "pr": "Vuoi an-ko-ra un po’ di tor-ta?", "en": "Do you want more cake?", "des": "Indicates additional quantity." }
+        { "phrase": "Non ho finito [[ancora]].", "pr": "Non ho fi-ni-to [[an-ko-ra]].", "en": "I [[haven’t]] finished yet.", "des": "Indicates ongoing action." },
+        { "phrase": "Lui è [[ancora]] a casa.", "pr": "Lui è [[an-ko-ra]] a ca-sa.", "en": "He is [[still]] at home.", "des": "Expresses continuation." },
+        { "phrase": "Vuoi [[ancora]] un po’ di torta?", "pr": "Vuoi [[an-ko-ra]] un po’ di tor-ta?", "en": "Do you want more cake?", "des": "Indicates additional quantity." }
       
     ,
     
-        { "phrase": "Ho già finito i compiti.", "pr": "Ho già fi-ni-to i com-pi-ti.", "en": "I have already finished the homework.", "des": "Indicates completed action." },
-        { "phrase": "Siamo già arrivati.", "pr": "Sia-mo già ar-ri-va-ti.", "en": "We have already arrived.", "des": "Indicates completion." },
-        { "phrase": "Hai già visto questo film?", "pr": "Hai già vi-sto que-sto film?", "en": "Have you already seen this movie?", "des": "Asks if an action is completed." }
+        { "phrase": "Ho [[già]] finito i compiti.", "pr": "Ho [[già]] fi-ni-to i com-pi-ti.", "en": "I have [[already]] finished the homework.", "des": "Indicates completed action." },
+        { "phrase": "Siamo [[già]] arrivati.", "pr": "Sia-mo [[già]] ar-ri-va-ti.", "en": "We have [[already]] arrived.", "des": "Indicates completion." },
+        { "phrase": "Hai [[già]] visto questo film?", "pr": "Hai [[già]] vi-sto que-sto film?", "en": "Have you [[already]] seen this movie?", "des": "Asks if an action is completed." }
       
     ,
     
-        { "phrase": "Sono sempre felice.", "pr": "So-no sem-pre fe-li-ce.", "en": "I am always happy.", "des": "Indicates a constant state." },
-        { "phrase": "Lui è sempre puntuale.", "pr": "Lui è sem-pre pun-tua-le.", "en": "He is always punctual.", "des": "Describes habitual action." },
-        { "phrase": "Vado sempre a scuola a piedi.", "pr": "Va-do sem-pre a sco-la a pie-di.", "en": "I always go to school on foot.", "des": "Indicates repetition." }
+        { "phrase": "Sono [[sempre]] felice.", "pr": "So-no [[sem-pre]] fe-li-ce.", "en": "I am [[always]] happy.", "des": "Indicates a constant state." },
+        { "phrase": "Lui è [[sempre]] puntuale.", "pr": "Lui è [[sem-pre]] pun-tua-le.", "en": "He is [[always]] punctual.", "des": "Describes habitual action." },
+        { "phrase": "Vado [[sempre]] a scuola a piedi.", "pr": "Va-do [[sem-pre]] a sco-la a pie-di.", "en": "I [[always]] go to school on foot.", "des": "Indicates repetition." }
       ,
-        { "phrase": "Non ho mai visitato Roma.", "pr": "Non ho mai vi-si-ta-to Ro-ma.", "en": "I have never visited Rome.", "des": "Indicates action never done." },
-        { "phrase": "Non mangio mai carne.", "pr": "Non man-gio mai car-ne.", "en": "I never eat meat.", "des": "Expresses habitual negation." },
-        { "phrase": "Mai dire mai.", "pr": "Mai di-re mai.", "en": "Never say never.", "des": "Proverbial expression." }
+        { "phrase": "Non ho [[mai]] visitato Roma.", "pr": "Non ho [[mai]] vi-si-ta-to Ro-ma.", "en": "I have [[never]] visited Rome.", "des": "Indicates action never done." },
+        { "phrase": "Non mangio [[mai]] carne.", "pr": "Non man-gio [[mai]] car-ne.", "en": "I [[never]] eat meat.", "des": "Expresses habitual negation." },
+        { "phrase": "[[Mai]] dire [[mai]].", "pr": "[[Mai]] di-re [[mai]].", "en": "[[Never]] say [[never]].", "des": "Proverbial expression." }
         
-        ,{ "phrase": "Questo è il mio libro.", "pr": "Kwes-to è il mio li-bro.", "en": "This is my book.", "des": "Indicates a specific object close by." },
-        { "phrase": "Non mi piace questo film.", "pr": "Non mi pia-ce kwes-to film.", "en": "I don’t like this movie.", "des": "Refers to a specific thing." },
-        { "phrase": "Prendi questo.", "pr": "Pren-di kwes-to.", "en": "Take this.", "des": "Used to point out an item." }
+        ,{ "phrase": "[[Questo]] è il mio libro.", "pr": "[[Kwes-to]] è il mio li-bro.", "en": "This is my book.", "des": "Indicates a specific object close by." },
+        { "phrase": "Non mi piace [[questo]] film.", "pr": "Non mi pia-ce [[kwes-to]] film.", "en": "I don’t like this movie.", "des": "Refers to a specific thing." },
+        { "phrase": "Prendi [[questo]].", "pr": "Pren-di [[kwes-to]].", "en": "Take this.", "des": "Used to point out an item." }
       
     ,
     
-        { "phrase": "Vieni qui!", "pr": "Vie-ni kwi!", "en": "Come here!", "des": "Indicates location close to speaker." },
-        { "phrase": "Metti la sedia qui.", "pr": "Met-ti la sie-dia kwi.", "en": "Put the chair here.", "des": "Indicates placement." },
-        { "phrase": "Resta qui con me.", "pr": "Re-sta kwi kon me.", "en": "Stay here with me.", "des": "Indicates proximity." }
+        { "phrase": "Vieni [[qui]]!", "pr": "Vie-ni [[kwi]]!", "en": "Come [[here]]!", "des": "Indicates location close to speaker." },
+        { "phrase": "Metti la sedia [[qui]].", "pr": "Met-ti la sie-dia [[kwi]].", "en": "Put the chair [[here]].", "des": "Indicates placement." },
+        { "phrase": "Resta [[qui]] con me.", "pr": "Re-sta [[kwi]] kon me.", "en": "Stay [[here]] with me.", "des": "Indicates proximity." }
       ,
     
-        { "phrase": "Non sono andato a scuola perché ero malato.", "pr": "Non so-no an-da-to a sco-la per-ke e-ro ma-la-to.", "en": "I didn’t go to school because I was sick.", "des": "Gives a reason for an action." },
-        { "phrase": "Ho fame perché non ho mangiato.", "pr": "Ho fa-me per-ke non ho man-gia-to.", "en": "I’m hungry because I didn’t eat.", "des": "Indicates cause or explanation." },
-        { "phrase": "Lui piange perché è triste.", "pr": "Lui pjan-ge per-ke è tris-te.", "en": "He is crying because he is sad.", "des": "Shows cause of emotion." }
+        { "phrase": "Non sono andato a scuola [[perché]] ero malato.", "pr": "Non so-no an-da-to a sco-la [[per-ke]] e-ro ma-la-to.", "en": "I didn’t go to school [[because]] I was sick.", "des": "Gives a reason for an action." },
+        { "phrase": "Ho fame [[perché]] non ho mangiato.", "pr": "Ho fa-me [[per-ke]] non ho man-gia-to.", "en": "I’m hungry [[because]] I didn’t eat.", "des": "Indicates cause or explanation." },
+        { "phrase": "Lui piange [[perché]] è triste.", "pr": "Lui pjan-ge [[per-ke]] è tris-te.", "en": "He is crying [[because]] he is sad.", "des": "Shows cause of emotion." }
       
     ,
-        { "phrase": "Parla piano così che tutti capiscano.", "pr": "Par-la pia-no ko-zi ke tut-ti ca-pi-sca-no.", "en": "Speak slowly so that everyone understands.", "des": "Indicates purpose." },
-        { "phrase": "Ho studiato molto così che potessi superare l’esame.", "pr": "Ho stu-dia-to mol-to ko-zi ke po-tes-si su-pe-ra-re l’e-sa-me.", "en": "I studied a lot so that I could pass the exam.", "des": "Shows intended result." },
-        { "phrase": "Scrivo una lista così che non dimentichi nulla.", "pr": "Scri-vo u-na li-sta ko-zi ke non di-men-ti-chi nul-la.", "en": "I write a list so that I don’t forget anything.", "des": "Purpose of action." }
+        { "phrase": "Parla piano [[così]] che tutti capiscano.", "pr": "Par-la pia-no [[ko-zi]] ke tut-ti ca-pi-sca-no.", "en": "Speak slowly [[so that]] everyone understands.", "des": "Indicates purpose." },
+        { "phrase": "Ho studiato molto [[così]] che potessi superare l’esame.", "pr": "Ho stu-dia-to mol-to [[ko-zi]] ke po-tes-si su-pe-ra-re l’e-sa-me.", "en": "I studied a lot [[so that]] I could pass the exam.", "des": "Shows intended result." },
+        { "phrase": "Scrivo una lista [[così]] che non dimentichi nulla.", "pr": "Scri-vo u-na li-sta [[ko-zi]] ke non di-men-ti-chi nul-la.", "en": "I write a list [[so that]] I don’t forget anything.", "des": "Purpose of action." }
       ,
     
-        { "phrase": "Ascolto musica mentre studio.", "pr": "As-col-to mu-si-ca men-tre stu-dio.", "en": "I listen to music while I study.", "des": "Simultaneous actions." },
-        { "phrase": "Parla mentre guida.", "pr": "Par-la men-tre gui-da.", "en": "He talks while driving.", "des": "Indicates two things happening together." },
-        { "phrase": "Lui cucina mentre io apparecchio la tavola.", "pr": "Lui cu-ci-na men-tre io ap-pa-rec-chio la ta-vo-la.", "en": "He cooks while I set the table.", "des": "Shows simultaneous tasks." }
+        { "phrase": "Ascolto musica [[mentre]] studio.", "pr": "As-col-to mu-si-ca [[men-tre]] stu-dio.", "en": "I listen to music [[while]] I study.", "des": "Simultaneous actions." },
+        { "phrase": "Parla [[mentre]] guida.", "pr": "Par-la [[men-tre]] gui-da.", "en": "He talks [[while]] driving.", "des": "Indicates two things happening together." },
+        { "phrase": "Lui cucina [[mentre]] io apparecchio la tavola.", "pr": "Lui cu-ci-na [[men-tre]] io ap-pa-rec-chio la ta-vo-la.", "en": "He cooks [[while]] I set the table.", "des": "Shows simultaneous tasks." }
       
     ,
     
-        { "phrase": "Ho finito i compiti, allora posso uscire.", "pr": "Ho fi-ni-to i com-pi-ti, al-lo-ra pos-so u-sci-re.", "en": "I finished my homework, then I can go out.", "des": "Indicates consequence." },
-        { "phrase": "Se vuoi venire, allora andiamo.", "pr": "Se vuoi ve-ni-re, al-lo-ra an-dia-mo.", "en": "If you want to come, then let's go.", "des": "Shows sequence or result." },
-        { "phrase": "Allora, cosa facciamo?", "pr": "Al-lo-ra, co-sa fa-ccia-mo?", "en": "So, what do we do?", "des": "Introduces next step or conclusion." }
+        { "phrase": "Ho finito i compiti, [[allora]] posso uscire.", "pr": "Ho fi-ni-to i com-pi-ti, [[al-lo-ra]] pos-so u-sci-re.", "en": "I finished my homework, [[then]] I can go out.", "des": "Indicates consequence." },
+        { "phrase": "Se vuoi venire, [[allora]] andiamo.", "pr": "Se vuoi ve-ni-re, [[al-lo-ra]] an-dia-mo.", "en": "If you want to come, [[then]] let's go.", "des": "Shows sequence or result." },
+        { "phrase": "[[Allora]], cosa facciamo?", "pr": "[[Al-lo-ra]], co-sa fa-ccia-mo?", "en": "[[So]], what do we do?", "des": "Introduces next step or conclusion." }
       
     ,
   
-        { "phrase": "Non ho soldi, quindi non posso comprare il libro.", "pr": "Non ho sol-di, kwi-n-di non pos-so com-pra-re il li-bro.", "en": "I have no money, therefore I cannot buy the book.", "des": "Shows logical result." },
-        { "phrase": "Piove, quindi restiamo a casa.", "pr": "Pjo-ve, kwi-n-di re-stia-mo a ca-sa.", "en": "It’s raining, so we stay home.", "des": "Cause and effect." },
-        { "phrase": "Ha studiato molto, quindi ha superato l’esame.", "pr": "Ha stu-dia-to mol-to, kwi-n-di ha su-pe-ra-to l’e-sa-me.", "en": "He studied a lot, so he passed the exam.", "des": "Indicates result." }
+        { "phrase": "Non ho soldi, [[quindi]] non posso comprare il libro.", "pr": "Non ho sol-di, [[kwi-n-di]] non pos-so com-pra-re il li-bro.", "en": "I have no money, [[therefore]] I cannot buy the book.", "des": "Shows logical result." },
+        { "phrase": "Piove, [[quindi]] restiamo a casa.", "pr": "Pjo-ve, [[kwi-n-di]] re-stia-mo a ca-sa.", "en": "It’s raining, [[so]] we stay home.", "des": "Cause and effect." },
+        { "phrase": "Ha studiato molto, [[quindi]] ha superato l’esame.", "pr": "Ha stu-dia-to mol-to, [[kwi-n-di]] ha su-pe-ra-to l’e-sa-me.", "en": "He studied a lot, [[so]] he passed the exam.", "des": "Indicates result." }
       
     ,
     
-        { "phrase": "Vado a correre anche se piove.", "pr": "Va-do a cor-re-re an-ke se pjo-ve.", "en": "I go running although it’s raining.", "des": "Shows contrast to expectation." },
-        { "phrase": "Mangio la pizza anche se non ho fame.", "pr": "Man-gio la piz-za an-ke se non ho fa-me.", "en": "I eat pizza although I’m not hungry.", "des": "Indicates contrast." },
-        { "phrase": "Studia, anche se è stanco.", "pr": "Stu-dia, an-ke se è stan-co.", "en": "He studies, although he is tired.", "des": "Shows contrast to condition." }
+        { "phrase": "Vado a correre [[anche se]] piove.", "pr": "Va-do a cor-re-re [[an-ke se]] pjo-ve.", "en": "I go running [[although]] it’s raining.", "des": "Shows contrast to expectation." },
+        { "phrase": "Mangio la pizza [[anche se]] non ho fame.", "pr": "Man-gio la piz-za [[an-ke se]] non ho fa-me.", "en": "I eat pizza [[although]] I’m not hungry.", "des": "Indicates contrast." },
+        { "phrase": "Studia, [[anche se]] è stanco.", "pr": "Stu-dia, [[an-ke se]] è stan-co.", "en": "He studies, [[although]] he is tired.", "des": "Shows contrast to condition." }
       
     ,
     
-        { "phrase": "Io leggo mentre che lui guarda la TV.", "pr": "Io le-ggo men-tre ke lui guar-da la TV.", "en": "I read whereas he watches TV.", "des": "Contrasts two simultaneous actions." },
-        { "phrase": "Lei cucina mentre che lui pulisce.", "pr": "Lei cu-ci-na men-tre ke lui pu-li-sce.", "en": "She cooks whereas he cleans.", "des": "Shows contrasting roles." },
-        { "phrase": "Loro parlano mentre che noi ascoltiamo.", "pr": "Lo-ro par-la-no men-tre ke noi as-col-tia-mo.", "en": "They talk whereas we listen.", "des": "Indicates contrast." }
+        { "phrase": "Io leggo [[mentre che]] lui guarda la TV.", "pr": "Io le-ggo [[men-tre ke]] lui guar-da la TV.", "en": "I read [[whereas]] he watches TV.", "des": "Contrasts two simultaneous actions." },
+        { "phrase": "Lei cucina [[mentre che]] lui pulisce.", "pr": "Lei cu-ci-na [[men-tre ke]] lui pu-li-sce.", "en": "She cooks [[whereas]] he cleans.", "des": "Shows contrasting roles." },
+        { "phrase": "Loro parlano [[mentre che]] noi ascoltiamo.", "pr": "Lo-ro par-la-no [[men-tre ke]] noi as-col-tia-mo.", "en": "They talk [[whereas]] we listen.", "des": "Indicates contrast." }
       ]
 
 }

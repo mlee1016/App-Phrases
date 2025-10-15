@@ -68,16 +68,17 @@
         ⏹ Stop
       </button>
     </div>
-    <!-- Phrase Card 
-              (mouseover)="onHover(i, selectLang, currentPhrase)"
-              (mouseleave)="clearHover()"-->
 
+    <!-- Phrase Card -->
     <div *ngIf="!sidebarOpen" 
          class="bg-white shadow-lg rounded-2xl p-6 text-center border border-cyan-200 max-w-2xl mx-auto">
       
       <div class="mb-3 text-xl font-semibold text-cyan-700 space-x-1 tracking-wide">
         <span *ngFor="let word of currentPhrase[selectLang]; let i = index"
 
+        
+              (mouseover)="onHover(i, selectLang, currentPhrase)"
+              (mouseleave)="clearHover()"
               [ngClass]="{
                 'bg-cyan-500 text-white': isActive(i, selectLang),
                 'inline-block px-2 py-1 rounded-lg cursor-pointer transition': true

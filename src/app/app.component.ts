@@ -83,7 +83,11 @@ export class AppComponent {
 
     let storage = localStorage.getItem('jwt') ?? false
 
-    if(localStorage.length != 0){token_= localStorage.getItem('jwt')}
+    // if(localStorage.length != 0)
+
+    
+  if (typeof window !== 'undefined' && typeof localStorage !== 'undefined') 
+      {token_= localStorage.getItem('jwt')}
 
     this.http.post(this.url_get_user,{'jwt':token_},{withCredentials:true}).subscribe((data:any)=>{   
 
@@ -118,12 +122,12 @@ export class AppComponent {
       error: (err) => {
         console.error('Failed to load phrases', err);
       }
-    });
+    });*/
   
 
 
 
-    */
+    
 
 
     if (isPlatformBrowser(this.platformId)) {
@@ -174,7 +178,7 @@ closeSidebar() {
   this.seePhrases = false;
 }
 
-  signOut(){
+  logOut(){
     this.http.post(this.url_sign_out,this.reactiveForm.getRawValue()).subscribe({
       next:(res:any)=>{
         localStorage.setItem("jwt","")

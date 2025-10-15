@@ -1823,10 +1823,10 @@
   { "phrase": "授業は　三時　まで　です。", "pr": "じゅぎょう は さんじ まで です。", "en": "The class is until 3 o'clock." },
   { "phrase": "家　まで　送ります。", "pr": "いえ まで おくります。", "en": "I will take you home." },
 
-  { "phrase": "これから　勉強します。", "pr": "これから べんきょう します。", "en": "I will study from now." },
-  { "phrase": "これから　雨が　降る　そうです。", "pr": "これから あめ が ふる そう です。", "en": "It seems it will rain soon." },
-  { "phrase": "これから　会議が　あります。", "pr": "これから かいぎ が あります。", "en": "There will be a meeting from now." },
-  { "phrase": "これから　旅行に　行きます。", "pr": "これから りょこう に いきます。", "en": "I will go on a trip soon." },
+  { "phrase": "[[これから]]　勉強します。", "pr": "[[これから]] べんきょう します。", "en": "I will study [[from]] now." },
+  { "phrase": "これから　雨が　降る　そうです。", "pr": "[[これから]] あめ が ふる そう です。", "en": "It seems it will rain [[soon]]." },
+  { "phrase": "これから　会議が　あります。", "pr": "[[これから]] かいぎ が あります。", "en": "There will be a meeting [[from now]]." },
+  { "phrase": "これから　旅行に　行きます。", "pr": "[[これから]] りょこう に いきます。", "en": "I will go on a trip [[soon]]." },
 
   { "phrase": "まだ　宿題を　しています。", "pr": "まだ しゅくだい を しています。", "en": "I am still doing my homework." },
   { "phrase": "まだ　来ません。", "pr": "まだ きません。", "en": "He/she has not come yet." },
@@ -1841,20 +1841,20 @@
   { "phrase": "彼は  30歳  くらい  です。", "pr": "かれ は さんじゅっさい くらい です。", "en": "He is about 30 years old." },
   { "phrase": "この  ケーキは  大きさは  手のひら  くらい  です。", "pr": "この けーき は おおきさ は て の ひら くらい です。", "en": "This cake is about the size of a palm." },
 
-  { "phrase": "富士山は  日本で  いちばん  高い  山  です。", "pr": "ふじさん は にほん で いちばん たかい やま です。", "en": "Mount Fuji is the tallest mountain in Japan." },
-  { "phrase": "彼女は  いちばん  優しい  です。", "pr": "かのじょ は いちばん やさしい です。", "en": "She is the kindest." },
-  { "phrase": "今日は  一番  暑い  日  です。", "pr": "きょう は いちばん あつい ひ です。", "en": "Today is the hottest day." },
-  { "phrase": "いちばん  好きな  色は  青  です。", "pr": "いちばん すき な いろ は あお です。", "en": "My favorite color is blue." },
+  { "phrase": "富士山は  日本で  [[一番]]  高い  山  です。", "pr": "ふじさん は にほん で [[いちばん]] たかい やま です。", "en": "Mount Fuji is the tallest mountain in Japan." },
+  { "phrase": "彼女は  一番  優しい  です。", "pr": "かのじょ は いちばん やさしい です。", "en": "She is the kindest." },
+  { "phrase": "今日は  [[一番]]  暑い  日  です。", "pr": "きょう は [[いちばん]] あつい ひ です。", "en": "Today is the hottest day." },
+  { "phrase": "[[一番]]  好きな  色は  青  です。", "pr": "いちばん すき な いろ は あお です。", "en": "My favorite color is blue." },
 
-  { "phrase": "コーヒーより  お茶のほうが  好き  です。", "pr": "こーひー より おちゃ の ほう が すき です。", "en": "I like tea more than coffee." },
-  { "phrase": "今日は  昨日より  暑い  です。", "pr": "きょう は きのう より あつい です。", "en": "Today is hotter than yesterday." },
-  { "phrase": "この  映画は  前のより  面白い  です。", "pr": "この えいが は まえ の より おもしろい です。", "en": "This movie is more interesting than the previous one." },
-  { "phrase": "犬より  猫のほうが  可愛い  です。", "pr": "いぬ より ねこ の ほう が かわいい です。", "en": "Cats are cuter than dogs." },
+  { "phrase": "コーヒー [[より]]  お茶のほうが  好き  です。", "pr": "こーひー [[より]] おちゃ の ほう が すき です。", "en": "I like tea more than coffee." },
+  { "phrase": "今日は  昨日 [[より]]  暑い  です。", "pr": "きょう は きのう [[より]] あつい です。", "en": "Today is hotter than yesterday." },
+  { "phrase": "この  映画は  前の [[より]]  面白い  です。", "pr": "この えいが は まえ の [[より]] おもしろい です。", "en": "This movie is more interesting than the previous one." },
+  { "phrase": "犬 [[より]]  猫のほうが  可愛い  です。", "pr": "いぬ [[より]] ねこ の ほう が かわいい です。", "en": "Cats are cuter than dogs." },
 
-  { "phrase": "これだけ  ください。", "pr": "これ だけ ください。", "en": "Please give me only this." },
-  { "phrase": "私は  見るだけ  です。", "pr": "わたし は みる だけ です。", "en": "I will just watch." },
-  { "phrase": "一人だけ  来ました。", "pr": "ひとり だけ きました。", "en": "Only one person came." },
-  { "phrase": "この  部屋だけ  暖かい  です。", "pr": "この へや だけ あたたかい です。", "en": "Only this room is warm." },
+  { "phrase": "これ [[だけ]]  ください。", "pr": "これ [[だけ]] ください。", "en": "Please give me only this." },
+  { "phrase": "私は  見る [[だけ]]  です。", "pr": "わたし は みる [[だけ]] です。", "en": "I will just watch." },
+  { "phrase": "一人 [[だけ]]  来ました。", "pr": "ひとり [[だけ]] きました。", "en": "Only one person came." },
+  { "phrase": "この  部屋 [[だけ]]  暖かい  です。", "pr": "この へや [[だけ]] あたたかい です。", "en": "Only this room is warm." },
 
   { "phrase": "もう  食べました。", "pr": "もう たべました。", "en": "I have already eaten." },
   { "phrase": "もう  終わりましたか？", "pr": "もう おわりました か？", "en": "Have you finished already?" },
@@ -1883,20 +1883,20 @@
   { "phrase": "雨が  降っています。", "pr": "あめ が ふって います。", "en": "It is raining." },
   { "phrase": "ドアが  開いて  います。", "pr": "どあ が あいて います。", "en": "The door is open." },
 
-  { "phrase": "窓を  開けて  ください。", "pr": "まど を あけて ください。", "en": "Please open the window." },
-  { "phrase": "名前を  書いて  ください。", "pr": "なまえ を かいて ください。", "en": "Please write your name." },
-  { "phrase": "座って  ください。", "pr": "すわって ください。", "en": "Please sit down." },
-  { "phrase": "ゆっくり  話して  ください。", "pr": "ゆっくり はなして ください。", "en": "Please speak slowly." },
+  { "phrase": "窓を  開けて  [[ください。]]", "pr": "まど を あけて ください。", "en": "Please open the window." },
+  { "phrase": "名前を  書いて  [[ください。]]", "pr": "なまえ を かいて ください。", "en": "Please write your name." },
+  { "phrase": "座って  [[ください。]]", "pr": "すわって ください。", "en": "Please sit down." },
+  { "phrase": "ゆっくり  話して  [[ください。]]", "pr": "ゆっくり はなして ください。", "en": "Please speak slowly." },
 
-  { "phrase": "ここで  写真を  撮っても  いい  です。", "pr": "ここ で しゃしん を とっても いい です。", "en": "You may take photos here." },
-  { "phrase": "教科書を  見ても  いい  です。", "pr": "きょうかしょ を みても いい です。", "en": "You may look at your textbook." },
-  { "phrase": "座っても  いい  ですか？", "pr": "すわっても いい です か？", "en": "May I sit down?" },
-  { "phrase": "窓を  開けても  いい  です。", "pr": "まど を あけても いい です。", "en": "It’s okay to open the window." },
+  { "phrase": "ここで  写真を  撮っても  [[いい]]  です。", "pr": "ここ で しゃしん を とっても [[いい]] です。", "en": "You may take photos here." },
+  { "phrase": "教科書を  見ても  [[いい]]  です。", "pr": "きょうかしょ を みても [[いい]] です。", "en": "You may look at your textbook." },
+  { "phrase": "座っても  [[いい]]  ですか？", "pr": "すわっても [[いい]] です か？", "en": "May I sit down?" },
+  { "phrase": "窓を  開けても  [[いい]]  です。", "pr": "まど を あけても [[いい]] です。", "en": "It’s okay to open the window." },
 
-  { "phrase": "ここで  写真を  撮っては  いけません。", "pr": "ここ で しゃしん を とってはいけません。", "en": "You must not take photos here." },
-  { "phrase": "教室で  走っては  いけない。", "pr": "きょうしつ で はしってはいけない。", "en": "You must not run in the classroom." },
-  { "phrase": "ゴミを  捨てては  いけません。", "pr": "ごみ を すててはいけません。", "en": "You must not throw away trash." },
-  { "phrase": "勝手に  入っては  いけません。", "pr": "かって に はいってはいけません。", "en": "You must not enter without permission." }
+  { "phrase": "ここで  写真を  撮っては  [[いけません。]]", "pr": "ここ で しゃしん を とっては [[いけません。]]", "en": "You must not take photos here." },
+  { "phrase": "教室で  走っては  [[いけない。]]", "pr": "きょうしつ で はしっては [[いけない。]]", "en": "You must not run in the classroom." },
+  { "phrase": "ゴミを  捨てては  [[いけません。]]", "pr": "ごみ を すてては [[いけません。]]", "en": "You must not throw away trash." },
+  { "phrase": "勝手に  入っては  [[いけません。]]", "pr": "かって に はいっては [[いけません。]]", "en": "You must not enter without permission." }
 ]
 ,
 "part5": [
@@ -1943,237 +1943,228 @@
   },
 
   {
-    "phrase": "早く　寝たほうが　いい。",
+    "phrase": "早く　寝た [[ほうが　いい。]]",
     "pr": "はやく　ねた　ほう　が　いい。",
-    "en": "It’s better to go to bed early."
+    "en": "[[It’s better to]] go to bed early."
   },
   {
-    "phrase": "もっと　勉強したほうが　いい。",
-    "pr": "もっと　べんきょう　した　ほう　が　いい。",
-    "en": "It’d be better to study more."
+    "phrase": "もっと　勉強した [[ほうが　いい。]]",
+    "pr": "もっと　べんきょう　した　[[ほう　が　いい。]]",
+    "en": "[[It’d be better to]] study more."
   },
   {
-    "phrase": "風邪を　ひかないように　コートを　着たほうが　いい。",
-    "pr": "かぜ　を　ひかない　よう　に　こーと　を　きた　ほう　が　いい。",
-    "en": "You’d better wear a coat to avoid catching a cold."
+    "phrase": "風邪を　ひかないように　コートを　着た [[ほうが　いい。]]",
+    "pr": "かぜ　を　ひかない　よう　に　こーと　を　きた　[[ほう　が　いい。]]",
+    "en": "You’d [[better]] wear a coat to avoid catching a cold."
   },
   {
-    "phrase": "明日　早く　出かけたほうが　いい。",
-    "pr": "あした　はやく　でかけた　ほう　が　いい。",
-    "en": "It’s better to leave early tomorrow."
-  },
-
-  {
-    "phrase": "無理を　しないほうが　いい。",
-    "pr": "むり　を　しない　ほう　が　いい。",
-    "en": "It’s better not to overdo it."
-  },
-  {
-    "phrase": "夜遅くまで　起きないほうが　いい。",
-    "pr": "よる　おそく　まで　おきない　ほう　が　いい。",
-    "en": "It’s better not to stay up late."
-  },
-  {
-    "phrase": "あの店で　買わないほうが　いい。",
-    "pr": "あの　みせ　で　かわない　ほう　が　いい。",
-    "en": "It’s better not to buy at that store."
-  },
-  {
-    "phrase": "危ないところに　行かないほうが　いい。",
-    "pr": "あぶない　ところ　に　いかない　ほう　が　いい。",
-    "en": "It’s better not to go to dangerous places."
+    "phrase": "明日　早く　出かけた [[ほうが　いい。]]",
+    "pr": "あした　はやく　でかけた　[[ほう　が　いい。]]",
+    "en": "It’s [[better]] to leave early tomorrow."
   },
 
   {
-    "phrase": "明日　買い物に　行くつもりです。",
-    "pr": "あした　かいもの　に　いく　つもり　です。",
-    "en": "I plan to go shopping tomorrow."
+    "phrase": "無理を　しない [[ほうが　いい]]。",
+    "pr": "むり　を　しない　[[ほう　が　いい。]]",
+    "en": "It’s [[better]] not to overdo it."
   },
   {
-    "phrase": "来年　日本に　行くつもりです。",
-    "pr": "らいねん　にほん　に　いく　つもり　です。",
-    "en": "I intend to go to Japan next year."
+    "phrase": "夜遅くまで　起き [[ない ほうが　いい。]]",
+    "pr": "よる　おそく　まで　おき [[ない　[[ほう　が　いい。]]",
+    "en": "It’s [[better not]] to stay up late."
   },
   {
-    "phrase": "今日は　勉強するつもりです。",
-    "pr": "きょう　は　べんきょう　する　つもり　です。",
-    "en": "I plan to study today."
+    "phrase": "あの店で　買わ [[ない ほうが　いい。]]",
+    "pr": "あの　みせ　で　かわ [[ない　ほう　が　いい。]]",
+    "en": "It’s [[better not]] to buy at that store."
   },
   {
-    "phrase": "週末に　友達に　会うつもりです。",
-    "pr": "しゅうまつ　に　ともだち　に　あう　つもり　です。",
-    "en": "I plan to meet my friend on the weekend."
+    "phrase": "危ないところに　行か [[ない ほうが　いい。]]",
+    "pr": "あぶない　ところ　に　いか [[ない　ほう　が　いい。]]",
+    "en": "It’s [[better not]] to go to dangerous places."
+  },
+
+  {
+    "phrase": "明日　買い物に　行く [[つもり]] です。",
+    "pr": "あした　かいもの　に　いく　[[つもり]]　です。",
+    "en": "I [[plan]] to go shopping tomorrow."
+  },
+  {
+    "phrase": "来年　日本に　行く [[つもり]] です。",
+    "pr": "らいねん　にほん　に　いく　[[つもり]]　です。",
+    "en": "I [[intend]] to go to Japan next year."
+  },
+  {
+    "phrase": "今日は　勉強する [[つもり]]です。",
+    "pr": "きょう　は　べんきょう　する　[[つもり　です。",
+    "en": "I [[plan]] to study today."
+  },
+  {
+    "phrase": "週末に　友達に　会う [[つもり]] です。",
+    "pr": "しゅうまつ　に　ともだち　に　あう　[[つもり]]　です。",
+    "en": "I [[plan]] to meet my friend on the weekend."
   }
 ]
 ,
 "part6": [
 
   {
-    "phrase": "7時に　起きます。",
-    "pr": "しちじ　に　おきます。",
-    "en": "I wake up at 7 o’clock."
+    "phrase": "7時 [[に]]　起きます。",
+    "pr": "しちじ　[[に[[　おきます。",
+    "en": "I wake up [[at]] 7 o’clock."
   },
   {
-    "phrase": "学校に　行きます。",
-    "pr": "がっこう　に　いきます。",
-    "en": "I go to school."
+    "phrase": "学校 [[に]]　行きます。",
+    "pr": "がっこう　[[に]]　いきます。",
+    "en": "I go [[to]] school."
   },
   {
-    "phrase": "友達に　会います。",
-    "pr": "ともだち　に　あいます。",
-    "en": "I meet my friend."
+    "phrase": "友達 [[に]]　会います。",
+    "pr": "ともだち　[[に]]　あいます。",
+    "en": "I meet my friend. ([[to]])"
   },
   {
-    "phrase": "手紙に　名前を　書きます。",
-    "pr": "てがみ　に　なまえ　を　かきます。",
+    "phrase": "手紙 [[に]]　名前を　書きます。",
+    "pr": "てがみ　[[に]]　なまえ　を　かきます。",
     "en": "I write a name in the letter."
   },
 
   {
-    "phrase": "日本に　行きます。",
-    "pr": "にほん　に　いきます。",
-    "en": "I am going to Japan."
+    "phrase": "日本 [[に]]　行きます。",
+    "pr": "にほん　[[に]]　いきます。",
+    "en": "I am going [[to]] Japan."
   },
   {
-    "phrase": "駅へ　行きます。",
-    "pr": "えき　へ　いきます。",
-    "en": "I go toward the station."
+    "phrase": "駅 [[へ]]　行きます。",
+    "pr": "えき　[[へ]]　いきます。",
+    "en": "I [[go]] toward the station."
   },
   {
-    "phrase": "部屋に　入ります。",
-    "pr": "へや　に　はいります。",
-    "en": "I enter the room."
+    "phrase": "部屋 [[に]]　入ります。",
+    "pr": "へや　[[に]]　はいります。",
+    "en": "I enter the room.([[into]])"
   },
   {
-    "phrase": "友達の家へ　遊びに　行きます。",
-    "pr": "ともだち　の　いえ　へ　あそび　に　いきます。",
-    "en": "I go to a friend’s house to hang out."
+    "phrase": "友達の家 [[へ]]　遊びに　行きます。",
+    "pr": "ともだち　の　いえ　[[へ]]　あそび　に　いきます。",
+    "en": "I go [[to]] a friend’s house to hang out."
   },
 
   {
-    "phrase": "買い物に　行きます。",
-    "pr": "かいもの　に　いきます。",
+    "phrase": "買い物 [[に]]　行きます。",
+    "pr": "かいもの　[[に]]　いきます。",
     "en": "I go shopping."
   },
   {
-    "phrase": "日本語を　勉強しに　行きます。",
-    "pr": "にほんご　を　べんきょう　し　に　いきます。",
-    "en": "I go to study Japanese."
+    "phrase": "日本語を　勉強し [[に]]　行きます。",
+    "pr": "にほんご　を　べんきょう　し　[[に]]　いきます。",
+    "en": "I go [[to]] study Japanese."
   },
   {
-    "phrase": "友達に　会いに　行きます。",
-    "pr": "ともだち　に　あい　に　いきます。",
-    "en": "I go to meet my friend."
+    "phrase": "友達 に　会い [[に]]　行きます。",
+    "pr": "ともだち　に　あい　[[に]]　いきます。",
+    "en": "I go [[to]] meet my friend."
   },
   {
-    "phrase": "映画を　見に　行きます。",
-    "pr": "えいが　を　み　に　いきます。",
-    "en": "I go to watch a movie."
+    "phrase": "映画 を　見 [[に]]　行きます。",
+    "pr": "えいが　を　み　[[に]]　いきます。",
+    "en": "I go [[to]] watch a movie."
   },
 
   {
-    "phrase": "カレーに　します。",
-    "pr": "かれー　に　します。",
-    "en": "I’ll have curry (decided)."
+    "phrase": "カレー [[に　します。]]",
+    "pr": "かれー　[[に　します。]]",
+    "en": "I’ll have curry ([[decide]])."
   },
   {
     "phrase": "部屋を　青に　します。",
     "pr": "へや　を　あお　に　します。",
-    "en": "I will make the room blue."
+    "en": "I will make the room blue.(decide)"
   },
   {
-    "phrase": "メニューは　これに　します。",
+    "phrase": "メニューは　これ に　します。",
     "pr": "めにゅー　は　これ　に　します。",
-    "en": "I’ll choose this from the menu."
+    "en": "I’ll choose this from the menu.(decide)"
   },
   {
     "phrase": "旅行の行き先は　東京に　します。",
-    "pr": "りょこう　の　いきさき　は　とうきょう　に　します。",
-    "en": "I’ll decide on Tokyo as the travel destination."
+    "pr": "りょこう　の　いきさき　は　とうきょう　[[に　します]]。",
+    "en": "I’ll decide on Tokyo as the travel destination.(decide)"
   },
 
   {
-    "phrase": "学校で　勉強します。",
-    "pr": "がっこう　で　べんきょう　します。",
-    "en": "I study at school."
+    "phrase": "学校 [[で]]　勉強します。",
+    "pr": "がっこう　[[で]]　べんきょう　します。",
+    "en": "I study [[at]] school."
   },
   {
-    "phrase": "公園で　遊びます。",
-    "pr": "こうえん　で　あそびます。",
-    "en": "I play in the park."
+    "phrase": "公園 [[で]]　遊びます。",
+    "pr": "こうえん　[[で]]　あそびます。",
+    "en": "I play [[in]] the park."
   },
   {
-    "phrase": "図書館で　本を　読みます。",
-    "pr": "としょかん　で　ほん　を　よみます。",
-    "en": "I read books in the library."
+    "phrase": "図書館 [[で]]　本を　読みます。",
+    "pr": "としょかん　[[で]]　ほん　を　よみます。",
+    "en": "I read books [[in]] the library."
   },
   {
-    "phrase": "レストランで　食べます。",
-    "pr": "れすとらん　で　たべます。",
+    "phrase": "レストラン [[で]]　食べます。",
+    "pr": "れすとらん　[[で]]　たべます。",
     "en": "I eat at the restaurant."
   },
 
   {
-    "phrase": "バスで　学校に　行きます。",
-    "pr": "ばす　で　がっこう　に　いきます。",
-    "en": "I go to school by bus."
+    "phrase": "バス [[で]]　学校に　行きます。",
+    "pr": "ばす　[[で]]　がっこう　に　いきます。",
+    "en": "I go to school [[by]] bus."
   },
   {
-    "phrase": "箸で　食べます。",
-    "pr": "はし　で　たべます。",
-    "en": "I eat with chopsticks."
+    "phrase": "箸 [[で]]　食べます。",
+    "pr": "はし　[[で]]　たべます。",
+
+    "en": "I eat [[with]] chopsticks."
   },
   {
-    "phrase": "手で　書きます。",
-    "pr": "て　で　かきます。",
-    "en": "I write by hand."
+    "phrase": "手 [[で]]　書きます。",
+    "pr": "て　[[で]]　かきます。",
+    "en": "I write [[by]] hand."
   },
   {
-    "phrase": "コンピューターで　仕事を　します。",
-    "pr": "こんぴゅーたー　で　しごと　を　します。",
-    "en": "I work using a computer."
+    "phrase": "コンピューター [[で]]　仕事 を　します。",
+    "pr": "こんぴゅーたー　[[で]]　しごと　を　します。",
+    "en": "I work [[using]] a computer."
   },
 
   {
-    "phrase": "りんごと　バナナを　買いました。",
-    "pr": "りんご　と　ばなな　を　かいました。",
-    "en": "I bought apples and bananas."
+    "phrase": "友達 [[と]]　話します。",
+    "pr": "ともだち　[[と]]　はなします。",
+    "en": "I talk [[with]] my friend."
   },
   {
-    "phrase": "友達と　話します。",
-    "pr": "ともだち　と　はなします。",
-    "en": "I talk with my friend."
+    "phrase": "猫 [[と]]　犬が　います。",
+    "pr": "ねこ　[[と]]　いぬ　が　います。",
+    "en": "There are cats [[and]] dogs."
   },
   {
-    "phrase": "猫と　犬が　います。",
-    "pr": "ねこ　と　いぬ　が　います。",
-    "en": "There are cats and dogs."
-  },
-  {
-    "phrase": "父と　母は　元気です。",
-    "pr": "ちち　と　はは　は　げんき　です。",
-    "en": "My father and mother are healthy."
+    "phrase": "父 [[と]]　母は　元気です。",
+    "pr": "ちち　[[と]]　はは　は　げんき　です。",
+    "en": "My father [[and]] mother are healthy."
   },
 
   {
-    "phrase": "本や　ノートが　あります。",
-    "pr": "ほん　や　のーと　が　あります。",
-    "en": "There are books and notebooks (and others)."
+    "phrase": "本 [[や]]　ノート が　あります。",
+    "pr": "ほん　[[や]]　のーと　が　あります。",
+    "en": "There are books [[and]] notebooks ([[and others]])."
   },
   {
-    "phrase": "りんごや　バナナを　食べます。",
-    "pr": "りんご　や　ばなな　を　たべます。",
-    "en": "I eat apples, bananas, etc."
+    "phrase": "机の上に　ペン [[や]]　消しゴムが　あります。",
+    "pr": "つくえ　の　うえ　に　ぺん　[[や]]　けしごむ　が　あります。",
+    "en": "On the desk, there are pens, erasers, [[etc]]."
   },
   {
-    "phrase": "机の上に　ペンや　消しゴムが　あります。",
-    "pr": "つくえ　の　うえ　に　ぺん　や　けしごむ　が　あります。",
-    "en": "On the desk, there are pens, erasers, etc."
-  },
-  {
-    "phrase": "教室に　椅子や　机が　あります。",
-    "pr": "きょうしつ　に　いす　や　つくえ　が　あります。",
-    "en": "In the classroom, there are chairs, desks, etc."
+    "phrase": "教室に　椅子 [[や]]　机が　あります。",
+    "pr": "きょうしつ　に　いす　[[や]]　つくえ　が　あります。",
+    "en": "In the classroom, there are chairs, desks, [[etc]]."
   }
 ]
 
@@ -2182,109 +2173,109 @@
 
 ,
 "part7": [
-  { "phrase": "ここ で 遊ぶ な。", "pr": "ここ で あそぶ な。", "en": "Don’t play here." },
-  { "phrase": "触る な。", "pr": "さわる な。", "en": "Don’t touch it." },
-  { "phrase": "走る な。", "pr": "はしる な。", "en": "Don’t run." },
-  { "phrase": "うるさい な。", "pr": "うるさい な。", "en": "Don’t be noisy." },
+  { "phrase": "ここ で 遊ぶ [[な。]]", "pr": "ここ で あそぶ [[な。]]", "en": "[[Don’t]] play here." },
+  { "phrase": "触る [[な。]]", "pr": "さわる [[な。]]", "en": "[[Don’t]] touch it." },
+  { "phrase": "走る [[な。]]", "pr": "はしる [[な。]]", "en": "[[Don’t]] run." },
+  { "phrase": "うるさい [[な。]]", "pr": "うるさい [[な。]]", "en": "[[Don’t]] be noisy." },
 
-  { "phrase": "ここ で タバコ を 吸わないで ください。", "pr": "ここ で たばこ を すわないで ください。", "en": "Please don’t smoke here." },
-  { "phrase": "触らないで ください。", "pr": "さわらないで ください。", "en": "Please don’t touch." },
-  { "phrase": "騒がないで ください。", "pr": "さわがないで ください。", "en": "Please don’t make noise." },
-  { "phrase": "写真 を 撮らないで ください。", "pr": "しゃしん を とらないで ください。", "en": "Please don’t take photos." },
+  { "phrase": "ここ で タバコ を 吸わない [[で ください]]。", "pr": "ここ で たばこ を すわない[[で ください。]]", "en": "[[Please don’t]] smoke here." },
+  { "phrase": "触らない[[で ください]]。", "pr": "さわらない[[で ください。]]", "en": "[[Please don’t]] touch." },
+  { "phrase": "騒がない[[で ください]]。", "pr": "さわがない[[で ください。]]", "en": "[[Please don’t]] make noise." },
+  { "phrase": "写真 を 撮らない[[で ください]]。", "pr": "しゃしん を とらない[[で ください。]]", "en": "[[Please don’t]] take photos." },
 
-  { "phrase": "一緒 に 映画 を 見ませんか？", "pr": "いっしょ に えいが を みませんか？", "en": "Won’t you watch a movie together?" },
-  { "phrase": "お茶 を 飲みませんか？", "pr": "おちゃ を のみませんか？", "en": "Shall we have tea?" },
-  { "phrase": "週末 に 遊びませんか？", "pr": "しゅうまつ に あそびませんか？", "en": "Shall we hang out on the weekend?" },
-  { "phrase": "一緒 に 勉強 しませんか？", "pr": "いっしょ に べんきょう しませんか？", "en": "Shall we study together?" },
+  { "phrase": "一緒 に 映画 を 見[[ませんか]]？", "pr": "いっしょ に えいが を [[みませんか]]？", "en": "[[Won’t you]] watch a movie together?" },
+  { "phrase": "お茶 を 飲み[[ませんか]]？", "pr": "おちゃ を のみ[[ませんか]]？", "en": "[[Shall we]] have tea?" },
+  { "phrase": "週末 に 遊び[[ませんか]]？", "pr": "しゅうまつ に あそび[[ませんか]]？", "en": "[[Shall we]] hang out on the weekend?" },
+  { "phrase": "一緒 に 勉強 し[[ませんか]]？", "pr": "いっしょ に べんきょう し[[ませんか]]？", "en": "[[Shall we]] study together?" },
 
-  { "phrase": "行きましょう。", "pr": "いきましょう。", "en": "Let’s go." },
-  { "phrase": "食べましょう。", "pr": "たべましょう。", "en": "Let’s eat." },
-  { "phrase": "勉強 しましょう。", "pr": "べんきょう しましょう。", "en": "Let’s study." },
-  { "phrase": "一緒 に 遊びましょう。", "pr": "いっしょ に あそびましょう。", "en": "Let’s play together." }
+  { "phrase": "行き [[ましょう。]]", "pr": "いき [[ましょう。]]", "en": "[[Let’s]] go." },
+  { "phrase": "食べ [[ましょう。]]", "pr": "たべ [[ましょう。]]", "en": "[[Let’s]] eat." },
+  { "phrase": "勉強 し [[ましょう。]]", "pr": "べんきょう し [[ましょう。]]", "en": "[[Let’s]] study." },
+  { "phrase": "一緒 に 遊び [[ましょう。]]", "pr": "いっしょ に あそび [[ましょう。]]", "en": "[[Let’s]] play together." }
 ]
 
     
   
 ,"part8": [
 
-  { "phrase": "これ は 私 の 本 です。", "pr": "これは わたし の ほん です。", "en": "This is my book." },
-  { "phrase": "彼 の 車 は 新しい です。", "pr": "かれ の くるま は あたらしい です。", "en": "His car is new." },
-  { "phrase": "友達 の 家 に 行きます。", "pr": "ともだち の いえ に いきます。", "en": "I’m going to a friend’s house." },
-  { "phrase": "日本 の 文化 が 好き です。", "pr": "にほん の ぶんか が すき です。", "en": "I like Japanese culture." },
+  { "phrase": "これ は [[私 の]] 本 です。", "pr": "これは [[わたし の]] ほん です。", "en": "This is [[my]] book." },
+  { "phrase": "[[彼 の]] 車 は 新しい です。", "pr": "[[かれ の]] くるま は あたらしい です。", "en": "[[His]] car is new." },
+  { "phrase": "[[友達 の]] 家 に 行きます。", "pr": "[[ともだち の]] いえ に いきます。", "en": "I’m going to a [[friend’s]] house." },
+  { "phrase": "[[日本 の]] 文化 が 好き です。", "pr": "[[にほん の]] ぶんか が すき です。", "en": "I like Japanese culture." },
 
-  { "phrase": "本 を 読む の が 好き です。", "pr": "ほん を よむ の が すき です。", "en": "I like reading books." },
-  { "phrase": "泳ぐ の は 楽しい です。", "pr": "およぐ の は たのしい です。", "en": "Swimming is fun." },
-  { "phrase": "走る の が 速い です。", "pr": "はしる の が はやい です。", "en": "Running is fast (He/She runs fast)." },
-  { "phrase": "日本語 を 勉強 する の は 大変 です。", "pr": "にほんご を べんきょう する の は たいへん です。", "en": "Studying Japanese is tough." },
+  { "phrase": "本 を 読む [[の が 好き です。", "pr": "ほん を よむ [[の が すき]] です。", "en": "I [[like]] reading books." },
+  { "phrase": "泳ぐ [[の は]] 楽しい です。", "pr": "およぐ [[の は]] たのしい です。", "en": "Swimming is fun." },
+  { "phrase": "走る [[の が]] 速い です。", "pr": "はしる [[の が]] はやい です。", "en": "Running is fast (He/She runs fast)." },
+  { "phrase": "日本語 を 勉強 する [[の は]] 大変 です。", "pr": "にほんご を べんきょう する [[の は]] たいへん です。", "en": "Studying Japanese is tough." },
 
-  { "phrase": "歌う の を 聞きました。", "pr": "うたう の を ききました。", "en": "I heard (someone) singing." },
-  { "phrase": "走る の を やめました。", "pr": "はしる の を やめました。", "en": "I stopped running." },
-  { "phrase": "友達 が 話す の を 待っています。", "pr": "ともだち が はなす の を まっています。", "en": "I’m waiting for my friend to talk." },
-  { "phrase": "先生 が 来る の を 知っています。", "pr": "せんせい が くる の を しっています。", "en": "I know the teacher is coming." },
+  { "phrase": "歌う [[の]] を 聞きました。", "pr": "うたう [[の]] を ききました。", "en": "I heard (someone) singing." },
+  { "phrase": "走る [[の]] を やめました。", "pr": "はしる [[の]] を やめました。", "en": "I stopped running." },
+  { "phrase": "友達 が 話す [[の]] を 待っています。", "pr": "ともだち が はなす [[の]] を まっています。", "en": "I’m waiting for my friend to talk." },
+  { "phrase": "先生 が 来る [[の]] を 知っています。", "pr": "せんせい が くる [[の]] を しっています。", "en": "I know the teacher is coming." },
 
-  { "phrase": "雨 なので、出かけません。", "pr": "あめ なので、でかけません。", "en": "Because it’s raining, I won’t go out." },
-  { "phrase": "疲れた ので、早く 寝ます。", "pr": "つかれた ので、はやく ねます。", "en": "Since I’m tired, I’ll sleep early." },
-  { "phrase": "忙しい ので、行けません。", "pr": "いそがしい ので、いけません。", "en": "I can’t go because I’m busy." },
-  { "phrase": "子供 なので、分かりません。", "pr": "こども なので、わかりません。", "en": "Because (he/she) is a child, (they) don’t understand." },
+  { "phrase": "雨 な[[ので]]、出かけません。", "pr": "あめ な[[ので]]、でかけません。", "en": "Because it’s raining, I won’t go out." },
+  { "phrase": "疲れた [[ので]]、早く 寝ます。", "pr": "つかれた [[ので]]、はやく ねます。", "en": "[[Since]] I’m tired, I’ll sleep early." },
+  { "phrase": "忙しい [[ので]]、行けません。", "pr": "いそがしい [[ので]]、いけません。", "en": "I can’t go because I’m busy." },
+  { "phrase": "子供 な[[ので]]、分かりません。", "pr": "こども な[[ので]]、わかりません。", "en": "Because (he/she) is a child, (they) don’t understand." },
 
-  { "phrase": "料理 を 作る の が 上手 です。", "pr": "りょうり を つくる の が じょうず です。", "en": "I’m good at cooking." },
-  { "phrase": "絵 を 描く の が 上手 ですね。", "pr": "え を かく の が じょうず ですね。", "en": "You’re good at drawing." },
-  { "phrase": "日本語 を 話す の が 上手 です。", "pr": "にほんご を はなす の が じょうず です。", "en": "He/She is good at speaking Japanese." },
-  { "phrase": "歌う の が 上手 な 友達 が います。", "pr": "うたう の が じょうず な ともだち が います。", "en": "I have a friend who is good at singing." },
+  { "phrase": "料理 を 作る [[の が 上手]] です。", "pr": "りょうり を つくる [[の が じょうず]] です。", "en": "I’m [[good at]] cooking." },
+  { "phrase": "絵 を 描く [[の が 上手]] ですね。", "pr": "え を かく [[の が じょうず]] ですね。", "en": "You’re [[good at]] drawing." },
+  { "phrase": "日本語 を 話す [[の が 上手]] です。", "pr": "にほんご を はなす [[の が じょうず]] です。", "en": "He/She is [[good at]] speaking Japanese." },
+  { "phrase": "歌う [[の が 上手]] な 友達 が います。", "pr": "うたう [[の が じょうず]] な ともだち が います。", "en": "I have a friend who is [[good at]] singing." },
 
-  { "phrase": "走る の が 好き です。", "pr": "はしる の が すき です。", "en": "I like running." },
-  { "phrase": "映画 を 見る の が 好き です。", "pr": "えいが を みる の が すき です。", "en": "I like watching movies." },
-  { "phrase": "写真 を 撮る の が 好き です。", "pr": "しゃしん を とる の が すき です。", "en": "I like taking photos." },
-  { "phrase": "旅行 する の が 好き です。", "pr": "りょこう する の が すき です。", "en": "I love traveling." },
+  { "phrase": "走る [[の が 好き]] です。", "pr": "はしる [[の が すき]] です。", "en": "I [[like]] running." },
+  { "phrase": "映画 を 見る [[の が 好き]] です。", "pr": "えいが を みる [[の が すき]] です。", "en": "I [[like]] watching movies." },
+  { "phrase": "写真 を 撮る [[の が 好き]] です。", "pr": "しゃしん を とる [[の が すき]] です。", "en": "I [[like]] taking photos." },
+  { "phrase": "旅行 する [[の が 好き]] です。", "pr": "りょこう する [[の が すき]] です。", "en": "I [[love]] traveling." },
 
-  { "phrase": "歌う の が 下手 です。", "pr": "うたう の が へた です。", "en": "I’m bad at singing." },
-  { "phrase": "ダンス する の が 下手 です。", "pr": "だんす する の が へた です。", "en": "I’m not good at dancing." },
-  { "phrase": "運転 する の が 下手 です。", "pr": "うんてん する の が へた です。", "en": "I’m bad at driving." },
-  { "phrase": "料理 する の が 下手 です。", "pr": "りょうり する の が へた です。", "en": "I’m bad at cooking." },
+  { "phrase": "歌う [[の が 下手]] です。", "pr": "うたう [[の が へた]] です。", "en": "I’m [[bad at]] singing." },
+  { "phrase": "ダンス する [[の が 下手]] です。", "pr": "だんす する [[の が へた]] です。", "en": "I’m [[not good]] at dancing." },
+  { "phrase": "運転 する [[の が 下手]] です。", "pr": "うんてん する [[の が へた]] です。", "en": "I’m [[bad at]] driving." },
+  { "phrase": "料理 する [[の が 下手]] です。", "pr": "りょうり する [[の が へた]] です。", "en": "I’m [[bad at]] cooking." },
 
-  { "phrase": "寿司 を 食べたい です。", "pr": "すし を たべたい です。", "en": "I want to eat sushi." },
-  { "phrase": "日本 に 行きたい です。", "pr": "にほん に いきたい です。", "en": "I want to go to Japan." },
-  { "phrase": "映画 を 見たい です。", "pr": "えいが を みたい です。", "en": "I want to watch a movie." },
-  { "phrase": "新しい 本 を 読みたい です。", "pr": "あたらしい ほん を よみたい です。", "en": "I want to read a new book." },
+  { "phrase": "寿司 を [[食べたい]] です。", "pr": "すし を [[たべたい]] です。", "en": "I [[want to]] eat sushi." },
+  { "phrase": "日本 に [[行きたい]] です。", "pr": "にほん に [[いきたい]] です。", "en": "I [[want to]] go to Japan." },
+  { "phrase": "映画 を [[見たい]] です。", "pr": "えいが を [[みたい]] です。", "en": "I [[want to]] watch a movie." },
+  { "phrase": "新しい 本 を [[読みたい]] です。", "pr": "あたらしい ほん を [[よみたい]] です。", "en": "I [[want to]] read a new book." },
 
-  { "phrase": "日本 に 行った こと が あります。", "pr": "にほん に いった こと が あります。", "en": "I have been to Japan." },
-  { "phrase": "寿司 を 食べた こと が あります。", "pr": "すし を たべた こと が あります。", "en": "I have eaten sushi." },
-  { "phrase": "富士山 を 見た こと が あります。", "pr": "ふじさん を みた こと が あります。", "en": "I have seen Mt. Fuji." },
-  { "phrase": "京都 に 住んだ こと が あります。", "pr": "きょうと に すんだ こと が あります。", "en": "I have lived in Kyoto." }
+  { "phrase": "日本 に 行った [[こと が あります]]。", "pr": "にほん に いった [[こと が あります]]。", "en": "I [[have been]] to Japan." },
+  { "phrase": "寿司 を 食べた [[こと が あります]]。", "pr": "すし を たべた [[こと が あります]]。", "en": "I [[have eaten]] sushi." },
+  { "phrase": "富士山 を 見た [[こと が あります]]。", "pr": "ふじさん を みた [[こと が あります]]。", "en": "I [[have seen]] Mt. Fuji." },
+  { "phrase": "京都 に 住んだ [[こと が あります]]。", "pr": "きょうと に すんだ [[こと が あります]]。", "en": "I [[have lived]] in Kyoto." }
 
 ]
 
     ,"part9":[
 
-  { "phrase": "あまり 食べない。", "pr": "あまり たべない。", "en": "I don’t eat much." },
-  { "phrase": "あまり 忙しく ない です。", "pr": "あまり いそがしく ない です。", "en": "I’m not very busy." },
-  { "phrase": "あまり 寒く ない ですね。", "pr": "あまり さむく ない ですね。", "en": "It’s not very cold, is it?" },
-  { "phrase": "彼 は あまり 話さない。", "pr": "かれ は あまり はなさない。", "en": "He doesn’t talk much." },
+  { "phrase": "[[あまり]] 食べない。", "pr": "[[あまり]] たべない。", "en": "I don’t eat much.([[not very]])" },
+  { "phrase": "[[あまり]] 忙しく ない です。", "pr": "[[あまり]] いそがしく ない です。", "en": "I’m [[not very]] busy." },
+  { "phrase": "[[あまり]] 寒く ない ですね。", "pr": "[[あまり]] さむく ない ですね。", "en": "It’s [[not very]] cold, is it?" },
+  { "phrase": "彼 は [[あまり]] 話さない。", "pr": "かれ は [[あまり]] はなさない。", "en": "He doesn’t talk much." },
 
-  { "phrase": "あとで 電話 します。", "pr": "あとで でんわ します。", "en": "I’ll call later." },
-  { "phrase": "仕事 の あとで 会いましょう。", "pr": "しごと の あとで あいましょう。", "en": "Let’s meet after work." },
-  { "phrase": "食事 の あとで 散歩 します。", "pr": "しょくじ の あとで さんぽ します。", "en": "I’ll take a walk after a meal." },
-  { "phrase": "あとで 説明 します。", "pr": "あとで せつめい します。", "en": "I’ll explain later." },
+  { "phrase": "[[あとで]] 電話 します。", "pr": "[[あとで]] でんわ します。", "en": "I’ll call [[later]]." },
+  { "phrase": "仕事 の [[あとで]] 会いましょう。", "pr": "しごと の [[あとで]] あいましょう。", "en": "Let’s meet [[after]] work." },
+  { "phrase": "食事 の [[あとで]] 散歩 します。", "pr": "しょくじ の [[あとで]] さんぽ します。", "en": "I’ll take a walk [[after]] a meal." },
+  { "phrase": "[[あとで]] 説明 します。", "pr": "[[あとで]] せつめい します。", "en": "I’ll explain [[later]]." },
 
-  { "phrase": "雨 が 降れば、行きません。", "pr": "あめ が ふれば、いきません。", "en": "If it rains, I won’t go." },
-  { "phrase": "安ければ 買います。", "pr": "やすければ かいます。", "en": "If it’s cheap, I’ll buy it." },
-  { "phrase": "暇 で あれば 来て ください。", "pr": "ひまで あれば きて ください。", "en": "If you are free, please come." },
-  { "phrase": "早く 起きれば 間に合います。", "pr": "はやく おきれば まにあいます。", "en": "If you wake up early, you’ll make it on time." },
+  { "phrase": "雨 が 降れ[[ば]]、行きません。", "pr": "あめ が ふれ[[ば]]、いきません。", "en": "[[If]] it rains, I won’t go." },
+  { "phrase": "安けれ[[ば]] 買います。", "pr": "やすけれ[[ば]] かいます。", "en": "[[If]] it’s cheap, I’ll buy it." },
+  { "phrase": "暇 で あれ[[ば]] 来て ください。", "pr": "ひまで あれ[[ば]] きて ください。", "en": "[[If]] you are free, please come." },
+  { "phrase": "早く 起きれ[[ば]] 間に合います。", "pr": "はやく おきれ[[ば]] まにあいます。", "en": "[[If]] you wake up early, you’ll make it on time." },
 
-  { "phrase": "雨 の 場合 は 中止 します。", "pr": "あめ の ばあい は ちゅうし します。", "en": "In case of rain, it will be canceled." },
-  { "phrase": "問題 が ある 場合 は 連絡 して ください。", "pr": "もんだい が ある ばあい は れんらく して ください。", "en": "If there’s a problem, please contact us." },
-  { "phrase": "火事 の 場合 は 119 に 電話 します。", "pr": "かじ の ばあい は いちいちきゅう に でんわ します。", "en": "In case of fire, call 119." },
-  { "phrase": "質問 が ある 場合 は 聞いて ください。", "pr": "しつもん が ある ばあい は きいて ください。", "en": "If you have questions, please ask." },
+  { "phrase": "雨 の [[場合]] は 中止 します。", "pr": "あめ の [[ばあい]] は ちゅうし します。", "en": "[[In case]] of rain, it will be canceled." },
+  { "phrase": "問題 が ある [[場合]] は 連絡 して ください。", "pr": "もんだい が ある [[ばあい]] は れんらく して ください。", "en": "If there’s a problem, please contact us." },
+  { "phrase": "火事 の [[場合]] は 119 に 電話 します。", "pr": "かじ の [[ばあい]] は いちいちきゅう に でんわ します。", "en": "In case of fire, call 119." },
+  { "phrase": "質問 が ある [[場合]] は 聞いて ください。", "pr": "しつもん が ある [[ばあい]] は きいて ください。", "en": "If you have questions, please ask." },
 
-  { "phrase": "ゲーム ばかり している。", "pr": "げーむ ばかり している。", "en": "I’m only playing games." },
-  { "phrase": "甘い 物 ばかり 食べます。", "pr": "あまい もの ばかり たべます。", "en": "I eat only sweets." },
-  { "phrase": "文句 ばかり 言う。", "pr": "もんく ばかり いう。", "en": "He only complains." },
-  { "phrase": "最近 雨 ばかり ですね。", "pr": "さいきん あめ ばかり ですね。", "en": "It’s been nothing but rain lately." },
+  { "phrase": "ゲーム [[ばかり]] している。", "pr": "げーむ [[ばかり]] している。", "en": "I’m [[only]] playing games." },
+  { "phrase": "甘い 物 [[ばかり]] 食べます。", "pr": "あまい もの [[ばかり]] たべます。", "en": "I eat [[only]] sweets." },
+  { "phrase": "文句 [[ばかり]] 言う。", "pr": "もんく [[ばかり]] いう。", "en": "He [[only]] complains." },
+  { "phrase": "最近 雨 [[ばかり]] ですね。", "pr": "さいきん あめ [[ばかり]] ですね。", "en": "It’s been [[nothing but]] rain lately." },
 
-  { "phrase": "見る だけで 楽しい。", "pr": "みる だけで たのしい。", "en": "It’s fun just to watch." },
-  { "phrase": "名前 を 聞く だけで うれしい。", "pr": "なまえ を きく だけで うれしい。", "en": "I’m happy just hearing the name." },
-  { "phrase": "触る だけで 壊れます。", "pr": "さわる だけで こわれます。", "en": "It breaks just by touching it." },
-  { "phrase": "見る だけで 十分 です。", "pr": "みる だけで じゅうぶん です。", "en": "It’s enough just to look." }
+  { "phrase": "見る [[だけで]] 楽しい。", "pr": "みる [[だけで]] たのしい。", "en": "It’s fun [[just]] to watch." },
+  { "phrase": "名前 を 聞く [[だけで]] うれしい。", "pr": "なまえ を きく [[だけで]] うれしい。", "en": "I’m happy [[just]] hearing the name." },
+  { "phrase": "触る [[だけで]] 壊れます。", "pr": "さわる [[だけで]] こわれます。", "en": "It breaks [[just]] by touching it." },
+  { "phrase": "見る [[だけで]] 十分 です。", "pr": "みる [[だけで]] じゅうぶん です。", "en": "It’s enough just to look." }
 
 ]
 ,

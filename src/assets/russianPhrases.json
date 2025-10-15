@@ -1972,67 +1972,67 @@
 ]
 ,
   "part1": [
-        { "phrase": "Я купил хлеб и молоко.", "pr": "Ya kupil khleb i moloko.", "en": "I bought bread and milk.", "des": "Joining two items together." },
-        { "phrase": "Мы играли в футбол и баскетбол.", "pr": "My igrali v futbol i basketbol.", "en": "We played football and basketball.", "des": "Connecting two activities." },
-        { "phrase": "Она читала книгу и слушала музыку.", "pr": "Ona chitala knigu i slushala muzyku.", "en": "She was reading a book and listening to music.", "des": "Connecting simultaneous actions." },
-        { "phrase": "Я люблю чай и кофе.", "pr": "Ya lyublyu chai i kofe.", "en": "I like tea and coffee.", "des": "Listing two preferences." }
+        { "phrase": "Я купил хлеб [[и]] молоко.", "pr": "Ya kupil khleb [[i]] moloko.", "en": "I bought bread [[and]] milk.", "des": "Joining two items together." },
+        { "phrase": "Мы играли в футбол [[и]] баскетбол.", "pr": "My igrali v futbol [[i]] basketbol.", "en": "We played football [[and]] basketball.", "des": "Connecting two activities." },
+        { "phrase": "Он читала книгу [[и]] слушала музыку.", "pr": "On chitala knigu [[i]] slushala muzyku.", "en": "he was reading a book [[and]] listening to music.", "des": "Connecting simultaneous actions." },
+        { "phrase": "Я люблю чай [[и]] кофе.", "pr": "Ya lyublyu chai [[i]] kofe.", "en": "I like tea [[and]] coffee.", "des": "Listing two preferences." }
     ,
-        { "phrase": "Он высокий, а его брат низкий.", "pr": "On vysokiy, a ego brat nizkiy.", "en": "He is tall, but his brother is short.", "des": "Contrast between two subjects." },
-        { "phrase": "Я хочу пойти в кино, а она дома.", "pr": "Ya khochu poyti v kino, a ona doma.", "en": "I want to go to the cinema, but she is at home.", "des": "Contrasting two actions." },
-        { "phrase": "Это яблоко красное, а то зелёное.", "pr": "Eto yabloko krasnoye, a to zelyonoye.", "en": "This apple is red, and that one is green.", "des": "Contrasting two objects." },
-        { "phrase": "Я люблю кофе, а мой друг чай.", "pr": "Ya lyublyu kofe, a moy drug chai.", "en": "I like coffee, and my friend likes tea.", "des": "Showing difference in preferences." }
+        { "phrase": "Он высокий, [[а]] его брат низкий.", "pr": "On vysokiy, [[a]] ego brat nizkiy.", "en": "He is tall, [[but]] his brother is short.", "des": "Contrast between two subjects." },
+        { "phrase": "Я хочу пойти в кино, [[а]] она дома.", "pr": "Ya khochu poyti v kino, [[a]] ona doma.", "en": "I want to go to the cinema, [[but]] she is at home.", "des": "Contrasting two actions." },
+        { "phrase": "Это яблоко красное, [[а]] то зелёное.", "pr": "Eto yabloko krasnoye, [[a]] to zelyonoye.", "en": "This apple is red, [[and]] that one is green.", "des": "Contrasting two objects." },
+        { "phrase": "Я люблю кофе, [[а]] мой друг чай.", "pr": "Ya lyublyu kofe, [[a]] moy drug chai.", "en": "I like coffee, [[and]] my friend likes tea.", "des": "Showing difference in preferences." }
     ,
   
-        { "phrase": "Я хотел пойти гулять, но пошёл дождь.", "pr": "Ya hotel poyti gulyat, no poshol dozhd.", "en": "I wanted to go for a walk, but it rained.", "des": "Expressing contrast or opposition." },
-        { "phrase": "Он умный, но ленивый.", "pr": "On umniy, no leniviy.", "en": "He is smart, but lazy.", "des": "Contrasting qualities." },
-        { "phrase": "Я люблю мороженое, но не шоколадное.", "pr": "Ya lyublyu morozhenoe, no ne shokoladnoe.", "en": "I like ice cream, but not chocolate.", "des": "Showing exception or limitation." },
-        { "phrase": "Мы хотели поехать на море, но не было денег.", "pr": "My khoteli poekhat na more, no ne bylo deneg.", "en": "We wanted to go to the sea, but had no money.", "des": "Contrast between intention and reality." }
+        { "phrase": "Я хотел пойти гулять, [[но]] пошёл дождь.", "pr": "Ya hotel poyti gulyat, [[no]] poshol dozhd.", "en": "I wanted to go for a walk, [[but]] it rained.", "des": "Expressing contrast or opposition." },
+        { "phrase": "Он умный, [[но]] ленивый.", "pr": "On umniy, [[no]] leniviy.", "en": "He is smart, [[but]] lazy.", "des": "Contrasting qualities." },
+        { "phrase": "Я люблю мороженое, [[но]] не шоколадное.", "pr": "Ya lyublyu morozhenoe, [[no]] ne shokoladnoe.", "en": "I like ice cream, [[but]] not chocolate.", "des": "Showing exception or limitation." },
+        { "phrase": "Мы хотели поехать на море, [[но]] не было денег.", "pr": "My khoteli poekhat na more, [[no]] ne bylo deneg.", "en": "We wanted to go to the sea, [[but]] had no money.", "des": "Contrast between intention and reality." }
     
     ,
     
-        { "phrase": "Я остался дома, потому что шёл дождь.", "pr": "Ya ostalsya doma, potomu chto shel dozhd.", "en": "I stayed home because it was raining.", "des": "Giving a reason." },
-        { "phrase": "Он не пришёл, потому что заболел.", "pr": "On ne prishel, potomu chto zabolel.", "en": "He didn’t come because he was sick.", "des": "Explaining cause." },
-        { "phrase": "Мы не купили машину, потому что дорого.", "pr": "My ne kupili mashinu, potomu chto dorogo.", "en": "We didn’t buy a car because it’s expensive.", "des": "Showing justification." },
-        { "phrase": "Я устал, потому что работал весь день.", "pr": "Ya ustal, potomu chto rabotal ves den'.", "en": "I’m tired because I worked all day.", "des": "Explaining consequence." }
+        { "phrase": "Я остался дома, [[потому]] что шёл дождь.", "pr": "Ya ostalsya doma, [[potomu]] chto shel dozhd.", "en": "I stayed home [[because]] it was raining.", "des": "Giving a reason." },
+        { "phrase": "Он не пришёл, [[потому]] что заболел.", "pr": "On ne prishel, [[potomu]] chto zabolel.", "en": "He didn’t come [[because]] he was sick.", "des": "Explaining cause." },
+        { "phrase": "Мы не купили машину, [[потому]] что дорого.", "pr": "My ne kupili mashinu, [[potomu]] chto dorogo.", "en": "We didn’t buy a car because it’s expensive.", "des": "Showing justification." },
+        { "phrase": "Я устал, [[потому]] что работал весь день.", "pr": "Ya ustal, [[potomu]] chto rabotal ves den'.", "en": "I’m tired because I worked all day.", "des": "Explaining consequence." }
       
     ,
     
-        { "phrase": "Хотя он устал, он продолжал работать.", "pr": "Khotya on ustal, on prodolzhal rabotat.", "en": "Although he was tired, he continued working.", "des": "Showing contrast despite condition." },
-        { "phrase": "Я пойду гулять, хотя идёт дождь.", "pr": "Ya poydu gulyat, khotya idyot dozhd.", "en": "I will go for a walk although it’s raining.", "des": "Contrasting action vs. condition." },
-        { "phrase": "Хотя фильм был длинный, он понравился.", "pr": "Khotya film byl dlinnyy, on ponravilsya.", "en": "Although the movie was long, I liked it.", "des": "Contrast between expectation and opinion." },
-        { "phrase": "Хотя она маленькая, она сильная.", "pr": "Khotya ona malen'kaya, ona sil'naya.", "en": "Although she is small, she is strong.", "des": "Showing contrast between size and strength." }
+        { "phrase": "[[Хотя]] он устал, он продолжал работать.", "pr": "[[Khotya]] on ustal, on prodolzhal rabotat.", "en": "[[Although]] he was tired, he continued working.", "des": "Showing contrast despite condition." },
+        { "phrase": "Я пойду гулять, [[хотя]] идёт дождь.", "pr": "Ya poydu gulyat, [[khotya]] idyot dozhd.", "en": "I will go for a walk [[although]] it’s raining.", "des": "Contrasting action vs. condition." },
+        { "phrase": "[[Хотя]] фильм был длинный, он понравился.", "pr": "[[Khotya]] film byl dlinnyy, on ponravilsya.", "en": "[[Although]] the movie was long, I liked it.", "des": "Contrast between expectation and opinion." },
+        { "phrase": "[[Хотя]] она маленькая, она сильная.", "pr": "[[Khotya]] ona malen'kaya, ona sil'naya.", "en": "[[Although]] she is small, she is strong.", "des": "Showing contrast between size and strength." }
     ,
     
-        { "phrase": "Если будет дождь, мы останемся дома.", "pr": "Yesli budet dozhd, my ostanemsya doma.", "en": "If it rains, we will stay home.", "des": "Expressing condition." },
-        { "phrase": "Если ты придёшь, мы начнём.", "pr": "Yesli ty pridyesh', my nachnyom.", "en": "If you come, we will start.", "des": "Conditional action." },
-        { "phrase": "Я куплю мороженое, если у меня будет время.", "pr": "Ya kuplyu morozhenoe, yesli u menya budet vremya.", "en": "I’ll buy ice cream if I have time.", "des": "Showing possibility." },
-        { "phrase": "Если он устал, пусть отдохнёт.", "pr": "Yesli on ustal, pust' otdokhnyot.", "en": "If he is tired, let him rest.", "des": "Condition leading to recommendation." }
+        { "phrase": "[[Если]] будет дождь, мы останемся дома.", "pr": "[[Yesli]] budet dozhd, my ostanemsya doma.", "en": "If it rains, we will stay home.", "des": "Expressing condition." },
+        { "phrase": "[[Если]] ты придёшь, мы начнём.", "pr": "[[Yesli]] ty pridyesh', my nachnyom.", "en": "If you come, we will start.", "des": "Conditional action." },
+        { "phrase": "Я куплю мороженое, [[если]] у меня будет время.", "pr": "Ya kuplyu morozhenoe, [[yesli]] u menya budet vremya.", "en": "I’ll buy ice cream if I have time.", "des": "Showing possibility." },
+        { "phrase": "[[Если]] он устал, пусть отдохнёт.", "pr": "[[Yesli]] on ustal, pust' otdokhnyot.", "en": "If he is tired, let him rest.", "des": "Condition leading to recommendation." }
       ],
     "part2": [
-        { "phrase": "Мы поехали в Питер.", "pr": "My poekhali v Piter.", "en": "We went to St. Petersburg.", "des": "Indicates destination inside a city." },
-        { "phrase": "Кошка спряталась в шкафу.", "pr": "Koshka spryatalas' v shkafu.", "en": "The cat hid in the wardrobe.", "des": "Indicates location inside an object." },
-        { "phrase": "Я работаю в банке.", "pr": "Ya rabotayu v banke.", "en": "I work in a bank.", "des": "Shows location of work." },
-        { "phrase": "Он повернулся влево.", "pr": "On povernulsya vlevo.", "en": "He turned to the left.", "des": "Shows direction or movement into a side." }
+        { "phrase": "Мы поехали [[в]] Питер.", "pr": "My poekhali [[v]] Piter.", "en": "We went [[to]] St. Petersburg.", "des": "Indicates destination inside a city." },
+        { "phrase": "Кошка спряталась [[в]] шкафу.", "pr": "Koshka spryatalas' [[v]] shkafu.", "en": "The cat hid [[in]] the wardrobe.", "des": "Indicates location inside an object." },
+        { "phrase": "Я работаю [[в]] банке.", "pr": "Ya rabotayu [[v]] banke.", "en": "I work [[in]] a bank.", "des": "Shows location of work." },
+        { "phrase": "Он повернулся [[в]]лево.", "pr": "On povernulsya [[v]]levo.", "en": "He turned [[to]] the left.", "des": "Shows direction or movement into a side." }
     ,
-        { "phrase": "Карандаш лежит на столе.", "pr": "Karandash lezhit na stole.", "en": "The pencil is on the table.", "des": "Indicates position on a surface." },
-        { "phrase": "Мы пойдём на выставку.", "pr": "My poydyom na vystavku.", "en": "We will go to the exhibition.", "des": "Indicates direction towards an event." },
-        { "phrase": "Он работает на компьютере.", "pr": "On rabotayet na kompyutere.", "en": "He works on the computer.", "des": "Shows location of work." },
-        { "phrase": "Птица села на крышу.", "pr": "Ptitsa sela na kryshu.", "en": "The bird sat on the roof.", "des": "Indicates placement on top of something." }
+        { "phrase": "Карандаш лежит [[на]] столе.", "pr": "Karandash lezhit [[na]] stole.", "en": "The pencil is [[on]] the table.", "des": "Indicates position on a surface." },
+        { "phrase": "Мы пойдём [[на]] выставку.", "pr": "My poydyom [[na]] vystavku.", "en": "We will go [[to]] the exhibition.", "des": "Indicates direction towards an event." },
+        { "phrase": "Он работает [[на]] компьютере.", "pr": "On rabotayet [[na]] kompyutere.", "en": "He works on the computer.", "des": "Shows location of work." },
+        { "phrase": "Птица села [[на]] крышу.", "pr": "Ptitsa sela [[na]] kryshu.", "en": "The bird sat [[on]] the roof.", "des": "Indicates placement on top of something." }
       ,
-        { "phrase": "Я пришёл с братом.", "pr": "Ya prishel s bratom.", "en": "I came with my brother.", "des": "Indicates accompaniment." },
-        { "phrase": "Он пишет письмо с улыбкой.", "pr": "On pishet pismo s ulybkoy.", "en": "He writes a letter with a smile.", "des": "Indicates manner of action." },
-        { "phrase": "Мы делали проект с командой.", "pr": "My delali proyekt s komandoy.", "en": "We did the project with the team.", "des": "Shows collaboration." },
-        { "phrase": "Она ела суп с ложкой.", "pr": "Ona yela sup s lozhkoy.", "en": "She ate soup with a spoon.", "des": "Specifies the tool used." }
+        { "phrase": "Я пришёл с братом.", "pr": "Ya prishel [[s]] bratom.", "en": "I came [[with]] my brother.", "des": "Indicates accompaniment." },
+        { "phrase": "Он пишет письмо с улыбкой.", "pr": "On pishet pismo [[s]] ulybkoy.", "en": "He writes a letter [[with]] a smile.", "des": "Indicates manner of action." },
+        { "phrase": "Мы делали проект с командой.", "pr": "My delali proyekt [[s]] komandoy.", "en": "We did the project [[with]] the team.", "des": "Shows collaboration." },
+        { "phrase": "Она ела суп с ложкой.", "pr": "Ona yela sup [[s]] lozhkoy.", "en": "She ate soup [[with]] a spoon.", "des": "Specifies the tool used." }
       ,
-        { "phrase": "Я стоял у окна.", "pr": "Ya stoyal u okna.", "en": "I stood by the window.", "des": "Indicates location near something." },
-        { "phrase": "У меня есть собака.", "pr": "U menya yest sobaka.", "en": "I have a dog.", "des": "Shows possession." },
-        { "phrase": "Мы встречались у кафе.", "pr": "My vstrechalis' u kafe.", "en": "We met at the café.", "des": "Specifies meeting place." },
-        { "phrase": "Он учился у известного художника.", "pr": "On uchilsya u izvestnogo khudozhnika.", "en": "He studied under a famous artist.", "des": "Shows association or source." }
+        { "phrase": "Я стоял [[у]] окна.", "pr": "Ya stoyal [[u]] okna.", "en": "I [[stood]] by the window.", "des": "Indicates location near something." },
+        { "phrase": "[[У]] меня есть собака.", "pr": "[[U]] menya yest sobaka.", "en": "I [[have a]] dog.", "des": "Shows possession." },
+        { "phrase": "Мы встречались [[у]] кафе.", "pr": "My vstrechalis' [[u]] kafe.", "en": "We met [[at the]] café.", "des": "Specifies meeting place." },
+        { "phrase": "Он учился [[у]] известного художника.", "pr": "On uchilsya [[u]] izvestnogo khudozhnika.", "en": "He studied [[under a]] famous artist.", "des": "Shows association or source." }
 ,
-        { "phrase": "Письмо от мамы пришло сегодня.", "pr": "Pismo ot mamy prishlo segodnya.", "en": "A letter from mom arrived today.", "des": "Indicates sender." },
-        { "phrase": "Он убежал от собаки.", "pr": "On ubezhal ot sobaki.", "en": "He ran away from the dog.", "des": "Shows movement away from something." },
-        { "phrase": "От дороги веет холодом.", "pr": "Ot dorogi veet kholodom.", "en": "Cold comes from the road.", "des": "Indicates source." },
-        { "phrase": "Подарок от друга был сюрпризом.", "pr": "Podarok ot druga byl syurprizom.", "en": "A gift from a friend was a surprise.", "des": "Shows origin or source." }
+        { "phrase": "Письмо [[от]] мамы пришло сегодня.", "pr": "Pismo [[ot]] mamy prishlo segodnya.", "en": "A letter [[from]] mom arrived today.", "des": "Indicates sender." },
+        { "phrase": "Он убежал [[от]] собаки.", "pr": "On ubezhal [[ot]] sobaki.", "en": "He ran away [[from]] the dog.", "des": "Shows movement away from something." },
+        { "phrase": "[[От]] дороги веет холодом.", "pr": "[[Ot]] dorogi veet kholodom.", "en": "Cold comes [[from]] the road.", "des": "Indicates source." },
+        { "phrase": "Подарок [[от]] друга был сюрпризом.", "pr": "Podarok [[ot]] druga byl syurprizom.", "en": "A gift [[from]] a friend was a surprise.", "des": "Shows origin or source." }
     ,
     
         { "phrase": "Это письмо для тебя.", "pr": "Eto pis'mo dlya tebya.", "en": "This letter is for you.", "des": "Indicates recipient." },
@@ -2046,86 +2046,86 @@
         { "phrase": "Он не может жить без музыки.", "pr": "On ne mozhet zhit bez muzyki.", "en": "He cannot live without music.", "des": "Shows essential absence." }
       ,
     
-        { "phrase": "Мы говорили о фильме.", "pr": "My govorili o filme.", "en": "We talked about the movie.", "des": "Specifies topic of discussion." },
-        { "phrase": "Он пишет статью об истории.", "pr": "On pishet stat'yu ob istorii.", "en": "He is writing an article about history.", "des": "Indicates subject matter." },
-        { "phrase": "Я думал о тебе.", "pr": "Ya dumal o tebe.", "en": "I was thinking about you.", "des": "Shows focus of thought." },
-        { "phrase": "Мы читали книгу о космосе.", "pr": "My chitali knigu o kosmose.", "en": "We read a book about space.", "des": "Indicates topic of reading." }
+        { "phrase": "Мы говорили [[о]] фильме.", "pr": "My govorili [[o]] filme.", "en": "We talked about the movie.", "des": "Specifies topic of discussion." },
+        { "phrase": "Он пишет статью [[об]] истории.", "pr": "On pishet stat'yu [[ob]] istorii.", "en": "He is writing an article about history.", "des": "Indicates subject matter." },
+        { "phrase": "Я думал [[о]] тебе.", "pr": "Ya dumal [[o]] tebe.", "en": "I was thinking about you.", "des": "Shows focus of thought." },
+        { "phrase": "Мы читали книгу [[о]] космосе.", "pr": "My chitali knigu [[o]] kosmose.", "en": "We read a book about space.", "des": "Indicates topic of reading." }
     ],
     "part3":[
         
-        { "phrase": "Я не хочу есть.", "pr": "Ya ne khochu yest'.", "en": "I do not want to eat.", "des": "Negates the verb." },
-        { "phrase": "Он не дома.", "pr": "On ne doma.", "en": "He is not at home.", "des": "Indicates absence." },
-        { "phrase": "Это не интересно.", "pr": "Eto ne interesno.", "en": "This is not interesting.", "des": "Negates adjective/adverb." },
-        { "phrase": "Мы не понимаем.", "pr": "My ne ponimayem.", "en": "We do not understand.", "des": "Negates the action." }
+        { "phrase": "Я [[не]] хочу есть.", "pr": "Ya [[ne]] khochu yest'.", "en": "I [[do not]] want to eat.", "des": "Negates the verb." },
+        { "phrase": "Он [[не]] дома.", "pr": "On [[ne]] doma.", "en": "He is [[not]] at home.", "des": "Indicates absence." },
+        { "phrase": "Это [[не]] интересно.", "pr": "Eto [[ne]] interesno.", "en": "This is [[not]] interesting.", "des": "Negates adjective/adverb." },
+        { "phrase": "Мы [[не]] понимаем.", "pr": "My [[ne]] ponimayem.", "en": "We do [[not]] understand.", "des": "Negates the action." }
       
     ,
     
-        { "phrase": "Я не видел ни фильма, ни книги.", "pr": "Ya ne videl ni fil'ma, ni knigi.", "en": "I have seen neither the movie nor the book.", "des": "Connects two negative items." },
-        { "phrase": "Он не говорит ни по-русски, ни по-английски.", "pr": "On ne govorit ni po-russki, ni po-angliyski.", "en": "He speaks neither Russian nor English.", "des": "Negates multiple options." },
-        { "phrase": "Я не ел ни рыбу, ни мясо.", "pr": "Ya ne yel ni rybu, ni myaso.", "en": "I ate neither fish nor meat.", "des": "Lists two negated items." },
-        { "phrase": "Она не любит ни чай, ни кофе.", "pr": "Ona ne lyubit ni chai, ni kofe.", "en": "She likes neither tea nor coffee.", "des": "Shows preference negation." }
+        { "phrase": "Я не видел [[ни]] фильма, [[ни]] книги.", "pr": "Ya ne videl [[ni]] fil'ma, [[ni]] knigi.", "en": "I have seen [[neither]] the movie [[nor]] the book.", "des": "Connects two negative items." },
+        { "phrase": "Он не говорит [[ни]] по-русски, [[ни]] по-английски.", "pr": "On ne govorit [[ni]] po-russki, ni po-angliyski.", "en": "He speaks [[neither]] Russian [[nor]] English.", "des": "Negates multiple options." },
+        { "phrase": "Я не ел [[ни]] рыбу, [[ни]] мясо.", "pr": "Ya ne yel [[ni]] rybu, [[ni]] myaso.", "en": "I ate [[neither]] fish [[nor]] meat.", "des": "Lists two negated items." },
+        { "phrase": "Она не любит [[ни]] чай, [[ни]] кофе.", "pr": "Ona ne lyubit [[ni]] chai, [[ni]] kofe.", "en": "She likes [[neither]] tea [[nor]] coffee.", "des": "Shows preference negation." }
       
     ,
-        { "phrase": "Я тоже хочу пойти.", "pr": "Ya tozhe khochu poyti.", "en": "I also want to go.", "des": "Adds agreement or inclusion." },
-        { "phrase": "Он тоже пришёл.", "pr": "On tozhe prishel.", "en": "He also came.", "des": "Indicates addition of someone." },
-        { "phrase": "Моя сестра тоже любит шоколад.", "pr": "Moya sestra tozhe lyubit shokolad.", "en": "My sister also likes chocolate.", "des": "Shows shared preference." },
-        { "phrase": "Я тоже согласен.", "pr": "Ya tozhe soglasen.", "en": "I also agree.", "des": "Expresses agreement." }
+        { "phrase": "Я [[тоже]] хочу пойти.", "pr": "Ya [[tozhe]] khochu poyti.", "en": "I [[also]] want to go.", "des": "Adds agreement or inclusion." },
+        { "phrase": "Он [[тоже]] пришёл.", "pr": "On [[tozhe]] prishel.", "en": "He [[also]] came.", "des": "Indicates addition of someone." },
+        { "phrase": "Моя сестра [[тоже]] любит шоколад.", "pr": "Moya sestra [[tozhe]] lyubit shokolad.", "en": "My sister [[also]] likes chocolate.", "des": "Shows shared preference." },
+        { "phrase": "Я [[тоже]] согласен.", "pr": "Ya [[tozhe]] soglasen.", "en": "I [[also]] agree.", "des": "Expresses agreement." }
       
     ,
     
-        { "phrase": "Я хочу ещё пирог.", "pr": "Ya khochu eshchyo pirog.", "en": "I want more pie.", "des": "Indicates additional quantity." },
-        { "phrase": "Он ещё спит.", "pr": "On eshchyo spit.", "en": "He is still sleeping.", "des": "Shows ongoing action." },
-        { "phrase": "Мне нужно ещё время.", "pr": "Mne nuzhno eshchyo vremya.", "en": "I need more time.", "des": "Indicates extra amount needed." },
-        { "phrase": "Я ещё не готов.", "pr": "Ya eshchyo ne gotov.", "en": "I am still not ready.", "des": "Expresses continuation of a negative state." }
+        { "phrase": "Я хочу [[ещё]] пирог.", "pr": "Ya khochu [[eshchyo]] pirog.", "en": "I want more pie.", "des": "Indicates additional quantity." },
+        { "phrase": "Он [[ещё]] спит.", "pr": "On [[eshchyo]] spit.", "en": "He is [[still]] sleeping.", "des": "Shows ongoing action." },
+        { "phrase": "Мне нужно [[ещё]] время.", "pr": "Mne nuzhno [[eshchyo]] vremya.", "en": "I need more time.([[still]])", "des": "Indicates extra amount needed." },
+        { "phrase": "Я [[ещё]] не готов.", "pr": "Ya [[eshchyo]] ne gotov.", "en": "I am [[still]] not ready.", "des": "Expresses continuation of a negative state." }
 ,
-        { "phrase": "Я уже поел.", "pr": "Ya uzhe poel.", "en": "I have already eaten.", "des": "Indicates completion of an action." },
-        { "phrase": "Он уже дома.", "pr": "On uzhe doma.", "en": "He is already at home.", "des": "Shows current state reached." },
-        { "phrase": "Мы уже сделали задачу.", "pr": "My uzhe sdelali zadachu.", "en": "We have already completed the task.", "des": "Indicates task finished." },
-        { "phrase": "Фильм уже начался.", "pr": "Film uzhe nachalsya.", "en": "The movie has already started.", "des": "Shows event has begun." }
+        { "phrase": "Я [[уже]] поел.", "pr": "Ya [[uzhe]] poel.", "en": "I have [[already]] eaten.", "des": "Indicates completion of an action." },
+        { "phrase": "Он [[уже]] дома.", "pr": "On [[uzhe]] doma.", "en": "He is [[already]] at home.", "des": "Shows current state reached." },
+        { "phrase": "Мы [[уже]] сделали задачу.", "pr": "My [[uzhe]] sdelali zadachu.", "en": "We have [[already]] completed the task.", "des": "Indicates task finished." },
+        { "phrase": "Фильм [[уже]] начался.", "pr": "Film [[uzhe]] nachalsya.", "en": "The movie has [[already]] started.", "des": "Shows event has begun." }
       ,
     
-        { "phrase": "Я всегда пью кофе утром.", "pr": "Ya vsegda p'yu kofe utrom.", "en": "I always drink coffee in the morning.", "des": "Indicates habitual action." },
-        { "phrase": "Она всегда улыбается.", "pr": "Ona vsegda ulybaetsya.", "en": "She always smiles.", "des": "Shows constant behavior." },
-        { "phrase": "Мы всегда вместе.", "pr": "My vsegda vmeste.", "en": "We are always together.", "des": "Indicates permanence." },
-        { "phrase": "Он всегда говорит правду.", "pr": "On vsegda govorit pravdu.", "en": "He always tells the truth.", "des": "Shows consistency of action." }
+        { "phrase": "Я [[всегда]] пью кофе утром.", "pr": "Ya [[vsegda]] p'yu kofe utrom.", "en": "I [[always]] drink coffee in the morning.", "des": "Indicates habitual action." },
+        { "phrase": "Она [[всегда]] улыбается.", "pr": "Ona [[vsegda]] ulybaetsya.", "en": "She [[always]] smiles.", "des": "Shows constant behavior." },
+        { "phrase": "Мы [[всегда]] вместе.", "pr": "My [[vsegda]] vmeste.", "en": "We are [[always]] together.", "des": "Indicates permanence." },
+        { "phrase": "Он [[всегда]] говорит правду.", "pr": "On [[vsegda]] govorit pravdu.", "en": "He [[always]] tells the truth.", "des": "Shows consistency of action." }
 ,
-        { "phrase": "Я никогда не был в Париже.", "pr": "Ya nikogda ne byl v Parizhe.", "en": "I have never been to Paris.", "des": "Indicates absence of experience." },
-        { "phrase": "Он никогда не опаздывает.", "pr": "On nikogda ne opazdyvayet.", "en": "He never arrives late.", "des": "Shows habitual negation." },
-        { "phrase": "Я никогда не курил.", "pr": "Ya nikogda ne kuril.", "en": "I have never smoked.", "des": "Indicates an action never done." },
-        { "phrase": "Она никогда не говорит неправду.", "pr": "Ona nikogda ne govorit nepravu.", "en": "She never tells a lie.", "des": "Shows moral consistency." }
+        { "phrase": "Я [[никогда]] не был в Париже.", "pr": "Ya [[nikogda]] ne byl v Parizhe.", "en": "I have [[never]] been to Paris.", "des": "Indicates absence of experience." },
+        { "phrase": "Он [[никогда]] не опаздывает.", "pr": "On [[nikogda]] ne opazdyvayet.", "en": "He [[never]] arrives late.", "des": "Shows habitual negation." },
+        { "phrase": "Я [[никогда]] не курил.", "pr": "Ya [[nikogda]] ne kuril.", "en": "I have [[never]] smoked.", "des": "Indicates an action never done." },
+        { "phrase": "Она [[никогда]] не говорит неправду.", "pr": "Ona [[nikogda]] ne govorit nepravu.", "en": "She [[never]] tells a lie.", "des": "Shows moral consistency." }
     
     ],"part4": [
     
-        { "phrase": "Кто это?", "pr": "Kto eto?", "en": "Who is this?", "des": "Asks for the identity of a person." },
-        { "phrase": "Кто пришёл вчера?", "pr": "Kto prishel vchera?", "en": "Who came yesterday?", "des": "Asks about someone’s arrival." },
-        { "phrase": "Кто знает ответ?", "pr": "Kto znayet otvet?", "en": "Who knows the answer?", "des": "Inquires about a knowledgeable person." },
-        { "phrase": "Кто будет вести урок?", "pr": "Kto budet vesti urok?", "en": "Who will lead the lesson?", "des": "Asks about the person in charge." }
+        { "phrase": "[[Кто]] это?", "pr": "[[Kto]] eto?", "en": "Who is this?", "des": "Asks for the identity of a person." },
+        { "phrase": "[[Кто]] пришёл вчера?", "pr": "[[Kto]] prishel vchera?", "en": "Who came yesterday?", "des": "Asks about someone’s arrival." },
+        { "phrase": "[[Кто]] знает ответ?", "pr": "[[Kto]] znayet otvet?", "en": "Who knows the answer?", "des": "Inquires about a knowledgeable person." },
+        { "phrase": "[[Кто]] будет вести урок?", "pr": "[[Kto]] budet vesti urok?", "en": "Who will lead the lesson?", "des": "Asks about the person in charge." }
       
     ,
-        { "phrase": "Что ты делаешь?", "pr": "Chto ty delayesh'?", "en": "What are you doing?", "des": "Asks about an action." },
-        { "phrase": "Что это значит?", "pr": "Chto eto znachit?", "en": "What does this mean?", "des": "Asks for explanation." },
-        { "phrase": "Что ты купил?", "pr": "Chto ty kupil?", "en": "What did you buy?", "des": "Asks about an object or thing." },
-        { "phrase": "Что произошло?", "pr": "Chto proizoshlo?", "en": "What happened?", "des": "Inquires about an event." }
-      
-    ,
-    
-        { "phrase": "Где ты был вчера?", "pr": "Gde ty byl vchera?", "en": "Where were you yesterday?", "des": "Asks about location in the past." },
-        { "phrase": "Где находится музей?", "pr": "Gde nakhoditsya muzey?", "en": "Where is the museum?", "des": "Asks about the position of a place." },
-        { "phrase": "Где моя сумка?", "pr": "Gde moya sumka?", "en": "Where is my bag?", "des": "Asks about the location of an object." },
-        { "phrase": "Где мы встретимся?", "pr": "Gde my vstretimsya?", "en": "Where will we meet?", "des": "Asks about the meeting location." }
+        { "phrase": "[[Что]] ты делаешь?", "pr": "[[Chto]] ty delayesh'?", "en": "What are you doing?", "des": "Asks about an action." },
+        { "phrase": "[[Что]] это значит?", "pr": "[[Chto]] eto znachit?", "en": "What does this mean?", "des": "Asks for explanation." },
+        { "phrase": "[[Что]] ты купил?", "pr": "[[Chto]] ty kupil?", "en": "What did you buy?", "des": "Asks about an object or thing." },
+        { "phrase": "[[Что]] произошло?", "pr": "[[Chto]] proizoshlo?", "en": "What happened?", "des": "Inquires about an event." }
       
     ,
     
-        { "phrase": "Когда ты придёшь?", "pr": "Kogda ty pridyesh'?", "en": "When will you come?", "des": "Asks about time of arrival." },
-        { "phrase": "Когда начнётся фильм?", "pr": "Kogda nachnyotsya film?", "en": "When will the movie start?", "des": "Inquires about starting time." },
-        { "phrase": "Когда у тебя день рождения?", "pr": "Kogda u tebya den' rozhdeniya?", "en": "When is your birthday?", "des": "Asks for a date." },
-        { "phrase": "Когда мы поедем в отпуск?", "pr": "Kogda my poedem v otpusk?", "en": "When will we go on vacation?", "des": "Asks about future plans." }
+        { "phrase": "[[Где]] ты был вчера?", "pr": "[[Gde]] ty byl vchera?", "en": "Where were you yesterday?", "des": "Asks about location in the past." },
+        { "phrase": "[[Где]] находится музей?", "pr": "[[Gde]] nakhoditsya muzey?", "en": "Where is the museum?", "des": "Asks about the position of a place." },
+        { "phrase": "[[Где]] моя сумка?", "pr": "[[Gde]] moya sumka?", "en": "Where is my bag?", "des": "Asks about the location of an object." },
+        { "phrase": "[[Где]] мы встретимся?", "pr": "[[Gde]] my vstretimsya?", "en": "Where will we meet?", "des": "Asks about the meeting location." }
       
     ,
-        { "phrase": "Почему ты опоздал?", "pr": "Pochemu ty opozdal?", "en": "Why were you late?", "des": "Asks for reason." },
-        { "phrase": "Почему он плачет?", "pr": "Pochemu on plachet?", "en": "Why is he crying?", "des": "Inquires about cause of emotion." },
-        { "phrase": "Почему мы должны это делать?", "pr": "Pochemu my dolzhny eto delat'?", "en": "Why do we have to do this?", "des": "Asks for justification." },
-        { "phrase": "Почему она ушла?", "pr": "Pochemu ona ushla?", "en": "Why did she leave?", "des": "Asks for reason behind an action." }
+    
+        { "phrase": "[[Когда]] ты придёшь?", "pr": "[[Kogda]] ty pridyesh'?", "en": "When will you come?", "des": "Asks about time of arrival." },
+        { "phrase": "[[Когда]] начнётся фильм?", "pr": "[[Kogda]] nachnyotsya film?", "en": "When will the movie start?", "des": "Inquires about starting time." },
+        { "phrase": "[[Когда]] у тебя день рождения?", "pr": "[[Kogda]] u tebya den' rozhdeniya?", "en": "When is your birthday?", "des": "Asks for a date." },
+        { "phrase": "[[Когда]] мы поедем в отпуск?", "pr": "[[Kogda]] my poedem v otpusk?", "en": "When will we go on vacation?", "des": "Asks about future plans." }
+      
+    ,
+        { "phrase": "[[Почему]] ты опоздал?", "pr": "Pochemu ty opozdal?", "en": "Why were you late?", "des": "Asks for reason." },
+        { "phrase": "[[Почему]] он плачет?", "pr": "Pochemu on plachet?", "en": "Why is he crying?", "des": "Inquires about cause of emotion." },
+        { "phrase": "[[Почему]] мы должны это делать?", "pr": "Pochemu my dolzhny eto delat'?", "en": "Why do we have to do this?", "des": "Asks for justification." },
+        { "phrase": "[[Почему]] она ушла?", "pr": "Pochemu ona ushla?", "en": "Why did she leave?", "des": "Asks for reason behind an action." }
       
     ,
         { "phrase": "Как ты это сделал?", "pr": "Kak ty eto sdelal?", "en": "How did you do this?", "des": "Asks about method or manner." },
@@ -2140,36 +2140,30 @@
       ]
     ,"part5":[
         
-        { "phrase": "Кто это?", "pr": "Kto eto?", "en": "Who is this?", "des": "Asks for the identity of a person." },
-        { "phrase": "Кто пришёл вчера?", "pr": "Kto prishel vchera?", "en": "Who came yesterday?", "des": "Asks about someone’s arrival." },
-        { "phrase": "Кто знает ответ?", "pr": "Kto znayet otvet?", "en": "Who knows the answer?", "des": "Inquires about a knowledgeable person." },
-        { "phrase": "Кто будет вести урок?", "pr": "Kto budet vesti urok?", "en": "Who will lead the lesson?", "des": "Asks about the person in charge." }
+        { "phrase": "[[Кто]] это?", "pr": "[[Kto]] eto?", "en": "Who is this?", "des": "Asks for the identity of a person." },
+        { "phrase": "[[Кто]] пришёл вчера?", "pr": "[[Kto]] prishel vchera?", "en": "Who came yesterday?", "des": "Asks about someone’s arrival." },
+        { "phrase": "[[Кто]] знает ответ?", "pr": "[[Kto]] znayet otvet?", "en": "Who knows the answer?", "des": "Inquires about a knowledgeable person." },
+        { "phrase": "[[Кто]] будет вести урок?", "pr": "[[Kto]] budet vesti urok?", "en": "Who will lead the lesson?", "des": "Asks about the person in charge." }
       
     ,
-        { "phrase": "Что ты делаешь?", "pr": "Chto ty delayesh'?", "en": "What are you doing?", "des": "Asks about an action." },
-        { "phrase": "Что это значит?", "pr": "Chto eto znachit?", "en": "What does this mean?", "des": "Asks for explanation." },
-        { "phrase": "Что ты купил?", "pr": "Chto ty kupil?", "en": "What did you buy?", "des": "Asks about an object or thing." },
-        { "phrase": "Что произошло?", "pr": "Chto proizoshlo?", "en": "What happened?", "des": "Inquires about an event." }
+        { "phrase": "[[Что]] ты делаешь?", "pr": "[[Chto]] ty delayesh'?", "en": "What are you doing?", "des": "Asks about an action." },
+        { "phrase": "[[Что]] это значит?", "pr": "[[Chto]] eto znachit?", "en": "What does this mean?", "des": "Asks for explanation." },
+        { "phrase": "[[Что]] ты купил?", "pr": "[[Chto]] ty kupil?", "en": "What did you buy?", "des": "Asks about an object or thing." },
+        { "phrase": "[[Что]] произошло?", "pr": "[[Chto]] proizoshlo?", "en": "What happened?", "des": "Inquires about an event." }
       ,
-        { "phrase": "Где ты был вчера?", "pr": "Gde ty byl vchera?", "en": "Where were you yesterday?", "des": "Asks about location in the past." },
-        { "phrase": "Где находится музей?", "pr": "Gde nakhoditsya muzey?", "en": "Where is the museum?", "des": "Asks about the position of a place." },
-        { "phrase": "Где моя сумка?", "pr": "Gde moya sumka?", "en": "Where is my bag?", "des": "Asks about the location of an object." },
-        { "phrase": "Где мы встретимся?", "pr": "Gde my vstretimsya?", "en": "Where will we meet?", "des": "Asks about the meeting location." }
+        { "phrase": "[[Где]] ты был вчера?", "pr": "[[Gde]] ty byl vchera?", "en": "Where were you yesterday?", "des": "Asks about location in the past." },
+        { "phrase": "[[Где]] находится музей?", "pr": "[[Gde]] nakhoditsya muzey?", "en": "Where is the museum?", "des": "Asks about the position of a place." },
+        { "phrase": "[[Где]] моя сумка?", "pr": "[[Gde]] moya sumka?", "en": "Where is my bag?", "des": "Asks about the location of an object." },
+        { "phrase": "[[Где]] мы встретимся?", "pr": "[[Gde]] my vstretimsya?", "en": "Where will we meet?", "des": "Asks about the meeting location." }
       
     ,
-        { "phrase": "Когда ты придёшь?", "pr": "Kogda ty pridyesh'?", "en": "When will you come?", "des": "Asks about time of arrival." },
-        { "phrase": "Когда начнётся фильм?", "pr": "Kogda nachnyotsya film?", "en": "When will the movie start?", "des": "Inquires about starting time." },
-        { "phrase": "Когда у тебя день рождения?", "pr": "Kogda u tebya den' rozhdeniya?", "en": "When is your birthday?", "des": "Asks for a date." },
-        { "phrase": "Когда мы поедем в отпуск?", "pr": "Kogda my poedem v otpusk?", "en": "When will we go on vacation?", "des": "Asks about future plans." }
+        { "phrase": "[[Когда]] ты придёшь?", "pr": "[[Kogda]] ty pridyesh'?", "en": "When will you come?", "des": "Asks about time of arrival." },
+        { "phrase": "[[Когда]] начнётся фильм?", "pr": "[[Kogda]] nachnyotsya film?", "en": "When will the movie start?", "des": "Inquires about starting time." },
+        { "phrase": "[[Когда]] у тебя день рождения?", "pr": "[[Kogda]] u tebya den' rozhdeniya?", "en": "When is your birthday?", "des": "Asks for a date." },
+        { "phrase": "[[Когда]] мы поедем в отпуск?", "pr": "[[Kogda]] my poedem v otpusk?", "en": "When will we go on vacation?", "des": "Asks about future plans." }
       
     ,
     
-        { "phrase": "Почему ты опоздал?", "pr": "Pochemu ty opozdal?", "en": "Why were you late?", "des": "Asks for reason." },
-        { "phrase": "Почему он плачет?", "pr": "Pochemu on plachet?", "en": "Why is he crying?", "des": "Inquires about cause of emotion." },
-        { "phrase": "Почему мы должны это делать?", "pr": "Pochemu my dolzhny eto delat'?", "en": "Why do we have to do this?", "des": "Asks for justification." },
-        { "phrase": "Почему она ушла?", "pr": "Pochemu ona ushla?", "en": "Why did she leave?", "des": "Asks for reason behind an action." }
-      
-    ,
     
         { "phrase": "Как ты это сделал?", "pr": "Kak ty eto sdelal?", "en": "How did you do this?", "des": "Asks about method or manner." },
         { "phrase": "Как пройти к станции?", "pr": "Kak proyti k stantsii?", "en": "How do I get to the station?", "des": "Asks for directions." },
@@ -2184,47 +2178,47 @@
         { "phrase": "Какая погода на улице?", "pr": "Kakaya pogoda na ulitse?", "en": "What is the weather outside?", "des": "Asks for description." }
       ],"part6":[
 
-        { "phrase": "Это мой дом.", "pr": "Eto moy dom.", "en": "This is my house.", "des": "Identifies an object or thing." },
-        { "phrase": "Что это?", "pr": "Chto eto?", "en": "What is this?", "des": "Asks about identity of an object." },
-        { "phrase": "Это интересно.", "pr": "Eto interesno.", "en": "This is interesting.", "des": "Describes a situation or thing." },
-        { "phrase": "Это не правильно.", "pr": "Eto ne pravil'no.", "en": "This is not correct.", "des": "Negates a statement about something." }
+        { "phrase": "[[Это]] мой дом.", "pr": "[[Eto]] moy dom.", "en": "[[This]] is my house.", "des": "Identifies an object or thing." },
+        { "phrase": "Что [[это]]?", "pr": "Chto [[eto]]?", "en": "What is [[this]]?", "des": "Asks about identity of an object." },
+        { "phrase": "[[Это]] интересно.", "pr": "[[Eto]] interesno.", "en": "[[This]] is interesting.", "des": "Describes a situation or thing." },
+        { "phrase": "[[Это]] не правильно.", "pr": "[[Eto]] ne pravil'no.", "en": "[[This]] is not correct.", "des": "Negates a statement about something." }
       ,
     
-        { "phrase": "Я живу здесь.", "pr": "Ya zhivu zdes'.", "en": "I live here.", "des": "Indicates current location." },
-        { "phrase": "Здесь холодно.", "pr": "Zdes' kholodno.", "en": "It is cold here.", "des": "Describes the environment at this place." },
-        { "phrase": "Смотри здесь.", "pr": "Smotri zdes'.", "en": "Look here.", "des": "Directs attention to a location." },
-        { "phrase": "Здесь много людей.", "pr": "Zdes' mnogo lyudey.", "en": "There are many people here.", "des": "States quantity at a place." }
+        { "phrase": "Я живу [[здесь]].", "pr": "Ya zhivu [[zdes]]'.", "en": "I live [[here]].", "des": "Indicates current location." },
+        { "phrase": "[[Здесь]] холодно.", "pr": "[[Zdes]]' kholodno.", "en": "It is cold [[here]].", "des": "Describes the environment at this place." },
+        { "phrase": "Смотри [[здесь]].", "pr": "Smotri [[zdes]]'.", "en": "Look [[here]].", "des": "Directs attention to a location." },
+        { "phrase": "[[Здесь]] много людей.", "pr": "[[Zdes]]' mnogo lyudey.", "en": "There are many people [[here]].", "des": "States quantity at a place." }
       
     ,
-        { "phrase": "Он живёт там.", "pr": "On zhivyot tam.", "en": "He lives there.", "des": "Specifies a distant location." },
-        { "phrase": "Там красиво.", "pr": "Tam krasivo.", "en": "It is beautiful there.", "des": "Describes environment at a distance." },
-        { "phrase": "Смотри там.", "pr": "Smotri tam.", "en": "Look there.", "des": "Directs attention to a place farther away." },
-        { "phrase": "Там много деревьев.", "pr": "Tam mnogo derev'yev.", "en": "There are many trees there.", "des": "Indicates quantity at another location." }
+        { "phrase": "Он живёт [[там]].", "pr": "On zhivyot [[tam]].", "en": "He lives [[there]].", "des": "Specifies a distant location." },
+        { "phrase": "[[Там]] красиво.", "pr": "[[Tam]] krasivo.", "en": "It is beautiful [[there]].", "des": "Describes environment at a distance." },
+        { "phrase": "Смотри [[там]].", "pr": "Smotri [[tam]].", "en": "Look [[there]].", "des": "Directs attention to a place farther away." },
+        { "phrase": "[[Там]] много деревьев.", "pr": "[[Tam]] mnogo derev'yev.", "en": "[[There]] are many trees there.", "des": "Indicates quantity at another location." }
       ,
-        { "phrase": "Я хочу есть.", "pr": "Ya khochu yest'.", "en": "I want to eat.", "des": "First person singular subject." },
-        { "phrase": "Я люблю музыку.", "pr": "Ya lyublyu muzyku.", "en": "I love music.", "des": "Expresses personal preference." },
-        { "phrase": "Я читаю книгу.", "pr": "Ya chitayu knigu.", "en": "I am reading a book.", "des": "Describes ongoing action." },
-        { "phrase": "Я живу в Москве.", "pr": "Ya zhivu v Moskve.", "en": "I live in Moscow.", "des": "States personal location." }
+        { "phrase": "[[Я]] хочу есть.", "pr": "[[Ya]] khochu yest'.", "en": "[[I]] want to eat.", "des": "First person singular subject." },
+        { "phrase": "[[Я]] люблю музыку.", "pr": "[[Ya]] lyublyu muzyku.", "en": "[[I]] love music.", "des": "Expresses personal preference." },
+        { "phrase": "[[Я]] читаю книгу.", "pr": "[[Ya]] chitayu knigu.", "en": "[[I]] am reading a book.", "des": "Describes ongoing action." },
+        { "phrase": "[[Я]] живу в Москве.", "pr": "[[Ya]] zhivu v Moskve.", "en": "[[I]] live in Moscow.", "des": "States personal location." }
       ,
     
-        { "phrase": "Ты работаешь хорошо.", "pr": "Ty rabotayesh' khorosho.", "en": "You work well.", "des": "Second person singular subject." },
+        { "phrase": "[[Ты]] работаешь хорошо.", "pr": "Ty rabotayesh' khorosho.", "en": "You work well.", "des": "Second person singular subject." },
         { "phrase": "Ты где был?", "pr": "Ty gde byl?", "en": "Where were you?", "des": "Asks about location of the listener." },
         { "phrase": "Ты понимаешь меня?", "pr": "Ty ponimayesh' menya?", "en": "Do you understand me?", "des": "Questions comprehension." },
         { "phrase": "Ты любишь кофе?", "pr": "Ty lyubish' kofe?", "en": "Do you like coffee?", "des": "Asks about preference." }
       
     ,
     
-        { "phrase": "Он идёт в школу.", "pr": "On idyot v shkolu.", "en": "He is going to school.", "des": "Third person masculine subject." },
-        { "phrase": "Она читает книгу.", "pr": "Ona chitayet knigu.", "en": "She is reading a book.", "des": "Third person feminine subject." },
-        { "phrase": "Он любит спорт.", "pr": "On lyubit sport.", "en": "He likes sports.", "des": "Describes preference of a male." },
-        { "phrase": "Она живёт в Москве.", "pr": "Ona zhivyot v Moskve.", "en": "She lives in Moscow.", "des": "States female subject’s location." }
+        { "phrase": "[[Он]] идёт в школу.", "pr": "[[On]] idyot v shkolu.", "en": "[[He]] is going to school.", "des": "Third person masculine subject." },
+        { "phrase": "[[Она]] читает книгу.", "pr": "[[Ona]] chitayet knigu.", "en": "[[She]] is reading a book.", "des": "Third person feminine subject." },
+        { "phrase": "[[Он]] любит спорт.", "pr": "[[On]] lyubit sport.", "en": "[[He]] likes sports.", "des": "Describes preference of a male." },
+        { "phrase": "[[Она]] живёт в Москве.", "pr": "[[Ona]] zhivyot v Moskve.", "en": "[[She]] lives in Moscow.", "des": "States female subject’s location." }
       
     ,
     
-        { "phrase": "Мы идём в парк.", "pr": "My idyom v park.", "en": "We are going to the park.", "des": "First person plural subject." },
-        { "phrase": "Они играют в футбол.", "pr": "Oni igrayut v futbol.", "en": "They are playing football.", "des": "Third person plural subject." },
-        { "phrase": "Мы готовим ужин.", "pr": "My gotovim uzhin.", "en": "We are preparing dinner.", "des": "Describes action of the group including speaker." },
-        { "phrase": "Они любят музыку.", "pr": "Oni lyubyat muzyku.", "en": "They like music.", "des": "Shows preference of others." }
+        { "phrase": "[[Мы]] идём в парк.", "pr": "[[My]] idyom v park.", "en": "[[We]] are going to the park.", "des": "First person plural subject." },
+        { "phrase": "[[Они]] играют в футбол.", "pr": "[[Oni]] igrayut v futbol.", "en": "[[They]] are playing football.", "des": "Third person plural subject." },
+        { "phrase": "[[Мы]] готовим ужин.", "pr": "[[My]] gotovim uzhin.", "en": "[[We]] are preparing dinner.", "des": "Describes action of the group including speaker." },
+        { "phrase": "[[Они]] любят музыку.", "pr": "[[Oni]] lyubyat muzyku.", "en": "[[They]] like music.", "des": "Shows preference of others." }
       ]
     
 

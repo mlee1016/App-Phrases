@@ -110,14 +110,18 @@
 
       <!-- 🚀 Quick Links -->
       <div class="flex flex-col sm:flex-row justify-center items-center gap-4 sm:gap-6 w-full mt-8">
-        <button class="bg-cyan-700 hover:bg-cyan-600 px-6 py-3 rounded-xl text-white shadow-md hover:shadow-lg transition w-full sm:w-auto">
-          Continue Grammar
+        <button [routerLink]="'/language/Korean'" class="bg-cyan-700 hover:bg-cyan-600 px-6 py-3 rounded-xl text-white shadow-md hover:shadow-lg transition w-full sm:w-auto">
+          korean
         </button>
-        <button class="bg-emerald-700 hover:bg-emerald-600 px-6 py-3 rounded-xl text-white shadow-md hover:shadow-lg transition w-full sm:w-auto">
-          Continue Stories
+        <button  [routerLink]="'/language/Russian'" class="bg-emerald-700 hover:bg-emerald-600 px-6 py-3 rounded-xl text-white shadow-md hover:shadow-lg transition w-full sm:w-auto">
+          russian
         </button>
-        <button class="bg-blue-700 hover:bg-blue-600 px-6 py-3 rounded-xl text-white shadow-md hover:shadow-lg transition w-full sm:w-auto">
-          Review Favorites
+        <button  (click)="navToSite(2)" class="bg-red-700 hover:bg-red-600 px-6 py-3 rounded-xl text-white shadow-md hover:shadow-lg transition w-full sm:w-auto">
+          italian
+        </button>
+        
+        <button  (click)="navToSite(0)" class="bg-indigo-700 hover:bg-indigo-600 px-6 py-3 rounded-xl text-white shadow-md hover:shadow-lg transition w-full sm:w-auto">
+          Japanese
         </button>
       </div>
 

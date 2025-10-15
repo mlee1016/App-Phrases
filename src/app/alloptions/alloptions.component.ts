@@ -13,19 +13,19 @@ export class AlloptionsComponent {
     allSites = [
   
       
-      {"s":"All List","des":"Look over all the list"}, 
-      {"s":"Fill in the blank","des":"given a phrase with a missing section place the correct word in to the spot"},
+      {"s":"All List","des":"Look over all the list","m":'Story + Popular/Useful + Course'}, 
+      {"s":"Fill in the blank","des":"given a phrase with a missing section place the correct word in to the spot","m":'Course'}, 
 
-      // {"s":"Study Cards","des":"Allows to individual phrases and words"},
+      {"s":"Study Cards","des":"Allows to individual phrases and words","m":'Story + Popular/Useful + Course'}, 
 
-      {"s":"Multi","des":"Study with multiple choice questions"},
+      {"s":"Multi","des":"Study with multiple choice questions","m":'Story + Popular/Useful + Course'}, 
   
-      {"s":"Type","des":"Study by typing in your answers"},
+      {"s":"Type","des":"Study by typing in your answers","m":'Story + Popular/Useful + Course'}, 
   
-      {"s":"Card","des":"allows you to study cards"},
+      {"s":"Card","des":"allows you to study cards","m":'Story + Popular/Useful + Course'}, 
       {"s":"Study kanji","des":"Study some from kanji from n5 - n1"},
-      {"s":"Speech pronuciation","des":"Practice speaking and pronunciation"},
-      {"s":"Chat","des":"Allows you to chat with a bot with predetermined conversations"},
+      {"s":"Speech pronuciation","des":"Practice speaking and pronunciation","m":'Story + Popular/Useful + Course'}, 
+      {"s":"Chat","des":"Allows you to chat with a bot with predetermined conversations","m":'Story'}, 
 
 
     ]
@@ -64,10 +64,10 @@ export class AlloptionsComponent {
     
       }
       
-      /*if(s === 'Study Cards'){
+      if(s === 'Study Cards'){
         this.route.navigate(['study',this.id])
       
-        }*/
+        }
         
       if(s === 'Chat'){
         this.route.navigate(['chat',this.id])
