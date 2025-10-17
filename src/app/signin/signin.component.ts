@@ -15,7 +15,7 @@ export class SigninComponent implements OnInit {
   reactiveForm : FormGroup
 
   username = ""
-  password =""
+  password ="" 
   errorMessage = '';
   //auth_User = new AuthenticationUser()
   signin = "You are not sign in"
@@ -107,7 +107,7 @@ signIn() {
   /*
     this.http.post(this.url_sign_in,this.reactiveForm.getRawValue(),{withCredentials:true}).subscribe(
 
-      (data:any)=>{
+      (data:any)=>{ 
         console.log(data)
         localStorage.setItem('jwt',data.jwt)
         this.router.navigate(['home'])

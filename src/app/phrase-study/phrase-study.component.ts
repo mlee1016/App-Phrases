@@ -91,6 +91,7 @@ export class PhraseStudyComponent {
       this.selectLang = 'ko'
       this.playLanguage = 'ko-KR'
       this.allList = this.allListGrammer
+      this.Popular= this.allListPopularKorean
       this.allListS = this.allListStory
       break
     case 'Russian':
@@ -98,12 +99,14 @@ export class PhraseStudyComponent {
 
       this.playLanguage = 'ru-RU'
       this.allList = this.phrasesListRu
+      this.Popular= this.phrasePopularRussian
       this.allListS = this.phrasesListRussian
       break
     case'Italian':
       this.selectLang = 'itn'
       this.playLanguage = 'it-IT'
       this.allList = this.phrasesListItalian
+      this.Popular= this.phrasePopularItalian
       this.allListS = this.phrasesListItalian2
 
       break
@@ -120,6 +123,7 @@ export class PhraseStudyComponent {
       this.pro.set('kana')
       this.playLanguage = 'ja-JP'
       this.allList = this.allListJapanesegrammer
+      this.Popular= this.allPopularJapanesePhrases
       this.allListS = this.allListJapaneseStory
 
   }

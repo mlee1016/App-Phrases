@@ -1,0 +1,99 @@
+/* Basic gradient background */
+.bg-gradient {
+  background: linear-gradient(to bottom right, #041017, #0a1a25);
+}
+
+/* Menu cards (centered, responsive) */
+.menu-container {
+  animation: fadeSlideIn 0.6s ease-out;
+  display: grid;
+  gap: 1.25rem;
+}
+
+.menu-card {
+  background: rgba(6, 26, 32, 0.85);
+  border: 1px solid rgba(13, 37, 49, 0.6);
+  border-radius: 1rem;
+  padding: 1.25rem;
+  text-align: center;
+  cursor: pointer;
+  transition: transform .18s ease, box-shadow .18s ease, background .18s ease;
+  box-shadow: 0 8px 20px rgba(2, 6, 8, 0.45);
+}
+.menu-card .icon {
+  font-size: 2rem;
+  color: #9be7f6;
+  margin-bottom: 0.5rem;
+}
+.menu-card .title {
+  font-weight: 600;
+  color: #dff7fb;
+  margin-bottom: 0.25rem;
+  font-size: 1.05rem;
+}
+.menu-card .sub {
+  color: #b6dfe8;
+  font-size: 0.85rem;
+}
+
+.menu-card:hover {
+  transform: translateY(-6px) scale(1.02);
+  background: rgba(16,185,129,0.06);
+  border-color: rgba(16,185,129,0.35);
+  box-shadow: 0 12px 28px rgba(16,185,129,0.08);
+}
+
+/* optional small cards for filteredSites */
+.site-card {
+  background: #05343a;
+  border-radius: 0.75rem;
+  padding: 0.9rem;
+  text-align: center;
+  cursor: pointer;
+  transition: transform .15s ease, box-shadow .15s ease;
+}
+.site-card:hover { transform: translateY(-4px); box-shadow: 0 8px 18px rgba(0,0,0,0.35); }
+
+/* fade/slide animation (used above) */
+@keyframes fadeSlideIn {
+  0% { opacity: 0; transform: translateY(20px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+
+/* responsive tweaks */
+@media (min-width: 768px) {
+  .menu-container { grid-template-columns: repeat(2, 1fr); }
+}
+@media (max-width: 767px) {
+  .menu-container { grid-template-columns: 1fr; }
+}
+/* Fade + Slide-in Animation for Any Button */
+.fade-slide-btn {
+  opacity: 0;
+  animation: fadeSlideInBtn 0.8s ease-out forwards;
+}
+
+/* Optional stagger: add delay classes */
+.fade-slide-btn.delay-1 { animation-delay: 0.15s; }
+.fade-slide-btn.delay-2 { animation-delay: 0.3s; }
+.fade-slide-btn.delay-3 { animation-delay: 0.45s; }
+.fade-slide-btn.delay-4 { animation-delay: 0.6s; }
+
+@keyframes fadeSlideInBtn {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Optional hover effect matching menu-btn style */
+.fade-slide-btn:hover {
+  transform: scale(1.03);
+  box-shadow: 0 0 12px rgba(0, 255, 255, 0.3);
+  color: #00ffff;
+  border-color: #00ffff;
+}

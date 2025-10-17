@@ -1,4 +1,4 @@
-.phrase-card {
+/* .phrase-card {
   border: 1px solid #ddd;
   padding: 1rem;
   margin: 1rem 0;
@@ -54,4 +54,68 @@ span {
   padding: 16px;
   box-shadow: 0 4px 12px rgba(0,0,0,0.2);
   min-width: 250px;
+} */
+/* Fade & Slide Animation */
+@keyframes fadeInUp {
+  0% { opacity: 0; transform: translateY(25px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+.animate-fadeInUp {
+  animation: fadeInUp 0.6s ease-out both;
+}
+
+/* Card Styling */
+.phrase-card {
+  position: relative;
+  backdrop-filter: blur(10px);
+  transition: all 0.3s ease;
+}
+.phrase-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 25px rgba(0, 255, 255, 0.2);
+}
+
+/* Words */
+.phrase-word {
+  background: rgba(240, 253, 255, 0.6);
+  border-radius: 8px;
+  padding: 0.35rem 0.7rem;
+  cursor: pointer;
+  transition: all 0.25s ease;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+}
+.phrase-word:hover {
+  background: rgba(34, 211, 238, 0.3);
+  color: #0369a1;
+  transform: scale(1.05);
+}
+
+/* Active Word Highlight */
+.active-word {
+  background: linear-gradient(90deg, #06b6d4, #22d3ee);
+  color: white !important;
+  transform: scale(1.08);
+  box-shadow: 0 0 10px rgba(6, 182, 212, 0.5);
+}
+
+/* Navigation Buttons */
+.nav-btn {
+  background: linear-gradient(135deg, #06b6d4, #22d3ee);
+  color: white;
+  border: none;
+  padding: 0.6rem 1.6rem;
+  border-radius: 12px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  cursor: pointer;
+  transition: all 0.25s ease;
+  box-shadow: 0 4px 12px rgba(6, 182, 212, 0.3);
+}
+.nav-btn:hover {
+  background: linear-gradient(135deg, #0e7490, #06b6d4);
+  transform: scale(1.05);
+  box-shadow: 0 0 15px rgba(6, 182, 212, 0.5);
+}
+.nav-btn:active {
+  transform: scale(0.97);
 }

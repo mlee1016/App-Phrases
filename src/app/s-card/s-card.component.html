@@ -1,250 +1,118 @@
-<!---<header class="flex justify-between items-center p-3 sm:p-4 bg-[#0F1F26] shadow-md text-cyan-100">
-  <h2 class="text-base sm:text-lg md:text-xl font-bold truncate max-w-[70%]">
-    {{ selectedPhrases() === '' ? '📚 Pick a list →' : 'Currently studying: ' + selectedPhrases() }}
-  </h2>
-  <button
-    (click)="toggleSidebar()"
-    class="bg-cyan-500 hover:bg-cyan-400 text-black px-3 py-2 rounded-lg shadow transition text-sm sm:text-base">
-    {{ sideBar ? '✖ Close' : '☰ Menu' }}
-  </button>
-</header>
-
-<!-- BACKDROP --
-<div *ngIf="sideBar" class="fixed inset-0 bg-black bg-opacity-60 z-40 flex items-center justify-center sm:ml-[5rem]  ">
-  
-  <!-- MODAL PANEL --
-  <div
-    class="bg-cyan-950 text-white w-[95%] sm:w-[90%] max-w-md rounded-lg shadow-xl p-5 sm:p-6 space-y-6 mt-[3rem] sm:mt-[4rem] overflow-y-scroll h-[80vh] z-50 animate-fade-in">
-    
-    <div class="text-right">
-      <button
-        class="text-xs sm:text-sm bg-cyan-800 hover:bg-cyan-700 text-white px-3 py-1 rounded"
-        (click)="close()">
-        ✖ Close
-      </button>
-    </div>
-
-    <!-- Lists Section -
-    <div>
-      <h2 class="text-lg sm:text-xl font-bold mb-2">
-        {{selectedPhrases()===''?'Pick a phrase':'Selected: ' + selectedPhrases()}}
-      </h2>
-      <h2 class="text-md sm:text-lg font-bold mb-2 border-b border-cyan-600 pb-1">Lists</h2>
-      <div class="flex flex-col gap-2 h-[12rem] sm:h-[15rem] overflow-y-scroll">
-        <button
-          *ngFor="let item of phraseCourse"
-          (click)="getSpecificPhrases(item.s)"
-          class="hover:bg-cyan-600 text-white px-3 py-2 rounded transition text-sm sm:text-base"
-          [ngClass]="item.isDone ? 'bg-blue-600' : 'bg-cyan-700'">
-          {{ item.s }}
-        </button>
-      </div>
-    </div>
-
-    <!-- Story Section --
-    <div>
-      <h2 class="text-md sm:text-lg font-bold mt-4 mb-2 border-b border-cyan-600 pb-1">Story</h2>
-      <div class="flex flex-col gap-2 h-[12rem] sm:mb-4 sm:h-[15rem] overflow-y-scroll">
-        <button
-          *ngFor="let item of phraseStory"
-          (click)="getSpecificPhrases(item.s)"
-          class="hover:bg-cyan-500 text-white px-3 py-2 rounded transition text-sm sm:text-base"
-          [ngClass]="item.isDone ? 'bg-[#0f765e]' : 'bg-cyan-500'">
-          {{ item.s }}
-        </button>
-      </div>
-    </div>
-  </div>
-</div>-->
-
+<!-- Header -->
 <header class="flex justify-between items-center p-4 bg-[#0F1F26] shadow-md text-cyan-100">
-
   <h2 class="text-lg md:text-xl font-bold">
     {{ selectedPhrases() === '' ? '📚 Pick a list →' : 'Currently studying: ' + selectedPhrases() }}
   </h2>
-  <button
-  
-    (click)="toggleSidebar()"
-    class="bg-cyan-500 hover:bg-cyan-400 text-black px-3 py-2 rounded-lg shadow transition"
-  >
+  <button (click)="toggleSidebar()"
+          class="button bg-cyan-500 hover:bg-cyan-400 text-black px-3 py-2 rounded-lg shadow transition">
     {{ sideBar ? '✖ Close' : '☰ Menu' }}
   </button>
 </header>
-<!-- BACKDROP -->
-<div *ngIf="sideBar" class="fixed inset-0 bg-black bg-opacity-60 z-40 flex items-center justify-center ">
-  
-  <!-- MODAL PANEL -->
 
-
-  <div class="bg-cyan-950 text-white w-[90%] max-w-lg rounded-lg shadow-xl p-6 space-y-6 z-50 animate-fade-in overflow-y-auto max-h-[80vh]">
-
-    
-    <!-- Close Button -->
+<!-- Sidebar Modal -->
+<div *ngIf="sideBar" class="modal-backdrop fixed inset-0 z-40 flex items-center justify-center animate-fade-in">
+  <div class="modal-panel open w-[90%] max-w-lg p-6 space-y-6">
     <div class="text-right">
-      <button
-        class="text-sm bg-cyan-800 hover:bg-cyan-700 text-white px-3 py-1 rounded"
-        (click)="close()"
-      >
-        ✖ Close
-      </button>
+      <button (click)="close()" class="button bg-cyan-800 hover:bg-cyan-700 px-3 py-1 rounded text-sm">✖ Close</button>
     </div>
-    <!-- List Section -->
-    <div class="overflow-y-auto max-h-80">
-      
-      <h2  class="text-xl font-bold mb-2 ">{{selectedPhrases()===''?'pick a phrase': 'selected: ' + selectedPhrases()}}</h2>
-      <h2 class="text-lg font-bold mt-4 mb-2 border-b border-cyan-600 pb-1">Lists</h2>
+
+    <!-- Lists Section -->
+    <div *ngIf="m1==='course'" class="overflow-y-auto max-h-80">
+      <h2 class="text-xl font-bold mb-2">{{selectedPhrases()===''?'pick a phrase': 'selected: ' + selectedPhrases()}}</h2>
       <div class="flex flex-col gap-2">
-        <button
-          *ngFor="let item of phraseCourse"
-          (click)="getSpecificPhrases(item.s)"
-          class="hover:bg-cyan-600 text-white px-3 py-2 rounded transition"
-          [ngClass]="item.isDone ? 'bg-blue-600' : 'bg-cyan-700'"
-        >
+        <button *ngFor="let item of phraseCourse" 
+                (click)="getSpecificPhrases(item.s)"
+                [ngClass]="item.isDone ? 'bg-blue-600' : 'bg-cyan-700'"
+                class="button px-3 py-2 rounded text-white hover:bg-cyan-600 transition">
           {{ item.s }}
         </button>
       </div>
     </div>
+
     <!-- Popular Section -->
-    <div class="overflow-y-auto max-h-80">
+    <div *ngIf="'popular'" class="overflow-y-auto max-h-80">
       <h2 class="text-lg font-bold mt-4 mb-2 border-b border-cyan-600 pb-1">Popular/Useful</h2>
       <div class="flex flex-col gap-2">
-        <button
-          *ngFor="let item of phrasePopular"
-          (click)="getSpecificPhrases(item.s)"
-          class="hover:bg-cyan-500 text-white px-3 py-2 rounded transition"
-          [ngClass]="item.isDone ? 'bg-[#0f765e]' : 'bg-cyan-500'"
-        >
+        <button *ngFor="let item of phrasePopular"
+                (click)="getSpecificPhrases(item.s)"
+                [ngClass]="item.isDone ? 'bg-[#0f765e]' : 'bg-cyan-500'"
+                class="button px-3 py-2 rounded text-white hover:bg-cyan-400 transition">
           {{ item.s }}
         </button>
-
       </div>
     </div>
+
     <!-- Story Section -->
-    <div class="overflow-y-auto max-h-80">
+    <div *ngIf="m1==='story'" class="overflow-y-auto max-h-80">
       <h2 class="text-lg font-bold mt-4 mb-2 border-b border-cyan-600 pb-1">Story</h2>
       <div class="flex flex-col gap-2">
-        <button
-          *ngFor="let item of phraseStory"
-          (click)="getSpecificPhrases(item.s)"
-          class="hover:bg-cyan-500 text-white px-3 py-2 rounded transition"
-          [ngClass]="item.isDone ? 'bg-[#0f765e]' : 'bg-cyan-500'"
-        >
+        <button *ngFor="let item of phraseStory"
+                (click)="getSpecificPhrases(item.s)"
+                [ngClass]="item.isDone ? 'bg-[#0f765e]' : 'bg-cyan-500'"
+                class="button px-3 py-2 rounded text-white hover:bg-cyan-400 transition">
           {{ item.s }}
         </button>
       </div>
     </div>
-
   </div>
 </div>
 
-<!-- Start Section -->
-<div *ngIf="isReadyToStart && !quizStarted" class="text-center mt-6 px-2">
-  <button
-    (click)="startQuiz()"
-    class="bg-green-600 hover:bg-green-700 text-white px-5 py-2 sm:px-6 sm:py-3 rounded shadow text-base sm:text-lg">
+<!-- Start Quiz Section -->
+<div *ngIf="isReadyToStart && !quizStarted" class="text-center mt-6 px-2 animate-fade-in">
+  <button (click)="startQuiz()" class="nav-btn text-base sm:text-lg px-6 py-3 rounded shadow">
     ▶ Start
   </button>
-
   <div class="flex flex-col sm:flex-row justify-center mt-6 gap-3">
-    <button
-      (click)="toggleDirectionMode(directionModeE)"
-      class="px-3 sm:px-4 py-2 rounded shadow text-white text-sm sm:text-base"
-      [ngClass]="{ 'bg-cyan-700': directionMode === directionModeE, 'bg-cyan-500': directionMode !== directionModeE }">
+    <button (click)="toggleDirectionMode(directionModeE)"
+            [ngClass]="{'bg-cyan-700': directionMode===directionModeE, 'bg-cyan-500': directionMode!==directionModeE}"
+            class="nav-btn text-sm sm:text-base px-4 py-2 rounded shadow">
       {{ id }} → English
     </button>
-    <button
-      (click)="toggleDirectionMode(directionModeC)"
-      class="px-3 sm:px-4 py-2 rounded shadow text-white text-sm sm:text-base"
-      [ngClass]="{ 'bg-cyan-700': directionMode === directionModeC, 'bg-cyan-500': directionMode !== directionModeC }">
+    <button (click)="toggleDirectionMode(directionModeC)"
+            [ngClass]="{'bg-cyan-700': directionMode===directionModeC, 'bg-cyan-500': directionMode!==directionModeC}"
+            class="nav-btn text-sm sm:text-base px-4 py-2 rounded shadow">
       English → {{ id }}
     </button>
   </div>
 </div>
 
-<!-- QUIZ SECTION -->
+<!-- Quiz Section -->
 <div *ngIf="['Italian','Japanese','Korean','Russian','German'].includes(id) && quizStarted"
      class="text-white min-h-screen py-6 px-3 sm:px-4 animate-slide-in-right">
 
   <!-- Top Controls -->
   <div class="flex flex-col items-center gap-3 sm:gap-4 mb-6">
-    <button
-      *ngIf="['kor-to-eng','jp-to-eng','itn-to-eng','rus-to-eng','fr-to-eng'].includes(directionMode)"
-      (click)="phraseOnMode()"
-      class="bg-cyan-500 hover:bg-cyan-600 px-3 sm:px-4 py-2 rounded shadow text-sm sm:text-base">
-      {{ phraseOn ? 'Hide' : 'Show' }} Phrase
-    </button>
-
-    <button
-      (click)="togglePronunciation()"
-      class="bg-cyan-500 hover:bg-cyan-600 px-3 sm:px-4 py-2 rounded shadow text-sm sm:text-base">
-      {{ showPronunciation ? 'Hide' : 'Show' }} Pronunciation
-    </button>
-
-    <button
-      *ngIf="['jp-to-eng','itn-to-eng','kor-to-eng','ge-to-eng','rus-to-eng'].includes(directionMode)"
-      (click)="playAudio(directionMode === directionModeE ? currentPhrase.phrase : currentPhrase.en, directionMode === directionModeE ? lang : 'en-US')"
-      class="bg-indigo-500 hover:bg-indigo-600 text-white px-3 sm:px-4 py-2 mt-2 rounded text-xs sm:text-sm shadow">
-      ▶ Play Audio
-    </button>
+    <button *ngIf="['kor-to-eng','jp-to-eng','itn-to-eng','rus-to-eng','fr-to-eng'].includes(directionMode)"
+            (click)="phraseOnMode()"
+            class="nav-btn">{{ phraseOn ? 'Hide' : 'Show' }} Phrase</button>
+    <button (click)="togglePronunciation()" class="nav-btn">{{ showPronunciation ? 'Hide' : 'Show' }} Pronunciation</button>
+    <button *ngIf="['jp-to-eng','itn-to-eng','kor-to-eng','ge-to-eng','rus-to-eng'].includes(directionMode)"
+            (click)="playAudio(directionMode === directionModeE ? currentPhrase.phrase : currentPhrase.en, directionMode === directionModeE ? lang : 'en-US')"
+            class="nav-btn bg-indigo-500 hover:bg-indigo-600 text-white px-4 py-2 mt-2 rounded text-xs sm:text-sm shadow">▶ Play Audio</button>
   </div>
 
-  <!-- Main Card -->
-  <div class="bg-gray-800 rounded-lg shadow-xl p-5 sm:p-6 max-w-xl mx-auto w-full">
-    <p *ngIf="phraseOn" class="text-xl sm:text-2xl font-bold text-blue-300 break-words">
-      <span [innerHTML]="formatPhrase(getQuestion() +'')"></span>
-    </p>
+  <!-- Main Quiz Card -->
+  <div class="quiz-card mx-auto max-w-xl w-full text-center">
+    <p *ngIf="phraseOn" class="text-xl sm:text-2xl font-bold text-blue-300 break-words">{{ getQuestion() }}</p>
+    <p *ngIf="showPronunciation && directionMode===directionModeE" class="text-xs sm:text-sm text-gray-300 mt-1">{{ currentPhrase.pr }}</p>
 
-    <p *ngIf="showPronunciation && directionMode === directionModeE" class="text-xs sm:text-sm text-gray-300 mt-1">
-      <span [innerHTML]="formatPhrase(currentPhrase.pr + '')"></span>
-    </p>
-
-    <!-- Card Mode -->
-    <div class="mt-6 sm:mt-9 text-center">
-      <button
-        (click)="showAnswer2 = true"
-        class="bg-emerald-200 hover:bg-emerald-700 text-emerald-700 hover:text-emerald-200 px-4 py-2 rounded shadow text-sm sm:text-base">
-        Reveal Answer
-      </button>
-
-      <p *ngIf="showAnswer2" class="mt-4 text-lg sm:text-xl text-cyan-400 font-semibold">
-        <span [innerHTML]="formatPhrase(getAnswer())"></span>
-      </p>
-
-      <p *ngIf="showPronunciation && directionMode === directionModeC && showAnswer2" class="text-xs sm:text-sm text-gray-400 mt-1">
-        <span [innerHTML]="formatPhrase(currentPhrase.pr)"></span>
-      </p>
-
-      <button
-        *ngIf="showAnswer2 && directionMode === directionModeC"
-        (click)="playAudio(directionMode === directionModeC ? currentPhrase.phrase : currentPhrase.en, directionMode === directionModeC ? lang : 'en-US')"
-        class="bg-indigo-500 hover:bg-indigo-600 text-white px-4 py-2 mt-4 rounded text-xs sm:text-sm shadow">
-        ▶ Play Audio
-      </button>
+    <div class="mt-6 sm:mt-9">
+      <button (click)="showAnswer2=true" class="nav-btn bg-emerald-200 hover:bg-emerald-700 text-emerald-700 hover:text-emerald-200 px-4 py-2 rounded shadow text-sm sm:text-base">Reveal Answer</button>
+      <p *ngIf="showAnswer2" class="mt-4 text-lg sm:text-xl text-cyan-400 font-semibold">{{ getAnswer() }}</p>
+      <p *ngIf="showPronunciation && directionMode===directionModeC && showAnswer2" class="text-xs sm:text-sm text-gray-400 mt-1">{{ currentPhrase.pr }}</p>
+      <button *ngIf="showAnswer2 && directionMode===directionModeC"
+              (click)="playAudio(directionMode===directionModeC? currentPhrase.phrase : currentPhrase.en, directionMode===directionModeC? lang : 'en-US')"
+              class="nav-btn bg-indigo-500 hover:bg-indigo-600 text-white px-4 py-2 mt-4 rounded text-xs sm:text-sm shadow">▶ Play Audio</button>
     </div>
-  </div>
+      </div>
 
   <!-- Navigation -->
-  <div class="flex flex-col justify-between items-center mt-8 max-w-xl mx-auto">
-    <div class="text-sm text-cyan-300 mb-2"><p>Cards: {{ remainingPhrases().length }}</p></div>
-
+  <div class="flex flex-col justify-between items-center mt-8 max-w-xl mx-auto gap-2">
+    <div class="text-sm text-cyan-300"><p>Cards: {{ remainingPhrases().length }}</p></div>
     <div class="flex flex-wrap justify-center gap-3">
-      <button *ngIf="answered() && remainingPhrases().length!==0"
-              (click)="next()"
-              class="bg-cyan-500 hover:bg-cyan-600 text-white px-4 py-2 rounded shadow text-sm sm:text-base">
-        Next
-      </button>
-
-      <button *ngIf="showAnswer2"
-              (click)="again()"
-              class="bg-red-600 hover:bg-red-700 text-white px-4 py-2 rounded shadow text-sm sm:text-base">
-        Again
-      </button>
-
-      <button *ngIf="showAnswer2"
-              (click)="correct()"
-              class="bg-emerald-600 hover:bg-emerald-700 text-white px-4 py-2 rounded shadow text-sm sm:text-base">
-        Correct
-      </button>
+      <button *ngIf="answered() && remainingPhrases().length!==0" (click)="next()" class="nav-btn">Next</button>
+      <button *ngIf="showAnswer2" (click)="again()" class="nav-btn bg-red-600 hover:bg-red-700">Again</button>
+      <button *ngIf="showAnswer2" (click)="correct()" class="nav-btn bg-emerald-600 hover:bg-emerald-700">Correct</button>
     </div>
   </div>
 </div>

@@ -196,7 +196,7 @@ export class EdComponent {
     }
     route: Router = inject(Router)
     
-    navToSite(par:any){
+     navToSite(par:any){
       this.route.navigate(['/language',this.languages[par]])
   
     }

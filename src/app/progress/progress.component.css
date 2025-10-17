@@ -1,154 +1,62 @@
-.tree-container {
-  display: flex;
-  justify-content: center;
-  padding: 2rem;
+/* Fade + pop in for quiz cards */
+@keyframes fadePopIn {
+  0% { opacity: 0; transform: scale(0.9) translateY(10px); }
+  50% { opacity: 0.7; transform: scale(1.05) translateY(-2px); }
+  100% { opacity: 1; transform: scale(1) translateY(0); }
 }
 
-.tree {
-  display: flex;
-  flex-direction: column;
-  gap: 1.2rem;
-  position: relative;
-  border-left: 2px solid #ccc;
-  padding-left: 1rem;
+/* Shake effect for wrong input */
+@keyframes shake {
+  0%, 100% { transform: translateX(0); }
+  20%, 60% { transform: translateX(-6px); }
+  40%, 80% { transform: translateX(6px); }
 }
 
-.branch {
-  display: flex;
-  align-items: center;
-  gap: 1rem;
-  position: relative;
-}
-
-.dot {
-  width: 18px;
-  height: 18px;
-  border-radius: 50%;
-  background-color: #aaa;
-  transition: background-color 0.3s ease;
-}
-
-.dot.active {
-  background-color: #4caf50;
-  box-shadow: 0 0 10px 2px #4caf50;
-}
-
-.label {
-  font-size: 1rem;
-  font-weight: 500;
-}
-.tabs button, .sub-tabs button {
-  padding: 6px 12px;
-  margin-right: 4px;
-  cursor: pointer;
-  border: none;
-  background: #ddd;
-  border-radius: 4px;
-}
-.tabs button:hover, .sub-tabs button:hover,
-.sub-tabs button.active {
-  background: #bbb;
-}
-svg {
-  margin-top: 20px;
-}
-
-
-.tree {
-  background: #f7fafc;
-}
-
-circle {
-  transition: fill 0.3s ease-in-out, transform 0.3s;
-  transform-origin: center;
-}
-
-circle.done {
-  fill: #48bb78;
-  animation: pulse 0.4s ease;
-}
-
+/* Pulse for correct input */
 @keyframes pulse {
-  0%   { transform: scale(1); }
-  50%  { transform: scale(1.2); }
-  100% { transform: scale(1); }
-}
-.tree-wrapper {
-  position: relative;
-  width: 500px;
-  height: 500px;
-  border: 2px solid #ccc;
-  /* border-radius: 8px; */
-  margin: 20px auto;
-  border-radius: 200px;
-  background: #071f1e;
-  
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.05); }
 }
 
-.connector-layer {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  z-index: 0;
+/* Animate buttons on hover */
+.button-hover {
+  transition: all 0.2s ease-in-out;
+}
+.button-hover:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 15px rgba(0,0,0,0.3);
 }
 
-.node-layer {
-  position: absolute;
-  width: 90%;
-  height: 100%;
-  /* z-index: 1; */
-  border-radius: 50px;
-  background-color: #270415;
-  overflow: hidden;
-  overflow-y: auto;
-}
-.tree-node {
-  position: absolute;
-  width: 20px;              /* width of the circle */
-  height: 20px;             /* height of the circle (same as width) */
-  background-color: #0d5a2a;
-  border: 2px solid #666;
-  border-radius: 50%;       /* makes it circular */
-  text-align: center;
-  line-height: 40px;        /* vertical centering */
-  font-size: 12px;
-  font-weight: bold;
-  cursor: pointer;
-  transform: translate(-50%, -50%);
-  transition: background-color 0.3s ease;
-}
-.tree-node.done {
-  
-  background-color: #97eef6;
-  border-color: #97eef6;
-  box-shadow: 0 0 10px #97eef6;
+/* Animate-fade-in utility */
+.animate-fade-in {
+  animation: fadePopIn 400ms ease-out forwards;
 }
 
-
-.node {
-  position: absolute;
-  width: 5px;
-  height: 5px;
-  background-color: #eee;
-  border-radius: 50%;
-  border: 2px solid #888;
-  text-align: center;
-  line-height: 40px;
-  font-size: 12px;
-  font-weight: bold;
-  z-index: 2;
-  transition: background-color 0.3s ease;
+/* Animate-shake utility */
+.animate-shake {
+  animation: shake 0.4s ease-in-out;
 }
 
-.node.done {
-  background-color: #b853ea;
-  border-color: #c162fd;
-  box-shadow: 0 0 8px #2e7d32;
+/* Animate-pulse utility */
+.animate-pulse {
+  animation: pulse 0.6s ease-in-out;
 }
 
-.connector {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  z-index: 1;
+/* Progress bar smooth transition */
+.progress-bar-inner {
+  transition: width 0.4s ease-in-out;
+}
+
+/* Hover highlight for phrase buttons */
+.phrase-btn {
+  transition: all 0.2s ease-in-out;
+}
+.phrase-btn:hover {
+  transform: scale(1.03);
+  box-shadow: 0 3px 10px rgba(0,0,0,0.25);
+}
+
+/* Audio button glow */
+.audio-btn:hover {
+  box-shadow: 0 0 15px rgba(56, 189, 248, 0.6);
 }

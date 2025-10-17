@@ -31,6 +31,7 @@ export interface UnifiedPhrase {
 export class ChoiceComponent {
   id :string|null = " "
   
+  m1 :string|null = " "
   phrases = signal<UnifiedPhrase[]>([]);
 
   allListgrammer:any//: PhraseListItem[] = this.phraseNames.allListgrammer
@@ -211,9 +212,11 @@ a_load = false
 ngOnInit(): void {
   this.activateRoute.paramMap.subscribe((params: ParamMap) => {
     const lang = params.get('id');
+    const m = params.get('m');
     if (!lang) return;
     this.id = lang;
 
+    this.m1 = m
     this.userA.initializeAuth()
     this.userA.authStatusLoaded.subscribe(a=>this.a_load=a)
     this.userA.authStatus.subscribe((id:string)=>
@@ -225,7 +228,7 @@ ngOnInit(): void {
     if(this.check() ==='signed in'){
     this.phraseNames.getPhrases(this.id).subscribe({
       next: data => {
-        console.log("this is a",data)
+        // console.log("this is a",data)
       switch(this.id) {
         case 'Korean':
            this.allListgrammer = data.filter(p => p.type === 'grammar');;

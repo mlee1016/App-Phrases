@@ -25,24 +25,7 @@ import { ParamMap } from '@angular/router';
   selector: 'app-progress',
   templateUrl: './progress.component.html',
   styleUrl: './progress.component.css',
-
-
-  
- /* animations: [
-    trigger('lightUp', [
-      state('off', style({ transform: 'scale(1)', opacity: 0.5 })),
-      state('on', style({ transform: 'scale(1.2)', opacity: 1 })),
-      transition(':enter', []),
-      transition('* => true', [
-        style({ fill: '#ccc' }),
-        animate('0.8s ease-out', style({ fill: '#4caf50' }))
-      ]),
-      transition('* => false', [
-        style({ fill: '#4caf50' }),
-        animate('0.3s ease-in', style({ fill: '#ccc' }))
-      ])
-    ])
-  ]*/
+      
 })
   
 
@@ -92,7 +75,7 @@ import { ParamMap } from '@angular/router';
     directionModeC :string=""
     directionModeE:string =""
     id:string=""
-    
+    m1:string=""
     la:string = ""
     lang:string = ""
 
@@ -149,9 +132,11 @@ import { ParamMap } from '@angular/router';
   ngOnInit(): void {
     this.activateRoute.paramMap.subscribe((params: ParamMap) => {
       const lang = params.get('id');
+      const m = params.get('m');
       if (!lang) return;
       this.id = lang;
-  
+      
+      this.m1 = m
       this.userA.initializeAuth()
       this.userA.authStatusLoaded.subscribe(a=>this.a_load=a)
       this.userA.authStatus.subscribe((id:string)=>

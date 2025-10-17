@@ -140,133 +140,104 @@
       </div>
     </div>
   </div>
+  <!-- 🌟 Hero Section for Not Signed-In Users --> 
+<!-- 👤 Guest View -->
+<ng-template #hero>
+  <section class="relative py-20 sm:py-24 bg-gradient-to-br from-[#020b11] via-[#03131d] to-[#04121b] overflow-hidden">
+    <!-- 🌀 Background Glow -->
+    <div class="absolute inset-0">
+      <div class="absolute w-[800px] h-[800px] bg-cyan-900/20 blur-[180px] rounded-full -top-40 -left-40 animate-pulse-slow"></div>
+      <div class="absolute w-[600px] h-[600px] bg-emerald-700/20 blur-[160px] rounded-full bottom-0 right-0 animate-pulse-slow"></div>
+    </div>
 
-  <!-- 👤 Guest View -->
-  <ng-template #hero>
-    <section class="py-16 sm:py-20 bg-gradient-to-br from-gray-900 via-[#030a0e] to-gray-800 text-center">
-  <div class="container mx-auto px-4 font-sans">
+    <div class="relative container mx-auto px-6 text-center font-sans">
+      <!-- 🏆 Hero Title -->
+      <h1 class="text-4xl sm:text-5xl md:text-6xl font-extrabold text-cyan-300 tracking-wide mb-6 animate-fadeUp">
+        Master Languages with Ease
+      </h1>
 
-    <h1 class="text-3xl sm:text-4xl md:text-5xl font-extrabold text-emerald-300 leading-tight mb-6 tracking-wide animate-fadeInUp">
-      Master Languages with Ease
-    </h1>
+      <!-- ✨ Subtitle -->
+      <p (click)="clickSee()" class="text-lg sm:text-xl text-emerald-300 mb-12 animate-fadeUp delay-1">
+        Explore hundreds of practical phrases  
+        <span *ngIf="currentLang" class="text-lime-200 font-bold inline-block ml-2 animate-fadeBlink">
+          {{ currentLang }}
+        </span>
+      </p>
 
-    <p (click)="clickSee()" class="text-base sm:text-lg md:text-xl text-emerald-400 mb-10 animate-fadeInUp">
-      Explore hundreds of practical phrases  
-      <span [@fadeInOut] *ngIf="currentLang" class="langs font-bold text-lime-200 inline-block">
-        {{ currentLang }}
-      </span>.
-    </p>
+      <!-- 🌏 Language Cards -->
+      <div class="flex flex-wrap justify-center gap-6 sm:gap-8 mb-12 animate-fadeUp delay-2">
+        <div
+          *ngFor="let card of [
+            {flag:'kr',name:'Korean',native:'한국어',color:'from-cyan-700 to-cyan-600',id:1},
+            {flag:'ru',name:'Russian',native:'Русский',color:'from-blue-800 to-blue-600',id:3},
+            {flag:'it',name:'Italian',native:'Italiano',color:'from-rose-800 to-rose-600',id:2},
+            {flag:'jp',name:'Japanese',native:'日本語',color:'from-purple-900 to-purple-700',id:0}
+          ]"
+          (click)="navToSite(card.id)"
+          [ngClass]="'bg-gradient-to-tr ' + card.color"
+          class="relative shadow-lg rounded-xl p-6 w-44 sm:w-52 text-center cursor-pointer
+                 transition-transform transform hover:-translate-y-2 hover:shadow-cyan-600/30
+                 hover:scale-105 text-emerald-100 group overflow-hidden before:absolute before:inset-0
+                 before:bg-gradient-to-r before:from-transparent before:via-cyan-400/10 before:to-transparent
+                 before:translate-x-[-100%] hover:before:translate-x-[100%] before:transition-all before:duration-700"
+        >
+          <img [src]="'https://flagcdn.com/' + card.flag + '.svg'" class="mx-auto w-10 sm:w-12 mb-3" alt="{{ card.name }}">
+          <h3 class="font-semibold text-lg text-emerald-100">{{ card.name }}</h3>
+          <p class="text-sm text-emerald-300">{{ card.native }}</p>
+        </div>
+      </div>
 
-    <!-- 🌏 Language Cards -->
-    <div class="flex flex-wrap justify-center gap-6 sm:gap-8 mb-10">
-      <div
-        *ngFor="let card of [
-          {flag:'kr',name:'Korean',native:'한국어',color:'bg-cyan-700',id:1},
-          {flag:'ru',name:'Russian',native:'Русский',color:'bg-blue-700',id:3},
-          {flag:'it',name:'Italian',native:'Italiano',color:'bg-gradient-to-tr from-rose-900 to-rose-700',id:2},
-          {flag:'jp',name:'Japanese',native:'日本語',color:'bg-gradient-to-tr from-purple-900 to-purple-700',id:0}
-        ]"
-        (click)="navToSite(card.id)"
-        [ngClass]="card.color"
-        class="shadow-lg rounded-xl p-5 sm:p-6 w-40 sm:w-52 text-center cursor-pointer transform transition hover:scale-105 hover:shadow-2xl animate-fadeInUp"
-      >
-        <img [src]="'https://flagcdn.com/' + card.flag + '.svg'" class="mx-auto w-10 sm:w-12 h-6 sm:h-8 mb-3" alt="{{ card.name }} Flag">
-        <h3 class="font-semibold text-lg text-emerald-100">{{ card.name }}</h3>
-        <p class="text-sm text-emerald-400">{{ card.native }}</p>
+      <!-- 💬 Features Section -->
+      <section class="max-w-5xl mx-auto text-center bg-gray-900/40 backdrop-blur-md rounded-2xl border border-cyan-700/30 shadow-xl p-10 animate-fadeUp delay-3">
+        <h2 class="text-3xl font-bold text-cyan-300 mb-4">What You’ll Find Here</h2>
+        <p class="text-emerald-200 mb-10">
+          Learn through <span class="text-lime-300 font-semibold">interactive practice tools</span> designed for real communication — not memorization.
+        </p>
+
+        <div class="grid sm:grid-cols-2 gap-6 text-left">
+          <div class="feature-card">
+            <p class="text-2xl mb-2">🎴</p>
+            <h3>Study Cards</h3>
+            <p>Learn phrases visually with meaning and pronunciation.</p>
+          </div>
+
+          <div class="feature-card">
+            <p class="text-2xl mb-2">🔊</p>
+            <h3>Audio Pronunciation</h3>
+            <p>Listen with native-like pronunciation via browser speech synthesis.</p>
+          </div>
+
+          <div class="feature-card">
+            <p class="text-2xl mb-2">✍️</p>
+            <h3>Type-in Practice</h3>
+            <p>Challenge yourself by typing translations or completing sentences.</p>
+          </div>
+
+          <div class="feature-card">
+            <p class="text-2xl mb-2">💬</p>
+            <h3>Chat Mode</h3>
+            <p>Engage in simulated dialogues to strengthen conversational skills.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- 🌐 Browser Support -->
+      <div class="max-w-3xl mx-auto bg-gray-900/40 rounded-2xl border border-emerald-700/30 p-8 mt-20 animate-fadeUp delay-4">
+        <h2 class="text-2xl font-bold text-emerald-300 mb-4 text-center">Browser Notice</h2>
+        <p class="text-emerald-200 mb-4 text-left">
+          Web Speech API works best in:
+        </p>
+        <ul class="text-emerald-200 space-y-2 text-left">
+          <li>🌐 <b>Edge or Chrome:</b> Full support for voice & recognition.</li>
+          <li>🍏 <b>Safari:</b> Playback only.</li>
+          <li>🦊 <b>Firefox / Opera:</b> Partial support.</li>
+        </ul>
+        <p class="text-emerald-400 mt-4 text-sm italic">
+          Use Edge or Chrome for full experience.
+        </p>
       </div>
     </div>
-    </div>
-    <!-- 💬 Website Features Section -->
-<section class="max-w-4xl mx-auto mt-20 text-center animate-fadeInUp bg-gray-800/40 backdrop-blur-sm rounded-2xl shadow-lg p-10 border border-emerald-700/30">
-  <h2 class="text-3xl sm:text-4xl font-extrabold text-emerald-300 mb-4 tracking-wide">
-    What You’ll Find Here
-  </h2>
-  <p class="text-emerald-200 text-base sm:text-lg leading-relaxed max-w-2xl mx-auto mb-10">
-    This platform helps you <span class="text-lime-300 font-semibold">learn and practice languages interactively</span> — designed for real communication, not just memorization.
-  </p>
+  </section>
+</ng-template>
 
-  <div class="grid sm:grid-cols-2 gap-6 text-left">
-    <div class="bg-gray-900/60 rounded-xl p-5 hover:bg-gray-900/80 transition">
-      <p class="text-2xl mb-2">🎴</p>
-      <h3 class="text-lime-200 font-semibold text-lg mb-1">Study Cards</h3>
-      <p class="text-emerald-300 text-sm">Learn phrases through visual, organized study cards with meaning and pronunciation.</p>
-    </div>
-
-    <div class="bg-gray-900/60 rounded-xl p-5 hover:bg-gray-900/80 transition">
-      <p class="text-2xl mb-2">🔊</p>
-      <h3 class="text-lime-200 font-semibold text-lg mb-1">Audio Pronunciation</h3>
-      <p class="text-emerald-300 text-sm">Listen to each phrase with native-like pronunciation using browser speech synthesis.</p>
-    </div>
-
-    <div class="bg-gray-900/60 rounded-xl p-5 hover:bg-gray-900/80 transition">
-      <p class="text-2xl mb-2">✍️</p>
-      <h3 class="text-lime-200 font-semibold text-lg mb-1">Type-in Practice</h3>
-      <p class="text-emerald-300 text-sm">Challenge yourself by typing translations or completing missing parts of sentences.</p>
-    </div>
-
-    <div class="bg-gray-900/60 rounded-xl p-5 hover:bg-gray-900/80 transition">
-      <p class="text-2xl mb-2">🧩</p>
-      <h3 class="text-lime-200 font-semibold text-lg mb-1">Fill-in-the-Blank</h3>
-      <p class="text-emerald-300 text-sm">Improve grammar understanding through dynamic sentence-building activities.</p>
-    </div>
-
-    <div class="bg-gray-900/60 rounded-xl p-5 hover:bg-gray-900/80 transition">
-      <p class="text-2xl mb-2">💬</p>
-      <h3 class="text-lime-200 font-semibold text-lg mb-1">Chat Mode</h3>
-      <p class="text-emerald-300 text-sm">Engage in natural, simulated dialogues that strengthen your conversational skills.</p>
-    </div>
-
-    <div class="bg-gray-900/60 rounded-xl p-5 hover:bg-gray-900/80 transition">
-      <p class="text-2xl mb-2">🗣️</p>
-      <h3 class="text-lime-200 font-semibold text-lg mb-1">Speech Recognition</h3>
-      <p class="text-emerald-300 text-sm">Practice pronunciation and receive instant feedback using your microphone.</p>
-    </div>
-  </div>
-
-  <p class="text-emerald-400 mt-10 text-sm italic">
-    🌐 Works best on modern browsers like Edge or Chrome with speech features enabled.
-  </p>
-</section>
-
-  <!-- </div> -->
-
-  <!-- 🌐 Browser Support Section -->
-<div class="max-w-3xl mx-auto text-left bg-gray-800/40 backdrop-blur-sm rounded-2xl p-8 mt-[5rem] shadow-md animate-fadeInUp">
-  <h2 class="text-2xl font-bold text-emerald-300 mb-4 text-center">Browser Notice</h2>
-  <p class="text-emerald-200 leading-relaxed mb-3">
-    The Web Speech API (used for pronunciation and speech recognition) works best in:
-  </p>
-
-  <ul class="text-emerald-200 space-y-3 list-none">
-    <li class="flex items-center space-x-2">
-      <img src="https://www.google.com/chrome/static/images/favicons/favicon-32x32.png" alt="Chrome Icon" class="w-5 h-5">
-      <span><b>Google Chrome (recommended):</b> Mostly supported, though some voices or recognition may not always load.</span>
-    </li>
-
-    <li class="flex items-center space-x-2">
-      <img src="https://upload.wikimedia.org/wikipedia/commons/9/98/Microsoft_Edge_logo_%282019%29.svg" alt="Edge Icon" class="w-5 h-5">
-      <span><b>Microsoft Edge (recommended):</b> Full voice and speech recognition support.</span>
-    </li>
-
-    <li class="flex items-center space-x-2">
-      <img src="https://upload.wikimedia.org/wikipedia/commons/5/52/Safari_browser_logo.svg" alt="Safari Icon" class="w-5 h-5">
-      <span><b>Safari (macOS/iOS):</b> Limited speech support; works for playback only.</span>
-    </li>
-
-    <li class="flex items-center space-x-2">
-      <img src="https://upload.wikimedia.org/wikipedia/commons/3/3a/Firefox_Logo%2C_2019.svg" alt="Firefox Icon" class="w-5 h-5">
-      <span><b>Firefox / Opera:</b> Speech synthesis may not function reliably.</span>
-    </li>
-  </ul>
-
-  <p class="text-emerald-300 text-sm mt-4 italic">
-    Tip: For best experience, use Microsoft Edge or Chrome desktop with system voices enabled.
-  </p>
-</div>
-
-</section>
-
-
-
-  </ng-template>
 </div>

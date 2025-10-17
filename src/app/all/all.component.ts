@@ -24,7 +24,7 @@ export interface UnifiedPhrase {
 @Component({
   selector: 'app-all',
   templateUrl: './all.component.html',
-  styleUrl: './all.component.css'
+  styleUrl: './all.component.css' 
 })
 export class AllComponent{   
   //activeRoute  :ActivatedRoute = inject(ActivatedRoute)

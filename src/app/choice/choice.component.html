@@ -99,7 +99,7 @@
       </button>
     </div>
     <!-- Story Section -->
-    <div class="overflow-y-auto max-h-80">
+    <div *ngIf="m1==='course'" class="overflow-y-auto max-h-80">
       
       <h2  class="text-xl font-bold mb-2 ">{{inputh()===''?'pick a phrase': 'selected: ' + inputh()}}</h2>
       <h2 class="text-lg font-bold mt-4 mb-2 border-b border-cyan-600 pb-1">Lists</h2>
@@ -116,7 +116,7 @@
         </button>
       </div>
     </div>
-    <div class="overflow-y-auto max-h-80">
+    <div *ngIf="m1==='popular'" class="overflow-y-auto max-h-80">
       <!-- Popular Phrases -->
       <h2 class="text-lg font-bold mt-4 mb-2 border-b border-cyan-600 pb-1">Popular/Useful</h2>
       <div class="flex flex-col gap-2">
@@ -130,7 +130,7 @@
         </button>
       </div>
     </div>
-    <div class="overflow-y-auto max-h-80">
+    <div *ngIf="m1 ==='story'" class="overflow-y-auto max-h-80">
       <h2 class="text-lg font-bold mt-4 mb-2 border-b border-cyan-600 pb-1">Story</h2>
       <div class="flex flex-col gap-2">
         <button
@@ -147,120 +147,101 @@
   </div>
 </div>
 
+<!-- 🌐 QUIZ PAGE WRAPPER -->
+<div class="min-h-screen  text-white flex flex-col justify-center items-center px-4 py-8 animate-fadeIn">
 
+  <!-- 🏷️ Title -->
+  <h2 class="text-3xl sm:text-4xl font-bold text-cyan-200 mb-6 text-center animate-slideDown">
+    {{ id }}:Choice
+  </h2>
 
-<!-- Only show Start button if list is selected and quiz hasn't started -->
-<div *ngIf="isReadyToStart && !quizStarted" class="text-center mt-6">  
-  <button (click)="startQuiz()"
-          class="bg-green-600 hover:bg-green-700 text-white px-6 py-3 rounded shadow">
-    ▶ Start
-  </button>
-  <div class="flex justify-center mt-4">
-      <button (click)="toggleDirection()" class="bg-blue-600 text-white px-4 py-2 rounded justify-center hover:bg-blue-700">
+  <!-- ▶ Start Button Section -->
+  <div *ngIf="isReadyToStart && !quizStarted" class="text-center space-y-4 animate-popIn">
+    <button (click)="startQuiz()"
+            class="bg-green-600 hover:bg-green-700 active:scale-95 text-white px-8 py-3 rounded-2xl shadow-lg transition-transform duration-200">
+      ▶ Start 
+    </button>
+    <div>
+      <button (click)="toggleDirection()" 
+              class="bg-blue-600 hover:bg-blue-700 active:scale-95 text-white px-4 py-2 rounded-md mt-2 transition-all duration-200">
         ({{ direction === direction1 ? id + ' → English' : 'English → ' + id }})
       </button>
+    </div>
   </div>
-</div>
-<!-- 🌍 Other Language Quizzes (Russian, Japanese, etc.) -->
-<div *ngIf="['Korean','Russian','Japanese','German','Italian'].includes(id)&&quizStarted" class="p-4 text-cyan-200 font-sans">
-  <div class="p-4 max-w-xl mx-auto">
-    <h2 class="text-xl font-bold mb-4 text-center">Choice:</h2>
 
-    <!-- 🔁 Control Buttons -->
-    <div class="flex justify-center mb-4 space-x-2">
-      <!-- <button (click)="start()" class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700">Start</button> -->
-      <!-- <button (click)="startQuiz()" class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700">Start Options</button> -->
-            <button (click)="romanitization()" class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700">Pronunciation</button>
+  <!-- 🧩 Active Quiz Section -->
+  <div *ngIf="['Korean','Russian','Japanese','German','Italian'].includes(id) && quizStarted"
+       class="w-full max-w-xl bg-slate-900/60 p-6 rounded-2xl mt-6 shadow-lg overflow-y-auto animate-fadeInUp">
 
-        <button *ngIf="['ko-to-en','ru-to-en', 'jp-to-en','itn-to-en','ge-to-en'].includes(direction)" (click)="playAudio(direction1 === direction ? phrases()[currentIndex].phrase : phrases()[currentIndex].en, direction1 === direction ? lang : 'en-US')"
-                class="bg-cyan-500 text-white px-2 py-1 rounded text-sm">
+    <!-- 🎧 Control Buttons -->
+    <div class="flex justify-center space-x-2 mb-4">
+      <button (click)="romanitization()" 
+              class="bg-indigo-600 hover:bg-indigo-700 active:scale-95 px-4 py-2 rounded text-sm transition-transform duration-200">
+        Pronunciation
+      </button>
+      <button *ngIf="['ko-to-en','ru-to-en','jp-to-en','itn-to-en','ge-to-en'].includes(direction)"
+              (click)="playAudio(direction1 === direction ? phrases()[currentIndex].phrase : phrases()[currentIndex].en, direction1 === direction ? lang : 'en-US')"
+              class="bg-cyan-500 hover:bg-cyan-600 active:scale-95 px-3 py-2 rounded text-sm transition-transform duration-200">
+        🔊 Play
+      </button>
+    </div>
+
+    <!-- 📝 Question Area -->
+    <div class="bg-cyan-900 p-4 rounded-xl text-center mb-6 shadow animate-flashOnce">
+      <p class="text-2xl font-semibold break-words text-emerald-200">
+        <span [innerHTML]="formatPhrase(direction1 === direction ? phrases()[currentIndex].phrase : phrases()[currentIndex].en + '')"></span>
+      </p>
+
+      <div class="text-lg mt-1 duration-500 transition-opacity ease-in-out"
+           [class.opacity-100]="pr"
+           [class.opacity-0]="!pr">
+        <span *ngIf="pr && ['ko-to-en','ru-to-en','itn-to-en','jp-to-en','ge-to-en'].includes(direction)"
+              [innerHTML]="formatPhrase(phrases()[currentIndex][pro2] +'')"></span>
+      </div>
+    </div>
+
+    <!-- 💡 Options Grid -->
+    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+      <div *ngFor="let opt of options" class="flex flex-col items-center animate-slideUp">
+        <button 
+          (click)="selectAnswer(opt.text)"
+          [ngClass]="{
+            'correct-a text-green-200 border border-green-300 bg-green-600': opt.text===selectedOption && isCorrect === true,
+            'text-red-400 border border-red-400 wrong-a': opt.text===selectedOption && isCorrect === false
+          }"
+          class="p-3 w-full text-center bg-cyan-800 text-emerald-200 border rounded-xl hover:bg-gray-800 active:scale-95 transition-all duration-200 ease-in-out">
+          
+          <span [innerHTML]="formatPhrase(opt.text + '')"></span>
+          <div class="text-cyan-200 mt-1 transition-opacity duration-500"
+              [class.opacity-100]="pr"
+              [class.opacity-0]="!pr">
+            <span *ngIf="pr && ['en-to-ko','en-to-jp','en-to-ru','en-to-itn','en-to-ge'].includes(direction)"
+                  [innerHTML]="formatPhrase(opt.pr)"></span>
+          </div>
+        </button>
+
+        <!-- 🔊 Play Option -->
+        <button *ngIf="['en-to-ko','en-to-jp','en-to-ru','en-to-itn','en-to-ge'].includes(direction)"
+                (click)="playAudio(opt.text, lang)"
+                class="mt-2 bg-cyan-500 hover:bg-cyan-600 active:scale-95 text-white px-2 py-1 rounded text-sm transition-transform duration-200">
           🔊 Play
         </button>
-        
-        <!-- <button class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700"  (click)="highlight()">Highlight</button> -->
-
-      <!-- </div> -->
-    </div>
-
-    <!-- 📄 Phrase Prompt -->
-    <div class="bg-cyan-800 p-4 rounded shadow text-center mb-6 text-emerald-200">
-      <p  class="text-2xl font-semibold break-words">
-        <span [innerHTML]="formatPhrase(direction1 === direction ? phrases()[currentIndex].phrase : phrases()[currentIndex].en + '')"></span>
-
-      </p>
-      <div 
-      
-        class=" text-lg mt-1 duration-500 transition-opacity ease-in-out "
-        [class.opacity-100]="pr"
-        [class.opacity-0]="!pr">
-               <span *ngIf="pr && ['ko-to-en','ru-to-en','itn-to-en','jp-to-en','ge-to-en'].includes(direction)"
-       [innerHTML]="formatPhrase(phrases()[currentIndex][pro2] +'')"></span> 
-
       </div>
     </div>
-
-    <!-- ✅ Options Grid --
-    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 ">
-      <button *ngFor="let opt of options"
-              (click)="selectAnswer(opt.text)"
-              class="p-3 w-full text-center bg-cyan-800 text-emerald-200 border rounded hover:bg-gray-800 active:bg-gray-300 transition">
-         <span [innerHTML]="formatPhrase(opt.text + '')"></span> 
-        <div  class="text-cyan-200  mt-1 duration-500 transition-opacity ease-in-out "
-            [class.opacity-100]="pr"
-            [class.opacity-0]="!pr">
-            <span  *ngIf="pr && ['en-to-ko','en-to-jp','en-to-ru','en-to-itn','en-to-ge'].includes(direction)"  [innerHTML]="formatPhrase(opt.pr)"></span> 
-
-        </div>
-      </button>
-        <button *ngFor="let i in options" (click)="playAudio(direction1 === direction ? i : phrases()[currentIndex].en, direction1 === direction ? lang : 'en-US')" >
-          play
-        </button>
-    </div>-->
-    <!-- ✅ Options Grid -->
-<div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
-  <div *ngFor="let opt of options" class="flex flex-col items-center p-2">
-    <!-- Main Option Button -->
-    <button 
-      (click)="selectAnswer(opt.text)"
-      [ngClass]="{'correct-a text-green-200 border border-green-200 bg-green-600': opt.text===selectedOption && isCorrect === true, 'text-red-400 border border-red-400 wrong-a': opt.text===selectedOption && isCorrect === false}"
-      class="p-3 w-full text-center bg-cyan-800 text-emerald-200 border rounded hover:bg-gray-800 active:bg-gray-300 transition">
-      
-      <!-- Show text -->
-      <span [innerHTML]="formatPhrase(opt.text + '')"></span> 
-
-      <!-- Pronunciation -->
-      <div class="text-cyan-200 mt-1 duration-500 transition-opacity ease-in-out"
-          [class.opacity-100]="pr"
-          [class.opacity-0]="!pr">
-        <span *ngIf="pr && ['en-to-ko','en-to-jp','en-to-ru','en-to-itn','en-to-ge'].includes(direction)"  
-              [innerHTML]="formatPhrase(opt.pr)">
-        </span> 
-      </div>
-    </button>
-
-    <!-- 🔊 Play button (only for English → other language) -->
-    <button 
-      *ngIf="['en-to-ko','en-to-jp','en-to-ru','en-to-itn','en-to-ge'].includes(direction)" 
-      (click)="playAudio(opt.text, lang)"
-      class="mt-2 bg-cyan-500 text-white px-2 py-1 rounded text-sm hover:bg-cyan-600 transition">
-      🔊 Play
-    </button>
-  </div>
-</div>
 
     <!-- 🧮 Score -->
-    <p class="mt-6 text-center text-lg font-medium text-gray-300">
+    <p class="mt-6 text-center text-lg font-medium text-gray-300 animate-fadeInSlow">
       Score: <span class="text-blue-400 font-bold">{{ score }}</span>
     </p>
+
+    <!-- 🔁 Try Again -->
+    <div *ngIf="quizFinished" class="mt-4 text-center animate-popIn">
+      <p class="mb-2">{{score}} / {{phrases().length}}</p>
+      <button (click)="tryAgain()"
+              class="bg-green-600 hover:bg-green-700 active:scale-95 text-white px-6 py-3 rounded-lg shadow transition-transform duration-200">
+        🔁 Try Again
+      </button>
+    </div>
   </div>
-  <!-- 🧮 Score --> 
-<!-- 🔁 Try Again button (only when quiz is finished) -->
-<div *ngIf="quizFinished" class="mt-4 text-center">
-  <p>{{score}}/{{phrases().length}}</p>
-  <button (click)="tryAgain()"
-          class="bg-green-600 hover:bg-green-700 text-white px-6 py-3 rounded shadow">
-    🔁 Try Again
-  </button>
 </div>
 
-</div>

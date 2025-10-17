@@ -67,7 +67,7 @@ export class SCardComponent {
   directionModeC :string=""
   directionModeE:string =""
   id:string=""
-  
+  m1:string=""
   la:string = ""
   lang:string = ""
   constructor(private phrasesService:AllphrasesService,private activateRoute: ActivatedRoute,private phraseNames:PhrasenameService
@@ -210,8 +210,10 @@ a_load = false
 ngOnInit(): void {
   this.activateRoute.paramMap.subscribe((params: ParamMap) => {
     const lang = params.get('id');
+    const m = params.get('m');
     if (!lang) return;
     this.id = lang;
+    this.m1 = m;
 
     this.userA.initializeAuth()
     this.userA.authStatusLoaded.subscribe(a=>this.a_load=a)

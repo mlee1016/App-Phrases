@@ -108613,11 +108613,11 @@
   {
     "ko": ["오천", "원", "있어요."],
     "pr": ["o-cheon", "won", "i-sseo-yo"],
-    "en": ["I", "have", "about 5,000 won."],
+    "en": ["I have", "about 5,000"," won."],
     "map": [
-      {"ko":[0],"pr":[0],"en":[0]},
-      {"ko":[1],"pr":[1],"en":[1]},
-      {"ko":[2],"pr":[2],"en":[2]}
+      {"ko":[0],"pr":[0],"en":[1]},
+      {"ko":[1],"pr":[1],"en":[2]},
+      {"ko":[2],"pr":[2],"en":[0]}
     ],
     "des": "Approximate amount of money."
   },
@@ -108626,11 +108626,9 @@
     "pr": ["bi-ga", "wa-yo.", "ha-ji-man", "gal", "geo-ye-yo"],
     "en": ["It’s", "raining,", "but", "I", "will go."],
     "map": [
-      {"ko":[0],"pr":[0],"en":[0]},
-      {"ko":[1],"pr":[1],"en":[1]},
+      {"ko":[0,1],"pr":[0,1],"en":[0,1]},
       {"ko":[2],"pr":[2],"en":[2]},
-      {"ko":[3],"pr":[3],"en":[3]},
-      {"ko":[4],"pr":[4],"en":[4]}
+      {"ko":[3,4],"pr":[3,4],"en":[4]}
     ],
     "des": "Contrast of rain vs. going."
   },
@@ -110165,8 +110163,8 @@
     "pr": ["chaek-sang", "wi-e", "chaek-i", "i-sseo-yo"],
     "en": ["There is", "a book", "on the desk."],
     "map": [
-      {"ko":[0,2],"pr":[0,2],"en":[1]},
-      {"ko":[1],"pr":[1],"en":[2]},
+      {"ko":[0,1],"pr":[0,1],"en":[2]},
+      {"ko":[2],"pr":[2],"en":[1]},
       {"ko":[3],"pr":[3],"en":[0]}
     ],
     "des": "Indicates the presence of a non-living object."
@@ -110176,8 +110174,8 @@
     "pr": ["ga-bang", "an-e", "ji-gap-i", "i-sseo-yo"],
     "en": ["There is", "a wallet", "in the bag."],
     "map": [
-      {"ko":[0,2],"pr":[0,2],"en":[1]},
-      {"ko":[1],"pr":[1],"en":[2]},
+      {"ko":[0,1],"pr":[0,1],"en":[2]},
+      {"ko":[2],"pr":[2],"en":[1]},
       {"ko":[3],"pr":[3],"en":[0]}
     ],
     "des": "Shows location of an item."
@@ -110187,8 +110185,8 @@
     "pr": ["naeng-jang-go-e", "u-yu-ga", "i-sseo-yo"],
     "en": ["There is", "milk", "in the fridge."],
     "map": [
-      {"ko":[1],"pr":[1],"en":[1]},
       {"ko":[0],"pr":[0],"en":[2]},
+      {"ko":[1],"pr":[1],"en":[1]},
       {"ko":[2],"pr":[2],"en":[0]}
     ],
     "des": "Existence of milk inside the fridge."
@@ -110205,23 +110203,23 @@
     "des": "Presence of a solution."
   },
   {
-    "ko": ["집", "에", "고양이가", "있어요."],
+    "ko": ["집에", "고양이가", "있어요."],
     "pr": ["jib-e", "go-yang-i-ga", "i-sseo-yo"],
     "en": ["There is", "a cat", "at home."],
     "map": [
-      {"ko":[2],"pr":[1],"en":[1]},
-      {"ko":[0,1],"pr":[0,0],"en":[2]},
+      {"ko":[1],"pr":[1],"en":[1]},
+      {"ko":[0],"pr":[0],"en":[2]},
       {"ko":[2],"pr":[2],"en":[0]}
     ],
     "des": "Living being exists in a place."
   },
   {
-    "ko": ["학교", "에", "학생이", "있어요."],
+    "ko": ["학교에", "학생이", "있어요."],
     "pr": ["hak-gyo-e", "hak-saeng-i", "i-sseo-yo"],
     "en": ["There are", "students", "at school."],
     "map": [
-      {"ko":[2],"pr":[1],"en":[1]},
-      {"ko":[0,1],"pr":[0,0],"en":[2]},
+      {"ko":[1],"pr":[1],"en":[1]},
+      {"ko":[0],"pr":[0],"en":[2]},
       {"ko":[2],"pr":[2],"en":[0]}
     ],
     "des": "Students are present."
@@ -110238,25 +110236,24 @@
     "des": "Living people present."
   },
   {
-    "ko": ["이", "집", "에", "강아지가", "두", "마리", "있어요."],
-    "pr": ["i", "jib-e", "gang-a-ji-ga", "du", "ma-ri", "i-sseo-yo"],
+    "ko": ["이 집에", "강아지가", "두", "마리", "있어요."],
+    "pr": ["i jib-e", "gang-a-ji-ga", "du", "ma-ri", "i-sseo-yo"],
     "en": ["There are", "two", "puppies", "in this house."],
     "map": [
-      {"ko":[3,5],"pr":[2,4],"en":[2]},
-      {"ko":[4],"pr":[3],"en":[1]},
-      {"ko":[0,1,2],"pr":[0,1,1],"en":[3]},
-      {"ko":[5],"pr":[5],"en":[0]}
+      {"ko":[1],"pr":[1],"en":[2]},
+      {"ko":[2],"pr":[2],"en":[1]},
+      {"ko":[0],"pr":[0],"en":[3]},
+      {"ko":[4],"pr":[4],"en":[0]}
     ],
     "des": "Counts living beings."
   },
   {
-    "ko": ["지금", "가는", "게", "좋아요."],
+    "ko": ["지금", "가는 게", "좋아요."],
     "pr": ["ji-geum", "ga-neun ge", "jo-a-yo"],
-    "en": ["It’s", "better", "to go now."],
+    "en": ["It’s", "better", "to go ","now."],
     "map": [
-      {"ko":[1,2],"pr":[1,1],"en":[2]},
-      {"ko":[0],"pr":[0],"en":[2]},
-      {"ko":[3],"pr":[2],"en":[0,1]}
+      {"ko":[1,2],"pr":[1,2],"en":[1,2]},
+      {"ko":[0],"pr":[0],"en":[3]}
     ],
     "des": "Recommending an action."
   },

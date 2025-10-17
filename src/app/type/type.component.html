@@ -88,7 +88,7 @@
       </button>
     </div>
     <!-- Story Section -->
-    <div class="overflow-y-auto max-h-80">
+    <div *ngIf="m1==='course'" class="overflow-y-auto max-h-80">
       
       <h2  class="text-xl font-bold mb-2 ">{{selectedPhrases()===''?'pick a phrase': 'selected: ' + selectedPhrases()}}</h2>
       <h2 class="text-lg font-bold mt-4 mb-2 border-b border-cyan-600 pb-1">Lists</h2>
@@ -103,7 +103,7 @@
         </button>
       </div>
     </div>
-    <div class="overflow-y-auto max-h-80">
+    <div *ngIf="m1==='popular'" class="overflow-y-auto max-h-80">
       <h2 class="text-lg font-bold mt-4 mb-2 border-b border-cyan-600 pb-1">Popular/Useful </h2>
       <div class="flex flex-col gap-2">
         <button
@@ -116,7 +116,8 @@
         </button>
       </div>
     </div>
-    <div class="overflow-y-auto max-h-80">
+    
+    <div *ngIf="m1==='story'" class="overflow-y-auto max-h-80">
       <h2 class="text-lg font-bold mt-4 mb-2 border-b border-cyan-600 pb-1">Story</h2>
       <div class="flex flex-col gap-2">
         <button
@@ -132,128 +133,122 @@
 
   </div>
 </div>
-
 <!-- Start Section -->
-<div *ngIf="isReadyToStart && !quizStarted" class="text-center mt-6">
-  <button (click)="startQuiz()" class="bg-green-600 hover:bg-green-700 text-white px-6 py-3 rounded shadow">
-    ▶ Start
-  </button>
 
-  <!-- Direction Toggle -->
-  <div class="flex flex-col sm:flex-row justify-center gap-3 mt-6">
-    <button (click)="toggleDirectionMode(directionModeE)"
-            class="px-4 py-2 rounded shadow text-white w-full sm:w-auto"
-            [ngClass]="{ 'bg-cyan-700': directionMode === directionModeE, 'bg-cyan-500': directionMode !== directionModeE }">
-      {{ id }} → English
-    </button>
-    <button (click)="toggleDirectionMode(directionModeC)"
-            class="px-4 py-2 rounded shadow text-white w-full sm:w-auto"
-            [ngClass]="{ 'bg-cyan-700': directionMode === directionModeC, 'bg-cyan-500': directionMode !== directionModeC }">
-      English → {{ id }}
-    </button>
-  </div>
-</div>
+<!-- WRAPPER -->
+<div class="relative min-h-screen bg-gradient-to-br from-[#041017] to-[#0a1a25] text-white flex flex-col items-center justify-center px-4 py-8">
 
-<!-- QUIZ SECTION -->
-<div *ngIf="['Italian','Japanese','Korean','Russian','German'].includes(id) && quizStarted"
-     class="text-white min-h-screen py-6 px-3 md:px-6 animate-slide-in-right">
-
-  <!-- Top Controls -->
-  <div class="flex flex-col items-center gap-3 mb-6">
-    <button (click)="togglePronunciation()" class="bg-cyan-500 hover:bg-cyan-600 px-4 py-2 rounded shadow text-sm md:text-base">
-      {{ showPronunciation ? 'Hide' : 'Show' }} Pronunciation
+  <!-- ========== START SECTION ========== -->
+  <div *ngIf="isReadyToStart && !quizStarted" class="text-center space-y-8 animate-fade-in">
+    <h1 class="text-3xl sm:text-4xl font-bold text-cyan-200">{{ id }} : Type</h1>
+    <button (click)="startQuiz()" class="btn-primary">
+      ▶ Start 
     </button>
 
-    <button *ngIf="['kor-to-eng','jp-to-eng','itn-to-eng','rus-to-eng','fr-to-eng'].includes(directionMode)"
-            (click)="phraseOnMode()" class="bg-cyan-500 hover:bg-cyan-600 px-4 py-2 rounded shadow text-sm md:text-base">
-      {{ phraseOn ? 'Hide' : 'Show' }} Phrase
-    </button>
-    
-
-    <button
-      *ngIf="['jp-to-eng','itn-to-eng','kor-to-eng','ge-to-eng','rus-to-eng'].includes(directionMode)"
-      (click)="playAudio(directionMode === directionModeE ? currentPhrase.phrase : currentPhrase.en, directionMode === directionModeE ? lang : 'en-US')"
-      class="bg-indigo-500 hover:bg-indigo-600 text-white px-3 sm:px-4 py-2 mt-2 rounded text-xs sm:text-sm shadow">
-      ▶ Play Audio
-    </button>
-  </div>
-
-  <!-- Main Card -->
-  <div class="bg-gray-800 rounded-lg shadow-xl p-5 max-w-2xl mx-auto">
-    <p *ngIf="phraseOn" class="text-2xl font-bold text-blue-300 text-center">
-      <span [innerHTML]="formatPhrase(getQuestion() +'')"></span>
-    </p>
-
-    <p *ngIf="showPronunciation && directionMode === directionModeE" class="text-sm text-gray-300 mt-1 text-center">
-      <span [innerHTML]="formatPhrase(currentPhrase.pr + '')"></span>
-    </p>
-
-    <!-- Type Mode -->
-    <div *ngIf="answerMode === 'type'" class="mt-6 flex flex-col items-center">
-      <input #inputRef type="text" [(ngModel)]="userInput"
-             (click)="updateCursor(inputRef)" (input)="updateCursor(inputRef)"
-             class=" md:w-[80%]  border rounded-xl text-indigo-200 text-center text-lg shadow-sm focus:ring-2 focus:ring-indigo-400 focus:outline-none bg-gray-700 border-cyan-500"
-             [ngClass]="{
-               'bg-green-800 border-green-400': answered() && lastResult().startsWith('✅'),
-               'bg-red-800 border-red-400': answered() && lastResult().startsWith('❌')
-             }">
-      <button (click)="submitAnswer()" class="bg-cyan-600 md:w-auto hover:bg-cyan-700 text-white px-4 py-2 rounded shadow mt-3 w-full sm:w-auto">
-        Submit
+    <!-- Direction Toggle -->
+    <div class="flex flex-col sm:flex-row justify-center gap-4 mt-6">
+      <button (click)="toggleDirectionMode(directionModeE)"
+              class="btn-toggle"
+              [ngClass]="{ 'bg-cyan-700': directionMode === directionModeE, 'bg-cyan-500': directionMode !== directionModeE }">
+        {{ id }} → English
       </button>
-      <p class="mt-3 text-lg font-medium text-center"
-         [ngClass]="{ 'text-green-400 animate-bounce': lastResult().startsWith('✅'), 'text-red-400': lastResult().startsWith('❌') }">
-        <span [innerHTML]="formatPhrase(lastResult())"></span>
-
-      </p>
-      <div>
-        <p *ngIf="showPronunciation&&directionMode===directionModeC&&answered()" class="text-sm text-gray-300 mt-1 text-center">
-          <span class="text-sm text-gray-300" [innerHTML]="formatPhrase(currentPhrase.pr + '')"></span>
-        </p>
-        <button
-          *ngIf="!['jp-to-eng','itn-to-eng','kor-to-eng','ge-to-eng','rus-to-eng'].includes(directionMode)&&answered()"
-          (click)="playAudio(directionMode === directionModeC ? currentPhrase.phrase : currentPhrase.en, directionMode === directionModeC ? lang : 'en-US')"
-          class="bg-indigo-500 hover:bg-indigo-600 text-white px-3 sm:px-4 py-2 mt-2 rounded text-xs sm:text-sm shadow">
-          ▶ Play Audio
-        </button>
-      </div>
-      <div *ngIf="directionMode===directionModeC" class="mt-4 text-center max-w-md mx-auto ">
-        <button (click)="generateHint1()" class="bg-indigo-500 hover:bg-indigo-600 text-white px-3 sm:px-4 py-2 mt-2 rounded text-xs sm:text-sm shadow">
-
-          hint1</button>
-        <button (click)="generateHint2()" class="bg-indigo-500 hover:bg-indigo-600 m-3 text-white px-3 sm:px-4 py-2 mt-2 rounded text-xs sm:text-sm shadow">
-          hint2</button>
-        <button (click)="clearHints()" class="bg-red-500 hover:bg-red-600 text-white px-3 sm:px-4 py-2 mt-2 rounded text-xs sm:text-sm shadow"
-          >clear</button>
-        
-            <div *ngIf="showHint1" class="flex flex-wrap gap-2 mt-6 overflow-y-auto max-h-[30vh]">
-
-            
-              <button *ngFor="let char of hint1Array"
-                    (click)="appendToInput(char, inputRef)"
-                    class="bg-emerald-100 hover:bg-emerald-200 text-emerald-800 
-                          font-medium px-3 py-1 rounded-lg shadow-sm transition">
-                {{ char }}
-              </button>
-            </div>
-            <div *ngIf="showHint2" class="flex flex-wrap gap-2 mt-6 overflow-y-auto max-h-[30vh]">
-
-            
-              <button *ngFor="let char of hint2Array"
-                    (click)="appendToInput(char, inputRef)"
-                    class="bg-emerald-100 hover:bg-emerald-200 text-emerald-800 
-                          font-medium px-3 py-1 rounded-lg shadow-sm transition">
-                {{ char }}
-              </button>
-      </div>
+      <button (click)="toggleDirectionMode(directionModeC)"
+              class="btn-toggle"
+              [ngClass]="{ 'bg-cyan-700': directionMode === directionModeC, 'bg-cyan-500': directionMode !== directionModeC }">
+        English → {{ id }}
+      </button>
+    </div>
   </div>
 
-  <!-- Navigation -->
-  <div class="flex flex-col items-center mt-8 max-w-2xl mx-auto text-center">
-    <p class="text-sm text-cyan-300 mb-3">Cards left: {{ remainingPhrases().length }}</p>
-    <button *ngIf="answered() && remainingPhrases().length !== 0"
-            (click)="next()"
-            class="bg-cyan-500 hover:bg-cyan-600 text-white px-5 py-2 rounded shadow w-full sm:w-auto">
-      Next
-    </button>
+  <!-- ========== QUIZ SECTION ========== -->
+  <div *ngIf="['Italian','Japanese','Korean','Russian','German'].includes(id) && quizStarted"
+       class="w-full max-w-3xl animate-slide-in">
+
+    <!-- Top Controls -->
+    <div class="flex flex-wrap justify-center gap-3 mb-8">
+      <button (click)="togglePronunciation()" class="btn-cyan">
+        {{ showPronunciation ? 'Hide' : 'Show' }} Pronunciation
+      </button>
+
+      <button *ngIf="['kor-to-eng','jp-to-eng','itn-to-eng','rus-to-eng','fr-to-eng'].includes(directionMode)"
+              (click)="phraseOnMode()" class="btn-cyan">
+        {{ phraseOn ? 'Hide' : 'Show' }} Phrase
+      </button>
+
+      <button *ngIf="['jp-to-eng','itn-to-eng','kor-to-eng','ge-to-eng','rus-to-eng'].includes(directionMode)"
+              (click)="playAudio(directionMode === directionModeE ? currentPhrase.phrase : currentPhrase.en, directionMode === directionModeE ? lang : 'en-US')"
+              class="btn-indigo">
+        ▶ Play Audio
+      </button>
+    </div>
+
+    <!-- QUIZ CARD -->
+    <div class="bg-gray-800/80 rounded-2xl shadow-xl p-6 sm:p-8 text-center">
+      <p *ngIf="phraseOn" class="text-2xl sm:text-3xl font-bold text-blue-300 mb-2">
+        <span [innerHTML]="formatPhrase(getQuestion() +'')"></span>
+      </p>
+
+      <p *ngIf="showPronunciation && directionMode === directionModeE" class="text-sm text-gray-300">
+        <span [innerHTML]="formatPhrase(currentPhrase.pr + '')"></span>
+      </p>
+
+      <!-- TYPE MODE -->
+      <div *ngIf="answerMode === 'type'" class="mt-6 flex flex-col items-center space-y-3">
+        <input #inputRef type="text" [(ngModel)]="userInput"
+               (click)="updateCursor(inputRef)" (input)="updateCursor(inputRef)"
+               class="input-field"
+               [ngClass]="{
+                 'bg-green-800 border-green-400': answered() && lastResult().startsWith('✅'),
+                 'bg-red-800 border-red-400': answered() && lastResult().startsWith('❌')
+               }">
+
+        <button (click)="submitAnswer()" class="btn-cyan w-full sm:w-auto">Submit</button>
+
+        <p class="text-lg font-medium"
+           [ngClass]="{ 'text-green-400 animate-bounce': lastResult().startsWith('✅'), 'text-red-400': lastResult().startsWith('❌') }">
+          <span [innerHTML]="formatPhrase(lastResult())"></span>
+        </p>
+
+        <!-- Pronunciation / Audio on Answer -->
+        <div>
+          <p *ngIf="showPronunciation && directionMode === directionModeC && answered()" class="text-sm text-gray-300">
+            <span [innerHTML]="formatPhrase(currentPhrase.pr + '')"></span>
+          </p>
+          <button *ngIf="!['jp-to-eng','itn-to-eng','kor-to-eng','ge-to-eng','rus-to-eng'].includes(directionMode) && answered()"
+                  (click)="playAudio(directionMode === directionModeC ? currentPhrase.phrase : currentPhrase.en, directionMode === directionModeC ? lang : 'en-US')"
+                  class="btn-indigo mt-2">
+            ▶ Play Audio
+          </button>
+        </div>
+
+        <!-- Hints Section -->
+        <div *ngIf="directionMode===directionModeC" class="mt-4 text-center max-w-md mx-auto">
+          <div class="flex flex-wrap justify-center gap-2">
+            <button (click)="generateHint1()" class="btn-indigo">Hint 1</button>
+            <button (click)="generateHint2()" class="btn-indigo">Hint 2</button>
+            <button (click)="clearHints()" class="btn-red">Clear</button>
+          </div>
+
+          <div *ngIf="showHint1" class="hint-grid">
+            <button *ngFor="let char of hint1Array" (click)="appendToInput(char, inputRef)" class="hint-btn">{{ char }}</button>
+          </div>
+
+          <div *ngIf="showHint2" class="hint-grid">
+            <button *ngFor="let char of hint2Array" (click)="appendToInput(char, inputRef)" class="hint-btn">{{ char }}</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- NEXT / PROGRESS -->
+    <div class="text-center mt-8 space-y-3">
+      <p class="text-sm text-cyan-300">Cards left: {{ remainingPhrases().length }}</p>
+      <button *ngIf="answered() && remainingPhrases().length !== 0"
+              (click)="next()"
+              class="btn-cyan w-full sm:w-auto">
+        Next
+      </button>
+    </div>
   </div>
 </div>
+

@@ -1,0 +1,121 @@
+/* ------------------- Fade + Slide Animations ------------------- */
+.animate-fade-in {
+  opacity: 0;
+  transform: translateY(15px);
+  animation: fadeIn 0.4s ease-out forwards;
+}
+.animate-slide-in-right {
+  opacity: 0;
+  transform: translateX(20px);
+  animation: slideInRight 0.4s ease-out forwards;
+}
+@keyframes fadeIn {
+  to { opacity: 1; transform: translateY(0); }
+}
+@keyframes slideInRight {
+  to { opacity: 1; transform: translateX(0); }
+}
+
+/* ------------------- Sidebar / Modal ------------------- */
+.modal-backdrop {
+  background-color: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(2px);
+  transition: opacity 0.3s ease;
+}
+.modal-panel {
+  background-color: #0f1f26;
+  color: white;
+  border-radius: 1rem;
+  max-height: 80vh;
+  overflow-y: auto;
+  box-shadow: 0 12px 40px rgba(0,0,0,0.6);
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+.modal-panel.open {
+  opacity: 1;
+  transform: translateY(0);
+}
+.modal-panel.closed {
+  opacity: 0;
+  transform: translateY(-20px);
+}
+
+/* ------------------- Buttons ------------------- */
+.button {
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+.button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+}
+.button:active {
+  transform: scale(0.97);
+}
+
+/* ------------------- Quiz Card ------------------- */
+.quiz-card {
+  background-color: #1f2937; /* dark gray */
+  border-radius: 1rem;
+  padding: 1.5rem;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  opacity: 0;
+  transform: translateY(10px);
+  animation: fadeIn 0.4s ease-out forwards;
+}
+.quiz-card:hover {
+  transform: scale(1.03);
+  box-shadow: 0 8px 30px rgba(0,0,0,0.4);
+}
+
+/* ------------------- Card Navigation Buttons ------------------- */
+.nav-btn {
+  background-color: #0bc5ea;
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+.nav-btn:hover {
+  background-color: #0891b2;
+  transform: scale(1.05);
+}
+.nav-btn:active {
+  transform: scale(0.97);
+}
+
+/* ------------------- Staggered Cards ------------------- */
+.phrase-card:nth-child(1) { animation-delay: 0ms; }
+.phrase-card:nth-child(2) { animation-delay: 100ms; }
+.phrase-card:nth-child(3) { animation-delay: 200ms; }
+.phrase-card:nth-child(4) { animation-delay: 300ms; }
+/* extend for more cards */
+/* Fade + pop for each quiz card */
+@keyframes fadePopIn {
+  0% {
+    opacity: 0;
+    transform: scale(0.9) translateY(10px);
+  }
+  50% {
+    opacity: 0.6;
+    transform: scale(1.05) translateY(-2px);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1) translateY(0);
+  }
+}
+
+/* Apply stagger via nth-child */
+.quiz-card {
+  animation: fadePopIn 400ms ease-out forwards;
+}
+
+/* Example stagger for multiple cards (if multiple are visible at once) */
+.quiz-card:nth-child(1) { animation-delay: 0ms; }
+.quiz-card:nth-child(2) { animation-delay: 100ms; }
+.quiz-card:nth-child(3) { animation-delay: 200ms; }
+.quiz-card:nth-child(4) { animation-delay: 300ms; }
+.quiz-card:nth-child(5) { animation-delay: 400ms; }

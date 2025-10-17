@@ -1,0 +1,39 @@
+<!-- 🌐 Phrase Mode Menu -->
+<div class="menu-container">
+
+  <h2 class="menu-title">{{id}}</h2>
+
+  <div class="menu-buttons">
+    <button 
+      (click)="naVAll('')"
+      routerLinkActive="active"
+      class="menu-btn">
+      <i class="fa-solid fa-list"></i>
+      <span>All Phrases</span>
+    </button>
+
+    <button
+      (click)="naVAll('popular')"
+      routerLinkActive="active"
+      class="menu-btn">
+      <i class="fa-solid fa-fire"></i>
+      <span>Popular Phrases</span>
+    </button>
+
+    <button 
+      (click)="naVAll('course')"
+      routerLinkActive="active"
+      class="menu-btn">
+      <i class="fa-solid fa-graduation-cap"></i>
+      <span>Course Phrases</span>
+    </button>
+
+    <button 
+      (click)="naVAll('story')"
+      routerLinkActive="active"
+      class="menu-btn">
+      <i class="fa-solid fa-book-open"></i>
+      <span>Story Phrases</span>
+    </button>
+  </div>
+</div>

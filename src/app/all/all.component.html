@@ -51,7 +51,7 @@
   <div class="flex items-center gap-3">
     <button
       (click)="togglePanel()"
-      class="bg-blue-600 hover:bg-blue-700 text-white text-sm font-semibold px-4 py-2 rounded">
+      class=" text-white text-sm font-semibold px-4 py-2 rounded fade-slide-btn border border-cyan-400 hover:bg-cyan-700 transition">
       {{ isPanelOpen ? 'Hide Sections' : 'Show Sections' }}
     </button>
 
@@ -63,83 +63,73 @@
     </button>
   </div>
 </header>
-
-<!-- Slide-down Panel -->
 <div
-  class="bg-gray-900 transition-all duration-300 ease-in-out overflow-hidden z-0 border-t border-cyan-400 rounded-b-md top-[5rem] "
-  [style.maxHeight]="isPanelOpen ? '350px' : '0px'">
+  class="panel-container bg-gray-900 border-t border-cyan-400 rounded-b-2xl shadow-2xl 
+         transition-all duration-700 ease-in-out overflow-hidden z-0"
+  [style.maxHeight]="isPanelOpen ? '380px' : '0px'">
 
-  <div class="grid grid-cols-1 md:grid-cols-3 h-[350px] divide-x divide-gray-700">
-
+  <div class="grid grid-cols-1 md:grid-cols-4 h-[380px] divide-x divide-gray-800 animate-fadeIn">
+    
     <!-- Table of Content -->
-    <div class="p-4 overflow-y-auto">
-      <h2 class="text-xl font-semibold text-indigo-400 mb-3">📑 Table of Contents</h2>
+    <div class="section p-5 overflow-y-auto">
+      <h2 class="section-title text-cyan-400 mb-4">📑 Table of Contents</h2>
       <ul class="space-y-2">
-        <li
-          *ngFor="let toc of theCourse; let i = index"
-          class="cursor-pointer hover:text-purple-300 transition"
-          (click)="show2()">
+        <li *ngFor="let toc of theCourse; let i = index"
+            class="list-item"
+            (click)="show2()">
           {{ toc.category }}
-          <span *ngFor="let a of toc.lessons">
-            <p *ngIf="showlessons" class="text-purple-200">{{ a.phrase }} : {{ a.en }}</p>
-          </span>
+          <div *ngIf="showlessons" class="ml-2 border-l border-cyan-700 pl-3 mt-2 space-y-1">
+            <p *ngFor="let a of toc.lessons" 
+               class="lesson-item">
+              {{ a.phrase }} 
+              <span class="text-gray-400">— {{ a.en }}</span>
+            </p>
+          </div>
         </li>
       </ul>
     </div>
 
     <!-- Course -->
-    <div class="p-4 overflow-y-auto">
-      <h2 class="text-xl font-semibold text-green-400 mb-3">🎓 Course</h2>
+    <div class="section p-5 overflow-y-auto">
+      <h2 class="section-title text-green-400 mb-4">🎓 Course</h2>
       <ul class="space-y-2">
-        <li
-          *ngFor="let course of allCourse; let i = index"
-          class="cursor-pointer transition hover:text-green-300"
-          [ngClass]="{
-            'text-green-400 font-semibold': course.isDone,
-            'text-green-200': !course.isDone
-          }"
-          (click)="aPhrase(course.s, i, 'c')">
+        <li *ngFor="let course of allCourse; let i = index"
+            class="list-item text-green-200 hover:text-green-300"
+            [ngClass]="{'active-item': course.isDone}"
+            (click)="aPhrase(course.s, i, 'c')">
           {{ course.s }}
         </li>
       </ul>
     </div>
 
-    
-    <!-- Story -->
-    <div class="p-4 overflow-y-auto">
-      <h2 class="text-xl font-semibold text-blue-400 mb-3">📘 Popular Phrases</h2>
+    <!-- Popular Phrases -->
+    <div class="section p-5 overflow-y-auto">
+      <h2 class="section-title text-blue-400 mb-4">💬 Popular Phrases</h2>
       <ul class="space-y-2">
-        <li
-          *ngFor="let story of allPopular; let i = index"
-          class="cursor-pointer transition hover:text-blue-300"
-          [ngClass]="{
-            'text-green-400 font-semibold': story.isDone,
-            'text-blue-200': !story.isDone
-          }"
-          (click)="aPhrase(story.s, i, 'p')">
-          {{ story.s }}
+        <li *ngFor="let pop of allPopular; let i = index"
+            class="list-item text-blue-200 hover:text-blue-300"
+            [ngClass]="{'active-item': pop.isDone}"
+            (click)="aPhrase(pop.s, i, 'p')">
+          {{ pop.s }}
         </li>
       </ul>
     </div>
 
     <!-- Story -->
-    <div class="p-4 overflow-y-auto">
-      <h2 class="text-xl font-semibold text-blue-400 mb-3">📘 Story</h2>
+    <div class="section p-5 overflow-y-auto">
+      <h2 class="section-title text-purple-400 mb-4">📘 Story</h2>
       <ul class="space-y-2">
-        <li
-          *ngFor="let story of allStory; let i = index"
-          class="cursor-pointer transition hover:text-blue-300"
-          [ngClass]="{
-            'text-green-400 font-semibold': story.isDone,
-            'text-blue-200': !story.isDone
-          }"
-          (click)="aPhrase(story.s, i, 's')">
+        <li *ngFor="let story of allStory; let i = index"
+            class="list-item text-purple-200 hover:text-purple-300"
+            [ngClass]="{'active-item': story.isDone}"
+            (click)="aPhrase(story.s, i, 's')">
           {{ story.s }}
         </li>
       </ul>
     </div>
   </div>
 </div>
+
 
 <!-- Phrase Cards Grid -->
 <main *ngIf="selectedPhraseName()!=null else howTo" class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 p-6 mt-[6.5rem] ml-[5rem]">
@@ -167,52 +157,6 @@
 
 <ng-template #howTo>
   <div class="flex flex-col items-center justify-center min-h-screen px-4 py-8 text-center overflow-y-auto sm:overflow-visible">
-    <!--<div class="max-w-md w-full space-y-6">
-      <h1 class="text-2xl sm:text-3xl font-bold text-cyan-200">
-        Welcome to the Phrase Itera App!
-      </h1>
-
-      <p class="text-base sm:text-lg text-cyan-600">
-        To preview each phrase, please select a phrase list from the sections above.
-      </p>
-
-      <p class="text-sm sm:text-md text-cyan-500">
-        Once you've selected a list, you'll see a preview of the phrases displayed here.
-      </p>
-
-      <div>
-        <h2 class="text-xl sm:text-2xl text-cyan-200 mb-2">There are three sections:</h2>
-        <ul class="list-disc list-inside text-left text-cyan-500 space-y-3">
-          <li>
-            <strong class="text-emerald-200">Table of Contents / Course:</strong>
-            Study phrases organized by grammar points. See what grammar will be learned in each phrase.
-          </li>
-          <li>
-            <strong class="text-indigo-200">Popular Phrases:</strong>
-            Access commonly used phrases for everyday conversations.
-          </li>
-          <li>
-            <strong class="text-red-200">Story:</strong>
-            Explore phrases used in stories to enhance your learning experience.
-          </li>
-        </ul>
-      </div>
-
-      <div class="bg-cyan-900/30 border border-cyan-700 rounded-xl p-4 shadow-lg">
-        <h2 class="text-xl sm:text-2xl text-cyan-200 mb-3">Places to study:</h2>
-        <ul class="list-disc list-inside text-left text-cyan-400 space-y-2 text-sm sm:text-base">
-          <li>
-            <span class="text-indigo-300 font-semibold">Popular Phrases:</span> type &rarr; card, multi, speech
-          </li>
-          <li>
-            <span class="text-emerald-300 font-semibold">Course phrases:</span> type, card, multi, speech, fill-in-the-blank
-          </li>
-          <li>
-            <span class="text-rose-300 font-semibold">Story phrases:</span> type, card, multi, speech, chat
-          </li>
-        </ul>
-      </div>
-    </div>-->
     <!-- 🌟 Welcome Section -->
 <section class="max-w-2xl w-full mx-auto bg-gray-900/40 backdrop-blur-sm rounded-2xl p-8 sm:p-10 shadow-lg border border-cyan-800/40 text-center animate-fadeInUp">
   <h1 class="text-3xl sm:text-4xl font-extrabold text-cyan-200 mb-3 tracking-wide">

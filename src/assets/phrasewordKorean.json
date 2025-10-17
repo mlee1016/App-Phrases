@@ -785,7 +785,7 @@
       { "ko": "…는 게 좋다", "pr": "neun ge jota" },
       { "ko": "거나", "pr": "geona" }
     ],
-    "answer": [{ "ko": "…지 않는 게 좋다", "pr": "ji anneun ge jota" }]
+    "answer": [{ "ko": "지 않는 게 좋다", "pr": "ji anneun ge jota" }]
   },
   {
     "question": "Choose the correct word to complete the sentence.",
@@ -857,7 +857,8 @@
     "pr": "jigeum biga ol ___ gatayo.",
     "en": "It will probably rain now. (tense future)",
     "options": [
-      { "ko": "でしょう", "pr": "deshou" },
+            { "ko": "하지만", "pr": "hajiman" }
+      ,
       { "ko": "…ㄹ/을 거예요", "pr": "geoyeyo" },
       { "ko": "이/가", "pr": "i/ga" }
     ],
@@ -1039,7 +1040,7 @@
     "question": "Choose the correct word to complete the sentence.",
     "ko": "버스를 타고 서울___ 갑니다.",
     "pr": "beoseureul tago Seoul___ gamnida.",
-    "en": "I’m going to Seoul by bus.",
+    "en": "I’m going [[to]] Seoul by bus.",
     "options": [
       { "ko": "으로", "pr": "euro" },
       { "ko": "에", "pr": "e" },
@@ -1051,7 +1052,7 @@
     "question": "Choose the correct word to complete the sentence.",
     "ko": "저는 한국어를 배우___ 갑니다.",
     "pr": "jeoneun hangugeoreul baeu___ gamnida.",
-    "en": "I am going (there) to learn Korean.",
+    "en": "I am going ([[there]]) to learn Korean.",
     "options": [
       { "ko": "러 가다", "pr": "reo gada" },
       { "ko": "기로 하다", "pr": "giro hada" },
@@ -1063,7 +1064,7 @@
     "question": "Choose the correct word to complete the sentence.",
     "ko": "우리는 내일 여행하기___ 했어요.",
     "pr": "urineun naeil yeohaenghagi___ haesseoyo.",
-    "en": "We decided to travel tomorrow.",
+    "en": "We [[decided]] to travel tomorrow.",
     "options": [
       { "ko": "기로 하다", "pr": "giro hada" },
       { "ko": "되다", "pr": "doeda" },
@@ -1075,7 +1076,7 @@
     "question": "Choose the correct word to complete the sentence.",
     "ko": "이것은 제 친구___ 책이에요.",
     "pr": "igeoseun je chingu___ chaeg-ieyo.",
-    "en": "This is my friend’s book.",
+    "en": "This is my friend[[’s]] book.",
     "options": [
       { "ko": "의", "pr": "ui" },
       { "ko": "에", "pr": "e" },
@@ -1101,13 +1102,13 @@
     "question": "Choose the correct word to complete the sentence.",
     "ko": "저는 지금 책을 ___ 있어요.",
     "pr": "jeoneun jigeum chaegeul ___ isseoyo.",
-    "en": "I am reading a book right now.",
+    "en": "I am [[reading]] a book right now.",
     "options": [
-      { "ko": "보고 있다", "pr": "bogo itda" },
+      { "ko": "보고 ", "pr": "bogo " },
       { "ko": "하고 있다", "pr": "hago itda" },
       { "ko": "작정이다", "pr": "jakjeong ida" }
     ],
-    "answer": [{ "ko": "보고 있다", "pr": "bogo itda" }]
+    "answer": [{ "ko": "보고 ", "pr": "bogo " }]
   },
   {
     "question": "Choose the correct word to complete the sentence.",
@@ -1125,10 +1126,10 @@
     "question": "Choose the correct word to complete the sentence.",
     "ko": "학교에 늦으면 안 ___.",
     "pr": "hakgyoe neut-eumyeon an ___.",
-    "en": "You must not be late to school.",
+    "en": "You [[must not]] be late to school.",
     "options": [
-      { "ko": "된다", "pr": "doenda" },
-      { "ko": "된다", "pr": "doenda" },
+      { "ko": "안 된다", "pr": "an doenda" },
+      { "ko": "도 된다", "pr": "do doenda" },
       { "ko": "된다", "pr": "doenda" }
     ],
     "answer": [{ "ko": "된다", "pr": "doenda" }]
@@ -1137,7 +1138,7 @@
     "question": "Choose the correct word to complete the sentence.",
     "ko": "밥을 먹고 ___ 이를 닦으세요.",
     "pr": "bapeul meokgo ___ ireul dakk-euseyo.",
-    "en": "Brush your teeth after eating.",
+    "en": "Brush your teeth [[after]] eating.",
     "options": [
       { "ko": "나서", "pr": "naseo" },
       { "ko": "도 된다", "pr": "do doenda" },
@@ -1149,7 +1150,7 @@
     "question": "Choose the correct word to complete the sentence.",
     "ko": "친구___ 영화를 봤어요.",
     "pr": "chingu___ yeonghwareul bwasseoyo.",
-    "en": "I watched a movie with a friend.",
+    "en": "I watched a movie [[with]] a friend.",
     "options": [
       { "ko": "하고", "pr": "hago" },
       { "ko": "이나", "pr": "ina" },
@@ -1161,7 +1162,7 @@
     "question": "Choose the correct word to complete the sentence.",
     "ko": "영화를 볼 ___ 계획이에요.",
     "pr": "yeonghwareul bol ___ gyehoeg-ieyo.",
-    "en": "I plan to watch a movie.",
+    "en": "I [[plan]] to watch a movie.",
     "options": [
       { "ko": "을 작정이다", "pr": "eul jakjeong ida" },
       { "ko": "을 도 된다", "pr": "eul do doenda" },
@@ -1173,7 +1174,7 @@
     "question": "Choose the correct word to complete the sentence.",
     "ko": "사과___ 바나나를 샀어요.",
     "pr": "sagwa___ banana-reul sasseoyo.",
-    "en": "I bought apples and bananas.",
+    "en": "I bought apples [[and]] bananas.",
     "options": [
       { "ko": "나", "pr": "na" },
       { "ko": "이나", "pr": "ina" },
@@ -1185,7 +1186,7 @@
     "question": "Choose the correct word to complete the sentence.",
     "ko": "커피는 차___ 더 좋아해요.",
     "pr": "keopineun cha___ deo joahaeyo.",
-    "en": "I like coffee more than tea.",
+    "en": "I like coffee [[more than]] tea.",
     "options": [
       { "ko": "보다", "pr": "boda" },
       { "ko": "나", "pr": "na" },
@@ -1212,7 +1213,7 @@
     "question": "Choose the correct word to complete the sentence.",
     "ko": "배가 아파서 병원에 가야 했어요, ___ 쉬었어요.",
     "pr": "baega apaseo byeong-won-e gaya haesseoyo, ___ swieosseoyo.",
-    "en": "My stomach hurt, so I rested because of it.",
+    "en": "My stomach hurt, [[so]] I rested because of it.",
     "options": [
       { "ko": "니까", "pr": "nikka" },
       { "ko": "것", "pr": "geot" },
@@ -1224,7 +1225,7 @@
     "question": "Choose the correct word to complete the sentence.",
     "ko": "그는 축구를 ___ 정말 잘해요.",
     "pr": "geuneun chukgu-reul ___ jeongmal jalhaeyo.",
-    "en": "He is really good at playing soccer.",
+    "en": "He is really [[good at]] playing soccer.",
     "options": [
       { "ko": "는 걸 잘하다", "pr": "neun geol jalhada" },
       { "ko": "는 걸 못하다", "pr": "neun geol mothada" },
@@ -1248,7 +1249,7 @@
     "question": "Choose the correct word to complete the sentence.",
     "ko": "저는 피아노를 ___ 못해요.",
     "pr": "jeoneun piano-reul ___ motaeyo.",
-    "en": "I am bad at playing the piano.",
+    "en": "I am [[bad]] at playing the piano.",
     "options": [
       { "ko": "는 걸 못하다", "pr": "neun geol mothada" },
       { "ko": "는 걸 좋아하다", "pr": "neun geol johahada" },
@@ -1260,7 +1261,7 @@
     "question": "Choose the correct word to complete the sentence.",
     "ko": "저는 한국어를 배우고 ___",
     "pr": "jeoneun hangugeo-reul baeugo ___",
-    "en": "I want to learn Korean.",
+    "en": "I [[want to]] learn Korean.",
     "options": [
       { "ko": "고 싶다", "pr": "go sipda" },
       { "ko": "는 걸 잘하다", "pr": "neun geol jalhada" },
@@ -1272,13 +1273,13 @@
     "question": "Choose the correct word to complete the sentence.",
     "ko": "저는 일본에 가본 ___ 있어요.",
     "pr": "jeoneun ilbon-e gabon ___ isseoyo.",
-    "en": "I have been to Japan before.",
+    "en": "I [[have been]] to Japan before.",
     "options": [
-      { "ko": "(으)ㄴ 적이 있다", "pr": "eun jeogi itda" },
+      { "ko": "(으)ㄴ 적이 ", "pr": "eun jeogi " },
       { "ko": "는 걸 좋아하다", "pr": "neun geol johahada" },
       { "ko": "고 싶다", "pr": "go sipda" }
     ],
-    "answer": [{ "ko": "(으)ㄴ 적이 있다", "pr": "eun jeogi itda" }]
+    "answer": [{ "ko": "(으)ㄴ 적이 ", "pr": "eun jeogi " }]
   }
 ]
 
