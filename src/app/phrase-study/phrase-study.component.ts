@@ -72,6 +72,7 @@ export class PhraseStudyComponent {
   }
   selectLang:any
   pro:any =signal<any>('pr')
+  m1:string =''
   ngOnInit(): void {
     //Called after the constructor, initializing input properties, and the first call to ngOnChanges.
     //Add 'implements OnInit' to the class.
@@ -83,7 +84,9 @@ export class PhraseStudyComponent {
 
       
       let tempId:string|null = params.get('id')
+      let select:string|null = params.get('m')
       this.id = tempId
+      this.m1 = select || ''
     })
   switch(this.id){
     

@@ -17,8 +17,8 @@
       <button (click)="toggleSidebar()" class="text-white text-2xl">&times;</button>
     </div>
 
-    <h2 class="text-lg font-bold mb-3 border-b border-cyan-700 pb-1">📖 Stories</h2>
-    <ul class="space-y-1 mb-6">
+    <h2 *ngIf="m1==='story'" class="text-lg font-bold mb-3 border-b border-cyan-700 pb-1">📖 Stories</h2>
+    <ul *ngIf="m1==='story'" class="space-y-1 mb-6">
       <li *ngFor="let item of allListS"
           (click)="selectItem(item.s)"
           [class.bg-cyan-700]="selectedItem === item.s"
@@ -29,17 +29,17 @@
 
     
 
-    <h2 class="text-lg font-bold mb-3 border-b border-cyan-700 pb-1">📖 Popular</h2>
-    <ul class="space-y-1 mb-6">
-      <li *ngFor="let item of Popular"
+    <h2 *ngIf="m1==='popular'" class="text-lg font-bold mb-3 border-b border-cyan-700 pb-1">📖 Popular</h2>
+    <ul *ngIf="m1==='popular'" class="space-y-1 mb-6">
+      <li  *ngFor="let item of Popular"
           (click)="selectItem(item.s)"
           [class.bg-cyan-700]="selectedItem === item.s"
           class="cursor-pointer px-3 py-1.5 rounded hover:bg-cyan-700 transition">
         {{ item.s }}
       </li>
     </ul>
-    <h2 class="text-lg font-bold mb-3 border-b border-cyan-700 pb-1">📘 Grammar</h2>
-    <ul class="space-y-1">
+    <h2 *ngIf="m1==='course'" class="text-lg font-bold mb-3 border-b border-cyan-700 pb-1">📘 Grammar</h2>
+    <ul *ngIf="m1==='course'" class="space-y-1">
       <li *ngFor="let item of allList"
           (click)="selectItem(item.s)"
           [class.bg-cyan-700]="selectedItem === item.s"

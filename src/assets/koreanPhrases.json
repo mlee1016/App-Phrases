@@ -7688,16 +7688,16 @@
       "des": "Approximate amount of money."
     },
     {
-      "phrase": "비가 와요. [[하지만]] 갈 거예요.",
-      "pr": "bi-ga wa-yo. [[ha-ji-man]] gal geo-ye-yo",
-      "en": "It’s raining, [[but]] I will go.",
-      "des": "Contrast of rain vs. going."
-    },
-    {
       "phrase": "학교[[에서]] 공부해요.",
       "pr": "hak-gyo-[[eseo]] gong-bu-hae-yo",
       "en": "I study [[at]] school.",
       "des": "에서 marks the place where an action occurs."
+    },
+    {
+      "phrase": "비가 와요. [[하지만]] 갈 거예요.",
+      "pr": "bi-ga wa-yo. [[ha-ji-man]] gal geo-ye-yo",
+      "en": "It’s raining, [[but]] I will go.",
+      "des": "Contrast of rain vs. going."
     },
     {
       "phrase": "공원[[에서]] 운동했어요.",

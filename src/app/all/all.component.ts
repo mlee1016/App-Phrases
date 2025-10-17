@@ -651,6 +651,11 @@ export class AllComponent{
     if(this.check()==='signed in'){this.loadCompletedFromBackend()}
   }
 phrases = signal<UnifiedPhrase[]>([]);
+activeIndex: number | null = null;
+
+show3(index: number) {
+  this.activeIndex = this.activeIndex === index ? null : index;
+}
 
 setUnifiedPhrases(lang: string, phraseList: any[]) {
   this.phrases.set(phraseList);

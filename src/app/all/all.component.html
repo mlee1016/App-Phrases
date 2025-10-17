@@ -72,20 +72,20 @@
     
     <!-- Table of Content -->
     <div class="section p-5 overflow-y-auto">
-      <h2 class="section-title text-cyan-400 mb-4">📑 Table of Contents</h2>
+      <h2 class="section-title text-cyan-200 mb-4">📑 Table of Contents</h2>
       <ul class="space-y-2">
         <li *ngFor="let toc of theCourse; let i = index"
-            class="list-item"
-            (click)="show2()">
-          {{ toc.category }}
-          <div *ngIf="showlessons" class="ml-2 border-l border-cyan-700 pl-3 mt-2 space-y-1">
-            <p *ngFor="let a of toc.lessons" 
-               class="lesson-item">
-              {{ a.phrase }} 
-              <span class="text-gray-400">— {{ a.en }}</span>
-            </p>
-          </div>
-        </li>
+    class="list-item"
+    (click)="show3(i)">
+  {{ toc.category }}
+
+  <div *ngIf="activeIndex === i" class="ml-2 border-l border-cyan-700 pl-3 mt-2 space-y-1">
+    <p *ngFor="let a of toc.lessons" class="lesson-item">
+      {{ a.phrase }} <span class="text-gray-400">— {{ a.en }}</span>
+    </p>
+  </div>
+</li>
+
       </ul>
     </div>
 
