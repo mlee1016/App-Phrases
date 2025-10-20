@@ -60,7 +60,7 @@ export class PhrasewordComponent {
   
   questionsPolite
   input = signal<any>('')
-  speak = ''
+  speak = '' 
   questions
   test
   m = "phrase"

@@ -564,7 +564,7 @@ again(){
 
   toggleSidebar(){
     this.loadPhrasesById()
-    this.sideBar = !this.sideBar
+    this.sideBar = !this.sideBar 
   }
   
   close(){
