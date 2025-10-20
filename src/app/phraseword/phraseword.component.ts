@@ -57,7 +57,7 @@ export class PhrasewordComponent {
      
     return this.phrases()//this.remainingPhrases()[this.currentIndex()];
 }
-  
+   
   questionsPolite
   input = signal<any>('')
   speak = '' 
