@@ -5,7 +5,7 @@ import { Input, Output, EventEmitter } from '@angular/core';
   selector: 'app-again',
   templateUrl: './again.component.html',
   standalone:true,
-  imports: [CommonModule],
+  imports: [CommonModule], 
   styleUrl: './again.component.css'
 
 })

@@ -47,7 +47,7 @@
 }
 .button:hover {
   transform: scale(1.05);
-  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+  box-shadow: 0 4px 12px rgba(170, 38, 38, 0.3);
 }
 .button:active {
   transform: scale(0.97);
@@ -70,29 +70,27 @@
 }
 
 /* ------------------- Card Navigation Buttons ------------------- */
-.nav-btn {
-  background-color: #0bc5ea;
+.a-btn {
   color: white;
   padding: 0.5rem 1rem;
   border-radius: 0.5rem;
   font-weight: 500;
   transition: all 0.3s ease;
 }
-.nav-btn:hover {
-  background-color: #0891b2;
+.a-btn:hover {
   transform: scale(1.05);
 }
-.nav-btn:active {
+.a-btn:active {
   transform: scale(0.97);
 }
 
-/* ------------------- Staggered Cards ------------------- *
+/* ------------------- Staggered Cards ------------------- */
 .phrase-card:nth-child(1) { animation-delay: 0ms; }
 .phrase-card:nth-child(2) { animation-delay: 100ms; }
 .phrase-card:nth-child(3) { animation-delay: 200ms; }
 .phrase-card:nth-child(4) { animation-delay: 300ms; }
 /* extend for more cards */
-/* Fade + pop for each quiz card *
+/* Fade + pop for each quiz card */
 @keyframes fadePopIn {
   0% {
     opacity: 0;
@@ -108,18 +106,18 @@
   }
 }
 
-/* Apply stagger via nth-child *
+/* Apply stagger via nth-child */
 .quiz-card {
   animation: fadePopIn 400ms ease-out forwards;
 }
 
-/* Example stagger for multiple cards (if multiple are visible at once) *
+/* Example stagger for multiple cards (if multiple are visible at once) */
 .quiz-card:nth-child(1) { animation-delay: 0ms; }
 .quiz-card:nth-child(2) { animation-delay: 100ms; }
 .quiz-card:nth-child(3) { animation-delay: 200ms; }
 .quiz-card:nth-child(4) { animation-delay: 300ms; }
 .quiz-card:nth-child(5) { animation-delay: 400ms; }
-*/
+
 
 .perspective {
   perspective: 1000px;

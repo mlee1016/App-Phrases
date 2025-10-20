@@ -701,10 +701,10 @@ next() {
     list.splice(this.currentIndex(), 1);
     this.remainingPhrases.set(list);
 
-    if (list.length === 0) {
-      alert("🎉 All correct!");
-      return;
-    }
+    // if (list.length === 0) {
+    //   alert("🎉 All correct!");
+    //   return;
+    // }
     this.userInput = ""
     this.currentIndex.set(this.currentIndex() % list.length);
   } else {
