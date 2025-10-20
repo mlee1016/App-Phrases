@@ -80,15 +80,15 @@
       </button>
     </div>
 
-    <!-- Phrase Card 
+    <!-- Phrase Card --
      
         
            (mouseover)="onHover(i, selectLang, currentPhrase)"
               (mouseleave)="clearHover()"
 
 
+  -->
 
-    --
     <div *ngIf="!sidebarOpen" 
          class="bg-white shadow-lg rounded-2xl p-6 text-center border border-cyan-200 max-w-2xl mx-auto">
       
@@ -130,7 +130,7 @@
       </div>
     </div>-->
 
-    <!-- Navigation --
+    <!-- Navigation -->
     <div *ngIf="!sidebarOpen" class="flex justify-between max-w-xl mx-auto mb-10">
       <button (click)="prevCard()"
               class="px-5 py-2 bg-cyan-500 rounded-lg shadow hover:bg-cyan-300 transition">
@@ -141,7 +141,8 @@
         Next ▶
       </button>
     </div>
-  </div>-->
+
+  </div>
   <!-- ✨ Phrase Display Card --
 <div *ngIf="!sidebarOpen" 
      class="phrase-card bg-gradient-to-br from-cyan-50 via-white to-cyan-100 
@@ -185,7 +186,7 @@
             border border-cyan-300/40 rounded-2xl shadow-lg 
             p-6 text-center mx-auto max-w-2xl animate-fadeInUp">
 
-  <!-- 🌐 Language Text -->
+  <!-- 🌐 Language Text --
   <div class="phrase-line mb-3 text-xl font-semibold text-cyan-800 tracking-wide flex flex-wrap justify-center gap-1">
     <span *ngFor="let word of currentPhrase[selectLang]; let i = index"
           (mouseenter)="hoverWord(word)"
@@ -198,7 +199,7 @@
     </span>
   </div>
 
-  <!-- 🗣 Pronunciation Line -->
+  <!-- 🗣 Pronunciation Line --
   <div class="phrase-line mb-2 text-gray-600 flex flex-wrap justify-center gap-1">
     <span *ngFor="let word of currentPhrase[pro()]; let i = index"
           [ngClass]="{
@@ -209,7 +210,7 @@
     </span>
   </div>
 
-  <!-- 🌍 English Translation -->
+  <!-- 🌍 English Translation --
   <div class="phrase-line mb-4 text-lg text-gray-800 flex flex-wrap justify-center gap-1">
     <span *ngFor="let word of currentPhrase.en; let i = index"
           [ngClass]="{
@@ -219,12 +220,12 @@
       {{ word }}
     </span>
   </div>
-</div>
+</div>-->
 
-<!-- 🚀 Navigation Buttons -->
+<!-- 🚀 Navigation Buttons --
 <div *ngIf="!sidebarOpen" class="nav-buttons flex justify-center gap-6 mt-6 animate-fadeInUp">
   <button (click)="prevCard()" class="nav-btn">◀ Prev</button>
   <button (click)="nextCard()" class="nav-btn">Next ▶</button>
-</div>
+</div>-->
 
 </div>

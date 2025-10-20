@@ -250,9 +250,6 @@ ngOnInit(): void {
            this.japaneseStory = data.filter(p => p.type === 'story');
       }
       // error: err => console.error(`Failed to load ${lang} grammar:`, err)
-      
-
-      
 
         switch(this.id){
     case 'Korean':
@@ -325,10 +322,6 @@ ngOnInit(): void {
         this.phraseListPopularJapanese = this.phraseNames.allPopularJapanesePhrases
         this.japaneseStory  = this.phraseNames.allListJapaneseStory
         
-
-      
-      
-
         switch(this.id){
     case 'Korean':
       this.phraseStory = this.allPhrase;
@@ -383,24 +376,21 @@ ngOnInit(): void {
       this.la = 'ru';
       break;
   }
-
-
     }
-
-
-    
-
     // ✅ Load data after setting ID and language config
-  
-  
-    this.loadPhrasesById();
-
-
-    
-  });
-
-
+    this.loadPhrasesById();});
 }
+showAnswer2 = false;
+
+revealAnswer() {
+  this.showAnswer2 = true;
+}
+
+// next() {
+//   this.showAnswer2 = false;
+//   // Load next question logic here...
+// }
+
 
 setUnifiedPhrases(lang: string, phraseList: any[]) {
   this.phrases.set(phraseList);
@@ -586,7 +576,7 @@ selectPhraseList() {
   directionMode: string = " ";
   answerMode: string = 'type';
   currentIndex = signal(0); 
-  showAnswer2 = false;
+  // showAnswer2 = false;
   userInput = '';
   result = '';
   pro='kana'
@@ -701,6 +691,8 @@ selectPhraseList() {
    }
    
 next() {
+    this.showAnswer2 = false;
+
   if (!this.answered()) return; // ⛔ Block skipping until answered
 
   // Remove if correct

@@ -11,7 +11,7 @@ import { Input, Output, EventEmitter } from '@angular/core';
 })
 
 export class AgainComponent {
-
+ 
   @Input() correctCount = 0;
   @Input() wrongCount = 0;
   @Input() userResults: any[] = [];
