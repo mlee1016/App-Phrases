@@ -1,0 +1,23 @@
+import { ComponentFixture, TestBed } from '@angular/core/testing';
+
+import { AgainComponent } from './again.component';
+
+describe('AgainComponent', () => {
+  let component: AgainComponent;
+  let fixture: ComponentFixture<AgainComponent>;
+
+  beforeEach(async () => {
+    await TestBed.configureTestingModule({
+      imports: [AgainComponent]
+    })
+    .compileComponents();
+    
+    fixture = TestBed.createComponent(AgainComponent);
+    component = fixture.componentInstance;
+    fixture.detectChanges();
+  });
+
+  it('should create', () => {
+    expect(component).toBeTruthy();
+  });
+});

@@ -38,6 +38,20 @@ export class AllphrasesService {
 
 
 
+    
+  getKoreanEntries():any{ 
+    //Option 1
+    let options = this.getStandardOptions();
+    options.params = new HttpParams({
+      fromObject:{
+        format: 'json'
+      }
+    });debugger
+    //Option 2: return this.http.get('assets/koreanPhrases.json?format=json',options)
+    return this.http.get('assets/koreanEntries.json',options).pipe(catchError(this.handleError)) // returns a observable so not yet sent until an subscribers
+
+    
+  }
 
   
   getKoreanPhraseword1(){

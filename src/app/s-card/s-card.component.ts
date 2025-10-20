@@ -585,7 +585,7 @@ selectPhraseList() {
     
   directionMode: string = " ";
   answerMode: string = 'type';
-  currentIndex = signal(0);
+  currentIndex = signal(0); 
   showAnswer2 = false;
   userInput = '';
   result = '';

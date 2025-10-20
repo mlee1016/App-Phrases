@@ -180,10 +180,12 @@
               class="btn-indigo">
         ▶ Play Audio
       </button>
+      <button class="btn-cyan" *ngIf="'course'===m1" (click)="toggleHighlight()">point</button>
+
     </div>
 
     <!-- QUIZ CARD -->
-    <div class="bg-gray-800/80 rounded-2xl shadow-xl p-6 sm:p-8 text-center">
+    <div *ngIf="remainingPhrases().length" class="bg-gray-800/80 rounded-2xl shadow-xl p-6 sm:p-8 text-center">
       <p *ngIf="phraseOn" class="text-2xl sm:text-3xl font-bold text-blue-300 mb-2">
         <span [innerHTML]="formatPhrase(getQuestion() +'')"></span>
       </p>
@@ -239,7 +241,14 @@
         </div>
       </div>
     </div>
+    
 
+    <div *ngIf="remainingPhrases().length===0">
+      <app-again
+        (retry)="toggleSidebar()"
+        (retry)="reset()"
+      ></app-again>
+    </div>
     <!-- NEXT / PROGRESS -->
     <div class="text-center mt-8 space-y-3">
       <p class="text-sm text-cyan-300">Cards left: {{ remainingPhrases().length }}</p>

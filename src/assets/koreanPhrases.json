@@ -7904,9 +7904,9 @@
 ,
 
   "course3":[
-    
-    { "phrase": "저[[만]] 왔어요.", "pr": "jeo-[[man]] wasseoyo", "en": "Only I came.", "des": "‘만’ attaches to a noun to mean ‘only/just’." },
     { "phrase": "물[[만]] 마셨어요.", "pr": "mul-[[man]] masyeosseoyo", "en": "I drank only water.", "des": "Limits the action to water alone." },
+
+    { "phrase": "저[[만]] 왔어요.", "pr": "jeo-[[man]] wasseoyo", "en": "Only I came.", "des": "‘만’ attaches to a noun to mean ‘only/just’." },
     { "phrase": "이 방[[만]] 깨끗해요.", "pr": "i bang-[[man]] kkaekkeutaeyo", "en": "Only this room is clean.", "des": "Specifies exclusivity of cleanliness." },
     { "phrase": "하루[[만]] 기다려 주세요.", "pr": "haru-[[man]] gidaryeo juseyo", "en": "Please wait just one day.", "des": "Shows restriction of time to one day." }
   ,

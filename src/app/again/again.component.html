@@ -1,0 +1,67 @@
+<div class="fixed inset-0 bg-black/40 backdrop-blur-sm flex justify-center items-center z-50 px-4">
+  <div
+    class="bg-white dark:bg-gray-900 rounded-3xl shadow-2xl p-6 w-full max-w-sm text-center animate-fadeInUp transition-all duration-300"
+  >
+    <!-- 🧩 Try Again Popup -->
+    <div >
+      <h2 class="text-3xl font-bold text-red-500 mb-3">Try Again 💪</h2>
+      <p class="text-gray-600 dark:text-gray-300 mb-6">
+         review your answers and give it another shot!
+      </p>
+
+      <button
+        (click)="onRetry()"
+        class="w-full bg-gradient-to-r from-red-500 to-pink-500 hover:from-pink-500 hover:to-red-500 text-white font-semibold py-3 rounded-2xl shadow-lg transition-transform transform hover:scale-[1.03]"
+      >
+        Try Again
+      </button>
+    </div>
+
+    <!-- 🏆 Results Summary -->
+    <div *ngIf="!showTryAgainPopup && userResults.length!==0">
+      <h2 class="text-2xl font-bold text-cyan-600 dark:text-cyan-400 mb-4">
+        🎯 Your Results
+      </h2>
+
+      <div
+        class="text-gray-700 dark:text-gray-300 mb-4 bg-gray-50 dark:bg-gray-800 rounded-2xl p-3 shadow-inner"
+      >
+        <p>✅ <strong>{{ correctCount }}</strong> Correct</p>
+        <p>❌ <strong>{{ wrongCount }}</strong> Wrong</p>
+      </div>
+
+      <!-- 🧾 Display user answers -->
+      <div
+        class="max-h-64 overflow-y-auto border-t border-gray-200 dark:border-gray-700 pt-3 space-y-2 text-left"
+      >
+        <div
+          *ngFor="let ca of userResults"
+          class="p-3 rounded-xl shadow-sm transition-all duration-200"
+          [ngClass]="
+            ca.correct
+              ? 'bg-green-50 dark:bg-green-900/40 text-green-700 dark:text-green-300'
+              : 'bg-red-50 dark:bg-red-900/40 text-red-600 dark:text-red-300'
+          "
+        >
+          <div class="font-semibold">{{ ca.phrase[la] }}</div>
+          <div class="text-sm text-gray-500 dark:text-gray-400">
+            {{ ca.phrase.pr }}
+          </div>
+          <div class="text-sm italic text-gray-600 dark:text-gray-300">
+            {{ ca.phrase.en }}
+          </div>
+          <div class="mt-1 text-right font-bold">
+            {{ ca.correct ? '✔️ Correct' : '✖️ Wrong' }}
+          </div>
+        </div>
+      </div>
+
+      <button
+        (click)="onNext()"
+        class="w-full mt-5 bg-gradient-to-r from-cyan-500 to-blue-500 hover:from-blue-500 hover:to-cyan-500 text-white font-semibold py-3 rounded-2xl shadow-lg transition-transform transform hover:scale-[1.03]"
+      >
+        Continue ➜
+      </button>
+    </div>
+  </div>
+</div>

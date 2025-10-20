@@ -39,6 +39,7 @@ import { AlloptionsComponent } from './alloptions/alloptions.component';
 import { KanjiComponent } from './kanji/kanji.component';
 import { EdComponent } from './ed/ed.component';
 import { NotFoundComponent } from './not-found/not-found.component';
+import { AgainComponent } from "./again/again.component";
 // import { AresponseComponent } from './aresponse/aresponse.component';
 
 
@@ -99,10 +100,11 @@ import { NotFoundComponent } from './not-found/not-found.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule,FormsModule,
+    AppRoutingModule, FormsModule,
     ReactiveFormsModule,
-    HttpClientModule
-  ],
+    HttpClientModule,
+    AgainComponent
+],
   providers: [
     provideClientHydration(),provideHttpClient(withFetch()),
     {

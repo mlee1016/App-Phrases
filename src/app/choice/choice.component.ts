@@ -1,17 +1,9 @@
 import { Component,inject, signal } from '@angular/core';
-// import { KoreanPhrases } from '../shared/models/KoreanPhrases';
 import { AllphrasesService } from '../allphrases.service';
-// import { RussianPhrases } from '../shared/models/RussianPhrases';
-// import { ItalianPhrases } from '../shared/models/ItalianPhrases';
-// import { GermanPhrases } from '../shared/models/GermanPhrases';
 import { ActivatedRoute, ParamMap } from '@angular/router';
-// import { JapanesePhrases } from '../shared/models/JapanesePhrases';
-import { allphrases } from '../shared/models/Allphrases';
-import { PhraseListItem } from '../shared/phrase-list.service';
 import { PhrasenameService } from '../shared/phrasename.service';
 import { AuthenticationUser } from '../emitters/emittters';
-
-
+import { AgainComponent } from '../again/again.component';
 
 export interface UnifiedPhrase {
   phrase: string;
@@ -26,7 +18,8 @@ export interface UnifiedPhrase {
 @Component({
   selector: 'app-choice',
   templateUrl: './choice.component.html',
-  styleUrl: './choice.component.css'
+  styleUrl: './choice.component.css',
+  
 })
 export class ChoiceComponent {
   id :string|null = " "
@@ -111,101 +104,6 @@ export class ChoiceComponent {
   });
 }
 
-  /*ngOnInit(): void {
-    //Called after the constructor, initializing input properties, and the first call to ngOnChanges.
-    //Add 'implements OnInit' to the class.
-    this.activateRoute.paramMap.subscribe((params: ParamMap) => {
-      const tempId: string | null = params.get('id');
-       this.id = tempId;
-// ///////////////////////
-//   if (!this.id) return;
-
-//   const inputMap = {
-//     'Korean': this.inputh(),
-//     'Japanese': this.inputh(),
-//     'Italian': this.inputh(),
-//     'German': this.inputh(),
-//     'Russian': this.inputh(),
-//   };
-
-//   const inputKey = inputMap[this.id];
-
-//   const phraseLoaderMap = {
-//     'Korean': this.phrasesService.getPhrases(),
-//     'Japanese': this.phrasesService.getJapanesePhrases(),
-//     'Italian': this.phrasesService.getItalianPhrases(),
-//     'German': this.phrasesService.getGermanPhrases(),
-//     'Russian': this.phrasesService.getRussianPhrases()
-//   };
-
-//   const observable$ = phraseLoaderMap[this.id];
-
-//   observable$.subscribe({
-//     next: (data: any) => {
-//       const phrases = data[inputKey];
-//       this.setUnifiedPhrases(this.id, phrases);
-//     },
-//     error: (error: any) => {
-//       alert(`❌ Failed to load ${this.id} phrases: ${error.message}`);
-//     }
-//   });
-
-      });
-
-        switch(this.id){
-          case'Korean':
-            
-            this.allStory = this.allListStory
-            this.allgrammer= this.allListgrammer
-            this.direction1= 'ko-to-en'; // can be toggled
-            this.direction =  'ko-to-en';
-            this.lang='ko-KR'
-             break
-          case 'Russian':
-              this.direction1='ru-to-en'; // can be toggled
-              this.lang='ru-RU'
-              this.direction = 'ru-to-en';
-
-              this.allStory = this.allListRussianStory
-              this.allgrammer = this.allListRussiangrammer
-              break
-          
-          case 'German':
-              this.direction1='ge-to-en'; // can be toggled
-              this.allStory = this.allListGermanStory
-              this.allgrammer = this.allListGermangrammer
-              this.lang='fr-FR'
-
-              break
-          case 'Japanese':
-            
-              this.direction1='jp-to-en'; // can be toggled
-              this.direction =  'jp-to-en';
-
-              this.allStory = this.allListJapaneseStory
-              this.allgrammer = this.allListJapanesegrammer
-              this.lang ='ja-JP'
-              break
-            
-          case 'Italian':
-            
-            
-              this.direction1='itn-to-en'; // can be toggled
-            
-              this.direction =  'itn-to-en';
-              this.allStory = this.allListItalianStory
-              this.allgrammer = this.allListItaliangrammer
-
-              this.lang='it-IT'
-
-        }
-              this.loadPhrasesById()
-
-    
-
-
-    }
-*/
 
 check = signal<any>('')
 a_load = false
@@ -453,24 +351,6 @@ setUnifiedPhrases(lang: string, phraseList: any[]) {
   shuffleQuestions2(){
     //if(this.id=='Korean'){
     length = this.phrases().length
-  //}
-    
-    /*else if(this.id=='Russian'){
-      length = this.ruPhrases.length}
-      
-     
-    else if(this.id=='Italian'){
-      length = this.itnPhrases.length}
-      
-    
-    else if(this.id=='German'){
-        length = this.gePhrases.length}
-        
-     
-    else if(this.id=='Japanese'){
-      length = this.jpPhrases.length}*/
-      
-            
     
   if (this.createSet.length != 3){
       this.createSet()}
@@ -510,7 +390,7 @@ startQuiz(){
   this.scores.clear()
   this.result=""
   //this.ngOnInit()
-
+  this.userResults = []
 
 }
 
@@ -659,52 +539,10 @@ generateOptions() {
     pr: current[this.pro2]
   };
   this.options = [...answerPool, correct].sort(() => Math.random() - 0.5);
-}/*
-generateOptions() {
-  const current = this.phrases[this.currentIndex];
-
-  const answerPool = this.phrases
-    .filter((_, i) => i !== this.currentIndex)
-    .slice(0, 3)
-    .map(p => {
-      const option: any = {
-        text: this.direction === this.direction1 ? p.en : p[this.pro]
-      };
-
-      if (this.direction === this.direction1) {
-        option.pr = p[this.pro2]; // e.g., p.pr
-      }
-
-      return option;
-    });
-
-  const correct: any = {
-    text: this.direction === this.direction1 ? current.en : current[this.pro]
-  };
-
-  if (this.direction === 'en-to-ko') {
-    correct.pr = current[this.pro2]; // e.g., current.pr
-  }
-
-  this.options = [...answerPool, correct].sort(() => Math.random() - 0.5);
-}*/
-
-
-  /*electAnswer(option: string) {
-    const correct = this.direction === this.direction1 ?
-      this.phrases[this.currentIndex].en : this.phrases[this.currentIndex][this.pro];
-
-    if (option === correct) {
-      this.score++;
-    }
-
-    this.showAnswer = true;
-    setTimeout(() => this.next(), 1000);
-  }*/
-
+}
 selectedOption: string | null = null;
 isCorrect = null;
- selectAnswer(option: string) {
+/*selectAnswer(option: string) {
   this.selectedOption = option;
 
   const correct = this.direction === this.direction1 ?
@@ -731,7 +569,45 @@ isCorrect = null;
     this.quizFinished = true;
   }
 
+}*/
+selectAnswer(option: string) {
+  this.selectedOption = option;
+
+  const currentPhrase = this.phrases()[this.currentIndex];
+  const correct = this.direction === this.direction1
+    ? currentPhrase.en
+    : currentPhrase[this.pro];
+
+  if (option === correct) {
+    this.isCorrect = true;
+    this.score++;
+    this.correctAnswers.push(currentPhrase);   // ✅ Record correct
+  } else {
+    this.isCorrect = false;
+    this.wrongAnswers.push(currentPhrase);     // ❌ Record wrong
+  }
+
+  if (this.currentIndex < this.phrases().length - 1) {
+    setTimeout(() => this.next(), 1000);
+  } else {
+    this.quizFinished = true;
+    this.showResults = true;                   // 👈 Show results div
+  }
+
+      this.userResults=[...this.correctAnswers.map(p => ({ phrase:p, correct: true })),...this.wrongAnswers.map(p => ({ phrase:p, correct: false }))]
 }
+//sm
+// After: quizFinished = false;
+
+
+
+showResults = false;         // 👈 Controls result view
+showTryAgainPopup = false;   // 👈 Controls try-again popup
+correctAnswers: any[] = [];  // 👈 Store correct questions
+wrongAnswers: any[] = [];    // 👈 Store wrong questions
+
+userResults = [
+];
 
 
   next() {
@@ -744,6 +620,7 @@ isCorrect = null;
     this.showAnswer = false;
     this.selectedOption = null; // 👈 reset selection
     this.generateOptions();
+    // this.userResults=[...this.correctAnswers.map(p => ({ phrase:p, correct: true })),...this.wrongAnswers.map(p => ({ phrase:p, correct: false }))]
   }
   showphrase = true
   showPhrase(){
@@ -820,7 +697,7 @@ formatPhrase(phrase: string): string {
 quizFinished = false;
 
 
-tryAgain() {
+/*tryAgain() {
   this.score = 0;
   this.currentIndex = 0;
   this.quizFinished = false;
@@ -829,7 +706,28 @@ tryAgain() {
   this.shuffleQuestions();
   this.generateOptions();
   this.showAnswer = false;
+}*/
+
+tryAgain() {
+  this.showResults = false;
+  this.quizFinished = false;
+  this.currentIndex = 0;
+  this.score = 0;
+  this.correctAnswers = [];
+  this.wrongAnswers = [];
+  this.shuffleQuestions();
+  this.generateOptions();
 }
+
+nextQuiz() {
+  this.showResults = false;
+  this.quizFinished = false;
+  this.correctAnswers = [];
+  this.wrongAnswers = [];
+  this.startQuiz(); // or whatever function begins the next set
+}
+
+
 
 isReadyToStart = false;
 
@@ -837,6 +735,14 @@ quizStarted = false
 selectPhraseList() {
   this.isReadyToStart = this.phrases().length > 0;
   this.quizStarted = false; // reset if switching
+}
+openTryAgain() {
+  this.showResults = false;
+  this.showTryAgainPopup = true;
+}
+
+closePopup() {
+  this.showTryAgainPopup = false;
 }
 
 }

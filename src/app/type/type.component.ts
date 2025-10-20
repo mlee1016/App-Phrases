@@ -342,6 +342,7 @@ setUnifiedPhrases(lang: string, phraseList: any[]) {
     this.a=1
     this.input=""
     this.shuffledPh = this.shuffle(this.count,this.a)
+    
   }
   showAnswer(){
     this.toggle = !this.toggle

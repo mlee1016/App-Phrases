@@ -858,7 +858,7 @@
     {
       "phrase": "Она была дома.",
       "pr": "Ona byla doma.",
-      "en": "She was at home.",
+      "en": "She was [[at]] home.",
       "des": "",
       "phrase_name": "course1",
       "language": "Russian",
@@ -876,7 +876,7 @@
     {
       "phrase": "Я студент.",
       "pr": "Ya student.",
-      "en": "I am a student.",
+      "en": "I [[am]] a student.",
       "des": "",
       "phrase_name": "course1",
       "language": "Russian",
@@ -885,7 +885,7 @@
     {
       "phrase": "Я дома.",
       "pr": "Ya doma.",
-      "en": "I am at home.",
+      "en": "I [[am]] at home.",
       "des": "",
       "phrase_name": "course1",
       "language": "Russian",
@@ -894,18 +894,18 @@
   ],
   "course2": [
     {
-      "phrase": "Хотя он устал, он работает.",
-      "pr": "Khotya on ustal, on rabotayet.",
-      "en": "Although he is tired, he is working.",
+      "phrase": "[[Хотя]] он устал, он работает.",
+      "pr": "[[Khotya]] on ustal, on rabotayet.",
+      "en": "[[Although]] he is tired, he is working.",
       "des": "",
       "phrase_name": "course2",
       "language": "Russian",
       "type": "course"
     },
     {
-      "phrase": "Я пошёл, хотя было поздно.",
-      "pr": "Ya poshyol, khotya bylo pozdno.",
-      "en": "I went, although it was late.",
+      "phrase": "Я пошёл, [[хотя]] было поздно.",
+      "pr": "Ya poshyol, [[khotya]] bylo pozdno.",
+      "en": "I went, [[although]] it was late.",
       "des": "",
       "phrase_name": "course2",
       "language": "Russian",
@@ -948,18 +948,18 @@
       "type": "story"
     },
     {
-      "phrase": "Даже дети это понимают.",
-      "pr": "Dazhe deti eto ponimayut.",
-      "en": "Even children understand this.",
+      "phrase": "[[Даже]] дети это понимают.",
+      "pr": "[[Dazhe]] deti eto ponimayut.",
+      "en": "[[Even]] children understand this.",
       "des": "",
       "phrase_name": "course2",
       "language": "Russian",
       "type": "story"
     },
     {
-      "phrase": "Он даже не сказал привет.",
-      "pr": "On dazhe ne skazal privet.",
-      "en": "He didn’t even say hello.",
+      "phrase": "Он [[даже]] не сказал привет.",
+      "pr": "On [[dazhe]] ne skazal privet.",
+      "en": "He didn’t [[even]] say hello.",
       "des": "",
       "phrase_name": "course2",
       "language": "Russian",
@@ -977,7 +977,7 @@
     {
       "phrase": "Он идёт в магазин, и я [[тоже]].",
       "pr": "On idyot v magazin, i ya [[tozhe]].",
-      "en": "He’s going to the store, and so am I.",
+      "en": "He’s going to the store, [[and]] so am I.",
       "des": "",
       "phrase_name": "course2",
       "language": "Russian",
@@ -2019,10 +2019,10 @@
         { "phrase": "Он работает [[на]] компьютере.", "pr": "On rabotayet [[na]] kompyutere.", "en": "He works on the computer.", "des": "Shows location of work." },
         { "phrase": "Птица села [[на]] крышу.", "pr": "Ptitsa sela [[na]] kryshu.", "en": "The bird sat [[on]] the roof.", "des": "Indicates placement on top of something." }
       ,
-        { "phrase": "Я пришёл с братом.", "pr": "Ya prishel [[s]] bratom.", "en": "I came [[with]] my brother.", "des": "Indicates accompaniment." },
-        { "phrase": "Он пишет письмо с улыбкой.", "pr": "On pishet pismo [[s]] ulybkoy.", "en": "He writes a letter [[with]] a smile.", "des": "Indicates manner of action." },
-        { "phrase": "Мы делали проект с командой.", "pr": "My delali proyekt [[s]] komandoy.", "en": "We did the project [[with]] the team.", "des": "Shows collaboration." },
-        { "phrase": "Она ела суп с ложкой.", "pr": "Ona yela sup [[s]] lozhkoy.", "en": "She ate soup [[with]] a spoon.", "des": "Specifies the tool used." }
+        { "phrase": "Я пришёл [[с]] братом.", "pr": "Ya prishel [[s]] bratom.", "en": "I came [[with]] my brother.", "des": "Indicates accompaniment." },
+        { "phrase": "Он пишет письмо [[с]] улыбкой.", "pr": "On pishet pismo [[s]] ulybkoy.", "en": "He writes a letter [[with]] a smile.", "des": "Indicates manner of action." },
+        { "phrase": "Мы делали проект [[с]] командой.", "pr": "My delali proyekt [[s]] komandoy.", "en": "We did the project [[with]] the team.", "des": "Shows collaboration." },
+        { "phrase": "Она ела суп [[с]] ложкой.", "pr": "Ona yela sup [[s]] lozhkoy.", "en": "She ate soup [[with]] a spoon.", "des": "Specifies the tool used." }
       ,
         { "phrase": "Я стоял [[у]] окна.", "pr": "Ya stoyal [[u]] okna.", "en": "I [[stood]] by the window.", "des": "Indicates location near something." },
         { "phrase": "[[У]] меня есть собака.", "pr": "[[U]] menya yest sobaka.", "en": "I [[have a]] dog.", "des": "Shows possession." },
@@ -2035,10 +2035,10 @@
         { "phrase": "Подарок [[от]] друга был сюрпризом.", "pr": "Podarok [[ot]] druga byl syurprizom.", "en": "A gift [[from]] a friend was a surprise.", "des": "Shows origin or source." }
     ,
     
-        { "phrase": "Это письмо для тебя.", "pr": "Eto pis'mo dlya tebya.", "en": "This letter is for you.", "des": "Indicates recipient." },
-        { "phrase": "Я купил книгу для сына.", "pr": "Ya kupil knigu dlya syna.", "en": "I bought a book for my son.", "des": "Shows purpose or beneficiary." },
-        { "phrase": "Мы готовим еду для гостей.", "pr": "My gotovim edu dlya gostey.", "en": "We are preparing food for the guests.", "des": "Indicates intended group." },
-        { "phrase": "Эта сумка для школы.", "pr": "Eta sumka dlya shkoly.", "en": "This bag is for school.", "des": "Shows intended use." }
+        { "phrase": "Это письмо [[для]] тебя.", "pr": "Eto pis'mo [[dlya]] tebya.", "en": "This letter is [[for]] you.", "des": "Indicates recipient." },
+        { "phrase": "Я купил книгу [[для]] сына.", "pr": "Ya kupil knigu [[dlya]] syna.", "en": "I bought a book [[for]] my son.", "des": "Shows purpose or beneficiary." },
+        { "phrase": "Мы готовим еду [[для]] гостей.", "pr": "My gotovim edu [[dlya]] gostey.", "en": "We are preparing food [[for]] the guests.", "des": "Indicates intended group." },
+        { "phrase": "Эта сумка [[для]] школы.", "pr": "Eta sumka [[dlya]] shkoly.", "en": "This bag is [[for]] school.", "des": "Shows intended use." }
       ,
         { "phrase": "Он ушёл без прощания.", "pr": "On ushel bez proshchaniya.", "en": "He left without saying goodbye.", "des": "Indicates absence of action." },
         { "phrase": "Чай без лимона.", "pr": "Chay bez limona.", "en": "Tea without lemon.", "des": "Specifies exclusion." },
@@ -2165,17 +2165,17 @@
     ,
     
     
-        { "phrase": "Как ты это сделал?", "pr": "Kak ty eto sdelal?", "en": "How did you do this?", "des": "Asks about method or manner." },
-        { "phrase": "Как пройти к станции?", "pr": "Kak proyti k stantsii?", "en": "How do I get to the station?", "des": "Asks for directions." },
-        { "phrase": "Как ты себя чувствуешь?", "pr": "Kak ty sebya chuvstvuyesh'?", "en": "How do you feel?", "des": "Inquires about state or condition." },
-        { "phrase": "Как работает этот телефон?", "pr": "Kak rabotayet etot telefon?", "en": "How does this phone work?", "des": "Asks about functioning." }
+        { "phrase": "[[Как]] ты это сделал?", "pr": "Kak ty eto sdelal?", "en": "How did you do this?", "des": "Asks about method or manner." },
+        { "phrase": "[[Как]] пройти к станции?", "pr": "Kak proyti k stantsii?", "en": "How do I get to the station?", "des": "Asks for directions." },
+        { "phrase": "[[Как]] ты себя чувствуешь?", "pr": "Kak ty sebya chuvstvuyesh'?", "en": "How do you feel?", "des": "Inquires about state or condition." },
+        { "phrase": "[[Как]] работает этот телефон?", "pr": "Kak rabotayet etot telefon?", "en": "How does this phone work?", "des": "Asks about functioning." }
       
     ,
     
-        { "phrase": "Какой фильм ты хочешь посмотреть?", "pr": "Kakoy film ty khochesh' posmotret'?", "en": "Which movie do you want to watch?", "des": "Asks about choice." },
-        { "phrase": "Какая книга твоя?", "pr": "Kakaya kniga tvoya?", "en": "Which book is yours?", "des": "Asks about identification." },
-        { "phrase": "Какое сегодня число?", "pr": "Kakoye segodnya chislo?", "en": "What is the date today?", "des": "Asks for specification." },
-        { "phrase": "Какая погода на улице?", "pr": "Kakaya pogoda na ulitse?", "en": "What is the weather outside?", "des": "Asks for description." }
+        { "phrase": "[[Какой]] фильм ты хочешь посмотреть?", "pr": "Kakoy film ty khochesh' posmotret'?", "en": "Which movie do you want to watch?", "des": "Asks about choice." },
+        { "phrase": "[[Какая]] книга твоя?", "pr": "Kakaya kniga tvoya?", "en": "Which book is yours?", "des": "Asks about identification." },
+        { "phrase": "[[Какое]] сегодня число?", "pr": "Kakoye segodnya chislo?", "en": "What is the date today?", "des": "Asks for specification." },
+        { "phrase": "[[Какая]] погода на улице?", "pr": "Kakaya pogoda na ulitse?", "en": "What is the weather outside?", "des": "Asks for description." }
       ],"part6":[
 
         { "phrase": "[[Это]] мой дом.", "pr": "[[Eto]] moy dom.", "en": "[[This]] is my house.", "des": "Identifies an object or thing." },

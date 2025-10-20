@@ -132,5 +132,13 @@
         🔁 Try Again
       </button>
     </div>
+    <app-again 
+    [select]="m"
+    [type]="id"
+    [correctCount]="correctAnswers.length"
+    [wrongCount]="wrongAnswers.length"
+    [userResults]="userResults"
+    (retry)="open()"
+    (retry)="againQuiz()"></app-again>
   </ng-template>
 </div>

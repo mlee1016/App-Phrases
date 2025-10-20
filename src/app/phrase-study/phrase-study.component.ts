@@ -43,7 +43,7 @@ export class PhraseStudyComponent {
   sidebarOpen: boolean = true;
 
 
-
+  allEntries :any 
 
   allListGrammer:any = this.phraseName.allListgrammer
   allListPopularKorean:any[] = this.phraseName.allPopularPhrases
@@ -179,6 +179,10 @@ export class PhraseStudyComponent {
     }
 
 
+    this.phrasesService.getKoreanEntries().subscribe({
+      next:(data:any) => {this.allEntries= data},
+      error:(error:any) => {alert(error.message)}
+    })
 }
 
   selectedItem: any = '';
@@ -297,6 +301,34 @@ stopAudio() {
   if ('speechSynthesis' in window) {
     window.speechSynthesis.cancel();
   }
+}
+hovered: any = null;
+
+splitPhrase(text: string) {
+  return text.split(' ');
+}
+
+
+
+
+ hoverWord(word: string) {
+   this.hovered = this.allEntries.find(d => d.la.replace(/[.]/g, '') === word.replace(/[.]/g, ''));
+ }
+
+clearHover2() {
+  this.hovered = null; 
+}
+
+isHovered(word: string) {
+  return this.hovered && this.hovered.la.includes(word);
+}
+
+isHoveredByPron(word: string) {
+  return this.hovered && this.hovered.pr.includes(word);
+}
+
+isHoveredByEng(word: string) {
+  return this.hovered && this.hovered.en.includes(word);
 }
 
 }

@@ -558,7 +558,9 @@ startQuiz() {
   this.lastResult.set('')
   this.proportionCorrect = 0
 }
-
+again(){
+  
+}
 
   toggleSidebar(){
     this.loadPhrasesById()

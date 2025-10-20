@@ -1836,10 +1836,10 @@
 ,
   "part3": [
 
-  { "phrase": "ここ  から  駅  まで  10分  くらい  です。", "pr": "ここ から えき まで じゅっぷん くらい です。", "en": "It is about 10 minutes from here to the station." },
-  { "phrase": "お金が  1000円  くらい  必要  です。", "pr": "おかね が せんえん くらい ひつよう です。", "en": "About 1000 yen is needed." },
-  { "phrase": "彼は  30歳  くらい  です。", "pr": "かれ は さんじゅっさい くらい です。", "en": "He is about 30 years old." },
-  { "phrase": "この  ケーキは  大きさは  手のひら  くらい  です。", "pr": "この けーき は おおきさ は て の ひら くらい です。", "en": "This cake is about the size of a palm." },
+  { "phrase": "ここ  から  駅  まで  10分  [[くらい]]  です。", "pr": "ここ から えき まで じゅっぷん [[くらい]] です。", "en": "It is about 10 minutes from here to the station." },
+  { "phrase": "お金が  1000円  [[くらい]]  必要  です。", "pr": "おかね が せんえん [[くらい]] ひつよう です。", "en": "About 1000 yen is needed." },
+  { "phrase": "彼は  30歳  [[くらい]]  です。", "pr": "かれ は さんじゅっさい [[くらい]] です。", "en": "He is about 30 years old." },
+  { "phrase": "この  ケーキは  大きさは  手のひら  [[くらい]]  です。", "pr": "この けーき は おおきさ は て の ひら [[くらい]] です。", "en": "This cake is about the size of a palm." },
 
   { "phrase": "富士山は  日本で  [[一番]]  高い  山  です。", "pr": "ふじさん は にほん で [[いちばん]] たかい やま です。", "en": "Mount Fuji is the tallest mountain in Japan." },
   { "phrase": "彼女は  一番  優しい  です。", "pr": "かのじょ は いちばん やさしい です。", "en": "She is the kindest." },
@@ -1901,45 +1901,45 @@
 ,
 "part5": [
   {
-    "phrase": "明日は　雨だろう。",
+    "phrase": "明日は　雨 [[だろう。]]",
     "pr": "あした　は　あめ　だろう。",
     "en": "It will probably rain tomorrow."
   },
   {
-    "phrase": "彼は　来るだろう。",
+    "phrase": "彼は　来る [[だろう。]]",
     "pr": "かれ　は　くる　だろう。",
-    "en": "He will probably come."
+    "en": "He will [[probably]] come."
   },
   {
-    "phrase": "これは　高いだろう。",
+    "phrase": "これは　高い [[だろう。]]",
     "pr": "これ　は　たかい　だろう。",
-    "en": "This is probably expensive."
+    "en": "This is [[probably]] expensive."
   },
   {
-    "phrase": "その映画は　面白いだろう。",
-    "pr": "その　えいが　は　おもしろい　だろう。",
-    "en": "That movie is probably interesting."
+    "phrase": "その映画は　面白い [[だろう。]]",
+    "pr": "その　えいが　は　おもしろい　[[だろう。]]",
+    "en": "That movie is [[probably]] interesting."
   },
 
   {
-    "phrase": "明日は　晴れるでしょう。",
+    "phrase": "明日は　晴れる [[でしょう。]]",
     "pr": "あした　は　はれる　でしょう。",
-    "en": "It will probably be sunny tomorrow."
+    "en": "It will [[probably]] be sunny tomorrow."
   },
   {
-    "phrase": "彼も　来るでしょう。",
-    "pr": "かれ　も　くる　でしょう。",
-    "en": "He will probably come too."
+    "phrase": "彼も　来る [[でしょう。]]",
+    "pr": "かれ　も　くる　[[でしょう。]]",
+    "en": "He will [[probably]] come too."
   },
   {
-    "phrase": "この店は　人気が　あるでしょう。",
-    "pr": "この　みせ　は　にんき　が　ある　でしょう。",
-    "en": "This store is probably popular."
+    "phrase": "この店は　人気が　ある [[でしょう。]]",
+    "pr": "この　みせ　は　にんき　が　ある　[[でしょう。]]",
+    "en": "This store is [[probably]] popular."
   },
   {
-    "phrase": "その本は　面白いでしょう。",
-    "pr": "その　ほん　は　おもしろい　でしょう。",
-    "en": "That book is probably interesting."
+    "phrase": "その本は　面白い [[でしょう。]]",
+    "pr": "その　ほん　は　おもしろい　[[でしょう。]]",
+    "en": "That book is [[probably]] interesting."
   },
 
   {
@@ -2077,19 +2077,19 @@
     "en": "I’ll have curry ([[decide]])."
   },
   {
-    "phrase": "部屋を　青に　します。",
-    "pr": "へや　を　あお　に　します。",
-    "en": "I will make the room blue.(decide)"
+    "phrase": "部屋を　青 [[に　します。]]",
+    "pr": "へや　を　あお　[[に　します。]]",
+    "en": "I will make the room blue.([[decide]])"
   },
   {
-    "phrase": "メニューは　これ に　します。",
-    "pr": "めにゅー　は　これ　に　します。",
-    "en": "I’ll choose this from the menu.(decide)"
+    "phrase": "メニューは　これ [[に　します。]]",
+    "pr": "めにゅー　は　これ　[[に　します。]]",
+    "en": "I’ll choose this from the menu.([[decide]])"
   },
   {
     "phrase": "旅行の行き先は　東京に　します。",
     "pr": "りょこう　の　いきさき　は　とうきょう　[[に　します]]。",
-    "en": "I’ll decide on Tokyo as the travel destination.(decide)"
+    "en": "I’ll [[decide]] on Tokyo as the travel destination.([[decide]])"
   },
 
   {

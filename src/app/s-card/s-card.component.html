@@ -89,30 +89,44 @@
     <button *ngIf="['jp-to-eng','itn-to-eng','kor-to-eng','ge-to-eng','rus-to-eng'].includes(directionMode)"
             (click)="playAudio(directionMode === directionModeE ? currentPhrase.phrase : currentPhrase.en, directionMode === directionModeE ? lang : 'en-US')"
             class="nav-btn bg-indigo-500 hover:bg-indigo-600 text-white px-4 py-2 mt-2 rounded text-xs sm:text-sm shadow">▶ Play Audio</button>
-  </div>
+    <button *ngIf="m1==='course'" (click)="toggleHighlight()">highlight</button>
+  
+          </div>
 
   <!-- Main Quiz Card -->
   <div class="quiz-card mx-auto max-w-xl w-full text-center">
-    <p *ngIf="phraseOn" class="text-xl sm:text-2xl font-bold text-blue-300 break-words">{{ getQuestion() }}</p>
-    <p *ngIf="showPronunciation && directionMode===directionModeE" class="text-xs sm:text-sm text-gray-300 mt-1">{{ currentPhrase.pr }}</p>
-
+    <span *ngIf="phraseOn" class="text-xl sm:text-2xl font-bold text-blue-300 break-words"  [innerHTML]="formatPhrase(getQuestion()+'')" ></span>
+  
+      <p *ngIf="showPronunciation && directionMode === directionModeE" class="text-sm text-gray-300">
+        <span [innerHTML]="formatPhrase(currentPhrase.pr + '')"></span>
+      </p>
     <div class="mt-6 sm:mt-9">
       <button (click)="showAnswer2=true" class="nav-btn bg-emerald-200 hover:bg-emerald-700 text-emerald-700 hover:text-emerald-200 px-4 py-2 rounded shadow text-sm sm:text-base">Reveal Answer</button>
-      <p *ngIf="showAnswer2" class="mt-4 text-lg sm:text-xl text-cyan-400 font-semibold">{{ getAnswer() }}</p>
+      <p><span *ngIf="showAnswer2" class="mt-4 text-lg sm:text-xl text-cyan-400 font-semibold" [innerHTML]="formatPhrase(getAnswer()+'')"></span></p>
       <p *ngIf="showPronunciation && directionMode===directionModeC && showAnswer2" class="text-xs sm:text-sm text-gray-400 mt-1">{{ currentPhrase.pr }}</p>
       <button *ngIf="showAnswer2 && directionMode===directionModeC"
               (click)="playAudio(directionMode===directionModeC? currentPhrase.phrase : currentPhrase.en, directionMode===directionModeC? lang : 'en-US')"
               class="nav-btn bg-indigo-500 hover:bg-indigo-600 text-white px-4 py-2 mt-4 rounded text-xs sm:text-sm shadow">▶ Play Audio</button>
     </div>
-      </div>
-
-  <!-- Navigation -->
-  <div class="flex flex-col justify-between items-center mt-8 max-w-xl mx-auto gap-2">
-    <div class="text-sm text-cyan-300"><p>Cards: {{ remainingPhrases().length }}</p></div>
-    <div class="flex flex-wrap justify-center gap-3">
-      <button *ngIf="answered() && remainingPhrases().length!==0" (click)="next()" class="nav-btn">Next</button>
-      <button *ngIf="showAnswer2" (click)="again()" class="nav-btn bg-red-600 hover:bg-red-700">Again</button>
-      <button *ngIf="showAnswer2" (click)="correct()" class="nav-btn bg-emerald-600 hover:bg-emerald-700">Correct</button>
-    </div>
   </div>
+
+    <div *ngIf="remainingPhrases().length===0">
+      <app-again
+        [correctCount]="0"
+        [wrongCount]="0"
+        [userResults]="[]"
+        (retry)="toggleSidebar()"
+        (retry)="reset()"
+      ></app-again>
+    </div>
+    <!-- NEXT / PROGRESS -->
+    <!-- Navigation -->
+    <div class="flex flex-col justify-between items-center mt-8 max-w-xl mx-auto gap-2">
+      <div class="text-sm text-cyan-300"><p>Cards: {{ remainingPhrases().length }}</p></div>
+      <div class="flex flex-wrap justify-center gap-3">
+        <button *ngIf="answered() && remainingPhrases().length!==0" (click)="next()" class="nav-btn">Next</button>
+        <button *ngIf="showAnswer2" (click)="again()" class="nav-btn bg-red-600 hover:bg-red-700">Again</button>
+        <button *ngIf="showAnswer2" (click)="correct()" class="nav-btn bg-emerald-600 hover:bg-emerald-700">Correct</button>
+      </div>
+    </div>
 </div>

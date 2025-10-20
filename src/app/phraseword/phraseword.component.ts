@@ -63,6 +63,7 @@ export class PhrasewordComponent {
   speak = ''
   questions
   test
+  m = "phrase"
   initial:string = ""
   a_load = false
   check = signal<string>('')
@@ -148,9 +149,10 @@ loadPhrasesById() {
     
   this.activateRoute.paramMap.subscribe((params: ParamMap) => {
     const lang = params.get('id');
+
+
     if (!lang) return;
     this.id = lang;
-
     this.userA.initializeAuth()
     this.userA.authStatusLoaded.subscribe(a=>this.a_load=a)
     this.userA.authStatus.subscribe((id:string)=>
@@ -334,21 +336,16 @@ playSpeechForQuestion(question: any) {
   answerChecked = false
   answerChecked2 = false
   sub = false
-  /*selectAnswer4(index: number) {
-    this.selectedIndex = index;
-    this.answerChecked = true;
-    this.answerChecked2 = true
-    const selected = this.shuffledOptions[index];
-    const correct = this.currentQuestion.answer[this.initial];
-
-    if (selected[this.initial] === correct) {
-      this.score++;
-      this.sub = true
-    }
-
+  
     
+  showResults = false;         // 👈 Controls result view
+  showTryAgainPopup = false;   // 👈 Controls try-again popup
+  correctAnswers: any[] = [];  // 👈 Store correct questions
+  wrongAnswers: any[] = [];    // 👈 Store wrong questions
 
-  }*/
+  userResults = [
+  ];
+
  selectAnswer4(index: number) {
   this.selectedIndex = index;
   this.answerChecked = true;
@@ -374,9 +371,16 @@ playSpeechForQuestion(question: any) {
   if (isCorrect) {
     this.score++;
     this.sub = true;
+    this.correctAnswers.push(this.currentQuestion.answer[0]);   // ✅ Record correct
+
   } else {
     this.sub = false;
+
+    this.wrongAnswers.push(this.currentQuestion.answer[0]);   // ✅ Record correct
+
   }
+  this.userResults=[...this.correctAnswers.map(p => ({ phrase:p, correct: true })),...this.wrongAnswers.map(p => ({ phrase:p, correct: false }))]
+
 }
 
 againQuiz() {
@@ -393,6 +397,7 @@ againQuiz() {
   this.selectedIndex = null;
   this.selectedOption = null;
 
+  this.userResults = []
   // reshuffle options for first question
   this.shuffleCurrentOptions();
 }

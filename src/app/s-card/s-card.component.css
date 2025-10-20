@@ -86,13 +86,13 @@
   transform: scale(0.97);
 }
 
-/* ------------------- Staggered Cards ------------------- */
+/* ------------------- Staggered Cards ------------------- *
 .phrase-card:nth-child(1) { animation-delay: 0ms; }
 .phrase-card:nth-child(2) { animation-delay: 100ms; }
 .phrase-card:nth-child(3) { animation-delay: 200ms; }
 .phrase-card:nth-child(4) { animation-delay: 300ms; }
 /* extend for more cards */
-/* Fade + pop for each quiz card */
+/* Fade + pop for each quiz card *
 @keyframes fadePopIn {
   0% {
     opacity: 0;
@@ -108,14 +108,45 @@
   }
 }
 
-/* Apply stagger via nth-child */
+/* Apply stagger via nth-child *
 .quiz-card {
   animation: fadePopIn 400ms ease-out forwards;
 }
 
-/* Example stagger for multiple cards (if multiple are visible at once) */
+/* Example stagger for multiple cards (if multiple are visible at once) *
 .quiz-card:nth-child(1) { animation-delay: 0ms; }
 .quiz-card:nth-child(2) { animation-delay: 100ms; }
 .quiz-card:nth-child(3) { animation-delay: 200ms; }
 .quiz-card:nth-child(4) { animation-delay: 300ms; }
 .quiz-card:nth-child(5) { animation-delay: 400ms; }
+*/
+
+.perspective {
+  perspective: 1000px;
+}
+
+.quiz-card {
+  position: relative;
+  width: 100%;
+  height: 320px;
+  transform-style: preserve-3d;
+  transition: transform 0.8s ease-in-out;
+}
+
+.quiz-card.rotate-y-180 {
+  transform: rotateY(180deg);
+}
+
+.backface-hidden {
+  backface-visibility: hidden;
+}
+
+.rotate-y-180 {
+  transform: rotateY(180deg);
+}
+
+@media (max-width: 640px) {
+  .quiz-card {
+    height: 260px;
+  }
+}

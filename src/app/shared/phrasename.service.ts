@@ -59,7 +59,7 @@ export class PhrasenameService {
     { s: "course7", isDone:false},
 
     
-    { s: "course15", isDone:false},
+    // { s: "course15", isDone:false},
     // { s: "Honorifics", isDone: false },
     // { s: "Conjunctions", isDone: false },
 
@@ -485,5 +485,4 @@ clearProgress(lang: string) {
     params: { language: lang }
   });
 }
-
 }
