@@ -75,7 +75,7 @@
   <button
   
     (click)="toggleSidebar()"
-    class="bg-cyan-500 hover:bg-cyan-400 text-black px-3 py-2 rounded-lg shadow transition"
+    class="bg-cyan-500 hover:bg-cyan-400 text-white px-3 py-2 rounded-lg shadow transition"
   >
     {{ sideBar ? '✖ Close' : '☰ Menu' }}
   </button>
@@ -98,10 +98,11 @@
         ✖ Close
       </button>
     </div>
+    <h2  class="text-xl font-bold mb-2 ">{{inputh()===''?'pick a phrase': 'selected: ' + inputh()}}</h2>
+
     <!-- Story Section -->
     <div *ngIf="m1==='course'" class="overflow-y-auto max-h-80">
       
-      <h2  class="text-xl font-bold mb-2 ">{{inputh()===''?'pick a phrase': 'selected: ' + inputh()}}</h2>
       <h2 class="text-lg font-bold mt-4 mb-2 border-b border-cyan-600 pb-1">Lists</h2>
       <div class="flex flex-col gap-2">
         <button

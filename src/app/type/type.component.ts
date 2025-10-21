@@ -651,70 +651,167 @@ selectPhraseList() {
   });
 }
 
-submitAnswer() {
-  const correct = this.getAnswer().trim().toLowerCase().replace(/\[\[|\]\]/g, '').replace(/[.,!?/-]/g, '').replace(/\s/g,'').replace(/\([^)]*\)/g, '')
-;
+// attemptCount = 0
 
-  let answeredUser = this.userInput.trim().toLowerCase().replace(/\[\[|\]\]/g, '').replace(/[.,!?/-]/g, '').replace(/\s/g,'');
+// userResults = []
+// attempt = []
+// submitAnswer() {
+//   const correct = this.getAnswer().trim().toLowerCase().replace(/\[\[|\]\]/g, '').replace(/[.,!?/-]/g, '').replace(/\s/g,'').replace(/\([^)]*\)/g, '')
+// ;
+
+//   let answeredUser = this.userInput.trim().toLowerCase().replace(/\[\[|\]\]/g, '').replace(/[.,!?/-]/g, '').replace(/\s/g,'');
 
 
-  if (answeredUser === correct && answeredUser !== '') {
-    this.lastResult.set('✅ Correct!');
-    // this.triggerAnimation('✅');
+//   if (answeredUser === correct && answeredUser !== '') {
+//     this.lastResult.set('✅ Correct!');
+//     // this.triggerAnimation('✅');
 
-    this.answered.set(true);
+//     this.answered.set(true);
 
-  } else {
-    this.lastResult.set(`❌ Incorrect. Answer: ${this.getAnswer()}`)//,correct: ${correct}, user: ${answeredUser}`);
-    // this.triggerAnimation('❌');
+//   } else {
+//     this.lastResult.set(`❌ Incorrect. Answer: ${this.getAnswer()}`)//,correct: ${correct}, user: ${answeredUser}`);
+//     // this.triggerAnimation('❌');
+//     this.attemptCount +=1
+//     this.attempt.push(this.getAnswer())
+//     this.answered.set(true);
 
-    this.answered.set(true);
+//   }
+//     this.userResults=[...this.attempt.map(p => ({ phrase:p, attempts: this.attemptCount }))]
 
-  }
+
+// }
+
+//     reset2() {
+//       this.showAnswer2 = false;
+//       this.userInput = '';
+//       this.result = '';
+//       this.clearHints()
+//     }
+
+//     /*2?next() {
   
-
-}
-
-    reset2() {
-      this.showAnswer2 = false;
-      this.userInput = '';
-      this.result = '';
-      this.clearHints()
-    }
-
-    /*2?next() {
-  
-    }*/
-   correct(){
-    this.answered.set(true)
-    this.lastResult.set('✅')
-    this.next()
-   }
-   again(){
+//     }*/
+//    correct(){
+//     this.answered.set(true)
+//     this.lastResult.set('✅')
+//     this.next()
+//    }
+//    again(){
 
     
-    this.answered.set(true)
-    this.lastResult.set('')
-    this.next()
-   }
+//     this.answered.set(true)
+//     this.lastResult.set('')
+//     this.next()
+//     this.attemptCount=0
+//    }
    
-next() {
-  if (!this.answered()) return; // ⛔ Block skipping until answered
+// next() {
+//   if (!this.answered()) return; // ⛔ Block skipping until answered
 
-  // Remove if correct
+//   // Remove if correct
+//   if (this.lastResult().startsWith('✅')) {
+//     const list = this.remainingPhrases().slice();
+//     list.splice(this.currentIndex(), 1);
+//     this.remainingPhrases.set(list);
+
+//     if (list.length === 0) {
+//       alert("🎉 All correct!");
+//       return;
+//     }
+//     this.userInput = ""
+//     this.currentIndex.set(this.currentIndex() % list.length);
+//   } else {
+//     // Go to next, keep current if wrong
+//     this.currentIndex.update(i => (i + 1) % this.remainingPhrases().length);
+//   }
+
+//   this.answered.set(false);
+//   this.lastResult.set('');
+//   this.userInput = '';
+//   this.reset2();
+//   this.attemptCount =0
+// }
+attemptCount = 0;
+userResults: { phrase: string; correct: boolean; attempts: number }[] = [];
+attempt: { phrase: string; correct: boolean }[] = [];
+
+submitAnswer() {
+  const correctAnswer = this.getAnswer()
+    .trim()
+    .toLowerCase()
+    .replace(/\[\[|\]\]/g, '')
+    .replace(/[.,!?/-]/g, '')
+    .replace(/\s/g, '')
+    .replace(/\([^)]*\)/g, '');
+
+  const userAnswer = this.userInput
+    .trim()
+    .toLowerCase()
+    .replace(/\[\[|\]\]/g, '')
+    .replace(/[.,!?/-]/g, '')
+    .replace(/\s/g, '');
+
+  const isCorrect = userAnswer === correctAnswer && userAnswer !== '';
+
+  this.attemptCount += 1;
+
+  if (isCorrect) {
+    this.lastResult.set('✅ Correct!');
+    this.answered.set(true);
+
+    // store the successful result
+    this.userResults.push({
+      phrase: this.getQuestion(),
+      correct: true,
+      attempts: this.attemptCount,
+    });
+
+    this.attemptCount = 0; // reset AFTER successful question
+  } else {
+    this.lastResult.set(`❌ Incorrect. Answer: ${this.getAnswer()}`);
+    this.answered.set(true);
+
+    // only store incorrect attempt in log
+    this.attempt.push({ phrase: this.getQuestion(), correct: false });
+  }
+}
+
+reset2() {
+  this.showAnswer2 = false;
+  this.userInput = '';
+  this.result = '';
+  this.clearHints();
+}
+
+correct() {
+  this.answered.set(true);
+  this.lastResult.set('✅');
+  this.next();
+}
+
+again() {
+  this.answered.set(true);
+  this.lastResult.set('');
+  this.next();
+  this.attemptCount = 0;
+}
+Popup = false
+next() {
+  if (!this.answered()) return; // ⛔ prevent skip
+
   if (this.lastResult().startsWith('✅')) {
     const list = this.remainingPhrases().slice();
     list.splice(this.currentIndex(), 1);
     this.remainingPhrases.set(list);
 
     if (list.length === 0) {
-      alert("🎉 All correct!");
+      // 🎯 show summary popup component
+      this.Popup = true;
       return;
     }
-    this.userInput = ""
+    this.userInput = '';
     this.currentIndex.set(this.currentIndex() % list.length);
   } else {
-    // Go to next, keep current if wrong
     this.currentIndex.update(i => (i + 1) % this.remainingPhrases().length);
   }
 
@@ -732,17 +829,17 @@ next() {
       }
     }*/
 
-      prev() {
-  if (this.currentIndex() > 0) {
-    this.currentIndex.update(current => current - 1);
-    this.answered.set(false);
-    this.lastResult.set('');
-    this.userInput = '';
-    this.reset2();
+  prev() {
+        if (this.currentIndex() > 0) {
+          this.currentIndex.update(current => current - 1);
+          this.answered.set(false);
+          this.lastResult.set('');
+          this.userInput = '';
+          this.reset2();
+    }
   }
-}
 
-    showPronunciation = true;
+  showPronunciation = true;
 
   togglePronunciation() {
     this.showPronunciation = !this.showPronunciation;

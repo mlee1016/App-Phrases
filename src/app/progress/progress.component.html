@@ -213,6 +213,7 @@
     <p class="mt-2 text-xs sm:text-sm text-gray-500">
       Progress: {{ ((phrases().length - remainingPhrases().length) / phrases().length * 100) | number:'1.0-0' }}%
       <span *ngIf="proportionCorrect" class="ml-2">| Accuracy: {{ proportionCorrect | number:'1.0-0' }}%</span>
+      
     </p>
   </div>
 </div>
