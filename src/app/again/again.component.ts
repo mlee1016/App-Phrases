@@ -7,7 +7,7 @@ import { Input, Output, EventEmitter } from '@angular/core';
   standalone:true,
   imports: [CommonModule], 
   styleUrl: './again.component.css'
-
+ 
 })
 
 export class AgainComponent {
