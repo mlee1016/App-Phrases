@@ -15,8 +15,11 @@ export class AgainComponent {
   @Input() correctCount = 0;
   @Input() wrongCount = 0;
   @Input() userResults: any[] = [];
-  
+  @Input() attempt: any[] = []
+  @Input() attemptCount = 0
   @Output() retry = new EventEmitter<void>();
+  @Output() again = new EventEmitter<void>();
+
   
   @Input() type = "" 
   @Input() select = ""
@@ -33,15 +36,21 @@ export class AgainComponent {
   }
 
   onNext() {
-    this.retry.emit(); // You can change this if Next does something else
+    this.again.emit(); // You can change this if Next does something else
   }
   constructor(){
 
   }
   ngOnInit(): void {
     //Called after the constructor, initializing input properties, and the first call to ngOnChanges.
+
     //Add 'implements OnInit' to the class.
-    console.log(this.userResults)
+    
+    console.log("this is the results: ",this.select)
+    console.log("this is the attempts: ",this.type)
+    console.log("this is the results: ",this.userResults)
+    console.log("this is the attempts: ",this.attempt)
+
     if(this.select==='phrase'){
     switch(this.type){
       case 'Korean':

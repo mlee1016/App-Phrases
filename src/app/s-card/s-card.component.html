@@ -30,7 +30,7 @@
     </div>
 
     <!-- Popular Section -->
-    <div *ngIf="'popular'" class="overflow-y-auto max-h-80">
+    <div *ngIf="m1==='popular'" class="overflow-y-auto max-h-80">
       <h2 class="text-lg font-bold mt-4 mb-2 border-b border-cyan-600 pb-1">Popular/Useful</h2>
       <div class="flex flex-col gap-2">
         <button *ngFor="let item of phrasePopular"
@@ -115,11 +115,15 @@
 
     <div *ngIf="remainingPhrases().length===0">
       <app-again
-        [correctCount]="0"
-        [wrongCount]="0"
-        [userResults]="[]"
+        [attempt]="attempt"
+        
+        [correctCount]="6"
+        [wrongCount]="12"
+        [correctCount]="5"
+        [type]="m1"
+        [wrongCount]="attemptCount"
+        [userResults]="userResults"
         (retry)="toggleSidebar()"
-        (retry)="reset()"
       ></app-again>
 
     </div>

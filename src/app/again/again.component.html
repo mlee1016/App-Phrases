@@ -1,24 +1,24 @@
-<div class="fixed inset-0 bg-black/40 backdrop-blur-sm flex justify-center items-center z-50 px-4">
+<div class="fixed inset-0 bg-grey/40 backdrop-blur-sm flex justify-center items-center z-50 px-4">
   <div
     class="bg-white dark:bg-gray-900 rounded-3xl shadow-2xl p-6 w-full max-w-sm text-center animate-fadeInUp transition-all duration-300"
-  >
+    >
     <!-- 🧩 Try Again Popup -->  
     <div >
-      <h2 class="text-3xl font-bold text-red-500 mb-3">Try Again 💪</h2>
+      <h2 class="text-3xl font-bold text-red-500 mb-3"> Again 💪</h2>
       <p class="text-gray-600 dark:text-gray-300 mb-6">
          review your answers and give it another shot!
       </p> 
 
       <button
-        (click)="onRetry()"
+        (click)="onNext()"
         class="w-full bg-gradient-to-r from-red-500 to-pink-500 hover:from-pink-500 hover:to-red-500 text-white font-semibold py-3 rounded-2xl shadow-lg transition-transform transform hover:scale-[1.03]"
       >
-        Try Again
+       Again
       </button>
     </div>
 
     <!-- 🏆 Results Summary -->
-    <div *ngIf="!showTryAgainPopup && userResults.length!==0">
+    <div *ngIf="!showTryAgainPopup && userResults.length!==0 else Oresult">
       <h2 class="text-2xl font-bold text-cyan-600 dark:text-cyan-400 mb-4">
         🎯 Your Results
       </h2>
@@ -57,11 +57,23 @@
       </div>
 
       <button
-        (click)="onNext()"
+        (click)="onRetry()"
         class="w-full mt-5 bg-gradient-to-r from-cyan-500 to-blue-500 hover:from-blue-500 hover:to-cyan-500 text-white font-semibold py-3 rounded-2xl shadow-lg transition-transform transform hover:scale-[1.03]"
       >
         Continue ➜
       </button>
     </div>
+    <ng-template #Oresult>
+    <div class="bg-gray-900 text-white p-6 rounded-xl shadowxl max-w-lg mx-auto">
+     <h2 class="text-xl font-bold mb-4"> Results 🎯</h2> 
+
+      <div *ngFor="let r of userResults" class="border-b border-gray-700 py-2 flex justify-between">
+        <span>{{ r.phrase }}</span>
+        <span [ngClass]="r.correct ? 'text-green-400' : 'text-red-400'">
+         {{ r.correct ? '✅' : '❌' }} ({{ r.attempts }} attempt{{ r.attempts > 1 ? 's' : '' }})
+        </span>
+      </div>
+    </div>
+    </ng-template>
   </div>
 </div>

@@ -252,8 +252,10 @@
       <app-again 
         [correctCount]="correctAnswers.length"
         [wrongCount]="wrongAnswers.length"
+        [type]="m"
         [userResults]="userResults"
-        (retry)="tryAgain()">
+        (again)="tryAgain()"
+        (retry)="toggleSidebar()">
       </app-again>
     <!-- ✅ Results Display --
     <div *ngIf="showResults" class="p-6 rounded-lg bg-gray-100 shadow-md text-center">

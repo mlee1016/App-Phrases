@@ -51,9 +51,10 @@ export class ChoiceComponent {
   shuffledAn:any[] = []
   //selectedLanguage:string = ""
   lang=''
-
+   
   input=signal("")
   input2=signal("")
+  m = "select"
   phraseName = signal<string>('')
 
   inputh=signal<string>("")

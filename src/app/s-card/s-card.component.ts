@@ -677,38 +677,107 @@ selectPhraseList() {
       // this.clearHints()
     }
 
-  correct(){
-    this.answered.set(true)
-    this.lastResult.set('✅')
-    this.next()
-   }
-   again(){
+// attemptCount = 0;
+// userResults: { phrase: string; correct: boolean; attempts: number }[] = [];
+// attempt: { phrase: string; correct: boolean }[] = [];
+
+//   correct(){
+//     this.answered.set(true)
+//     this.lastResult.set('✅')
+//     this.next()
+//    }
+//    again(){
 
     
-    this.answered.set(true)
-    this.lastResult.set('')
-    this.next()
-   }
+//     this.answered.set(true)
+//     this.lastResult.set('')
+//     this.next()
+//     this.attempt.push({ phrase: this.getQuestion(), correct: false });
+
+//    }
    
+// next() {
+//     this.showAnswer2 = false;
+
+//   if (!this.answered()) return; // ⛔ Block skipping until answered
+
+//   // Remove if correct
+//   if (this.lastResult().startsWith('✅')) {
+//     const list = this.remainingPhrases().slice();
+//     list.splice(this.currentIndex(), 1);
+//     this.remainingPhrases.set(list);
+
+//     // if (list.length === 0) {
+//     //   alert("🎉 All correct!");
+//     //   return;
+//     // }
+//     this.userInput = ""
+//     this.currentIndex.set(this.currentIndex() % list.length);
+//   } else {
+//     // Go to next, keep current if wrong
+//     this.currentIndex.update(i => (i + 1) % this.remainingPhrases().length);
+//   }
+//   this.answered.set(false);
+//   this.lastResult.set('');
+//   this.userInput = '';
+//   this.reset2();
+// }
+
+
+
+attemptCount = 0;
+userResults: { phrase: string; correct: boolean; attempts: number }[] = [];
+attempt: { phrase: string; correct: boolean }[] = [];
+
+Popup = false
+correct() {
+  this.answered.set(true);
+  this.lastResult.set('✅');
+
+  // ✅ Add the result for this question
+  this.userResults.push({
+    phrase: this.getQuestion(),
+    correct: true,
+    attempts: this.attemptCount + 1 // include this final correct attempt
+  });
+
+  // Reset attempt counter for the next phrase
+  this.attemptCount = 0;
+
+  this.next();
+}
+
+again() {
+  this.answered.set(true);
+  this.lastResult.set('');
+  
+  // ❌ Add a wrong attempt
+  this.attempt.push({ phrase: this.getQuestion(), correct: false });
+  this.attemptCount += 1;
+
+  this.next();
+}
+
 next() {
-    this.showAnswer2 = false;
+  this.showAnswer2 = false;
 
-  if (!this.answered()) return; // ⛔ Block skipping until answered
+  if (!this.answered()) return; // ⛔ prevent skipping unattempted
 
-  // Remove if correct
   if (this.lastResult().startsWith('✅')) {
     const list = this.remainingPhrases().slice();
     list.splice(this.currentIndex(), 1);
     this.remainingPhrases.set(list);
 
-    // if (list.length === 0) {
-    //   alert("🎉 All correct!");
-    //   return;
-    // }
-    this.userInput = ""
+    // ✅ When no phrases remain, trigger result popup
+    if (list.length === 0) {
+      this.Popup = true; // use *ngIf in your template
+      return;
+    }
+
+    this.userInput = '';
     this.currentIndex.set(this.currentIndex() % list.length);
   } else {
-    // Go to next, keep current if wrong
+    // Go to next (keep list)
     this.currentIndex.update(i => (i + 1) % this.remainingPhrases().length);
   }
 
