@@ -188,7 +188,7 @@ export class AllComponent{
       { "phrase": "уже", "pr": "uzhe", "en": "already" },
       { "phrase": "всегда", "pr": "vsegda", "en": "always" },
       { "phrase": "никогда", "pr": "nikogda", "en": "never" }
-    ] 
+    ]  
   },
   {
     "category": "part5",

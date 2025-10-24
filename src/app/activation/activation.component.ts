@@ -8,7 +8,7 @@ import { HttpClient } from '@angular/common/http';
   templateUrl: './activation.component.html',
   styleUrl: './activation.component.css'
 })
-export class ActivationComponent {
+export class ActivationComponent { 
 
 
   // verify-email.component.ts

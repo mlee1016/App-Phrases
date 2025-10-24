@@ -34,7 +34,7 @@ export class AgainComponent {
   onRetry() {
     this.retry.emit();
   }
-
+ 
   onNext() {
     this.again.emit(); // You can change this if Next does something else
   }

@@ -56,7 +56,7 @@ export class PhraseStudyComponent {
   allList = [{s:''}]
   allListS = [{s:''}]
 
-  phrasesListItalian:any[] = this.phraseName.allListItaliangrammer;
+  phrasesListItalian:any[] = this.phraseName.allListItaliangrammer; 
   phrasePopularItalian:any[] = this.phraseName.allPopularItalianPhrases;
   phrasesListItalian2:any[] = this.phraseName.allListItalianStory;
 

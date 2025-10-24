@@ -49,6 +49,8 @@
     </ul>
   </div>
 
+  
+
   <!-- 🔹 Main Panel -->
   <div class="flex-1 p-6 md:p-8 space-y-8 overflow-y-auto min-h-screen md:min-h-0 relative z-10">
     
@@ -80,6 +82,7 @@
       </button>
     </div>
 
+
     <!-- Phrase Card --
      
         
@@ -88,6 +91,19 @@
 
 
   -->
+    <div *ngIf="selectedItem" class="bg-white shadow-md rounded-2xl p-6 mx-auto max-w-md flex flex-col gap-4 hover:shadow-lg hover:-translate-y-0.5 transition">
+  <h2 class="text-2xl font-bold text-slate-800 text-center">Study Cards</h2>
+  <div class="text-slate-700 text-center">
+    Individually study phrases and words to understand their meaning and pronunciation.
+  </div>
+  <div class="bg-slate-100 text-slate-600 p-3 rounded-lg text-center">
+    Learn Japanese and Korean phrases through flashcards showing meanings, readings, and examples.
+  </div>
+  <div class="text-slate-800 text-center leading-relaxed">
+    Flip through study cards to practice each phrase in detail. See pronunciation, grammar, and usage examples — perfect for self-paced learning.
+  </div>
+  <div class="bg-slate-200 text-slate-700 text-sm rounded-full px-3 py-1 self-center">story + popular + course</div>
+</div>
 
     <div *ngIf="!sidebarOpen" 
          class="bg-white shadow-lg rounded-2xl p-6 text-center border border-cyan-200 max-w-2xl mx-auto">

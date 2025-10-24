@@ -13,19 +13,19 @@ export class AlloptionsComponent {
     allSites = [
   
       
-      // {"s":"All List","des":"Look over all the list","m":'story + popular + course'}, 
-      {"s":"Fill in the blank","des":"given a phrase with a missing section place the correct word in to the spot","m":'course'}, 
+      // {"s":"All List","des":"Look over all the list of phrase","m":'story + popular + course'}, 
+      {"s":"Fill in the blank","des":"given a phrase with a missing section place the correct grammar word in to the phrase","m":'course'}, 
 
-      {"s":"Study Cards","des":"Allows to individual phrases and words","m":'story + popular + course'}, 
+      {"s":"Study Cards","des":"Allows to individually study phrases and words to understand meaning also","m":'story + popular + course'}, 
 
       {"s":"Multi","des":"Study with multiple choice questions","m":'story + popular + course'}, 
   
-      {"s":"Type","des":"Study by typing in your answers","m":'story + popular + course'}, 
+      {"s":"Type","des":"Study by typing in your answers, each card disappear when you are right","m":'story + popular + course'}, 
   
-      {"s":"Card","des":"allows you to study cards","m":'story + popular + course'}, 
-      {"s":"Study kanji","des":"Study some from kanji from n5 - n1"},
-      {"s":"Speech pronuciation","des":"Practice speaking and pronunciation","m":'story + popular + course'}, 
-      {"s":"Chat","des":"Allows you to chat with a bot with predetermined conversations","m":'story'}, 
+      {"s":"Card","des":"allows you to study cards, each cards disapears from deck when you are right","m":'story + popular + course'}, 
+      {"s":"Study kanji","des":"Study some kanji from n5 - n1 in multiple section"},
+      {"s":"Speech pronuciation","des":"Practice speaking and pronunciation,allows to you to see how accurate you are","m":'story + popular + course'}, 
+      {"s":"Chat","des":"Allows you to chat with a bot with predetermined conversations, either you lead or the bot leads you decide","m":'story'}, 
 
 
     ]
