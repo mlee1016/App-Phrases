@@ -829,7 +829,7 @@ next() {
       }
     }*/
 
-  prev() {
+  prev() { 
         if (this.currentIndex() > 0) {
           this.currentIndex.update(current => current - 1);
           this.answered.set(false);

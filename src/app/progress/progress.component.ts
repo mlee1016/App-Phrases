@@ -590,6 +590,10 @@ formatPhrase(phrase: string): string {
     '<span class="bg-yellow-200 text-cyan-900 rounded px-1">$1</span>'
   );
 }
+formatPhrase2(phrase:string):string{
+      return phrase.replace(/\[\[|\]\]/g, '');
+
+}
 
   remainingPhrases = signal<any[]>([]); // Phrases left to quiz
   currentIndex = signal<number>(0); // Index of current phrase

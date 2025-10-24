@@ -6,7 +6,7 @@
 /* Menu cards (centered, responsive) */
 .menu-container {
   animation: fadeSlideIn 0.6s ease-out;
-  display: grid; 
+  display: grid;  
   gap: 1.25rem;
 }
 
