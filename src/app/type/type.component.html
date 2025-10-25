@@ -282,19 +282,19 @@
     </div>
     <!-- NEXT / PROGRESS -->
     <div class="text-center mt-8 space-y-3">
-      
-  <div class="mt-5 sm:mt-6">
-    <div class="w-full bg-gray-300 rounded-full h-3 overflow-hidden">
-      <div class="bg-green-500 h-3 progress-bar-inner"
-           [style.width.%]="(phrases().length - remainingPhrases().length) / phrases().length * 100">
+          
+      <div class="mt-5 sm:mt-6">
+        <div class="w-full bg-gray-300 rounded-full h-3 overflow-hidden">
+          <div class="bg-green-500 h-3 progress-bar-inner"
+              [style.width.%]="(phrases().length - remainingPhrases().length) / phrases().length * 100">
+          </div>
+        </div>
+        <p class="mt-2 text-xs sm:text-sm text-gray-500">
+          Progress: {{ ((phrases().length - remainingPhrases().length) / phrases().length * 100) | number:'1.0-0' }}%
+          <!-- <span *ngIf="proportionCorrect" class="ml-2">| Accuracy: {{ proportionCorrect | number:'1.0-0' }}%</span> -->
+          
+        </p>
       </div>
-    </div>
-    <p class="mt-2 text-xs sm:text-sm text-gray-500">
-      Progress: {{ ((phrases().length - remainingPhrases().length) / phrases().length * 100) | number:'1.0-0' }}%
-      <!-- <span *ngIf="proportionCorrect" class="ml-2">| Accuracy: {{ proportionCorrect | number:'1.0-0' }}%</span> -->
-      
-    </p>
-  </div>
       <p class="text-sm text-cyan-300">Cards left: {{ remainingPhrases().length }}</p>
       <button *ngIf="answered() && remainingPhrases().length !== 0"
               (click)="next()"

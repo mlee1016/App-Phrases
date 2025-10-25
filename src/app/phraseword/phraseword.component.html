@@ -5,7 +5,7 @@
   </h2>
   <button
     (click)="open()"
-    class="bg-cyan-500 hover:bg-cyan-400 text-black px-3 py-1.5 rounded-lg shadow text-sm sm:text-base transition"
+    class="bg-cyan-500 hover:bg-cyan-400 text-white px-3 py-1.5 rounded-lg shadow text-sm sm:text-base transition"
   >
     {{ sideBar ? '✖' : '☰' }}
   </button>
@@ -165,7 +165,7 @@
     [correctCount]="correctAnswers.length"
     [wrongCount]="wrongAnswers.length"
     [userResults]="userResults"
-    (retry)="open()"
-    (retry)="againQuiz()"></app-again>
+    (again)="againQuiz()"
+    (retry)="open()"></app-again>
   </ng-template>
 </div>

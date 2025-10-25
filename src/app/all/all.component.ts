@@ -359,7 +359,7 @@ export class AllComponent{
       { phrase: "ほうがいい", pr: "ほうがいい", en: "it’d be better to" },
       { phrase: "ほうがいい", pr: "ほうがいい", en: "it’d be better not to" },
       { phrase: "つもりだ", pr: "つもりだ", en: "plan to, intend to" }
-  ]},
+  ]}, 
 
   { category: "part5", lessons: [
       { phrase: "まえに", pr: "まえに", en: "before" },

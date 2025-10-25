@@ -87,7 +87,7 @@
   </div>
   <div class="tags">story + popular + course</div>
 </div>-->
-  <div class="bg-white shadow-md rounded-2xl p-6 mx-auto max-w-md flex flex-col gap-4 hover:shadow-lg hover:-translate-y-0.5 transition">
+  <div class="bg-white shadow-md mt-6 rounded-2xl p-6 mx-auto max-w-md flex flex-col  hover:shadow-lg hover:-translate-y-0.5 transition">
   <h2 class="text-2xl font-bold text-slate-800 text-center">Card</h2>
   <div class="text-slate-700 text-center">
     Study with interactive cards that disappear from the deck when answered correctly.
@@ -112,14 +112,17 @@
     <button *ngIf="['kor-to-eng','jp-to-eng','itn-to-eng','rus-to-eng','fr-to-eng'].includes(directionMode)"
             (click)="phraseOnMode()"
             class="a-btn bg-emerald-700">{{ phraseOn ? 'Hide' : 'Show' }} Phrase</button>
+
     <button (click)="togglePronunciation()" class="a-btn bg-emerald-700">{{ showPronunciation ? 'Hide' : 'Show' }} Pronunciation</button>
-    <button *ngIf="['jp-to-eng','itn-to-eng','kor-to-eng','ge-to-eng','rus-to-eng'].includes(directionMode)"
-            (click)="playAudio(directionMode === directionModeE ? currentPhrase.phrase : currentPhrase.en, directionMode === directionModeE ? lang : 'en-US')"
-            class="a-btn bg-indigo-500 hover:bg-indigo-600 text-white px-4 py-2 mt-2 rounded text-xs sm:text-sm shadow">▶ Play Audio</button>
-    <div 
+    
+      <div
         class="a-btn bg-indigo-500 hover:bg-indigo-600 text-white px-4 py-2 mt-2 rounded text-xs sm:text-sm shadow"
 
         *ngIf="'course'===m1" (click)="toggleHighlight()">point</div>
+    <button *ngIf="['jp-to-eng','itn-to-eng','kor-to-eng','ge-to-eng','rus-to-eng'].includes(directionMode)"
+            (click)="playAudio(directionMode === directionModeE ? currentPhrase.phrase : currentPhrase.en, directionMode === directionModeE ? lang : 'en-US')"
+            class="a-btn bg-indigo-500 hover:bg-indigo-600 text-white px-4 py-2 mt-2 rounded text-xs sm:text-sm shadow">▶ Play Audio</button>
+  
   
           </div>
 
@@ -142,33 +145,33 @@
 
     <div *ngIf="remainingPhrases().length===0">
       <app-again
-        [attempt]="attempt"
         
         [correctCount]="6"
-        [wrongCount]="12"
-        [correctCount]="5"
-        [type]="m1"
-        [wrongCount]="attemptCount"
+        [wrongCount]="6"
+        [type]="'card'"
         [userResults]="userResults"
-        (retry)="toggleSidebar()"
-      ></app-again>
+        (again)="again()"
+        (retry)="toggleSidebar()">
+      </app-again>
 
     </div>
     <!-- NEXT / PROGRESS -->
     <!-- Navigation -->
      
-  <div class="mt-5 sm:mt-6">
-    <div class="w-full bg-gray-300 rounded-full h-3 overflow-hidden">
-      <div class="bg-green-500 h-3 progress-bar-inner"
-           [style.width.%]="(phrases().length - remainingPhrases().length) / phrases().length * 100">
+      <div class="mt-5 sm:mt-6">
+        <div class="w-full bg-gray-300 rounded-full h-3 overflow-hidden">
+          <div class="bg-green-500 h-3 progress-bar-inner"
+              [style.width.%]="(phrases().length - remainingPhrases().length) / phrases().length * 100">
+          </div>
+        </div>
+        <p class="mt-2 text-xs sm:text-sm text-green-500">
+          Progress: {{ ((phrases().length - remainingPhrases().length) / phrases().length * 100) | number:'1.0-0' }}%
+          <!-- <span *ngIf="proportionCorrect" class="ml-2">| Accuracy: {{ proportionCorrect | number:'1.0-0' }}%</span> -->
+          
+        </p>
+        
       </div>
-    </div>
-    <p class="mt-2 text-xs sm:text-sm text-gray-500">
-      Progress: {{ ((phrases().length - remainingPhrases().length) / phrases().length * 100) | number:'1.0-0' }}%
-      <!-- <span *ngIf="proportionCorrect" class="ml-2">| Accuracy: {{ proportionCorrect | number:'1.0-0' }}%</span> -->
-      
-    </p>
-  </div>
+
     <div class="flex flex-col justify-between items-center mt-8 max-w-xl mx-auto gap-2">
       <div class="text-sm text-cyan-300"><p>Cards: {{ remainingPhrases().length }}</p></div>
       

@@ -72,12 +72,27 @@ export class AgainComponent {
         this.pr = "pr"
         break
     }
-  }else{
-    this.la = 'phrase'
   }
+    this.la = 'phrase'
+  
     console.log(this.la)
 
   }
+  
+ formatPhrase(phrase: string): string {
+//     // Just remove markers
+   
+
+    return phrase.replace(/\[\[|\]\]/g, '');
+  
+
+
+  // Wrap highlighted parts in <span> with styles
+  // return phrase.replace(
+  //   /\[\[(.*?)\]\]/g,
+  //   '<span class="bg-yellow-200 text-cyan-900 rounded px-1">$1</span>'
+  // );
+}
 }
 
 

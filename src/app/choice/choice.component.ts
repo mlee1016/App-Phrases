@@ -671,7 +671,7 @@ playAudio(text: string, lang2: string = this.lang) {
   else{text = text.replace(/\[\[|\]\]/g, '')}
 
   const soundAudio = new SpeechSynthesisUtterance(text);
-  soundAudio.lang = lang2; 
+  soundAudio.lang = lang2;  
   soundAudio.rate = 0.9
   speechSynthesis.speak(soundAudio);
 }

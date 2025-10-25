@@ -7,7 +7,7 @@
   height: 0;
   opacity: 0;
 }
-.panel.open {
+.panel.open { 
   height: 350px; /* adjust max height */
   opacity: 1;
 }

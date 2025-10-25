@@ -117,12 +117,18 @@ export class AlloptionsComponent {
       this.shutD= !this.shutD
     }
   
+
     get filteredSites() {
-    this.allSites.filter(item =>
-      !(item.s === 'Study kanji' && this.id !== 'Japanese')
-    );
-    return this.allSites.filter(item => item.m?.includes(this.m));
-  }
-  
+  return this.allSites.filter(item => {
+    // Exclude "Study kanji" if not Japanese
+    if (item.s === 'Study kanji' && this.id !== 'Japanese') return false;
+
+    // Exclude "Study Cards" if Italian
+    if (item.s === 'Study Cards' && this.id === 'Italian') return false;
+
+    // Otherwise include if it matches the category
+    return item.m?.includes(this.m);
+  });
+}
 
 }
