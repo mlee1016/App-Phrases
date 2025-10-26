@@ -129,6 +129,6 @@ export class AlloptionsComponent {
     // Otherwise include if it matches the category
     return item.m?.includes(this.m);
   });
-}
+} 
 
 } 

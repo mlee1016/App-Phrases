@@ -126,7 +126,7 @@
   
           </div>
 
-  <!-- Main Quiz Card -->
+  <!-- Main Quiz Card --
   <div class="quiz-card mx-auto max-w-xl w-full text-center">
     <span *ngIf="phraseOn" class="text-xl sm:text-2xl font-bold text-blue-300 break-words"  [innerHTML]="formatPhrase(getQuestion()+'')" ></span>
   
@@ -141,7 +141,37 @@
               (click)="playAudio(directionMode===directionModeC? currentPhrase.phrase : currentPhrase.en, directionMode===directionModeC? lang : 'en-US')"
               class="a-btn bg-indigo-500 hover:bg-indigo-600 text-white px-4 py-2 mt-4 rounded text-xs sm:text-sm shadow">▶ Play Audio</button>
     </div>
+  </div>-->
+
+    <!-- Main Quiz Card -->
+<div class="quiz-card mx-auto max-w-xl w-full text-center transition-transform duration-500"
+     [ngClass]="animationClass">
+
+  <span *ngIf="phraseOn"
+        class="text-xl sm:text-2xl font-bold text-blue-300 break-words"
+        [innerHTML]="formatPhrase(getQuestion()+'')"></span>
+
+  <p *ngIf="showPronunciation && directionMode === directionModeE"
+     class="text-sm text-gray-300">
+    <span [innerHTML]="formatPhrase(currentPhrase.pr + '')"></span>
+  </p>
+
+  <div class="mt-6 sm:mt-9">
+    <button (click)="showAnswer2=true"
+            class="a-btn bg-emerald-200 hover:bg-emerald-700 text-emerald-700 hover:text-emerald-200 px-4 py-2 rounded shadow text-sm sm:text-base">
+      Reveal Answer
+    </button>
+
+    <p>
+      <span *ngIf="showAnswer2"
+            class="mt-4 text-lg sm:text-xl text-cyan-400 font-semibold"
+            [innerHTML]="formatPhrase(getAnswer()+'')"></span>
+    </p>
+
+    <p *ngIf="showPronunciation && directionMode===directionModeC && showAnswer2"
+       class="text-xs sm:text-sm text-gray-400 mt-1">{{ currentPhrase.pr }}</p>
   </div>
+</div>
 
     <div *ngIf="remainingPhrases().length===0">
       <app-again
@@ -156,6 +186,7 @@
 
     </div>
     <!-- NEXT / PROGRESS -->
+     
     <!-- Navigation -->
      
       <div class="mt-5 sm:mt-6">

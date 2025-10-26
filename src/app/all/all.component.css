@@ -3,7 +3,7 @@
   overflow: hidden;
   transition: height 0.3s ease, opacity 0.3s ease;
 }
-.panel.closed {
+.panel.closed { 
   height: 0;
   opacity: 0;
 }

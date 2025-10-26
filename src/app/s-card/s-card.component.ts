@@ -728,9 +728,11 @@ selectPhraseList() {
 attemptCount = 0;
 userResults: { phrase: string; correct: boolean; attempts: number }[] = [];
 attempt: { phrase: string; correct: boolean }[] = [];
+animationClass = '';
 
 Popup = false
-correct() {
+correct() { 
+  this.animationClass ='animate-slide-right'
   this.answered.set(true);
   this.lastResult.set('✅');
 
@@ -748,6 +750,8 @@ correct() {
 }
 
 again() {
+  this.animationClass ='animate-slide-left'
+
   this.answered.set(true);
   this.lastResult.set('');
   
@@ -760,7 +764,9 @@ again() {
 
 next() {
   this.showAnswer2 = false;
-
+  setTimeout(()=>{
+    this.animationClass='animate-fade-in'
+  },500)
   if (!this.answered()) return; // ⛔ prevent skipping unattempted
 
   if (this.lastResult().startsWith('✅')) {
