@@ -367,7 +367,7 @@ export class AllComponent{
       { phrase: "ている", pr: "ている", en: "is/are doing" },
       { phrase: "てください", pr: "てください", en: "please do…" },
       { phrase: "てもいい", pr: "てもいい", en: "may, is okay to" },
-      { phrase: "てはいけない", pr: "てはいけない", en: "must not, may not" }
+      { phrase: "てはいけない", pr: "てはいけない", en: "must not, may not"  }
   ]},
 
   { category: "part6", lessons: [
