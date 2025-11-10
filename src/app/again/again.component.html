@@ -105,7 +105,7 @@
           <span [innerHTML]="formatPhrase(r.phrase)" class="pr-2 flex-1"></span>
           <span [ngClass]="r.correct ? 'text-green-400' : 'text-red-400'">
             {{ r.correct ? '✅' : '❌' }}
-            ({{ r.attempts }} attempt{{ r.attempts > 1 ? 's' : '' }})
+            ({{ r.attempts }} attempt{{ r.attempts > 1 ?  's' : '' }})
           </span>
         </div>-->
       <h2 class="text-2xl font-bold text-cyan-600 dark:text-cyan-400 mt-4 mb-4">
