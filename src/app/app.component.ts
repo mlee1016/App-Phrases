@@ -19,7 +19,7 @@ export class AppComponent {
   reactiveForm : FormGroup
 
   //languages= [{"id":"Korean"},{"id":"Russian"},{"id":"Italian"},{"id":"Japanese"},{"id":"German"}]
-  navBar = ["Home","Profile","About","Feedback"];
+  navBar = ["Home","Profile","About","Feedback","Own"];
   styleWidth:string = '';
   styleleft: string = ''
   status:any = ''
@@ -31,7 +31,10 @@ export class AppComponent {
   { label: 'Home', icon: 'fa fa-home', route: 'home' },
   // { label: 'Profile', icon: 'fa fa-user', route: 'profile' },
   { label: 'About', icon: 'fa fa-heart', route: 'about' },
-  { label: 'Feedback', icon: 'fa fa-envelope', route: 'feedback' }
+  { label: 'Feedback', icon: 'fa fa-envelope', route: 'feedback' },
+
+  { label: 'Own', icon: 'fa fa-user', route: 'own' }
+
 ];
 
   languages = ['Korean', 'Russian', 'Italian', 'Japanese'];

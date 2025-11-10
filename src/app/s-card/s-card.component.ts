@@ -67,6 +67,7 @@ export class SCardComponent {
   directionModeC :string=""
   directionModeE:string =""
   id:string=""
+  m:string = "s"
   m1:string=""
   la:string = ""
   lang:string = ""
@@ -677,54 +678,6 @@ selectPhraseList() {
       // this.clearHints()
     }
 
-// attemptCount = 0;
-// userResults: { phrase: string; correct: boolean; attempts: number }[] = [];
-// attempt: { phrase: string; correct: boolean }[] = [];
-
-//   correct(){
-//     this.answered.set(true)
-//     this.lastResult.set('✅')
-//     this.next()
-//    }
-//    again(){
-
-    
-//     this.answered.set(true)
-//     this.lastResult.set('')
-//     this.next()
-//     this.attempt.push({ phrase: this.getQuestion(), correct: false });
-
-//    }
-   
-// next() {
-//     this.showAnswer2 = false;
-
-//   if (!this.answered()) return; // ⛔ Block skipping until answered
-
-//   // Remove if correct
-//   if (this.lastResult().startsWith('✅')) {
-//     const list = this.remainingPhrases().slice();
-//     list.splice(this.currentIndex(), 1);
-//     this.remainingPhrases.set(list);
-
-//     // if (list.length === 0) {
-//     //   alert("🎉 All correct!");
-//     //   return;
-//     // }
-//     this.userInput = ""
-//     this.currentIndex.set(this.currentIndex() % list.length);
-//   } else {
-//     // Go to next, keep current if wrong
-//     this.currentIndex.update(i => (i + 1) % this.remainingPhrases().length);
-//   }
-//   this.answered.set(false);
-//   this.lastResult.set('');
-//   this.userInput = '';
-//   this.reset2();
-// }
-
-
-
 attemptCount = 0;
 userResults: { phrase: string; correct: boolean; attempts: number }[] = [];
 attempt: { phrase: string; correct: boolean }[] = [];
@@ -746,6 +699,8 @@ correct() {
   // Reset attempt counter for the next phrase
   this.attemptCount = 0;
 
+
+  console.log(this.userResults)
   this.next();
 }
 
@@ -759,6 +714,7 @@ again() {
   this.attempt.push({ phrase: this.getQuestion(), correct: false });
   this.attemptCount += 1;
 
+  console.log(this.attempt)
   this.next();
 }
 
@@ -773,7 +729,6 @@ next() {
     const list = this.remainingPhrases().slice();
     list.splice(this.currentIndex(), 1);
     this.remainingPhrases.set(list);
-
     // ✅ When no phrases remain, trigger result popup
     if (list.length === 0) {
       this.Popup = true; // use *ngIf in your template
@@ -786,7 +741,6 @@ next() {
     // Go to next (keep list)
     this.currentIndex.update(i => (i + 1) % this.remainingPhrases().length);
   }
-
   this.answered.set(false);
   this.lastResult.set('');
   this.userInput = '';

@@ -247,8 +247,9 @@ prevCard() {
     return this.hoverGroup === groupId;
   }
 
-  
+  currectInde = 0
   isActive(index: number, lang: 'ko' | 'pr' | 'en'|'jp'|'ru'|'itn'|'ge'|'kana'): boolean {
+    this.currectInde = index
     return this.activeIndices ? this.activeIndices[lang].includes(index) : false;
   }
 

@@ -158,6 +158,24 @@
       </button>
     </div>
 
+
+    
+    <!-- PROGRESS -->
+     
+      <div class="mt-5 sm:mt-6">
+        <div class="w-full bg-gray-300 rounded-full h-3 overflow-hidden">
+          <div class="bg-green-500 h-3 progress-bar-inner"
+              [style.width.%]="((currentIndex+1) / phrases.length) * 100">
+          </div>
+        </div>
+        <p class="mt-2 text-xs sm:text-sm text-green-500">
+          Progress: {{ ((currentIndex+1) / phrases.length * 100) | number:'1.0-0' }}%
+          <!-- <span *ngIf="proportionCorrect" class="ml-2">| Accuracy: {{ proportionCorrect | number:'1.0-0' }}%</span> -->
+        </p>
+          
+      </div>
+
+
   </div>
   <!-- ✨ Phrase Display Card --
 <div *ngIf="!sidebarOpen" 

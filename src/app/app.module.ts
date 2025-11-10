@@ -28,7 +28,7 @@ import { KboardComponent } from './kboard/kboard.component';
 import { AutofocusDirective } from './autofocus.directive';
 import { Jpscore2Component } from './jpscore2/jpscore2.component';
 import { PanelComponent } from './panel/panel.component';
-
+import { UserphraseComponent } from './userphrase/userphrase.component';
 //import { HeaderInterceptor } from './header-interceptor';
 
 import { CookieInterceptor } from './cookie.interceptor';
@@ -40,6 +40,8 @@ import { KanjiComponent } from './kanji/kanji.component';
 import { EdComponent } from './ed/ed.component';
 import { NotFoundComponent } from './not-found/not-found.component';
 import { AgainComponent } from "./again/again.component";
+import { ControlsComponent } from './controls/controls.component';
+import { SModelComponent } from './s-model/s-model.component';
 // import { AresponseComponent } from './aresponse/aresponse.component';
 
 
@@ -96,6 +98,9 @@ import { AgainComponent } from "./again/again.component";
     KanjiComponent,
     EdComponent,
     NotFoundComponent,
+    ControlsComponent,
+    SModelComponent,
+    
     // AresponseComponent
   ],
   imports: [

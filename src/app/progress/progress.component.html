@@ -13,16 +13,16 @@
     {{ sideBar ? '✖ Close' : '☰ Menu' }}
   </button>
 </header>
-<!-- BACKDROP -->
+<!-- BACKDROP --
 <div *ngIf="sideBar" class="fixed inset-0 bg-black bg-opacity-60 z-40 flex items-center justify-center ">
   
-  <!-- MODAL PANEL -->
+  <!-- MODAL PANEL --
 
 
   <div class="bg-cyan-950 text-white w-[90%] max-w-lg rounded-lg shadow-xl p-6 space-y-6 z-50 animate-fade-in overflow-y-auto max-h-[80vh]">
 
     
-    <!-- Close Button -->
+    <!-- Close Button --
     <div class="text-right">
       <button
         class="text-sm bg-cyan-800 hover:bg-cyan-700 text-white px-3 py-1 rounded"
@@ -31,7 +31,7 @@
         ✖ Close
       </button>
     </div>
-    <!-- Story Section -->
+    <!-- Story Section --
     <h2  class="text-xl font-bold mb-2 ">{{selectedPhrases()===''?'pick a phrase': 'selected: ' + selectedPhrases()}}</h2>
 
     <div *ngIf="m1==='course'" class="overflow-y-auto max-h-80">
@@ -48,7 +48,7 @@
         </button>
       </div>
     </div>
-    <!-- Popular Section -->
+    <!-- Popular Section --
     <div *ngIf="m1==='popular'" class="overflow-y-auto max-h-80">
     
       <h2 class="text-lg font-bold mt-4 mb-2 border-b border-cyan-600 pb-1">Popular/Useful</h2>
@@ -79,8 +79,18 @@
     </div>
 
   </div>
-</div>
+</div>-->
 
+<app-s-model 
+  [sideBar]="sideBar"
+  [m1]="m1"
+  [phraseCourse]="phraseCourse"
+  [phrasePopular]="phrasePopular"
+  [phraseStory]="phraseStory"
+  [selectedPhrases]="selectedPhrases"
+  (closeModal)="close()"
+  (selectPhrase)="getSpecificPhrases($event)">
+</app-s-model>
 
 <!-- START QUIZ -->
 <div *ngIf="isReadyToStart && !quizStarted" class="text-center mt-8 sm:mt-10 px-3">
@@ -107,7 +117,7 @@
 </div>
 
 <!-- QUIZ IN PROGRESS -->
-<div *ngIf="quizStarted" class="mt-8 sm:mt-10 flex flex-col items-center space-y-6 sm:space-y-8 px-3">
+<div *ngIf="quizStarted && remainingPhrases().length!==0" class="mt-8 sm:mt-10 flex flex-col items-center space-y-6 sm:space-y-8 px-3">
   <!-- Phrase Card -->
 
 <div
@@ -160,6 +170,8 @@
 
     <div *ngIf="remainingPhrases().length===0">
       <app-again
+        [select]="'speech'"
+        [type]="id"
         (retry)="toggleSidebar()"
         (retry)="again()"
       ></app-again>

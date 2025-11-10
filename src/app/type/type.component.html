@@ -69,19 +69,19 @@
     {{ sideBar ? '✖ Close' : '☰ Menu' }}
   </button>
 </header>
-<!-- BACKDROP -->
+<!-- BACKDROP --
 <div *ngIf="sideBar" class="fixed inset-0 bg-black bg-opacity-60 z-40 flex items-center justify-center ">
   
-  <!-- MODAL PANEL -->
+  <!-- MODAL PANEL --
 
 
   <div class="bg-cyan-950 text-white w-[90%] max-w-lg rounded-lg shadow-xl p-6 space-y-6 z-50 animate-fade-in overflow-y-auto max-h-[80vh]">
 
     
-    <!-- Close Button -->
+    <!-- Close Button --
     <div class="text-right">
       <button
-        class="text-sm bg-cyan-800 hover:bg-cyan-700 text-white px-3 py-1 rounded"
+        class="text-sm bg-cyan-800 hover:bg-cyan-700 text-white px-3 py-1 rounded" 
         (click)="close()"
       >
         ✖ Close
@@ -92,7 +92,7 @@
 
 
 
-    <!-- Story Section -->
+    <!-- Story Section --
     <div *ngIf="m1==='course'" class="overflow-y-auto max-h-80">
       
       <h2 class="text-lg font-bold mt-4 mb-2 border-b border-cyan-600 pb-1">Lists</h2>
@@ -136,8 +136,18 @@
     </div>
 
   </div>
-</div>
+</div>-->
 <!-- Start Section -->
+<app-s-model 
+  [sideBar]="sideBar"
+  [m1]="m1"
+  [phraseCourse]="phraseCourse"
+  [phrasePopular]="phrasePopular"
+  [phraseStory]="phraseStory"
+  [selectedPhrases]="selectedPhrases"
+  (closeModal)="close()"
+  (selectPhrase)="getSpecificPhrases($event)">
+</app-s-model>
 
 <!-- WRAPPER -->
 <div class="relative min-h-screen bg-gradient-to-br from-[#041017] to-[#0a1a25] text-white flex flex-col items-center justify-center px-4 py-8">
@@ -195,7 +205,7 @@
   <div *ngIf="['Italian','Japanese','Korean','Russian','German'].includes(id) && quizStarted"
        class="w-full max-w-3xl animate-slide-in">
 
-    <!-- Top Controls -->
+    <!-- Top Controls --
     <div class="flex flex-wrap justify-center gap-3 mb-8">
       <button (click)="togglePronunciation()" class="btn-cyan">
         {{ showPronunciation ? 'Hide' : 'Show' }} Pronunciation
@@ -213,10 +223,25 @@
       </button>
       <button class="btn-cyan" *ngIf="'course'===m1" (click)="toggleHighlight()">point</button>
 
-    </div> 
+    </div> -->
+
+
+
+
+  <app-controls
+    [showPronunciation]="showPronunciation"
+    [phraseOn]="phraseOn"
+    [showPhraseButton]="['kor-to-eng','jp-to-eng','itn-to-eng','rus-to-eng','fr-to-eng'].includes(directionMode)"
+    [showAudioButton]="['jp-to-eng','itn-to-eng','kor-to-eng','ge-to-eng','rus-to-eng'].includes(directionMode)"
+    [isCourse]="m1 === 'course'"
+    (pronunciationToggled)="togglePronunciation()"
+    (phraseToggled)="phraseOnMode()"
+    (audioPlayed)="playAudio(directionMode === directionModeE ? currentPhrase.phrase : currentPhrase.en, directionMode === directionModeE ? lang : 'en-US')"
+    (highlightToggled)="toggleHighlight()">
+  </app-controls>
 
     <!-- QUIZ CARD -->
-    <div *ngIf="remainingPhrases().length" class="bg-gray-800/80 rounded-2xl shadow-xl p-6 sm:p-8 text-center">
+    <div *ngIf="remainingPhrases().length!==0" class="bg-gray-800/80 rounded-2xl shadow-xl p-6 sm:p-8 text-center">
       <p *ngIf="phraseOn" class="text-2xl sm:text-3xl font-bold text-blue-300 mb-2">
         <span [innerHTML]="formatPhrase(getQuestion() +'')"></span>
       </p>
@@ -276,6 +301,7 @@
 
     <div *ngIf="remainingPhrases().length===0">
       <app-again
+        [select]="'type'"
         (retry)="toggleSidebar()"
         (retry)="reset()"
       ></app-again> 

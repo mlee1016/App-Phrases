@@ -1,1 +1,113 @@
-<p>userphrase works!</p>
+<div class="p-6 max-w-lg mx-auto bg-white rounded-2xl shadow-md text-center">
+  <h2 class="text-2xl font-semibold mb-4">Upload Your Phrases</h2>
+
+  <p class="text-gray-600 text-sm mb-3">
+    Choose your language and category, then upload a <strong>.json</strong> file in the format below.
+  </p>
+
+
+
+  <!--  Section -->
+  <div class="mb-4">
+    <label class="block text-left font-medium text-gray-700 mb-1">Category</label>
+    <select [(ngModel)]="selectedCategory" class="border rounded p-2 w-full text-indigo-300">
+
+      <option value="" disabled selected>Select Category</option>
+      <option class="text-indigo-300" *ngFor="let type of categories" [value]="type">{{ type }}</option>
+    </select>
+  </div>
+  <!-- 🌐 Language Selection -->
+  <div class="mb-3">
+    <label class="block text-left font-medium text-gray-700 mb-1">Language</label>
+    <select [(ngModel)]="selectedLanguage" class="border rounded p-2 w-full text-blue-400">
+      <option value="" disabled selected>Select Language</option>
+      <option class="text-blue-400" *ngFor="let lang of languages" [value]="lang">{{ lang }}</option>
+    </select>
+  </div>
+
+  <!-- 💡 Example JSON Format -->
+  <div class="bg-gray-50 border border-gray-300 rounded-md text-left p-3 text-sm mb-4">
+    <p class="font-semibold mb-1">📘 Example format:</p>
+    <pre class="text-xs bg-white border border-gray-200 rounded text-blue-400 p-2 overflow-x-auto">
+[
+  
+    "phrase": "안녕하세요",
+    "pr": "annyeonghaseyo",
+    "en": "Hello",
+    "des": "Used as a polite greeting."
+  
+]
+    </pre>
+  </div>
+
+  <input
+    type="file"
+    accept=".json"
+    (change)="onFileSelected($event)"
+    class="mb-4 border rounded p-2 w-full"
+  />
+
+  <button
+    class="bg-blue-600 text-white px-4 py-2 rounded w-full disabled:opacity-40"
+    (click)="uploadFile()"
+    [disabled]="!selectedFile || !selectedLanguage || !selectedCategory"
+  >
+    Upload / Overwrite
+  </button>
+
+  <div *ngIf="uploaded" class="mt-4">
+    <p class="text-green-600 font-semibold">✅ Upload successful!</p>
+    <p class="text-gray-500 text-sm">
+      {{ 'File expires ' + expirationHours + ' hours after upload.' }}
+    </p>
+
+    <div class="flex justify-between mt-3 gap-2">
+      <button
+        class="bg-yellow-500 text-white px-4 py-2 rounded w-full"
+        (click)="toggleEdit()"
+      >
+        {{ editMode ? 'Cancel Edit' : 'Edit Phrases' }}
+      </button>
+
+      <button
+        class="bg-red-600 text-white px-4 py-2 rounded w-full"
+        (click)="resetUpload()"
+      >
+        Clear Upload
+      </button>
+    </div>
+  </div>
+
+  <!-- 🧾 Editable Phrase List -->
+  <div *ngIf="phraseList.length > 0" class="mt-6 text-left">
+    <h3 class="text-lg font-semibold mb-2 text-gray-800">
+      📖 {{ selectedLanguage }} — {{ selectedCategory }}
+    </h3>
+
+    <ul class="divide-y divide-gray-200 max-h-80 overflow-y-auto">
+      <li *ngFor="let p of phraseList; let i = index" class="py-3">
+        <div *ngIf="!editMode">
+          <p><strong>Phrase:</strong> {{ p.phrase }}</p>
+          <p><strong>Pronunciation:</strong> {{ p.pr }}</p>
+          <p><strong>English:</strong> {{ p.en }}</p>
+          <p class="text-gray-600 text-sm"><strong>Note:</strong> {{ p.des }}</p>
+        </div>
+
+        <div *ngIf="editMode" class="space-y-1">
+          <input [(ngModel)]="p.phrase" class="border rounded p-1 w-full" />
+          <input [(ngModel)]="p.pr" class="border rounded p-1 w-full" />
+          <input [(ngModel)]="p.en" class="border rounded p-1 w-full" />
+          <textarea [(ngModel)]="p.des" rows="2" class="border rounded p-1 w-full"></textarea>
+        </div>
+      </li>
+    </ul>
+
+    <button
+      *ngIf="editMode"
+      class="bg-green-600 text-white px-4 py-2 rounded mt-4 w-full"
+      (click)="saveChanges()"
+    >
+      💾 Save Changes
+    </button>
+  </div>
+</div>

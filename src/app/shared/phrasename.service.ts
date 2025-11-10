@@ -260,8 +260,9 @@ export class PhrasenameService {
     { s: "food-stall2",isDone:false},
     { s: "hotel", isDone: false },
     { s: "hotel2", isDone: false }
-  ];/*
-
+  ];
+  userPhrases:any[] = [];
+  /*
   // 🔄 Language reactive store
   private languageId = new BehaviorSubject<string>('Korean');
   languageId$ = this.languageId.asObservable();

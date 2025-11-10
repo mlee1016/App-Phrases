@@ -1,47 +1,60 @@
-<!-- Background Wrapper -->
-<div class="relative  min-h-screen px-4 py-4 flex flex-col items-center justify-center text-white">
+<!-- 🌌 Background Wrapper -->
+<div class="relative min-h-screen bg-gradient flex flex-col items-center justify-center px-4 py-10 text-white overflow-hidden">
 
-  <!-- Title (keeps your template's id/m wording) -->
-  <h2 class="text-cyan-200 text-center text-3xl sm:text-4xl md:text-5xl mb-8">
-    {{ id }}: {{'course'===m ? 'Course' : m==='popular' ? 'Popular/Useful' : m==='story' ? 'Story' : 'All List' }}
-  </h2>
+  <!-- Animated Overlay Glow -->
+  <div class="absolute inset-0 bg-gradient-to-tr from-cyan-900/10 to-indigo-900/10 animate-pulse-slow"></div>
 
-  <!-- Centered Mode Menu -- 
-  <div class="menu-container grid grid-cols-1 sm:grid-cols-2 gap-6  w-full max-w-3xl px-2 sm:px-4"> 
-
-    <div class="menu-card" (click)="navAll('all')">
-      <i class="fa-solid fa-list icon"></i>
-      <div class="title">All Phrase Lists</div>
-      <div class="sub">View every category together</div>
-    </div>
-
-    <div class="menu-card" (click)="navAll('popular')">
-      <i class="fa-solid fa-fire icon"></i>
-      <div class="title">Popular Phrases</div>
-      <div class="sub">Common, everyday expressions</div>
-    </div>
-
-    <div class="menu-card" (click)="navAll('course')">
-      <i class="fa-solid fa-graduation-cap icon"></i>
-      <div class="title">Course Phrases</div>
-      <div class="sub">Organized by grammar & lessons</div>
-    </div>
-
-    <div class="menu-card" (click)="navAll('story')">
-      <i class="fa-solid fa-book-open icon"></i> 
-      <div class="title">Story Phrases</div>
-      <div class="sub">Learn through immersive stories</div>
-    </div>
-
+  <!-- Floating Particles -->
+  <div class="absolute inset-0 overflow-hidden pointer-events-none">
+    <div class="particle" *ngFor="let p of [].constructor(10)"></div>
   </div>
 
-  <!- Optional small grid that mirrors your original 'filteredSites' cards (keeps compatibility) -->
-  <div *ngIf="filteredSites && filteredSites.length" class="mt-10 w-full max-w-5xl px-2">
-    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
-      <div *ngFor="let item of filteredSites" class="site-card fade-slide-btn btn-animate btn-delay-2" (click)="navAll(item.s)">
-        <i class="fa fa-fw fa-list mb-2 text-2xl"></i>
-        <div class="font-semibold">{{ item.s }}</div>
-        <div class="text-xs text-indigo-300">{{ item.des }}</div>
+  <!-- Title -->
+  <h2 class="text-center text-cyan-200 text-3xl sm:text-4xl md:text-5xl mb-10 tracking-wide drop-shadow-lg animate-fadeIn">
+    {{ id }}:
+    {{
+      m === 'course'
+        ? 'Course'
+        : m === 'popular'
+        ? 'Popular / Useful'
+        : m === 'story'
+        ? 'Story'
+        : 'All List'
+    }}
+  </h2>
+
+  <!-- Cards Grid -->
+  <div *ngIf="filteredSites?.length" class="w-full max-w-6xl px-2 fade-slide-btn delay-1">
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
+      <div
+        *ngFor="let item of filteredSites; let i = index"
+        (click)="toggleExpand(i)"
+        class="site-card group relative overflow-hidden transition-all duration-500 ease-out"
+        [ngClass]="{ 'expanded': expandedIndex === i }"
+      >
+        <!-- Icon -->
+        <div class="text-3xl text-cyan-400 group-hover:text-cyan-300 mb-3 transition">
+          <i class="fa fa-list"></i>
+        </div>
+
+        <!-- Title -->
+        <div class="text-lg font-semibold text-white mb-1">
+          {{ item.s }}
+        </div>
+
+        <!-- Description -->
+        <div class="text-sm text-cyan-200/70">{{ item.des }}</div>
+
+        <!-- 🔽 Expandable Detail Section -->
+        <div class="expand-panel mt-4 text-sm text-cyan-100/90 space-y-2">
+          <div class="italic opacity-80">"{{ item.m || 'Sample phrase or info here' }}"</div>
+          <button
+            (click)="navAll(item.s); $event.stopPropagation()"
+            class="bg-cyan-600 hover:bg-cyan-500 text-white px-3 py-1 rounded-lg text-xs transition"
+          >
+            🚀 Open
+          </button>
+        </div>
       </div>
     </div>
   </div>

@@ -5,7 +5,7 @@ import { PhraseListItem } from '../shared/phrase-list.service';
 import { PhrasenameService } from '../shared/phrasename.service';
 import { AuthenticationUser } from '../emitters/emittters';
 import { AutofocusDirective } from '../autofocus.directive';
-
+import { AgainComponent } from '../again/again.component';
 interface phraseDescription {
   's':'',
   'isDone':''

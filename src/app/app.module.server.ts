@@ -12,6 +12,6 @@ import { AgainComponent } from './again/again.component';
     AgainComponent
   ],
   bootstrap: [AppComponent],
-  exports: [AgainComponent]
+  exports: [AppModule,AgainComponent]
 })
 export class AppServerModule {}

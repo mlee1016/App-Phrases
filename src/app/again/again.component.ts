@@ -1,98 +1,80 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { Input, Output, EventEmitter } from '@angular/core';
+
 @Component({
   selector: 'app-again',
   templateUrl: './again.component.html',
-  standalone:true,
-  imports: [CommonModule], 
-  styleUrl: './again.component.css'
- 
+  standalone: true,
+  imports: [CommonModule],
+  styleUrls: ['./again.component.css']
 })
-
 export class AgainComponent {
- 
   @Input() correctCount = 0;
   @Input() wrongCount = 0;
   @Input() userResults: any[] = [];
-  @Input() attempt: any[] = []
-  @Input() attemptCount = 0
+  @Input() attempt: any[] = [];
+  @Input() attemptCount = 0;
   @Output() retry = new EventEmitter<void>();
   @Output() again = new EventEmitter<void>();
+  @Input() type = '';
+  @Input() select = '';
 
-  
-  @Input() type = "" 
-  @Input() select = ""
-  la= ""
-  pr = ""
-  get showTryAgainPopup() {
-    // Show “Try Again” if score < 70%
-    const total = this.correctCount + this.wrongCount;
-    return total == this.correctCount ;
+  la = '';
+  pr = '';
+
+
+  ngOnInit(): void {
+    console.log('this is the results: ', this.select);
+    console.log('this is the attempts: ', this.type);
+    console.log('this is the results: ', this.userResults);
+    console.log('this is the attempts: ', this.attempt);
+
+    if (this.select === 'phrase') {
+      switch (this.type) {
+        case 'Korean':
+          this.la = 'ko';
+          this.pr = 'pr';
+          break;
+        case 'Japanese':
+          this.la = 'jp';
+          this.pr = 'kana';
+          break;
+        case 'Russian':
+          this.la = 'ru';
+          this.pr = 'pr';
+          break;
+        case 'Italian':
+          this.la = 'itn';
+          this.pr = 'pr';
+          break;
+      }
+    } else{
+      this.la = 'phrase';
+    
+
+    }
+    console.log(this.la);
   }
-
+  
+  /** ✅ Shows “Try Again” only when NOT all answers are correct */
+  get showTryAgainPopup() {
+    // const total = this.correctCount + this.wrongCount;
+    // if total == 0, still false (avoids showing wrong result when nothing answered)
+    // if (total === 0) return false;
+    // show popup only when not all correct
+    // return this.correctCount !== total;
+    return false;
+  }
+  
   onRetry() {
     this.retry.emit();
   }
- 
+
   onNext() {
-    this.again.emit(); // You can change this if Next does something else
+    this.again.emit();
   }
-  constructor(){
-
-  }
-  ngOnInit(): void {
-    //Called after the constructor, initializing input properties, and the first call to ngOnChanges.
-
-    //Add 'implements OnInit' to the class.
-    
-    console.log("this is the results: ",this.select)
-    console.log("this is the attempts: ",this.type)
-    console.log("this is the results: ",this.userResults)
-    console.log("this is the attempts: ",this.attempt)
-
-    if(this.select==='phrase'){
-    switch(this.type){
-      case 'Korean':
-        this.la = "ko"
-        this.pr = "pr"
-        break;
-      case 'Japanese':
-        this.la = "jp"
-        this.pr = "kana"
-        break
-      case 'Russian':
-        
-        this.la = "ru"
-        this.pr = "pr"
-        break
-      case 'Italian':
-        
-        this.la = "itn"
-        this.pr = "pr"
-        break
-    }
-  }
-    this.la = 'phrase'
-  
-    console.log(this.la)
-
-  }
-  
- formatPhrase(phrase: string): string {
-//     // Just remove markers
-   
-
+  formatPhrase(phrase: string): string {
     return phrase.replace(/\[\[|\]\]/g, '');
-  
-
-
-  // Wrap highlighted parts in <span> with styles
-  // return phrase.replace(
-  //   /\[\[(.*?)\]\]/g,
-  //   '<span class="bg-yellow-200 text-cyan-900 rounded px-1">$1</span>'
-  // );
+  }
 }
-}
-
-

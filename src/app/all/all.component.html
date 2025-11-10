@@ -68,26 +68,8 @@
          transition-all duration-700 ease-in-out overflow-hidden z-0"
   [style.maxHeight]="isPanelOpen ? '380px' : '0px'">
 
-  <div class="grid grid-cols-1 md:grid-cols-4 h-[380px] divide-x divide-gray-800 animate-fadeIn">
+  <div class="grid grid-cols-1 md:grid-cols-3 h-[380px] divide-x divide-gray-800 animate-fadeIn">
     
-    <!-- Table of Content -->
-    <div class="section p-5 overflow-y-auto">
-      <h2 class="section-title text-cyan-200 mb-4">📑 Table of Contents</h2>
-      <ul class="space-y-2">
-        <li *ngFor="let toc of theCourse; let i = index"
-    class="list-item"
-    (click)="show3(i)">
-  {{ toc.category }} 
-
-  <div *ngIf="activeIndex === i" class="ml-2 border-l border-cyan-700 pl-3 mt-2 space-y-1">
-    <p *ngFor="let a of toc.lessons" class="lesson-item">
-      {{ a.phrase }} <span class="text-gray-400">— {{ a.en }}</span>
-    </p>
-  </div>
-</li>
-
-      </ul>
-    </div>
 
     <!-- Course -->
     <div class="section p-5 overflow-y-auto">
@@ -129,10 +111,90 @@
     </div>
   </div>
 </div>
+<!-- put table of content here -->
 
 
-<!-- Phrase Cards Grid -->
+
+<!-- Phrase Cards Grid --
+<main *ngIf="selectedPhraseName()!=null else howTo"
+      class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 p-6 mt-[6.5rem] ml-[5rem]">
+
+  <!-- ✅ Collapsible TOC Above Course Phrases --
+  <div *ngIf="selectedType==='c'" class="section p-5 mb-6 overflow-y-auto bg-gray-800/70 border border-cyan-700 rounded-xl shadow-inner animate-fadeIn w-full col-span-full" #tocContainer>
+    <h2 class="section-title text-cyan-200 mb-3 font-semibold text-lg">📑 Grammar Point Details</h2>
+    <ul class="space-y-2">
+      <li *ngFor="let toc of theCourse; let i = index" class="cursor-pointer">
+        <div (click)="toggleToc(i); scrollToToc(i)">
+          <h3 [class.text-emerald-300]="activeIndex2===i"
+              [class.text-cyan-200]="activeIndex2!==i"
+              class="font-medium hover:text-emerald-400 transition">
+            {{ toc.category }}
+          </h3>
+
+          <ul *ngIf="activeIndex2===i" class="ml-4 mt-1 list-disc list-inside space-y-1 text-cyan-200 transition-all duration-300">
+            <li *ngFor="let lesson of toc.lessons" class="hover:text-cyan-100 transition">
+              {{ lesson.phrase }} <span class="text-gray-400 ml-1">— {{ lesson.en }}</span>
+            </li>
+          </ul>
+        </div>
+      </li>
+    </ul>
+  </div>-->
+
+  <!-- Dynamic TOC Popup for Selected Course --
+<div *ngIf="selectedType==='c' && selectedPhraseName()!==null" 
+     class="section p-5 mb-6 overflow-y-auto bg-gray-800/70 border border-cyan-700 rounded-xl shadow-inner animate-fadeIn w-full col-span-full">
+  
+  <h2 class="section-title text-cyan-200 mb-3 font-semibold text-lg">📑 Grammar Point</h2>
+  
+  <ul class="space-y-2">
+    <li *ngFor="let toc of theCourse; let i = index" class="cursor-pointer">
+        <!-- *ngIf="toc.category === activeTocCategory">       --
+      <h2 class="text-emerald-300 font-medium">{{ toc.category }}</h2>
+      
+      <ul class="ml-4 mt-1 list-disc list-inside space-y-1 text-cyan-200">
+        <li *ngFor="let lesson of toc.lessons" class="hover:text-cyan-100 transition">
+          {{ lesson.phrase }} — <span class="text-gray-400">{{ lesson.en }}</span>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</div>
+
+  <!-- Phrase Cards --
+  <div *ngFor="let item of phrases(); let i = index"
+       [ngClass]="{
+         'bg-gray-950 border-emerald-400': getDoneStatus(),
+         'bg-cyan-900 border-cyan-500': !getDoneStatus()
+       }"
+       class="border rounded-xl p-4 shadow-md text-white hover:shadow-lg transition duration-300">
+    
+    <div class="text-lg font-bold text-cyan-300 mb-1">
+      <span [innerHTML]="formatPhrase(item.phrase)"></span>
+    </div> 
+
+    <div class="text-sm italic text-gray-400">  
+      <span [innerHTML]="formatPhrase(item.pr)"></span>
+    </div>
+
+    <div class="text-sm text-emerald-300 mt-1">
+      <span [innerHTML]="formatPhrase(item.en)"></span>
+    </div> 
+
+    <div class="text-xs italic text-gray-500 mt-1">{{ item.des }}</div>
+    <div class="text-xs mt-2 text-cyan-500">{{ item.phrase_name }}</div> 
+  </div>
+
+</main>-->
+
+
+<!-- Phrase Cards Grid --
 <main *ngIf="selectedPhraseName()!=null else howTo" class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 p-6 mt-[6.5rem] ml-[5rem]">
+  
+  
+  
+    <!--  --
+  
   <div
     *ngFor="let item of phrases(); let i = index"
     [ngClass]="{
@@ -153,6 +215,59 @@
     <div class="text-xs italic text-gray-500 mt-1">{{ item.des }}</div>
     <div class="text-xs mt-2 text-cyan-500">{{ item.phrase_name }}</div> 
   </div>
+</main>-->
+
+
+<!-- Phrase Cards Grid -->
+<main *ngIf="selectedPhraseName()!=null else howTo"
+      class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 p-6 mt-[6.5rem] ml-[5rem]">
+
+  <!-- ✅ Collapsible TOC Above Course Phrases -->
+  <div *ngIf="selectedType==='c'" class="section p-5 mb-6 overflow-y-auto bg-gray-800/70 border border-cyan-700 rounded-xl shadow-inner animate-fadeIn w-full col-span-full" #tocContainer>
+    <h2 class="section-title text-cyan-200 mb-3 font-semibold text-lg">📑 Grammar Point Details</h2>
+    <ul class="space-y-2">
+      <li *ngFor="let toc of theCourse; let i = index" class="cursor-pointer">
+        <div (click)="toggleToc(i); scrollToToc(i)">
+          <h3 [class.text-emerald-300]="activeIndex===i"
+              [class.text-cyan-200]="activeIndex!==i"
+              class="font-medium hover:text-emerald-400 transition">
+            {{ toc.category }}
+          </h3>
+
+          <ul *ngIf="activeIndex===i" class="ml-4 mt-1 list-disc list-inside space-y-1 text-cyan-200 transition-all duration-300">
+            <li *ngFor="let lesson of toc.lessons" class="hover:text-cyan-100 transition">
+              {{ lesson.phrase }} <span class="text-gray-400 ml-1">— {{ lesson.en }}</span>
+            </li>
+          </ul>
+        </div>
+      </li>
+    </ul>
+  </div>
+
+  <!-- Phrase Cards -->
+  <div *ngFor="let item of phrases(); let i = index"
+       [ngClass]="{
+         'bg-gray-950 border-emerald-400': getDoneStatus(),
+         'bg-cyan-900 border-cyan-500': !getDoneStatus()
+       }"
+       class="border rounded-xl p-4 shadow-md text-white hover:shadow-lg transition duration-300">
+    
+    <div class="text-lg font-bold text-cyan-300 mb-1">
+      <span [innerHTML]="formatPhrase(item.phrase)"></span>
+    </div> 
+
+    <div class="text-sm italic text-gray-400">  
+      <span [innerHTML]="formatPhrase(item.pr)"></span>
+    </div>
+
+    <div class="text-sm text-emerald-300 mt-1">
+      <span [innerHTML]="formatPhrase(item.en)"></span>
+    </div> 
+
+    <div class="text-xs italic text-gray-500 mt-1">{{ item.des }}</div>
+    <div class="text-xs mt-2 text-cyan-500">{{ item.phrase_name }}</div> 
+  </div>
+
 </main>
 
 <ng-template #howTo>
@@ -163,7 +278,7 @@
     Welcome to <span class="text-emerald-300">Phrase Itera</span>!
   </h1>
   <p class="text-cyan-400 text-base sm:text-lg mb-2">
-    Choose a phrase list from the sections above to start exploring.
+    Here you can overview the phrases to find which one you want to practice. Choose a phrase list from the sections above to start exploring.
   </p>
   <p class="text-cyan-500 text-sm sm:text-base mb-8">
     Once selected, you’ll see a preview of structured phrases with pronunciation, meaning, and grammar details.

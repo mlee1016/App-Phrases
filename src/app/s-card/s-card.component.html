@@ -1,4 +1,4 @@
-<!-- Header -->
+<!--  card -->
 <header class="flex justify-between items-center p-4 bg-[#0F1F26] shadow-md text-cyan-100">
   <h2 class="text-lg md:text-xl font-bold">
     {{ selectedPhrases() === '' ? '📚 Pick a list →' : 'Currently studying: ' + selectedPhrases() }}
@@ -8,54 +8,18 @@
     {{ sideBar ? '✖ Close' : '☰ Menu' }}
   </button>
 </header>
+<!-- side model -->
+<app-s-model 
+  [sideBar]="sideBar"
+  [m1]="m1"
+  [phraseCourse]="phraseCourse"
+  [phrasePopular]="phrasePopular"
+  [phraseStory]="phraseStory"
+  [selectedPhrases]="selectedPhrases"
+  (closeModal)="close()"
+  (selectPhrase)="getSpecificPhrases($event)">
+</app-s-model>
 
-<!-- Sidebar Modal -->
-<div *ngIf="sideBar" class="modal-backdrop fixed inset-0 z-40 flex items-center justify-center animate-fade-in">
-  <div class="modal-panel open w-[90%] max-w-lg p-6 space-y-6">
-    <div class="text-right">
-      <button (click)="close()" class="button bg-cyan-800 hover:bg-cyan-700 px-3 py-1 rounded text-sm">✖ Close</button>
-    </div>
-
-    <!-- Lists Section -->
-    <div *ngIf="m1==='course'" class="overflow-y-auto max-h-80">
-      <h2 class="text-xl font-bold mb-2">{{selectedPhrases()===''?'pick a phrase': 'selected: ' + selectedPhrases()}}</h2>
-      <div class="flex flex-col gap-2">
-        <button *ngFor="let item of phraseCourse" 
-                (click)="getSpecificPhrases(item.s)"
-                [ngClass]="item.isDone ? 'bg-blue-600' : 'bg-cyan-700'"
-                class="button px-3 py-2 rounded text-white hover:bg-cyan-600 transition">
-          {{ item.s }}
-        </button>
-      </div>
-    </div>
-
-    <!-- Popular Section -->
-    <div *ngIf="m1==='popular'" class="overflow-y-auto max-h-80">
-      <h2 class="text-lg font-bold mt-4 mb-2 border-b border-cyan-600 pb-1">Popular/Useful</h2>
-      <div class="flex flex-col gap-2">
-        <button *ngFor="let item of phrasePopular"
-                (click)="getSpecificPhrases(item.s)"
-                [ngClass]="item.isDone ? 'bg-[#0f765e]' : 'bg-cyan-500'"
-                class="button px-3 py-2 rounded text-white hover:bg-cyan-400 transition">
-          {{ item.s }}
-        </button>
-      </div>
-    </div>
-
-    <!-- Story Section -->
-    <div *ngIf="m1==='story'" class="overflow-y-auto max-h-80">
-      <h2 class="text-lg font-bold mt-4 mb-2 border-b border-cyan-600 pb-1">Story</h2>
-      <div class="flex flex-col gap-2">
-        <button *ngFor="let item of phraseStory"
-                (click)="getSpecificPhrases(item.s)"
-                [ngClass]="item.isDone ? 'bg-[#0f765e]' : 'bg-cyan-500'"
-                class="button px-3 py-2 rounded text-white hover:bg-cyan-400 transition">
-          {{ item.s }}
-        </button>
-      </div>
-    </div>
-  </div>
-</div>
 
 <!-- Start Quiz Section -->
 <div *ngIf="isReadyToStart && !quizStarted" class="text-center mt-6 px-2 animate-fade-in">
@@ -74,32 +38,20 @@
       English → {{ id }}
     </button>
   </div>
-  <!--<div class="mode">
-  <h2>Card</h2>
-  <div class="description">
-    Study with interactive cards that disappear from the deck when answered correctly.
-  </div>
-  <div class="meta">
-    Card-style study for Japanese and Korean,Italian,Russian grammar, helping you retain vocabulary efficiently.
-  </div>
-  <div class="blurb">
-    Engage in learning that adapts to your recollection. Each card goes away once mastered, making every round more focused and rewarding.
-  </div>
-  <div class="tags">story + popular + course</div>
-</div>-->
+
   <div class="bg-white shadow-md mt-6 rounded-2xl p-6 mx-auto max-w-md flex flex-col  hover:shadow-lg hover:-translate-y-0.5 transition">
-  <h2 class="text-2xl font-bold text-slate-800 text-center">Card</h2>
-  <div class="text-slate-700 text-center">
-    Study with interactive cards that disappear from the deck when answered correctly.
+    <h2 class="text-2xl font-bold text-slate-800 text-center">Card</h2>
+    <div class="text-slate-700 text-center">
+      Study with interactive cards that disappear from the deck when answered correctly.
+    </div>
+    <div class="bg-slate-100 text-slate-600 p-3 rounded-lg text-center">
+      study for Japanese and Korean, Italian, Russian grammar, helping you retain vocabulary efficiently.
+    </div>
+    <div class="text-slate-800 text-center leading-relaxed">
+      Engage in  learning that adapts to your recollection. Each card fades away once correct<!--, making every round more focused and rewarding.-->
+    </div>
+    <div class="bg-slate-200 text-slate-700 text-sm rounded-full px-3 py-1 self-center">story + popular + course</div>
   </div>
-  <div class="bg-slate-100 text-slate-600 p-3 rounded-lg text-center">
-    study for Japanese and Korean, Italian, Russian grammar, helping you retain vocabulary efficiently.
-  </div>
-  <div class="text-slate-800 text-center leading-relaxed">
-    Engage in  learning that adapts to your recollection. Each card fades away once correct<!--, making every round more focused and rewarding.-->
-  </div>
-  <div class="bg-slate-200 text-slate-700 text-sm rounded-full px-3 py-1 self-center">story + popular + course</div>
-</div>
 
 </div>
 
@@ -107,44 +59,22 @@
 <div *ngIf="['Italian','Japanese','Korean','Russian','German'].includes(id) && quizStarted"
      class="text-white min-h-screen py-6 px-3 sm:px-4 animate-slide-in-right">
 
-  <!-- Top Controls -->
-  <div class="flex flex-col items-center gap-3 sm:gap-4 mb-6">
-    <button *ngIf="['kor-to-eng','jp-to-eng','itn-to-eng','rus-to-eng','fr-to-eng'].includes(directionMode)"
-            (click)="phraseOnMode()"
-            class="a-btn bg-emerald-700">{{ phraseOn ? 'Hide' : 'Show' }} Phrase</button>
-
-    <button (click)="togglePronunciation()" class="a-btn bg-emerald-700">{{ showPronunciation ? 'Hide' : 'Show' }} Pronunciation</button>
-    
-      <div
-        class="a-btn bg-indigo-500 hover:bg-indigo-600 text-white px-4 py-2 mt-2 rounded text-xs sm:text-sm shadow"
-
-        *ngIf="'course'===m1" (click)="toggleHighlight()">point</div>
-    <button *ngIf="['jp-to-eng','itn-to-eng','kor-to-eng','ge-to-eng','rus-to-eng'].includes(directionMode)"
-            (click)="playAudio(directionMode === directionModeE ? currentPhrase.phrase : currentPhrase.en, directionMode === directionModeE ? lang : 'en-US')"
-            class="a-btn bg-indigo-500 hover:bg-indigo-600 text-white px-4 py-2 mt-2 rounded text-xs sm:text-sm shadow">▶ Play Audio</button>
-  
-  
-          </div>
-
-  <!-- Main Quiz Card --
-  <div class="quiz-card mx-auto max-w-xl w-full text-center">
-    <span *ngIf="phraseOn" class="text-xl sm:text-2xl font-bold text-blue-300 break-words"  [innerHTML]="formatPhrase(getQuestion()+'')" ></span>
-  
-      <p *ngIf="showPronunciation && directionMode === directionModeE" class="text-sm text-gray-300">
-        <span [innerHTML]="formatPhrase(currentPhrase.pr + '')"></span>
-      </p>
-    <div class="mt-6 sm:mt-9">
-      <button (click)="showAnswer2=true" class="a-btn bg-emerald-200 hover:bg-emerald-700 text-emerald-700 hover:text-emerald-200 px-4 py-2 rounded shadow text-sm sm:text-base">Reveal Answer</button>
-      <p><span *ngIf="showAnswer2" class="mt-4 text-lg sm:text-xl text-cyan-400 font-semibold" [innerHTML]="formatPhrase(getAnswer()+'')"></span></p>
-      <p *ngIf="showPronunciation && directionMode===directionModeC && showAnswer2" class="text-xs sm:text-sm text-gray-400 mt-1">{{ currentPhrase.pr }}</p>
-      <button *ngIf="showAnswer2 && directionMode===directionModeC"
-              (click)="playAudio(directionMode===directionModeC? currentPhrase.phrase : currentPhrase.en, directionMode===directionModeC? lang : 'en-US')"
-              class="a-btn bg-indigo-500 hover:bg-indigo-600 text-white px-4 py-2 mt-4 rounded text-xs sm:text-sm shadow">▶ Play Audio</button>
-    </div>
-  </div>-->
+    <!-- Top Controls -->
+           
+    <app-controls
+      [showPronunciation]="showPronunciation"
+      [phraseOn]="phraseOn"
+      [showPhraseButton]="['kor-to-eng','jp-to-eng','itn-to-eng','rus-to-eng','fr-to-eng'].includes(directionMode)"
+      [showAudioButton]="['jp-to-eng','itn-to-eng','kor-to-eng','ge-to-eng','rus-to-eng'].includes(directionMode)"
+      [isCourse]="m1 === 'course'"
+      (pronunciationToggled)="togglePronunciation()"
+      (phraseToggled)="phraseOnMode()"
+      (audioPlayed)="playAudio(directionMode === directionModeE ? currentPhrase.phrase : currentPhrase.en, directionMode === directionModeE ? lang : 'en-US')"
+      (highlightToggled)="toggleHighlight()">
+    </app-controls>
 
     <!-- Main Quiz Card -->
-<div class="quiz-card mx-auto max-w-xl w-full text-center transition-transform duration-500"
+<div *ngIf="remainingPhrases().length!==0"  class="quiz-card mx-auto max-w-xl w-full text-center transition-transform duration-500"
      [ngClass]="animationClass">
 
   <span *ngIf="phraseOn"
@@ -170,24 +100,28 @@
 
     <p *ngIf="showPronunciation && directionMode===directionModeC && showAnswer2"
        class="text-xs sm:text-sm text-gray-400 mt-1">{{ currentPhrase.pr }}</p>
-  </div>
+    <button *ngIf="showAnswer2 && directionMode===directionModeC"
+            (click)="playAudio(directionMode===directionModeC? currentPhrase.phrase : currentPhrase.en, directionMode===directionModeC? lang : 'en-US')"
+            class="a-btn bg-indigo-500 hover:bg-indigo-600 text-white px-4 py-2 mt-4 rounded text-xs sm:text-sm shadow">
+      ▶ Play Audio
+    </button>
+    </div>
 </div>
 
     <div *ngIf="remainingPhrases().length===0">
       <app-again
-        
-        [correctCount]="6"
-        [wrongCount]="6"
-        [type]="'card'"
+        [select]="m"
+        [type]="id"
         [userResults]="userResults"
-        (again)="again()"
+        [correctCount]="0"
+        [wrongCount]="0"
+
+        (again)="startQuiz()"
         (retry)="toggleSidebar()">
       </app-again>
 
     </div>
-    <!-- NEXT / PROGRESS -->
-     
-    <!-- Navigation -->
+    <!-- PROGRESS -->
      
       <div class="mt-5 sm:mt-6">
         <div class="w-full bg-gray-300 rounded-full h-3 overflow-hidden">

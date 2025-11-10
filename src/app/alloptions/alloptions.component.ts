@@ -18,7 +18,7 @@ export class AlloptionsComponent {
 
       {"s":"Study Cards","des":"Allows to individually study phrases and words to understand meaning also","m":'story + popular + course'}, 
 
-      {"s":"Multi","des":"Study with multiple choice questions","m":'story + popular + course'}, 
+      {"s":"Multi","des":"Study with selection choice questions","m":'story + popular + course'}, 
   
       {"s":"Type","des":"Study by typing in your answers, each card disappear when you are right","m":'story + popular + course'}, 
   
@@ -130,5 +130,10 @@ export class AlloptionsComponent {
     return item.m?.includes(this.m);
   });
 } 
+expandedIndex: number | null = null;
+
+toggleExpand(index: number) {
+  this.expandedIndex = this.expandedIndex === index ? null : index;
+}
 
 } 

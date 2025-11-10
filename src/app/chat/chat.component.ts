@@ -778,7 +778,7 @@ createDialog() {
     return { jp: 'ja-JP', ge: 'de-DE', itn: 'it-IT',ko:'ko-KR',ru:'ru-RU' }[this.language] || 'en-US';
   }
 
-  setMode(mode: 'type' | 'speech' | 'practice') {
+  setMode(mode:any) {
     this.inputMode = mode;
     this.chatHistory = [];
     this.index = 0;

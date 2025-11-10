@@ -1,4 +1,4 @@
-import { Component, inject, Input, signal } from '@angular/core';
+import { Component, ElementRef, inject, Input, signal, ViewChild } from '@angular/core';
 import { AllphrasesService } from '../allphrases.service';
 import { ActivatedRoute, ParamMap } from '@angular/router';
 import { Router } from '@angular/router';
@@ -10,7 +10,7 @@ import { AuthenticationUser } from '../emitters/emittters';
 type PhraseCourse = {
   category: string;
   lessons: [{phrase: string, pr: string, en: string},];
-};
+}; 
 export interface UnifiedPhrase { 
   phrase: string;
   pr: string;
@@ -60,10 +60,10 @@ export class AllComponent{
   allListJapaneseStory//= this.phraseName.allListJapaneseStory
   korean = [
   { category: "course1", lessons: [
+      { phrase: "쯤 (jjeum)", pr: "jjeum", en: "about, approximately" },
       { phrase: "에서 (eseo)", pr: "eseo", en: "at, in (location of action)" },
       { phrase: "에서 (eseo)", pr: "eseo", en: "from" },
       { phrase: "하지만 / 그러나 (hajiman / geureona)", pr: "hajiman / geureona", en: "but, however" },
-      { phrase: "쯤 (jjeum)", pr: "jjeum", en: "about, approximately" },
       { phrase: "아직 (ajik)", pr: "ajik", en: "still, not yet" },
       { phrase: "까지 (kkaji)", pr: "kkaji", en: "until, till, to" },
       { phrase: "이제부터 (ijebuteo)", pr: "ijebuteo", en: "from now, soon" }
@@ -127,7 +127,7 @@ export class AllComponent{
       { phrase: "보다 ~ 더 (boda ~ deo)", pr: "boda ~ deo", en: "is more ~ than" }
   ]},
 
-  { category: "part8", lessons: [
+  { category: "course7", lessons: [
       { phrase: "…는 것 (neun geot)", pr: "neun geot", en: "the act of ... / doing ..." },
       { phrase: "…니까 (nikka)", pr: "nikka", en: "because of, since" },
       { phrase: "…는 걸 잘하다 (neun geol jalhada)", pr: "neun geol jalhada", en: "to be good at doing" },
@@ -909,6 +909,14 @@ saveCompleted() {
   aPhrase(s: string, i: number, name: string) {
     this.selectedIndex = i;
     this.selectedType = name;
+    
+
+    if (name === 'c') {
+      // find matching TOC category
+      const tocMatch = this.theCourse.find(toc => toc.category === s);
+      this.activeTocCategory = tocMatch ? tocMatch.category : null;
+      this.activeIndex = tocMatch ? this.theCourse.indexOf(tocMatch) : null;
+    }
 
 
     this.selectedPhraseNames.set(s)
@@ -1009,7 +1017,28 @@ formatPhrase(phrase: string): string {
   )
 }
 
-clear(){
-  
+
+@ViewChild('tocContainer') tocContainer!: ElementRef;
+
+activeIndex2: number | null = null;
+
+// Toggle collapse/expand
+toggleToc(index: number) {
+  this.activeIndex2 = this.activeIndex2 === index ? null : index;
 }
+
+// Scroll selected TOC into view smoothly
+scrollToToc(index: number) {
+  setTimeout(() => {
+    const tocList = this.tocContainer.nativeElement.querySelectorAll('li')[index];
+    if (tocList) {
+      tocList.scrollIntoView({ behavior: 'smooth', block: 'center' });
+    }
+  }, 100);
+}
+
+// store which TOC to show
+activeTocCategory: string | null = null;
+
+
 }

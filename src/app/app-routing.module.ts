@@ -30,7 +30,7 @@ import { NotFoundComponent } from './not-found/not-found.component';
 import { ProgressComponent } from './progress/progress.component';
 import { PrivacyPolicyComponent } from './privacy-policy/privacy-policy.component';
 import { TermsOfServiceComponent } from './terms-of-service/terms-of-service.component';
-
+import { UserphraseComponent } from './userphrase/userphrase.component';
 import { TypeofphraseComponent } from './typeofphrase/typeofphrase.component';
 const routes: Routes = [
   
@@ -51,6 +51,8 @@ const routes: Routes = [
     {path : 'language/:id', component: TypeofphraseComponent},
     {path: 'speech/:id/:m',component:ProgressComponent},
 
+
+    {path: 'own', component:UserphraseComponent},
     {path:'feedback',component:FeedbackComponent},
     {path: 'privacy-policy', component:PrivacyPolicyComponent },
     {path: 'about',component:AboutComponent},

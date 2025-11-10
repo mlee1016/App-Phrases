@@ -302,6 +302,9 @@ playSpeechForQuestion(question: any) {
     this.selectedIndex = null;
     this.selectedOption = null;
     this.answerChecked2 = false;
+    this.correctAnswers = [];
+    this.wrongAnswers = [];
+    this.userResults = []
     this.shuffleCurrentOptions();
     // this.answered.set(false)
     this.currentPhrase()
@@ -398,6 +401,8 @@ againQuiz() {
   this.selectedOption = null;
 
   this.userResults = []
+  this.correctAnswers = [];
+  this.wrongAnswers = [];
   // reshuffle options for first question
   this.shuffleCurrentOptions();
 }

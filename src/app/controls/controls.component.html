@@ -1,0 +1,32 @@
+<div class="controls-container flex flex-wrap justify-center gap-4 mb-10">
+  <button 
+    (click)="togglePronunciation()" 
+    class="control-btn bg-gradient-to-r from-cyan-500 to-blue-500">
+    <span class="material-icons align-middle mr-1">record_voice_over</span>
+    {{ showPronunciation ? 'Hide' : 'Show' }} Pronunciation
+  </button>
+
+  <button 
+    *ngIf="showPhraseButton" 
+    (click)="togglePhrase()" 
+    class="control-btn bg-gradient-to-r from-teal-500 to-green-500">
+    <span class="material-icons align-middle mr-1">translate</span>
+    {{ phraseOn ? 'Hide' : 'Show' }} Phrase
+  </button>
+
+  <button 
+    *ngIf="showAudioButton" 
+    (click)="playAudio()" 
+    class="control-btn bg-gradient-to-r from-indigo-500 to-purple-500">
+    <span class="material-icons align-middle mr-1">play_arrow</span>
+    Play Audio
+  </button>
+
+  <button 
+    *ngIf="isCourse" 
+    (click)="toggleHighlight()" 
+    class="control-btn bg-gradient-to-r from-pink-500 to-rose-500">
+    <span class="material-icons align-middle mr-1">emoji_objects</span>
+    Point
+  </button>
+</div>

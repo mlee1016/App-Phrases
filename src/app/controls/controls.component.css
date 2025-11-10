@@ -1,0 +1,32 @@
+.controls-container {
+  animation: fadeInUp 0.8s ease-out;
+}
+
+.control-btn {
+  @apply text-white font-semibold px-6 py-3 rounded-2xl shadow-md transition-all duration-300 flex items-center;
+  @apply hover:scale-105 hover:shadow-xl;
+  letter-spacing: 0.5px;
+  backdrop-filter: blur(8px);
+}
+
+.control-btn:active {
+  transform: scale(0.97);
+  filter: brightness(0.9);
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Optional glow animation for elite look */
+.control-btn:hover {
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.15),
+              0 0 20px rgba(0, 0, 0, 0.2);
+}

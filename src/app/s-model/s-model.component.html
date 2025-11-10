@@ -1,0 +1,57 @@
+<!-- 🌐 Phrase Modal Component -->
+<div *ngIf="sideBar" 
+     class="modal-backdrop fixed inset-0 z-40 flex items-center justify-center animate-fade-in bg-black/60 backdrop-blur-sm">
+
+  <div class="modal-panel open w-[90%] max-w-lg p-6 space-y-6 bg-white rounded-2xl shadow-2xl animate-scale-in">
+    
+    <!-- Close Button -->
+    <div class="text-right">
+      <button (click)="close()" class="button bg-cyan-600 hover:bg-cyan-500 text-white px-3 py-1 rounded text-sm transition">
+        ✖ Close
+      </button>
+    </div>
+
+    <!-- Header -->
+    <h2 class="text-xl font-bold text-gray-800 mb-2">
+      {{ selectedPhrases() === '' ? 'Choose a phrase' : 'Selected: ' + selectedPhrases() }}
+    </h2>
+
+    <!-- COURSE LIST -->
+    <div *ngIf="m1 === 'course'" class="overflow-y-auto max-h-80">
+      <div class="flex flex-col gap-2">
+        <button *ngFor="let item of phraseCourse"
+                (click)="getSpecificPhrases(item.s)"
+                [ngClass]="item.isDone ? 'bg-blue-600' : 'bg-cyan-500'"
+                class="button px-3 py-2 rounded-lg text-white hover:bg-cyan-400 transition font-medium">
+          {{ item.s }}
+        </button>
+      </div>
+    </div>
+
+    <!-- POPULAR -->
+    <div *ngIf="m1 === 'popular'" class="overflow-y-auto max-h-80">
+      <h2 class="section-title">Popular / Useful</h2>
+      <div class="flex flex-col gap-2">
+        <button *ngFor="let item of phrasePopular"
+                (click)="getSpecificPhrases(item.s)"
+                [ngClass]="item.isDone ? 'bg-emerald-700' : 'bg-emerald-500'"
+                class="button px-3 py-2 rounded-lg text-white hover:bg-emerald-400 transition font-medium">
+          {{ item.s }}
+        </button>
+      </div>
+    </div>
+
+    <!-- STORY -->
+    <div *ngIf="m1 === 'story'" class="overflow-y-auto max-h-80">
+      <h2 class="section-title">Story</h2>
+      <div class="flex flex-col gap-2">
+        <button *ngFor="let item of phraseStory"
+                (click)="getSpecificPhrases(item.s)"
+                [ngClass]="item.isDone ? 'bg-teal-700' : 'bg-teal-500'"
+                class="button px-3 py-2 rounded-lg text-white hover:bg-teal-400 transition font-medium">
+          {{ item.s }}
+        </button>
+      </div>
+    </div>
+  </div>
+</div>

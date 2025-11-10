@@ -769,11 +769,11 @@
     "pr": "pigonhamyeon oneureun iljjik swineun ___ joayo.",
     "en": "If you are tired, [[it’s better]] to rest early today.",
     "options": [
-      { "ko": "…는 게 좋다", "pr": "neun ge jota" },
-      { "ko": "…지 않는 게 좋다", "pr": "ji anneun ge jota" },
+      { "ko": "는 게 좋다", "pr": "neun ge jota" },
+      { "ko": "지 않는 게 좋다", "pr": "ji anneun ge jota" },
       { "ko": "제일", "pr": "jeil" }
     ],
-    "answer": [{ "ko": "…는 게 좋다", "pr": "neun ge jota" }]
+    "answer": [{ "ko": "는 게 좋다", "pr": "neun ge jota" }]
   },
   {
     "question": "Choose the correct word to complete the sentence.",
@@ -781,8 +781,8 @@
     "pr": "bame neomu neutge meokji ___ joayo.",
     "en": "[[It’s better not]] to eat too late at night.",
     "options": [
-      { "ko": "…지 않는 게 좋다", "pr": "ji anneun ge jota" },
-      { "ko": "…는 게 좋다", "pr": "neun ge jota" },
+      { "ko": "지 않는 게 좋다", "pr": "ji anneun ge jota" },
+      { "ko": "는 게 좋다", "pr": "neun ge jota" },
       { "ko": "거나", "pr": "geona" }
     ],
     "answer": [{ "ko": "지 않는 게 좋다", "pr": "ji anneun ge jota" }]
@@ -795,7 +795,7 @@
     "options": [
       { "ko": "제일", "pr": "jeil" },
       { "ko": "있다", "pr": "itda" },
-      { "ko": "…는 게 좋다", "pr": "neun ge jota" }
+      { "ko": "는 게 좋다", "pr": "neun ge jota" }
     ],
     "answer": [{ "ko": "제일", "pr": "jeil" }]
   },
@@ -806,7 +806,7 @@
     "en": "Shall we go see a movie [[or]] go shopping this weekend?",
     "options": [
       { "ko": "거나", "pr": "geona" },
-      { "ko": "제일", "pr": "jeil" },
+      { "ko": "제일", "pr": "jeil" }, 
       { "ko": "있다", "pr": "itda" }
     ],
     "answer": [{ "ko": "거나", "pr": "geona" }]
@@ -817,11 +817,11 @@
     "pr": "oneul jeonyeoge gachi yeonghwa bolkkayo___?",
     "en": "[[Shall]] we watch a movie together this evening?",
     "options": [
-      { "ko": "…까?", "pr": "kka?" },
+      { "ko": "까?", "pr": "kka?" },
       { "ko": "제일", "pr": "jeil" },
       { "ko": "거나", "pr": "geona" }
     ],
-    "answer": [{ "ko": "…까?", "pr": "kka?" }]
+    "answer": [{ "ko": "까?", "pr": "kka?" }]
   }
 ],
 
@@ -853,16 +853,16 @@
   },
   {
     "question": "Choose the correct word to complete the sentence.",
-    "ko": "지금 비가 올 ___ 같아요.",
-    "pr": "jigeum biga ol ___ gatayo.",
+    "ko": "지금 비가 ___ 같아요.",
+    "pr": "jigeum biga ___ gatayo.",
     "en": "It will probably rain now. (tense future)",
     "options": [
             { "ko": "하지만", "pr": "hajiman" }
       ,
-      { "ko": "…ㄹ/을 거예요", "pr": "geoyeyo" },
+      { "ko": "을 거예요", "pr": "geoyeyo" },
       { "ko": "이/가", "pr": "i/ga" }
     ],
-    "answer": [{ "ko": "…ㄹ/을 거예요", "pr": "geoyeyo" }]
+    "answer": [{ "ko": "을 거예요", "pr": "ol geoyeyo" }]
   },
   {
     "question": "Choose the correct word to complete the sentence.",
