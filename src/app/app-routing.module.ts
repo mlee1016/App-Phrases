@@ -52,7 +52,7 @@ const routes: Routes = [
     {path: 'speech/:id/:m',component:ProgressComponent},
 
 
-    {path: 'own', component:UserphraseComponent},
+    // {path: 'own', component:UserphraseComponent},
     {path:'feedback',component:FeedbackComponent},
     {path: 'privacy-policy', component:PrivacyPolicyComponent },
     {path: 'about',component:AboutComponent},

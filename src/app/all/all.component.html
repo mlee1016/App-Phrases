@@ -231,7 +231,8 @@
           <h3 [class.text-emerald-300]="activeIndex===i"
               [class.text-cyan-200]="activeIndex!==i"
               class="font-medium hover:text-emerald-400 transition">
-            {{ toc.category }}
+            
+            <span *ngIf="toc.category === selectedPhraseName()"> {{ toc.category }}</span>
           </h3>
 
           <ul *ngIf="activeIndex===i" class="ml-4 mt-1 list-disc list-inside space-y-1 text-cyan-200 transition-all duration-300">

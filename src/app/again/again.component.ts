@@ -10,7 +10,7 @@ import { Input, Output, EventEmitter } from '@angular/core';
   styleUrls: ['./again.component.css']
 })
 export class AgainComponent {
-  @Input() correctCount = 0;
+  @Input() correctCount = 0; 
   @Input() wrongCount = 0;
   @Input() userResults: any[] = [];
   @Input() attempt: any[] = [];

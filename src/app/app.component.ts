@@ -33,7 +33,7 @@ export class AppComponent {
   { label: 'About', icon: 'fa fa-heart', route: 'about' },
   { label: 'Feedback', icon: 'fa fa-envelope', route: 'feedback' },
 
-  { label: 'Own', icon: 'fa fa-user', route: 'own' }
+  // { label: 'Own', icon: 'fa fa-user', route: 'own' }
 
 ];
 
