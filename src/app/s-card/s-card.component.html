@@ -22,8 +22,16 @@
 
 
 <!-- Start Quiz Section -->
+
+
 <div *ngIf="isReadyToStart && !quizStarted" class="text-center mt-6 px-2 animate-fade-in">
-  <button (click)="startQuiz()" class=" bg-green-600 a-btn text-base sm:text-lg px-6 py-3 rounded shadow">
+
+  
+  <button
+    (click)="startQuiz()"
+    class="bg-gradient-to-r from-emerald-600 to-cyan-600 hover:from-emerald-500 hover:to-cyan-500 
+    text-white px-10 py-3 rounded-xl shadow-lg text-lg font-semibold transition-all duration-200 hover:scale-105"
+  >
     ▶ Start
   </button>
   <div class="flex flex-col sm:flex-row justify-center mt-6 gap-3">
@@ -73,43 +81,134 @@
       (highlightToggled)="toggleHighlight()">
     </app-controls>
 
-    <!-- Main Quiz Card -->
-<div *ngIf="remainingPhrases().length!==0"  class="quiz-card mx-auto max-w-xl w-full text-center transition-transform duration-500"
+
+    <!-- Main Quiz Card --
+  <div *ngIf="remainingPhrases().length!==0"  class="quiz-card mx-auto max-w-xl w-full text-center transition-transform duration-500"
      [ngClass]="animationClass">
 
-  <span *ngIf="phraseOn"
-        class="text-xl sm:text-2xl font-bold text-blue-300 break-words"
-        [innerHTML]="formatPhrase(getQuestion()+'')"></span>
+    <span *ngIf="phraseOn"
+          class="text-xl sm:text-2xl font-bold text-blue-300 break-words"
+          [innerHTML]="formatPhrase(getQuestion()+'')"></span>
 
-  <p *ngIf="showPronunciation && directionMode === directionModeE"
-     class="text-sm text-gray-300">
+    <p *ngIf="showPronunciation && directionMode === directionModeE"
+      class="text-sm text-gray-300">
+      <span [innerHTML]="formatPhrase(currentPhrase.pr + '')"></span>
+    </p>
+
+    <div class="mt-6 sm:mt-9">
+      <button (click)="showAnswer2=true"
+              class="a-btn bg-emerald-200 hover:bg-emerald-700 text-emerald-700 hover:text-emerald-200 px-4 py-2 rounded shadow text-sm sm:text-base">
+        Reveal Answer
+      </button>
+
+      <p>
+        <span *ngIf="showAnswer2"
+              class="mt-4 text-lg sm:text-xl text-cyan-400 font-semibold"
+              [innerHTML]="formatPhrase(getAnswer()+'')"></span>
+      </p>
+
+      <p *ngIf="showPronunciation && directionMode===directionModeC && showAnswer2"
+        class="text-xs sm:text-sm text-gray-400 mt-1">{{ currentPhrase.pr }}</p>
+      <button *ngIf="showAnswer2 && directionMode===directionModeC"
+              (click)="playAudio(directionMode===directionModeC? currentPhrase.phrase : currentPhrase.en, directionMode===directionModeC? lang : 'en-US')"
+              class="a-btn bg-indigo-500 hover:bg-indigo-600 text-white px-4 py-2 mt-4 rounded text-xs sm:text-sm shadow">
+        ▶ Play Audio
+
+
+      </button>
+    </div>
+  </div>-->
+
+
+
+  
+
+
+<div
+  *ngIf="remainingPhrases().length !== 0"
+  class="quiz-card mx-auto max-w-xl w-full text-center bg-gray-800 text-white p-6 sm:p-8 rounded-2xl shadow-2xl border-2 border-blue-500/40 animate-pulse-slow transition-transform duration-300"
+  [ngClass]="animationClass"
+>
+
+  <!-- Question -->
+  <span
+    *ngIf="phraseOn"
+    class="block text-2xl sm:text-3xl font-bold text-blue-300 tracking-wide mb-5 drop-shadow-lg"
+    [innerHTML]="formatPhrase(getQuestion()+'')"
+  ></span>
+
+  <!-- Pronunciation (if in English mode) -->
+  <p
+    *ngIf="showPronunciation && directionMode === directionModeE"
+    class="text-base sm:text-lg text-gray-300 italic mb-5"
+  >
     <span [innerHTML]="formatPhrase(currentPhrase.pr + '')"></span>
   </p>
 
-  <div class="mt-6 sm:mt-9">
-    <button (click)="showAnswer2=true"
-            class="a-btn bg-emerald-200 hover:bg-emerald-700 text-emerald-700 hover:text-emerald-200 px-4 py-2 rounded shadow text-sm sm:text-base">
+  <!-- Reveal Button -->
+  <div class="mt-4 sm:mt-6">
+    <button
+      (click)="showAnswer2 = true"
+      class="bg-blue-500 hover:bg-blue-600 active:bg-blue-700 text-white font-semibold px-6 py-2 rounded-lg shadow-lg transition-all transform hover:scale-105 focus:outline-none focus:ring-4 focus:ring-blue-400/40 text-base sm:text-lg"
+    >
       Reveal Answer
     </button>
+  </div>
 
-    <p>
-      <span *ngIf="showAnswer2"
-            class="mt-4 text-lg sm:text-xl text-cyan-400 font-semibold"
-            [innerHTML]="formatPhrase(getAnswer()+'')"></span>
+  <!-- Answer Section -->
+  <div *ngIf="showAnswer2" class="mt-6 fade-in">
+    <span
+      class="block text-xl sm:text-2xl font-semibold text-emerald-300 mb-2 tracking-wide"
+      [innerHTML]="formatPhrase(getAnswer()+'')"
+    ></span>
+
+    <p
+      *ngIf="showPronunciation && directionMode === directionModeC"
+      class="text-sm sm:text-base text-gray-400 mt-1 italic"
+    >
+      {{ currentPhrase.pr }}
     </p>
 
-    <p *ngIf="showPronunciation && directionMode===directionModeC && showAnswer2"
-       class="text-xs sm:text-sm text-gray-400 mt-1">{{ currentPhrase.pr }}</p>
-    <button *ngIf="showAnswer2 && directionMode===directionModeC"
-            (click)="playAudio(directionMode===directionModeC? currentPhrase.phrase : currentPhrase.en, directionMode===directionModeC? lang : 'en-US')"
-            class="a-btn bg-indigo-500 hover:bg-indigo-600 text-white px-4 py-2 mt-4 rounded text-xs sm:text-sm shadow">
+    <button
+      *ngIf="directionMode === directionModeC"
+      (click)="playAudio(directionMode===directionModeC ? currentPhrase.phrase : currentPhrase.en, directionMode===directionModeC ? lang : 'en-US')"
+      class="bg-indigo-600 hover:bg-indigo-700 text-white px-5 py-2 mt-4 rounded-lg text-sm sm:text-base shadow-md transition-all transform hover:scale-105 focus:outline-none focus:ring-4 focus:ring-indigo-400/40"
+    >
       ▶ Play Audio
     </button>
-    </div>
+  </div>
 </div>
 
-    <div *ngIf="remainingPhrases().length===0">
-      <app-again
+
+  <!-- Progress / Again / Next -->
+  <!-- ✅ Progress Bar -->
+<div class="mt-6 sm:mt-8 mx-auto w-full max-w-xl px-2">
+  <div class="w-full bg-gray-300 rounded-full h-3 overflow-hidden shadow-inner">
+    <div
+      class="bg-green-500 h-3 transition-all duration-500 ease-in-out"
+      [style.width.%]="(phrases().length - remainingPhrases().length) / phrases().length * 100"
+    ></div>
+  </div>
+  <p class="mt-2 text-xs sm:text-sm text-center text-green-500">
+    Progress:
+    {{ ((phrases().length - remainingPhrases().length) / phrases().length * 100) | number:'1.0-0' }}%
+  </p>
+</div>
+
+
+
+
+
+
+
+
+  
+  
+  
+  
+  
+  <div *ngIf="remainingPhrases().length===0">
+    <app-again
         [select]="m"
         [type]="id"
         [userResults]="userResults"
@@ -118,32 +217,22 @@
 
         (again)="startQuiz()"
         (retry)="toggleSidebar()">
-      </app-again>
+    </app-again>
 
-    </div>
+  </div>
     <!-- PROGRESS -->
+
+
      
-      <div class="mt-5 sm:mt-6">
-        <div class="w-full bg-gray-300 rounded-full h-3 overflow-hidden">
-          <div class="bg-green-500 h-3 progress-bar-inner"
-              [style.width.%]="(phrases().length - remainingPhrases().length) / phrases().length * 100">
-          </div>
-        </div>
-        <p class="mt-2 text-xs sm:text-sm text-green-500">
-          Progress: {{ ((phrases().length - remainingPhrases().length) / phrases().length * 100) | number:'1.0-0' }}%
-          <!-- <span *ngIf="proportionCorrect" class="ml-2">| Accuracy: {{ proportionCorrect | number:'1.0-0' }}%</span> -->
-          
-        </p>
-        
-      </div>
 
     <div class="flex flex-col justify-between items-center mt-8 max-w-xl mx-auto gap-2">
-      <div class="text-sm text-cyan-300"><p>Cards: {{ remainingPhrases().length }}</p></div>
+      <!-- <div class="text-sm text-cyan-300"><p>Cards: {{ remainingPhrases().length }}</p></div> -->
       
       <div class="flex flex-wrap justify-center gap-3">
         <button *ngIf="answered() && remainingPhrases().length!==0" (click)="next()" class="a-btn">Next</button>
         <button *ngIf="showAnswer2" (click)="again()" class="a-btn bg-red-600 hover:bg-red-700">Again</button>
         <button *ngIf="showAnswer2" (click)="correct()" class="a-btn bg-emerald-600 hover:bg-emerald-700">Correct</button>
       </div>
+      
     </div>
 </div>

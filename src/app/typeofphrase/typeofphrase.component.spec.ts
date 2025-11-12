@@ -8,7 +8,7 @@ describe('TypeofphraseComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [TypeofphraseComponent]
+      imports: [TypeofphraseComponent] 
     })
     .compileComponents();
     

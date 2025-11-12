@@ -65,7 +65,7 @@ export class SCardComponent {
   japaneseStory//:PhraseListItem[] = this.phraseNames.allListJapaneseStory ;
   phraseListPopularJapanese//:PhraseListItem[] = this.phraseNames.allListPopularJapanese;
   directionModeC :string=""
-  directionModeE:string =""
+  directionModeE:string ="" 
   id:string=""
   m:string = "s"
   m1:string=""

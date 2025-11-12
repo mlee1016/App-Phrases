@@ -464,7 +464,7 @@ result:string = ""
 getEvent(e:any){
   console.log(e)
   
-  if(e == this.shuffledAn[this.increment].en){
+  if(e == this.shuffledAn[this.increment].en){ 
     this.result = "correct"
   }else if((e == this.shuffledAn[this.increment].itn)||(e == this.shuffledAn[this.increment].ge)){
     this.result = "correct" 

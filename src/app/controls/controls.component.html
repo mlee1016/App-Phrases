@@ -1,5 +1,5 @@
 <div class="controls-container flex flex-wrap justify-center gap-4 mb-10">
-  <button 
+  <button *ngIf="select"
     (click)="togglePronunciation()" 
     class="control-btn bg-gradient-to-r from-cyan-500 to-blue-500">
     <span class="material-icons align-middle mr-1">record_voice_over</span>
@@ -7,7 +7,7 @@
   </button>
 
   <button 
-    *ngIf="showPhraseButton" 
+    *ngIf="showPhraseButton && select" 
     (click)="togglePhrase()" 
     class="control-btn bg-gradient-to-r from-teal-500 to-green-500">
     <span class="material-icons align-middle mr-1">translate</span>
@@ -28,5 +28,21 @@
     class="control-btn bg-gradient-to-r from-pink-500 to-rose-500">
     <span class="material-icons align-middle mr-1">emoji_objects</span>
     Point
+  </button>
+
+
+  <button 
+    (click)="stopAudio()" 
+    class="control-btn bg-gradient-to-r from-red-500 to-red-700">
+    <span class="material-icons align-middle mr-1">stop</span>
+    Stop Audio
+  </button>
+  
+  <button *ngIf="m1==='speech'"
+    (click)="startSpeechToText()"
+    class="bg-gradient-to-r control-btn from-purple-600 to-indigo-600"
+  >
+    <span class="material-icons align-middle mr-1">mic</span>
+    {{ listening ? ' Listening...' : ' Pronounce' }}
   </button>
 </div>

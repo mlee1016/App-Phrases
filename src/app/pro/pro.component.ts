@@ -7,7 +7,7 @@ import { RouterLink } from '@angular/router';
 @Component({
   selector: 'app-pro',
   templateUrl: './pro.component.html',
-  styleUrl: './pro.component.css'
+  styleUrl: './pro.component.css' 
 })
 export class ProComponent {
   // user = signal<any>('')

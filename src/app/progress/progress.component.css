@@ -91,3 +91,19 @@
 .animate-pulseSlow {
   animation: pulseSlow 4s ease-in-out infinite;
 } */
+
+
+
+
+
+.control-btn {
+  @apply text-white font-semibold px-6 py-3 rounded-2xl shadow-md transition-all duration-300 flex items-center;
+  @apply hover:scale-105 hover:shadow-xl;
+  letter-spacing: 0.5px;
+  backdrop-filter: blur(8px);
+}
+
+.control-btn:active {
+  transform: scale(0.97);
+  filter: brightness(0.9);
+}

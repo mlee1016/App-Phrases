@@ -12,7 +12,7 @@ export class TypeofphraseComponent {
   constructor(private activateRoute:ActivatedRoute) {
     this.id = ""
    }
-  ngOnInit(): void {
+  ngOnInit(): void { 
     //Called after the constructor, initializing input properties, and the first call to ngOnChanges.
     //Add 'implements OnInit' to the class.
     

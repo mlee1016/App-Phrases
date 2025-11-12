@@ -155,9 +155,14 @@
   <!-- ========== START SECTION ========== -->
   <div *ngIf="isReadyToStart && !quizStarted" class="text-center space-y-8 animate-fade-in">
     <h1 class="text-3xl sm:text-4xl font-bold text-cyan-200">{{ id }} : Type</h1>
-    <button (click)="startQuiz()" class="btn-primary">
-      ▶ Start 
-    </button>
+    
+  <button
+    (click)="startQuiz()"
+    class="bg-gradient-to-r from-emerald-600 to-cyan-600 hover:from-emerald-500 hover:to-cyan-500 
+    text-white px-10 py-3 rounded-xl shadow-lg text-lg font-semibold transition-all duration-200 hover:scale-105"
+  >
+    ▶ Start
+  </button>
 
     <!-- Direction Toggle -->
     <div class="flex flex-col sm:flex-row justify-center gap-4 mt-6">
@@ -321,7 +326,7 @@
           
         </p>
       </div>
-      <p class="text-sm text-cyan-300">Cards left: {{ remainingPhrases().length }}</p>
+      <!-- <p class="text-sm text-cyan-300">Cards left: {{ remainingPhrases().length }}</p> -->
       <button *ngIf="answered() && remainingPhrases().length !== 0"
               (click)="next()"
               class="btn-cyan w-full sm:w-auto">

@@ -668,12 +668,19 @@ next() {
     let text2:string
 
     text2 =  text.replace(/\[\[|\]\]/g, ' ');
-    console.log(text2)
+    console.log("this is what is read: ",text2)
     const soundAudio = new SpeechSynthesisUtterance(text2);
     soundAudio.lang = lang2;
     soundAudio.rate = 0.9;    // s 
     speechSynthesis.cancel(); // stop prior if still speaking
     speechSynthesis.speak(soundAudio);
   }
+  
+  
+stopAudio() {
+  if ('speechSynthesis' in window) {
+    window.speechSynthesis.cancel();
+  }
+}
 }
 

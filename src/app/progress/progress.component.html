@@ -94,9 +94,11 @@
 
 <!-- START QUIZ -->
 <div *ngIf="isReadyToStart && !quizStarted" class="text-center mt-8 sm:mt-10 px-3">
+  
   <button
     (click)="startQuiz()"
-    class="bg-green-600 hover:bg-green-700 text-white px-6 sm:px-8 py-3 rounded-xl shadow-lg font-semibold text-base sm:text-lg transition w-full sm:w-auto"
+    class="bg-gradient-to-r from-emerald-600 to-cyan-600 hover:from-emerald-500 hover:to-cyan-500 
+    text-white px-10 py-3 rounded-xl shadow-lg text-lg font-semibold transition-all duration-200 hover:scale-105"
   >
     ▶ Start
   </button>
@@ -181,24 +183,35 @@
 <div class="flex flex-col sm:flex-row gap-4 sm:gap-6 w-full sm:w-auto justify-center">
   
 
-      <div 
+      <!--<div 
         *ngIf="'course'===m1"
             class="flex items-center justify-center gap-2 bg-cyan-600 hover:bg-cyan-700 text-white px-6 py-3 rounded-xl shadow-lg button-hover audio-btn w-full sm:w-auto"
 
         (click)="toggleHighlight()">point
     </div>
-  <button
+  <!-<button
     (click)="playAudio(formatPhrase2(getProgress()))"
     class="flex items-center justify-center gap-2 bg-cyan-600 hover:bg-cyan-700 text-white px-6 py-3 rounded-xl shadow-lg button-hover audio-btn w-full sm:w-auto"
   >
+    {{formatPhrase2(getProgress())}}
     🔊 Hear
-  </button>
-  <button
-    (click)="startSpeechToText(formatPhrase2(getProgress()))"
-    class="flex items-center justify-center gap-2 bg-indigo-600 hover:bg-indigo-700 text-white px-6 py-3 rounded-xl shadow-lg button-hover w-full sm:w-auto"
-  >
-    {{ listening ? '🎤 Listening...' : '🎙 Pronounce' }}
-  </button>
+  </button>-->
+  
+  
+  <app-controls
+    [showPhraseButton]="['kor-to-eng','jp-to-eng','itn-to-eng','rus-to-eng','fr-to-eng'].includes(directionMode)"
+    [showAudioButton]="['jp-to-eng','itn-to-eng','kor-to-eng','ge-to-eng','rus-to-eng'].includes(directionMode)"
+    [isCourse]="'course'===m1"
+    (audioPlayed)="playAudio(directionMode === directionModeE ? currentPhrase.phrase : currentPhrase.en, directionMode === directionModeE ? lang : 'en-US')"
+    (highlightToggled)="toggleHighlight()"
+    [select]="false"
+    
+    [m1]="'speech'"
+    [listening]="listening"
+    (SpeechtoText)="startSpeechToText(formatPhrase2(getProgress()))">
+
+    
+    </app-controls>
 </div>
 
 <!-- Feedback Section -->

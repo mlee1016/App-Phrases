@@ -168,14 +168,18 @@
 
   <!-- ▶ Start Button Section -->
   <div *ngIf="isReadyToStart && !quizStarted" class="text-center space-y-4 animate-popIn">
-    <button (click)="startQuiz()"
-            class="bg-green-600 hover:bg-green-700 active:scale-95 text-white px-8 py-3 rounded-2xl shadow-lg transition-transform duration-200">
-      ▶ Start 
-    </button>
+    
+  <button
+    (click)="startQuiz()"
+    class="bg-gradient-to-r from-emerald-600 to-cyan-600 hover:from-emerald-500 hover:to-cyan-500 
+    text-white px-10 py-3 rounded-xl shadow-lg text-lg font-semibold transition-all duration-200 hover:scale-105"
+  >
+    ▶ Start
+  </button>
     <div>
       <button (click)="toggleDirection()" 
               class="bg-blue-600 hover:bg-blue-700 active:scale-95 text-white px-4 py-2 rounded-md mt-2 transition-all duration-200">
-        ({{ direction === direction1 ? id + ' → English' : 'English → ' + id }})
+        {{ direction === direction1 ? id + ' → English' : 'English → ' + id }}
       </button>
     </div>
     <div class="bg-white shadow-md rounded-2xl p-6 mx-auto max-w-md flex flex-col gap-4 hover:shadow-lg hover:-translate-y-0.5 transition">
@@ -199,7 +203,7 @@
        class="w-full max-w-xl bg-gray-900 p-6 rounded-2xl mt-6 shadow-lg overflow-y-auto animate-fadeInUp">
 
     <!-- 🎧 Control Buttons -->
-    <div class="flex justify-center space-x-2 mb-4">
+    <div class="flex justify-center space-x-2 mb-4"><!--
       <button (click)="romanitization()" 
               class="bg-indigo-600 hover:bg-indigo-700 active:scale-95 px-4 py-2 rounded text-sm transition-transform duration-200">
         Pronunciation
@@ -208,13 +212,24 @@
               (click)="playAudio(direction1 === direction ? phrases()[currentIndex].phrase : phrases()[currentIndex].en, direction1 === direction ? lang : 'en-US')"
               class="bg-cyan-500 hover:bg-cyan-600 active:scale-95 px-3 py-2 rounded text-sm transition-transform duration-200">
         🔊 Play
-      </button>
+      </button>-
 
       <div 
         *ngIf="'course'===m1"
         class="bg-cyan-500 hover:bg-cyan-600 active:scale-95 px-3 py-2 rounded text-sm transition-transform duration-200"
         (click)="highlight()">point 
-    </div>
+      </div>-->
+    
+      
+      <app-controls
+        [showAudioButton]="['jp-to-en','itn-to-en','ko-to-en','ge-to-en','rus-to-en'].includes(direction)"
+        [isCourse]="m1 === 'course'"
+        (pronunciationToggled)="romanitization()"
+        (audioPlayed)="playAudio(direction1 === direction ? phrases()[currentIndex].phrase : phrases()[currentIndex].en, direction1 === direction ? lang : 'en-US')"
+        (highlightToggled)="highlight()"
+        [showPronunciation]="pr"
+        [m1]="m1">
+      </app-controls>
     </div>
 
     <!-- 📝 Question Area -->
