@@ -79,12 +79,12 @@ export class PhrasenameService {
   ];
   allPopularPhrases:PhraseListItem[]=[
     
-    { s: "1-50", isDone: false},
-    { s: "51-100", isDone: false},
+    { s: "1-50 useful", isDone: false},
+    { s: "51-100 useful", isDone: false},
     { s: "popular phrases 1", isDone:false},
     { s: "popular phrases 2", isDone:false},
     { s: "phrases1", isDone:false},
-    { s: "phrase2", isDone:false},
+    { s: "phrases2", isDone:false},
     // { s: "pronounce", isDone:false},
     { s: "phrases3", isDone:false},
     { s: "phrases4", isDone:false},

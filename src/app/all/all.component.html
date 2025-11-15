@@ -71,19 +71,10 @@
   <div class="grid grid-cols-1 md:grid-cols-3 h-[380px] divide-x divide-gray-800 animate-fadeIn">
     
 
-    <!-- Course -->
-    <div class="section p-5 overflow-y-auto">
-      <h2 class="section-title text-green-400 mb-4">🎓 Course</h2>
-      <ul class="space-y-2">
-        <li *ngFor="let course of allCourse; let i = index"
-            class="list-item text-green-200 hover:text-green-300"
-            [ngClass]="{'active-item': course.isDone}"
-            (click)="aPhrase(course.s, i, 'c')">
-          {{ course.s }}
-        </li>
-      </ul>
-    </div>
 
+    <!-- Popular -->
+
+    
     <!-- Popular Phrases -->
     <div class="section p-5 overflow-y-auto">
       <h2 class="section-title text-blue-400 mb-4">💬 Popular Phrases</h2>
@@ -93,6 +84,20 @@
             [ngClass]="{'active-item': pop.isDone}"
             (click)="aPhrase(pop.s, i, 'p')">
           {{ pop.s }}
+        </li>
+      </ul>
+    </div>
+
+
+    <!-- Course -->
+    <div class="section p-5 overflow-y-auto">
+      <h2 class="section-title text-green-400 mb-4">🎓 Course</h2>
+      <ul class="space-y-2">
+        <li *ngFor="let course of allCourse; let i = index"
+            class="list-item text-green-200 hover:text-green-300"
+            [ngClass]="{'active-item': course.isDone}"
+            (click)="aPhrase(course.s, i, 'c')">
+          {{ course.s }}
         </li>
       </ul>
     </div>

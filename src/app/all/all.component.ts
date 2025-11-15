@@ -48,6 +48,7 @@ export class AllComponent{
   
   allListRussiangrammer// = this.phraseName.allListRussiangrammer
   allListRussianStory //= this.phraseName.allListRussianStory;
+
   allListItaliangrammer//= this.phraseName.allListItaliangrammer
   allListItalianStory//= this.phraseName.allListItalianStory
   name = signal<string>('')
@@ -412,6 +413,9 @@ export class AllComponent{
   status = ''
   a_load: boolean;
   check = signal<any>('');
+  allRussianPopularPhrases: any;
+  allItalianPopularPhrases: import("c:/Users/Owner/.quokka/interactive-examples/JavaScript/array/AppPhrases/src/app/shared/phrasename.service").PhraseListItem[];
+  allJapanesePopularPhrases: import("c:/Users/Owner/.quokka/interactive-examples/JavaScript/array/AppPhrases/src/app/shared/phrasename.service").PhraseListItem[];
   //phrase_ind = signal<PhraseIndex>({name:'',ind:0}) un-comment\\\\\\\\\\\\\\\\\\\\\\\\\
   constructor(private phrasesService: AllphrasesService,private http:HttpClient,private formbuilder:FormBuilder
     
@@ -583,19 +587,33 @@ export class AllComponent{
     else{
 
       
-          
+      switch(this.id) {
+      case 'Korean':   
       this.allListgrammer= this.phraseName.allListgrammer
       this.allPopular = this.phraseName.allPopularPhrases
       this.allListStory = this.phraseName.allListStory
+        break
+      case 'Russian':
       this.allListRussiangrammer = this.phraseName.allListRussiangrammer
       this.allListRussianStory = this.phraseName.allListRussianStory;
+      this.allPopular = this.phraseName.allPopularRussianPhrases;
+        break
+      case 'Italian' :
       this.allListItaliangrammer= this.phraseName.allListItaliangrammer
       this.allListItalianStory= this.phraseName.allListItalianStory
+      this.allPopular = this.phraseName.allPopularItalianPhrases;
+
+        break
+      case 'German':
       this.allListGermangrammer  = this.phraseName.allListGermangrammer
       this.allListGermanStory = [{"s":"conversation",isDone:false},{"s":"askingDirections",isDone:false},{"s":"germanQuestionsForLearners",isDone:false},{"s":"germanQuestionsForLearners2",isDone:false},{"s":"germanQuestionsForLearners3",isDone:false},{"s":"germanQuestionsForLearners4",isDone:false},{"s":"germanQuestionsForLearners5",isDone:false}]
-      this.allListJapanesegrammer= this.phraseName.allListJapanesegrammer
-      this.allListJapaneseStory= this.phraseName.allListJapaneseStory
-            
+        break
+      case'Japanese': 
+        this.allListJapanesegrammer= this.phraseName.allListJapanesegrammer
+        this.allListJapaneseStory= this.phraseName.allListJapaneseStory
+        this.allPopular = this.phraseName.allPopularJapanesePhrases;
+      break
+      }
     }
 
     

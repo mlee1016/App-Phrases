@@ -233,20 +233,8 @@
 
 
 
-  <app-controls
-    [showPronunciation]="showPronunciation"
-    [phraseOn]="phraseOn"
-    [showPhraseButton]="['kor-to-eng','jp-to-eng','itn-to-eng','rus-to-eng','fr-to-eng'].includes(directionMode)"
-    [showAudioButton]="['jp-to-eng','itn-to-eng','kor-to-eng','ge-to-eng','rus-to-eng'].includes(directionMode)"
-    [isCourse]="m1 === 'course'"
-    (pronunciationToggled)="togglePronunciation()"
-    (phraseToggled)="phraseOnMode()"
-    (audioPlayed)="playAudio(directionMode === directionModeE ? currentPhrase.phrase : currentPhrase.en, directionMode === directionModeE ? lang : 'en-US')"
-    (highlightToggled)="toggleHighlight()">
-  </app-controls>
-
     <!-- QUIZ CARD -->
-    <div *ngIf="remainingPhrases().length!==0" class="bg-gray-800/80 rounded-2xl shadow-xl p-6 sm:p-8 text-center">
+    <div *ngIf="remainingPhrases().length!==0" class="bg-gray-800/80 rounded-2xl shadow-xl p-6 sm:p-8 text-center mb-3">
       <p *ngIf="phraseOn" class="text-2xl sm:text-3xl font-bold text-blue-300 mb-2">
         <span [innerHTML]="formatPhrase(getQuestion() +'')"></span>
       </p>
@@ -302,8 +290,7 @@
         </div>
       </div>
     </div>
-    
-
+    <!-- End of Quiz Card -->
     <div *ngIf="remainingPhrases().length===0">
       <app-again
         [select]="'type'"
@@ -311,6 +298,19 @@
         (retry)="reset()"
       ></app-again> 
     </div>
+    <!-- Controls -->
+  <app-controls class="mt-2 sm:mt-1 "
+    [showPronunciation]="showPronunciation"
+    [phraseOn]="phraseOn"
+    [showPhraseButton]="['kor-to-eng','jp-to-eng','itn-to-eng','rus-to-eng','fr-to-eng'].includes(directionMode)"
+    [showAudioButton]="['jp-to-eng','itn-to-eng','kor-to-eng','ge-to-eng','rus-to-eng'].includes(directionMode)"
+    [isCourse]="m1 === 'course'"
+    (pronunciationToggled)="togglePronunciation()"
+    (phraseToggled)="phraseOnMode()"
+    (audioPlayed)="playAudio(directionMode === directionModeE ? currentPhrase.phrase : currentPhrase.en, directionMode === directionModeE ? lang : 'en-US')"
+    (highlightToggled)="toggleHighlight()">
+  </app-controls>
+
     <!-- NEXT / PROGRESS -->
     <div class="text-center mt-8 space-y-3">
           

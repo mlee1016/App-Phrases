@@ -833,7 +833,8 @@ hint1 = false
     const phrase = this.chatData[this.index]?.[currentTurn];
     if (!phrase) return;
 
-    const expected = this.showPronunciation ? phrase?.pr.trim() : phrase.phrase?.trim();
+    // const expected = this.showPronunciation ? phrase?.pr.trim() : phrase.phrase?.trim();
+    const expected = phrase?.phrase?.trim();
     const userAnswer = this.userInput.trim();
     const isCorrect = expected?.toLowerCase() === userAnswer.toLowerCase();
 
@@ -1005,6 +1006,8 @@ playSpeech(input: string | { text: string; pr?: string}) {
     // ✅ Use kana only for jp, use text otherwise
     textToSpeak = (this.language === 'jp' && input.pr) ? input.pr : input.text;
   }
+  console.log("speaking:",textToSpeak)
+
 
   const soundP = new SpeechSynthesisUtterance(textToSpeak);
   soundP.lang = lang;

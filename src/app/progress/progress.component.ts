@@ -178,7 +178,7 @@ import { ParamMap } from '@angular/router';
         case 'Korean':
           this.phraseStory = this.allPhrase;
           this.phraseCourse = this.phrasesList;
-          console.log(this.phraseStory)
+          // console.log(this.phraseStory)
           this.directionMode = 'kor-to-eng';
           this.directionModeE = 'kor-to-eng';
           this.directionModeC = 'eng-to-kor';
@@ -607,7 +607,7 @@ formatPhrase2(phrase:string):string{
     
   }
   
-  getSpecificPhrases(p:string){
+  getSpecificPhrases(p:string){      
     switch(this.id){
       case 'Korean':
       this.inputh.set(p);

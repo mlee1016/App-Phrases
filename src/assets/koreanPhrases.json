@@ -4358,7 +4358,7 @@
       "type": "story"
     }
   ],
-  "1-50": [
+  "1-50 useful": [
     {
       "phrase": "안녕하세요",
       "pr": "annyeonghaseyo",
@@ -5925,7 +5925,7 @@
     "pr": "Yeongsujeungeul batgo gabange neoeosseoyo.",
     "en": "I received the receipt and put it in the bag."
   }
-],"51-100":[
+],"51-100 useful":[
   { "phrase": "죄송합니다.", "pr": "joe-song-ham-ni-da", "en": "I’m sorry." },
   { "phrase": "괜찮아요.", "pr": "gwaen-chan-a-yo", "en": "It’s okay." },
   { "phrase": "정말요?", "pr": "jeong-mal-yo?", "en": "Really?" },
@@ -6494,7 +6494,7 @@
   {"phrase":"목말라요.","pr":"mok-mal-la-yo","en":"I’m thirsty.","des":"State you are thirsty."},
   {"phrase":"사랑해요.","pr":"sa-rang-hae-yo","en":"I love you.","des":"Express love politely."}
 ]
-,"phrase2":[
+,"phrases2":[
   { "phrase": "오늘 날씨 어때요?", "pr": "oneul nalssi eo-ttae-yo?", "en": "How’s the weather today?", "des": "Asking about the weather." },
   { "phrase": "오늘 뭐 했어요?", "pr": "oneul mwo hae-sseo-yo?", "en": "What did you do today?", "des": "Casual daily conversation starter." },
   { "phrase": "주말 잘 보냈어요?", "pr": "jumal jal bo-naet-seo-yo?", "en": "Did you have a good weekend?", "des": "Polite way to ask about someone’s weekend." },
@@ -8046,10 +8046,10 @@
       { "phrase": "회의가 끝나[[고]] 나서 점심 먹어요.", "pr": "hoeui-ga kkeutna[[go naseo]] jeomsim meogeoyo", "en": "We have lunch [[after]] the meeting.", "des": "Event order." },
       { "phrase": "운동하[[고 나서]] 샤워했어요.", "pr": "undongha[[go naseo]] syawohaesseoyo", "en": "I showered [[after]] exercising.", "des": "Past action sequence." }
     ,
-      { "phrase": "여기서 담배를 피우면 안 돼요.", "pr": "yeogiseo dambae-reul piumyeon an dwaeyo", "en": "You must not smoke here.", "des": "Prohibition." },
-      { "phrase": "늦으면 안 돼요.", "pr": "neujeumyeon an dwaeyo", "en": "You must not be late.", "des": "Strict rule." },
-      { "phrase": "시험 전에 핸드폰을 사용하면 안 돼요.", "pr": "siheom jeone haendeupon-eul sayonghamyeon an dwaeyo", "en": "You may not use your phone before the exam.", "des": "Rule or restriction." },
-      { "phrase": "회의 중에는 떠나면 안 돼요.", "pr": "hoeui jung-eneun tteonamyeon an dwaeyo", "en": "You must not leave during the meeting.", "des": "Behavior restriction." }
+      { "phrase": "여기서 담배를 피우면 [[안 돼요]].", "pr": "yeogiseo dambae-reul piumyeon [[an dwaeyo]]", "en": "You must not smoke here.", "des": "Prohibition." },
+      { "phrase": "늦으면 [[안 돼요]].", "pr": "neujeumyeon [[an dwaeyo]]", "en": "You must not be late.", "des": "Strict rule." },
+      { "phrase": "시험 전에 핸드폰을 사용하면 [[안 돼요]].", "pr": "siheom jeone haendeupon-eul sayonghamyeon [[an dwaeyo]]", "en": "You may not use your phone before the exam.", "des": "Rule or restriction." },
+      { "phrase": "회의 중에는 떠나면 [[안 돼요]].", "pr": "hoeui jung-eneun tteonamyeon [[an dwaeyo]]", "en": "You must not leave during the meeting.", "des": "Behavior restriction." }
     ,
       { "phrase": "친구하고 영화를 봤어요.", "pr": "chingu-hago yeonghwa-reul bwasseoyo", "en": "I watched a movie with a friend.", "des": "Connecting nouns with 'and/with'." },
       { "phrase": "책하고 노트가 필요해요.", "pr": "chaek-hago noteu-ga pil-yohaeyo", "en": "I need a book and a notebook.", "des": "Listing multiple items." },
@@ -8061,10 +8061,10 @@
       { "phrase": "친구를 만나러 갈 작정이에요.", "pr": "chingu-reul mannareo gal jakjeong-ieyo", "en": "I intend to meet my friend.", "des": "Shows future intention." },
       { "phrase": "내일 쇼핑을 할 작정이에요.", "pr": "naeil syoping-eul hal jakjeong-ieyo", "en": "I plan to go shopping tomorrow.", "des": "Polite expression of plan." }
     ,
-      { "phrase": "사과나 배를 먹고 싶어요.", "pr": "sagwa-na bae-reul meokgo sipeoyo", "en": "I want to eat apples or pears.", "des": "Listing options." },
-      { "phrase": "책이나 노트를 가져가세요.", "pr": "chaek-ina noteu-reul gajyeogaseyo", "en": "Take a book or notebook.", "des": "Providing choices politely." },
-      { "phrase": "커피나 차를 드시겠어요?", "pr": "keopi-na cha-reul deusigesseoyo?", "en": "Would you like coffee or tea?", "des": "Polite offer with options." },
-      { "phrase": "저나 친구가 갈 거예요.", "pr": "jeo-na chingu-ga gal geoyeyo", "en": "Either I or my friend will go.", "des": "Listing participants politely." }
+      { "phrase": "사과[[나]] 배를 먹고 싶어요.", "pr": "sagwa-[[na]] bae-reul meokgo sipeoyo", "en": "I want to eat apples [[or]] pears.", "des": "Listing options." },
+      { "phrase": "책이[[나]] 노트를 가져가세요.", "pr": "chaek-i[[na]] noteu-reul gajyeogaseyo", "en": "Take a book [[or]] notebook.", "des": "Providing choices politely." },
+      { "phrase": "커피[[나]] 차를 드시겠어요?", "pr": "keopi-[[na]] cha-reul deusigesseoyo?", "en": "Would you like coffee or tea?", "des": "Polite offer with options." },
+      { "phrase": "저[[나]] 친구가 갈 거예요.", "pr": "jeo-[[na]] chingu-ga gal geoyeyo", "en": "Either I or my friend will go.", "des": "Listing participants politely." }
     ,
       { "phrase": "이 책이 저 책보다 더 재미있어요.", "pr": "i chaek-i jeo chaek-boda deo jaemiisseoyo", "en": "This book is more interesting than that book.", "des": "Comparative structure." },
       { "phrase": "오늘 날씨가 어제보다 더 좋아요.", "pr": "oneul nalssi-ga eoje-boda deo joayo", "en": "Today’s weather is better than yesterday’s.", "des": "Comparison of states." },

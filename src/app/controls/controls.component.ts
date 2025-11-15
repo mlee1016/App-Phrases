@@ -23,6 +23,7 @@ export class ControlsComponent {
   @Output() SpeechtoText = new EventEmitter<void>();
 
   @Input() listening: boolean = false;
+showExtraControls: any;
   togglePronunciation() {
     this.pronunciationToggled.emit();
   }

@@ -391,7 +391,17 @@ startQuiz(){
   this.scores.clear()
   this.result=""
   //this.ngOnInit()
+
+  
+  
+
+  this.showResults = false;         // 👈 Controls result view
+  this.showTryAgainPopup = false;   // 👈 Controls try-again popup
+  this.correctAnswers = [];  // 👈 Store correct questions
+  this.wrongAnswers = [];    // 👈 Store wrong questions
+
   this.userResults = []
+  this.quizFinished = false
 
 }
 
@@ -457,7 +467,7 @@ again(){
 
 romanitization(){
   
-  this.pr = !this.pr
+  this.pr = !this.pr 
 }
 
 result:string = ""
@@ -716,8 +726,10 @@ tryAgain() {
   this.score = 0;
   this.correctAnswers = [];
   this.wrongAnswers = [];
-  this.shuffleQuestions();
-  this.generateOptions();
+  this.startQuiz(); // or whatever function begins the next set
+  // this.shuffleQuestions();
+  // this.generateOptions();
+
 }
 
 nextQuiz() {

@@ -30,3 +30,52 @@
   box-shadow: 0 0 10px rgba(255, 255, 255, 0.15),
               0 0 20px rgba(0, 0, 0, 0.2);
 }
+@keyframes slideDown {
+  0% {
+    opacity: 0;
+    transform: translateY(-10px) scaleY(0.9);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0) scaleY(1);
+  }
+}
+
+.animate-slideDown {
+  animation: slideDown 0.35s ease-out both;
+}
+
+/* ⚙️ Rotating Gear Animation */
+@keyframes spinGear {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.spin-gear {
+  animation: spinGear 0.6s linear;
+}
+
+/* 🌐 Language buttons */
+.lang-btn {
+  color: white;
+  font-weight: 600;
+  padding: 0.5rem 1rem;
+  border-radius: 9999px;
+  font-size: 0.875rem;
+  transition: all 0.3s ease;
+}
+
+.lang-btn:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 15px rgba(255,255,255,0.3);
+}
+
+/* 🎨 Common control button */
+.control-btn {
+  color: white;
+  font-weight: 600;
+  padding: 0.6rem 1rem;
+  border-radius: 9999px;
+  font-size: 0.875rem;
+  transition: all 0.3s ease;
+}
