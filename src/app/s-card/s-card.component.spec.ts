@@ -15,7 +15,7 @@ describe('SCardComponent', () => {
     fixture = TestBed.createComponent(SCardComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
-  });
+  }); 
  
   it('should create', () => {
     expect(component).toBeTruthy(); 

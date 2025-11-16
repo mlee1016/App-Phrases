@@ -1,7 +1,7 @@
 import { HttpClient } from '@angular/common/http';
 import { Component, Inject, Input, signal } from '@angular/core';
 import { Router } from '@angular/router'
-import { AuthenticationUser } from '../emitters/emittters';
+import { AuthenticationUser } from '../emitters/emittters'; 
 import { PhrasenameService } from '../shared/phrasename.service';
 import { RouterLink } from '@angular/router';
 @Component({

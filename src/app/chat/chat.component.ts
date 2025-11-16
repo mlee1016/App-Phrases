@@ -834,7 +834,7 @@ hint1 = false
     if (!phrase) return;
 
     // const expected = this.showPronunciation ? phrase?.pr.trim() : phrase.phrase?.trim();
-    const expected = phrase?.phrase?.trim();
+    const expected = phrase.phrase?.trim();
     const userAnswer = this.userInput.trim();
     const isCorrect = expected?.toLowerCase() === userAnswer.toLowerCase();
 
@@ -851,7 +851,7 @@ hint1 = false
       pr: phrase.pr,
       en: phrase.en
     });
-
+    // console.log("this is expected",expected)
     // 3) speak correct answer
     this.playSpeech(expected || phrase.phrase);
 
@@ -861,7 +861,7 @@ hint1 = false
 
     // 5) trigger bot after a pause
     
-    setTimeout(() => this.triggerBotResponse(), 5000);
+    setTimeout(() => this.triggerBotResponse(), 6000);
   }
 
   startSpeechToText() {

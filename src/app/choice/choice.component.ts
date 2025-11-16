@@ -5,7 +5,7 @@ import { PhrasenameService } from '../shared/phrasename.service';
 import { AuthenticationUser } from '../emitters/emittters';
 import { AgainComponent } from '../again/again.component';
 
-export interface UnifiedPhrase {
+export interface UnifiedPhrase { 
   phrase: string;
   pr: string;
   en: string;

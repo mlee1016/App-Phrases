@@ -60,7 +60,7 @@ export class SCardComponent {
   phraseListItalian2//:PhraseListItem[] = this.phraseNames.allListItalianStory;
   phraseListPopularItalian//:PhraseListItem[] = this.phraseNames.allListPopularItalian;
   phrasesListGerman//:PhraseListItem[] = [{s:'course1',isDone:false}];
-  phrasesListGerman2//:PhraseListItem[] = this.phraseNames.allListGermanStory;
+  phrasesListGerman2//:PhraseListItem[] = this.phraseNames.allListGermanStory; 
   phrasesListJapanese//:PhraseListItem[] = this.phraseNames.allListJapanesegrammer;
   japaneseStory//:PhraseListItem[] = this.phraseNames.allListJapaneseStory ;
   phraseListPopularJapanese//:PhraseListItem[] = this.phraseNames.allListPopularJapanese;

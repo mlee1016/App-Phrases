@@ -1,7 +1,7 @@
 import { Component, EventEmitter, Output ,Input} from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 @Component({
-  selector: 'app-description',
+  selector: 'app-description', 
   templateUrl: './description.component.html',
   styleUrl: './description.component.css'
 })

@@ -74,7 +74,7 @@
   transform: scale(0.98);
 }
 
-.active {
+.active { 
   background-color: rgba(0, 255, 255, 0.25);
   border-color: #00ffff;
   color: #00ffff;

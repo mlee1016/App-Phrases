@@ -414,8 +414,8 @@ export class AllComponent{
   a_load: boolean;
   check = signal<any>('');
   allRussianPopularPhrases: any;
-  allItalianPopularPhrases: import("c:/Users/Owner/.quokka/interactive-examples/JavaScript/array/AppPhrases/src/app/shared/phrasename.service").PhraseListItem[];
-  allJapanesePopularPhrases: import("c:/Users/Owner/.quokka/interactive-examples/JavaScript/array/AppPhrases/src/app/shared/phrasename.service").PhraseListItem[];
+  allItalianPopularPhrases: any;
+  allJapanesePopularPhrases: any;
   //phrase_ind = signal<PhraseIndex>({name:'',ind:0}) un-comment\\\\\\\\\\\\\\\\\\\\\\\\\
   constructor(private phrasesService: AllphrasesService,private http:HttpClient,private formbuilder:FormBuilder
     

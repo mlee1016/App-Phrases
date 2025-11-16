@@ -292,7 +292,7 @@
     </button>
   </div>
     <app-controls
-        [showAudioButton]="['jp-to-en','itn-to-en','ko-to-en','ge-to-en','ru-to-en'].includes(direction)"
+        [showAudioButton]="['jp-to-en','itn-to-en','ko-to-en','ge-to-en','ru-to-en'].includes(direction)" 
         [isCourse]="m1 === 'course'"
         (pronunciationToggled)="romanitization()"
         (audioPlayed)="playAudio(direction1 === direction ? phrases()[currentIndex].phrase : phrases()[currentIndex].en, direction1 === direction ? lang : 'en-US')"
