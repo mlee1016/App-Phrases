@@ -42681,7 +42681,7 @@
       "des": "Agreement on time passing."
     }
   ],
-  "1-50": [
+  "1-50 useful": [
     {
       "ko": [
         "안녕하세요"
@@ -63692,7 +63692,7 @@
       "des": ""
     }
   ],
-  "51-100": 
+  "51-100 useful": 
   [{
     "ko": ["죄송합니다."],
     "pr": ["joe-song-ham-ni-da"],
@@ -74247,7 +74247,7 @@
       "des": "Express love politely."
     }
   ],
-  "phrase2": [
+  "phrases2": [
     {
       "ko": [
         "오늘",

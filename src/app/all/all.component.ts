@@ -466,7 +466,7 @@ export class AllComponent{
 
   const inputMap = {
     'Korean': this.selectedPhraseNames(),
-    'Japanese': this.selectedPhraseNames(),
+    'Japanese': this.selectedPhraseNames(), 
     'Italian': this.selectedPhraseNames(),
     'German': this.selectedPhraseNames(),
     'Russian':  this.selectedPhraseNames()
