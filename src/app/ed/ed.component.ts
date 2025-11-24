@@ -64,7 +64,7 @@ export class EdComponent {
     authLoaded:any
     constructor(private http:HttpClient,public userAuth:AuthenticationUser,private formBuilder:FormBuilder,
       
-      private phraseService:PhrasenameService){
+      private phraseService:PhrasenameService){ 
   
     }
     private intervalId: any;

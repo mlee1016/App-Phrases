@@ -24,7 +24,7 @@ export class PanelComponent {
   userInput: string = '';
   answerChecked: boolean = false;
   isCorrect: boolean = false;
-
+ 
   showNextButton = false; // 🔹 controls Next button
   score = 0;              // 🔹 correct answers count
   wrongAttempts = 0;      // 🔹 track mistakes

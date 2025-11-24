@@ -12,7 +12,7 @@
   flex: 1 1 400px; /* grow and shrink, base width 400px */
   max-width: 400px;
 }
-
+ 
 /* Optional: make keyboard slightly smaller for style */
 .keyboard {
   max-width: 350px;
