@@ -1,0 +1,41 @@
+<!-- <p>timer works!</p> -->
+
+<!-- Floating Tab -->
+<div class="timer-tab" (click)="togglePanel()">
+  ⏱
+</div>
+
+<!-- Sliding Panel -->
+<div class="timer-panel" [class.open]="open">
+
+  <canvas #confettiCanvas class="confetti-canvas"></canvas>
+
+  <!-- CLOSE BUTTON (NEW) -->
+  <div class="close-btn" (click)="togglePanel()">✖</div>
+
+  <h2 class="title">⏱ StopWatch</h2>
+
+  <!-- Time Display -->
+  <div class="timer-display">
+    <div class="ring" [style.--progress]="progress + '%'"></div>
+    <div class="digits">{{ formattedTime }}</div>
+  </div>
+  <!-- Presets -->
+  <div class="preset-buttons">
+    <button *ngFor="let p of presets" (click)="selectTime(p.value)">
+      {{ p.label }}
+    </button>
+  </div>
+  <!-- Controls -->
+  <div class="controls">
+    <button class="start" (click)="start()">Start</button>
+    <button class="resume" (click)="resume()">Resume</button>
+    <button class="stop" (click)="stop()">Stop</button>
+    <button class="reset" (click)="reset()">Reset</button>
+  </div>
+  <!-- TEST TIMER --
+<div class="test-timer">
+  <button class="test-btn" (click)="testTimer()">Test 3-Sec Timer</button>
+</div>-->
+
+</div>

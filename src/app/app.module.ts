@@ -42,6 +42,7 @@ import { NotFoundComponent } from './not-found/not-found.component';
 import { AgainComponent } from "./again/again.component";
 import { ControlsComponent } from './controls/controls.component';
 import { SModelComponent } from './s-model/s-model.component';
+import { TimerComponent } from './timer/timer.component';
 // import { AresponseComponent } from './aresponse/aresponse.component';
 
 
@@ -100,6 +101,7 @@ import { SModelComponent } from './s-model/s-model.component';
     NotFoundComponent,
     ControlsComponent,
     SModelComponent,
+    TimerComponent,
     
     // AresponseComponent
   ],

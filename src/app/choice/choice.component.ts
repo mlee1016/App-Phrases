@@ -8,7 +8,7 @@ import { AgainComponent } from '../again/again.component';
 export interface UnifiedPhrase { 
   phrase: string;
   pr: string;
-  en: string;
+  en: string; 
   des?: string;
   language?: string;
   type?: string;

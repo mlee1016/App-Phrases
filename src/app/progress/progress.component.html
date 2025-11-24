@@ -13,74 +13,6 @@
     {{ sideBar ? '✖ Close' : '☰ Menu' }}
   </button>
 </header>
-<!-- BACKDROP --
-<div *ngIf="sideBar" class="fixed inset-0 bg-black bg-opacity-60 z-40 flex items-center justify-center ">
-  
-  <!-- MODAL PANEL --
-
-
-  <div class="bg-cyan-950 text-white w-[90%] max-w-lg rounded-lg shadow-xl p-6 space-y-6 z-50 animate-fade-in overflow-y-auto max-h-[80vh]">
-
-    
-    <!-- Close Button --
-    <div class="text-right">
-      <button
-        class="text-sm bg-cyan-800 hover:bg-cyan-700 text-white px-3 py-1 rounded"
-        (click)="close()"
-      >
-        ✖ Close
-      </button>
-    </div>
-    <!-- Story Section --
-    <h2  class="text-xl font-bold mb-2 ">{{selectedPhrases()===''?'pick a phrase': 'selected: ' + selectedPhrases()}}</h2>
-
-    <div *ngIf="m1==='course'" class="overflow-y-auto max-h-80">
-      
-      <h2 class="text-lg font-bold mt-4 mb-2 border-b border-cyan-600 pb-1">Lists</h2>
-      <div class="flex flex-col gap-2">
-        <button
-          *ngFor="let item of phraseCourse"
-          (click)="getSpecificPhrases(item.s)"
-          class="hover:bg-cyan-600 text-white px-3 py-2 rounded transition"
-          [ngClass]="item.isDone ? 'bg-blue-600' : 'bg-cyan-700'"
-        >
-          {{ item.s }}
-        </button>
-      </div>
-    </div>
-    <!-- Popular Section --
-    <div *ngIf="m1==='popular'" class="overflow-y-auto max-h-80">
-    
-      <h2 class="text-lg font-bold mt-4 mb-2 border-b border-cyan-600 pb-1">Popular/Useful</h2>
-      <div class="flex flex-col gap-2">
-        <button
-          *ngFor="let item of phrasePopular"
-          (click)="getSpecificPhrases(item.s)"
-          class="hover:bg-cyan-500 text-white px-3 py-2 rounded transition"
-          [ngClass]="item.isDone ? 'bg-[#0f765e]' : 'bg-cyan-500'"
-        >
-          {{ item.s }}
-        </button>
-      </div>
-    </div>
-
-    <div *ngIf="m1==='story'" class="overflow-y-auto max-h-80">
-      <h2 class="text-lg font-bold mt-4 mb-2 border-b border-cyan-600 pb-1">Story</h2>
-      <div class="flex flex-col gap-2">
-        <button
-          *ngFor="let item of phraseStory"
-          (click)="getSpecificPhrases(item.s)"
-          class="hover:bg-cyan-500 text-white px-3 py-2 rounded transition"
-          [ngClass]="item.isDone ? 'bg-[#0f765e]' : 'bg-cyan-500'"
-        >
-          {{ item.s }}
-        </button>
-      </div>
-    </div>
-
-  </div>
-</div>-->
-
 <app-s-model 
   [sideBar]="sideBar"
   [m1]="m1"
@@ -102,6 +34,22 @@
   >
     ▶ Start
   </button>
+  <div class="relative w-full max-w-xs">
+  <select
+    [(ngModel)]="pronunciationStrictness"
+    class="elite-select"
+  >
+    <option value="easy">Easy  50%</option>
+    <option value="normal">Normal 80%</option>
+    <option value="strict">Strict 100%</option>
+  </select>
+
+  <!-- iOS arrow -->
+  <span class="pointer-events-none absolute right-4 top-1/2 -translate-y-1/2 text-gray-300">
+    ▼
+  </span>
+</div>
+
   <div class="bg-white shadow-md rounded-2xl p-6 mx-auto max-w-md flex flex-col mt-6 hover:shadow-lg hover:-translate-y-0.5 transition">
   <h2 class="text-2xl font-bold text-slate-800 text-center">Speech Pronunciation</h2>
   <div class="text-slate-700 text-center">
@@ -116,6 +64,9 @@
   <div class="bg-slate-200 text-slate-700 text-sm rounded-full px-3 py-1 self-center">story + popular + course</div>
 </div>
 
+
+
+  
 </div>
 
 <!-- QUIZ IN PROGRESS -->
@@ -156,20 +107,6 @@
   ></div>
 </div>
 
-  <!-- Phrase Card --
-<div class="bg-[#0F1F26] text-white p-4 sm:p-6 rounded-2xl shadow-xl w-full max-w-2xl animate-fade-in">
-  <p class="text-lg sm:text-xl font-semibold text-center">🎯 Say this phrase:</p>
-  <p>
-  <span class="text-2xl sm:text-4xl font-bold text-cyan-400 mt-3 text-center break-words"
-    [innerHTML]="formatPhrase(getProgress())">
-  </span>
-  </p>
-  <p class="mt-4 space-y-2 text-center">
-    <span class="text-lg sm:text-2xl text-cyan-200 break-words"  [innerHTML]="formatPhrase(currentPhrase.pr)" ></span> <p>
-    <span class="text-base sm:text-lg italic text-gray-300 break-words" [innerHTML]="formatPhrase(currentPhrase.en)"></span>
-  </p>
-</div>-->
-
     <div *ngIf="remainingPhrases().length===0">
       <app-again
         [select]="'speech'"
@@ -183,20 +120,6 @@
 <div class="flex flex-col sm:flex-row gap-4 sm:gap-6 w-full sm:w-auto justify-center">
   
 
-      <!--<div 
-        *ngIf="'course'===m1"
-            class="flex items-center justify-center gap-2 bg-cyan-600 hover:bg-cyan-700 text-white px-6 py-3 rounded-xl shadow-lg button-hover audio-btn w-full sm:w-auto"
-
-        (click)="toggleHighlight()">point
-    </div>
-  <!-<button
-    (click)="playAudio(formatPhrase2(getProgress()))"
-    class="flex items-center justify-center gap-2 bg-cyan-600 hover:bg-cyan-700 text-white px-6 py-3 rounded-xl shadow-lg button-hover audio-btn w-full sm:w-auto"
-  >
-    {{formatPhrase2(getProgress())}}
-    🔊 Hear
-  </button>-->
-  
   
   <app-controls  
     [showPhraseButton]="['kor-to-eng','jp-to-eng','itn-to-eng','rus-to-eng','fr-to-eng'].includes(directionMode)"

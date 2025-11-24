@@ -140,107 +140,6 @@
       </div>
     </div>
   </div>
-  <!-- 🌟 Hero Section for Not Signed-In Users --> 
-<!-- 👤 Guest View --
-<ng-template #hero>
-  <section class="relative py-20 sm:py-24 bg-gradient-to-br from-[#020b11] via-[#03131d] to-[#04121b] overflow-hidden">
-    <!-- 🌀 Background Glow --
-    <div class="absolute inset-0">
-      <div class="absolute w-[800px] h-[800px] bg-cyan-900/20 blur-[180px] rounded-full -top-40 -left-40 animate-pulse-slow"></div>
-      <div class="absolute w-[600px] h-[600px] bg-emerald-700/20 blur-[160px] rounded-full bottom-0 right-0 animate-pulse-slow"></div>
-    </div>
-
-    <div class="relative container mx-auto px-6 text-center font-sans">
-      <!-- 🏆 Hero Title --
-      <h1 class="text-4xl sm:text-5xl md:text-6xl font-extrabold text-cyan-300 tracking-wide mb-6 animate-fadeUp">
-        Master Languages with Ease
-      </h1>
-
-      <!-- ✨ Subtitle --
-      <p (click)="clickSee()" class="text-lg sm:text-xl text-emerald-300 mb-12 animate-fadeUp delay-1">
-        Explore hundreds of practical phrases  
-        <span *ngIf="currentLang" class="text-lime-200 font-bold inline-block ml-2 animate-fadeBlink">
-          {{ currentLang }}
-        </span>
-      </p>
-
-      <!-- 🌏 Language Cards --
-      <div class="flex flex-wrap justify-center gap-6 sm:gap-8 mb-12 animate-fadeUp delay-2">
-        <div
-          *ngFor="let card of [
-            {flag:'kr',name:'Korean',native:'한국어',color:'from-cyan-700 to-cyan-600',id:1},
-            {flag:'ru',name:'Russian',native:'Русский',color:'from-blue-800 to-blue-600',id:3},
-            {flag:'it',name:'Italian',native:'Italiano',color:'from-rose-800 to-rose-600',id:2},
-            {flag:'jp',name:'Japanese',native:'日本語',color:'from-purple-900 to-purple-700',id:0}
-          ]"
-          (click)="navToSite(card.id)"
-          [ngClass]="'bg-gradient-to-tr ' + card.color"
-          class="relative shadow-lg rounded-xl p-6 w-44 sm:w-52 text-center cursor-pointer
-                 transition-transform transform hover:-translate-y-2 hover:shadow-cyan-600/30
-                 hover:scale-105 text-emerald-100 group overflow-hidden before:absolute before:inset-0
-                 before:bg-gradient-to-r before:from-transparent before:via-cyan-400/10 before:to-transparent
-                 before:translate-x-[-100%] hover:before:translate-x-[100%] before:transition-all before:duration-700"
-        >
-          <img [src]="'https://flagcdn.com/' + card.flag + '.svg'" class="mx-auto w-10 sm:w-12 mb-3" alt="{{ card.name }}">
-          <h3 class="font-semibold text-lg text-emerald-100">{{ card.name }}</h3>
-          <p class="text-sm text-emerald-300">{{ card.native }}</p>
-        </div>
-      </div>
-
-      <!-- 💬 Features Section --
-      <section class="max-w-5xl mx-auto text-center bg-gray-900/40 backdrop-blur-md rounded-2xl border border-cyan-700/30 shadow-xl p-10 animate-fadeUp delay-3">
-        <h2 class="text-3xl font-bold text-cyan-300 mb-4">What You’ll Find Here</h2>
-        <p class="text-emerald-200 mb-10">
-          Learn through <span class="text-lime-300 font-semibold">interactive practice tools</span> designed for real communication — not memorization.
-        </p>
-
-        <div class="grid sm:grid-cols-2 gap-6 text-left">
-          <div class="feature-card">
-            <p class="text-2xl mb-2">🎴</p>
-            <h3>Study Cards</h3>
-            <p>Learn phrases visually with meaning and pronunciation.</p>
-          </div>
-
-          <div class="feature-card"> 
-            <p class="text-2xl mb-2">🔊</p>
-            <h3>Audio Pronunciation</h3>
-            <p>Listen with native-like pronunciation via browser speech synthesis.</p>
-          </div>
-
-          <div class="feature-card">
-            <p class="text-2xl mb-2">✍️</p>
-            <h3>Type-in Practice</h3>
-            <p>Challenge yourself by typing translations or completing sentences.</p>
-          </div>
-
-          <div class="feature-card">
-            <p class="text-2xl mb-2">💬</p>
-            <h3>Chat Mode</h3>
-            <p>Engage in simulated dialogues to strengthen conversational skills.</p>
-          </div>
-        </div>
-      </section>
-
-      <!-- 🌐 Browser Support --
-      <div class="max-w-3xl mx-auto bg-gray-900/40 rounded-2xl border border-emerald-700/30 p-8 mt-20 animate-fadeUp delay-4">
-        <h2 class="text-2xl font-bold text-emerald-300 mb-4 text-center">Browser Notice</h2>
-        <p class="text-emerald-200 mb-4 text-left">
-          Web Speech API works best in:
-        </p>
-        <ul class="text-emerald-200 space-y-2 text-left">
-          <li>🌐 <b>Edge or Chrome:</b> Full support for voice & recognition.</li>
-          <li>🍏 <b>Safari:</b> Playback only.</li>
-          <li>🦊 <b>Firefox / Opera:</b> Partial support.</li>
-        </ul>
-        <p class="text-emerald-400 mt-4 text-sm italic">
-          Use Edge or Chrome for full experience.
-        </p>
-      </div>
-    </div>
-  </section>
-
-</ng-template>-->
-
 
   <ng-template #hero>
 <section class="relative py-24 sm:py-28 bg-[#030c14] overflow-hidden">
@@ -251,6 +150,8 @@
   </div>
 
   <div class="relative container mx-auto px-6 text-center font-sans">
+    
+
 
     <!-- 🏆 Main Title -->
     <h1 class="text-5xl sm:text-6xl md:text-7xl font-extrabold tracking-tight bg-clip-text text-transparent bg-gradient-to-r from-cyan-300 via-emerald-200 to-lime-200 mb-6 animate-fadeUp">

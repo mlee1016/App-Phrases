@@ -416,7 +416,7 @@ recognition.onresult = (event: any) => {
     // console.log(comparison)
     this.proportionCorrect = comparison.filter(c => c.correct).length / comparison.length*100;
 
-    if(this.proportionCorrect ===100){
+    /*if(this.proportionCorrect ===100){
       this.pronunciationFeedback = '✅ Perfect match!'
     }else if(this.proportionCorrect >=80){
       
@@ -427,10 +427,30 @@ recognition.onresult = (event: any) => {
 
     }else{
       this.pronunciationFeedback = `❌ nope, not close. \n Expected: "${expectedRaw}"`;
-    }
+    }*/
+    const isCorrect = this.determineCorrectness(this.proportionCorrect);
+
+// Feedback text
+if (isCorrect) {
+  if (this.proportionCorrect === 100) {
+    this.pronunciationFeedback = '✅ Perfect match!';
+  } else {
+    this.pronunciationFeedback = `✅ Good enough! (${this.proportionCorrect.toFixed(0)}%)`;
+  }
+} else {
+  if (this.proportionCorrect >= 80) {
+    this.pronunciationFeedback = `❌ So close! Expected: "${expectedRaw}"`;
+  } else if (this.proportionCorrect >= 50) {
+    this.pronunciationFeedback = `❌ Keep trying. Expected: "${expectedRaw}"`;
+  } else {
+    this.pronunciationFeedback = `❌ Not close. Expected: "${expectedRaw}"`;
+  }
+}
 
 
-    
+    this.lastResult.set(this.pronunciationFeedback);
+    this.answered.set(isCorrect);
+
     if (this.lastResult) this.lastResult.set(this.pronunciationFeedback);
     if (this.answered) this.answered.set(true);
 
@@ -447,6 +467,7 @@ recognition.onresult = (event: any) => {
       this.listening = false;
     });
   };
+
 
   recognition.onend = () => {
     this.ngZone.run(() => (this.listening = false));
@@ -600,6 +621,23 @@ formatPhrase2(phrase:string):string{
   get currentPhrase() {
     return this.remainingPhrases()[this.currentIndex()];
   }
+  pronunciationStrictness: 'easy' | 'normal' | 'strict' = 'normal';
+  determineCorrectness(scorePercent: number): boolean {
+  switch (this.pronunciationStrictness) {
+
+    case 'easy':
+      return scorePercent >= 50;   // Very forgiving
+
+    case 'normal':
+      return scorePercent >= 80;   // Your current setting
+
+    case 'strict':
+      return scorePercent === 100; // Must be perfect
+
+    default:
+      return scorePercent >= 80;
+  }
+}
 
   getProgress(): string {
 

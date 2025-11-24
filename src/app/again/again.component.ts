@@ -77,4 +77,51 @@ export class AgainComponent {
   formatPhrase(phrase: string): string {
     return phrase.replace(/\[\[|\]\]/g, '');
   }
+  animatedScore: number = 0;
+
+animateScore() {
+  const score = Math.floor((this.correctCount / (this.correctCount + this.wrongCount)) * 100);
+  let current = 0;
+
+  const interval = setInterval(() => {
+    if (current >= score) {
+      clearInterval(interval);
+    } else {
+      current++;
+      this.animatedScore = current;
+    }
+  }, 20); // smooth speed
+}
+
+// Call this inside your results show trigger
+ngAfterViewInit() {
+  this.animateScore();
+}
+
+showRain(): boolean {
+  const score = (this.correctCount / (this.correctCount + this.wrongCount)) * 100;
+  return score < 50;
+}
+
+launchConfetti() {
+  const score = (this.correctCount / (this.correctCount + this.wrongCount)) * 100;
+  if (score < 80) return;
+
+  for (let i = 0; i < 25; i++) {
+    const conf = document.createElement("div");
+    conf.classList.add("confetti");
+    conf.style.setProperty("--i", i.toString());
+    document.body.appendChild(conf);
+
+    setTimeout(() => conf.remove(), 3000);
+  }
+}
+getScoreAnimationClass() {
+  const score = (this.correctCount / (this.correctCount + this.wrongCount)) * 100;
+
+  if (score === 100) return 'animate-perfectScore';
+  if (score >= 70) return 'animate-goodScore';
+  return 'animate-lowScore';
+}
+
 }

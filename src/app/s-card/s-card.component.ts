@@ -603,7 +603,11 @@ selectPhraseList() {
   this.score.set(0);
   this.quizStarted = true
   this.answered.set(false)
+  this.showAnswer2 = false;
   this.currentPhrase()
+
+  
+
 }
 
 

@@ -44,3 +44,48 @@
   to { opacity: 1; transform: translateY(0); }
 }
 .animate-fadeUp { animation: fadeUp 1s ease-out forwards; }
+/* Fade in */
+.animate-fadeIn {
+  animation: fadeIn 0.8s ease forwards;
+}
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+/* Slide-up for CTA */
+.animate-slideUp {
+  animation: slideUp 0.8s ease forwards;
+}
+@keyframes slideUp {
+  from { opacity: 0; transform: translateY(20px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+/* Preview cards */
+.preview-card {
+  background: rgba(255,255,255,0.05);
+  border: 1px solid rgba(255,255,255,0.1);
+  backdrop-filter: blur(12px);
+  padding: 20px;
+  border-radius: 18px;
+  transition: 0.3s ease;
+  cursor: pointer;
+}
+.preview-card:hover {
+  transform: translateY(-4px) scale(1.02);
+  box-shadow: 0 0 20px rgba(0,255,200,0.15);
+  background: rgba(255,255,255,0.08);
+}
+
+.preview-title {
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: #7ee4ff;
+  margin-bottom: 6px;
+}
+
+.preview-desc {
+  color: #a8f1d6;
+  font-size: 0.95rem;
+}

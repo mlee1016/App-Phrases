@@ -31,9 +31,25 @@
 
       <div
         class="text-gray-700 dark:text-gray-300 mb-4 bg-gray-50 dark:bg-gray-800 rounded-2xl p-3 shadow-inner"
-      >
+        [ngClass]="{'immer-border': (correctCount/(correctCount+wrongCount))*100 >= 90}"
+
+        >
+
+
+
+        
+        <div *ngIf="showRain()" class="rain-container">
+          <div *ngFor="let r of [].constructor(12); let i = index"
+              class="rain-drop"
+              [style.left.%]="i * 8"
+              [style.animationDelay]="(i * 0.1) + 's'">
+          </div>
+        </div>
+
         <p>✅ <strong>{{ correctCount }}</strong> Correct</p>
         <p>❌ <strong>{{ wrongCount }}</strong> Wrong</p>
+        <p>
+          📊 Score: <strong>{{ (correctCount / (correctCount + wrongCount)) * 100 | number: '1.0-0' }}%</strong>
       </div>
 
       <!-- 🧾 Display user answers -->
@@ -111,10 +127,15 @@
       <h2 class="text-2xl font-bold text-cyan-600 dark:text-cyan-400 mt-4 mb-4">
         🎯 Results:
       </h2> 
-      <div class="text-cyan-200 mt-5 mb-4 ">correct: {{correctCount}} wrong: {{wrongCount}}
-         score: {{(correctCount/(correctCount+wrongCount))*100 | number:'1.0-0'}}%
+      <div class="text-cyan-200 mt-5 mb-4   "   
+      [ngClass]="{
+        'immer-border': (correctCount/(correctCount+wrongCount))*100 >= 90
+      }">
+        correct: {{correctCount}} wrong: {{wrongCount}}
+        score: {{(correctCount/(correctCount+wrongCount))*100 | number:'1.0-0'}}%
       
       </div>
+      
       <div *ngFor="let item of userResults" class="mb-2 p-3 rounded-xl shadow-sm"
             [ngClass]="item.correct ? 'bg-green-50 dark:bg-green-900/40 text-green-700 dark:text-green-300' : 'bg-red-50 dark:bg-red-900/40 text-red-600 dark:text-red-300'">
         <p>{{ item.phrase.phrase }} <br>{{item.phrase.pr}} <br> {{item.phrase.en}} <br> {{ item.correct ? '✔️' : '❌' }}</p>
@@ -138,5 +159,6 @@
       </button>
       </div>
     </ng-template>
+    
   </div>
 </div>

@@ -62,24 +62,10 @@
   </div>
 
 </div>
-
 <!-- Quiz Section -->
 <div *ngIf="['Italian','Japanese','Korean','Russian','German'].includes(id) && quizStarted"
      class="text-white min-h-screen py-6 px-3 sm:px-4 animate-slide-in-right">
-
-    <!-- Top Controls -->
-           
-    <app-controls
-      [showPronunciation]="showPronunciation"
-      [phraseOn]="phraseOn"
-      [showPhraseButton]="['kor-to-eng','jp-to-eng','itn-to-eng','rus-to-eng','fr-to-eng'].includes(directionMode)"
-      [showAudioButton]="['jp-to-eng','itn-to-eng','kor-to-eng','ge-to-eng','rus-to-eng'].includes(directionMode)"
-      [isCourse]="m1 === 'course'"
-      (pronunciationToggled)="togglePronunciation()"
-      (phraseToggled)="phraseOnMode()"
-      (audioPlayed)="playAudio(directionMode === directionModeE ? currentPhrase.phrase : currentPhrase.en, directionMode === directionModeE ? lang : 'en-US')"
-      (highlightToggled)="toggleHighlight()">
-    </app-controls>
+     <!-- timer button -->
 
 
     <!-- Main Quiz Card --
@@ -126,7 +112,7 @@
 
 <div
   *ngIf="remainingPhrases().length !== 0"  
-  class="quiz-card mx-auto max-w-xl w-full text-center bg-gray-800 text-white p-6 sm:p-8 rounded-2xl shadow-2xl border-2 border-blue-500/40 animate-pulse-slow transition-transform duration-300"
+  class="quiz-card mx-auto max-w-xl w-full mb-6 text-center bg-gray-800 text-white p-6 sm:p-8 rounded-2xl shadow-2xl border-2 border-blue-500/40 animate-pulse-slow transition-transform duration-300"
   [ngClass]="animationClass"
 >
 
@@ -148,7 +134,7 @@
   <!-- Reveal Button -->
   <div class="mt-4 sm:mt-6">
     <button
-      (click)="showAnswer2 = true"
+      (click)="revealAnswer()"
       class="bg-blue-500 hover:bg-blue-600 active:bg-blue-700 text-white font-semibold px-6 py-2 rounded-lg shadow-lg transition-all transform hover:scale-105 focus:outline-none focus:ring-4 focus:ring-blue-400/40 text-base sm:text-lg"
     >
       Reveal Answer
@@ -176,10 +162,31 @@
     >
       ▶ Play Audio
     </button>
+    
+    <div class="flex flex-col justify-between items-center mt-6 max-w-xl mx-auto gap-2 mb-6">
+      <!-- <div class="text-sm text-cyan-300"><p>Cards: {{ remainingPhrases().length }}</p></div> -->
+      <div class="flex flex-wrap justify-center gap-3">
+        <button *ngIf="answered() && remainingPhrases().length!==0" (click)="next()" class="a-btn">Next</button>
+        <button *ngIf="showAnswer2" (click)="again()" class="a-btn bg-red-600 hover:bg-red-700">Again</button>
+        <button *ngIf="showAnswer2" (click)="correct()" class="a-btn bg-emerald-600 hover:bg-emerald-700">Correct</button>
+      </div>
+    </div>
   </div>
 </div>
 
 
+           
+    <app-controls 
+      [showPronunciation]="showPronunciation"
+      [phraseOn]="phraseOn"
+      [showPhraseButton]="['kor-to-eng','jp-to-eng','itn-to-eng','rus-to-eng','fr-to-eng'].includes(directionMode)"
+      [showAudioButton]="['jp-to-eng','itn-to-eng','kor-to-eng','ge-to-eng','rus-to-eng'].includes(directionMode)"
+      [isCourse]="m1 === 'course'"
+      (pronunciationToggled)="togglePronunciation()"
+      (phraseToggled)="phraseOnMode()"
+      (audioPlayed)="playAudio(directionMode === directionModeE ? currentPhrase.phrase : currentPhrase.en, directionMode === directionModeE ? lang : 'en-US')"
+      (highlightToggled)="toggleHighlight()">
+    </app-controls>
   <!-- Progress / Again / Next -->
   <!-- ✅ Progress Bar -->
 <div class="mt-6 sm:mt-8 mx-auto w-full max-w-xl px-2">
@@ -221,18 +228,13 @@
 
   </div>
     <!-- PROGRESS -->
-
-
-     
-
+<!-- 
     <div class="flex flex-col justify-between items-center mt-8 max-w-xl mx-auto gap-2">
-      <!-- <div class="text-sm text-cyan-300"><p>Cards: {{ remainingPhrases().length }}</p></div> -->
-      
+      <!-- <div class="text-sm text-cyan-300"><p>Cards: {{ remainingPhrases().length }}</p></div> --
       <div class="flex flex-wrap justify-center gap-3">
         <button *ngIf="answered() && remainingPhrases().length!==0" (click)="next()" class="a-btn">Next</button>
         <button *ngIf="showAnswer2" (click)="again()" class="a-btn bg-red-600 hover:bg-red-700">Again</button>
         <button *ngIf="showAnswer2" (click)="correct()" class="a-btn bg-emerald-600 hover:bg-emerald-700">Correct</button>
       </div>
-      
-    </div>
+    </div> -->
 </div>

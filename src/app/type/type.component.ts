@@ -4,13 +4,6 @@ import { ActivatedRoute, ParamMap } from '@angular/router';
 import { PhraseListItem } from '../shared/phrase-list.service';
 import { PhrasenameService } from '../shared/phrasename.service';
 import { AuthenticationUser } from '../emitters/emittters';
-import { AutofocusDirective } from '../autofocus.directive';
-import { AgainComponent } from '../again/again.component';
-interface phraseDescription {
-  's':'',
-  'isDone':''
-}
-
 
 export interface UnifiedPhrase {
   phrase: string;
@@ -594,33 +587,6 @@ selectPhraseList() {
     answered = signal(false);       // tracks if current question was answered
     lastResult = signal<string>('');        // tracks the result message
 
-/*selectAnswer(selected: string) {
-  const current = this.currentPhrase;
-
-  const isCorrect =
-    (this.directionMode === 'kor-to-eng' && selected === current.en) ||
-    (this.directionMode === 'eng-to-kor' && selected === current.ko);
-  console.log(selected,current.en)
-  console.log(isCorrect)
-  if (isCorrect) {
-    this.score.update(s => s + 1);
-    
-    // ✅ Remove correct item
-    const list = this.remainingPhrases().slice();
-    list.splice(this.currentIndex(), 1); // remove current
-    this.remainingPhrases.set(list);
-    
-    // If more phrases remain, reset index
-    if (list.length > 0) {
-      this.currentIndex.set(this.currentIndex() % list.length); // wrap-around
-    } else {
-      alert("🎉 Quiz Complete!");
-    }
-  } else {
-    // ❌ Move to next phrase (keeping the current one in list)
-    this.currentIndex.update(i => (i + 1) % this.remainingPhrases().length);
-  }
-}*/
 
     toggleDirectionMode(mode) {
       this.directionMode = mode;
@@ -650,87 +616,6 @@ selectPhraseList() {
     }
   });
 }
-
-// attemptCount = 0
-
-// userResults = []
-// attempt = []
-// submitAnswer() {
-//   const correct = this.getAnswer().trim().toLowerCase().replace(/\[\[|\]\]/g, '').replace(/[.,!?/-]/g, '').replace(/\s/g,'').replace(/\([^)]*\)/g, '')
-// ;
-
-//   let answeredUser = this.userInput.trim().toLowerCase().replace(/\[\[|\]\]/g, '').replace(/[.,!?/-]/g, '').replace(/\s/g,'');
-
-
-//   if (answeredUser === correct && answeredUser !== '') {
-//     this.lastResult.set('✅ Correct!');
-//     // this.triggerAnimation('✅');
-
-//     this.answered.set(true);
-
-//   } else {
-//     this.lastResult.set(`❌ Incorrect. Answer: ${this.getAnswer()}`)//,correct: ${correct}, user: ${answeredUser}`);
-//     // this.triggerAnimation('❌');
-//     this.attemptCount +=1
-//     this.attempt.push(this.getAnswer())
-//     this.answered.set(true);
-
-//   }
-//     this.userResults=[...this.attempt.map(p => ({ phrase:p, attempts: this.attemptCount }))]
-
-
-// }
-
-//     reset2() {
-//       this.showAnswer2 = false;
-//       this.userInput = '';
-//       this.result = '';
-//       this.clearHints()
-//     }
-
-//     /*2?next() {
-  
-//     }*/
-//    correct(){
-//     this.answered.set(true)
-//     this.lastResult.set('✅')
-//     this.next()
-//    }
-//    again(){
-
-    
-//     this.answered.set(true)
-//     this.lastResult.set('')
-//     this.next()
-//     this.attemptCount=0
-//    }
-   
-// next() {
-//   if (!this.answered()) return; // ⛔ Block skipping until answered
-
-//   // Remove if correct
-//   if (this.lastResult().startsWith('✅')) {
-//     const list = this.remainingPhrases().slice();
-//     list.splice(this.currentIndex(), 1);
-//     this.remainingPhrases.set(list);
-
-//     if (list.length === 0) {
-//       alert("🎉 All correct!");
-//       return;
-//     }
-//     this.userInput = ""
-//     this.currentIndex.set(this.currentIndex() % list.length);
-//   } else {
-//     // Go to next, keep current if wrong
-//     this.currentIndex.update(i => (i + 1) % this.remainingPhrases().length);
-//   }
-
-//   this.answered.set(false);
-//   this.lastResult.set('');
-//   this.userInput = '';
-//   this.reset2();
-//   this.attemptCount =0
-// }
 attemptCount = 0;
 userResults: { phrase: string; correct: boolean; attempts: number }[] = [];
 attempt: { phrase: string; correct: boolean }[] = [];
@@ -895,9 +780,6 @@ generateHint2() {
     this.showHint2 = false;
   }
 
-  /*#inputRefappendToInput(fragment: string) {
-    this.userInput += fragment;
-  }*/
   highlightMode = false; // default off
 
 toggleHighlight() {
@@ -985,15 +867,7 @@ triggerAnimation(type: any) {
     this.final = '';
     this.output = '';
   }
-
 cursorPos = 0;
-
-// updateCursor(input: HTMLInputElement) { 
-  // this.cursorPos = input.selectionStart ?? this.userInput.length;
-// }
-// cursorPos = 0;
-// userInput = "";
-
 someInputRef: HTMLInputElement;
 updateCursor(input: HTMLInputElement) {
   this.someInputRef = input;
@@ -1048,8 +922,6 @@ theVoices(){
   );
   console.log('these are the:', maleKoreanVoices)
 }
-
-
 }
 
 
