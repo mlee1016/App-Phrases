@@ -3,7 +3,7 @@ import confetti from 'canvas-confetti';
 import { ViewChild, ElementRef } from '@angular/core';
 
 @Component({
-  selector: 'app-timer',
+  selector: 'timer',
   templateUrl: './timer.component.html',
   styleUrl: './timer.component.css'
 })

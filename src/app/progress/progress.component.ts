@@ -697,7 +697,7 @@ next() {
   this.pronunciationFeedback = '';
   this.comparisonResult = [];
   this.answered.set(false);
-  this.lastResult.set('');
+  this.lastResult.set(''); 
   // this.reset2();
 }
 

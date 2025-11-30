@@ -210,6 +210,8 @@
   <div *ngIf="['Italian','Japanese','Korean','Russian','German'].includes(id) && quizStarted"
 
        class="w-full max-w-3xl animate-slide-in">
+       <!-- <timer></timer> -->
+
        <!-- <app-timer></app-timer> -->
 
     <!-- Top Controls --
@@ -273,23 +275,52 @@
             ▶ Play Audio
           </button>
         </div>
-
         <!-- Hints Section -->
-        <div *ngIf="directionMode===directionModeC" class="mt-4 text-center max-w-md mx-auto">
-          <div class="flex flex-wrap justify-center gap-2">
-            <button (click)="generateHint1()" class="btn-indigo">Hint 1</button>
-            <button (click)="generateHint2()" class="btn-indigo">Hint 2</button>
-            <button (click)="clearHints()" class="btn-red">Clear</button>
-          </div>
+<div *ngIf="directionMode===directionModeC" class="mt-4 text-center max-w-md mx-auto">
 
-          <div *ngIf="showHint1" class="hint-grid">
-            <button *ngFor="let char of hint1Array" (click)="appendToInput(char, inputRef)" class="hint-btn">{{ char }}</button>
-          </div>
+  <!-- Buttons Row -->
+  <div class="flex flex-wrap justify-center gap-3 mb-3">
 
-          <div *ngIf="showHint2" class="hint-grid">
-            <button *ngFor="let char of hint2Array" (click)="appendToInput(char, inputRef)" class="hint-btn">{{ char }}</button>
-          </div>
-        </div>
+    <!-- Hint 1 -->
+    <button (click)="generateHint1()"
+            class="hint-btn-main ripple bg-gradient-to-r from-indigo-500 to-purple-500 flex items-center gap-2">
+      <span class="text-xl">💡</span> Hint 1
+    </button>
+
+    <!-- Hint 2 -->
+    <button (click)="generateHint2()"
+            class="hint-btn-main ripple bg-gradient-to-r from-cyan-500 to-blue-500 flex items-center gap-2">
+      <span class="text-xl">🔍</span> Hint 2
+    </button>
+
+    <!-- Clear -->
+    <button (click)="clearHints()"
+            class="hint-btn-main ripple bg-gradient-to-r from-rose-500 to-red-500 flex items-center gap-2">
+      <span class="text-xl">🗑</span> Clear
+    </button>
+
+  </div>
+
+  <!-- Sliding Grid for Hint 1 -->
+  <div *ngIf="showHint1" class="hint-grid slide-in">
+    <button *ngFor="let char of hint1Array"
+            (click)="appendToInput(char, inputRef)"
+            class="hint-char ripple">
+      {{ char }}
+    </button>
+  </div>
+
+  <!-- Sliding Grid for Hint 2 -->
+  <div *ngIf="showHint2" class="hint-grid slide-in">
+    <button *ngFor="let char of hint2Array"
+            (click)="appendToInput(char, inputRef)"
+            class="hint-char ripple">
+      {{ char }}
+    </button>
+  </div>
+
+</div>
+
       </div>
     </div>
     <!-- End of Quiz Card -->

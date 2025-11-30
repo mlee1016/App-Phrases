@@ -776,7 +776,7 @@ generateHint2() {
     this.hint1Array = [];
     // this.userInput = '';
     this.hint2Array = [];
-    this.showHint1 = false;
+    this.showHint1 = false; 
     this.showHint2 = false;
   }
 

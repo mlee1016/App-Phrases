@@ -1,0 +1,173 @@
+/* Floating tab button */
+.timer-tab {
+  position: fixed;
+  right: 0;
+  top: 40%;
+  background: #0ea5e9;
+  color: white;
+  padding: 14px 18px;
+  border-radius: 12px 0 0 12px;
+  cursor: pointer;
+  font-size: 22px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+  transition: all 0.3s ease;
+  z-index: 60;
+
+  &:hover {
+    transform: translateX(-6px);
+    background: #38bdf8;
+  }
+}
+
+/* Sliding Panel */
+.timer-panel {
+  position: fixed;
+  right: -320px;
+  top: 0;
+  width: 300px;
+  height: 100vh;
+  background: #0f172a;
+  color: white;
+  padding: 20px;
+  transition: all 0.35s cubic-bezier(0.25, 0.8, 0.25, 1);
+  box-shadow: -4px 0 25px rgba(0,0,0,0.4);
+  z-index: 70;
+
+  &.open {
+    right: 0;
+  }
+
+  .title {
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+}
+
+/* Timer Display */
+.timer-display {
+  position: relative;
+  width: 160px;
+  height: 160px;
+  margin: 0 auto 20px;
+}
+
+.ring {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  border: 10px solid transparent;
+  border-top-color: #38bdf8;
+  animation: rotate 2s linear infinite;
+  mask: radial-gradient(circle, transparent 60%, black 100%);
+  --progress: 100%;
+  filter: drop-shadow(0 0 10px #38bdf8);
+}
+
+.digits {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 32px;
+  font-weight: bold;
+}
+
+/* Presets */
+.preset-buttons button {
+  background: #1e293b;
+  color: white;
+  padding: 10px;
+  width: 100%;
+  margin: 6px 0;
+  border-radius: 10px;
+  font-size: 16px;
+  transition: 0.2s;
+
+  &:hover {
+    background: #38bdf8;
+    transform: scale(1.03);
+  }
+}
+
+/* Controls */
+.controls {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+
+  button {
+    padding: 10px;
+    border-radius: 10px;
+    font-weight: bold;
+    transition: 0.25s;
+
+    &:hover {
+      transform: scale(1.07);
+      box-shadow: 0 0 12px rgba(255,255,255,0.2);
+    }
+  }
+
+  .start { background: #10b981; }
+  .resume { background: #0ea5e9; }
+  .stop   { background: #ef4444; }
+  .reset  { background: #475569; }
+}
+
+/* Spinning ring animation */
+@keyframes rotate {
+  from { transform: rotate(0); }
+  to { transform: rotate(360deg); }
+}
+
+
+.timer-panel.open {
+  right: 0;
+}
+
+/* Close button */
+.close-btn {
+  position: absolute;
+  top: 10px;
+  right: 12px;
+  font-size: 22px;
+  cursor: pointer;
+  opacity: 0.7;
+  transition: transform 0.2s, opacity 0.2s;
+}
+
+.close-btn:hover {
+  opacity: 1;
+  transform: scale(1.1);
+}
+.test-timer {
+  margin-top: 10px;
+  text-align: center;
+}
+
+.test-btn {
+  width: 100%;
+  padding: 10px;
+  background: #ff4d4d;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-size: 15px;
+  cursor: pointer;
+  transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+.test-btn:hover {
+  opacity: 0.9;
+  transform: scale(1.03);
+}
+
+.confetti-canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}

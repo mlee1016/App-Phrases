@@ -25,54 +25,78 @@
 </app-s-model>
 
 <!-- START QUIZ -->
-<div *ngIf="isReadyToStart && !quizStarted" class="text-center mt-8 sm:mt-10 px-3">
-  
+
+<div
+  *ngIf="isReadyToStart && !quizStarted"
+  class="text-center mt-10 sm:mt-14 px-4 md:px-0 md:max-w-2xl md:mx-auto space-y-8"
+>
+
+  <!-- Start Button -->
   <button
     (click)="startQuiz()"
-    class="bg-gradient-to-r from-emerald-600 to-cyan-600 hover:from-emerald-500 hover:to-cyan-500 
-    text-white px-10 py-3 rounded-xl shadow-lg text-lg font-semibold transition-all duration-200 hover:scale-105"
+    class="bg-gradient-to-r from-emerald-600 to-cyan-600 
+           hover:from-emerald-500 hover:to-cyan-500 
+           text-white px-12 py-3 rounded-xl shadow-lg 
+           text-lg font-semibold transition-all duration-200 
+           hover:scale-105 mx-auto block"
   >
     ▶ Start
   </button>
-  <div class="relative w-full max-w-xs">
-  <select
-    [(ngModel)]="pronunciationStrictness"
-    class="elite-select"
+
+  <!-- Dropdown -->
+  <div class="relative w-full max-w-xs mx-auto">
+    <select
+      [(ngModel)]="pronunciationStrictness"
+      class="elite-select"
+    >
+      <option value="easy">Easy 50%</option>
+      <option value="normal">Normal 80%</option>
+      <option value="strict">Strict 100%</option>
+    </select>
+
+    <!-- iOS arrow -->
+    <span
+      class="pointer-events-none absolute right-4 top-1/2 
+             -translate-y-1/2 text-gray-300"
+    >
+      ▼
+    </span>
+  </div>
+
+  <!-- Info Card -->
+  <div
+    class="bg-white shadow-md rounded-2xl p-6 
+           mx-auto max-w-md md:max-w-lg 
+           flex flex-col gap-4 hover:shadow-lg 
+           hover:-translate-y-0.5 transition"
   >
-    <option value="easy">Easy  50%</option>
-    <option value="normal">Normal 80%</option>
-    <option value="strict">Strict 100%</option>
-  </select>
+    <h2 class="text-2xl font-bold text-slate-800 text-center">
+      Speech Pronunciation
+    </h2>
 
-  <!-- iOS arrow -->
-  <span class="pointer-events-none absolute right-4 top-1/2 -translate-y-1/2 text-gray-300">
-    ▼
-  </span>
-</div>
+    <div class="text-slate-700 text-center">
+      Practice speaking and pronunciation to see how accurate your speech is.
+    </div>
 
-  <div class="bg-white shadow-md rounded-2xl p-6 mx-auto max-w-md flex flex-col mt-6 hover:shadow-lg hover:-translate-y-0.5 transition">
-  <h2 class="text-2xl font-bold text-slate-800 text-center">Speech Pronunciation</h2>
-  <div class="text-slate-700 text-center">
-    Practice speaking and pronunciation to see how accurate your speech is.
+    <div class="bg-slate-100 text-slate-600 p-3 rounded-lg text-center">
+      Improve Japanese, Korean, Russian, and Italian speaking skills by checking pronunciation accuracy with voice feedback.
+    </div>
+
+    <div class="text-slate-800 text-center leading-relaxed">
+      Use voice input to practice pronunciation. See how closely your speech matches examples — perfect for accent and tone training.
+    </div>
+
+    <div class="bg-slate-200 text-slate-700 text-sm rounded-full px-3 py-1 self-center">
+      story + popular + course
+    </div>
   </div>
-  <div class="bg-slate-100 text-slate-600 p-3 rounded-lg text-center">
-    Improve Japanese and Korean, Russian, Italian speaking skills by checking pronunciation accuracy with voice feedback.
-  </div>
-  <div class="text-slate-800 text-center leading-relaxed">
-    Use voice input to practice pronunciation. See how closely your speech matches examples — perfect for accent and tone training.
-  </div>
-  <div class="bg-slate-200 text-slate-700 text-sm rounded-full px-3 py-1 self-center">story + popular + course</div>
-</div>
 
-
-
-  
 </div>
 
 <!-- QUIZ IN PROGRESS -->
 <div *ngIf="quizStarted && remainingPhrases().length!==0" class="mt-8 sm:mt-10 flex flex-col items-center space-y-6 sm:space-y-8 px-3">
   <!-- Phrase Card -->
-
+<!-- <timer></timer> -->
 <div
   class="relative bg-[#0B1720]/90 backdrop-blur-xl border border-cyan-500/20 text-white p-5 sm:p-8 rounded-3xl shadow-[0_0_25px_rgba(0,255,255,0.15)] w-full max-w-2xl mx-auto animate-fadeInUp"
 >

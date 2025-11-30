@@ -10,7 +10,7 @@ export class DescriptionComponent {
  
 
 
-  constructor(private http: HttpClient) {} 
+  constructor(private http: HttpClient) {}  
 
   // 🔹 Parent -> child communication
   @Input() showSurvey = false;
