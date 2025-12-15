@@ -25,5 +25,6 @@ export class SModelComponent {
 
   getSpecificPhrases(phrase: string) {
     this.selectPhrase.emit(phrase);
-  }
+  } 
+  
 }

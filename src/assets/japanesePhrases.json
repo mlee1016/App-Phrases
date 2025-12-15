@@ -8520,6 +8520,69 @@
     "pr": "ありがとうございました。",
     "en": "Thank you very much.",
     "des": "Polite expression of gratitude to customers."
-  }]
+  }],
+
+  "adjec":[
+
+  { "phrase": "大きい 家", "pr": "おおきい いえ", "en": "a big house", "des": "noun + adjective" },
+  { "phrase": "小さい 犬", "pr": "ちいさい いぬ", "en": "a small dog", "des": "noun + adjective" },
+  { "phrase": "新しい 本", "pr": "あたらしい ほん", "en": "a new book", "des": "noun + adjective" },
+  { "phrase": "古い 車", "pr": "ふるい くるま", "en": "an old car", "des": "noun + adjective" },
+  { "phrase": "静かな 部屋", "pr": "しずかな へや", "en": "a quiet room", "des": "noun + adjective (na-adj)" },
+  { "phrase": "にぎやかな街", "pr": "にぎやかな まち", "en": "a lively town", "des": "noun + adjective (na-adj)" },
+  { "phrase": "高い山", "pr": "たかい やま", "en": "a tall mountain", "des": "noun + adjective" },
+  { "phrase": "低い 声", "pr": "ひくい こえ", "en": "a low voice", "des": "noun + adjective" },
+  { "phrase": "青い 空", "pr": "あおい そら", "en": "a blue sky", "des": "noun + adjective" },
+  { "phrase": "黒い 服", "pr": "くろい ふく", "en": "black clothes", "des": "noun + adjective" }
+  ],
+  "adjec2":[
+  { "phrase": "白 い　猫", "pr": "しろ い　ねこ", "en": "a white cat", "des": "noun + adjective" },
+  { "phrase": "赤 い　花", "pr": "あか い　はな", "en": "a red flower", "des": "noun + adjective" },
+  { "phrase": "暑 い　日", "pr": "あつ い　ひ", "en": "a hot day", "des": "noun + adjective" },
+  { "phrase": "寒 い　夜", "pr": "さむ い　よる", "en": "a cold night", "des": "noun + adjective" },
+  { "phrase": "広 い　公 園", "pr": "ひろ い　こう えん", "en": "a spacious park", "des": "noun + adjective" },
+  { "phrase": "短 い　手 紙", "pr": "みじか い　て がみ", "en": "a short letter", "des": "noun + adjective" },
+  { "phrase": "明 る い　部 屋", "pr": "あかる い　へ や", "en": "a bright room", "des": "noun + adjective" },
+  { "phrase": "暗 い　道", "pr": "くら い　みち", "en": "a dark road", "des": "noun + adjective" },
+  { "phrase": "有 名 な　学 校", "pr": "ゆうめい な　がっ こう", "en": "a famous school", "des": "noun + adjective (na-adj)" },
+  { "phrase": "親 切 な　人", "pr": "しんせつ な　ひと", "en": "a kind person", "des": "noun + adjective (na-adj)" }
+],
+"adjec3":[
+  { "phrase": "強 い　風", "pr": "つよ い　かぜ", "en": "a strong wind", "des": "noun + adjective" },
+  { "phrase": "弱 い　声", "pr": "よわ い　こえ", "en": "a weak voice", "des": "noun + adjective" },
+  { "phrase": "長 い　道", "pr": "なが い　みち", "en": "a long road", "des": "noun + adjective" },
+  { "phrase": "安 い　服", "pr": "やす い　ふく", "en": "cheap clothes", "des": "noun + adjective" },
+  { "phrase": "高 い　靴", "pr": "たか い　くつ", "en": "expensive shoes", "des": "noun + adjective" },
+  { "phrase": "重 い　箱", "pr": "おも い　はこ", "en": "a heavy box", "des": "noun + adjective" },
+  { "phrase": "軽 い　か ば ん", "pr": "かる い　かばん", "en": "a light bag", "des": "noun + adjective" },
+  { "phrase": "忙 し い　日", "pr": "いそが し い　ひ", "en": "a busy day", "des": "noun + adjective" },
+  { "phrase": "静 か な　湖", "pr": "しず か な　みず う み", "en": "a quiet lake", "des": "noun + adjective (na-adj)" },
+  { "phrase": "有 名 な　店", "pr": "ゆうめい な　みせ", "en": "a famous shop", "des": "noun + adjective (na-adj)" }
+]
+,"1-50verbs":[
+  { "phrase": "水 を 飲みます", "pr": "みず を のみます", "en": "drink water", "des": "noun + verb (polite)" },
+  { "phrase": "本 を 読みます", "pr": "ほん を よみます", "en": "read a book", "des": "noun + verb (polite)" },
+  { "phrase": "音楽 を 聞きます", "pr": "おんがく を ききます", "en": "listen to music", "des": "noun + verb (polite)" },
+  { "phrase": "映画 を 見ます", "pr": "えいが を みます", "en": "watch a movie", "des": "noun + verb (polite)" },
+  { "phrase": "ご飯 を 食べます", "pr": "ごはん を たべます", "en": "eat a meal", "des": "noun + verb (polite)" },
+  { "phrase": "学校 に 行きます", "pr": "がっこう に いきます", "en": "go to school", "des": "noun + verb (polite)" },
+  { "phrase": "家 に 帰ります", "pr": "いえ に かえります", "en": "go home", "des": "noun + verb (polite)" },
+  { "phrase": "友達 に 会います", "pr": "ともだち に あいます", "en": "meet a friend", "des": "noun + verb (polite)" },
+  { "phrase": "日本語 を 勉強します", "pr": "にほんご を べんきょう します", "en": "study Japanese", "des": "noun + verb (polite)" },
+  { "phrase": "仕事 を します", "pr": "しごと を します", "en": "work", "des": "noun + verb (polite)" },
+
+  { "phrase": "写真 を 撮ります", "pr": "しゃしん を とります", "en": "take a photo", "des": "noun + verb (polite)" },
+  { "phrase": "車 を 運転します", "pr": "くるま を うんてん します", "en": "drive a car", "des": "noun + verb (polite)" },
+  { "phrase": "電車 に 乗ります", "pr": "でんしゃ に のります", "en": "ride a train", "des": "noun + verb (polite)" },
+  { "phrase": "店 に 入ります", "pr": "みせ に はいります", "en": "enter a shop", "des": "noun + verb (polite)" },
+  { "phrase": "店 を 出ます", "pr": "みせ を でます", "en": "leave a shop", "des": "noun + verb (polite)" },
+  { "phrase": "服 を 買います", "pr": "ふく を かいます", "en": "buy clothes", "des": "noun + verb (polite)" },
+  { "phrase": "お金 を 払います", "pr": "おかね を はらいます", "en": "pay money", "des": "noun + verb (polite)" },
+  { "phrase": "質問 を 聞きます", "pr": "しつもん を ききます", "en": "ask a question", "des": "noun + verb (polite)" },
+  { "phrase": "答え を 書きます", "pr": "こたえ を かきます", "en": "write an answer", "des": "noun + verb (polite)" },
+  { "phrase": "手紙 を 送ります", "pr": "てがみ を おくります", "en": "send a letter", "des": "noun + verb (polite)" }
+]
+
+
 
 }

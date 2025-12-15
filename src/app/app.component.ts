@@ -28,7 +28,7 @@ export class AppComponent {
   url_get_user:string ="http://127.0.0.1:8000/api/user/"
   url_sign_out:string ="http://127.0.0.1:8000/api/signout/"
     sidebarItems = [
-  { label: 'Home', icon: 'fa fa-home', route: 'home' },
+  { label: 'Home', icon: 'fa fa-home', route: 'home' }, 
   // { label: 'Profile', icon: 'fa fa-user', route: 'profile' },
   { label: 'About', icon: 'fa fa-heart', route: 'about' },
   { label: 'Feedback', icon: 'fa fa-envelope', route: 'feedback' },

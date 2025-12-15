@@ -452,7 +452,7 @@ export class AllComponent{
     this.numberClass = num
 
   }
-  allStory = [{s:"",isDone:false,id:0}]
+  allStory = [{s:"",isDone:false,id:0,name:"",difficulty:""}]
   allCourse = []
   theCourse:any =[]
   iscompleted = false

@@ -6,7 +6,7 @@ describe('PhrasewordComponent', () => {
   let component: PhrasewordComponent;
   let fixture: ComponentFixture<PhrasewordComponent>;
 
-  beforeEach(async () => {
+  beforeEach(async () => { 
     await TestBed.configureTestingModule({
       declarations: [PhrasewordComponent]
     })

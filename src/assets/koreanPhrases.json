@@ -8109,6 +8109,1636 @@
       { "phrase": "저는 한국 음식을 먹어본 적이 있어요.", "pr": "jeoneun hanguk eumsig-eul meog-eobon jeogi isseoyo", "en": "I have tried Korean food before.", "des": "Polite experience statement." },
       { "phrase": "동생은 피아노를 쳐본 적이 있어요.", "pr": "dongsaeng-eun piano-reul chyeobon jeogi isseoyo", "en": "My sibling has played the piano before.", "des": "Past experience politely." }
   
-  ]
+  ],"weather":[
+  {
+    "phrase": "날씨가 어때요?",
+    "pr": "nal-ssi-ga eo-ttae-yo?",
+    "en": "How is the weather?"
+  },
+  {
+    "phrase": "오늘은 맑아요.",
+    "pr": "o-neu-reun mal-ga-yo",
+    "en": "It's clear today."
+  },
+  {
+    "phrase": "밖에 추워요?",
+    "pr": "bak-ke chu-wo-yo?",
+    "en": "Is it cold outside?"
+  },
+  {
+    "phrase": "네, 많이 추워요.",
+    "pr": "ne, ma-ni chu-wo-yo",
+    "en": "Yes, it’s very cold."
+  },
+  {
+    "phrase": "오늘 덥나요?",
+    "pr": "o-neul deop-na-yo?",
+    "en": "Is it hot today?"
+  },
+  {
+    "phrase": "아니요, 시원해요.",
+    "pr": "a-ni-yo, si-won-hae-yo",
+    "en": "No, it's cool."
+  },
+  {
+    "phrase": "비 와요?",
+    "pr": "bi wa-yo?",
+    "en": "Is it raining?"
+  },
+  {
+    "phrase": "네, 조금 와요.",
+    "pr": "ne, jo-geum wa-yo",
+    "en": "Yes, it's raining a little."
+  },
+  {
+    "phrase": "오늘 비 올까요?",
+    "pr": "o-neul bi ol-kka-yo?",
+    "en": "Will it rain today?"
+  },
+  {
+    "phrase": "아마 올 것 같아요.",
+    "pr": "a-ma ol geot ga-ta-yo",
+    "en": "It will probably rain."
+  },
+  {
+    "phrase": "눈 와요?",
+    "pr": "nun wa-yo?",
+    "en": "Is it snowing?"
+  },
+  {
+    "phrase": "아니요, 안 와요.",
+    "pr": "a-ni-yo, an wa-yo",
+    "en": "No, it's not snowing."
+  },
+  {
+    "phrase": "바람 불어요?",
+    "pr": "ba-ram bu-reo-yo?",
+    "en": "Is it windy?"
+  },
+  {
+    "phrase": "네, 많이 불어요.",
+    "pr": "ne, ma-ni bu-reo-yo",
+    "en": "Yes, it's very windy."
+  },
+  {
+    "phrase": "오늘 흐려요?",
+    "pr": "o-neul heu-ryeo-yo?",
+    "en": "Is it cloudy today?"
+  },
+  {
+    "phrase": "네, 좀 흐려요.",
+    "pr": "ne, jom heu-ryeo-yo",
+    "en": "Yes, it's a bit cloudy."
+  },
+  {
+    "phrase": "습해요?",
+    "pr": "seu-pae-yo?",
+    "en": "Is it humid?"
+  },
+  {
+    "phrase": "네, 많이 습해요.",
+    "pr": "ne, ma-ni seu-pae-yo",
+    "en": "Yes, it’s very humid."
+  },
+  {
+    "phrase": "기온이 어때요?",
+    "pr": "gi-o-ni eo-ttae-yo?",
+    "en": "How’s the temperature?"
+  },
+  {
+    "phrase": "조금 따뜻해요.",
+    "pr": "jo-geum tta-tteut-hae-yo",
+    "en": "It’s a little warm."
+  }
+],
+"weather2":[
+  {
+    "phrase": "저는 맑은 날씨가 정말 좋아요.",
+    "pr": "jeo-neun mal-geun nal-ssi-ga jeong-mal jo-a-yo",
+    "en": "I really like sunny weather."
+  },
+  {
+    "phrase": "습한 날씨는 별로 안 좋아해요.",
+    "pr": "seup-han nal-ssi-neun byeol-lo an jo-a-hae-yo",
+    "en": "I don't really like humid weather."
+  },
+  {
+    "phrase": "비 오는 날씨가 편안해 보여요.",
+    "pr": "bi o-neun nal-ssi-ga pyeo-nan-hae bo-yeo-yo",
+    "en": "Rainy weather looks relaxing."
+  },
+  {
+    "phrase": "더운 날씨는 정말 힘들어요.",
+    "pr": "deo-un nal-ssi-neun jeong-mal him-deu-reo-yo",
+    "en": "Hot weather is really tough."
+  },
+  {
+    "phrase": "추운 날씨는 싫지는 않아요.",
+    "pr": "chu-un nal-ssi-neun sil-chi-neun a-na-yo",
+    "en": "I don't hate cold weather."
+  },
+
+  {
+    "phrase": "비가 오면 기분이 차분해져요.",
+    "pr": "bi-ga o-myeon gi-bun-i cha-bun-hae-jyeo-yo",
+    "en": "When it rains, I feel calm."
+  },
+  {
+    "phrase": "눈이 오면 너무 신나요.",
+    "pr": "nun-i o-myeon neo-mu sin-na-yo",
+    "en": "When it snows, I get so excited."
+  },
+    {
+    "phrase": "날씨가 흐리면 조금 우울해져요.",
+    "pr": "nal-ssi-ga heu-ri-myeon jo-geum u-ul-hae-jyeo-yo",
+    "en": "When it’s cloudy, I feel a little down."
+  },
+  {
+    "phrase": "햇빛이 강하면 짜증나요.",
+    "pr": "haet-bit-i gang-ha-myeon jja-jeung-na-yo",
+    "en": "When the sunlight is strong, I get irritated."
+  },
+  {
+    "phrase": "바람이 불면 상쾌해요.",
+    "pr": "ba-ram-i bul-myeon sang-kwae-hae-yo",
+    "en": "When the wind blows, I feel refreshed."
+  },
+
+  {
+    "phrase": "오늘은 비가 올 것 같아요.",
+    "pr": "o-neu-reun bi-ga ol geot gat-a-yo",
+    "en": "I think it's going to rain today."
+  },
+  {
+    "phrase": "눈이 많이 내릴 것 같아요.",
+    "pr": "nun-i ma-ni nae-ril geot gat-a-yo",
+    "en": "I think it's going to snow a lot."
+  },
+  {
+    "phrase": "내일 날씨가 따뜻하겠어요.",
+    "pr": "nae-il nal-ssi-ga tta-tteut-ha-ge-sseo-yo",
+    "en": "It seems the weather will be warm tomorrow."
+  },
+  {
+    "phrase": "오늘은 정말 추웠더라고요.",
+    "pr": "o-neu-reun jeong-mal chu-wot-deo-ra-go-yo",
+    "en": "I noticed it was really cold today."
+  },
+  {
+    "phrase": "비가 올까 해서 우산 가져왔어요.",
+    "pr": "bi-ga ol-kka hae-seo u-san ga-jyeo-wat-seo-yo",
+    "en": "I brought an umbrella in case it rains."
+  },
+  {
+    "phrase": "너무 덥지 않을까요?",
+    "pr": "neo-mu deop-ji a-neul-kka-yo",
+    "en": "Don’t you think it might be too hot?"
+  },
+  {
+    "phrase": "아마 곧 비가 오겠죠?",
+    "pr": "a-ma got bi-ga o-get-jyo",
+    "en": "It will probably rain soon, right?"
+  },
+  {
+    "phrase": "날씨가 더 좋아질 것 같아요.",
+    "pr": "nal-ssi-ga deo jo-a-jil geot gat-a-yo",
+    "en": "I think the weather will get better."
+  }
+]
+,"negations":[
+      { "phrase": "가지 [[마세요]].", "pr": "gaji [[maseyo]]", "en": "[[Please don’t]] go.", "des": "Polite negative command." },
+      { "phrase": "먹지 [[마세요]].", "pr": "meokji [[maseyo]]", "en": "[[Please don’t]] eat.", "des": "Polite request not to eat." },
+      { "phrase": "말하지 [[마세요]].", "pr": "malhaji [[maseyo]]", "en": "[[Please don’t]] speak.", "des": "Formal prohibition on speaking." },
+      { "phrase": "운전하지 [[마세요]].", "pr": "unjeonhaji [[maseyo]]", "en": "[[Please don’t]] drive.", "des": "Polite request not to drive." }
+      ,
+      { "phrase": "하지 [[않아요]].", "pr": "haji [[anh-ayo]]", "en": "I [[don’t]] do it.", "des": "Negative present tense." },
+      { "phrase": "가지 [[않아요]].", "pr": "gaji [[anh-ayo]]", "en": "I [[don’t]] go.", "des": "Indicates not going." },
+      { "phrase": "먹지 [[않아요]].", "pr": "meokji [[anh-ayo]]", "en": "I [[don’t]] eat.", "des": "Expresses not eating." },
+      { "phrase": "말하지 [[않아요]].", "pr": "malhaji [[anh-ayo]]", "en": "I [[don’t]] speak.", "des": "Indicates not speaking." }
+    ],"smalltalk":  [
+  {
+    "phrase": "어떤 일을 하세요?",
+    "pr": "eotteon il-eul ha-se-yo?",
+    "en": "What kind of work do you do?"
+  },
+  {
+    "phrase": "저는 IT 분야에서 일해요.",
+    "pr": "jeo-neun ai-ti bun-ya-e-seo il-hae-yo",
+    "en": "I work in the IT field."
+  },
+  {
+    "phrase": "직업이 뭐예요?",
+    "pr": "ji-geo-bi mwo-ye-yo?",
+    "en": "What is your job?"
+  },
+  {
+    "phrase": "저는 학생이에요.",
+    "pr": "jeo-neun hak-saeng-i-e-yo",
+    "en": "I am a student."
+  },
+  {
+    "phrase": "어느 회사에서 일하세요?",
+    "pr": "eo-neu hwe-sa-e-seo il-ha-se-yo?",
+    "en": "Which company do you work for?"
+  },
+  {
+    "phrase": "저는 스타트업에서 일해요.",
+    "pr": "jeo-neun seu-ta-teu-eop-e-seo il-hae-yo",
+    "en": "I work at a startup."
+  },
+  {
+    "phrase": "전공이 뭐예요?",
+    "pr": "jeon-gong-i mwo-ye-yo?",
+    "en": "What is your major?"
+  },
+  {
+    "phrase": "저는 컴퓨터공학을 전공했어요.",
+    "pr": "jeo-neun keom-pyu-teo-gong-hak-eul jeon-gong-hae-sseo-yo",
+    "en": "I majored in computer engineering."
+  },
+  {
+    "phrase": "어느 대학교 다녀요?",
+    "pr": "eo-neu dae-hak-gyo da-nyeo-yo?",
+    "en": "Which university do you attend?"
+  },
+  {
+    "phrase": "저는 UCLA에 다녀요.",
+    "pr": "jeo-neun yu-si-el-ei-e da-nyeo-yo",
+    "en": "I go to UCLA."
+  },
+  {
+    "phrase": "대학생이에요?",
+    "pr": "dae-hak-saeng-i-e-yo?",
+    "en": "Are you a college student?"
+  },
+  {
+    "phrase": "네, 3학년이에요.",
+    "pr": "ne, sam-hak-nyeon-i-e-yo",
+    "en": "Yes, I'm a third-year student."
+  },
+  {
+    "phrase": "회사에서 무슨 역할을 해요?",
+    "pr": "hwe-sa-e-seo mu-seun yeok-hal-eul hae-yo?",
+    "en": "What is your role at the company?"
+  },
+  {
+    "phrase": "저는 프론트엔드 개발자예요.",
+    "pr": "jeo-neun peu-ron-teu-en-deu gae-bal-ja-ye-yo",
+    "en": "I am a front-end developer."
+  },
+  {
+    "phrase": "취업 준비하고 있어요?",
+    "pr": "chwi-eop jun-bi-ha-go i-sseo-yo?",
+    "en": "Are you preparing for employment?"
+  },
+  {
+    "phrase": "네, 이력서랑 포트폴리오 만들고 있어요.",
+    "pr": "ne, i-ryeok-seo-rang po-teu-pol-li-o man-deul-go i-sseo-yo",
+    "en": "Yes, I'm making my résumé and portfolio."
+  }
+]
+,"1-50na-adj":[
+  {
+    "phrase": "저는 학생이에요.",
+    "pr": "jeo-neun hak-saeng-i-e-yo",
+    "en": "I am a student.",
+    "des": "Noun + Copula"
+  },
+  {
+    "phrase": "저는 선생님이에요.",
+    "pr": "jeo-neun seon-saeng-nim-i-e-yo",
+    "en": "I am a teacher.",
+    "des": "Noun + Copula"
+  },
+  {
+    "phrase": "저는 친구예요.",
+    "pr": "jeo-neun chin-gu-ye-yo",
+    "en": "I am a friend.",
+    "des": "Noun + Copula"
+  },
+  {
+    "phrase": "여기는 학교예요.",
+    "pr": "yeo-gi-neun hak-kkyo-ye-yo",
+    "en": "This place is a school.",
+    "des": "Noun + Copula"
+  },
+  {
+    "phrase": "저기는 집이에요.",
+    "pr": "jeo-gi-neun jip-i-e-yo",
+    "en": "That place is a house.",
+    "des": "Noun + Copula"
+  },
+  {
+    "phrase": "여기는 식당이에요.",
+    "pr": "yeo-gi-neun sik-dang-i-e-yo",
+    "en": "This place is a restaurant.",
+    "des": "Noun + Copula"
+  },
+  {
+    "phrase": "이것은 책이에요.",
+    "pr": "i-geot-eun chaek-i-e-yo",
+    "en": "This is a book.",
+    "des": "Noun + Copula"
+  },
+  {
+    "phrase": "저것은 가방이에요.",
+    "pr": "jeo-geot-eun ga-bang-i-e-yo",
+    "en": "That is a bag.",
+    "des": "Noun + Copula"
+  },
+  {
+    "phrase": "이분은 의사예요.",
+    "pr": "i-bun-eun ui-sa-ye-yo",
+    "en": "This person is a doctor.",
+    "des": "Noun + Copula"
+  },
+  {
+    "phrase": "그 사람은 학생이에요.",
+    "pr": "geu sa-ram-eun hak-saeng-i-e-yo",
+    "en": "That person is a student.",
+    "des": "Noun + Copula"
+  },
+
+  {
+    "phrase": "음식이 맛있어요.",
+    "pr": "eum-sik-i ma-sit-sseo-yo",
+    "en": "The food is delicious.",
+    "des": "Noun + Adjective"
+  },
+  {
+    "phrase": "날씨가 좋아요.",
+    "pr": "nal-ssi-ga jo-a-yo",
+    "en": "The weather is good.",
+    "des": "Noun + Adjective"
+  },
+  {
+    "phrase": "방이 깨끗해요.",
+    "pr": "bang-i kkae-kkeu-tae-yo",
+    "en": "The room is clean.",
+    "des": "Noun + Adjective"
+  },
+  {
+    "phrase": "커피가 뜨거워요.",
+    "pr": "keo-pi-ga tteu-geo-wo-yo",
+    "en": "The coffee is hot.",
+    "des": "Noun + Adjective"
+  },
+  {
+    "phrase": "물이 차가워요.",
+    "pr": "mul-i cha-ga-wo-yo",
+    "en": "The water is cold.",
+    "des": "Noun + Adjective"
+  },
+
+  {
+    "phrase": "책이 많아요.",
+    "pr": "chaek-i man-a-yo",
+    "en": "There are many books.",
+    "des": "Noun + Adjective (quantity)"
+  },
+  {
+    "phrase": "사람이 많아요.",
+    "pr": "sa-ram-i man-a-yo",
+    "en": "There are many people.",
+    "des": "Noun + Adjective (quantity)"
+  },
+  {
+    "phrase": "시간이 빨라요.",
+    "pr": "si-gan-i ppal-la-yo",
+    "en": "Time is fast.",
+    "des": "Noun + Adjective"
+  },
+  {
+    "phrase": "길이 짧아요.",
+    "pr": "gil-i jjal-ba-yo",
+    "en": "The road is short.",
+    "des": "Noun + Adjective"
+  },
+  {
+    "phrase": "영화가 길어요.",
+    "pr": "yeong-hwa-ga gi-reo-yo",
+    "en": "The movie is long.",
+    "des": "Noun + Adjective"
+  },
+
+  {
+    "phrase": "배가 커요.",
+    "pr": "bae-ga keo-yo",
+    "en": "The boat is big.",
+    "des": "Noun + Adjective"
+  },
+  {
+    "phrase": "개가 작아요.",
+    "pr": "gae-ga ja-ga-yo",
+    "en": "The dog is small.",
+    "des": "Noun + Adjective"
+  },
+  {
+    "phrase": "문이 열려요.",
+    "pr": "mun-i yeol-lyeo-yo",
+    "en": "The door is open.",
+    "des": "Noun + Adjective (passive)"
+  },
+  {
+    "phrase": "창문이 닫혀요.",
+    "pr": "chang-mun-i dat-hyeo-yo",
+    "en": "The window is closed.",
+    "des": "Noun + Adjective (passive)"
+  },
+  {
+    "phrase": "길이 미끄러워요.",
+    "pr": "gil-i mi-kkeu-reo-wo-yo",
+    "en": "The road is slippery.",
+    "des": "Noun + Adjective"
+  },
+
+  {
+    "phrase": "가방이 무거워요.",
+    "pr": "ga-bang-i mu-geo-wo-yo",
+    "en": "The bag is heavy.",
+    "des": "Noun + Adjective"
+  },
+  {
+    "phrase": "컵이 가벼워요.",
+    "pr": "keop-i ga-byeo-wo-yo",
+    "en": "The cup is light.",
+    "des": "Noun + Adjective"
+  },
+  {
+    "phrase": "음악이 좋아요.",
+    "pr": "eu-mak-i jo-a-yo",
+    "en": "The music is good.",
+    "des": "Noun + Adjective"
+  },
+  {
+    "phrase": "방이 커요.",
+    "pr": "bang-i keo-yo",
+    "en": "The room is big.",
+    "des": "Noun + Adjective"
+  },
+  {
+    "phrase": "옷이 예뻐요.",
+    "pr": "ot-i yep-peo-yo",
+    "en": "The clothes are pretty.",
+    "des": "Noun + Adjective"
+  },
+
+  {
+    "phrase": "차가 빨라요.",
+    "pr": "cha-ga ppal-la-yo",
+    "en": "The car is fast.",
+    "des": "Noun + Adjective"
+  },
+  {
+    "phrase": "버스가 느려요.",
+    "pr": "beo-seu-ga neu-reo-yo",
+    "en": "The bus is slow.",
+    "des": "Noun + Adjective"
+  },
+  {
+    "phrase": "문제가 쉬워요.",
+    "pr": "mun-je-ga swi-wo-yo",
+    "en": "The problem is easy.",
+    "des": "Noun + Adjective"
+  },
+  {
+    "phrase": "일이 어려워요.",
+    "pr": "il-i eo-ryeo-wo-yo",
+    "en": "The work is hard.",
+    "des": "Noun + Adjective"
+  },
+  {
+    "phrase": "책상이 낮아요.",
+    "pr": "chaek-sang-i na-ja-yo",
+    "en": "The desk is low.",
+    "des": "Noun + Adjective"
+  },
+
+  {
+    "phrase": "소리가 커요.",
+    "pr": "so-ri-ga keo-yo",
+    "en": "The sound is loud.",
+    "des": "Noun + Adjective"
+  },
+  {
+    "phrase": "소리가 작아요.",
+    "pr": "so-ri-ga ja-ga-yo",
+    "en": "The sound is quiet.",
+    "des": "Noun + Adjective"
+  },
+  {
+    "phrase": "가격이 싸요.",
+    "pr": "ga-gyeok-i ssa-yo",
+    "en": "The price is cheap.",
+    "des": "Noun + Adjective"
+  },
+  {
+    "phrase": "가격이 비싸요.",
+    "pr": "ga-gyeok-i bi-ssa-yo",
+    "en": "The price is expensive.",
+    "des": "Noun + Adjective"
+  },
+  {
+    "phrase": "하늘이 파래요.",
+    "pr": "ha-neul-i pa-rae-yo",
+    "en": "The sky is blue.",
+    "des": "Noun + Adjective"
+  },
+
+  {
+    "phrase": "커피가 달아요.",
+    "pr": "keo-pi-ga dal-a-yo",
+    "en": "The coffee is sweet.",
+    "des": "Noun + Adjective"
+  },
+  {
+    "phrase": "과일이 시어요.",
+    "pr": "gwa-il-i si-eo-yo",
+    "en": "The fruit is sour.",
+    "des": "Noun + Adjective"
+  },
+  {
+    "phrase": "바다가 넓어요.",
+    "pr": "ba-da-ga neol-beo-yo",
+    "en": "The sea is wide.",
+    "des": "Noun + Adjective"
+  },
+  {
+    "phrase": "산이 높아요.",
+    "pr": "san-i no-pa-yo",
+    "en": "The mountain is tall.",
+    "des": "Noun + Adjective"
+  },
+  {
+    "phrase": "공원이 조용해요.",
+    "pr": "gong-won-i jo-yong-hae-yo",
+    "en": "The park is quiet.",
+    "des": "Noun + Adjective"
+  }
+],"51-100na-adj":[
+  {
+    "phrase": "저는 직원이에요.",
+    "pr": "jeo-neun ji-gwon-i-e-yo",
+    "en": "I am an employee.",
+    "des": "Noun + Copula"
+  },
+  {
+    "phrase": "저는 요리사예요.",
+    "pr": "jeo-neun yo-ri-sa-ye-yo",
+    "en": "I am a cook.",
+    "des": "Noun + Copula"
+  },
+  {
+    "phrase": "저는 운전사예요.",
+    "pr": "jeo-neun un-jeon-sa-ye-yo",
+    "en": "I am a driver.",
+    "des": "Noun + Copula"
+  },
+  {
+    "phrase": "이 사람은 배우예요.",
+    "pr": "i sa-ram-eun bae-u-ye-yo",
+    "en": "This person is an actor.",
+    "des": "Noun + Copula"
+  },
+  {
+    "phrase": "그분은 가수예요.",
+    "pr": "geu-bun-eun ga-su-ye-yo",
+    "en": "That person is a singer.",
+    "des": "Noun + Copula"
+  },
+
+  {
+    "phrase": "여기는 공원이예요.",
+    "pr": "yeo-gi-neun gong-won-i-e-yo",
+    "en": "This place is a park.",
+    "des": "Noun + Copula"
+  },
+  {
+    "phrase": "여기는 시장이에요.",
+    "pr": "yeo-gi-neun si-jang-i-e-yo",
+    "en": "This place is a market.",
+    "des": "Noun + Copula"
+  },
+  {
+    "phrase": "저기는 병원이예요.",
+    "pr": "jeo-gi-neun byeong-won-i-e-yo",
+    "en": "That place is a hospital.",
+    "des": "Noun + Copula"
+  },
+  {
+    "phrase": "여기는 도서관이에요.",
+    "pr": "yeo-gi-neun do-seo-gwan-i-e-yo",
+    "en": "This place is a library.",
+    "des": "Noun + Copula"
+  },
+  {
+    "phrase": "저기는 회사예요.",
+    "pr": "jeo-gi-neun hoe-sa-ye-yo",
+    "en": "That place is a company.",
+    "des": "Noun + Copula"
+  },
+
+  {
+    "phrase": "하늘이 흐려요.",
+    "pr": "ha-neul-i heu-ryeo-yo",
+    "en": "The sky is cloudy.",
+    "des": "Noun + Adjective"
+  },
+  {
+    "phrase": "날씨가 추워요.",
+    "pr": "nal-ssi-ga chu-wo-yo",
+    "en": "The weather is cold.",
+    "des": "Noun + Adjective"
+  },
+  {
+    "phrase": "공기가 깨끗해요.",
+    "pr": "gong-gi-ga kkae-kkeu-tae-yo",
+    "en": "The air is clean.",
+    "des": "Noun + Adjective"
+  },
+  {
+    "phrase": "돌이 무거워요.",
+    "pr": "dol-i mu-geo-wo-yo",
+    "en": "The rock is heavy.",
+    "des": "Noun + Adjective"
+  },
+  {
+    "phrase": "꽃이 예뻐요.",
+    "pr": "kkot-i yep-peo-yo",
+    "en": "The flower is pretty.",
+    "des": "Noun + Adjective"
+  },
+
+  {
+    "phrase": "강아지가 귀여워요.",
+    "pr": "gang-a-ji-ga gwi-yeo-wo-yo",
+    "en": "The puppy is cute.",
+    "des": "Noun + Adjective"
+  },
+  {
+    "phrase": "고양이가 조용해요.",
+    "pr": "go-yang-i-ga jo-yong-hae-yo",
+    "en": "The cat is quiet.",
+    "des": "Noun + Adjective"
+  },
+  {
+    "phrase": "아이들이 많아요.",
+    "pr": "a-i-deul-i man-a-yo",
+    "en": "There are many children.",
+    "des": "Noun + Adjective"
+  },
+  {
+    "phrase": "부모님이 친절해요.",
+    "pr": "bu-mo-nim-i chin-jeol-hae-yo",
+    "en": "The parents are kind.",
+    "des": "Noun + Adjective"
+  },
+  {
+    "phrase": "친구가 바빠요.",
+    "pr": "chin-gu-ga bap-pa-yo",
+    "en": "My friend is busy.",
+    "des": "Noun + Adjective"
+  },
+
+  {
+    "phrase": "도시가 커요.",
+    "pr": "do-si-ga keo-yo",
+    "en": "The city is big.",
+    "des": "Noun + Adjective"
+  },
+  {
+    "phrase": "마을이 조용해요.",
+    "pr": "ma-eul-i jo-yong-hae-yo",
+    "en": "The village is quiet.",
+    "des": "Noun + Adjective"
+  },
+  {
+    "phrase": "길이 복잡해요.",
+    "pr": "gil-i bok-jap-hae-yo",
+    "en": "The street is crowded.",
+    "des": "Noun + Adjective"
+  },
+  {
+    "phrase": "버스정류장이 멀어요.",
+    "pr": "beo-seu-jeong-ryu-jang-i meo-reo-yo",
+    "en": "The bus stop is far.",
+    "des": "Noun + Adjective"
+  },
+  {
+    "phrase": "지하철역이 가까워요.",
+    "pr": "ji-ha-cheol-yeok-i ga-kka-wo-yo",
+    "en": "The subway station is close.",
+    "des": "Noun + Adjective"
+  },
+
+  {
+    "phrase": "물건이 싸요.",
+    "pr": "mul-geon-i ssa-yo",
+    "en": "The item is cheap.",
+    "des": "Noun + Adjective"
+  },
+  {
+    "phrase": "선물이 좋아요.",
+    "pr": "seon-mul-i jo-a-yo",
+    "en": "The gift is good.",
+    "des": "Noun + Adjective"
+  },
+  {
+    "phrase": "음료수가 차가워요.",
+    "pr": "eum-nyo-su-ga cha-ga-wo-yo",
+    "en": "The drink is cold.",
+    "des": "Noun + Adjective"
+  },
+  {
+    "phrase": "빵이 부드러워요.",
+    "pr": "ppang-i bu-deu-reo-wo-yo",
+    "en": "The bread is soft.",
+    "des": "Noun + Adjective"
+  },
+  {
+    "phrase": "과자가 달아요.",
+    "pr": "gwa-ja-ga dal-a-yo",
+    "en": "The snack is sweet.",
+    "des": "Noun + Adjective"
+  },
+
+  {
+    "phrase": "옷이 편해요.",
+    "pr": "ot-i pyeon-hae-yo",
+    "en": "The clothes are comfortable.",
+    "des": "Noun + Adjective"
+  },
+  {
+    "phrase": "신발이 좋아요.",
+    "pr": "sin-bal-i jo-a-yo",
+    "en": "The shoes are good.",
+    "des": "Noun + Adjective"
+  },
+  {
+    "phrase": "모자가 커요.",
+    "pr": "mo-ja-ga keo-yo",
+    "en": "The hat is big.",
+    "des": "Noun + Adjective"
+  },
+  {
+    "phrase": "안경이 가벼워요.",
+    "pr": "an-gyeong-i ga-byeo-wo-yo",
+    "en": "The glasses are light.",
+    "des": "Noun + Adjective"
+  },
+  {
+    "phrase": "가게가 작아요.",
+    "pr": "ga-ge-ga ja-ga-yo",
+    "en": "The shop is small.",
+    "des": "Noun + Adjective"
+  },
+
+  {
+    "phrase": "빨래가 말라요.",
+    "pr": "ppal-lae-ga mal-la-yo",
+    "en": "The laundry is dry.",
+    "des": "Noun + Adjective"
+  },
+  {
+    "phrase": "음식이 뜨거워요.",
+    "pr": "eum-sik-i tteu-geo-wo-yo",
+    "en": "The food is hot.",
+    "des": "Noun + Adjective"
+  },
+  {
+    "phrase": "방문이 열려요.",
+    "pr": "bang-mun-i yeol-lyeo-yo",
+    "en": "The room door is open.",
+    "des": "Noun + Adjective"
+  },
+  {
+    "phrase": "수업이 쉬워요.",
+    "pr": "su-eop-i swi-wo-yo",
+    "en": "The class is easy.",
+    "des": "Noun + Adjective"
+  },
+  {
+    "phrase": "일정이 빡빡해요.",
+    "pr": "il-jeong-i bbak-bbak-hae-yo",
+    "en": "The schedule is tight.",
+    "des": "Noun + Adjective"
+  },
+
+  {
+    "phrase": "사진이 예뻐요.",
+    "pr": "sa-jin-i yep-peo-yo",
+    "en": "The photo is pretty.",
+    "des": "Noun + Adjective"
+  },
+  {
+    "phrase": "영화관이 커요.",
+    "pr": "yeong-hwa-gwan-i keo-yo",
+    "en": "The movie theater is big.",
+    "des": "Noun + Adjective"
+  },
+  {
+    "phrase": "식물이 많아요.",
+    "pr": "sik-mul-i man-a-yo",
+    "en": "There are many plants.",
+    "des": "Noun + Adjective"
+  },
+  {
+    "phrase": "강이 길어요.",
+    "pr": "gang-i gi-reo-yo",
+    "en": "The river is long.",
+    "des": "Noun + Adjective"
+  },
+  {
+    "phrase": "산책길이 좋아요.",
+    "pr": "san-chaek-gil-i jo-a-yo",
+    "en": "The walking path is good.",
+    "des": "Noun + Adjective"
+  }
+],
+"1-20adjectives":[
+  {
+    "phrase": "이 방은 커요.",
+    "pr": "i bang-eun keoyo",
+    "en": "This room is big.",
+    "des": "크다 (big) — Noun + 은/는 + adjective"
+  },
+  {
+    "phrase": "이 가방은 작아요.",
+    "pr": "i gabang-eun jagayo",
+    "en": "This bag is small.",
+    "des": "작다 (small)"
+  },
+  {
+    "phrase": "날씨가 좋아요.",
+    "pr": "nalssi-ga joayo",
+    "en": "The weather is good.",
+    "des": "좋다 (good)"
+  },
+  {
+    "phrase": "음식이 나빠요.",
+    "pr": "eumsik-i nappayo",
+    "en": "The food is bad.",
+    "des": "나쁘다 (bad)"
+  },
+  {
+    "phrase": "한국어가 쉬워요.",
+    "pr": "han-gu-geo-ga swiwo-yo",
+    "en": "Korean is easy.",
+    "des": "쉽다 (easy)"
+  },
+  {
+    "phrase": "질문이 어려워요.",
+    "pr": "jilmun-i eoryeowo-yo",
+    "en": "The question is difficult.",
+    "des": "어렵다 (difficult)"
+  },
+  {
+    "phrase": "인터넷이 빨라요.",
+    "pr": "inteonet-i ppal-la-yo",
+    "en": "The internet is fast.",
+    "des": "빠르다 (fast)"
+  },
+  {
+    "phrase": "거북이가 느려요.",
+    "pr": "geo-bu-gi-ga neuryeo-yo",
+    "en": "The turtle is slow.",
+    "des": "느리다 (slow)"
+  },
+  {
+    "phrase": "커피가 비싸요.",
+    "pr": "keopi-ga bissayo",
+    "en": "Coffee is expensive.",
+    "des": "비싸다 (expensive)"
+  },
+  {
+    "phrase": "점심이 싸요.",
+    "pr": "jeomsim-i ssayo",
+    "en": "Lunch is cheap.",
+    "des": "싸다 (cheap)"
+  },
+  {
+    "phrase": "물이 뜨거워요.",
+    "pr": "mul-i tteugeowo-yo",
+    "en": "The water is hot.",
+    "des": "뜨겁다 (hot)"
+  },
+  {
+    "phrase": "우유가 차가워요.",
+    "pr": "uyu-ga chagawoyo",
+    "en": "The milk is cold.",
+    "des": "차갑다 (cold)"
+  },
+  {
+    "phrase": "길이 길어요.",
+    "pr": "gil-i giroyo",
+    "en": "The road is long.",
+    "des": "길다 (long)"
+  },
+  {
+    "phrase": "머리가 짧아요.",
+    "pr": "meori-ga jjalbayo",
+    "en": "The hair is short.",
+    "des": "짧다 (short)"
+  },
+  {
+    "phrase": "가방이 가벼워요.",
+    "pr": "gabang-i gabyeowo-yo",
+    "en": "The bag is light.",
+    "des": "가볍다 (light)"
+  },
+  {
+    "phrase": "박스가 무거워요.",
+    "pr": "bakseu-ga mugeowo-yo",
+    "en": "The box is heavy.",
+    "des": "무겁다 (heavy)"
+  },
+  {
+    "phrase": "책이 새로워요.",
+    "pr": "chaek-i saerowo-yo",
+    "en": "The book is new.",
+    "des": "새롭다 (new)"
+  },
+  {
+    "phrase": "집이 오래됐어요.",
+    "pr": "jib-i oraedwaesseo-yo",
+    "en": "The house is old.",
+    "des": "오래되다 (old thing)"
+  },
+  {
+    "phrase": "영화가 재미있어요.",
+    "pr": "yeonghwa-ga jaemi-isseo-yo",
+    "en": "The movie is fun.",
+    "des": "재미있다 (fun/interesting)"
+  },
+  {
+    "phrase": "음식이 맛있어요.",
+    "pr": "eumsik-i masisseo-yo",
+    "en": "The food is delicious.",
+    "des": "맛있다 (delicious)"
+  }
+],"21-40adjectives":[
+  {
+    "phrase": "이 차는 빠릅니다.",
+    "pr": "i cha-neun ppareum-ni-da",
+    "en": "This car is fast.",
+    "des": "빠르다 (fast) — Noun + 은/는 + adjective + ㅂ니다"
+  },
+  {
+    "phrase": "이 강아지는 느립니다.",
+    "pr": "i gang-a-ji-neun neurim-ni-da",
+    "en": "This puppy is slow.",
+    "des": "느리다 (slow)"
+  },
+  {
+    "phrase": "이 커피는 비쌉니다.",
+    "pr": "i keo-pi-neun bi-ssam-ni-da",
+    "en": "This coffee is expensive.",
+    "des": "비싸다 (expensive)"
+  },
+  {
+    "phrase": "이 점심은 쌉니다.",
+    "pr": "i jeom-sim-eun ssam-ni-da",
+    "en": "This lunch is cheap.",
+    "des": "싸다 (cheap)"
+  },
+  {
+    "phrase": "이 물은 뜨겁습니다.",
+    "pr": "i mu-reun tteu-geo-bseum-ni-da",
+    "en": "This water is hot.",
+    "des": "뜨겁다 (hot)"
+  },
+  {
+    "phrase": "음악이 재미없어요.",
+    "pr": "eumak-i jaemi-eopseoyo",
+    "en": "The music is boring.",
+    "des": "재미없다 (boring) — noun + 이/가 + adjective"
+  },
+  {
+    "phrase": "저는 배고파요.",
+    "pr": "jeoneun baegopayo",
+    "en": "I am hungry.",
+    "des": "배고프다 (hungry) — noun + adjective"
+  },
+  {
+    "phrase": "저는 배불러요.",
+    "pr": "jeoneun baebulleoyo",
+    "en": "I am full.",
+    "des": "배부르다 (full)"
+  },
+  {
+    "phrase": "학생이 졸려요.",
+    "pr": "haksaeng-i jollyeoyo",
+    "en": "The student is sleepy.",
+    "des": "졸리다 (sleepy)"
+  },
+  {
+    "phrase": "친구가 피곤해요.",
+    "pr": "chingu-ga pigonhaeyo",
+    "en": "My friend is tired.",
+    "des": "피곤하다 (tired)"
+  },
+  {
+    "phrase": "방이 깨끗해요.",
+    "pr": "bang-i kkaekkeuthaeyo",
+    "en": "The room is clean.",
+    "des": "깨끗하다 (clean)"
+  },
+  {
+    "phrase": "옷이 더러워요.",
+    "pr": "ot-i deoreowoyo",
+    "en": "The clothes are dirty.",
+    "des": "더럽다 (dirty)"
+  },
+  {
+    "phrase": "소파가 편해요.",
+    "pr": "sopa-ga pyeonhaeyo",
+    "en": "The sofa is comfortable.",
+    "des": "편하다 (comfortable)"
+  },
+  {
+    "phrase": "신발이 불편해요.",
+    "pr": "sinbal-i bulpyeonhaeyo",
+    "en": "The shoes are uncomfortable.",
+    "des": "불편하다 (uncomfortable)"
+  },
+  {
+    "phrase": "선생님이 친절해요.",
+    "pr": "seonsaengnim-i chinjeolhaeyo",
+    "en": "The teacher is kind.",
+    "des": "친절하다 (kind)"
+  },
+  {
+    "phrase": "도서관이 조용해요.",
+    "pr": "doseogwan-i joyonghaeyo",
+    "en": "The library is quiet.",
+    "des": "조용하다 (quiet)"
+  },
+  {
+    "phrase": "시장에 사람이 많아요.",
+    "pr": "sijang-e sarami manayo",
+    "en": "There are many people in the market.",
+    "des": "많다 (many)"
+  },
+  {
+    "phrase": "거리에는 사람이 적어요.",
+    "pr": "georie-neun sarami jeogeoyo",
+    "en": "There are few people on the street.",
+    "des": "적다 (few)"
+  },
+  {
+    "phrase": "목소리가 시끄러워요.",
+    "pr": "moksori-ga shikkeureowoyo",
+    "en": "The voice is loud/noisy.",
+    "des": "시끄럽다 (noisy)"
+  },
+  {
+    "phrase": "카페가 멀어요.",
+    "pr": "kape-ga meoreoyo",
+    "en": "The cafe is far.",
+    "des": "멀다 (far)"
+  },
+  {
+    "phrase": "집이 가까워요.",
+    "pr": "jib-i gakkawoyo",
+    "en": "The house is close.",
+    "des": "가깝다 (close)"
+  },
+  {
+    "phrase": "회의가 중요해요.",
+    "pr": "hoeui-ga jungyohaeyo",
+    "en": "The meeting is important.",
+    "des": "중요하다 (important)"
+  },
+  {
+    "phrase": "꽃이 예뻐요.",
+    "pr": "kkoch-i yeppeoyo",
+    "en": "The flower is pretty.",
+    "des": "예쁘다 (pretty)"
+  },
+  {
+    "phrase": "경치가 아름다워요.",
+    "pr": "gyeongchi-ga areumdawoyo",
+    "en": "The scenery is beautiful.",
+    "des": "아름답다 (beautiful)"
+  },
+  {
+    "phrase": "그 사람은 멋있어요.",
+    "pr": "geu saram-eun meosisseoyo",
+    "en": "That person is cool.",
+    "des": "멋있다 (cool)"
+  }
+],"41-60adjectives":[
+  {
+    "phrase": "이 음식은 짜요.",
+    "pr": "i eumsik-eun jjayo",
+    "en": "This food is salty.",
+    "des": "짜다 (salty) — Noun + 은/는 + adjective"
+  },
+  {
+    "phrase": "이 과일은 달아요.",
+    "pr": "i gwail-eun dalayo",
+    "en": "This fruit is sweet.",
+    "des": "달다 (sweet)"
+  },
+  {
+    "phrase": "이 채소는 써요.",
+    "pr": "i chaeso-neun sseoyo",
+    "en": "This vegetable is bitter.",
+    "des": "쓰다 (bitter)"
+  },
+  {
+    "phrase": "이 음식은 매워요.",
+    "pr": "i eumsik-eun maewoyo",
+    "en": "This food is spicy.",
+    "des": "맵다 (spicy)"
+  },
+  {
+    "phrase": "이 음료수는 시어요.",
+    "pr": "i eumryosu-neun sieoyo",
+    "en": "This drink is sour.",
+    "des": "시다 (sour)"
+  },
+
+  {
+    "phrase": "이 바다는 넓어요.",
+    "pr": "i bada-neun neolbeoyo",
+    "en": "This sea is wide.",
+    "des": "넓다 (wide) — Noun + 은/는 + adjective"
+  },
+  {
+    "phrase": "이 산은 높아요.",
+    "pr": "i san-eun nopayo",
+    "en": "This mountain is tall.",
+    "des": "높다 (tall)"
+  },
+  {
+    "phrase": "이 강은 깊어요.",
+    "pr": "i gang-eun gipeoyo",
+    "en": "This river is deep.",
+    "des": "깊다 (deep)"
+  },
+  {
+    "phrase": "이 호수는 얕아요.",
+    "pr": "i hosu-neun yatayo",
+    "en": "This lake is shallow.",
+    "des": "얕다 (shallow)"
+  },
+  {
+    "phrase": "이 길은 험해요.",
+    "pr": "i gil-eun heomhaeyo",
+    "en": "This road is rough/dangerous.",
+    "des": "험하다 (rough/dangerous)"
+  }],"61-80adjectives":[
+  {
+    "phrase": "이 문제는 쉽습니다.",
+    "pr": "i munje-neun swip-seum-ni-da",
+    "en": "This problem is easy.",
+    "des": "쉽다 (easy) — Noun + 은/는 + adjective + ㅂ니다"
+  },
+  {
+    "phrase": "이 일은 어렵습니다.",
+    "pr": "i il-eun eoryeop-seum-ni-da",
+    "en": "This work is difficult.",
+    "des": "어렵다 (difficult)"
+  },
+  {
+    "phrase": "이 시험은 중요합니다.",
+    "pr": "i siheom-eun jungyo-ham-ni-da",
+    "en": "This exam is important.",
+    "des": "중요하다 (important)"
+  },
+  {
+    "phrase": "이 수업은 재미있습니다.",
+    "pr": "i sueop-eun jaemi-iss-seum-ni-da",
+    "en": "This class is interesting.",
+    "des": "재미있다 (interesting)"
+  },
+  {
+    "phrase": "이 책은 유익합니다.",
+    "pr": "i chaek-eun yu-ik-ham-ni-da",
+    "en": "This book is informative.",
+    "des": "유익하다 (informative)"
+  },
+  {
+    "phrase": "아이가 착해요.",
+    "pr": "ai-ga chakhaeyo",
+    "en": "The child is kind-hearted.",
+    "des": "착하다 (kind-hearted)"
+  },
+  {
+    "phrase": "하늘이 밝아요.",
+    "pr": "haneul-i balgayo",
+    "en": "The sky is bright.",
+    "des": "밝다 (bright)"
+  },
+  {
+    "phrase": "방이 어두워요.",
+    "pr": "bang-i eoduwooyo",
+    "en": "The room is dark.",
+    "des": "어둡다 (dark)"
+  },
+  {
+    "phrase": "길이 넓어요.",
+    "pr": "gil-i neolbeoyo",
+    "en": "The road is wide.",
+    "des": "넓다 (wide)"
+  },
+  {
+    "phrase": "복도가 좁아요.",
+    "pr": "bokdoga jobayo",
+    "en": "The hallway is narrow.",
+    "des": "좁다 (narrow)"
+  },
+  {
+    "phrase": "강아지가 귀여워요.",
+    "pr": "gangajiga gwiyeowoyo",
+    "en": "The puppy is cute.",
+    "des": "귀엽다 (cute)"
+  },
+  {
+    "phrase": "날씨가 따뜻해요.",
+    "pr": "nalssiga ttatteuthaeyo",
+    "en": "The weather is warm.",
+    "des": "따뜻하다 (warm)"
+  },
+  {
+    "phrase": "바람이 시원해요.",
+    "pr": "baram-i siwonhaeyo",
+    "en": "The breeze is cool and refreshing.",
+    "des": "시원하다 (cool/refreshing)"
+  },
+  {
+    "phrase": "집이 편안해요.",
+    "pr": "jib-i pyeonanhaeyo",
+    "en": "The house is peaceful.",
+    "des": "편안하다 (peaceful)"
+  },
+  {
+    "phrase": "공기가 답답해요.",
+    "pr": "gonggi-ga dapdapaeyo",
+    "en": "The air feels stuffy.",
+    "des": "답답하다 (stuffy/frustrated)"
+  },
+  {
+    "phrase": "가방이 단단해요.",
+    "pr": "gabang-i dandanhaeyo",
+    "en": "The bag is sturdy.",
+    "des": "단단하다 (hard/firm)"
+  },
+  {
+    "phrase": "이불이 부드러워요.",
+    "pr": "ibul-i budeureowoyo",
+    "en": "The blanket is soft.",
+    "des": "부드럽다 (soft)"
+  },
+  {
+    "phrase": "학생이 활발해요.",
+    "pr": "haksaeng-i hwalbalhaeyo",
+    "en": "The student is energetic.",
+    "des": "활발하다 (active)"
+  },
+  {
+    "phrase": "아이들이 시끄러워요.",
+    "pr": "aideul-i shikkeureowoyo",
+    "en": "The kids are noisy.",
+    "des": "시끄럽다 (noisy)"
+  },
+  {
+    "phrase": "사람이 많아요.",
+    "pr": "saram-i manayo",
+    "en": "There are many people.",
+    "des": "많다 (many)"
+  },
+  {
+    "phrase": "문제가 간단해요.",
+    "pr": "munje-ga gandanhaeyo",
+    "en": "The problem is simple.",
+    "des": "간단하다 (simple)"
+  },
+  {
+    "phrase": "지하철이 복잡해요.",
+    "pr": "jihacheol-i bokjaphaeyo",
+    "en": "The subway is crowded/complicated.",
+    "des": "복잡하다 (complex/crowded)"
+  },
+  {
+    "phrase": "서비스가 친절해요.",
+    "pr": "seobiseu-ga chinjeolhaeyo",
+    "en": "The service is kind.",
+    "des": "친절하다 (kind)"
+  },
+  {
+    "phrase": "그림이 아름다워요.",
+    "pr": "geurim-i areumdawoyo",
+    "en": "The painting is beautiful.",
+    "des": "아름답다 (beautiful)"
+  },
+  {
+    "phrase": "영화가 유명해요.",
+    "pr": "yeonghwa-ga yumyeonghaeyo",
+    "en": "The movie is famous.",
+    "des": "유명하다 (famous)"
+  }
+]
+
+
+
+,"1-50verbs":[
+  { "phrase": "학생이 노래해요.", "pr": "haksaeng-i noraehaeyo", "en": "The student sings.", "des": "노래하다 (to sing)" },
+  { "phrase": "아이가 춤춰요.", "pr": "ai-ga chumchwayo", "en": "The child dances.", "des": "춤추다 (to dance)" },
+  { "phrase": "친구가 그림 그려요.", "pr": "chingu-ga geurim geuryeoyo", "en": "A friend draws a picture.", "des": "그리다 (to draw)" },
+  { "phrase": "학생이 사진 찍어요.", "pr": "haksaeng-i sajin jjigeoyo", "en": "The student takes a photo.", "des": "찍다 (to take [photo])" },
+  { "phrase": "사람이 운동해요.", "pr": "saram-i undonghaeyo", "en": "A person exercises.", "des": "운동하다 (to exercise)" },
+
+  { "phrase": "제가 청소해요.", "pr": "jega cheongsohaeyo", "en": "I clean.", "des": "청소하다 (to clean)" },
+  { "phrase": "학생이 씻어요.", "pr": "haksaeng-i ssiseoyo", "en": "The student washes.", "des": "씻다 (to wash)" },
+  { "phrase": "아이가 입어요.", "pr": "ai-ga ibeoyo", "en": "The child wears clothes.", "des": "입다 (to wear)" },
+  { "phrase": "사람이 벗어요.", "pr": "saram-i beoseoyo", "en": "A person takes off clothes.", "des": "벗다 (to take off)" },
+  { "phrase": "학생이 운동장에 뛰어요.", "pr": "haksaeng-i undongjang-e ttwieoyo", "en": "The student runs in the playground.", "des": "뛰다 (to run/jump)" },
+
+  { "phrase": "아이가 걸어요.", "pr": "ai-ga georeoyo", "en": "The child walks.", "des": "걷다 (to walk)" },
+  { "phrase": "사람이 앉아요.", "pr": "saram-i anjayo", "en": "A person sits.", "des": "앉다 (to sit)" },
+  { "phrase": "학생이 일어나요.", "pr": "haksaeng-i ireonayo", "en": "The student stands up.", "des": "일어나다 (to stand up)" },
+  { "phrase": "제가 뛰어요.", "pr": "jega ttwieoyo", "en": "I run.", "des": "뛰다 (to run)" },
+  { "phrase": "아이가 잡아요.", "pr": "ai-ga jabayo", "en": "The child catches.", "des": "잡다 (to catch)" },
+
+  { "phrase": "친구가 놓아요.", "pr": "chingu-ga nohayo", "en": "A friend puts down.", "des": "놓다 (to put/place)" },
+  { "phrase": "학생이 만들어요.", "pr": "haksaeng-i mandeureoyo", "en": "The student makes.", "des": "만들다 (to make)" },
+  { "phrase": "제가 고쳐요.", "pr": "jega gochyeoyo", "en": "I fix.", "des": "고치다 (to fix)" },
+  { "phrase": "사람이 선택해요.", "pr": "saram-i seontaekhaeyo", "en": "A person chooses.", "des": "선택하다 (to choose)" },
+  { "phrase": "학생이 배달해요.", "pr": "haksaeng-i baedalhaeyo", "en": "The student delivers.", "des": "배달하다 (to deliver)" },
+
+  { "phrase": "아이가 줘요.", "pr": "ai-ga jweoyo", "en": "The child gives.", "des": "주다 (to give)" },
+  { "phrase": "사람이 받아요.", "pr": "saram-i badaoyo", "en": "A person receives.", "des": "받다 (to receive)" },
+  { "phrase": "친구가 빌려요.", "pr": "chingu-ga billyeoyo", "en": "A friend borrows.", "des": "빌리다 (to borrow)" },
+  { "phrase": "학생이 도와요.", "pr": "haksaeng-i dowayo", "en": "The student helps.", "des": "돕다 (to help)" },
+  { "phrase": "제가 찾아요.", "pr": "jega chajayo", "en": "I look for.", "des": "찾다 (to find/search)" },
+
+  { "phrase": "사람이 기다려요.", "pr": "saram-i gidaryeoyo", "en": "A person waits.", "des": "기다리다 (to wait)" },
+  { "phrase": "학생이 놀아요.", "pr": "haksaeng-i norayo", "en": "The student plays.", "des": "놀다 (to play)" },
+  { "phrase": "아이가 공부해요.", "pr": "ai-ga gongbuhaeyo", "en": "The child studies.", "des": "공부하다 (to study)" },
+  { "phrase": "친구가 연습해요.", "pr": "chingu-ga yeonseuphaeyo", "en": "A friend practices.", "des": "연습하다 (to practice)" },
+  { "phrase": "제가 이야기해요.", "pr": "jega iyagihaeyo", "en": "I talk.", "des": "이야기하다 (to talk)" },
+
+  { "phrase": "사람이 질문해요.", "pr": "saram-i jilmunhaeyo", "en": "A person asks a question.", "des": "질문하다 (to ask)" },
+  { "phrase": "학생이 대답해요.", "pr": "haksaeng-i daedaphaeyo", "en": "The student answers.", "des": "대답하다 (to answer)" },
+  { "phrase": "아이가 전화해요.", "pr": "ai-ga jeonhwahaeyo", "en": "The child calls.", "des": "전화하다 (to call)" },
+  { "phrase": "친구가 준비해요.", "pr": "chingu-ga junbihaeyo", "en": "A friend prepares.", "des": "준비하다 (to prepare)" },
+  { "phrase": "제가 시작해요.", "pr": "jega sijakhaeyo", "en": "I start.", "des": "시작하다 (to start)" },
+
+  { "phrase": "사람이 끝내요.", "pr": "saram-i kkeunnaeyo", "en": "A person finishes.", "des": "끝내다 (to finish)" },
+  { "phrase": "학생이 여행해요.", "pr": "haksaeng-i yeohaenghaeyo", "en": "The student travels.", "des": "여행하다 (to travel)" },
+  { "phrase": "아이가 운동해요.", "pr": "ai-ga undonghaeyo", "en": "The child exercises.", "des": "운동하다 (to exercise)" },
+  { "phrase": "친구가 기억해요.", "pr": "chingu-ga gieokhaeyo", "en": "A friend remembers.", "des": "기억하다 (to remember)" },
+  { "phrase": "제가 잊어요.", "pr": "jega ijeoyo", "en": "I forget.", "des": "잊다 (to forget)" },
+
+  { "phrase": "학생이 믿어요.", "pr": "haksaeng-i mideoyo", "en": "The student believes.", "des": "믿다 (to believe)" },
+  { "phrase": "사람이 도착해요.", "pr": "saram-i dochakhaeyo", "en": "A person arrives.", "des": "도착하다 (to arrive)" },
+  { "phrase": "아이가 떠나요.", "pr": "ai-ga tteonayo", "en": "The child leaves.", "des": "떠나다 (to leave)" },
+  { "phrase": "친구가 도전해요.", "pr": "chingu-ga dojeonhaeyo", "en": "A friend challenges.", "des": "도전하다 (to challenge)" },
+  { "phrase": "제가 선택해요.", "pr": "jega seontaekhaeyo", "en": "I choose.", "des": "선택하다 (to choose)" }
+]
+
+,"ad-future":[
+  { "phrase": "집이 클 거예요.", "pr": "jib-i keul geoyeyo", "en": "The house will be big.", "des": "크다 — future adjective" },
+  { "phrase": "방이 작을 거예요.", "pr": "bang-i jageul geoyeyo", "en": "The room will be small.", "des": "작다 — future adjective" },
+  { "phrase": "날씨가 좋을 거예요.", "pr": "nalssi-ga joeul geoyeyo", "en": "The weather will be good.", "des": "좋다 — future adjective" },
+  { "phrase": "시험이 어려울 거예요.", "pr": "siheom-i eoryeoul geoyeyo", "en": "The exam will be difficult.", "des": "어렵다 — future adjective" },
+  { "phrase": "수업이 쉬울 거예요.", "pr": "eop-i swiul geoyeyo", "en": "The class will be easy.", "des": "쉽다 — future adjective" },
+
+  { "phrase": "길이 길 거예요.", "pr": "gil-i gil geoyeyo", "en": "The road will be long.", "des": "길다 — future adjective" },
+  { "phrase": "머리가 짧을 거예요.", "pr": "meori-ga jjalbeul geoyeyo", "en": "The hair will be short.", "des": "짧다 — future adjective" },
+  { "phrase": "가방이 무거울 거예요.", "pr": "gabang-i mugeoul geoyeyo", "en": "The bag will be heavy.", "des": "무겁다 — future adjective" },
+  { "phrase": "짐이 가벼울 거예요.", "pr": "jim-i gabyeoul geoyeyo", "en": "The luggage will be light.", "des": "가볍다 — future adjective" },
+  { "phrase": "음식이 맛있을 거예요.", "pr": "eumsik-i masisseul geoyeyo", "en": "The food will be delicious.", "des": "맛있다 — future adjective" },
+
+  { "phrase": "영화가 재미있을 거예요.", "pr": "yeonghwa-ga jaemi-isseul geoyeyo", "en": "The movie will be fun.", "des": "재미있다 — future adjective" },
+  { "phrase": "사람이 많을 거예요.", "pr": "saram-i maneul geoyeyo", "en": "There will be many people.", "des": "많다 — future adjective" },
+  { "phrase": "시간이 적을 거예요.", "pr": "sigan-i jeogeul geoyeyo", "en": "There will be little time.", "des": "적다 — future adjective" },
+  { "phrase": "날씨가 더울 거예요.", "pr": "nalssi-ga deoul geoyeyo", "en": "The weather will be hot.", "des": "덥다 — future adjective" },
+  { "phrase": "물이 차가울 거예요.", "pr": "mul-i chagaul geoyeyo", "en": "The water will be cold.", "des": "차갑다 — future adjective" },
+
+  { "phrase": "공기가 시원할 거예요.", "pr": "gonggi-ga siwonhal geoyeyo", "en": "The air will be cool.", "des": "시원하다 — future adjective" },
+  { "phrase": "방이 깨끗할 거예요.", "pr": "bang-i kkaekkeuthal geoyeyo", "en": "The room will be clean.", "des": "깨끗하다 — future adjective" },
+  { "phrase": "길이 복잡할 거예요.", "pr": "gil-i bokjaphal geoyeyo", "en": "The road will be crowded.", "des": "복잡하다 — future adjective" },
+  { "phrase": "동네가 조용할 거예요.", "pr": "dongne-ga joyonghal geoyeyo", "en": "The neighborhood will be quiet.", "des": "조용하다 — future adjective" },
+  { "phrase": "아이들이 시끄러울 거예요.", "pr": "aideul-i sikkeureoul geoyeyo", "en": "The kids will be noisy.", "des": "시끄럽다 — future adjective" },
+
+  { "phrase": "사람이 친절할 거예요.", "pr": "saram-i chinjeolhal geoyeyo", "en": "The person will be kind.", "des": "친절하다 — future adjective" },
+  { "phrase": "생활이 편할 거예요.", "pr": "saenghwal-i pyeonhal geoyeyo", "en": "Life will be comfortable.", "des": "편하다 — future adjective" },
+  { "phrase": "의자가 불편할 거예요.", "pr": "uija-ga bulpyeonhal geoyeyo", "en": "The chair will be uncomfortable.", "des": "불편하다 — future adjective" },
+  { "phrase": "문제가 간단할 거예요.", "pr": "munje-ga gandanhal geoyeyo", "en": "The problem will be simple.", "des": "간단하다 — future adjective" },
+  { "phrase": "설명이 복잡할 거예요.", "pr": "seolmyeong-i bokjaphal geoyeyo", "en": "The explanation will be complicated.", "des": "복잡하다 — future adjective" },
+
+  { "phrase": "시험이 중요할 거예요.", "pr": "siheom-i jungyohal geoyeyo", "en": "The exam will be important.", "des": "중요하다 — future adjective" },
+  { "phrase": "도시가 바쁠 거예요.", "pr": "dosi-ga bappeul geoyeyo", "en": "The city will be busy.", "des": "바쁘다 — future adjective" },
+  { "phrase": "하루가 길 거예요.", "pr": "haru-ga gil geoyeyo", "en": "The day will be long.", "des": "길다 — future adjective" },
+  { "phrase": "주말이 짧을 거예요.", "pr": "jumal-i jjalbeul geoyeyo", "en": "The weekend will be short.", "des": "짧다 — future adjective" },
+  { "phrase": "가격이 비쌀 거예요.", "pr": "gagyeok-i bissal geoyeyo", "en": "The price will be expensive.", "des": "비싸다 — future adjective" },
+
+  { "phrase": "점심이 쌀 거예요.", "pr": "jeomsim-i ssal geoyeyo", "en": "Lunch will be cheap.", "des": "싸다 — future adjective" },
+  { "phrase": "사람이 행복할 거예요.", "pr": "saram-i haengbokhal geoyeyo", "en": "The person will be happy.", "des": "행복하다 — future adjective" },
+  { "phrase": "기분이 나쁠 거예요.", "pr": "gibun-i nappeul geoyeyo", "en": "The mood will be bad.", "des": "나쁘다 — future adjective" },
+  { "phrase": "하늘이 맑을 거예요.", "pr": "haneul-i malgeul geoyeyo", "en": "The sky will be clear.", "des": "맑다 — future adjective" },
+  { "phrase": "밤이 어두울 거예요.", "pr": "bam-i eoduul geoyeyo", "en": "The night will be dark.", "des": "어둡다 — future adjective" },
+
+  { "phrase": "색이 밝을 거예요.", "pr": "saek-i balgeul geoyeyo", "en": "The color will be bright.", "des": "밝다 — future adjective" },
+  { "phrase": "날씨가 따뜻할 거예요.", "pr": "nalssi-ga ttatteuthal geoyeyo", "en": "The weather will be warm.", "des": "따뜻하다 — future adjective" },
+  { "phrase": "겨울이 추울 거예요.", "pr": "gyeoul-i chuul geoyeyo", "en": "Winter will be cold.", "des": "춥다 — future adjective" },
+  { "phrase": "여름이 더울 거예요.", "pr": "yeoreum-i deoul geoyeyo", "en": "Summer will be hot.", "des": "덥다 — future adjective" },
+  { "phrase": "여행이 즐거울 거예요.", "pr": "yeohaeng-i jeulgeoul geoyeyo", "en": "The trip will be enjoyable.", "des": "즐겁다 — future adjective" }
+],
+"ad-future2":[
+  { "phrase": "[[학교]]가 클 거예요.", "pr": "hakgyo-ga keul geoyeyo", "en": "The school will be big.", "des": "크다 — future adjective" },
+  { "phrase": "[[교실]]이 작을 거예요.", "pr": "gyosil-i jageul geoyeyo", "en": "The classroom will be small.", "des": "작다 — future adjective" },
+  { "phrase": "[[문]]이 열릴 거예요.", "pr": "mun-i yeollil geoyeyo", "en": "The door will be open.", "des": "열리다 → adjective-like state (easy)" },
+  { "phrase": "[[창문]]이 닫힐 거예요.", "pr": "changmun-i dadhil geoyeyo", "en": "The window will be closed.", "des": "닫히다 → adjective-like state" },
+  { "phrase": "[[책상]]이 깨끗할 거예요.", "pr": "chaeksang-i kkaekkeuthal geoyeyo", "en": "The desk will be clean.", "des": "깨끗하다 — future adjective" },
+
+  { "phrase": "[[의자]]가 편할 거예요.", "pr": "uija-ga pyeonhal geoyeyo", "en": "The chair will be comfortable.", "des": "편하다 — future adjective" },
+  { "phrase": "[[버스]]가 복잡할 거예요.", "pr": "beoseu-ga bokjaphal geoyeyo", "en": "The bus will be crowded.", "des": "복잡하다 — future adjective" },
+  { "phrase": "[[지하철]]이 조용할 거예요.", "pr": "jihacheol-i joyonghal geoyeyo", "en": "The subway will be quiet.", "des": "조용하다 — future adjective" },
+  { "phrase": "[[거리]]가 시끄러울 거예요.", "pr": "geori-ga sikkeureoul geoyeyo", "en": "The street will be noisy.", "des": "시끄럽다 — future adjective" },
+  { "phrase": "[[카페]]가 붐빌 거예요.", "pr": "kape-ga bumbil geoyeyo", "en": "The café will be busy.", "des": "붐비다 — adjective-like" },
+
+  { "phrase": "[[가게]]가 한산할 거예요.", "pr": "gage-ga hansanhal geoyeyo", "en": "The store will be quiet.", "des": "한산하다 — future adjective" },
+  { "phrase": "[[도로]]가 넓을 거예요.", "pr": "doro-ga neolbeul geoyeyo", "en": "The road will be wide.", "des": "넓다 — future adjective" },
+  { "phrase": "[[골목]]이 좁을 거예요.", "pr": "golmok-i jopeul geoyeyo", "en": "The alley will be narrow.", "des": "좁다 — future adjective" },
+  { "phrase": "[[하늘]]이 흐릴 거예요.", "pr": "haneul-i heuril geoyeyo", "en": "The sky will be cloudy.", "des": "흐리다 — future adjective" },
+  { "phrase": "[[비]]가 많을 거예요.", "pr": "bi-ga maneul geoyeyo", "en": "There will be a lot of rain.", "des": "많다 — future adjective" },
+
+  { "phrase": "[[눈]]이 적을 거예요.", "pr": "nun-i jeogeul geoyeyo", "en": "There will be little snow.", "des": "적다 — future adjective" },
+  { "phrase": "[[공원]]이 예쁠 거예요.", "pr": "gongwon-i yeppeul geoyeyo", "en": "The park will be pretty.", "des": "예쁘다 — future adjective" },
+  { "phrase": "[[꽃]]이 아름다울 거예요.", "pr": "kkot-i areumdaul geoyeyo", "en": "The flowers will be beautiful.", "des": "아름답다 — future adjective" },
+  { "phrase": "[[나무]]가 높을 거예요.", "pr": "namu-ga nopeul geoyeyo", "en": "The tree will be tall.", "des": "높다 — future adjective" },
+  { "phrase": "[[산]]이 낮을 거예요.", "pr": "san-i naj-eul geoyeyo", "en": "The mountain will be low.", "des": "낮다 — future adjective" },
+
+  { "phrase": "[[강]]이 깊을 거예요.", "pr": "gang-i gipeul geoyeyo", "en": "The river will be deep.", "des": "깊다 — future adjective" },
+  { "phrase": "[[물]]이 얕을 거예요.", "pr": "mul-i yateul geoyeyo", "en": "The water will be shallow.", "des": "얕다 — future adjective" },
+  { "phrase": "[[하루]]가 바쁠 거예요.", "pr": "haru-ga bappeul geoyeyo", "en": "The day will be busy.", "des": "바쁘다 — future adjective" },
+  { "phrase": "[[일]]이 쉬울 거예요.", "pr": "il-i swiul geoyeyo", "en": "The work will be easy.", "des": "쉽다 — future adjective" },
+  { "phrase": "[[문제]]가 어려울 거예요.", "pr": "munje-ga eoryeoul geoyeyo", "en": "The problem will be hard.", "des": "어렵다 — future adjective" },
+
+  { "phrase": "[[계획]]이 간단할 거예요.", "pr": "gyehoek-i gandanhal geoyeyo", "en": "The plan will be simple.", "des": "간단하다 — future adjective" },
+  { "phrase": "[[설명]]이 자세할 거예요.", "pr": "seolmyeong-i jaselhal geoyeyo", "en": "The explanation will be detailed.", "des": "자세하다 — future adjective" },
+  { "phrase": "[[수업]]이 유용할 거예요.", "pr": "eop-i yuyonghal geoyeyo", "en": "The class will be useful.", "des": "유용하다 — future adjective" },
+  { "phrase": "[[정보]]가 정확할 거예요.", "pr": "jeongbo-ga jeonghwakhal geoyeyo", "en": "The information will be accurate.", "des": "정확하다 — future adjective" },
+  { "phrase": "[[답]]이 틀릴 거예요.", "pr": "dap-i teullil geoyeyo", "en": "The answer will be wrong.", "des": "틀리다 — adjective-like" },
+
+  { "phrase": "[[결과]]가 같을 거예요.", "pr": "gyeolgwa-ga gateul geoyeyo", "en": "The result will be the same.", "des": "같다 — future adjective" },
+  { "phrase": "[[의견]]이 다를 거예요.", "pr": "uigyeon-i dareul geoyeyo", "en": "The opinion will be different.", "des": "다르다 — future adjective" },
+  { "phrase": "[[기회]]가 많을 거예요.", "pr": "gihoe-ga maneul geoyeyo", "en": "There will be many opportunities.", "des": "많다 — future adjective" },
+  { "phrase": "[[시간]]이 부족할 거예요.", "pr": "sigan-i bujokhal geoyeyo", "en": "There will not be enough time.", "des": "부족하다 — future adjective" },
+  { "phrase": "[[생활]]이 편리할 거예요.", "pr": "saenghwal-i pyeonrihal geoyeyo", "en": "Life will be convenient.", "des": "편리하다 — future adjective" },
+
+  { "phrase": "[[도시]]가 안전할 거예요.", "pr": "dosi-ga anjeonhal geoyeyo", "en": "The city will be safe.", "des": "안전하다 — future adjective" },
+  { "phrase": "[[길]]이 위험할 거예요.", "pr": "gil-i wiheomhal geoyeyo", "en": "The road will be dangerous.", "des": "위험하다 — future adjective" },
+  { "phrase": "[[사람]]이 정직할 거예요.", "pr": "saram-i jeongjikhal geoyeyo", "en": "The person will be honest.", "des": "정직하다 — future adjective" },
+  { "phrase": "[[친구]]가 유명할 거예요.", "pr": "chingu-ga yumyeonghal geoyeyo", "en": "The friend will be famous.", "des": "유명하다 — future adjective" },
+  { "phrase": "[[이야기]]가 흥미로울 거예요.", "pr": "iyagi-ga heungmiro-ul geoyeyo", "en": "The story will be interesting.", "des": "흥미롭다 — future adjective" }
+] ,
+"ad-negations":[
+  { "phrase": "집이 안 [[커요]].", "pr": "jib-i an keoyo", "en": "The house is not big.", "des": "크다 — negative adjective" },
+  { "phrase": "방이 안 [[작아요]].", "pr": "bang-i an jagayo", "en": "The room is not small.", "des": "작다 — negative adjective" },
+  { "phrase": "날씨가 안 [[좋아요]].", "pr": "nalssi-ga an joayo", "en": "The weather is not good.", "des": "좋다 — negative adjective" },
+  { "phrase": "음식이 안 [[맛있어요]].", "pr": "eumsik-i an masisseoyo", "en": "The food is not delicious.", "des": "맛있다 — negative adjective" },
+  { "phrase": "영화가 안 [[재미있어요]].", "pr": "yeonghwa-ga an jaemi-isseoyo", "en": "The movie is not fun.", "des": "재미있다 — negative adjective" },
+
+  { "phrase": "문제가 안 [[쉬워요]].", "pr": "munje-ga an swiwo-yo", "en": "The problem is not easy.", "des": "쉽다 — negative adjective" },
+  { "phrase": "일이 안 [[어려워요]].", "pr": "il-i an eoryeowo-yo", "en": "The work is not difficult.", "des": "어렵다 — negative adjective" },
+  { "phrase": "인터넷이 안 [[빨라요]].", "pr": "inteonet-i an ppalayo", "en": "The internet is not fast.", "des": "빠르다 — negative adjective" },
+  { "phrase": "버스가 안 [[느려요]].", "pr": "beoseu-ga an neuryeoyo", "en": "The bus is not slow.", "des": "느리다 — negative adjective" },
+  { "phrase": "가격이 안 [[비싸요]].", "pr": "gagyeok-i an bissayo", "en": "The price is not expensive.", "des": "비싸다 — negative adjective" },
+
+  { "phrase": "점심이 안 [[싸요]].", "pr": "jeomsim-i an ssayo", "en": "Lunch is not cheap.", "des": "싸다 — negative adjective" },
+  { "phrase": "물이 안 [[뜨거워요]].", "pr": "mul-i an tteugeowoyo", "en": "The water is not hot.", "des": "뜨겁다 — negative adjective" },
+  { "phrase": "우유가 안 [[차가워요]].", "pr": "uyu-ga an chagawoyo", "en": "The milk is not cold.", "des": "차갑다 — negative adjective" },
+  { "phrase": "길이 안 [[길어요]].", "pr": "gil-i an giroyo", "en": "The road is not long.", "des": "길다 — negative adjective" },
+  { "phrase": "머리가 안 [[짧아요]].", "pr": "meori-ga an jjalbayo", "en": "The hair is not short.", "des": "짧다 — negative adjective" },
+
+  { "phrase": "가방이 안 [[가벼워요]].", "pr": "gabang-i an gabyeowoyo", "en": "The bag is not light.", "des": "가볍다 — negative adjective" },
+  { "phrase": "박스가 안 [[무거워요]].", "pr": "bakseu-ga an mugeowoyo", "en": "The box is not heavy.", "des": "무겁다 — negative adjective" },
+  { "phrase": "책이 안 [[새로워요]].", "pr": "chaek-i an saerowoyo", "en": "The book is not new.", "des": "새롭다 — negative adjective" },
+  { "phrase": "집이 안 [[오래됐어요]].", "pr": "jib-i an oraedwaesseoyo", "en": "The house is not old.", "des": "오래되다 — negative adjective" },
+  { "phrase": "사람이 안 [[친절해요]].", "pr": "saram-i an chinjeolhaeyo", "en": "The person is not kind.", "des": "친절하다 — negative adjective" },
+
+  { "phrase": "동네가 안 [[조용해요]].", "pr": "dongne-ga an joyonghaeyo", "en": "The neighborhood is not quiet.", "des": "조용하다 — negative adjective" },
+  { "phrase": "거리가 안 [[시끄러워요]].", "pr": "geori-ga an sikkeureowoyo", "en": "The street is not noisy.", "des": "시끄럽다 — negative adjective" },
+  { "phrase": "학교가 안 [[멀어요]].", "pr": "hakgyo-ga an meoreo", "en": "The school is not far.", "des": "멀다 — negative adjective" },
+  { "phrase": "집이 안 [[가까워요]].", "pr": "jib-i an gakkawoyo", "en": "The house is not close.", "des": "가깝다 — negative adjective" },
+  { "phrase": "시험이 안 [[중요해요]].", "pr": "siheom-i an jungyohayo", "en": "The exam is not important.", "des": "중요하다 — negative adjective" },
+
+  { "phrase": "하루가 안 [[바빠요]].", "pr": "haru-ga an bappayo", "en": "The day is not busy.", "des": "바쁘다 — negative adjective" },
+  { "phrase": "몸이 안 [[피곤해요]].", "pr": "mom-i an pigonhaeyo", "en": "The body is not tired.", "des": "피곤하다 — negative adjective" },
+  { "phrase": "마음이 안 [[편해요]].", "pr": "maeum-i an pyeonhaeyo", "en": "The mind is not calm.", "des": "편하다 — negative adjective" },
+  { "phrase": "의자가 안 [[불편해요]].", "pr": "uija-ga an bulpyeonhaeyo", "en": "The chair is not uncomfortable.", "des": "불편하다 — negative adjective" },
+  { "phrase": "공원이 안 [[예뻐요]].", "pr": "gongwon-i an yeppeoyo", "en": "The park is not pretty.", "des": "예쁘다 — negative adjective" },
+
+  { "phrase": "경치가 안 [[아름다워요]].", "pr": "gyeongchi-ga an areumda-woyo", "en": "The scenery is not beautiful.", "des": "아름답다 — negative adjective" },
+  { "phrase": "사람이 안 [[착해요]].", "pr": "saram-i an chakhaeyo", "en": "The person is not kind-hearted.", "des": "착하다 — negative adjective" },
+  { "phrase": "친구가 안 [[유명해요]].", "pr": "chingu-ga an yumyeonghaeyo", "en": "The friend is not famous.", "des": "유명하다 — negative adjective" },
+  { "phrase": "계획이 안 [[간단해요]].", "pr": "gyehoek-i an gandanhaeyo", "en": "The plan is not simple.", "des": "간단하다 — negative adjective" },
+  { "phrase": "설명이 안 [[복잡해요]].", "pr": "seolmyeong-i an bokjaphaeyo", "en": "The explanation is not complicated.", "des": "복잡하다 — negative adjective" },
+
+  { "phrase": "정보가 안 [[정확해요]].", "pr": "jeongbo-ga an jeonghwakhaeyo", "en": "The information is not accurate.", "des": "정확하다 — negative adjective" },
+  { "phrase": "결과가 안 [[같아요]].", "pr": "gyeolgwa-ga an gatayo", "en": "The result is not the same.", "des": "같다 — negative adjective" },
+  { "phrase": "의견이 안 [[달라요]].", "pr": "uigyeon-i an dallayo", "en": "The opinion is not different.", "des": "다르다 — negative adjective" },
+  { "phrase": "생활이 안 [[편리해요]].", "pr": "saenghwal-i an pyeonrihaeyo", "en": "Life is not convenient.", "des": "편리하다 — negative adjective" },
+  { "phrase": "도시가 안 [[안전해요]].", "pr": "dosi-ga an anjeonhaeyo", "en": "The city is not safe.", "des": "안전하다 — negative adjective" }
+],"ad-negations2":[
+  { "phrase": "방이 안 [[넓어요]].", "pr": "bang-i an neolbeoyo", "en": "The room is not wide.", "des": "넓다 — negative adjective" },
+  { "phrase": "길이 안 [[좁아요]].", "pr": "gil-i an jobayo", "en": "The road is not narrow.", "des": "좁다 — negative adjective" },
+  { "phrase": "색이 안 [[밝아요]].", "pr": "saek-i an balgayo", "en": "The color is not bright.", "des": "밝다 — negative adjective" },
+  { "phrase": "하늘이 안 [[어두워요]].", "pr": "haneul-i an eoduwo-yo", "en": "The sky is not dark.", "des": "어둡다 — negative adjective" },
+  { "phrase": "문이 안 [[깨끗해요]].", "pr": "mun-i an kkaekkeuthaeyo", "en": "The door is not clean.", "des": "깨끗하다 — negative adjective" },
+
+  { "phrase": "방이 안 [[더러워요]].", "pr": "bang-i an deoreowoyo", "en": "The room is not dirty.", "des": "더럽다 — negative adjective" },
+  { "phrase": "공기가 안 [[맑아요]].", "pr": "gonggi-ga an malgayo", "en": "The air is not clear.", "des": "맑다 — negative adjective" },
+  { "phrase": "소리가 안 [[시원해요]].", "pr": "sori-ga an siwonhaeyo", "en": "The sound is not refreshing.", "des": "시원하다 — negative adjective" },
+  { "phrase": "날씨가 안 [[답답해요]].", "pr": "nalssi-ga an dapdaphaeyo", "en": "The weather is not stuffy.", "des": "답답하다 — negative adjective" },
+  { "phrase": "옷이 안 [[편해요]].", "pr": "ot-i an pyeonhaeyo", "en": "The clothes are not comfortable.", "des": "편하다 — negative adjective" },
+
+  { "phrase": "신발이 안 [[딱딱해요]].", "pr": "sinbal-i an ttakttakaeyo", "en": "The shoes are not hard.", "des": "딱딱하다 — negative adjective" },
+  { "phrase": "침대가 안 [[부드러워요]].", "pr": "chimdae-ga an budeureowoyo", "en": "The bed is not soft.", "des": "부드럽다 — negative adjective" },
+  { "phrase": "가격이 안 [[합리적이에요]].", "pr": "gagyeok-i an hamnijeogieyo", "en": "The price is not reasonable.", "des": "합리적이다 — negative adjective" },
+  { "phrase": "설명이 안 [[친절해요]].", "pr": "seolmyeong-i an chinjeolhaeyo", "en": "The explanation is not kind.", "des": "친절하다 — negative adjective" },
+  { "phrase": "말이 안 [[자연스러워요]].", "pr": "mal-i an jayeonseureowoyo", "en": "The speech is not natural.", "des": "자연스럽다 — negative adjective" },
+
+  { "phrase": "표현이 안 [[이상해요]].", "pr": "pyohyeon-i an isanghaeyo", "en": "The expression is not strange.", "des": "이상하다 — negative adjective" },
+  { "phrase": "문장이 안 [[올바라요]].", "pr": "munjang-i an olbarayo", "en": "The sentence is not correct.", "des": "올바르다 — negative adjective" },
+  { "phrase": "대답이 안 [[분명해요]].", "pr": "daedap-i an bunmyeonghaeyo", "en": "The answer is not clear.", "des": "분명하다 — negative adjective" },
+  { "phrase": "기분이 안 [[상쾌해요]].", "pr": "gibun-i an sangkwaehaeyo", "en": "The feeling is not refreshing.", "des": "상쾌하다 — negative adjective" },
+  { "phrase": "목소리가 안 [[조용해요]].", "pr": "moksori-ga an joyonghaeyo", "en": "The voice is not quiet.", "des": "조용하다 — negative adjective" },
+
+  { "phrase": "상황이 안 [[심각해요]].", "pr": "sanghwang-i an simgakhaeyo", "en": "The situation is not serious.", "des": "심각하다 — negative adjective" },
+  { "phrase": "문제가 안 [[간단해요]].", "pr": "munje-ga an gandanhaeyo", "en": "The problem is not simple.", "des": "간단하다 — negative adjective" },
+  { "phrase": "일이 안 [[복잡해요]].", "pr": "il-i an bokjaphaeyo", "en": "The work is not complicated.", "des": "복잡하다 — negative adjective" },
+  { "phrase": "계획이 안 [[완벽해요]].", "pr": "gyehoek-i an wanbyeokhaeyo", "en": "The plan is not perfect.", "des": "완벽하다 — negative adjective" },
+  { "phrase": "시간이 안 [[충분해요]].", "pr": "sigan-i an chungbunhaeyo", "en": "The time is not sufficient.", "des": "충분하다 — negative adjective" },
+
+  { "phrase": "방법이 안 [[간편해요]].", "pr": "bangbeop-i an ganpyeonhaeyo", "en": "The method is not easy.", "des": "간편하다 — negative adjective" },
+  { "phrase": "생활이 안 [[여유로워요]].", "pr": "saenghwal-i an yeoyuro-wo-yo", "en": "Life is not relaxed.", "des": "여유롭다 — negative adjective" },
+  { "phrase": "사람이 안 [[정직해요]].", "pr": "saram-i an jeongjikhaeyo", "en": "The person is not honest.", "des": "정직하다 — negative adjective" },
+  { "phrase": "태도가 안 [[진지해요]].", "pr": "taedo-ga an jinjihaeyo", "en": "The attitude is not serious.", "des": "진지하다 — negative adjective" },
+  { "phrase": "생각이 안 [[현실적이에요]].", "pr": "saenggak-i an hyeonsiljeogieyo", "en": "The idea is not realistic.", "des": "현실적이다 — negative adjective" },
+
+  { "phrase": "목표가 안 [[명확해요]].", "pr": "mokpyo-ga an myeonghwakhaeyo", "en": "The goal is not clear.", "des": "명확하다 — negative adjective" },
+  { "phrase": "선택이 안 [[쉬워요]].", "pr": "seontaek-i an swiwo-yo", "en": "The choice is not easy.", "des": "쉽다 — negative adjective" },
+  { "phrase": "결정이 안 [[빠라요]].", "pr": "gyeoljeong-i an ppalayo", "en": "The decision is not fast.", "des": "빠르다 — negative adjective" },
+  { "phrase": "반응이 안 [[느려요]].", "pr": "bannyeong-i an neuryeoyo", "en": "The reaction is not slow.", "des": "느리다 — negative adjective" },
+  { "phrase": "이야기가 안 [[재미없어요]].", "pr": "iyagi-ga an jaemi-eopseoyo", "en": "The story is not boring.", "des": "재미없다 — negative adjective" },
+
+  { "phrase": "표정이 안 [[밝아요]].", "pr": "pyojeong-i an balgayo", "en": "The expression is not bright.", "des": "밝다 — negative adjective" },
+  { "phrase": "분위기가 안 [[차가워요]].", "pr": "bunwigiga an chagawoyo", "en": "The atmosphere is not cold.", "des": "차갑다 — negative adjective" },
+  { "phrase": "말투가 안 [[부드러워요]].", "pr": "maltu-ga an budeureowoyo", "en": "The tone is not soft.", "des": "부드럽다 — negative adjective" },
+  { "phrase": "환경이 안 [[안락해요]].", "pr": "hwangyeong-i an allakhaeyo", "en": "The environment is not cozy.", "des": "안락하다 — negative adjective" }
+]
+,"ad-negations-copula":[
+  { "phrase": "이 집은 커요 아니에요.", "pr": "i jib-eun keoyo anieyo", "en": "This house is not big.", "des": "크다 — adjective + 아니에요" },
+  { "phrase": "이 방은 작아요 아니에요.", "pr": "i bang-eun jagayo anieyo", "en": "This room is not small.", "des": "작다 — adjective + 아니에요" },
+  { "phrase": "오늘 날씨는 좋아요 아니에요.", "pr": "oneul nalssi-neun joayo anieyo", "en": "Today's weather is not good.", "des": "좋다 — adjective + 아니에요" },
+  { "phrase": "이 음식은 맛있어요 아니에요.", "pr": "i eumsik-eun masisseoyo anieyo", "en": "This food is not delicious.", "des": "맛있다 — adjective + 아니에요" },
+  { "phrase": "이 문제는 쉬워요 아니에요.", "pr": "i munje-neun swiwo-yo anieyo", "en": "This problem is not easy.", "des": "쉽다 — adjective + 아니에요" },
+
+  { "phrase": "그 질문은 어려워요 아니에요.", "pr": "geu jilmun-eun eoryeowo-yo anieyo", "en": "That question is not difficult.", "des": "어렵다 — adjective + 아니에요" },
+  { "phrase": "이 길은 길어요 아니에요.", "pr": "i gil-eun giroyo anieyo", "en": "This road is not long.", "des": "길다 — adjective + 아니에요" },
+  { "phrase": "내 머리는 짧아요 아니에요.", "pr": "nae meori-neun jjalbayo anieyo", "en": "My hair is not short.", "des": "짧다 — adjective + 아니에요" },
+  { "phrase": "이 가방은 가벼워요 아니에요.", "pr": "i gabang-eun gabyeowo-yo anieyo", "en": "This bag is not light.", "des": "가볍다 — adjective + 아니에요" },
+  { "phrase": "이 박스는 무거워요 아니에요.", "pr": "i bakseu-neun mugeowo-yo anieyo", "en": "This box is not heavy.", "des": "무겁다 — adjective + 아니에요" },
+
+  { "phrase": "그 영화는 재미있어요 아니에요.", "pr": "geu yeonghwa-neun jaemi-isseoyo anieyo", "en": "That movie is not fun.", "des": "재미있다 — adjective + 아니에요" },
+  { "phrase": "이 수업은 지루해요 아니에요.", "pr": "i sueop-eun jiruhaeyo anieyo", "en": "This class is not boring.", "des": "지루하다 — adjective + 아니에요" },
+  { "phrase": "이 커피는 비싸요 아니에요.", "pr": "i keopi-neun bissayo anieyo", "en": "This coffee is not expensive.", "des": "비싸다 — adjective + 아니에요" },
+  { "phrase": "이 점심은 싸요 아니에요.", "pr": "i jeomsim-eun ssayo anieyo", "en": "This lunch is not cheap.", "des": "싸다 — adjective + 아니에요" },
+  { "phrase": "오늘 공기는 깨끗해요 아니에요.", "pr": "oneul gonggi-neun kkaekkeuthaeyo anieyo", "en": "Today's air is not clean.", "des": "깨끗하다 — adjective + 아니에요" },
+
+  { "phrase": "이 방은 더러워요 아니에요.", "pr": "i bang-eun deoreowoyo anieyo", "en": "This room is not dirty.", "des": "더럽다 — adjective + 아니에요" },
+  { "phrase": "이 의자는 편해요 아니에요.", "pr": "i uija-neun pyeonhaeyo anieyo", "en": "This chair is not comfortable.", "des": "편하다 — adjective + 아니에요" },
+  { "phrase": "그 소리는 시끄러워요 아니에요.", "pr": "geu sori-neun sikkeureowo-yo anieyo", "en": "That sound is not noisy.", "des": "시끄럽다 — adjective + 아니에요" },
+  { "phrase": "이 카페는 조용해요 아니에요.", "pr": "i kape-neun joyonghaeyo anieyo", "en": "This café is not quiet.", "des": "조용하다 — adjective + 아니에요" },
+  { "phrase": "그 사람은 친절해요 아니에요.", "pr": "geu saram-eun chinjeolhaeyo anieyo", "en": "That person is not kind.", "des": "친절하다 — adjective + 아니에요" },
+
+  { "phrase": "이 아이는 귀여워요 아니에요.", "pr": "i ai-neun gwiyeowo-yo anieyo", "en": "This child is not cute.", "des": "귀엽다 — adjective + 아니에요" },
+  { "phrase": "그 남자는 잘생겼어요 아니에요.", "pr": "geu namja-neun jalsaenggyeosseoyo anieyo", "en": "That man is not handsome.", "des": "잘생기다 — adjective + 아니에요" },
+  { "phrase": "이 꽃은 예뻐요 아니에요.", "pr": "i kkot-eun yeppeoyo anieyo", "en": "This flower is not pretty.", "des": "예쁘다 — adjective + 아니에요" },
+  { "phrase": "이 도시는 복잡해요 아니에요.", "pr": "i dosi-neun bokjaphaeyo anieyo", "en": "This city is not complicated.", "des": "복잡하다 — adjective + 아니에요" },
+  { "phrase": "이 방법은 간단해요 아니에요.", "pr": "i bangbeop-eun gandanhaeyo anieyo", "en": "This method is not simple.", "des": "간단하다 — adjective + 아니에요" },
+
+  { "phrase": "이 계획은 완벽해요 아니에요.", "pr": "i gyehoek-eun wanbyeokhaeyo anieyo", "en": "This plan is not perfect.", "des": "완벽하다 — adjective + 아니에요" },
+  { "phrase": "이 시간은 충분해요 아니에요.", "pr": "i sigan-eun chungbunhaeyo anieyo", "en": "This time is not enough.", "des": "충분하다 — adjective + 아니에요" },
+  { "phrase": "이 선택은 쉬워요 아니에요.", "pr": "i seontaek-eun swiwo-yo anieyo", "en": "This choice is not easy.", "des": "쉽다 — adjective + 아니에요" },
+  { "phrase": "그 결정은 빨라요 아니에요.", "pr": "geu gyeoljeong-eun ppalayo anieyo", "en": "That decision is not fast.", "des": "빠르다 — adjective + 아니에요" },
+  { "phrase": "이 반응은 느려요 아니에요.", "pr": "i bannyeong-eun neuryeoyo anieyo", "en": "This reaction is not slow.", "des": "느리다 — adjective + 아니에요" },
+
+  { "phrase": "이 분위기는 차가워요 아니에요.", "pr": "i bunwigineun chagawoyo anieyo", "en": "This atmosphere is not cold.", "des": "차갑다 — adjective + 아니에요" },
+  { "phrase": "이 침대는 딱딱해요 아니에요.", "pr": "i chimdae-neun ttakttakaeyo anieyo", "en": "This bed is not hard.", "des": "딱딱하다 — adjective + 아니에요" },
+  { "phrase": "이 소파는 부드러워요 아니에요.", "pr": "i sopa-neun budeureowoyo anieyo", "en": "This sofa is not soft.", "des": "부드럽다 — adjective + 아니에요" },
+  { "phrase": "이 말은 이상해요 아니에요.", "pr": "i mal-eun isanghaeyo anieyo", "en": "This statement is not strange.", "des": "이상하다 — adjective + 아니에요" },
+  { "phrase": "그 설명은 분명해요 아니에요.", "pr": "geu seolmyeong-eun bunmyeonghaeyo anieyo", "en": "That explanation is not clear.", "des": "분명하다 — adjective + 아니에요" },
+
+  { "phrase": "이 목표는 명확해요 아니에요.", "pr": "i mokpyo-neun myeonghwakhaeyo anieyo", "en": "This goal is not clear.", "des": "명확하다 — adjective + 아니에요" },
+  { "phrase": "이 환경은 안락해요 아니에요.", "pr": "i hwangyeong-eun allakhaeyo anieyo", "en": "This environment is not cozy.", "des": "안락하다 — adjective + 아니에요" }
+]
+
 
 }

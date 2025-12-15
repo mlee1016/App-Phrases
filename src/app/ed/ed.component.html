@@ -166,8 +166,7 @@
       </span>
     </p>
 
-    <!-- 🌍 Language Cards -->
-    <div class="flex flex-wrap justify-center gap-6 sm:gap-10 mb-20 animate-fadeUp delay-2">
+<!----    <div class="flex flex-wrap justify-center gap-6 sm:gap-10 mb-20 animate-fadeUp delay-2">
       <div
         *ngFor="let card of [
           {flag:'kr',name:'Korean',native:'한국어',color:'from-cyan-800 to-cyan-600',id:1},
@@ -185,7 +184,28 @@
         <h3 class="font-semibold text-lg sm:text-xl text-white">{{ card.name }}</h3>
         <p class="text-sm text-emerald-300">{{ card.native }}</p>
       </div>
-    </div>
+    </div>-->
+    <div class="flex flex-wrap justify-center gap-6 sm:gap-10 mb-20 animate-fadeUp delay-2">
+  <div
+    *ngFor="let card of [
+      {flag:'kr',name:'Korean',native:'한국어',color:'from-cyan-800 to-cyan-600',id:1},
+      {flag:'ru',name:'Russian',native:'Русский',color:'from-blue-900 to-blue-700',id:3},
+      {flag:'it',name:'Italian',native:'Italiano',color:'from-rose-900 to-rose-700',id:2},
+      {flag:'jp',name:'Japanese',native:'日本語',color:'from-purple-900 to-purple-700',id:0}
+    ]"
+    (click)="navToSite(card.id)"
+    [ngClass]="'bg-gradient-to-tr ' + card.color"
+    class="lang-card relative shadow-md rounded-2xl p-6 w-44 sm:w-56 text-center cursor-pointer
+           transition-transform duration-300 text-emerald-100 overflow-hidden group"
+  >
+    <img [src]="'https://flagcdn.com/' + card.flag + '.svg'"
+         class="mx-auto w-10 sm:w-12 mb-3 drop-shadow-md" />
+
+    <h3 class="font-semibold text-lg sm:text-xl text-white">{{ card.name }}</h3>
+    <p class="text-sm text-emerald-300">{{ card.native }}</p>
+  </div>
+</div>
+
 
     <!-- 💬 Features Section -->
     <section class="max-w-5xl mx-auto text-center bg-white/5 backdrop-blur-xl rounded-3xl border border-cyan-700/30 shadow-lg p-12 animate-fadeUp delay-3">

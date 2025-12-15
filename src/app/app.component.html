@@ -104,7 +104,7 @@
 
   <!-- <app-timer></app-timer> -->
    <app-stopwatch></app-stopwatch>
-  <router-outlet></router-outlet> 
+  <router-outlet></router-outlet>  
 </main>
 
 </div>
@@ -121,3 +121,119 @@
   </button>
 
 </nav>-->
+<!-- 
+
+
+
+<!-- Fonts --
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+
+<div class="min-h-screen flex flex-col bg-[#0d1117] text-[#e6edf3] font-['Inter']">
+
+  <!-- 🔷 Top Navbar --
+  <header class="fixed top-0 left-0 right-0 h-14 px-6 bg-[#0d1117]/80 backdrop-blur-lg 
+                 border-b border-[#1f242b] flex items-center justify-between z-50">
+
+    <div class="flex items-center gap-4">
+      <button class="sm:hidden text-2xl text-[#9ba7b9] hover:text-[#00e5ff]" (click)="side = !side">
+        <i class="fas-fa-bars"></i>
+      </button>
+
+      <div class="text-3xl font-semibold tracking-tight text-white">
+        Phrase<span class="text-[#00e5ff]">Itera</span>
+      </div>
+    </div>
+
+  </header>
+
+  <!-- 🔷 Mobile Backdrop --
+  <div *ngIf="side"
+       class="fixed inset-0 bg-black/40 backdrop-blur-sm z-40 sm:hidden"
+       (click)="side = false">
+  </div>
+
+  <!-- 🔷 Sidebar --
+  <aside
+    class="fixed top-14 left-0 h-[calc(100%-3.5rem)] w-[5.5rem]
+           bg-[#161b22] border-r border-[#1f242b] shadow-xl
+           flex flex-col items-center py-6 space-y-7 z-50
+           transform transition-transform duration-300 ease-out
+           sm:translate-x-0"
+    [ngClass]="side ? 'translate-x-0' : '-translate-x-full sm:translate-x-0'">
+
+    <!-- Menu Items --
+    <ng-container *ngFor="let item of sidebarItems">
+      <div class="flex flex-col items-center text-[#9ba7b9] hover:text-[#00e5ff] transition cursor-pointer">
+        <button [routerLink]="item.route"
+                routerLinkActive="text-[#00e5ff]"
+                class="text-2xl">
+          <i class="{{ item.icon }}"></i>
+        </button>
+        <div class="text-xs mt-1">{{ item.label }}</div>
+      </div>
+    </ng-container>
+
+    <!-- 🌐 Language Switch --
+    <div class="w-[85%]">
+      <div class="px-3 py-2 text-sm bg-[#0d1117] rounded-lg border border-[#1f242b]
+                  text-[#00e5ff] text-center cursor-pointer hover:bg-[#0d1117]/70 transition"
+           (click)="slanguages = !slanguages">
+        🌐 Languages
+      </div>
+    </div>
+
+    <!-- Languages Dropdown --
+    <div class="w-[85%] text-center text-sm transition-all duration-300 overflow-hidden"
+         [style.height]="slanguages ? '120px' : '0'">
+      <div *ngFor="let lang of languages; let i = index"
+           (click)="navToSite(i)"
+           class="cursor-pointer py-2 text-[#9ba7b9] hover:text-[#00e5ff] transition">
+        {{ lang }}
+      </div>
+    </div>
+
+    <!-- Spacer --
+    <div class="flex-1"></div>
+
+    <!-- Footer --
+    <div class="text-xs w-full text-center text-[#7b8694] space-y-3 pb-4">
+
+      <div>© 2025 <span class="text-white font-medium">PhraseItera</span></div>
+
+      <div class="space-y-1">
+        <button routerLink="/privacy-policy" class="hover:text-white transition">Privacy Policy</button>
+        <button routerLink="/terms-of-service" class="hover:text-white transition">Terms</button>
+        <button routerLink="/feedback" class="hover:text-white transition">Contact</button>
+      </div>
+
+      <div class="flex justify-center gap-4 text-lg text-[#9ba7b9]">
+        <a href="https://instagram.com/phraseitera/" target="_blank" class="hover:text-[#00e5ff] transition">
+          <i class="fa-brands fa-instagram"></i>
+        </a>
+        <a href="https://youtube.com" target="_blank" class="hover:text-[#00e5ff] transition">
+          <i class="fa-brands fa-youtube"></i>
+        </a>
+      </div>
+    </div>
+
+  </aside>
+
+  <!-- 🔷 MAIN CONTENT --
+  <main
+    class="flex-1 mt-14 p-6 transition-all duration-300"
+    [ngClass]="{
+      'ml-[5.5rem]': screenWidth >= 640,
+      'ml-0': screenWidth < 640
+    }">
+
+    <app-stopwatch></app-stopwatch>
+    <router-outlet></router-outlet>
+
+  </main>
+
+</div>
+
+
+
+
+-->

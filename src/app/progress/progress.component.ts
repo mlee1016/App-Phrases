@@ -81,7 +81,7 @@ import { ParamMap } from '@angular/router';
 
     phraseStory: any;
     phrasePopular: any;
-    phraseCourse: any;
+    phraseCourse: any; 
     phrases = signal<any>([]);
     a_load = false
     constructor(private phrasesService:AllphrasesService,private userA:AuthenticationUser,

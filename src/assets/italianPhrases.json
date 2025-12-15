@@ -2308,5 +2308,173 @@
         { "phrase": "Lei cucina [[mentre che]] lui pulisce.", "pr": "Lei cu-ci-na [[men-tre ke]] lui pu-li-sce.", "en": "She cooks [[whereas]] he cleans.", "des": "Shows contrasting roles." },
         { "phrase": "Loro parlano [[mentre che]] noi ascoltiamo.", "pr": "Lo-ro par-la-no [[men-tre ke]] noi as-col-tia-mo.", "en": "They talk [[whereas]] we listen.", "des": "Indicates contrast." }
       ]
+,"1-50adjec":[{"phrase":"casa grande", "pr":"KA-za GRAN-de", "en":"big house", "des":"Common size description."},
+{"phrase":"casa piccola", "pr":"KA-za PEEK-ko-la", "en":"small house", "des":"Describes size."},
+{"phrase":"casa nuova", "pr":"KA-za NWÓ-va", "en":"new house", "des":"Common for real estate."},
+{"phrase":"casa vecchia", "pr":"KA-za VEK-kya", "en":"old house", "des":"Useful age description."},
+
+{"phrase":"macchina nuova", "pr":"MAK-kee-na NWÓ-va", "en":"new car", "des":"Everyday object description."},
+{"phrase":"macchina vecchia", "pr":"MAK-kee-na VEK-kya", "en":"old car", "des":"Opposite of new."},
+{"phrase":"macchina veloce", "pr":"MAK-kee-na ve-LO-che", "en":"fast car", "des":"Speed description."},
+{"phrase":"macchina lenta", "pr":"MAK-kee-na LEN-ta", "en":"slow car", "des":"Opposite of fast."},
+
+{"phrase":"libro interessante", "pr":"LEE-bro in-te-re-SAN-te", "en":"interesting book", "des":"Useful for study."},
+{"phrase":"libro noioso", "pr":"LEE-bro noy-O-zo", "en":"boring book", "des":"Describes boredom."},
+{"phrase":"libro nuovo", "pr":"LEE-bro NWÓ-vo", "en":"new book", "des":"Age/condition."},
+{"phrase":"libro vecchio", "pr":"LEE-bro VEK-kyo", "en":"old book", "des":"Age/condition."},
+
+{"phrase":"giorno bello", "pr":"JOR-no BEL-lo", "en":"beautiful day", "des":"Weather, mood."},
+{"phrase":"giorno brutto", "pr":"JOR-no BROOT-to", "en":"bad day", "des":"Weather or emotion."},
+{"phrase":"giorno lungo", "pr":"JOR-no LOON-go", "en":"long day", "des":"Common expression."},
+{"phrase":"giorno corto", "pr":"JOR-no KOR-to", "en":"short day", "des":"Duration."},
+
+{"phrase":"cibo buono", "pr":"CHEE-bo BWO-no", "en":"good food", "des":"Very common everyday phrase."},
+{"phrase":"cibo cattivo", "pr":"CHEE-bo kat-TEE-vo", "en":"bad food", "des":"Opposite of good."},
+{"phrase":"cibo caldo", "pr":"CHEE-bo KAL-do", "en":"hot food", "des":"Temperature."},
+{"phrase":"cibo freddo", "pr":"CHEE-bo FRED-do", "en":"cold food", "des":"Temperature."},
+
+{"phrase":"amico caro", "pr":"a-MEE-ko KA-ro", "en":"dear friend", "des":"Emotional closeness."},
+{"phrase":"amico nuovo", "pr":"a-MEE-ko NWÓ-vo", "en":"new friend", "des":"New relationship."},
+{"phrase":"amico vecchio", "pr":"a-MEE-ko VEK-kyo", "en":"old friend", "des":"Long-time friend."},
+{"phrase":"amico simpatico", "pr":"a-MEE-ko sim-PA-ti-ko", "en":"nice friend", "des":"Positive personality."},
+
+{"phrase":"strada lunga", "pr":"STRA-da LOON-ga", "en":"long road", "des":"Distance/travel."},
+{"phrase":"strada corta", "pr":"STRA-da KOR-ta", "en":"short road", "des":"Opposite of long."},
+{"phrase":"strada larga", "pr":"STRA-da LAR-ga", "en":"wide road", "des":"Width."},
+{"phrase":"strada stretta", "pr":"STRA-da STRET-ta", "en":"narrow road", "des":"Opposite of wide."},
+
+{"phrase":"notizia importante", "pr":"no-TEE-tsya im-por-TAN-te", "en":"important news", "des":"Common for updates."},
+{"phrase":"notizia interessante", "pr":"no-TEE-tsya in-te-re-SAN-te", "en":"interesting news", "des":"Useful in conversations."},
+{"phrase":"notizia falsa", "pr":"no-TEE-tsya FAL-sa", "en":"false news", "des":"Fake/untrue."},
+{"phrase":"notizia vera", "pr":"no-TEE-tsya VE-ra", "en":"true news", "des":"Accurate/real."},
+
+{"phrase":"bambino piccolo", "pr":"bam-BEE-no PEEK-ko-lo", "en":"small child", "des":"Common everyday phrase."},
+{"phrase":"bambino grande", "pr":"bam-BEE-no GRAN-de", "en":"big child", "des":"Size/age."},
+{"phrase":"bambino felice", "pr":"bam-BEE-no fe-LEE-che", "en":"happy child", "des":"Emotion."},
+{"phrase":"bambino triste", "pr":"bam-BEE-no TREE-ste", "en":"sad child", "des":"Emotion."},
+
+{"phrase":"stanza pulita", "pr":"STAN-za poo-LEE-ta", "en":"clean room", "des":"Useful for home/hotel."},
+{"phrase":"stanza sporca", "pr":"STAN-za SPOR-ka", "en":"dirty room", "des":"Opposite of clean."},
+{"phrase":"stanza grande", "pr":"STAN-za GRAN-de", "en":"big room", "des":"Size."},
+{"phrase":"stanza piccola", "pr":"STAN-za PEEK-ko-la", "en":"small room", "des":"Size."},
+
+{"phrase":"acqua fredda", "pr":"AK-kwa FRED-da", "en":"cold water", "des":"Very common phrase."},
+{"phrase":"acqua calda", "pr":"AK-kwa KAL-da", "en":"hot water", "des":"Temperature."},
+{"phrase":"acqua pulita", "pr":"AK-kwa poo-LEE-ta", "en":"clean water", "des":"Quality."},
+{"phrase":"acqua sporca", "pr":"AK-kwa SPOR-ka", "en":"dirty water", "des":"Quality."},
+
+{"phrase":"pizza calda", "pr":"PEET-tsa KAL-da", "en":"hot pizza", "des":"Food temperature."},
+{"phrase":"pizza fredda", "pr":"PEET-tsa FRED-da", "en":"cold pizza", "des":"Common expression."},
+{"phrase":"pizza buona", "pr":"PEET-tsa BWO-na", "en":"good pizza", "des":"Quality."},
+{"phrase":"pizza cattiva", "pr":"PEET-tsa kat-TEE-va", "en":"bad pizza", "des":"Quality."}
+    ],
+    "51-100adject":[{"phrase":"borsa leggera", "pr":"BOR-sa le-JE-ra", "en":"light bag", "des":"Describes weight."},
+{"phrase":"borsa pesante", "pr":"BOR-sa pe-SAN-te", "en":"heavy bag", "des":"Opposite of light."},
+{"phrase":"borsa nuova", "pr":"BOR-sa NWÓ-va", "en":"new bag", "des":"Condition/age."},
+{"phrase":"borsa rotta", "pr":"BOR-sa ROT-ta", "en":"broken bag", "des":"Damage description."},
+
+{"phrase":"telefono nuovo", "pr":"te-LE-fo-no NWÓ-vo", "en":"new phone", "des":"Tech description."},
+{"phrase":"telefono vecchio", "pr":"te-LE-fo-no VEK-kyo", "en":"old phone", "des":"Age/quality."},
+{"phrase":"telefono costoso", "pr":"te-LE-fo-no kos-TO-so", "en":"expensive phone", "des":"Price."},
+{"phrase":"telefono economico", "pr":"te-LE-fo-no e-ko-NO-mi-ko", "en":"cheap phone", "des":"Price."},
+
+{"phrase":"storia vera", "pr":"STO-rya VE-ra", "en":"true story", "des":"Common conversational phrase."},
+{"phrase":"storia falsa", "pr":"STO-rya FAL-sa", "en":"false story", "des":"Accuracy."},
+{"phrase":"storia lunga", "pr":"STO-rya LOON-ga", "en":"long story", "des":"Durational."},
+{"phrase":"storia breve", "pr":"STO-rya BRE-ve", "en":"short story", "des":"Durational."},
+
+{"phrase":"film divertente", "pr":"FEELM dee-ver-TEN-te", "en":"funny movie", "des":"Entertainment."},
+{"phrase":"film noioso", "pr":"FEELM noy-O-zo", "en":"boring movie", "des":"Opposite of fun."},
+{"phrase":"film famoso", "pr":"FEELM fa-MO-so", "en":"famous movie", "des":"Popularity."},
+{"phrase":"film nuovo", "pr":"FEELM NWÓ-vo", "en":"new movie", "des":"Recent release."},
+
+{"phrase":"città grande", "pr":"cheet-TA GRAN-de", "en":"big city", "des":"Size description."},
+{"phrase":"città piccola", "pr":"cheet-TA PEEK-ko-la", "en":"small city", "des":"Size description."},
+{"phrase":"città famosa", "pr":"cheet-TA fa-MO-sa", "en":"famous city", "des":"Tourism/culture."},
+{"phrase":"città moderna", "pr":"cheet-TA mo-DER-na", "en":"modern city", "des":"Architecture/feel."},
+
+{"phrase":"negozio aperto", "pr":"ne-GO-tsyo a-PER-to", "en":"open store", "des":"Business hours."},
+{"phrase":"negozio chiuso", "pr":"ne-GO-tsyo KYOO-so", "en":"closed store", "des":"Business hours."},
+{"phrase":"negozio grande", "pr":"ne-GO-tsyo GRAN-de", "en":"big store", "des":"Size."},
+{"phrase":"negozio piccolo", "pr":"ne-GO-tsyo PEEK-ko-lo", "en":"small store", "des":"Size."},
+
+{"phrase":"animale pericoloso", "pr":"a-nee-MA-le pe-ri-ko-LO-so", "en":"dangerous animal", "des":"Common warning phrase."},
+{"phrase":"animale innocuo", "pr":"a-nee-MA-le in-NO-koo-o", "en":"harmless animal", "des":"Opposite of dangerous."},
+{"phrase":"animale selvatico", "pr":"a-nee-MA-le sel-VA-ti-ko", "en":"wild animal", "des":"Nature/context."},
+{"phrase":"animale domestico", "pr":"a-nee-MA-le do-MES-ti-ko", "en":"domestic animal", "des":"Pets."},
+
+{"phrase":"tempo brutto", "pr":"TEM-po BROOT-to", "en":"bad weather", "des":"Weather expression."},
+{"phrase":"tempo bello", "pr":"TEM-po BEL-lo", "en":"good weather", "des":"Weather."},
+{"phrase":"tempo caldo", "pr":"TEM-po KAL-do", "en":"hot weather", "des":"Temperature."},
+{"phrase":"tempo freddo", "pr":"TEM-po FRED-do", "en":"cold weather", "des":"Temperature."},
+
+{"phrase":"musica bella", "pr":"MOO-zee-ka BEL-la", "en":"beautiful music", "des":"Entertainment."},
+{"phrase":"musica forte", "pr":"MOO-zee-ka FOR-te", "en":"loud music", "des":"Volume level."},
+{"phrase":"musica lenta", "pr":"MOO-zee-ka LEN-ta", "en":"slow music", "des":"Tempo."},
+{"phrase":"musica veloce", "pr":"MOO-zee-ka ve-LO-che", "en":"fast music", "des":"Tempo."},
+
+{"phrase":"vestito elegante", "pr":"ves-TEE-to e-le-GAN-te", "en":"elegant dress/clothing", "des":"Clothing description."},
+{"phrase":"vestito comodo", "pr":"ves-TEE-to KO-mo-do", "en":"comfortable clothing", "des":"Comfort."},
+{"phrase":"vestito nuovo", "pr":"ves-TEE-to NWÓ-vo", "en":"new clothing", "des":"Age/condition."},
+{"phrase":"vestito vecchio", "pr":"ves-TEE-to VEK-kyo", "en":"old clothing", "des":"Age/condition."},
+
+{"phrase":"camera rumorosa", "pr":"KA-me-ra roo-mo-RO-sa", "en":"noisy room", "des":"Environment description."},
+{"phrase":"camera silenziosa", "pr":"KA-me-ra see-len-TZYO-sa", "en":"quiet room", "des":"Peaceful environment."},
+{"phrase":"camera luminosa", "pr":"KA-me-ra loo-mee-NO-sa", "en":"bright room", "des":"Lighting."},
+{"phrase":"camera buia", "pr":"KA-me-ra BOO-ya", "en":"dark room", "des":"Lighting."},
+
+{"phrase":"colore chiaro", "pr":"ko-LO-re KYA-ro", "en":"light color", "des":"Shade."},
+{"phrase":"colore scuro", "pr":"ko-LO-re SKOO-ro", "en":"dark color", "des":"Shade."},
+{"phrase":"colore vivace", "pr":"ko-LO-re vee-VA-che", "en":"vivid color", "des":"Brightness."},
+{"phrase":"colore spento", "pr":"ko-LO-re SPEN-to", "en":"dull color", "des":"Low brightness."}],
+
+"verbs-noun":[{"phrase":"il bambino mangia", "pr":"eel bam-BEE-no MAN-ja", "en":"the child eats", "des":"Basic daily action."}
+,{"phrase":"la donna lavora", "pr":"la DON-na la-VO-ra", "en":"the woman works", "des":"Common work verb."},
+{"phrase":"l’uomo cammina", "pr":"LOO-o-mo ka-MEE-na", "en":"the man walks", "des":"Movement verb."},
+{"phrase":"il cane corre", "pr":"eel KA-ne KOR-re", "en":"the dog runs", "des":"Simple action verb."},
+{"phrase":"il gatto dorme", "pr":"eel GAT-to DOR-me", "en":"the cat sleeps", "des":"Very common verb."},
+{"phrase":"la mamma cucina", "pr":"la MAM-ma koo-CHEE-na", "en":"the mother cooks", "des":"Daily life verb."},
+{"phrase":"il padre guida", "pr":"eel PA-dre GWEE-da", "en":"the father drives", "des":"Transportation verb."},
+{"phrase":"il ragazzo studia", "pr":"eel ra-GAT-tso STU-dya", "en":"the boy studies", "des":"School verb."},
+{"phrase":"la ragazza legge", "pr":"la ra-GAT-tsa LED-je", "en":"the girl reads", "des":"Learning activity."},
+{"phrase":"l’amico chiama", "pr":"la-MEE-ko KYA-ma", "en":"the friend calls", "des":"Communication verb."},
+
+{"phrase":"il cliente paga", "pr":"eel klee-EN-te PA-ga", "en":"the customer pays", "des":"Shopping verb."},
+{"phrase":"il medico aiuta", "pr":"eel ME-di-ko a-YOO-ta", "en":"the doctor helps", "des":"Helpful action."},
+{"phrase":"lo studente scrive", "pr":"lo stu-DEN-te SKREE-ve", "en":"the student writes", "des":"School-related verb."},
+{"phrase":"l’insegnante spiega", "pr":"leen-se-nyAN-te SPYE-ga", "en":"the teacher explains", "des":"Education verb."},
+{"phrase":"il turista visita", "pr":"eel too-REE-sta VEE-zee-ta", "en":"the tourist visits", "des":"Travel verb."},
+
+{"phrase":"la gente aspetta", "pr":"la JEN-te a-SPET-ta", "en":"people wait", "des":"Common daily verb."},
+{"phrase":"il negozio apre", "pr":"eel ne-GO-tsyo A-pre", "en":"the shop opens", "des":"Business verb."},
+{"phrase":"il negozio chiude", "pr":"eel ne-GO-tsyo KYOO-de", "en":"the shop closes", "des":"Opposite action."},
+{"phrase":"il bar serve", "pr":"eel BAR SER-ve", "en":"the bar serves", "des":"Restaurant verb."},
+{"phrase":"il cliente ordina", "pr":"eel klee-EN-te or-DEE-na", "en":"the customer orders", "des":"Food ordering."},
+
+{"phrase":"la macchina parte", "pr":"la MAK-kee-na PAR-te", "en":"the car leaves", "des":"Movement/start verb."},
+{"phrase":"l’autobus arriva", "pr":"law-TO-boos ar-REE-va", "en":"the bus arrives", "des":"Transportation verb."},
+{"phrase":"il treno parte", "pr":"eel TRE-no PAR-te", "en":"the train departs", "des":"Travel verb."},
+{"phrase":"la porta si apre", "pr":"la POR-ta see A-pre", "en":"the door opens", "des":"Reflexive verb."},
+{"phrase":"la finestra chiude", "pr":"la fee-NES-tra KYOO-de", "en":"the window closes", "des":"Everyday object action."},
+
+{"phrase":"il telefono squilla", "pr":"eel te-LE-fo-no SKWEE-lya", "en":"the phone rings", "des":"Communication verb."},
+{"phrase":"il computer funziona", "pr":"eel kom-PYOO-ter foon-TSYO-na", "en":"the computer works", "des":"Technology verb."},
+{"phrase":"la luce si accende", "pr":"la LOO-che see a-CHEN-de", "en":"the light turns on", "des":"Household action."},
+{"phrase":"la luce si spegne", "pr":"la LOO-che see SPEN-ye", "en":"the light turns off", "des":"Opposite action."},
+
+{"phrase":"il sole splende", "pr":"eel SO-le SPLEN-de", "en":"the sun shines", "des":"Nature verb."},
+{"phrase":"la pioggia cade", "pr":"la PYOD-ja KA-de", "en":"the rain falls", "des":"Weather verb."},
+{"phrase":"il vento soffia", "pr":"eel VEN-to SOF-fya", "en":"the wind blows", "des":"Weather action."},
+
+{"phrase":"la musica suona", "pr":"la MOO-zee-ka SWO-na", "en":"the music plays", "des":"Entertainment verb."},
+{"phrase":"il cantante canta", "pr":"eel kan-TAN-te KAN-ta", "en":"the singer sings", "des":"Art verb."},
+{"phrase":"l’attore recita", "pr":"lat-TO-re re-CHEE-ta", "en":"the actor acts", "des":"Theater verb."},
+
+{"phrase":"il bambino ride", "pr":"eel bam-BEE-no REE-de", "en":"the child laughs", "des":"Emotion verb."},
+{"phrase":"la persona piange", "pr":"la per-SO-na PYAN-je", "en":"the person cries", "des":"Emotion verb."},
+{"phrase":"l’uomo pensa", "pr":"LOO-o-mo PEN-sa", "en":"the man thinks", "des":"Mental action."},
+{"phrase":"la donna decide", "pr":"la DON-na de-CHEE-de", "en":"the woman decides", "des":"Decision verb."},
+{"phrase":"il capo comanda", "pr":"eel KA-po ko-MAN-da", "en":"the boss commands", "des":"Authority verb."}
+  ]
 
 }

@@ -16,42 +16,93 @@
       {{ selectedPhrases() === '' ? 'Choose a phrase' : 'Selected: ' + selectedPhrases() }}
     </h2>
 
+    <!-- ============================ -->
     <!-- COURSE LIST -->
+    <!-- ============================ -->
     <div *ngIf="m1 === 'course'" class="overflow-y-auto max-h-80">
       <div class="flex flex-col gap-2">
+
         <button *ngFor="let item of phraseCourse"
                 (click)="getSpecificPhrases(item.s)"
                 [ngClass]="item.isDone ? 'bg-blue-600' : 'bg-cyan-500'"
-                class="button px-3 py-2 rounded-lg text-white hover:bg-cyan-400 transition font-medium">
-          {{ item.s }}
+                class="button px-3 py-2 rounded-lg text-white hover:bg-cyan-400 transition font-medium flex justify-between items-center">
+
+          <span>{{ item.name }}</span>
+
+          <!-- Difficulty Tag -->
+          <span class="badge"
+                [ngClass]="{
+                  'badge-easy': item.difficulty === 'easy'|| item.difficulty === 'Easy',
+                  'badge-medium': item.difficulty === 'medium' || item.difficulty === 'Medium',
+                  'badge-hard': item.difficulty === 'intermediate' || item.difficulty === 'hard' || item.difficulty === 'Hard' || item.difficulty === 'Intermediate'
+                }">
+            {{ item.difficulty }}
+          </span>
+
         </button>
+
       </div>
     </div>
 
-    <!-- POPULAR -->
+    <!-- ============================ -->
+    <!-- POPULAR / USEFUL -->
+    <!-- ============================ -->
     <div *ngIf="m1 === 'popular'" class="overflow-y-auto max-h-80">
       <h2 class="section-title">Popular / Useful</h2>
+
       <div class="flex flex-col gap-2">
+
         <button *ngFor="let item of phrasePopular"
                 (click)="getSpecificPhrases(item.s)"
                 [ngClass]="item.isDone ? 'bg-emerald-700' : 'bg-emerald-500'"
-                class="button px-3 py-2 rounded-lg text-white hover:bg-emerald-400 transition font-medium">
-          {{ item.s }}
+                class="button px-3 py-2 rounded-lg text-white hover:bg-emerald-400 transition font-medium flex justify-between items-center">
+
+          <span>{{ item.name }}</span>
+
+          <!-- Difficulty Tag -->
+          <span class="badge"
+                [ngClass]="{
+                  'badge-easy': item.difficulty === 'easy'|| item.difficulty === 'Easy',
+                  'badge-medium': item.difficulty === 'medium' || item.difficulty === 'Medium',
+                  'badge-hard': item.difficulty === 'hard' || item.difficulty === 'Hard' || item.difficulty === 'Intermediate' || item.difficulty === 'intermediate'
+                }">
+            {{ item.difficulty }}
+          </span>
+
         </button>
+
       </div>
     </div>
 
+    <!-- ============================ -->
     <!-- STORY -->
+    <!-- ============================ -->
     <div *ngIf="m1 === 'story'" class="overflow-y-auto max-h-80">
       <h2 class="section-title">Story</h2>
+
       <div class="flex flex-col gap-2">
+
         <button *ngFor="let item of phraseStory"
                 (click)="getSpecificPhrases(item.s)"
                 [ngClass]="item.isDone ? 'bg-teal-700' : 'bg-teal-500'"
-                class="button px-3 py-2 rounded-lg text-white hover:bg-teal-400 transition font-medium">
-          {{ item.s }}
+                class="button px-3 py-2 rounded-lg text-white hover:bg-teal-400 transition font-medium flex justify-between items-center">
+
+          <span>{{ item.name }}</span>
+
+          <!-- Difficulty Tag -->
+          <span class="badge"
+                [ngClass]="{
+                  'badge-easy': item.difficulty === 'easy' || item.difficulty === 'Easy',
+                  'badge-medium': item.difficulty === 'medium' || item.difficulty === 'Medium',
+                  'badge-hard': item.difficulty === 'hard' || item.difficulty === 'intermediate' || item.difficulty === 'Hard' || item.difficulty === 'Intermediate'
+                }">
+            {{ item.difficulty }}
+          </span>
+
         </button>
+
       </div>
     </div>
+
   </div> 
 </div>

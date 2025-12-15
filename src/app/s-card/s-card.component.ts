@@ -230,25 +230,30 @@ ngOnInit(): void {
         console.log("this is a",data)
       switch(this.id) {
         case 'Korean':
+          this.allPhrase = data.filter(p => p.type === 'story');
            this.phrasesList = data.filter(p => p.type === 'grammar');;
-           this.allPhrase = data.filter(p => p.type === 'story');
+           this.phrasePopular = data.filter(p => p.type === 'popular');
           break
         case 'Russian': 
           
            this.phrasesListRussian = data.filter(p => p.type === 'grammar');
            this.phraseListRussian2 = data.filter(p => p.type === 'story');
+                      this.phrasePopular = data.filter(p => p.type === 'popular');
+
           break
         case 'Italian' : 
           
-           this.phrasesListItalian = data.filter(p => p.type === 'grammar');;
+           this.phrasesListItalian = data.filter(p => p.type === 'grammar');
            this.phraseListItalian2 = data.filter(p => p.type === 'story');
+            this.phrasePopular = data.filter(p => p.type === 'popular');
         break
         case 'German': this.phrasesListGerman = data;
           break
         default : 
-          
-           this.phrasesListJapanese = data.filter(p => p.type === 'grammar');;
-           this.japaneseStory = data.filter(p => p.type === 'story');
+            this.japaneseStory = data.filter(p => p.type === 'story');
+
+            this.phrasesListJapanese = data.filter(p => p.type === 'grammar');
+            this.phrasePopular = data.filter(p => p.type === 'popular');
       }
       // error: err => console.error(`Failed to load ${lang} grammar:`, err)
 
@@ -256,6 +261,7 @@ ngOnInit(): void {
     case 'Korean':
       this.phraseStory = this.allPhrase;
       this.phraseCourse =this.phrasesList;
+      this.phrasePopular  = 
       this.directionMode = 'kor-to-eng';
       this.directionModeE = 'kor-to-eng';
       this.lang = 'ko-KR';

@@ -40,7 +40,7 @@ export class PhrasewordComponent {
   currentQuestionIndex = 0;
   selectedIndex: number | null = null;
   score = 0;
-  quizComplete = false;
+  quizComplete = false; 
   shuffledOptions: any[] = [];
   id : string = ""
   koreanPhraseNames = [{s:'course1',isDone:false},{s:'course2',isDone:false},{s:'course3',isDone:false},{s:'course4',isDone:false},{s:'course5',isDone:false}]
