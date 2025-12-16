@@ -8,7 +8,7 @@
 
   <!-- Display phrase preview -->
   <div class="bg-black/30 p-3 rounded text-lg font-mono">
-    <div *ngIf="langMode() === 'Korean'">
+    <div *ngIf="langMode() === 'Korean'"> 
       <div>🟨  자모 - Jamo: {{ jamos() }}</div>
       <div>🟩 Syllables: {{ assembledKorean() }}</div>
       <button (click)="sendChar(assembledKorean())" class="bg-emerald-200 px-4 py-2 text-cyan-700 mt-1 rounded">send syllable</button>
