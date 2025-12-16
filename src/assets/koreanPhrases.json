@@ -9738,6 +9738,104 @@
 
   { "phrase": "이 목표는 명확해요 아니에요.", "pr": "i mokpyo-neun myeonghwakhaeyo anieyo", "en": "This goal is not clear.", "des": "명확하다 — adjective + 아니에요" },
   { "phrase": "이 환경은 안락해요 아니에요.", "pr": "i hwangyeong-eun allakhaeyo anieyo", "en": "This environment is not cozy.", "des": "안락하다 — adjective + 아니에요" }
+],
+"ad-past":[
+  { "phrase": "[[집]]이 컸어요.", "pr": "jib-i keosseoyo", "en": "The house was big.", "des": "크다 — past adjective" },
+  { "phrase": "[[방]]이 작았어요.", "pr": "bang-i jagasseoyo", "en": "The room was small.", "des": "작다 — past adjective" },
+  { "phrase": "[[날씨]]가 좋았어요.", "pr": "nalssi-ga joasseoyo", "en": "The weather was good.", "des": "좋다 — past adjective" },
+  { "phrase": "[[영화]]가 재미있었어요.", "pr": "yeonghwa-ga jaemi-isseosseoyo", "en": "The movie was fun.", "des": "재미있다 — past adjective" },
+  { "phrase": "[[음식]]이 맛있었어요.", "pr": "eumsik-i masisseosseoyo", "en": "The food was delicious.", "des": "맛있다 — past adjective" },
+
+  { "phrase": "[[문제]]가 어려웠어요.", "pr": "munje-ga eoryeowosseoyo", "en": "The problem was difficult.", "des": "어렵다 — past adjective" },
+  { "phrase": "[[일]]이 쉬웠어요.", "pr": "il-i swi-wosseoyo", "en": "The work was easy.", "des": "쉽다 — past adjective" },
+  { "phrase": "[[인터넷]]이 빨랐어요.", "pr": "inteonet-i ppalrasseoyo", "en": "The internet was fast.", "des": "빠르다 — past adjective" },
+  { "phrase": "[[버스]]가 느렸어요.", "pr": "beoseu-ga neuryeosseoyo", "en": "The bus was slow.", "des": "느리다 — past adjective" },
+  { "phrase": "[[커피]]가 비쌌어요.", "pr": "keopi-ga bissasseoyo", "en": "The coffee was expensive.", "des": "비싸다 — past adjective" },
+
+  { "phrase": "[[점심]]이 쌌어요.", "pr": "jeomsim-i ssasseoyo", "en": "Lunch was cheap.", "des": "싸다 — past adjective" },
+  { "phrase": "[[물]]이 뜨거웠어요.", "pr": "mul-i tteugeowosseoyo", "en": "The water was hot.", "des": "뜨겁다 — past adjective" },
+  { "phrase": "[[우유]]가 차가웠어요.", "pr": "uyu-ga chagawosseoyo", "en": "The milk was cold.", "des": "차갑다 — past adjective" },
+  { "phrase": "[[길]]이 길었어요.", "pr": "gil-i gireosseoyo", "en": "The road was long.", "des": "길다 — past adjective" },
+  { "phrase": "[[머리]]가 짧았어요.", "pr": "meori-ga jjalbasseoyo", "en": "The hair was short.", "des": "짧다 — past adjective" },
+
+  { "phrase": "[[가방]]이 가벼웠어요.", "pr": "gabang-i gabyeowosseoyo", "en": "The bag was light.", "des": "가볍다 — past adjective" },
+  { "phrase": "[[박스]]가 무거웠어요.", "pr": "bakseu-ga mugeowosseoyo", "en": "The box was heavy.", "des": "무겁다 — past adjective" },
+  { "phrase": "[[책]]이 새로웠어요.", "pr": "chaek-i saerowosseoyo", "en": "The book was new.", "des": "새롭다 — past adjective" },
+  { "phrase": "[[집]]이 오래됐어요.", "pr": "jib-i oraedwaesseoyo", "en": "The house was old.", "des": "오래되다 — past adjective" },
+  { "phrase": "[[사람]]이 친절했어요.", "pr": "saram-i chinjeolhaesseoyo", "en": "The person was kind.", "des": "친절하다 — past adjective" },
+
+  { "phrase": "[[동네]]가 조용했어요.", "pr": "dongne-ga joyonghaesseoyo", "en": "The neighborhood was quiet.", "des": "조용하다 — past adjective" },
+  { "phrase": "[[거리]]가 시끄러웠어요.", "pr": "geori-ga sikkeureowosseoyo", "en": "The street was noisy.", "des": "시끄럽다 — past adjective" },
+  { "phrase": "[[학교]]가 멀었어요.", "pr": "hakgyo-ga meoreosseoyo", "en": "The school was far.", "des": "멀다 — past adjective" },
+  { "phrase": "[[집]]이 가까웠어요.", "pr": "jib-i gakkawosseoyo", "en": "The house was close.", "des": "가깝다 — past adjective" },
+  { "phrase": "[[시험]]이 중요했어요.", "pr": "siheom-i jungyohasseoyo", "en": "The exam was important.", "des": "중요하다 — past adjective" },
+
+  { "phrase": "[[기분]]이 좋았어요.", "pr": "gibun-i joasseoyo", "en": "The mood was good.", "des": "좋다 — past adjective" },
+  { "phrase": "[[하루]]가 바빴어요.", "pr": "haru-ga bappasseoyo", "en": "The day was busy.", "des": "바쁘다 — past adjective" },
+  { "phrase": "[[몸]]이 피곤했어요.", "pr": "mom-i pigonhaesseoyo", "en": "The body was tired.", "des": "피곤하다 — past adjective" },
+  { "phrase": "[[마음]]이 편했어요.", "pr": "maeum-i pyeonhaesseoyo", "en": "The mind was calm.", "des": "편하다 — past adjective" },
+  { "phrase": "[[의자]]가 불편했어요.", "pr": "uija-ga bulpyeonhaesseoyo", "en": "The chair was uncomfortable.", "des": "불편하다 — past adjective" },
+
+  { "phrase": "[[공원]]이 예뻤어요.", "pr": "gongwon-i yeppeosseoyo", "en": "The park was pretty.", "des": "예쁘다 — past adjective" },
+  { "phrase": "[[경치]]가 아름다웠어요.", "pr": "gyeongchi-ga areumda-wosseoyo", "en": "The scenery was beautiful.", "des": "아름답다 — past adjective" },
+  { "phrase": "[[사람]]이 착했어요.", "pr": "saram-i chakhaesseoyo", "en": "The person was kind-hearted.", "des": "착하다 — past adjective" },
+  { "phrase": "[[친구]]가 유명했어요.", "pr": "chingu-ga yumyeonghaesseoyo", "en": "The friend was famous.", "des": "유명하다 — past adjective" },
+  { "phrase": "[[계획]]이 간단했어요.", "pr": "gyehoek-i gandanhaesseoyo", "en": "The plan was simple.", "des": "간단하다 — past adjective" },
+
+  { "phrase": "[[설명]]이 복잡했어요.", "pr": "seolmyeong-i bokjaphaesseoyo", "en": "The explanation was complicated.", "des": "복잡하다 — past adjective" },
+  { "phrase": "[[정보]]가 정확했어요.", "pr": "jeongbo-ga jeonghwakhaesseoyo", "en": "The information was accurate.", "des": "정확하다 — past adjective" },
+  { "phrase": "[[답]]이 틀렸어요.", "pr": "dap-i teullyeosseoyo", "en": "The answer was wrong.", "des": "틀리다 — adjective-like past" },
+  { "phrase": "[[결과]]가 같았어요.", "pr": "gyeolgwa-ga gatasseoyo", "en": "The result was the same.", "des": "같다 — past adjective" },
+  { "phrase": "[[의견]]이 달랐어요.", "pr": "uigyeon-i dallasseoyo", "en": "The opinion was different.", "des": "다르다 — past adjective" }
+]
+,"ad-past2":[
+  { "phrase": "[[하늘]]이 맑았어요.", "pr": "haneul-i malgasseoyo", "en": "The sky was clear.", "des": "맑다 — past adjective" },
+  { "phrase": "[[공기]]가 깨끗했어요.", "pr": "gonggi-ga kkaekkeuthaesseoyo", "en": "The air was clean.", "des": "깨끗하다 — past adjective" },
+  { "phrase": "[[바다]]가 넓었어요.", "pr": "bada-ga neolbeosseoyo", "en": "The sea was wide.", "des": "넓다 — past adjective" },
+  { "phrase": "[[골목]]이 좁았어요.", "pr": "golmok-i jobasseoyo", "en": "The alley was narrow.", "des": "좁다 — past adjective" },
+  { "phrase": "[[강]]이 깊었어요.", "pr": "gang-i gipeosseoyo", "en": "The river was deep.", "des": "깊다 — past adjective" },
+
+  { "phrase": "[[물]]이 얕았어요.", "pr": "mul-i yatasseoyo", "en": "The water was shallow.", "des": "얕다 — past adjective" },
+  { "phrase": "[[건물]]이 높았어요.", "pr": "geonmul-i nopasseoyo", "en": "The building was tall.", "des": "높다 — past adjective" },
+  { "phrase": "[[의자]]가 낮았어요.", "pr": "uija-ga najasseoyo", "en": "The chair was low.", "des": "낮다 — past adjective" },
+  { "phrase": "[[방]]이 밝았어요.", "pr": "bang-i balgasseoyo", "en": "The room was bright.", "des": "밝다 — past adjective" },
+  { "phrase": "[[길]]이 어두웠어요.", "pr": "gil-i eoduwosseoyo", "en": "The road was dark.", "des": "어둡다 — past adjective" },
+
+  { "phrase": "[[침대]]가 편안했어요.", "pr": "chimdae-ga pyeonan-haesseoyo", "en": "The bed was comfortable.", "des": "편안하다 — past adjective" },
+  { "phrase": "[[자리]]가 불편했어요.", "pr": "jari-ga bulpyeon-haesseoyo", "en": "The seat was uncomfortable.", "des": "불편하다 — past adjective" },
+  { "phrase": "[[사람]]이 정직했어요.", "pr": "saram-i jeongjik-haesseoyo", "en": "The person was honest.", "des": "정직하다 — past adjective" },
+  { "phrase": "[[학생]]이 성실했어요.", "pr": "haksaeng-i seongsil-haesseoyo", "en": "The student was diligent.", "des": "성실하다 — past adjective" },
+  { "phrase": "[[아이]]가 귀여웠어요.", "pr": "ai-ga gwiyeowosseoyo", "en": "The child was cute.", "des": "귀엽다 — past adjective" },
+
+  { "phrase": "[[남자]]가 잘생겼어요.", "pr": "namja-ga jal-saenggyeosseoyo", "en": "The man was handsome.", "des": "잘생기다 — past adjective" },
+  { "phrase": "[[여자]]가 예뻤어요.", "pr": "yeoja-ga yeppeosseoyo", "en": "The woman was pretty.", "des": "예쁘다 — past adjective" },
+  { "phrase": "[[풍경]]이 멋있었어요.", "pr": "punggyeong-i meosit-eosseoyo", "en": "The scenery was cool.", "des": "멋있다 — past adjective" },
+  { "phrase": "[[하루]]가 즐거웠어요.", "pr": "haru-ga jeulgeowosseoyo", "en": "The day was enjoyable.", "des": "즐겁다 — past adjective" },
+  { "phrase": "[[시간]]이 충분했어요.", "pr": "sigan-i chungbun-haesseoyo", "en": "There was enough time.", "des": "충분하다 — past adjective" },
+
+  { "phrase": "[[시간]]이 부족했어요.", "pr": "sigan-i bujok-haesseoyo", "en": "There was not enough time.", "des": "부족하다 — past adjective" },
+  { "phrase": "[[일]]이 바빴어요.", "pr": "il-i bappasseoyo", "en": "The work was busy.", "des": "바쁘다 — past adjective" },
+  { "phrase": "[[계획]]이 완벽했어요.", "pr": "gyehoek-i wanbyeok-haesseoyo", "en": "The plan was perfect.", "des": "완벽하다 — past adjective" },
+  { "phrase": "[[설명]]이 자세했어요.", "pr": "seolmyeong-i jase-haesseoyo", "en": "The explanation was detailed.", "des": "자세하다 — past adjective" },
+  { "phrase": "[[방법]]이 쉬웠어요.", "pr": "bangbeop-i swi-wosseoyo", "en": "The method was easy.", "des": "쉽다 — past adjective" },
+
+  { "phrase": "[[규칙]]이 간단했어요.", "pr": "gyuchik-i gandan-haesseoyo", "en": "The rules were simple.", "des": "간단하다 — past adjective" },
+  { "phrase": "[[길]]이 복잡했어요.", "pr": "gil-i bokjap-haesseoyo", "en": "The road was complicated.", "des": "복잡하다 — past adjective" },
+  { "phrase": "[[교통]]이 편리했어요.", "pr": "gyotong-i pyeonri-haesseoyo", "en": "Transportation was convenient.", "des": "편리하다 — past adjective" },
+  { "phrase": "[[도시]]가 안전했어요.", "pr": "dosi-ga anjeon-haesseoyo", "en": "The city was safe.", "des": "안전하다 — past adjective" },
+  { "phrase": "[[길]]이 위험했어요.", "pr": "gil-i wiheom-haesseoyo", "en": "The road was dangerous.", "des": "위험하다 — past adjective" },
+
+  { "phrase": "[[사람]]이 친했어요.", "pr": "saram-i chin-haesseoyo", "en": "The people were close.", "des": "친하다 — past adjective" },
+  { "phrase": "[[분위기]]가 어색했어요.", "pr": "bunwigiga eosaek-haesseoyo", "en": "The atmosphere was awkward.", "des": "어색하다 — past adjective" },
+  { "phrase": "[[마음]]이 불안했어요.", "pr": "maeum-i buran-haesseoyo", "en": "The heart was anxious.", "des": "불안하다 — past adjective" },
+  { "phrase": "[[결정]]이 중요했어요.", "pr": "gyeoljeong-i jungyo-haesseoyo", "en": "The decision was important.", "des": "중요하다 — past adjective" },
+  { "phrase": "[[선택]]이 어려웠어요.", "pr": "seontaek-i eoryeowosseoyo", "en": "The choice was difficult.", "des": "어렵다 — past adjective" },
+
+  { "phrase": "[[결과]]가 만족스러웠어요.", "pr": "gyeolgwa-ga manjok-seureowosseoyo", "en": "The result was satisfying.", "des": "만족스럽다 — past adjective" },
+  { "phrase": "[[경험]]이 특별했어요.", "pr": "gyeongheom-i teukbyeol-haesseoyo", "en": "The experience was special.", "des": "특별하다 — past adjective" },
+  { "phrase": "[[이야기]]가 흥미로웠어요.", "pr": "iyagi-ga heungmi-rowosseoyo", "en": "The story was interesting.", "des": "흥미롭다 — past adjective" },
+  { "phrase": "[[사실]]이 분명했어요.", "pr": "sasil-i bunmyeong-haesseoyo", "en": "The fact was clear.", "des": "분명하다 — past adjective" },
+  { "phrase": "[[정보]]가 유용했어요.", "pr": "jeongbo-ga yuyong-haesseoyo", "en": "The information was useful.", "des": "유용하다 — past adjective" }
 ]
 
 

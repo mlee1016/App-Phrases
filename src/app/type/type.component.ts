@@ -785,7 +785,7 @@ generateHint2() {
 toggleHighlight() {
   this.highlightMode = !this.highlightMode;
 }
-formatPhrase(phrase: string): string {
+formatPhrase(phrase: string): string { 
   if (!this.highlightMode) {
     // Just remove markers
    

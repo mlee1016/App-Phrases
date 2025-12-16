@@ -55,7 +55,7 @@
   animation: slideUp 0.4s ease-out both;
 }
 
-@keyframes glowLine {
+@keyframes glowLine { 
   0% { opacity: 0; transform: scaleX(0); }
   50% { opacity: 1; transform: scaleX(1); }
   100% { opacity: 0; transform: scaleX(0); }

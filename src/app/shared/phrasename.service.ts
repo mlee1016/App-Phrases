@@ -146,6 +146,8 @@ allListgrammer: PhraseListItem[] = [
   { s: "ad-negations", name: "1 - 50 adectives - negations", difficulty: "easy", isDone:false },
   // { s: "ad-negations2", name: "51 - 100 adectives - negations", difficulty: "easy", isDone:false },
   { s: "ad-negations-copula", name: "1 - 50 adectives - negations - copula", difficulty: "easy", isDone:false },
+  { s: "ad-past", name: "1 - 50 adectives - past", difficulty: "easy", isDone:false },
+  { s: "ad-past2", name: "51 - 105 adectives - past", difficulty: "easy", isDone:false },
   { s: "ad-future", name: "1 - 50 Adjectives future tense", difficulty: "easy", isDone:false },
   { s: "ad-future2", name: "51 - 105 Adjectives future tense", difficulty: "easy", isDone:false },
 
@@ -387,7 +389,8 @@ allListItalianStory: PhraseListItem[] = [
   { s: "te-form-verbs", name: "Te-form Verbs", difficulty: "Medium", isDone: false },
   { s: "this way / that way", name: "Directional Forms", difficulty: "Easy", isDone: false },
   { s: "I think-", name: "と思う (I think)", difficulty: "Medium", isDone: false },
-  
+  // { s: "ad-1-50n3", name: "Adjectives advance 1 ", difficulty: "Medium", isDone: false },
+  // { s: "ad-51-100n3", name: "Adjectives advance 2", difficulty: "Medium", isDone: false },
   { s: "adjectives", name: "Adjectives I", difficulty: "medium", isDone: false },
   { s: "adjectives2", name: "Adjectives II", difficulty: "Medium", isDone: false },
   { s: "time", name: "Time Expressions", difficulty: "medium", isDone: false },

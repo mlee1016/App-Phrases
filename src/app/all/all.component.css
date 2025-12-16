@@ -78,7 +78,7 @@
 
 }
 .badge{
-  @apply text-xs px-2 py-0.5 rounded-full font-semibold capitalize;
+  @apply text-xs px-2 py-0.5 rounded-full font-semibold capitalize; 
 }
 
 .badge-easy {

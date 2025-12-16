@@ -224,7 +224,7 @@
          shadow-md backdrop-blur-sm
          transition-all cursor-pointer hover:bg-white/20 active:scale-95;
 }
-
+ 
 .hint-grid {
   @apply flex flex-wrap justify-center gap-2 mt-3;
 }

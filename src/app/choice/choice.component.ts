@@ -18,7 +18,7 @@ export interface UnifiedPhrase {
 @Component({
   selector: 'app-choice',
   templateUrl: './choice.component.html',
-  styleUrl: './choice.component.css',
+  styleUrl: './choice.component.css', 
   
 })
 export class ChoiceComponent {

@@ -334,7 +334,7 @@ ngOnInit(): void {
       this.phraseStory = this.allPhrase;
       this.phrasePopular = this.phrasePopular
       this.phraseCourse =this.phrasesList;
-      this.directionMode = 'kor-to-eng';
+      this.directionMode = 'kor-to-eng'; 
       this.directionModeE = 'kor-to-eng';
       this.lang = 'ko-KR';
       this.la = 'ko';

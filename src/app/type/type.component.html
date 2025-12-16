@@ -166,7 +166,7 @@
 
     <!-- Direction Toggle -->
     <div class="flex flex-col sm:flex-row justify-center gap-4 mt-6">
-      <button (click)="toggleDirectionMode(directionModeE)"
+      <button (click)="toggleDirectionMode(directionModeE)" 
               class="btn-toggle"
               [ngClass]="{ 'bg-cyan-700': directionMode === directionModeE, 'bg-cyan-500': directionMode !== directionModeE }">
         {{ id }} → English
