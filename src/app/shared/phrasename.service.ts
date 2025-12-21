@@ -135,7 +135,8 @@ allListgrammer: PhraseListItem[] = [
   { s: "21-40adjectives", name: "21 - 40 popular adjectives", difficulty: "easy", isDone:false },
   { s: "41-60adjectives", name: "41 - 60 popular adjectives", difficulty: "easy", isDone:false },
   { s: "61-80adjectives", name: "61 - 80 popular adjectives", difficulty: "easy", isDone:false },
-  // { s: "1-50verbs", name: "Top 50 Verbs - polite Form", difficulty: "easy", isDone:false },
+  { s: "있어요-i-sseo-yo", name:  "있어요-i-sseo-yo", difficulty: "easy", isDone:false },
+  { s: "1-50verbs", name: "Top 50 Verbs - polite Form", difficulty: "easy", isDone:false },
 
 
   
@@ -144,7 +145,7 @@ allListgrammer: PhraseListItem[] = [
 
 
   { s: "ad-negations", name: "1 - 50 adectives - negations", difficulty: "easy", isDone:false },
-  // { s: "ad-negations2", name: "51 - 100 adectives - negations", difficulty: "easy", isDone:false },
+  { s: "ad-negations2", name: "51 - 100 adectives - negations", difficulty: "easy", isDone:false },
   { s: "ad-negations-copula", name: "1 - 50 adectives - negations - copula", difficulty: "easy", isDone:false },
   { s: "ad-past", name: "1 - 50 adectives - past", difficulty: "easy", isDone:false },
   { s: "ad-past2", name: "51 - 105 adectives - past", difficulty: "easy", isDone:false },
@@ -190,7 +191,7 @@ allPopularPhrases: PhraseListItem[] = [
   { s: "phrases8", name: "Daily Phrases 8", difficulty: "Medium", isDone:false },
   { s: "phrases9", name: "Daily Phrases 9", difficulty: "intermediate", isDone:false },
 
-  { s: "smalltalk", name: "Small Talk", difficulty: "easy", isDone:false },
+  { s: "smalltalk", name: "Small Talk", difficulty: "intermediate", isDone:false },
   { s: "weather", name: "Weather Expressions 1", difficulty: "easy", isDone:false },
   { s: "weather2", name: "Weather Expressions 2", difficulty: "medium", isDone:false },
   { s: "negations", name: "Negation Forms", difficulty: "medium", isDone:false }]
@@ -377,6 +378,9 @@ allListItalianStory: PhraseListItem[] = [
   { s:"adjec", name: "Common Adjectives", difficulty: "easy", isDone: false },
   { s:"adjec2", name: "Common Adjectives 2", difficulty: "easy", isDone: false },
   { s:"adjec3", name: "Common Adjectives 3", difficulty: "easy", isDone: false },
+  // { s:"adjec4", name: "Common Adjectives 4", difficulty: "easy", isDone: false },
+  { s:"ad-n", name: "Top 50 Ad+Nouns", difficulty: "easy", isDone: false },
+  // { s:"51-100nouns", name: "51-100 Nouns", difficulty: "easy", isDone: false },
   { s: "part1", name: "Basic Grammar 1", difficulty: "easy", isDone: false },
   { s: "part2", name: "Basic Grammar 2", difficulty: "easy", isDone: false },
   { s: "part3", name: "Grammar Point ", difficulty: "easy", isDone: false },
@@ -386,7 +390,7 @@ allListItalianStory: PhraseListItem[] = [
   { s: "part7", name: "Beginner Grammar 7", difficulty: "Medium", isDone: false },
   { s: "part8", name: "Beginner Grammar 8", difficulty: "Medium", isDone: false },
 
-  { s: "te-form-verbs", name: "Te-form Verbs", difficulty: "Medium", isDone: false },
+  { s: "te-form-verbs", name: "Te-form Verbs", difficulty: "Intermediate", isDone: false },
   { s: "this way / that way", name: "Directional Forms", difficulty: "Easy", isDone: false },
   { s: "I think-", name: "と思う (I think)", difficulty: "Medium", isDone: false },
   // { s: "ad-1-50n3", name: "Adjectives advance 1 ", difficulty: "Medium", isDone: false },
@@ -401,13 +405,18 @@ allPopularJapanesePhrases: PhraseListItem[] = [
   { s: "phrases3", name: "Useful Phrases 3", difficulty: "easy", isDone: false },
   { s: "phrases4", name: "Useful Phrases 4", difficulty: "easy", isDone: false },
   { s: "phrase5", name: "Useful Phrases 5", difficulty: "medium", isDone: false },
-
+  { s: "easydailyroutine", name: "Daily Routine", difficulty: "easy", isDone: false },
+  { s: "easydailyroutine2", name: "Daily Routine 2", difficulty: "easy", isDone: false },
+  { s: "easydailyroutine3", name: "Daily Routine 3", difficulty: "medium", isDone: false },
   { s: "useful", name: "General Daily Phrases", difficulty: "easy", isDone: false },
   { s: "useful4", name: "Useful Daily Phrases 2", difficulty: "Medium", isDone: false },
   { s:"practice", name: "Practice Sentences", difficulty: "Medium", isDone: false },
 ];
 allListJapaneseStory: PhraseListItem[] = [
-  { s: "asking_directions", name: "Asking Directions", difficulty: "Easy", isDone: false },
+  { s: "story-intro", name: "Introduction Story", difficulty: "Easy", isDone: false },
+  { s:"dailyroutine1", name: "Daily Routine", difficulty: "Easy", isDone: false },
+  { s:"dailyroutine2", name: "Daily Routine 2", difficulty: "Easy", isDone: false },
+  { s: "asking_directions", name: "Asking Directions", difficulty: "medium", isDone: false },
   { s: "restaurant", name: "At the Restaurant", difficulty: "Easy", isDone: false },
   { s: "conversation2", name: "Conversation Set 2", difficulty: "Medium", isDone: false },
   { s: "conversation", name: "Basic Conversation", difficulty: "Easy", isDone: false },

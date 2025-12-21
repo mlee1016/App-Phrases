@@ -570,6 +570,10 @@ video {
 .hint-grid {
   @apply flex flex-wrap justify-center gap-2 mt-3;
 }
+:root {
+  font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont,
+               'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+}
 
 /*
 *{

@@ -1,60 +1,77 @@
 <!-- 🌌 Background Wrapper -->
-<div class="relative min-h-screen bg-gradient flex flex-col items-center justify-center px-4 py-10 text-white overflow-hidden">
+<div class="relative min-h-screen bg-gradient-to-br from-[#060b14] via-[#0b1522] to-[#050a12]
+            flex flex-col items-center px-4 py-20 text-slate-100 overflow-hidden">
 
-  <!-- Animated Overlay Glow -->
-  <div class="absolute inset-0 bg-gradient-to-tr from-cyan-900/10 to-indigo-900/10 animate-pulse-slow"></div>
-
-  <!-- Floating Particles -->
-  <div class="absolute inset-0 overflow-hidden pointer-events-none">
-    <div class="particle" *ngFor="let p of [].constructor(10)"></div>
-  </div>
+  <!-- Soft Ambient Glow -->
+  <div class="absolute -top-40 -left-40 w-[500px] h-[500px] bg-cyan-500/10 blur-[160px]"></div>
+  <div class="absolute bottom-0 right-0 w-[400px] h-[400px] bg-indigo-500/10 blur-[160px]"></div>
 
   <!-- Title -->
-  <h2 class="text-center text-cyan-200 text-3xl sm:text-4xl md:text-5xl mb-10 tracking-wide drop-shadow-lg animate-fadeIn">
-    {{ id }}:
+  <h2
+    class="relative text-center text-3xl sm:text-4xl md:text-5xl font-semibold tracking-tight
+           text-transparent bg-clip-text bg-gradient-to-r from-cyan-300 to-emerald-200 mb-16"
+  >
+    {{ id }} ·
     {{
       m === 'course'
         ? 'Course'
         : m === 'popular'
-        ? 'Popular / Useful'
+        ? 'Popular & Useful'
         : m === 'story'
-        ? 'Story'
-        : 'All List'
+        ? 'Stories'
+        : 'All Phrases'
     }}
   </h2>
 
-  <!-- Cards Grid -->
-  <div *ngIf="filteredSites?.length" class="w-full max-w-6xl px-2 fade-slide-btn delay-1">
-    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
+  <!-- Cards -->
+  <div *ngIf="filteredSites?.length" class="relative w-full max-w-6xl">
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+
       <div
         *ngFor="let item of filteredSites; let i = index"
         (click)="toggleExpand(i)"
-        class="site-card group relative overflow-hidden transition-all duration-500 ease-out"
-        [ngClass]="{ 'expanded': expandedIndex === i }"
+        class="group cursor-pointer rounded-2xl border border-slate-700 bg-[#070f18]
+               p-6 transition-all duration-300 hover:border-emerald-300"
       >
-        <!-- Icon -->
-        <div class="text-3xl text-cyan-400 group-hover:text-cyan-300 mb-3 transition">
-          <i class="fa fa-list"></i>
+
+        <!-- Header -->
+        <div class="flex items-start gap-4">
+          <div class="text-xl text-emerald-300">
+            <i class="fa fa-list"></i>
+          </div>
+
+          <div>
+            <div class="text-lg font-medium text-slate-100">
+              {{ item.s }}
+            </div>
+            <div class="text-sm text-slate-400 mt-1">
+              {{ item.des }}
+            </div>
+          </div>
         </div>
 
-        <!-- Title -->
-        <div class="text-lg font-semibold text-white mb-1">
-          {{ item.s }}
+        <!-- Expand -->
+        <div
+          class="mt-5 overflow-hidden transition-all duration-300"
+          [style.maxHeight]="expandedIndex === i ? '120px' : '0'"
+        >
+          <div class="pt-4 border-t border-slate-700 text-sm text-slate-300 space-y-3">
+            <div class="italic opacity-80">
+              “{{ item.m || 'Sample phrase or description' }}”
+            </div>
+
+            <button
+              (click)="navAll(item.s); $event.stopPropagation()"
+              class="inline-flex items-center gap-2 text-sm
+                     px-4 py-2 rounded-lg
+                     bg-emerald-600 hover:bg-emerald-500 text-white transition"
+            >
+              Open
+              <i class="fa fa-arrow-right text-xs"></i>
+            </button>
+          </div>
         </div>
 
-        <!-- Description -->
-        <div class="text-sm text-cyan-200/70">{{ item.des }}</div>
-
-        <!-- 🔽 Expandable Detail Section -->
-        <div class="expand-panel mt-4 text-sm text-cyan-100/90 space-y-2">
-          <div class="italic opacity-80">"{{ item.m || 'Sample phrase or info here' }}"</div>
-          <button
-            (click)="navAll(item.s); $event.stopPropagation()"
-            class="bg-cyan-600 hover:bg-cyan-500 text-white px-3 py-1 rounded-lg text-xs transition"
-          >
-            🚀 Open
-          </button>
-        </div>
       </div>
     </div>
   </div>

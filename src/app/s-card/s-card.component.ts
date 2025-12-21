@@ -700,6 +700,8 @@ correct() {
   this.lastResult.set('✅');
 
   // ✅ Add the result for this question
+
+  
   this.userResults.push({
     phrase: this.getQuestion(),
     correct: true,

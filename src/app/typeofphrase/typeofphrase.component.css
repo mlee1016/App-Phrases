@@ -1,116 +1,94 @@
 .menu-container {
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 100vh;
-  /* background: linear-gradient(to bottom right, #001f26, #00334d); */
-  color: #a0f0ff;
   text-align: center;
-  overflow: hidden;
-  animation: fadeSlideIn 0.8s ease-out;
+  color: #cdefff;
+  animation: fadeSlideIn 0.6s ease-out;
 }
 
+/* Title */
 .menu-title {
-  font-size: 1.8rem;
-  font-weight: 600;
-  color: #00ffff;
-  margin-bottom: 2.5rem;
-  letter-spacing: 1px;
-  text-shadow: 0 0 10px rgba(0, 255, 255, 0.2);
+  font-size: 1.6rem;
+  font-weight: 500;
+  margin-bottom: 2.2rem;
+  color: #bff5ff;
+  letter-spacing: 0.4px;
 }
 
+/* Button Stack */
 .menu-buttons {
   display: flex;
   flex-direction: column;
-  gap: 1.25rem;
-  width: 90%;
-  max-width: 340px;
+  gap: 1rem;
+  width: 100%;
+  max-width: 320px;
 }
 
+/* Buttons */
 .menu-btn {
   display: flex;
   align-items: center;
-  justify-content: center;
-  gap: 0.75rem;
-  font-size: 1.1rem;
+  gap: 0.9rem;
+  padding: 0.9rem 1.2rem;
+
+  font-size: 1rem;
   font-weight: 500;
-  color: #00ffff;
-  background-color: rgba(0, 31, 38, 0.85);
-  border: 1px solid #005f66;
+  color: #bfefff;
+
+  background: #071821;
+  border: 1px solid #123845;
   border-radius: 0.9rem;
-  padding: 1rem 1.5rem;
+
   cursor: pointer;
-  transition: all 0.25s ease;
-  backdrop-filter: blur(4px);
-  position: relative;
-  overflow: hidden;
+  transition: border-color 0.2s ease, background-color 0.2s ease;
 }
 
-.menu-btn::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: -100%;
-  width: 100%;
-  height: 100%;
-  background: linear-gradient(90deg, transparent, rgba(0, 255, 255, 0.25), transparent);
-  transition: 0.4s;
+/* Icon */
+.menu-btn i {
+  font-size: 1rem;
+  color: #7ddfff;
 }
 
-.menu-btn:hover::before {
-  left: 100%;
-}
-
+/* Hover (quiet, intentional) */
 .menu-btn:hover {
-  background-color: rgba(0, 255, 255, 0.15);
-  border-color: #00ffff;
-  color: #00ffff;
-  transform: scale(1.03);
-  box-shadow: 0 0 15px rgba(0, 255, 255, 0.3);
+  border-color: #5de4ff;
+  background-color: #0a2230;
 }
 
-.menu-btn:active {
-  transform: scale(0.98);
+/* Active State */
+.menu-btn.active {
+  border-color: #67f0c3;
+  background-color: #0c2a26;
+  color: #e8fff7;
 }
 
-.active { 
-  background-color: rgba(0, 255, 255, 0.25);
-  border-color: #00ffff;
-  color: #00ffff;
-  box-shadow: 0 0 15px rgba(0, 255, 255, 0.25);
+.menu-btn.active i {
+  color: #67f0c3;
 }
 
+/* Mobile */
 @media (max-width: 480px) {
   .menu-title {
-    font-size: 1.4rem; 
-    margin-bottom: 1.8rem;
-    
+    font-size: 1.35rem;
   }
 
   .menu-btn {
-    font-size: 1rem;
-    padding: 0.85rem 1.2rem;
+    font-size: 0.95rem;
+    padding: 0.85rem 1.1rem;
   }
 }
 
+/* Entry Animation */
 @keyframes fadeSlideIn {
-  0% {
+  from {
     opacity: 0;
-    transform: translateY(30px);
+    transform: translateY(18px);
   }
-  100% {
+  to {
     opacity: 1;
     transform: translateY(0);
   }
 }
-
-.menu-buttons .menu-btn {
-  opacity: 0;
-  animation: fadeSlideIn 0.8s ease-out forwards;
-}
-
-.menu-buttons .menu-btn:nth-child(1) { animation-delay: 0.15s; }
-.menu-buttons .menu-btn:nth-child(2) { animation-delay: 0.3s; }
-.menu-buttons .menu-btn:nth-child(3) { animation-delay: 0.45s; }
-.menu-buttons .menu-btn:nth-child(4) { animation-delay: 0.6s; }

@@ -9439,65 +9439,109 @@
     "en": "The movie is famous.",
     "des": "유명하다 (famous)"
   }
+],
+"1-50verbs":[
+  { "phrase": "가수가 노래해요.", "pr": "gasa-ga noraehaeyo", "en": "The singer sings.", "des": "노래하다 (to sing)" },
+  { "phrase": "무용수가 춤춰요.", "pr": "muyong-su-ga chumchwayo", "en": "The dancer dances.", "des": "춤추다 (to dance)" },
+  { "phrase": "화가가 그림 그려요.", "pr": "hwaga-ga geurim geuryeoyo", "en": "The painter draws a picture.", "des": "그리다 (to draw)" },
+  { "phrase": "여행자가 사진 찍어요.", "pr": "yeohaengja-ga sajin jjigeoyo", "en": "The traveler takes a photo.", "des": "찍다 (to take [photo])" },
+  { "phrase": "선수가 운동해요.", "pr": "seonsu-ga undonghaeyo", "en": "The athlete exercises.", "des": "운동하다 (to exercise)" },
+
+  { "phrase": "엄마가 청소해요.", "pr": "eomma-ga cheongsohaeyo", "en": "Mom cleans.", "des": "청소하다 (to clean)" },
+  { "phrase": "아침에 몸을 씻어요.", "pr": "achim-e mom-eul ssiseoyo", "en": "The body washes in the morning.", "des": "씻다 (to wash)" },
+  { "phrase": "손님이 옷을 입어요.", "pr": "sonnim-i os-eul ibeoyo", "en": "The guest wears clothes.", "des": "입다 (to wear)" },
+  { "phrase": "모델이 옷을 벗어요.", "pr": "model-i os-eul beoseoyo", "en": "The model takes off clothes.", "des": "벗다 (to take off)" },
+  { "phrase": "강아지가 공원에서 뛰어요.", "pr": "gangaji-ga gongwon-eseo ttwieoyo", "en": "The puppy runs in the park.", "des": "뛰다 (to run)" },
+
+  { "phrase": "할머니가 걸어요.", "pr": "halmeoni-ga georeoyo", "en": "Grandmother walks.", "des": "걷다 (to walk)" },
+  { "phrase": "손님이 의자에 앉아요.", "pr": "sonnim-i uija-e anjayo", "en": "The guest sits on a chair.", "des": "앉다 (to sit)" },
+  { "phrase": "직원이 일어나요.", "pr": "jigwon-i ireonayo", "en": "The employee stands up.", "des": "일어나다 (to stand up)" },
+  { "phrase": "선수가 빨리 뛰어요.", "pr": "seonsu-ga ppalli ttwieoyo", "en": "The athlete runs fast.", "des": "뛰다 (to run)" },
+  { "phrase": "경찰이 도둑을 잡아요.", "pr": "gyeongchal-i doduk-eul jabayo", "en": "The police catch a thief.", "des": "잡다 (to catch)" },
+
+  { "phrase": "직원이 물건을 놓아요.", "pr": "jigwon-i mulgeon-eul nohayo", "en": "The employee puts something down.", "des": "놓다 (to put)" },
+  { "phrase": "요리사가 음식을 만들어요.", "pr": "yorisa-ga eumsik-eul mandeureoyo", "en": "The chef makes food.", "des": "만들다 (to make)" },
+  { "phrase": "기사님이 기계를 고쳐요.", "pr": "gisanim-i gigye-reul gochyeoyo", "en": "The technician fixes the machine.", "des": "고치다 (to fix)" },
+  { "phrase": "손님이 메뉴를 선택해요.", "pr": "sonnim-i menyu-reul seontaekhaeyo", "en": "The customer chooses a menu.", "des": "선택하다 (to choose)" },
+  { "phrase": "배달원이 음식을 배달해요.", "pr": "baedalwon-i eumsik-eul baedalhaeyo", "en": "The delivery person delivers food.", "des": "배달하다 (to deliver)" },
+
+  { "phrase": "엄마가 선물을 줘요.", "pr": "eomma-ga seonmul-eul jweoyo", "en": "Mom gives a gift.", "des": "주다 (to give)" },
+  { "phrase": "아들이 돈을 받아요.", "pr": "adeul-i don-eul badaoyo", "en": "The son receives money.", "des": "받다 (to receive)" },
+  { "phrase": "학생이 책을 빌려요.", "pr": "haksaeng-i chaek-eul billyeoyo", "en": "The student borrows a book.", "des": "빌리다 (to borrow)" },
+  { "phrase": "동료가 일을 도와요.", "pr": "dongnyo-ga il-eul dowayo", "en": "A coworker helps with work.", "des": "돕다 (to help)" },
+  { "phrase": "형이 열쇠를 찾아요.", "pr": "hyeong-i yeolswae-reul chajayo", "en": "Older brother looks for the key.", "des": "찾다 (to find)" },
+
+  { "phrase": "손님이 줄을 기다려요.", "pr": "sonnim-i jul-eul gidaryeoyo", "en": "The guest waits in line.", "des": "기다리다 (to wait)" },
+  { "phrase": "아이들이 놀아요.", "pr": "aideul-i norayo", "en": "The children play.", "des": "놀다 (to play)" },
+  { "phrase": "수험생이 공부해요.", "pr": "suheomsaeng-i gongbuhaeyo", "en": "The exam-taker studies.", "des": "공부하다 (to study)" },
+  { "phrase": "운동선수가 연습해요.", "pr": "undongseonsu-ga yeonseuphaeyo", "en": "The athlete practices.", "des": "연습하다 (to practice)" },
+  { "phrase": "부장이 이야기해요.", "pr": "bujang-i iyagihaeyo", "en": "The manager talks.", "des": "이야기하다 (to talk)" },
+
+  { "phrase": "기자가 질문해요.", "pr": "gija-ga jilmunhaeyo", "en": "The reporter asks a question.", "des": "질문하다 (to ask)" },
+  { "phrase": "교사가 대답해요.", "pr": "gyosa-ga daedaphaeyo", "en": "The teacher answers.", "des": "대답하다 (to answer)" },
+  { "phrase": "고객이 전화해요.", "pr": "gogaek-i jeonhwahaeyo", "en": "The customer calls.", "des": "전화하다 (to call)" },
+  { "phrase": "팀이 준비해요.", "pr": "tim-i junbihaeyo", "en": "The team prepares.", "des": "준비하다 (to prepare)" },
+  { "phrase": "회의가 시작해요.", "pr": "hoeui-ga sijakhaeyo", "en": "The meeting starts.", "des": "시작하다 (to start)" },
+
+  { "phrase": "행사가 끝내요.", "pr": "haengsa-ga kkeunnaeyo", "en": "The event finishes.", "des": "끝내다 (to finish)" },
+  { "phrase": "가족이 여행해요.", "pr": "gajok-i yeohaenghaeyo", "en": "The family travels.", "des": "여행하다 (to travel)" },
+  { "phrase": "회원이 운동해요.", "pr": "hoewon-i undonghaeyo", "en": "The member exercises.", "des": "운동하다 (to exercise)" },
+  { "phrase": "아빠가 기억해요.", "pr": "appa-ga gieokhaeyo", "en": "Dad remembers.", "des": "기억하다 (to remember)" },
+  { "phrase": "언니가 약속을 잊어요.", "pr": "eonni-ga yaksok-eul ijeoyo", "en": "Older sister forgets the promise.", "des": "잊다 (to forget)" },
+
+  { "phrase": "팬이 가수를 믿어요.", "pr": "paen-i gasu-reul mideoyo", "en": "The fan believes the singer.", "des": "믿다 (to believe)" },
+  { "phrase": "버스가 도착해요.", "pr": "beoseu-ga dochakhaeyo", "en": "The bus arrives.", "des": "도착하다 (to arrive)" },
+  { "phrase": "비행기가 떠나요.", "pr": "bihaenggi-ga tteonayo", "en": "The airplane leaves.", "des": "떠나다 (to leave)" },
+  { "phrase": "선수가 도전해요.", "pr": "seonsu-ga dojeonhaeyo", "en": "The athlete challenges.", "des": "도전하다 (to challenge)" },
+  { "phrase": "사장이 결정을 선택해요.", "pr": "sajang-i gyeoljeong-eul seontaekhaeyo", "en": "The boss chooses a decision.", "des": "선택하다 (to choose)" }
 ]
 
 
 
-,"1-50verbs":[
-  { "phrase": "학생이 노래해요.", "pr": "haksaeng-i noraehaeyo", "en": "The student sings.", "des": "노래하다 (to sing)" },
-  { "phrase": "아이가 춤춰요.", "pr": "ai-ga chumchwayo", "en": "The child dances.", "des": "춤추다 (to dance)" },
-  { "phrase": "친구가 그림 그려요.", "pr": "chingu-ga geurim geuryeoyo", "en": "A friend draws a picture.", "des": "그리다 (to draw)" },
-  { "phrase": "학생이 사진 찍어요.", "pr": "haksaeng-i sajin jjigeoyo", "en": "The student takes a photo.", "des": "찍다 (to take [photo])" },
-  { "phrase": "사람이 운동해요.", "pr": "saram-i undonghaeyo", "en": "A person exercises.", "des": "운동하다 (to exercise)" },
+,"있어요-i-sseo-yo":[
+  {"phrase":"시간이 있어요.","pr":"si-gan-i i-sseo-yo","en":"I have time.","des":"Present possession"},
+  {"phrase":"돈이 있어요.","pr":"don-i i-sseo-yo","en":"I have money.","des":"Present possession"},
+  {"phrase":"문제가 있어요.","pr":"mun-je-ga i-sseo-yo","en":"There is a problem.","des":"Present existence"},
+  {"phrase":"약속이 있어요.","pr":"yak-sok-i i-sseo-yo","en":"I have an appointment.","des":"Present schedule"},
+  {"phrase":"회의가 있어요.","pr":"hoe-ui-ga i-sseo-yo","en":"There is a meeting.","des":"Present event"},
+  {"phrase":"숙제가 있어요.","pr":"suk-je-ga i-sseo-yo","en":"I have homework.","des":"Present task"},
+  {"phrase":"질문이 있어요.","pr":"jil-mun-i i-sseo-yo","en":"I have a question.","des":"Present question"},
+  {"phrase":"계획이 있어요.","pr":"gye-hoeg-i i-sseo-yo","en":"I have a plan.","des":"Present intention"},
+  {"phrase":"사람이 있어요.","pr":"sa-ram-i i-sseo-yo","en":"There are people.","des":"Present existence"},
+  {"phrase":"시간이 아직 있어요.","pr":"si-gan-i a-jik i-sseo-yo","en":"There is still time.","des":"Present time"},
 
-  { "phrase": "제가 청소해요.", "pr": "jega cheongsohaeyo", "en": "I clean.", "des": "청소하다 (to clean)" },
-  { "phrase": "학생이 씻어요.", "pr": "haksaeng-i ssiseoyo", "en": "The student washes.", "des": "씻다 (to wash)" },
-  { "phrase": "아이가 입어요.", "pr": "ai-ga ibeoyo", "en": "The child wears clothes.", "des": "입다 (to wear)" },
-  { "phrase": "사람이 벗어요.", "pr": "saram-i beoseoyo", "en": "A person takes off clothes.", "des": "벗다 (to take off)" },
-  { "phrase": "학생이 운동장에 뛰어요.", "pr": "haksaeng-i undongjang-e ttwieoyo", "en": "The student runs in the playground.", "des": "뛰다 (to run/jump)" },
+  {"phrase":"집에 강아지가 있어요.","pr":"ji-be gang-a-ji-ga i-sseo-yo","en":"There is a puppy at home.","des":"Location + existence"},
+  {"phrase":"가방에 지갑이 있어요.","pr":"ga-bang-e ji-gap-i i-sseo-yo","en":"There is a wallet in the bag.","des":"Object location"},
+  {"phrase":"책상 위에 책이 있어요.","pr":"chaek-sang wi-e chaek-i i-sseo-yo","en":"There is a book on the desk.","des":"Position"},
+  {"phrase":"방에 창문이 있어요.","pr":"bang-e chang-mun-i i-sseo-yo","en":"There is a window in the room.","des":"Room description"},
+  {"phrase":"냉장고에 음식이 있어요.","pr":"naeng-jang-go-e eum-sik-i i-sseo-yo","en":"There is food in the fridge.","des":"Food storage"},
 
-  { "phrase": "아이가 걸어요.", "pr": "ai-ga georeoyo", "en": "The child walks.", "des": "걷다 (to walk)" },
-  { "phrase": "사람이 앉아요.", "pr": "saram-i anjayo", "en": "A person sits.", "des": "앉다 (to sit)" },
-  { "phrase": "학생이 일어나요.", "pr": "haksaeng-i ireonayo", "en": "The student stands up.", "des": "일어나다 (to stand up)" },
-  { "phrase": "제가 뛰어요.", "pr": "jega ttwieoyo", "en": "I run.", "des": "뛰다 (to run)" },
-  { "phrase": "아이가 잡아요.", "pr": "ai-ga jabayo", "en": "The child catches.", "des": "잡다 (to catch)" },
+  {"phrase":"학교에 학생이 있어요.","pr":"hak-kkyo-e hak-saeng-i i-sseo-yo","en":"There are students at school.","des":"Place + people"},
+  {"phrase":"회사에 사무실이 있어요.","pr":"hoe-sa-e sa-mu-sil-i i-sseo-yo","en":"There is an office at the company.","des":"Workplace"},
+  {"phrase":"근처에 은행이 있어요.","pr":"geun-cheo-e eun-haeng-i i-sseo-yo","en":"There is a bank nearby.","des":"Nearby location"},
+  {"phrase":"여기에 화장실이 있어요.","pr":"yeo-gi-e hwa-jang-sil-i i-sseo-yo","en":"There is a restroom here.","des":"Public place"},
+  {"phrase":"밖에 차가 있어요.","pr":"bak-kke cha-ga i-sseo-yo","en":"There is a car outside.","des":"Outside location"},
 
-  { "phrase": "친구가 놓아요.", "pr": "chingu-ga nohayo", "en": "A friend puts down.", "des": "놓다 (to put/place)" },
-  { "phrase": "학생이 만들어요.", "pr": "haksaeng-i mandeureoyo", "en": "The student makes.", "des": "만들다 (to make)" },
-  { "phrase": "제가 고쳐요.", "pr": "jega gochyeoyo", "en": "I fix.", "des": "고치다 (to fix)" },
-  { "phrase": "사람이 선택해요.", "pr": "saram-i seontaekhaeyo", "en": "A person chooses.", "des": "선택하다 (to choose)" },
-  { "phrase": "학생이 배달해요.", "pr": "haksaeng-i baedalhaeyo", "en": "The student delivers.", "des": "배달하다 (to deliver)" },
+  {"phrase":"오늘 수업이 있어요.","pr":"o-neul su-eop-i i-sseo-yo","en":"I have class today.","des":"Daily schedule"},
+  {"phrase":"내일 시험이 있어요.","pr":"nae-il si-heom-i i-sseo-yo","en":"There is a test tomorrow.","des":"School event"},
+  {"phrase":"주말에 약속이 있어요.","pr":"ju-mal-e yak-sok-i i-sseo-yo","en":"I have plans this weekend.","des":"Time expression"},
+  {"phrase":"지금 시간이 있어요.","pr":"ji-geum si-gan-i i-sseo-yo","en":"I have time now.","des":"Present moment"},
+  {"phrase":"오늘 할 일이 있어요.","pr":"o-neul hal il-i i-sseo-yo","en":"I have things to do today.","des":"Daily task"},
 
-  { "phrase": "아이가 줘요.", "pr": "ai-ga jweoyo", "en": "The child gives.", "des": "주다 (to give)" },
-  { "phrase": "사람이 받아요.", "pr": "saram-i badaoyo", "en": "A person receives.", "des": "받다 (to receive)" },
-  { "phrase": "친구가 빌려요.", "pr": "chingu-ga billyeoyo", "en": "A friend borrows.", "des": "빌리다 (to borrow)" },
-  { "phrase": "학생이 도와요.", "pr": "haksaeng-i dowayo", "en": "The student helps.", "des": "돕다 (to help)" },
-  { "phrase": "제가 찾아요.", "pr": "jega chajayo", "en": "I look for.", "des": "찾다 (to find/search)" },
+  {"phrase":"문 앞에 사람이 있어요.","pr":"mun ap-e sa-ram-i i-sseo-yo","en":"There is a person at the door.","des":"Situation"},
+  {"phrase":"거리에서 음악이 있어요.","pr":"geo-ri-e-seo eu-mak-i i-sseo-yo","en":"There is music on the street.","des":"Sound presence"},
+  {"phrase":"방에 불이 있어요.","pr":"bang-e bul-i i-sseo-yo","en":"The light is on in the room.","des":"State"},
+  {"phrase":"가게에 손님이 있어요.","pr":"ga-ge-e son-nim-i i-sseo-yo","en":"There are customers in the store.","des":"Business"},
+  {"phrase":"테이블에 메뉴가 있어요.","pr":"te-i-beul-e me-nyu-ga i-sseo-yo","en":"There is a menu on the table.","des":"Restaurant"},
 
-  { "phrase": "사람이 기다려요.", "pr": "saram-i gidaryeoyo", "en": "A person waits.", "des": "기다리다 (to wait)" },
-  { "phrase": "학생이 놀아요.", "pr": "haksaeng-i norayo", "en": "The student plays.", "des": "놀다 (to play)" },
-  { "phrase": "아이가 공부해요.", "pr": "ai-ga gongbuhaeyo", "en": "The child studies.", "des": "공부하다 (to study)" },
-  { "phrase": "친구가 연습해요.", "pr": "chingu-ga yeonseuphaeyo", "en": "A friend practices.", "des": "연습하다 (to practice)" },
-  { "phrase": "제가 이야기해요.", "pr": "jega iyagihaeyo", "en": "I talk.", "des": "이야기하다 (to talk)" },
-
-  { "phrase": "사람이 질문해요.", "pr": "saram-i jilmunhaeyo", "en": "A person asks a question.", "des": "질문하다 (to ask)" },
-  { "phrase": "학생이 대답해요.", "pr": "haksaeng-i daedaphaeyo", "en": "The student answers.", "des": "대답하다 (to answer)" },
-  { "phrase": "아이가 전화해요.", "pr": "ai-ga jeonhwahaeyo", "en": "The child calls.", "des": "전화하다 (to call)" },
-  { "phrase": "친구가 준비해요.", "pr": "chingu-ga junbihaeyo", "en": "A friend prepares.", "des": "준비하다 (to prepare)" },
-  { "phrase": "제가 시작해요.", "pr": "jega sijakhaeyo", "en": "I start.", "des": "시작하다 (to start)" },
-
-  { "phrase": "사람이 끝내요.", "pr": "saram-i kkeunnaeyo", "en": "A person finishes.", "des": "끝내다 (to finish)" },
-  { "phrase": "학생이 여행해요.", "pr": "haksaeng-i yeohaenghaeyo", "en": "The student travels.", "des": "여행하다 (to travel)" },
-  { "phrase": "아이가 운동해요.", "pr": "ai-ga undonghaeyo", "en": "The child exercises.", "des": "운동하다 (to exercise)" },
-  { "phrase": "친구가 기억해요.", "pr": "chingu-ga gieokhaeyo", "en": "A friend remembers.", "des": "기억하다 (to remember)" },
-  { "phrase": "제가 잊어요.", "pr": "jega ijeoyo", "en": "I forget.", "des": "잊다 (to forget)" },
-
-  { "phrase": "학생이 믿어요.", "pr": "haksaeng-i mideoyo", "en": "The student believes.", "des": "믿다 (to believe)" },
-  { "phrase": "사람이 도착해요.", "pr": "saram-i dochakhaeyo", "en": "A person arrives.", "des": "도착하다 (to arrive)" },
-  { "phrase": "아이가 떠나요.", "pr": "ai-ga tteonayo", "en": "The child leaves.", "des": "떠나다 (to leave)" },
-  { "phrase": "친구가 도전해요.", "pr": "chingu-ga dojeonhaeyo", "en": "A friend challenges.", "des": "도전하다 (to challenge)" },
-  { "phrase": "제가 선택해요.", "pr": "jega seontaekhaeyo", "en": "I choose.", "des": "선택하다 (to choose)" }
+  {"phrase":"마음에 여유가 있어요.","pr":"ma-eum-e yeo-yu-ga i-sseo-yo","en":"I feel relaxed.","des":"Abstract noun"},
+  {"phrase":"이 일에 관심이 있어요.","pr":"i il-e gwan-sim-i i-sseo-yo","en":"I am interested in this.","des":"Interest"},
+  {"phrase":"생각이 있어요.","pr":"saeng-gak-i i-sseo-yo","en":"I have an idea.","des":"Thought"},
+  {"phrase":"답이 있어요.","pr":"dap-i i-sseo-yo","en":"There is an answer.","des":"Problem solving"},
+  {"phrase":"방법이 있어요.","pr":"bang-beop-i i-sseo-yo","en":"There is a way.","des":"Solution"}
 ]
+
+
 
 ,"ad-future":[
   { "phrase": "집이 클 거예요.", "pr": "jib-i keul geoyeyo", "en": "The house will be big.", "des": "크다 — future adjective" },
@@ -9718,8 +9762,7 @@
   { "phrase": "이 카페는 조용해요 아니에요.", "pr": "i kape-neun joyonghaeyo anieyo", "en": "This café is not quiet.", "des": "조용하다 — adjective + 아니에요" },
   { "phrase": "그 사람은 친절해요 아니에요.", "pr": "geu saram-eun chinjeolhaeyo anieyo", "en": "That person is not kind.", "des": "친절하다 — adjective + 아니에요" },
 
-  { "phrase": "이 아이는 귀여워요 아니에요.", "pr": "i ai-neun gwiyeowo-yo anieyo", "en": "This child is not cute.", "des": "귀엽다 — adjective + 아니에요" },
-  { "phrase": "그 남자는 잘생겼어요 아니에요.", "pr": "geu namja-neun jalsaenggyeosseoyo anieyo", "en": "That man is not handsome.", "des": "잘생기다 — adjective + 아니에요" },
+
   { "phrase": "이 꽃은 예뻐요 아니에요.", "pr": "i kkot-eun yeppeoyo anieyo", "en": "This flower is not pretty.", "des": "예쁘다 — adjective + 아니에요" },
   { "phrase": "이 도시는 복잡해요 아니에요.", "pr": "i dosi-neun bokjaphaeyo anieyo", "en": "This city is not complicated.", "des": "복잡하다 — adjective + 아니에요" },
   { "phrase": "이 방법은 간단해요 아니에요.", "pr": "i bangbeop-eun gandanhaeyo anieyo", "en": "This method is not simple.", "des": "간단하다 — adjective + 아니에요" },

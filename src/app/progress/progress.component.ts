@@ -78,6 +78,8 @@ import { ParamMap } from '@angular/router';
     m1:string=""
     la:string = ""
     lang:string = ""
+    userResults: { phrase: string; correct: boolean; attempts: number }[] = [];
+    m:string = "s"
 
     phraseStory: any;
     phrasePopular: any;
@@ -341,6 +343,8 @@ selectPhraseList() {
 // inject in constructor:
 // constructor(private ngZone: NgZone) {}
 
+
+attemptCount: number = 0;
 startSpeechToText(expectedRaw: string) {
   const SpeechRecognition = (window as any).SpeechRecognition || (window as any).webkitSpeechRecognition;
   if (!SpeechRecognition) {
@@ -434,16 +438,32 @@ recognition.onresult = (event: any) => {
 if (isCorrect) {
   if (this.proportionCorrect === 100) {
     this.pronunciationFeedback = '✅ Perfect match!';
+
+  this.userResults.push({
+    phrase: expected,
+    correct: true,
+    attempts: this.attemptCount + 1 // include this final correct attempt
+  });
   } else {
     this.pronunciationFeedback = `✅ Good enough! (${this.proportionCorrect.toFixed(0)}%)`;
+
+
+  this.userResults.push({
+    phrase: expected,
+    correct: true,
+    attempts: this.attemptCount + 1 // include this final correct attempt
+  });
   }
 } else {
   if (this.proportionCorrect >= 80) {
     this.pronunciationFeedback = `❌ So close! Expected: "${expectedRaw}"`;
+    this.attemptCount++;
   } else if (this.proportionCorrect >= 50) {
     this.pronunciationFeedback = `❌ Keep trying. Expected: "${expectedRaw}"`;
+    this.attemptCount++;
   } else {
     this.pronunciationFeedback = `❌ Not close. Expected: "${expectedRaw}"`;
+    this.attemptCount++;
   }
 }
 

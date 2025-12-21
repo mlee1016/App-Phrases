@@ -8682,8 +8682,458 @@
   { "phrase": "正当 な 理由", "pr": "せいとう な りゆう", "en": "a valid reason", "des": "N3 na-adj + noun" },
   { "phrase": "過度 な 期待", "pr": "かど な きたい", "en": "excessive expectations", "des": "N3 na-adj + noun" },
   { "phrase": "慎重 な 対応", "pr": "しんちょう な たいおう", "en": "careful response", "des": "N3 na-adj + noun" }
-]
+],
+"story-intro":[
+  { "phrase": "こんにちは。", "pr": "こんにちは", "en": "Hello.", "des": "Greeting (dialogue)" },
+  { "phrase": "マイク です。", "pr": "まいく です", "en": "I am Mike.", "des": "Self-introduction" },
+  { "phrase": "アンナ です。", "pr": "あんな です", "en": "I am Anna.", "des": "Self-introduction response" },
 
+  { "phrase": "どこ から 来ましたか。", "pr": "どこ から きましたか", "en": "Where are you from?", "des": "Asking origin" },
+  { "phrase": "アメリカ から 来ました。", "pr": "あめりか から きました", "en": "I came from America.", "des": "Answering origin" },
+  { "phrase": "そう ですか。", "pr": "そう ですか", "en": "I see.", "des": "Natural response" },
+
+  { "phrase": "今日、何 を しますか。", "pr": "きょう、なに を しますか", "en": "What will you do today?", "des": "Asking daily plan" },
+  { "phrase": "勉強 します。", "pr": "べんきょう します", "en": "I will study.", "des": "Answering daily plan" },
+  { "phrase": "いい です ね。", "pr": "いい です ね", "en": "That’s good.", "des": "Positive reaction" },
+
+  { "phrase": "昨日、何 を しましたか。", "pr": "きのう、なに を しましたか", "en": "What did you do yesterday?", "des": "Asking about past" },
+  { "phrase": "仕事 を しました。", "pr": "しごと を しました", "en": "I worked.", "des": "Past activity" },
+  { "phrase": "忙しかった ですか。", "pr": "いそがしかった ですか", "en": "Was it busy?", "des": "Past adjective question" },
+  { "phrase": "はい、忙しかった です。", "pr": "はい、いそがしかった です", "en": "Yes, it was busy.", "des": "Past adjective answer" },
+
+  { "phrase": "何 を 食べましたか。", "pr": "なに を たべましたか", "en": "What did you eat?", "des": "Asking about food" },
+  { "phrase": "ラーメン を 食べました。", "pr": "らーめん を たべました", "en": "I ate ramen.", "des": "Food answer" },
+  { "phrase": "おいしかった ですか。", "pr": "おいしかった ですか", "en": "Was it delicious?", "des": "Food reaction question" },
+  { "phrase": "はい、とても おいしかった です。", "pr": "はい、とても おいしかった です", "en": "Yes, it was very delicious.", "des": "Food reaction answer" },
+
+  { "phrase": "今日 は 忙しい ですか。", "pr": "きょう は いそがしい ですか", "en": "Are you busy today?", "des": "Daily condition" },
+  { "phrase": "はい、仕事 が あります から。", "pr": "はい、しごと が あります から", "en": "Yes, because I have work.", "des": "Giving a reason" },
+  { "phrase": "でも、夜 は 休みます。", "pr": "でも、よる は やすみます", "en": "But I will rest at night.", "des": "Contrasting plan" },
+
+  { "phrase": "日本語 は 難しい ですか。", "pr": "にほんご は むずかしい ですか", "en": "Is Japanese difficult?", "des": "Asking opinion" },
+  { "phrase": "少し 難しい です。", "pr": "すこし むずかしい です", "en": "It is a little difficult.", "des": "Giving opinion" },
+  { "phrase": "毎日 勉強 しますか。", "pr": "まいにち べんきょう しますか", "en": "Do you study every day?", "des": "Asking frequency" },
+  { "phrase": "はい、毎日 します。", "pr": "はい、まいにち します", "en": "Yes, every day.", "des": "Frequency answer" },
+
+  { "phrase": "明日、何 を しますか。", "pr": "あした、なに を しますか", "en": "What will you do tomorrow?", "des": "Asking future plan" },
+  { "phrase": "友だち に 会います。", "pr": "ともだち に あいます", "en": "I will meet a friend.", "des": "Future plan answer" },
+  { "phrase": "はい、楽しみ です。", "pr": "はい、たのしみ です", "en": "Yes, I’m looking forward to it.", "des": "Expressing anticipation" }
+]
+,"dailyroutine1":[
+  {
+    "phrase": "朝、何時 に 起きますか。",
+    "pr": "あさ、なんじ に おきますか",
+    "en": "What time do you wake up in the morning?",
+    "des": "Daily routine – waking up (question)"
+  },
+  {
+    "phrase": "朝、七時 に 起きます。",
+    "pr": "あさ、しちじ に おきます",
+    "en": "I wake up at seven in the morning.",
+    "des": "Daily routine – waking up (answer)"
+  },
+  {
+    "phrase": "朝、ごはん を 食べますか。",
+    "pr": "あさ、ごはん を たべますか",
+    "en": "Do you eat in the morning?",
+    "des": "Daily routine – eating (question)"
+  },
+  {
+    "phrase": "はい、朝、ごはん を 食べます。",
+    "pr": "はい、あさ、ごはん を たべます",
+    "en": "Yes, I eat in the morning.",
+    "des": "Daily routine – eating (answer)"
+  },
+
+  {
+    "phrase": "朝、学校 に 行きますか。",
+    "pr": "あさ、がっこう に いきますか",
+    "en": "Do you go to school in the morning?",
+    "des": "Daily routine – going somewhere (question)"
+  },
+  {
+    "phrase": "はい、朝、学校 に 行きます。",
+    "pr": "はい、あさ、がっこう に いきます",
+    "en": "Yes, I go to school in the morning.",
+    "des": "Daily routine – going somewhere (answer)"
+  },
+  {
+    "phrase": "夜、何 を しますか。",
+    "pr": "よる、なに を しますか",
+    "en": "What do you do at night?",
+    "des": "Daily routine – night activity (question)"
+  },
+  {
+    "phrase": "夜、寝ます。",
+    "pr": "よる、ねます",
+    "en": "I sleep at night.",
+    "des": "Daily routine – sleeping (answer)"
+  }
+]
+,"dailyroutine2":[
+  {
+    "phrase": "毎日、何 を しますか。",
+    "pr": "まいにち、なに を しますか",
+    "en": "What do you do every day?",
+    "des": "Daily routine – general activity (question)"
+  },
+  {
+    "phrase": "毎日、仕事 を します。",
+    "pr": "まいにち、しごと を します",
+    "en": "I work every day.",
+    "des": "Daily routine – general activity (answer)"
+  },
+
+  {
+    "phrase": "昼、どこ に 行きますか。",
+    "pr": "ひる、どこ に いきますか",
+    "en": "Where do you go at noon?",
+    "des": "Daily routine – going somewhere (question)"
+  },
+  {
+    "phrase": "昼、家 に 行きます。",
+    "pr": "ひる、いえ に いきます",
+    "en": "I go home at noon.",
+    "des": "Daily routine – going somewhere (answer)"
+  },
+
+  {
+    "phrase": "夜、テレビ を 見ますか。",
+    "pr": "よる、てれび を みますか",
+    "en": "Do you watch TV at night?",
+    "des": "Daily routine – evening activity (question)"
+  },
+  {
+    "phrase": "はい、夜、テレビ を 見ます。",
+    "pr": "はい、よる、てれび を みます",
+    "en": "Yes, I watch TV at night.",
+    "des": "Daily routine – evening activity (answer)"
+  },
+
+  {
+    "phrase": "夜、何時 に 帰りますか。",
+    "pr": "よる、なんじ に かえりますか",
+    "en": "What time do you return home at night?",
+    "des": "Daily routine – returning home (question)"
+  },
+  {
+    "phrase": "夜、九時 に 帰ります。",
+    "pr": "よる、くじ に かえります",
+    "en": "I return home at nine at night.",
+    "des": "Daily routine – returning home (answer)"
+  }
+]
+,"easydailyroutine":[
+  {
+    "phrase": "朝、六時 に 起きます。",
+    "pr": "あさ、ろくじ に おきます",
+    "en": "I wake up at 6 in the morning.",
+    "des": "Common daily wake-up time"
+  },
+  {
+    "phrase": "朝ごはん を 食べます。",
+    "pr": "あさごはん を たべます",
+    "en": "I eat breakfast.",
+    "des": "Eating morning meal"
+  },
+  {
+    "phrase": "仕事 に 行きます。",
+    "pr": "しごと に いきます",
+    "en": "I go to work.",
+    "des": "Going to work"
+  },
+  {
+    "phrase": "学校 に 行きます。",
+    "pr": "がっこう に いきます",
+    "en": "I go to school.",
+    "des": "Going to school"
+  },
+  {
+    "phrase": "夜、ごはん を 食べます。",
+    "pr": "よる、ごはん を たべます",
+    "en": "I eat dinner at night.",
+    "des": "Evening meal"
+  },
+  {
+    "phrase": "夜、十時 に 寝ます。",
+    "pr": "よる、じゅうじ に ねます",
+    "en": "I go to bed at 10 at night.",
+    "des": "Going to sleep"
+  },
+  {
+    "phrase": "毎朝、顔 を 洗います。",
+    "pr": "まいあさ、かお を あらいます",
+    "en": "I wash my face every morning.",
+    "des": "Morning hygiene"
+  },
+  {
+    "phrase": "夜、テレビ を 見ます。",
+    "pr": "よる、てれび を みます",
+    "en": "I watch TV at night.",
+    "des": "Evening activity"
+  },
+  {
+    "phrase": "朝、コーヒー を 飲みます。",
+    "pr": "あさ、こーひー を のみます",
+    "en": "I drink coffee in the morning.",
+    "des": "Morning drink"
+  },
+  {
+    "phrase": "夜、音楽 を 聞きます。",
+    "pr": "よる、おんがく を ききます",
+    "en": "I listen to music at night.",
+    "des": "Evening activity"
+  }
+],
+"easydailyroutine:":[
+  {
+    "phrase": "朝、六時 に 起きます。",
+    "pr": "あさ、ろくじ に おきます",
+    "en": "I wake up at 6 in the morning.",
+    "des": "Common daily wake-up time"
+  },
+  {
+    "phrase": "朝ごはん を 食べます。",
+    "pr": "あさごはん を たべます",
+    "en": "I eat breakfast.",
+    "des": "Eating morning meal"
+  },
+  {
+    "phrase": "仕事 に 行きます。",
+    "pr": "しごと に いきます",
+    "en": "I go to work.",
+    "des": "Going to work"
+  },
+  {
+    "phrase": "学校 に 行きます。",
+    "pr": "がっこう に いきます",
+    "en": "I go to school.",
+    "des": "Going to school"
+  },
+  {
+    "phrase": "夜、ごはん を 食べます。",
+    "pr": "よる、ごはん を たべます",
+    "en": "I eat dinner at night.",
+    "des": "Evening meal"
+  },
+  {
+    "phrase": "夜、十時 に 寝ます。",
+    "pr": "よる、じゅうじ に ねます",
+    "en": "I go to bed at 10 at night.",
+    "des": "Going to sleep"
+  },
+  {
+    "phrase": "毎朝、顔 を 洗います。",
+    "pr": "まいあさ、かお を あらいます",
+    "en": "I wash my face every morning.",
+    "des": "Morning hygiene"
+  },
+  {
+    "phrase": "夜、テレビ を 見ます。",
+    "pr": "よる、てれび を みます",
+    "en": "I watch TV at night.",
+    "des": "Evening activity"
+  },
+  {
+    "phrase": "朝、コーヒー を 飲みます。",
+    "pr": "あさ、こーひー を のみます",
+    "en": "I drink coffee in the morning.",
+    "des": "Morning drink"
+  },
+  {
+    "phrase": "夜、音楽 を 聞きます。",
+    "pr": "よる、おんがく を ききます",
+    "en": "I listen to music at night.",
+    "des": "Evening activity"
+  }
+]
+,"easydailyroutine2":[
+  {
+    "phrase": "昼ごはん を 食べます。",
+    "pr": "ひるごはん を たべます",
+    "en": "I eat lunch.",
+    "des": "Midday meal"
+  },
+  {
+    "phrase": "午後、勉強 します。",
+    "pr": "ごご、べんきょう します",
+    "en": "I study in the afternoon.",
+    "des": "Afternoon activity"
+  },
+  {
+    "phrase": "仕事 に 行きます。",
+    "pr": "しごと に いきます",
+    "en": "I go to work.",
+    "des": "Going to work"
+  },
+  {
+    "phrase": "学校 に 行きます。",
+    "pr": "がっこう に いきます",
+    "en": "I go to school.",
+    "des": "Going to school"
+  },
+  {
+    "phrase": "駅 まで 歩きます。",
+    "pr": "えき まで あるきます",
+    "en": "I walk to the station.",
+    "des": "Commuting on foot"
+  },
+  {
+    "phrase": "バス に 乗ります。",
+    "pr": "ばす に のります",
+    "en": "I take the bus.",
+    "des": "Using bus to commute"
+  },
+  {
+    "phrase": "電車 に 乗ります。",
+    "pr": "でんしゃ に のります",
+    "en": "I take the train.",
+    "des": "Using train to commute"
+  },
+  {
+    "phrase": "昼休み に 昼ごはん を 食べます。",
+    "pr": "ひるやすみ に ひるごはん を たべます",
+    "en": "I eat lunch during lunch break.",
+    "des": "Work/school midday routine"
+  },
+  {
+    "phrase": "コンビニ で お菓子 を 買います。",
+    "pr": "こんびに で おかし を かいます",
+    "en": "I buy snacks at the convenience store.",
+    "des": "Quick midday snack"
+  },
+  {
+    "phrase": "午後、会議 に 出ます。",
+    "pr": "ごご、かいぎ に でます",
+    "en": "I attend a meeting in the afternoon.",
+    "des": "Afternoon work routine"
+  },
+  {
+    "phrase": "友だち と 昼ごはん を 食べます。",
+    "pr": "ともだち と ひるごはん を たべます",
+    "en": "I eat lunch with my friends.",
+    "des": "Social midday routine"
+  },
+  {
+    "phrase": "昼、少し 休みます。",
+    "pr": "ひる、すこし やすみます",
+    "en": "I rest a little at noon.",
+    "des": "Midday break"
+  },
+  {
+    "phrase": "昼ごはん の 後、散歩 します。",
+    "pr": "ひるごはん の あと、さんぽ します",
+    "en": "I take a walk after lunch.",
+    "des": "Common midday activity"
+  },
+  {
+    "phrase": "仕事 の 後、駅 まで 歩きます。",
+    "pr": "しごと の あと、えき まで あるきます",
+    "en": "I walk to the station after work.",
+    "des": "Commuting back home"
+  },
+  {
+    "phrase": "電車 で 家 に 帰ります。",
+    "pr": "でんしゃ で いえ に かえります",
+    "en": "I go home by train.",
+    "des": "Returning home after work/school"
+  }
+]
+,"easydailyroutine3":[
+  {
+    "phrase": "今晩、九時 に 寝ます。",
+    "pr": "こんばん、くじ に ねます",
+    "en": "I will go to bed at 9 tonight.",
+    "des": "Evening sleep using time expression for future"
+  },
+  {
+    "phrase": "今晩、テレビ を 見ます。",
+    "pr": "こんばん、てれび を みます",
+    "en": "I will watch TV tonight.",
+    "des": "Evening activity using future context"
+  },
+  {
+    "phrase": "明日、朝 六時 に 起きます。",
+    "pr": "あした、あさ ろくじ に おきます",
+    "en": "I will wake up at 6 tomorrow.",
+    "des": "Future morning activity"
+  },
+  {
+    "phrase": "明日の昼、昼ごはん を 食べます。",
+    "pr": "あした の ひる、ひるごはん を たべます",
+    "en": "I will eat lunch tomorrow.",
+    "des": "Future midday meal"
+  },
+  {
+    "phrase": "来週、友だち と 昼ごはん を 食べます。",
+    "pr": "らいしゅう、ともだち と ひるごはん を たべます",
+    "en": "I will eat lunch with my friend next week.",
+    "des": "Future social activity"
+  },
+  {
+    "phrase": "今晩、音楽 を 聞きます。",
+    "pr": "こんばん、おんがく を ききます",
+    "en": "I will listen to music tonight.",
+    "des": "Evening entertainment"
+  },
+  {
+    "phrase": "来月、旅行 に 行きます。",
+    "pr": "らいげつ、りょこう に いきます",
+    "en": "I will go on a trip next month.",
+    "des": "Future travel plan"
+  },
+  {
+    "phrase": "明日の夜、宿題 を します。",
+    "pr": "あした の よる、しゅくだい を します",
+    "en": "I will do homework tomorrow night.",
+    "des": "Future evening activity"
+  },
+  {
+    "phrase": "来年、家族 と ごはん を 食べます。",
+    "pr": "らいねん、かぞく と ごはん を たべます",
+    "en": "I will eat with my family next year.",
+    "des": "Future family plan"
+  },
+  {
+    "phrase": "午後 八時 に 帰ります。",
+    "pr": "ごご はちじ に かえります",
+    "en": "I will return home at 8 PM.",
+    "des": "Evening commute or return home"
+  }
+]
+,"ad-n":[
+    { "phrase": "面白い 映画", "pr": "おもしろい えいが", "en": "an interesting movie", "des": "Entertainment noun" },
+
+  { "phrase": "新しい 車", "pr": "あたらしい くるま", "en": "a new car", "des": "Common object description" },
+  { "phrase": "古い 本", "pr": "ふるい ほん", "en": "an old book", "des": "Basic adjective usage" },
+  { "phrase": "高い 山", "pr": "たかい やま", "en": "a high mountain", "des": "Nature description" },
+  { "phrase": "低い 建物", "pr": "ひくい たてもの", "en": "a low building", "des": "Opposite adjective" },
+  { "phrase": "広い 公園", "pr": "ひろい こうえん", "en": "a wide park", "des": "Location description" },
+  { "phrase": "狭い 道", "pr": "せまい みち", "en": "a narrow road", "des": "Common travel word" },
+  { "phrase": "明るい 部屋", "pr": "あかるい へや", "en": "a bright room", "des": "Room description" },
+  { "phrase": "暗い 夜", "pr": "くらい よる", "en": "a dark night", "des": "Time description" },
+
+  { "phrase": "静かな 町", "pr": "しずかな まち", "en": "a quiet town", "des": "Environment description" },
+    { "phrase": "不便な 場所", "pr": "ふべんな ばしょ", "en": "an inconvenient place", "des": "Opposite adjective" },
+  { "phrase": "危険な 仕事", "pr": "きけんな しごと", "en": "a dangerous job", "des": "Work-related noun" },
+  { "phrase": "有名な 町", "pr": "ゆうめいな まち", "en": "a famous town", "des": "Common description" },
+  { "phrase": "有名な 人", "pr": "ゆうめいな ひと", "en": "a famous person", "des": "Common description" },
+
+  { "phrase": "普通の 人", "pr": "ふつうの ひと", "en": "an ordinary person", "des": "Neutral description" },
+  { "phrase": "親切な 先生", "pr": "しんせつな せんせい", "en": "a kind teacher", "des": "Personality adjective" },
+  { "phrase": "厳しい 先生", "pr": "きびしい せんせい", "en": "a strict teacher", "des": "Contrast adjective" },
+  { "phrase": "若い 人", "pr": "わかい ひと", "en": "a young person", "des": "Age adjective" },
+
+  { "phrase": "年配の 人", "pr": "ねんぱいの ひと", "en": "an elderly person", "des": "Polite age term" },
+  { "phrase": "忙しい 毎日", "pr": "いそがしい まいにち", "en": "busy days", "des": "Daily life" },
+  { "phrase": "楽しい 旅行", "pr": "たのしい りょこう", "en": "a fun trip", "des": "Leisure noun" },
+  { "phrase": "悲しい 話", "pr": "かなしい はなし", "en": "a sad story", "des": "Emotion adjective" },
+  { "phrase": "退屈な 会議", "pr": "たいくつな かいぎ", "en": "a boring meeting", "des": "Work context" },
+  { "phrase": "美しい 花", "pr": "うつくしい はな", "en": "a beautiful flower", "des": "Nature description" },
+  { "phrase": "汚い 部屋", "pr": "きたない へや", "en": "a dirty room", "des": "Cleanliness adjective" },
+  { "phrase": "清潔な キッチン", "pr": "せいけつな きっちん", "en": "a clean kitchen", "des": "Higher-level adjective" },
+  { "phrase": "重い かばん", "pr": "おもい かばん", "en": "a heavy bag", "des": "Physical description" }
+]
 
 
 }
