@@ -6,7 +6,7 @@ import { AuthenticationUser } from '../emitters/emittters';
   templateUrl: './alloptions.component.html',
   styleUrl: './alloptions.component.css'
 })
-export class AlloptionsComponent {
+export class AlloptionsComponent { 
 
   
   
