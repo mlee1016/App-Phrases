@@ -7,6 +7,9 @@ import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { PhrasenameService } from '../shared/phrasename.service';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AuthenticationUser } from '../emitters/emittters';
+import { combineLatest } from 'rxjs/internal/observable/combineLatest';
+import { filter } from 'rxjs/internal/operators/filter';
+import { distinctUntilChanged } from 'rxjs/internal/operators/distinctUntilChanged';
 type PhraseCourse = {
   category: string;
   lessons: [{phrase: string, pr: string, en: string},];
@@ -458,6 +461,11 @@ export class AllComponent{
   iscompleted = false
   ngOnInit(): void {
     
+    /*this.auth_user.initializeAuth()
+    this.auth_user.authStatusLoaded.subscribe(a=>this.a_load=a)
+    this.auth_user.authStatus$.subscribe((status:'signed in' | 'signed out')=>{
+        this.check.update(a=>a= status)
+     })
     this.activateRoute.paramMap.subscribe((params: ParamMap) => {
   const tempId: string | null = params.get('id');
   this.id = tempId;
@@ -494,25 +502,20 @@ export class AllComponent{
     }
   });
 
-
-
-    this.auth_user.initializeAuth()
-    this.auth_user.authStatusLoaded.subscribe(a=>this.a_load=a)
-    this.auth_user.authStatus.subscribe((id:string)=>
-      this.check.update(a =>a=id)
-      )
+    
   
     
     // Call only for the selected language
+    console.log("this is check value",this.check());
     if(this.check() ==='signed in'){
     this.phraseName.getPhrases(this.id).subscribe({
       next: data => {
-        console.log("this is a",data)
+        console.log("this is a data",data)
       switch(this.id) {
         case 'Korean':
            this.allListgrammer = data.filter(p => p.type === 'grammar');
            this.allListStory = data.filter(p => p.type === 'story');
-          console.log("this is a some course: ",this.allListStory)
+          console.log("this is a some course in data: ",this.allListStory)
 
           break
         case 'Russian': 
@@ -602,7 +605,6 @@ export class AllComponent{
       this.allListItaliangrammer= this.phraseName.allListItaliangrammer
       this.allListItalianStory= this.phraseName.allListItalianStory
       this.allPopular = this.phraseName.allPopularItalianPhrases;
-
         break
       case 'German':
       this.allListGermangrammer  = this.phraseName.allListGermangrammer
@@ -632,20 +634,17 @@ export class AllComponent{
         this.allCourse = this.allListRussiangrammer
         this.theCourse = this.russian
         //this.pro = "pr"
-
         break
       case 'Italian':
         this.language='Italian'
-        
         this.allStory =this.allListItalianStory
         this.allCourse = this.allListItaliangrammer
         this.theCourse = this.italian
         //this.pro = "pr"
         break
-
       case 'German':
         this.language='German'
-        
+    
         this.allStory =this.allListGermanStory
         this.allCourse = this.allListGermangrammer
         //this.pro = "pr"
@@ -653,21 +652,160 @@ export class AllComponent{
         break
       case'Japanese':
         this.language = 'Japanese'
-
         this.allStory = this.allListJapaneseStory
         this.allCourse= this.allListJapanesegrammer
-
         this.theCourse = this.japanese
         //this.pro = "kana"
+    }});
+    if(this.check()==='signed in'){this.loadCompletedFromBackend()}*/
+  this.auth_user.initializeAuth();
+  
+  this.auth_user.authStatus$.subscribe((status:'signed in' | 'signed out')=>{
+    this.check.update(a=>a= status)
+ })
+  combineLatest([
+    this.auth_user.authStatus$,
+    this.activateRoute.paramMap
+  ])
+  .pipe(
+    filter(([status, params]) => !!params.get('id')),
+    distinctUntilChanged()
+  )
+  .subscribe(([status, params]) => {
+    this.id = params.get('id')!;
+    this.language = this.id;
 
+    console.log('AUTH:', status);
+    console.log('LANG:', this.id);
+    
 
+  if (!this.id) return;
 
+  const inputMap = {
+    'Korean': this.selectedPhraseNames(),
+    'Japanese': this.selectedPhraseNames(),  
+    'Italian': this.selectedPhraseNames(),
+    'German': this.selectedPhraseNames(),
+    'Russian':  this.selectedPhraseNames()
+  };
+
+  const inputKey = inputMap[this.id];
+
+  const phraseMap = {
+    'Korean': this.phrasesService.getPhrases(),
+    'Japanese': this.phrasesService.getJapanesePhrases(),
+    'Italian': this.phrasesService.getItalianPhrases(),
+    'German': this.phrasesService.getGermanPhrases(),
+    'Russian': this.phrasesService.getRussianPhrases()
+  };
+
+  const observable$ = phraseMap[this.id];
+
+  observable$.subscribe({
+    next: (data: any) => {
+      const phrases = data[inputKey];
+      this.setUnifiedPhrases(this.id!, phrases);
+    },
+    error: (error: any) => {
+      alert(`❌ Failed to load ${this.id} phrases: ${error.message}`);
+    }
+  });
+
+    
+    if (status === 'signed in') {
+      this.loadSignedInData();
+    } else {
+      this.loadGuestData();
     }
 
-    });
+    
+    switch(this.id){
+      case 'Korean':
+        this.language ='Korean'
+        this.allStory =this.allListStory
+        this.allCourse = this.allListgrammer
+        this.theCourse = this.korean
+        //this.pro = "pr"
+        break
+      case 'Russian':
+        this.language='Russian'
+        
+        this.allStory =this.allListRussianStory
+        this.allCourse = this.allListRussiangrammer
+        this.theCourse = this.russian
+        //this.pro = "pr"
+        break
+      case 'Italian':
+        this.language='Italian'
+        this.allStory =this.allListItalianStory
+        this.allCourse = this.allListItaliangrammer
+        this.theCourse = this.italian
+        //this.pro = "pr"
+        break
+      case 'German':
+        this.language='German'
+    
+        this.allStory =this.allListGermanStory
+        this.allCourse = this.allListGermangrammer
+        //this.pro = "pr"
 
-    if(this.check()==='signed in'){this.loadCompletedFromBackend()}
+        break
+      case'Japanese':
+        this.language = 'Japanese'
+        this.allStory = this.allListJapaneseStory
+        this.allCourse= this.allListJapanesegrammer
+        this.theCourse = this.japanese
+        //this.pro = "kana"
+    }
+  });
+
   }
+  loadSignedInData() {
+
+    
+
+  this.phraseName.getPhrases(this.id).subscribe(data => {
+    this.applyPhraseData(data);
+    this.CompletedFromBackend();
+  });
+}
+loadGuestData() {
+  
+
+      
+      switch(this.id) {
+      case 'Korean':   
+      this.allListgrammer= this.phraseName.allListgrammer
+      this.allPopular = this.phraseName.allPopularPhrases
+      this.allListStory = this.phraseName.allListStory
+        break
+      case 'Russian':
+      this.allListRussiangrammer = this.phraseName.allListRussiangrammer
+      this.allListRussianStory = this.phraseName.allListRussianStory;
+      this.allPopular = this.phraseName.allPopularRussianPhrases;
+        break
+      case 'Italian' :
+      this.allListItaliangrammer= this.phraseName.allListItaliangrammer
+      this.allListItalianStory= this.phraseName.allListItalianStory
+      this.allPopular = this.phraseName.allPopularItalianPhrases;
+        break
+      case 'German':
+      this.allListGermangrammer  = this.phraseName.allListGermangrammer
+      this.allListGermanStory = [{"s":"conversation",isDone:false},{"s":"askingDirections",isDone:false},{"s":"germanQuestionsForLearners",isDone:false},{"s":"germanQuestionsForLearners2",isDone:false},{"s":"germanQuestionsForLearners3",isDone:false},{"s":"germanQuestionsForLearners4",isDone:false},{"s":"germanQuestionsForLearners5",isDone:false}]
+        break
+      case'Japanese': 
+        this.allListJapanesegrammer= this.phraseName.allListJapanesegrammer
+        this.allListJapaneseStory= this.phraseName.allListJapaneseStory
+        this.allPopular = this.phraseName.allPopularJapanesePhrases;
+      break
+      }
+}
+applyPhraseData(data: any[]) {
+  this.allStory = data.filter(p => p.type === 'story');
+  this.allCourse = data.filter(p => p.type === 'grammar');
+  this.allPopular = data.filter(p => p.type === 'popular');
+}
+
 phrases = signal<UnifiedPhrase[]>([]);
 activeIndex: number | null = null;
 
@@ -711,43 +849,6 @@ setUnifiedPhrases(lang: string, phraseList: any[]) {
   
   }
 
-  /*getList(s:string,ind:any,set:string){ un-comment
-    
-    if(this.id=="Korean"){
-      this.input = s
-      this.selectedPhraseName.set(s);
-      this.phrase_ind.set({name:set,'ind':ind})
-    }
-    
-    else if(this.id=="Russian"){
-      this.input = s
-      this.selectedPhraseName.set(s);
-      this.phrase_ind.set({name:set,'ind':ind})
-
-
-    }
-    else if(this.id == "Italian"){
-      this.input = s
-      this.selectedPhraseName.set(s);
-      this.phrase_ind.set({name:set,'ind':ind})
-
-
-    }
-    
-    else if(this.id == "Japanese"){
-      this.input = s
-      this.selectedPhraseName.set(s);
-      this.phrase_ind.set({name:set,'ind':ind})
-
-    
-    }else if(this.id == "German"){
-      this.input5 =s
-      this.selectedPhraseName.set(s);
-
-    }
-
-    this.ngOnInit()
-  }*/
   updateSerializedUrl = "http://127.0.0.1:8000/api/update-phrases-serializer/"
   showlessons = false
   show2(){
@@ -834,94 +935,8 @@ setUnifiedPhrases(lang: string, phraseList: any[]) {
   //showsCompleted
   showCompleteConfirm = false;
 
-  isCompleted = this.phrase_ind()['name']=='s'?this.allStory[this.phrase_ind()['ind']].isDone:this.allCourse[this.phrase_ind()['ind']];
-/*toggleCompleteConfirm() { un-comment
-  const { name, ind } = this.phrase_ind();
-  
-  // Sync checkbox state with actual status
-  if (name === 's') {
-    this.isCompleted = this.allStory[ind].isDone;
-  } else if (name === 'c') {
-    this.isCompleted = this.allCourse[ind].isDone;
-  }
 
-  // Now show/hide the panel
-  this.showCompleteConfirm = !this.showCompleteConfirm;
-}*/
-
-
-/*saveCompleted() { un-comment-when 
-  const { name, ind } = this.phrase_ind();
-
-  if (this.isCompleted) {
-    switch (name) {
-      case 's':
-        this.allStory[ind].isDone = true;
-        break;
-      case 'c':
-        this.allCourse[ind].isDone = true;
-        break;
-      case 'g':
-        this.allListgrammer[ind].isDone = true;
-        break;
-    }
-  } else {
-    // Unmark completed
-    switch (name) {
-      case 's':
-        this.allStory[ind].isDone = false;
-        break;
-      case 'c':
-        this.allCourse[ind].isDone = false;
-        break;
-      case 'g':
-        this.allListgrammer[ind].isDone = false;
-        break;
-    }
-  }
-
-  this.isCompleted = false;
-  this.showCompleteConfirm = false;
-}*/
-
-/*getDoneStatus(): boolean { un-comment ////////////////////////////////////////////////////////////////
-  const { name, ind } = this.phrase_ind();
-  switch (name) {
-    case 's': return this.allStory[ind]?.isDone ?? false;
-    case 'c': return this.allCourse[ind]?.isDone ?? false;
-    case 'g': return this.allListgrammer[ind]?.isDone ?? false;
-    default: return false;
-  }
-}*/
-
-/*
-objectPhrase = {s:'',isDone:false}
-saveCompleted() {
-
-  
-  if (this.isCompleted) {
-    console.log('Phrase marked as completed:', this.selectedPhraseName());
-    // Optionally update your local state or make API call to save completion
-    switch(this.phrase_ind()['name']){
-      case's':
-        this.allStory[this.phrase_ind()['ind']]['isDone'] = true
-        break
-      case'c':
-        this.allCourse[this.phrase_ind()['ind']]['isDone'] = false
-    
-    }
-      //this.isCompleted = false
-  }else if(!this.isCompleted){
-    this.allStory[this.phrase_ind()['ind']]['isDone'] = false
-  }
-  this.isCompleted = false
-  this.showCompleteConfirm = false;
-
-}*/
-
-
-  //isCompleted = false;
-  //language = 'Korean'; // or dynamic
+  isCompleted = false;
   selectedIndex = -1;
   //selectedType = ''; // 's' or 'c'
   aPhrase(s: string, i: number, name: string) {
@@ -935,89 +950,103 @@ saveCompleted() {
       this.activeTocCategory = tocMatch ? tocMatch.category : null;
       this.activeIndex = tocMatch ? this.theCourse.indexOf(tocMatch) : null;
     }
-
-
     this.selectedPhraseNames.set(s)
     this.ngOnInit()
+    // this.upData()
     //this.service.setLanguage(this.language); // optional
   }
+  upData() {
+  this.CompletedFromBackend();
+}
 
   selectedPhraseName() {
     return this.selectedIndex >= 0 ? this.selectedIndex : null;
   }
-
   phrase_ind() {
     return { ind: this.selectedIndex, name: this.selectedType };
   }
-
-  toggleCompleteConfirm() {
-    this.isCompleted = this.getDoneStatus();
-    this.showCompleteConfirm = !this.showCompleteConfirm;
+  CompleteConfirm() {
+    this.showCompleteConfirm = true;
+    this.isCompleted = !this.getDoneStatus();
   }
-
-  getDoneStatus() {
+ getDoneStatus() {
     if (this.selectedType === 's') return this.allStory[this.selectedIndex]?.isDone;
     if (this.selectedType === 'p') return this.allPopular[this.selectedIndex]?.isDone;
 
     if (this.selectedType === 'c') return this.allCourse[this.selectedIndex]?.isDone;
     return false;
   }
-
 saveCompleted() {
   if (this.selectedIndex < 0) return;
 
   let selectedArray;
-  let type: 'story' | 'grammar'|'popular';
 
-  if (this.selectedType === 's') {
-    selectedArray = this.allStory;
-    type = 'story';
-  } else if (this.selectedType === 'c') {
-    selectedArray = this.allCourse;
-    type = 'grammar';
-  } else if (this.selectedType === 'p') {
-    selectedArray = this.allPopular;
-    type = 'popular';
-  }  
-  else {
-    return;
-  }
-  const phrase = selectedArray[this.selectedIndex];
-  phrase.isDone = this.isCompleted;
-  // Save to backend
-  this.phraseName.savePhraseProgress(phrase.id ??-1, phrase.isDone).subscribe({
-    next: () => console.log('✅ Progress saved for phrase', phrase),
-    error: err => console.error('❌ Failed to save progress', err)
-  });
-  this.showCompleteConfirm = false;
+  if (this.selectedType === 's') selectedArray = this.allStory;
+  else if (this.selectedType === 'c') selectedArray = this.allCourse;
+  else if (this.selectedType === 'p') selectedArray = this.allPopular;
+  else return;
+
+  // ✅ toggle locally FIRST
+  selectedArray[this.selectedIndex] = {
+    ...selectedArray[this.selectedIndex],
+    isDone: this.isCompleted
+  };
+
+  this.phraseName
+    .savePhraseProgress(
+      selectedArray[this.selectedIndex].id!,
+      this.isCompleted
+    )
+    .subscribe({
+      next: () => {
+        console.log('✅ Saved & UI updated');
+        this.showCompleteConfirm = false;
+      },
+      error: err => {
+        console.error('❌ Save failed', err);
+        // rollback if needed
+        selectedArray[this.selectedIndex].isDone = !this.isCompleted;
+      }
+    });
 }
-loadCompletedFromBackend() {
-  this.phraseName.getDoneStatus(this.language, 'story').subscribe(progressList => {
 
-    console.log(progressList)
-    const progressMap = new Map(progressList.map(p=>[p.phrase_id,p.isDone]))
-    console.log(progressMap)
-    this.allStory.forEach((story) => story.isDone =progressMap.get(story.id)??false);
+// completed status from backend
+CompletedFromBackend() {
+
+  this.phraseName.getDoneStatus(this.language, 'story').subscribe(list => {
+    const map = new Map(list.map(p => [p.phrase_id, p.isDone]));
+    this.allStory.forEach(p => p.isDone = map.get(p.id) ?? false);
   });
 
-  
-  this.phraseName.getDoneStatus(this.language, 'grammar').subscribe(progressList => {
-    const progressMap = new Map(progressList.map(p=>[p.phrase_id,p.isDone]))
-    this.allCourse.forEach((story) => story.isDone =progressMap.get(story.id)??false);
+  this.phraseName.getDoneStatus(this.language, 'grammar').subscribe(list => {
+    const map = new Map(list.map(p => [p.phrase_id, p.isDone]));
+    this.allCourse.forEach(p => p.isDone = map.get(p.id) ?? false);
   });
+
+  this.phraseName.getDoneStatus(this.language, 'popular').subscribe(list => {
+    const map = new Map(list.map(p => [p.phrase_id, p.isDone]));
+    this.allPopular.forEach(p => p.isDone = map.get(p.id) ?? false);
+  });
+
 }
 clearCompleted() {
-  // Reset in UI
-  this.allStory.forEach(item => item.isDone = false);
-  this.allCourse.forEach(item => item.isDone = false);
+  this.allStory.forEach(i => i.isDone = false);
+  this.allCourse.forEach(i => i.isDone = false);
+  this.allPopular.forEach(i => i.isDone = false);
 
-  // Send bulk clear to backend
   this.phraseName.clearProgress(this.language).subscribe({
     next: () => console.log('✅ All progress cleared'),
     error: err => console.error('❌ Failed to clear progress', err)
   });
 }
 
+applyProgress(progress: any[], list: any[]) {
+  const map = new Map(progress.map(p => [p.phrase_id, p.is_done]));
+
+  list.forEach(item => {
+    item.isDone = map.get(item.id) ?? false;
+  });
+}
 
 
 
@@ -1057,6 +1086,5 @@ scrollToToc(index: number) {
 
 // store which TOC to show
 activeTocCategory: string | null = null;
-
 
 }

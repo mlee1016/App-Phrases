@@ -116,6 +116,8 @@
 /* Active item (quiet emphasis) */
 .active-item {
   font-weight: 500;
+  color: rgba(42, 113, 77, 1); /* Tailwind's blue-300 */
+  
 }
 
 

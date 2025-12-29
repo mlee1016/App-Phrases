@@ -1,15 +1,28 @@
-<!--  card -->
-<header class="flex justify-between items-center p-4 bg-[#0F1F26] shadow-md text-cyan-100">
-  <h2 class="text-lg md:text-xl font-bold">
+<!-- HEADER CARD -->
+<header
+  class="flex flex-col sm:flex-row justify-between items-start sm:items-center
+         gap-3 p-4 bg-[#0F1F26] shadow-md text-cyan-100"
+>
+  <h2
+    class="text-base sm:text-lg md:text-xl font-bold
+           break-words max-w-full"
+  >
     {{ selectedPhrases() === '' ? '📚 Pick a list →' : 'Currently studying: ' + selectedPhrases() }}
   </h2>
-  <button (click)="toggleSidebar()"
-          class="button bg-cyan-500 hover:bg-cyan-400 text-white px-3 py-2 rounded-lg shadow transition">
+
+  <button
+    (click)="toggleSidebar()"
+    class="bg-cyan-500 hover:bg-cyan-400
+           text-white px-4 py-2
+           rounded-lg shadow transition
+           w-full sm:w-auto"
+  >
     {{ sideBar ? '✖ Close' : '☰ Menu' }}
   </button>
 </header>
-<!-- side model -->
-<app-s-model 
+
+<!-- SIDE MODAL -->
+<app-s-model
   [sideBar]="sideBar"
   [m1]="m1"
   [phraseCourse]="phraseCourse"
@@ -18,183 +31,154 @@
   [selectedPhrases]="selectedPhrases"
   (closeModal)="close()"
   (selectPhrase)="getSpecificPhrases($event)">
-</app-s-model> 
+</app-s-model>
 
+<!-- START QUIZ -->
+<div *ngIf="isReadyToStart && !quizStarted"
+     class="text-center mt-6 px-3 animate-fade-in">
 
-<!-- Start Quiz Section -->
-
-
-<div *ngIf="isReadyToStart && !quizStarted" class="text-center mt-6 px-2 animate-fade-in">
-
-  
   <button
     (click)="startQuiz()"
-    class="bg-gradient-to-r from-emerald-600 to-cyan-600 hover:from-emerald-500 hover:to-cyan-500 
-    text-white px-10 py-3 rounded-xl shadow-lg text-lg font-semibold transition-all duration-200 hover:scale-105"
+    class="bg-gradient-to-r from-emerald-600 to-cyan-600
+           hover:from-emerald-500 hover:to-cyan-500
+           text-white px-8 py-3 rounded-xl shadow-lg
+           text-lg font-semibold transition
+           w-full sm:w-auto max-w-xs mx-auto"
   >
     ▶ Start
   </button>
-  <div class="flex flex-col sm:flex-row justify-center mt-6 gap-3">
-    <button (click)="toggleDirectionMode(directionModeE)"
-            [ngClass]="{'bg-cyan-700': directionMode===directionModeE, 'bg-cyan-500': directionMode!==directionModeE}"
-            class="a-btn text-sm sm:text-base px-4 py-2 rounded shadow">
+
+  <!-- DIRECTION BUTTONS -->
+  <div class="flex flex-col sm:flex-row justify-center mt-6 gap-3 max-w-full">
+    <button
+      (click)="toggleDirectionMode(directionModeE)"
+      [ngClass]="{
+        'bg-cyan-700': directionMode===directionModeE,
+        'bg-cyan-500': directionMode!==directionModeE
+      }"
+      class="a-btn w-full sm:w-auto"
+    >
       {{ id }} → English
     </button>
-    <button (click)="toggleDirectionMode(directionModeC)"
-            [ngClass]="{'bg-cyan-700': directionMode===directionModeC, 'bg-cyan-500': directionMode!==directionModeC}"
-            class="a-btn text-sm sm:text-base px-4 py-2 rounded shadow">
+
+    <button
+      (click)="toggleDirectionMode(directionModeC)"
+      [ngClass]="{
+        'bg-cyan-700': directionMode===directionModeC,
+        'bg-cyan-500': directionMode!==directionModeC
+      }"
+      class="a-btn w-full sm:w-auto"
+    >
       English → {{ id }}
     </button>
   </div>
 
-  <div class="bg-white shadow-md mt-6 rounded-2xl p-6 mx-auto max-w-md flex flex-col  hover:shadow-lg hover:-translate-y-0.5 transition">
+  <!-- INFO CARD -->
+  <div
+    class="bg-white shadow-md mt-6 rounded-2xl p-6
+           mx-auto max-w-md flex flex-col gap-3
+           hover:shadow-lg transition"
+  >
     <h2 class="text-2xl font-bold text-slate-800 text-center">Card</h2>
-    <div class="text-slate-700 text-center">
-      Study with interactive cards that disappear from the deck when answered correctly.
-    </div>
-    <div class="bg-slate-100 text-slate-600 p-3 rounded-lg text-center">
-      study for Japanese and Korean, Italian, Russian grammar, helping you retain vocabulary efficiently.
-    </div>
-    <div class="text-slate-800 text-center leading-relaxed">
-      Engage in  learning that adapts to your recollection. Each card fades away once correct<!--, making every round more focused and rewarding.-->
-    </div>
-    <div class="bg-slate-200 text-slate-700 text-sm rounded-full px-3 py-1 self-center">story + popular + course</div>
-  </div>
 
-</div>
-<!-- Quiz Section -->
-<div *ngIf="['Italian','Japanese','Korean','Russian','German'].includes(id) && quizStarted"
-     class="text-white min-h-screen py-6 px-3 sm:px-4 animate-slide-in-right">
-     <!-- timer button -->
-
-
-
-<div
-  *ngIf="remainingPhrases().length !== 0"
-  class="quiz-card mx-auto max-w-xl w-full mb-8
-         bg-gray-800 text-white
-         rounded-2xl shadow-2xl
-         border border-blue-500/30"
-  [ngClass]="animationClass"
->
-
-  <!-- Inner flow container -->
-  <div class="flex flex-col gap-5 p-5 sm:p-7 text-center">
-
-    <!-- Question -->
-    <span
-      *ngIf="phraseOn"
-      class="text-2xl sm:text-3xl font-semibold
-             text-blue-300 tracking-wide"
-      [innerHTML]="formatPhrase(getQuestion() + '')"
-    ></span>
-
-    <!-- Pronunciation -->
-    <p
-      *ngIf="showPronunciation && directionMode === directionModeE"
-      class="text-sm sm:text-base text-gray-300 italic"
-    >
-      <span [innerHTML]="formatPhrase(currentPhrase.pr + '')"></span>
+    <p class="text-slate-700 text-center break-words">
+      Study with interactive cards that disappear when answered correctly.
     </p>
 
-    <!-- Reveal -->
-    <button
-      (click)="revealAnswer()"
-      class="self-center
-             bg-blue-500 hover:bg-blue-600
-             px-6 py-2
-             rounded-lg shadow-md
-             text-sm sm:text-base"
-    >
-      Reveal Answer
-    </button>
+    <p class="bg-slate-100 text-slate-600 p-3 rounded-lg text-center break-words">
+      Study Japanese, Korean, Italian, Russian grammar efficiently.
+    </p>
 
-    <!-- Answer Section -->
-    <div
-      *ngIf="showAnswer2"
-      class="flex flex-col gap-4 pt-4 border-t border-gray-700"
-    >
+    <p class="text-slate-800 text-center leading-relaxed break-words">
+      Adaptive learning that improves retention.
+    </p>
 
+    <span class="bg-slate-200 text-slate-700 text-sm rounded-full
+                 px-3 py-1 self-center">
+      story + popular + course
+    </span>
+  </div>
+</div>
+
+<!-- QUIZ SECTION -->
+<div *ngIf="['Italian','Japanese','Korean','Russian','German'].includes(id) && quizStarted"
+     class="text-white min-h-screen py-6 px-3 sm:px-4">
+
+  <div *ngIf="remainingPhrases().length !== 0"
+       class="mx-auto max-w-xl w-full mb-8
+              bg-gray-800 rounded-2xl shadow-2xl
+              border border-blue-500/30"
+       [ngClass]="animationClass">
+
+    <div class="flex flex-col gap-5 p-5 sm:p-7 text-center">
+
+      <!-- QUESTION -->
       <span
-        class="text-xl sm:text-2xl font-medium
-               text-emerald-300"
-        [innerHTML]="formatPhrase(getAnswer() + '')"
-      ></span>
+        *ngIf="phraseOn"
+        class="text-xl sm:text-2xl md:text-3xl
+               font-semibold text-blue-300
+               break-words leading-relaxed"
+        [innerHTML]="formatPhrase(getQuestion() + '')">
+      </span>
 
-      <p
-        *ngIf="showPronunciation && directionMode === directionModeC"
-        class="text-sm text-gray-400 italic"
-      >
-        {{ currentPhrase.pr }}
+      <!-- PRONUNCIATION -->
+      <p *ngIf="showPronunciation && directionMode === directionModeE"
+         class="text-sm text-gray-300 italic break-words">
+        <span [innerHTML]="formatPhrase(currentPhrase.pr + '')"></span>
       </p>
 
+      <!-- REVEAL -->
       <button
-        *ngIf="directionMode === directionModeC"
-        (click)="playAudio(currentPhrase.phrase, lang)"
-        class="self-center
-               bg-indigo-600 hover:bg-indigo-700
-               px-5 py-2
-               rounded-lg
-               text-sm shadow-sm"
+        (click)="revealAnswer()"
+        class="bg-blue-500 hover:bg-blue-600
+               px-5 py-2 rounded-lg shadow
+               text-sm w-full sm:w-auto max-w-xs mx-auto"
       >
-        ▶ Play Audio
+        Reveal Answer
       </button>
 
-      <!-- Controls -->
-      <div class="flex justify-center">
-        <div class="flex flex-wrap gap-3">
-          <button *ngIf="answered()" (click)="next()" class="a-btn">Next</button>
-          <button (click)="again()" class="a-btn bg-red-600 hover:bg-red-700">Again</button>
-          <button (click)="correct()" class="a-btn bg-emerald-600 hover:bg-emerald-700">Correct</button>
+      <!-- ANSWER -->
+      <div *ngIf="showAnswer2"
+           class="flex flex-col gap-4 pt-4 border-t border-gray-700">
+
+        <span
+          class="text-xl sm:text-2xl font-medium
+                 text-emerald-300 break-words">
+          {{ getAnswer() }}
+        </span>
+
+        <button
+          *ngIf="directionMode === directionModeC"
+          (click)="playAudio(currentPhrase.phrase, lang)"
+          class="bg-indigo-600 hover:bg-indigo-700
+                 px-5 py-2 rounded-lg text-sm
+                 w-full sm:w-auto max-w-xs mx-auto"
+        >
+          ▶ Play Audio
+        </button>
+
+        <!-- CONTROLS -->
+        <div class="flex justify-center w-full">
+          <div class="flex flex-wrap justify-center gap-3 max-w-full">
+            <button *ngIf="answered()" (click)="next()" class="a-btn w-full sm:w-auto">Next</button>
+            <button (click)="again()" class="a-btn bg-red-600 w-full sm:w-auto">Again</button>
+            <button (click)="correct()" class="a-btn bg-emerald-600 w-full sm:w-auto">Correct</button>
+          </div>
         </div>
+      </div>
+    </div>
+  </div>
+  <!-- Controls Component --> <app-controls [showPronunciation]="showPronunciation" [phraseOn]="phraseOn" [showPhraseButton]="['kor-to-eng','jp-to-eng','itn-to-eng','rus-to-eng','fr-to-eng'].includes(directionMode)" [showAudioButton]="['jp-to-eng','itn-to-eng','kor-to-eng','ge-to-eng','rus-to-eng'].includes(directionMode)" [isCourse]="m1 === 'course'" (pronunciationToggled)="togglePronunciation()" (phraseToggled)="phraseOnMode()" (audioPlayed)="playAudio(directionMode === directionModeE ? currentPhrase.phrase : currentPhrase.en, directionMode === directionModeE ? lang : 'en-US')" (highlightToggled)="toggleHighlight()"> </app-controls>
+  <!-- PROGRESS -->
+  <div class="mt-6 mx-auto max-w-xl px-2">
+    <div class="w-full bg-gray-300 rounded-full h-3 overflow-hidden">
+      <div class="bg-green-500 h-3 transition-all"
+           [style.width.%]="(phrases().length - remainingPhrases().length) / phrases().length * 100">
       </div>
 
     </div>
-
+    <p class="text-sm text-center text-gray-300 mt-2">
+      {{ (phrases().length - remainingPhrases().length) / phrases().length * 100 }}% completed
   </div>
-</div>
-
-
-
-
-  <!-- Controls Component -->
-    <app-controls 
-      [showPronunciation]="showPronunciation"
-      [phraseOn]="phraseOn"
-      [showPhraseButton]="['kor-to-eng','jp-to-eng','itn-to-eng','rus-to-eng','fr-to-eng'].includes(directionMode)"
-      [showAudioButton]="['jp-to-eng','itn-to-eng','kor-to-eng','ge-to-eng','rus-to-eng'].includes(directionMode)"
-      [isCourse]="m1 === 'course'"
-      (pronunciationToggled)="togglePronunciation()"
-      (phraseToggled)="phraseOnMode()"
-      (audioPlayed)="playAudio(directionMode === directionModeE ? currentPhrase.phrase : currentPhrase.en, directionMode === directionModeE ? lang : 'en-US')"
-      (highlightToggled)="toggleHighlight()">
-    </app-controls>
-  <!-- Progress / Again / Next -->
-  <!-- ✅ Progress Bar -->
-<div class="mt-6 sm:mt-8 mx-auto w-full max-w-xl px-2">
-  <div class="w-full bg-gray-300 rounded-full h-3 overflow-hidden shadow-inner">
-    <div
-      class="bg-green-500 h-3 transition-all duration-500 ease-in-out"
-      [style.width.%]="(phrases().length - remainingPhrases().length) / phrases().length * 100"
-    ></div>
-  </div>
-  <p class="mt-2 text-xs sm:text-sm text-center text-green-500">
-    Progress:
-    {{ ((phrases().length - remainingPhrases().length) / phrases().length * 100) | number:'1.0-0' }}%
-  </p>
-</div>
-
-  
-  <div *ngIf="remainingPhrases().length===0">
-    <app-again
-        [select]="m"
-        [type]="id"
-        [userResults]="userResults"
-        [correctCount]="0"
-        [wrongCount]="0"
-
-        (again)="startQuiz()"
-        (retry)="toggleSidebar()">
-    </app-again>
-  </div>
+  <div *ngIf="remainingPhrases().length===0"> <app-again [select]="m" [type]="id" [userResults]="userResults" [correctCount]="0" [wrongCount]="0" (again)="startQuiz()" (retry)="toggleSidebar()"> </app-again> </div>
 </div>

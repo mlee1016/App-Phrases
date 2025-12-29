@@ -7,7 +7,7 @@ import { loadStripe } from '@stripe/stripe-js';
   templateUrl: './allplaces.component.html',
   styleUrl: './allplaces.component.css'
 })
-export class AllplacesComponent {
+export class AllplacesComponent { 
 
 
   declare paypal: any;

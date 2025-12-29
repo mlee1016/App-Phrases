@@ -9,6 +9,7 @@ interface PhraseMapping {
     ko?: number[];
     pr?: number[];
     kana?:number[];
+    ru?:number[];
     ge?:number[];
     itn?:number[];
     jp?:number[];

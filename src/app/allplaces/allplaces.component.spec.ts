@@ -9,7 +9,7 @@ describe('AllplacesComponent', () => {
   beforeEach(async () => {
     await TestBed.configureTestingModule({
       declarations: [AllplacesComponent]
-    })
+    }) 
     .compileComponents();
     
     fixture = TestBed.createComponent(AllplacesComponent);

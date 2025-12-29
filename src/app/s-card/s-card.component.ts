@@ -4,6 +4,12 @@ import { AllphrasesService } from '../allphrases.service';
 import { ActivatedRoute, ParamMap } from '@angular/router';
 import { PhraseListItem } from '../shared/phrase-list.service';
 import { PhrasenameService } from '../shared/phrasename.service';
+import { ClassicRule } from '../rules/classic.rule';
+import { QuizState } from '../rules/quiz-state';
+
+
+
+
 
 import { AuthenticationUser } from '../emitters/emittters';
 export interface UnifiedPhrase {
@@ -30,7 +36,11 @@ export class SCardComponent {
   togglestart:boolean = false
 
 
-  
+  studyMode: 'classic' | 'streak' | 'timer' = 'classic';
+  rule: ClassicRule = new ClassicRule();
+  streak: number = 0;
+
+
   inputh= signal('')
   selectedPhrases = signal('')
 
@@ -44,8 +54,6 @@ export class SCardComponent {
   input4=''
   sideBar: boolean = true
   pr = false
-  //presentTense:JapanesePhrases[] = this.jpPhrases
-  //allPhrase :string[] = []
   phrasesList//:PhraseListItem[] = this.phraseNames.allListgrammer;
   allPhrase//:PhraseListItem[] = this.phraseNames.allListStory;
   phraseStory
@@ -76,103 +84,6 @@ export class SCardComponent {
     ,private userA:AuthenticationUser){
   }
   
-
- /* ngOnInit(): void {
-    //Called after the constructor, initializing input properties, and the first call to ngOnChanges.
-    //Add 'implements OnInit' to the class.
-    
-    this.activateRoute.paramMap.subscribe((params: ParamMap) => {
-  const tempId: string | null = params.get('id');
-  this.id = tempId;
-
-  if (!this.id) return;
-
-  const inputMap = {
-    'Korean': this.inputh(),
-    'Japanese': this.input2(),
-    'Italian': this.input3(),
-    'German': this.input4,
-    'Russian': this.input5(),
-  };
-
-  const inputKey = inputMap[this.id];
-
-  const phraseLoaderMap = {
-    'Korean': this.phrasesService.getPhrases(),
-    'Japanese': this.phrasesService.getJapanesePhrases(),
-    'Italian': this.phrasesService.getItalianPhrases(),
-    'German': this.phrasesService.getGermanPhrases(),
-    'Russian': this.phrasesService.getRussianPhrases()
-  };
-
-  const observable$ = phraseLoaderMap[this.id];
-
-  observable$.subscribe({
-    next: (data: any) => {
-      const phrases = data[inputKey];
-      this.setUnifiedPhrases(this.id, phrases);
-    },
-    error: (error: any) => {
-      alert(`❌ Failed to load ${this.id} phrases: ${error.message}`);
-    }
-  });
-});
-
-
-  switch (this.id) {
-    case 'Korean':
-      this.phraseStory = this.allPhrase;
-      this.phraseCourse =this.phrasesList;
-      this.directionMode = 'kor-to-eng';
-      this.directionModeE = 'kor-to-eng';
-      this.lang = 'ko-KR';
-      this.la = 'ko';
-      break;
-
-    case 'Japanese':
-      this.phraseStory = this.japaneseStory;
-      this.phraseCourse = this.phrasesListJapanese;
-      this.directionMode = 'jp-to-eng';
-      this.directionModeE = 'jp-to-eng';
-      this.directionModeC = 'eng-to-jp';
-      this.lang = 'ja-JP';
-      this.la = 'jp';
-      break;
-
-    case 'Italian':
-      this.phraseStory = this.phrasesListItalian;
-      this.phraseCourse = this.phraseListItalian2;
-
-      this.directionMode = 'itn-to-eng';
-      this.directionModeE = 'itn-to-eng';
-      this.directionModeC = 'eng-to-itn';
-      this.lang = 'it-IT';
-      this.la = 'itn';
-      break;
-
-    case 'German':
-      this.phraseStory = this.phrasesListGerman;
-      this.directionMode = 'eng-to-ge';
-      this.directionModeE = 'ge-to-eng';
-      this.directionModeC = 'eng-to-ge';
-      this.lang = 'de-DE';
-      this.la = 'ge';
-      break;
-
-    case 'Russian':
-    default:
-      this.phraseStory = this.phrasesListRussian;
-      this.phraseCourse = this.phraseListRussian2;
-      this.directionMode = 'rus-to-eng';
-      this.directionModeE = 'rus-to-eng';
-      this.lang = 'ru-RU';
-      this.la = 'ru';
-      break;
-  }
-
-  this.selectPhraseList()
-}*/
-
 loadPhrasesById() {
   const inputMap = {
     'Korean': this.inputh(),
@@ -431,6 +342,25 @@ setUnifiedPhrases(lang: string, phraseList: any[]) {
   q:number = 0
   a:number = 1
   
+/*setStudyMode(mode: 'classic' | 'streak' | 'timer') {
+  this.studyMode = mode;
+
+  switch (mode) {
+    case 'classic':
+      this.rule = new ClassicRule();
+      break;
+
+    case 'streak':
+      this.rule = new StreakRule(); // e.g. 3 in a row
+      break;
+
+    case 'timer':
+      this.rule = new TimerRule(); // future
+      break;
+  }
+
+  this.startQuiz(); // reset cleanly
+}*/
 
   inputSwitch(event2:any){
   if (event2 == '1'){
@@ -547,10 +477,10 @@ selectPhraseList() {
     this.allPhrase = i
   }
   
-  getSpecificPhrases(p:string){
+  getSpecificPhrases(p:any){
     if(this.id == 'Japanese'){
-      this.input2.set(p);
-      this.selectedPhrases.set(p)
+      this.input2.set(p.s);
+      this.selectedPhrases.set(p.name)
     }
 
     
@@ -567,8 +497,8 @@ selectPhraseList() {
 
     }
     
-    else if(this.id == 'Korean'){
-      this.inputh.set(p)
+    else if(this.id == 'Korean'){ 
+      this.inputh.set(p) 
       this.selectedPhrases.set(p)
       
     }
@@ -601,10 +531,12 @@ selectPhraseList() {
   get currentPhrase() {
   return this.remainingPhrases()[this.currentIndex()];
 }
-  
   startQuiz() {
-  const all = this.phrases();
-  this.remainingPhrases.set([...all]);   // fresh copy
+  // const all = this.phrases();
+  // this.remainingPhrases.set([...all]);  
+  const all = this.shuffleArray(this.phrases());
+  this.remainingPhrases.set(all);
+
   this.currentIndex.set(0);
   this.score.set(0);
   this.quizStarted = true
@@ -759,6 +691,62 @@ next() {
   this.reset2();
 }
 
+
+
+
+/*next() {
+  this.showAnswer2 = false;
+
+  if (!this.answered()) return;
+
+  const state: QuizState = {
+    remaining: this.remainingPhrases(),
+    index: this.currentIndex(),
+    streak: this.streak
+  };
+
+  const newState = this.lastResult().startsWith('✅')
+    ? this.rule.onCorrect(state)
+    : this.rule.onWrong(state);
+
+  this.remainingPhrases.set(newState.remaining);
+  this.currentIndex.set(newState.index);
+  this.streak = newState.streak;
+
+  if (newState.remaining.length === 0) {
+    this.Popup = true;
+    return;
+  }
+
+  this.answered.set(false);
+  this.lastResult.set('');
+  this.userInput = '';
+  this.reset2();
+}*/
+
+
+
+
+setStudyMode(mode: 'classic' | 'streak' | 'timer') {
+  this.studyMode = mode;
+
+  switch (mode) {
+    case 'classic':
+      this.rule = new ClassicRule();
+      break;
+
+    // case 'streak':
+    //   this.rule = new StreakRule(); // e.g. 3 in a row
+    //   break;
+
+    // case 'timer':
+    //   this.rule = new TimerRule(); // future
+    //   break;
+  }
+
+  // this.startQuiz(); // reset cleanly
+}
+
   showPronunciation = true;
 
   togglePronunciation() {
@@ -812,6 +800,15 @@ formatPhrase(phrase: string): string {
 phraseOn = true
 phraseOnMode(){
   this.phraseOn = !this.phraseOn
+}
+shuffleArray<T>(array: T[]): T[] {
+  const arr = [...array];
+  for (let i = arr.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [arr[i], arr[j]] = [arr[j], arr[i]];
+  }
+  return arr;
+  
 }
 
 }

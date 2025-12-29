@@ -43,9 +43,13 @@ openSurveyModal() {
 
   ngOnInit(): void {
     this.auth_user.initializeAuth();
-    this.auth_user.authStatus.subscribe(s =>
-      this.status2.update(a => a = s)
-    );
+    
+      this.auth_user.user$.subscribe((userData) => {
+        this.user.update(() => userData);
+      });
+    this.auth_user.authStatus$.subscribe((status:'signed in' | 'signed out') => {
+      this.status2.update(() => status);
+    });
     this.auth_user.authStatusLoaded.subscribe(loaded => this.authLoaded = loaded);
 
     this.userStuff();

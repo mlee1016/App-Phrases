@@ -1,89 +1,54 @@
-  <!-- 🌍 Wrapper -->
-<div *ngIf="authLoaded" class="min-h-screen text-white ">
+<!-- 🌍 WRAPPER -->
+<div *ngIf="authLoaded"
+     class="min-h-screen text-white bg-gradient-to-br from-[#020c12] to-[#071e2c]
+            pb-24 sm:pb-0">
 
-  <!-- 🧍 Signed-In State -->
-  <div
-    *ngIf="check() === 'signed in'; else hero"
-    class="flex flex-col items-center justify-start text-center animate-fadeIn px-4 sm:px-6 md:px-10 pt-10 md:pt-16 space-y-8 sm:space-y-10"
-  >
+  <!-- ================= SIGNED IN ================= -->
+  <div *ngIf="check() === 'signed in'; else hero"
+       class="flex flex-col items-center justify-start text-center
+              px-4 sm:px-6 md:px-10 pt-10 space-y-10">
 
     <!-- 👋 Welcome -->
-    <h1 class="text-3xl sm:text-4xl md:text-5xl font-bold text-cyan-200 drop-shadow">
-      Welcome{{ user() ? ', ' + user() : '' }}!
+    <h1 class="text-3xl sm:text-4xl md:text-5xl font-bold text-cyan-200">
+      Welcome{{ user() ? ', ' + user().name : '' }}!
     </h1>
-    <p class="text-base sm:text-lg md:text-xl text-cyan-100 mb-6">
+    <!-- <h1 *ngIf="user$|async as user">
+      hello {{ user.name }}!
+    </h1> -->
+    <p class="text-base sm:text-lg text-cyan-100">
       Continue your phrase mastery journey
     </p>
 
-    <div class="w-full max-w-6xl mx-auto space-y-8 sm:space-y-10">
+    <!-- 🌍 Language Selector -->
+    <div class="w-full max-w-sm">
+      <label class="block text-lg font-semibold text-cyan-200 mb-2">
+        🌍 Select Language Progress
+      </label>
+      <select
+        [(ngModel)]="selectedLanguage"
+        class="w-full px-4 py-4 rounded-xl bg-[#0a1a23]
+               text-cyan-100 border border-cyan-600
+               focus:ring-2 focus:ring-cyan-400">
+        <option *ngFor="let lang of language" [ngValue]="lang">
+          {{ lang.name }}
+        </option>
+      </select>
+    </div>
 
-      <!-- 🌐 Language Selector -->
-      <div class="text-center">
-        <label for="language" class="block text-lg font-semibold text-cyan-200 mb-3">
-          🌍 Select Language Progress
-        </label>
-        <select
-          id="language"
-          [(ngModel)]="selectedLanguage"
-          class="w-full sm:w-72 px-4 py-3 rounded-xl bg-[#0a1a23] text-cyan-100 border border-cyan-600 
-                 focus:ring-2 focus:ring-cyan-400 focus:outline-none shadow-md"
-        >
-          <option *ngFor="let lang of language" [ngValue]="lang">
-            {{ lang.name }}
-          </option>
-        </select>
-      </div>
+    <!-- 📖 Stories -->
+    <details class="w-full max-w-6xl bg-[#0a1a23] rounded-2xl p-6 shadow-xl">
+      <summary class="flex justify-between items-center cursor-pointer">
+        <h2 class="text-xl sm:text-2xl font-bold text-red-300">📖 Stories</h2>
+        <i class="fas fa-chevron-down"></i>
+      </summary>
 
-      <!-- 📘 Grammar Section -->
-      <div class="bg-[#0a1a23] shadow-xl rounded-2xl p-5 sm:p-8">
-        <h2 class="text-xl sm:text-2xl font-bold text-emerald-300 mb-4 sm:mb-6 flex items-center gap-2">
-          📘 Grammar
-        </h2>
-
-        <!-- Stats -->
-        <div class="flex flex-wrap justify-center gap-4 sm:gap-6 mb-6 sm:mb-8">
-          <div
-            class="bg-[#030a0e] shadow-lg rounded-xl p-5 sm:p-6 w-40 sm:w-52 text-center hover:scale-105 transition-transform"
-          >
-            <h3 class="font-semibold text-base sm:text-lg text-emerald-200">Completed</h3>
-            <p class="text-2xl sm:text-3xl font-bold text-cyan-200 mt-2">
-              {{ getDonePhrasesByType('grammar').length }}
-            </p>
-            <p class="text-sm text-emerald-500">out of {{ total() }}</p>
-          </div>
-        </div>
-
-        <!-- Grammar List -->
-        <ul class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-3 sm:gap-4">
-          <li
-            *ngFor="let phrase of getDonePhrasesByType('grammar')"
-            class="bg-[#030a0e] p-4 sm:p-5 rounded-xl shadow-md hover:scale-105 transition-transform text-left border border-cyan-800"
-          >
-            <p class="text-cyan-200 font-semibold text-sm sm:text-base">{{ phrase.name }}</p>
-          </li>
-        </ul>
-
-        <p
-          *ngIf="getDonePhrasesByType('grammar').length === 0"
-          class="text-cyan-400 mt-4 text-center"
-        >
-          🚀 No grammar phrases completed yet.
-        </p>
-      </div>
-
-      <!-- 📖 Story Section -->
-      <div class="bg-[#0a1a23] shadow-xl rounded-2xl p-5 sm:p-8">
-        <h2 class="text-xl sm:text-2xl font-bold text-purple-300 mb-4 sm:mb-6 flex items-center gap-2">
-          📖 Stories
-        </h2>
+      <div class="mt-6 space-y-6">
 
         <!-- Stats -->
-        <div class="flex flex-wrap justify-center gap-4 sm:gap-6 mb-6 sm:mb-8">
-          <div
-            class="bg-[#030a0e] shadow-lg rounded-xl p-5 sm:p-6 w-40 sm:w-52 text-center hover:scale-105 transition-transform"
-          >
-            <h3 class="font-semibold text-base sm:text-lg text-emerald-200">Completed</h3>
-            <p class="text-2xl sm:text-3xl font-bold text-cyan-200 mt-2">
+        <div class="flex gap-4 overflow-x-auto pb-2">
+          <div class="min-w-[180px] bg-[#030a0e] rounded-xl p-5 text-center">
+            <h3 class="text-emerald-200 font-semibold">Completed</h3>
+            <p class="text-3xl font-bold text-cyan-200">
               {{ getDonePhrasesByType('story').length }}
             </p>
             <p class="text-sm text-emerald-500">out of 20</p>
@@ -91,147 +56,301 @@
         </div>
 
         <!-- Story List -->
-        <ul class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-3 sm:gap-4">
-          <li
-            *ngFor="let phrase of getDonePhrasesByType('story')"
-            class="bg-[#030a0e] p-4 sm:p-5 rounded-xl shadow-md hover:scale-105 transition-transform text-left border border-purple-800"
-          >
-            <p class="text-cyan-200 font-semibold text-sm sm:text-base">{{ phrase.name }}</p>
+        <ul class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
+          <li *ngFor="let phrase of getDonePhrasesByType('story')"
+              class="bg-[#030a0e] rounded-xl p-5 border border-purple-800">
+            <p class="text-cyan-200 font-semibold">{{ phrase.name }}</p>
           </li>
         </ul>
 
-        <p
-          *ngIf="getDonePhrasesByType('story').length === 0"
-          class="text-cyan-400 mt-4 text-center"
-        >
+        <p *ngIf="getDonePhrasesByType('story').length === 0"
+           class="text-cyan-400 text-center">
           🚀 No stories completed yet.
         </p>
-      </div>
 
-      <!-- 🚀 Quick Links -->
-      <div class="flex flex-col sm:flex-row justify-center items-center gap-4 sm:gap-6 w-full mt-8">
-        <button [routerLink]="'/language/Korean'" class="bg-cyan-700 hover:bg-cyan-600 px-6 py-3 rounded-xl text-white shadow-md hover:shadow-lg transition w-full sm:w-auto">
-          korean
-        </button>
-        <button  [routerLink]="'/language/Russian'" class="bg-emerald-700 hover:bg-emerald-600 px-6 py-3 rounded-xl text-white shadow-md hover:shadow-lg transition w-full sm:w-auto">
-          russian
-        </button>
-        <button  (click)="navToSite(2)" class="bg-red-700 hover:bg-red-600 px-6 py-3 rounded-xl text-white shadow-md hover:shadow-lg transition w-full sm:w-auto">
-          italian
-        </button>
-        
-        <button  (click)="navToSite(0)" class="bg-indigo-700 hover:bg-indigo-600 px-6 py-3 rounded-xl text-white shadow-md hover:shadow-lg transition w-full sm:w-auto">
-          Japanese
-        </button>
       </div>
+    </details>
 
-      <!-- ✨ Recent Phrases -->
-      <div class="w-full mt-10 sm:mt-12">
-        <h2 class="text-xl sm:text-2xl font-semibold text-cyan-200 mb-4 sm:mb-6">✨ Recent Phrases</h2>
-        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 sm:gap-6">
-          <div
-            *ngFor="let phrase of recentPhrases"
-            class="bg-[#0a1a23] rounded-xl p-5 shadow-md hover:scale-105 transition-transform text-left border border-cyan-800"
-          >
-            <p class="font-medium text-emerald-200 text-sm sm:text-base">{{ phrase.s }}</p>
-            <p class="text-xs sm:text-sm text-cyan-100 mt-1">{{ phrase.content }}</p>
+    <!-- 📘 Grammar -->
+    <details class="w-full max-w-6xl bg-[#0a1a23] rounded-2xl p-6 shadow-xl">
+      <summary class="flex justify-between items-center cursor-pointer">
+        <h2 class="text-xl sm:text-2xl font-bold text-emerald-300">📘 Grammar</h2>
+        <i class="fas fa-chevron-down"></i>
+      </summary>
+
+      <div class="mt-6 space-y-6">
+
+        <!-- Stats -->
+        <div class="flex gap-4 overflow-x-auto pb-2">
+          <div class="min-w-[180px] bg-[#030a0e] rounded-xl p-5 text-center">
+            <h3 class="text-emerald-200 font-semibold">Completed</h3>
+            <p class="text-3xl font-bold text-cyan-200">
+              {{ getDonePhrasesByType('grammar').length }}
+            </p>
+            <p class="text-sm text-emerald-500">
+              out of {{ total() }}
+            </p>
           </div>
+        </div>
+
+        <!-- Grammar List -->
+        <ul class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
+          <li *ngFor="let phrase of getDonePhrasesByType('grammar')"
+              class="bg-[#030a0e] rounded-xl p-5 border border-cyan-800">
+            <p class="text-cyan-200 font-semibold">{{ phrase.name }}</p>
+          </li>
+        </ul>
+
+        <p *ngIf="getDonePhrasesByType('grammar').length === 0"
+           class="text-cyan-400 text-center">
+          🚀 No grammar phrases completed yet.
+        </p>
+
+      </div>
+    </details>
+
+    <!-- ✨ popular Phrases -->
+    <details class="w-full max-w-6xl bg-[#0a1a23] rounded-2xl p-6 shadow-xl">
+      <summary class="flex justify-between items-center cursor-pointer">
+        <h2 class="text-xl sm:text-2xl font-bold text-purple-300">✨ Popular Phrases</h2>
+        <i class="fas fa-chevron-down"></i>
+      </summary>
+
+      <div class="mt-6 space-y-6">
+
+        <!-- Stats -->
+        <div class="flex gap-4 overflow-x-auto pb-2">
+          <div class="min-w-[180px] bg-[#030a0e] rounded-xl p-5 text-center">
+            <h3 class="text-emerald-200 font-semibold">Completed</h3>
+            <p class="text-3xl font-bold text-cyan-200">
+              {{ getDonePhrasesByType('popular').length }}
+            </p>
+            <p class="text-sm text-emerald-500">out of 15</p>
+          </div>
+        </div>
+
+        <!-- Popular List -->
+        <ul class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
+          <li *ngFor="let phrase of getDonePhrasesByType('popular')"
+              class="bg-[#030a0e] rounded-xl p-5 border border-purple-800">
+            <p class="text-cyan-200 font-semibold">{{ phrase.name }}</p>
+          </li>
+        </ul>
+
+        <p *ngIf="getDonePhrasesByType('popular').length === 0"
+           class="text-cyan-400 text-center">
+          🚀 No popular phrases completed yet.
+        </p>
+
+      </div>
+    </details>
+
+    <!-- 🚀 QUICK LINKS (ALL PRESENT) -->
+    <div class="grid grid-cols-2 sm:grid-cols-4 gap-4 max-w-4xl w-full">
+      <button [routerLink]="'/language/Korean'"
+              class="bg-cyan-700 hover:bg-cyan-600 py-4 rounded-xl">
+        Korean
+      </button>
+
+      <button [routerLink]="'/language/Russian'"
+              class="bg-emerald-700 hover:bg-emerald-600 py-4 rounded-xl">
+        Russian
+      </button>
+
+      <button (click)="navToSite(2)"
+              class="bg-red-700 hover:bg-red-600 py-4 rounded-xl">
+        Italian
+      </button>
+
+      <button (click)="navToSite(0)"
+              class="bg-indigo-700 hover:bg-indigo-600 py-4 rounded-xl">
+        Japanese
+      </button>
+    </div>
+
+    <!-- ✨ Recent Phrases -->
+    <div class="w-full max-w-6xl">
+      <h2 class="text-xl sm:text-2xl font-semibold text-cyan-200 mb-4">
+        ✨ Recent Phrases
+      </h2>
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
+        <div *ngFor="let phrase of recentPhrases"
+             class="bg-[#0a1a23] rounded-xl p-5 border border-cyan-800">
+          <p class="text-emerald-200 font-medium">{{ phrase.s }}</p>
+          <p class="text-cyan-100 text-sm mt-1">{{ phrase.content }}</p>
         </div>
       </div>
     </div>
+
   </div>
 
+  <!-- ================= HERO (NOT SIGNED IN) ================= -->
   <ng-template #hero>
-<section class="relative py-24 sm:py-28 bg-[#030c14] overflow-hidden">
-  <!-- ✨ Soft Gradient Glow Background -->
-  <div class="absolute inset-0">
-    <div class="absolute w-[700px] h-[700px] bg-cyan-900/20 blur-[180px] rounded-full -top-40 -left-32 animate-pulse-slow"></div>
-    <div class="absolute w-[500px] h-[500px] bg-emerald-800/20 blur-[160px] rounded-full bottom-0 right-0 animate-pulse-slow"></div>
+    <section class="relative py-24 px-6 text-center overflow-hidden">
+
+      <!-- Title -->
+      <h1 class="text-4xl sm:text-6xl md:text-7xl font-extrabold
+                 bg-gradient-to-r from-cyan-300 via-emerald-200 to-lime-200
+                 bg-clip-text text-transparent mb-6">
+        Master Languages with Ease
+      </h1>
+
+      <!-- Subtitle -->
+      <p class="text-lg sm:text-2xl text-emerald-200 mb-12">
+        Explore hundreds of practical phrases
+        <span *ngIf="currentLang" class="text-lime-200 font-semibold ml-2">
+          {{ currentLang }}
+        </span>
+      </p>
+      <!-- 🚀 QUICK LINKS (GUEST) --
+<div class="mt-10 mb-16 max-w-4xl mx-auto">
+  <!-- <h2 class="text-xl sm:text-2xl font-semibold text-cyan-200 mb-6">
+    🚀 Quick Access
+  </h2> --
+
+  <div class="grid grid-cols-2 sm:grid-cols-4 gap-4">
+    <button [routerLink]="'/language/Korean'"
+            class="bg-cyan-700 hover:bg-cyan-600 py-4 rounded-xl">
+      Korean
+    </button>
+
+    <button [routerLink]="'/language/Russian'"
+            class="bg-emerald-700 hover:bg-emerald-600 py-4 rounded-xl">
+      Russian
+    </button>
+
+    <button (click)="navToSite(2)"
+            class="bg-red-700 hover:bg-red-600 py-4 rounded-xl">
+      Italian
+    </button>
+    <button (click)="navToSite(0)"
+            class="bg-indigo-700 hover:bg-indigo-600 py-4 rounded-xl">
+      Japanese
+    </button>
+  </div>
+</div>-->
+
+<div class="mt-14 mb-20 max-w-5xl mx-auto px-4">
+
+  <!-- Section header -->
+  <div class="text-center mb-10">
+    <h2 class="text-2xl sm:text-3xl font-semibold text-cyan-100">
+      Start Learning Instantly
+    </h2>
+    <p class="mt-2 text-sm sm:text-base text-cyan-300/80">
+      Jump into popular languages with curated phrase decks
+    </p>
   </div>
 
-  <div class="relative container mx-auto px-6 text-center font-sans">
-    
+  <!-- Cards -->
+  <div class="grid grid-cols-2 sm:grid-cols-4 gap-5">
 
+    <!-- Korean -->
+    <button
+      routerLink="/language/Korean"
+      class="group relative overflow-hidden rounded-2xl
+             bg-gradient-to-br from-cyan-700 to-cyan-900
+             p-5 text-left shadow-lg
+             hover:shadow-cyan-500/20 hover:-translate-y-1
+             transition-all duration-300"
+    >
+      <div class="absolute inset-0 opacity-0 group-hover:opacity-100
+                  bg-gradient-to-br from-white/10 to-transparent transition"></div>
 
-    <!-- 🏆 Main Title -->
-    <h1 class="text-5xl sm:text-6xl md:text-7xl font-extrabold tracking-tight bg-clip-text text-transparent bg-gradient-to-r from-cyan-300 via-emerald-200 to-lime-200 mb-6 animate-fadeUp">
-      Master Languages with Ease
-    </h1>
+      <div class="relative">
+        <p class="text-lg font-semibold text-white">Korean</p>
+        <p class="mt-1 text-xs text-cyan-200">Hangul • Practical phrases</p>
+      </div>
+    </button>
 
-    <!-- ✨ Subtitle -->
-    <p (click)="clickSee()" class="text-xl sm:text-2xl text-emerald-200/90 mb-12 animate-fadeUp delay-1 leading-relaxed">
-      Explore hundreds of practical phrases  
-      <span *ngIf="currentLang" class="text-lime-200 font-semibold ml-2 animate-fadeBlink">
-        {{ currentLang }}
-      </span>
-    </p>
-    <div class="flex flex-wrap justify-center gap-6 sm:gap-10 mb-20 animate-fadeUp delay-2">
-  <div
-    *ngFor="let card of [
-      {flag:'kr',name:'Korean',native:'한국어',color:'from-cyan-800 to-cyan-600',id:1},
-      {flag:'ru',name:'Russian',native:'Русский',color:'from-blue-900 to-blue-700',id:3},
-      {flag:'it',name:'Italian',native:'Italiano',color:'from-rose-900 to-rose-700',id:2},
-      {flag:'jp',name:'Japanese',native:'日本語',color:'from-purple-900 to-purple-700',id:0}
-    ]"
-    (click)="navToSite(card.id)"
-    [ngClass]="'bg-gradient-to-tr ' + card.color"
-    class="lang-card relative shadow-md rounded-2xl p-6 w-44 sm:w-56 text-center cursor-pointer
-           transition-transform duration-300 text-emerald-100 overflow-hidden group"
-  >
-    <img [src]="'https://flagcdn.com/' + card.flag + '.svg'"
-         class="mx-auto w-10 sm:w-12 mb-3 drop-shadow-md" />
+    <!-- Russian -->
+    <button
+      routerLink="/language/Russian"
+      class="group relative overflow-hidden rounded-2xl
+             bg-gradient-to-br from-emerald-700 to-emerald-900
+             p-5 text-left shadow-lg
+             hover:shadow-emerald-500/20 hover:-translate-y-1
+             transition-all duration-300"
+    >
+      <div class="absolute inset-0 opacity-0 group-hover:opacity-100
+                  bg-gradient-to-br from-white/10 to-transparent transition"></div>
 
-    <h3 class="font-semibold text-lg sm:text-xl text-white">{{ card.name }}</h3>
-    <p class="text-sm text-emerald-300">{{ card.native }}</p>
+      <div class="relative">
+        <p class="text-lg font-semibold text-white">Russian</p>
+        <p class="mt-1 text-xs text-emerald-200">Cyrillic • Core usage</p>
+      </div>
+    </button>
+
+    <!-- Italian -->
+    <button
+      (click)="navToSite(2)"
+      class="group relative overflow-hidden rounded-2xl
+             bg-gradient-to-br from-rose-700 to-red-900
+             p-5 text-left shadow-lg
+             hover:shadow-rose-500/20 hover:-translate-y-1
+             transition-all duration-300"
+    >
+      <div class="absolute inset-0 opacity-0 group-hover:opacity-100
+                  bg-gradient-to-br from-white/10 to-transparent transition"></div>
+
+      <div class="relative">
+        <p class="text-lg font-semibold text-white">Italian</p>
+        <p class="mt-1 text-xs text-rose-200">Conversation • Travel</p>
+      </div>
+    </button>
+
+    <!-- Japanese -->
+    <button
+      (click)="navToSite(0)"
+      class="group relative overflow-hidden rounded-2xl
+             bg-gradient-to-br from-indigo-700 to-indigo-900
+             p-5 text-left shadow-lg
+             hover:shadow-indigo-500/20 hover:-translate-y-1
+             transition-all duration-300"
+    >
+      <div class="absolute inset-0 opacity-0 group-hover:opacity-100
+                  bg-gradient-to-br from-white/10 to-transparent transition"></div>
+
+      <div class="relative">
+        <p class="text-lg font-semibold text-white">Japanese</p>
+        <p class="mt-1 text-xs text-indigo-200">JLPT • Practical speech</p>
+      </div>
+    </button>
+
   </div>
 </div>
 
+      <!-- 💬 FEATURES (ALL PRESENT) -->
+      <section class="max-w-5xl mx-auto bg-white/5 backdrop-blur-xl
+                      rounded-3xl border border-cyan-700/30 p-12">
+        <h2 class="text-3xl sm:text-4xl font-bold text-cyan-300 mb-6">
+          What You’ll Find Here
+        </h2>
 
-    <!-- 💬 Features Section -->
-    <section class="max-w-5xl mx-auto text-center bg-white/5 backdrop-blur-xl rounded-3xl border border-cyan-700/30 shadow-lg p-12 animate-fadeUp delay-3">
-      <h2 class="text-3xl sm:text-4xl font-bold text-cyan-300 mb-4">What You’ll Find Here</h2>
-      <p class="text-emerald-200 mb-10 text-lg">
-        Learn through <span class="text-lime-300 font-semibold">interactive tools</span> designed for real communication.
-      </p>
+        <div class="grid sm:grid-cols-2 gap-8 text-left">
+          <div>🎴 <b>Study Cards</b> – Visual phrase learning</div>
+          <div>🔊 <b>Audio Pronunciation</b> – Speech synthesis</div>
+          <div>✍️ <b>Type Practice</b> – Active recall</div>
+          <div>💬 <b>Chat Mode</b> – Simulated conversations</div>
+        </div>
+      </section>
 
-      <div class="grid sm:grid-cols-2 gap-8 text-left">
-        <div class="feature-card">
-          <p class="text-3xl mb-2">🎴</p>
-          <h3 class="font-semibold text-lg text-cyan-200">Study Cards</h3>
-          <p class="text-emerald-200/90">Learn phrases visually with meaning and pronunciation.</p>
-        </div>
-        <div class="feature-card">
-          <p class="text-3xl mb-2">🔊</p>
-          <h3 class="font-semibold text-lg text-cyan-200">Audio Pronunciation</h3>
-          <p class="text-emerald-200/90">Listen to native-like pronunciation via speech synthesis.</p>
-        </div>
-        <div class="feature-card">
-          <p class="text-3xl mb-2">✍️</p>
-          <h3 class="font-semibold text-lg text-cyan-200">Type-in Practice</h3>
-          <p class="text-emerald-200/90">Challenge yourself by typing translations or completing sentences.</p>
-        </div>
-        <div class="feature-card">
-          <p class="text-3xl mb-2">💬</p>
-          <h3 class="font-semibold text-lg text-cyan-200">Chat Mode</h3>
-          <p class="text-emerald-200/90">Engage in simulated dialogues to strengthen conversation skills.</p>
-        </div>
+      <!-- 🌐 Browser Support -->
+      <div class="max-w-3xl mx-auto bg-white/5 backdrop-blur-xl
+                  rounded-3xl border border-emerald-700/30
+                  p-10 mt-20">
+        <h2 class="text-2xl font-semibold text-emerald-300 mb-4">
+          Browser Support
+        </h2>
+        <ul class="text-left space-y-2">
+          <li>🌐 Edge  / Chrome – Full support</li>
+          <li>🍏 Safari – Playback only</li>
+          <li>🦊 Firefox / Opera – Partial</li>
+        </ul>
       </div>
-    </section>
 
-    <!-- 🌐 Browser Support -->
-    <div class="max-w-3xl mx-auto bg-white/5 backdrop-blur-xl rounded-3xl border border-emerald-700/30 p-10 mt-20 animate-fadeUp delay-4">
-      <h2 class="text-2xl font-semibold text-emerald-300 mb-4 text-center">Browser Support</h2>
-      <ul class="text-emerald-200 space-y-2 text-left max-w-md mx-auto">
-        <li>🌐 <b>Edge or Chrome:</b> Full support for voice & recognition</li>
-        <li>🍏 <b>Safari:</b> Playback only</li>
-        <li>🦊 <b>Firefox / Opera:</b> Partial support</li>
-      </ul>
-      <p class="text-emerald-400 mt-6 text-sm italic text-center">
-        Use Edge or Chrome for full experience.
-      </p>
-    </div>
-  </div>
-</section>
-</ng-template>
+    </section>
+  </ng-template>
 
 </div>

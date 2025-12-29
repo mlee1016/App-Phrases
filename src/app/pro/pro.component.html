@@ -9,9 +9,9 @@
       <div class="bg-gray-800 rounded-xl shadow p-4">
 
         <h2 class="text-lg font-semibold mb-3">User Info:</h2> 
-        <p><strong>Username:</strong> {{ user() }}</p>
-        <p><strong>Email:</strong> {{ email }}</p>
-        <p><strong>User ID:</strong> {{ id }}</p>
+        <p><strong>Username:</strong> {{ user()?.name }}</p>
+        <p><strong>Email:</strong> {{ user()?.email }}</p>
+        <p><strong>User ID:</strong> {{ user()?.id }}</p>
         <p [routerLink]="'set-new-password'"><strong>new password</strong></p>
       </div>
 

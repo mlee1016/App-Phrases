@@ -7,6 +7,9 @@ import { PhraseListItem } from '../shared/phrase-list.service';
 import { Router } from '@angular/router';
 import { PhrasenameService } from '../shared/phrasename.service';
 import { trigger, transition, style, animate } from '@angular/animations';
+import { filter } from 'rxjs/internal/operators/filter';
+import { switchMap } from 'rxjs/internal/operators/switchMap';
+import { map } from 'rxjs';
 
   
 
@@ -62,6 +65,7 @@ export class EdComponent {
     url_sign_out:string ="http://127.0.0.1:8000/api/signout/"
     myPhraseList: PhraseListItem[];
     authLoaded:any
+    
     constructor(private http:HttpClient,public userAuth:AuthenticationUser,private formBuilder:FormBuilder,
       
       private phraseService:PhrasenameService){ 
@@ -97,14 +101,20 @@ export class EdComponent {
       this.userAuth.initializeAuth()
       this.user.update(s=>s=this.userAuth.username)
   
+      this.userAuth.user$.subscribe((userData) => {
+        this.user.update(() => userData);
+      });
+      // console.log("this is user data",this.user())
+      // console.log("this is user data observable",this.userAuth.user$)
+      // console.log("this is auth status observable",this.userAuth.authStatus$)
+            this.userAuth.authStatus$.subscribe((status:'signed in' | 'signed out')=>{
+        this.check.update(a=>a= status)
+     })
+     console.log("this is check signal",this.check())
       this.userAuth.authStatus.subscribe((id:string)=>{
         this.check.update(a=>a= id)
-        // console.log("this is id",id)
-           // this.user.set(this.userAuth.username)
-  
      })
      
-        
       this.userAuth.authStatusLoaded.subscribe(loaded => this.authLoaded = loaded);
       
       // console.log("authentication loaded",this.authLoaded)
@@ -118,7 +128,29 @@ export class EdComponent {
     
     
      
-    
+  this.userAuth.authStatus$
+    .pipe(
+      filter(status => status === 'signed in'),
+      switchMap(() => this.userAuth.getDonePhrases()),
+      map(data =>
+        data.filter(
+          lang => lang.grammar.length > 0 || lang.story.length > 0
+        )
+      )
+    )
+    .subscribe({
+      next: langs => {
+        this.language = langs;
+        this.selectedLanguage = langs[0] ?? null;
+      },
+      error: err => {
+        console.error('❌ Failed to load done phrases', err);
+        this.language = [];
+        this.selectedLanguage = null;
+      }
+    });
+
+    console.log("this is check at ng on it",this.userAuth.getDonePhrases());
   
     if (this.check()==='signed in'){
       this.userAuth.getDonePhrases().subscribe((data) => {
@@ -160,9 +192,9 @@ export class EdComponent {
         setTimeout(() => this.changeLang(), 500); // wait for fade-out before next
       }, 2000); // time to display each word
     }
-  
-  
-    getDonePhrasesByType(type: 'grammar' | 'story'): Phrase[] {
+
+
+    getDonePhrasesByType(type: 'grammar' | 'story' | 'popular'): Phrase[] {
       if (!this.selectedLanguage) return [];
       return type === 'grammar'
         ? this.selectedLanguage.grammar

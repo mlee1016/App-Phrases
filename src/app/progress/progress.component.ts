@@ -586,7 +586,12 @@ if (isCorrect) {
 
 
 startQuiz() {
-  const all = this.phrases();
+  // const all = this.phrases();
+  // this.remainingPhrases.set([...all]);   // fresh copy
+  
+  const all = this.shuffleArray(this.phrases());
+
+
   this.remainingPhrases.set([...all]);   // fresh copy
   this.currentIndex.set(0);
   // this.score.set(0);
@@ -691,6 +696,15 @@ formatPhrase2(phrase:string):string{
     }
 }
 
+shuffleArray<T>(array: T[]): T[] {
+  const arr = [...array];
+  for (let i = arr.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [arr[i], arr[j]] = [arr[j], arr[i]];
+  }
+  return arr;
+  
+}
 next() {
   if (!this.answered()) return; // ⛔ Block skipping until answered
 
@@ -711,6 +725,8 @@ next() {
     this.currentIndex.update(i => (i + 1) % this.remainingPhrases().length);
   }
 
+  
+  
   // this.answered.set(false);
   // this.lastResult.set('');
   this.userInput = '';

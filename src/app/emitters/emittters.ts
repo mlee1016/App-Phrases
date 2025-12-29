@@ -159,6 +159,8 @@ export class AuthenticationUser {
   private authUser = new BehaviorSubject<string>('signed out');
   authStatus = this.authUser.asObservable();
 
+  private authEmail = new BehaviorSubject<string>('');
+  authEmailStatus = this.authEmail.asObservable();
   private authLoaded = new BehaviorSubject<boolean>(false);
   authStatusLoaded = this.authLoaded.asObservable();
 
@@ -167,6 +169,15 @@ export class AuthenticationUser {
   id: string = '';
   token_: string = '';
   private subscribed = false;
+
+  private userSubject = new BehaviorSubject<any | null>(null);
+  user$ = this.userSubject.asObservable();
+  private emailSubject = new BehaviorSubject<string>('');
+  email$ = this.emailSubject.asObservable();
+private authStatusSubject =
+  new BehaviorSubject<'signed in' | 'signed out'>('signed out');
+authStatus$ = this.authStatusSubject.asObservable();
+
 
   readonly url_get_user = 'http://127.0.0.1:8000/api/user/';
   readonly url_sign_out = 'http://127.0.0.1:8000/api/signout/';
@@ -178,7 +189,7 @@ export class AuthenticationUser {
     
   ) {}
 
-  initializeAuth() {
+ /* initializeAuth() {
     if (typeof window === 'undefined') return;
 
     const token = localStorage.getItem('jwt');
@@ -204,7 +215,42 @@ export class AuthenticationUser {
       this.emitNewData('signed out');
       this.authLoaded.next(true);
     }
+  }*/
+  initializeAuth() {
+  if (typeof window === 'undefined') return;
+
+  const token = localStorage.getItem('jwt');
+
+  if (!token) {
+    this.userSubject.next(null);
+    this.emailSubject.next('');
+    this.authStatusSubject.next('signed out');
+    this.authLoaded.next(true);
+    return;
   }
+
+  this.http.get(this.url_get_user, {
+    headers: { Authorization: `Bearer ${token}` }
+  }).subscribe({
+    next: (user: any) => {
+      this.userSubject.next({
+        id: user.id,
+        name: user.name,
+        email: user.email,
+        subscribed: user.subscribed
+      });
+
+      this.authStatusSubject.next('signed in');
+      this.authLoaded.next(true);
+
+    },
+    error: () => {
+      this.userSubject.next(null);
+      this.authStatusSubject.next('signed out');
+      this.authLoaded.next(true);
+    }
+  });
+}
 
   emitNewData(status: string) {
     this.authUser.next(status);
