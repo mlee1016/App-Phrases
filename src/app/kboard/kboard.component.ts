@@ -1,7 +1,7 @@
 import { Component, EventEmitter, Input, Output, signal } from '@angular/core';
 
 
-const kanaMap: Record<string, string> = {
+const kanaMap: Record<string, string> = { 
   // vowels
   a: 'あ', i: 'い', u: 'う', e: 'え', o: 'お',
   // k

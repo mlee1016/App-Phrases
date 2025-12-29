@@ -12,7 +12,7 @@ export class AlloptionsComponent {
   
     allSites = [
   
-      
+       
       // {"s":"All List","des":"Look over all the list of phrase","m":'story + popular + course'}, 
       {"s":"Fill in the blank","des":"given a phrase with a missing section place the correct grammar word in to the phrase","m":'course'}, 
 

@@ -20,44 +20,44 @@
     </div>
     <div class="relative flex items-center gap-4 text-cyan-300">
 
-  <!-- Profile --
-  <button routerLink="profile" class="hover:text-emerald-400 transition">
-    <i class="fas fa-user-circle text-xl"></i>
-  </button>
+      <!-- Profile --
+      <button routerLink="profile" class="hover:text-emerald-400 transition">
+        <i class="fas fa-user-circle text-xl"></i>
+      </button>
 
-  <!-- Notifications --
-  <button class="hover:text-emerald-400 transition">
-    <i class="fas fa-bell text-lg"></i>
-  </button>
+      <!-- Notifications --
+      <button class="hover:text-emerald-400 transition">
+        <i class="fas fa-bell text-lg"></i>
+      </button>
 
-  <!-- Settings --
-  <button
-    (click)="settingsOpen = !settingsOpen"
-    class="hover:text-emerald-400 transition"
-  >
-    <i class="fas fa-cog text-lg"></i>
-  </button>
+      <!-- Settings --
+      <button
+        (click)="settingsOpen = !settingsOpen"
+        class="hover:text-emerald-400 transition"
+      >
+        <i class="fas fa-cog text-lg"></i>
+      </button>
 
-  <!-- BACKDROP (click outside to close) -->
-  <div
-    *ngIf="settingsOpen"
-    class="fixed inset-0 z-40"
-    (click)="settingsOpen = false">
-  </div>
+      <!-- BACKDROP (click outside to close) -->
+      <div
+        *ngIf="settingsOpen"
+        class="fixed inset-0 z-40"
+        (click)="settingsOpen = false">
+      </div>
 
   <!-- SETTINGS DROPDOWN -->
-  <div
-    *ngIf="settingsOpen"
-    class="absolute right-0 top-10 z-50
-           w-48 rounded-xl
-           bg-[#0a1a23]
-           border border-cyan-800
-           shadow-xl
-           text-sm"
-  >
+      <div
+        *ngIf="settingsOpen"
+        class="absolute right-0 top-10 z-50
+              w-48 rounded-xl
+              bg-[#0a1a23]
+              border border-cyan-800
+              shadow-xl
+              text-sm"
+      >
 
     <!-- GUEST OPTIONS -->
-    <ng-container *ngIf="check() !== 'signed in'">
+    <ng-container *ngIf="check() !== 'signed in'"> 
 
       <!-- Sign in -->
       <button
