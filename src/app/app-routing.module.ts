@@ -38,8 +38,8 @@ const routes: Routes = [
 
     {path:'',component:EdComponent},
     //comment this out
-    // {path:'profile',redirectTo:'profile',pathMatch:'full'},
-    // {path:'profile',component:ProComponent},
+    {path:'profile',redirectTo:'profile',pathMatch:'full'},
+    {path:'profile',component:ProComponent},
     //none rerender
     {path:'chat/:id/:m',component:ChatComponent},
     {path:'study/:id/:m',component:PhraseStudyComponent},
@@ -50,7 +50,7 @@ const routes: Routes = [
     {path: 'cards/:id/:m',component:SCardComponent},
     {path:'fillintheblank/:id/:m',component:PhrasewordComponent},
     {path : 'language/:id', component: TypeofphraseComponent},
-    {path: 'speech/:id/:m',component:ProgressComponent},
+    {path: 'speech/:id/:m',component:ProgressComponent}, 
 
 
     

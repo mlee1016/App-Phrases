@@ -596,8 +596,8 @@ updateStoryDone(newFlags: boolean[]) {
 
   // Default list when not signed in
   private defaultList: PhraseListItem[] = [
-    { s: 'Default Story 1', isDone: false },
-    { s: 'Default Story 2', isDone: false }
+    { s: 'Default Story 1', isDone: false ,},
+    { s: 'Default Story 2', isDone: false,  }
   ];
 
   constructor(
@@ -607,9 +607,9 @@ updateStoryDone(newFlags: boolean[]) {
   ngOnInit(): void {
     //Called after the constructor, initializing input properties, and the first call to ngOnChanges.
     //Add 'implements OnInit' to the class.
-    this.authService.authStatus.subscribe(a  => this.check.update(status1 => status1 = a))
+    this.authService.authStatus.subscribe(a  => this.check.set(a==='signed in'));
   }
-  check = signal<string>('')
+  check = signal<boolean>(false)
   /** Used by your components to trigger loading */
   loadPhraseNames(lang: string, type: 'grammar' | 'story') {
     if (this.check()) {
@@ -648,6 +648,7 @@ updateStoryDone(newFlags: boolean[]) {
     ).pipe(
       map(data => data.map(item => ({
         s: item.name,
+        type: item.id,
         isDone: false
       })))
     );
@@ -661,24 +662,30 @@ updateStoryDone(newFlags: boolean[]) {
     const done$ = this.getDoneStatus(lang, type);
 
     return forkJoin([phrases$, done$]).pipe(
-      map(([phrases, doneFlags]) =>
-        phrases.map((phrase, idx) => ({
-          ...phrase,
-          isDone: doneFlags[idx] ?? false
-        }))
-      ),
-      catchError(() => of(this.defaultList)) // fallback to defaults if backend fails
+  map(([phrases, doneFlags]) => {
+    const mapDone = new Map(
+      doneFlags.map(d => [d.phrase_id, d.isDone])
     );
+
+    return phrases.map(phrase => ({
+      ...phrase,
+      isDone: mapDone.get(phrase.id!) ?? false
+    }));
+  }),
+  catchError(() => of(this.defaultList))
+);
+
   }
 
 savePhraseProgress(phraseId: number, isDone: boolean) {
+  console.log('Saving progress:', phraseId, isDone);
   return this.http.post(`${this.apiBase}/progress/`, {
     phrase_id: phraseId,
     is_done: isDone,
   },{withCredentials:true},);
 }
 
-getDoneStatus(lang: string, type: 'story' | 'grammar') {
+getDoneStatus(lang: string, type: 'story' | 'grammar' | 'popular'): Observable<{ phrase_id: number, isDone: boolean }[]> {
   return this.http.get<{ phrase_id: number, is_done: boolean }[]>(
     `${this.apiBase}/progress/`,
     {
@@ -688,6 +695,7 @@ getDoneStatus(lang: string, type: 'story' | 'grammar') {
   ).pipe(
     map(list => list.map(item => ({
       phrase_id: item.phrase_id,
+
       isDone: item.is_done   // convert snake_case to camelCase
     })))
   );

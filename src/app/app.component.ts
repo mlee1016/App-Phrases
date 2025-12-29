@@ -1,11 +1,13 @@
 import { Component, inject, Input, signal } from '@angular/core';
-import { Router } from '@angular/router';
+import { NavigationEnd, Router } from '@angular/router';
 import { AuthenticationUser } from './emitters/emittters';
 import { HttpClient } from '@angular/common/http';
 import { FormBuilder, FormGroup } from '@angular/forms';
 import { statSync } from 'fs';
 import { isPlatformBrowser } from '@angular/common';
 import { Inject, PLATFORM_ID } from '@angular/core';
+import { filter } from 'rxjs/internal/operators/filter';
+import { subscribe } from 'diagnostics_channel';
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -46,8 +48,19 @@ export class AppComponent {
   toggleMenu() {
     this.menuOpen = !this.menuOpen;
   }
-  constructor(private http: HttpClient,public auth_U:AuthenticationUser,private formBuilder:FormBuilder, @Inject(PLATFORM_ID) private platformId: Object){
+  constructor(private http: HttpClient,public auth_U:AuthenticationUser,private router: Router,private formBuilder:FormBuilder, @Inject(PLATFORM_ID) private platformId: Object){
     
+    this.router.events
+
+
+    .pipe(filter(e => e instanceof NavigationEnd))
+    .subscribe(() => {
+      try {
+        (window as any).adsbygoogle = (window as any).adsbygoogle || [];
+        (window as any).adsbygoogle.push({});
+      } catch (e) {}
+    });
+
   }
   toggleButton(){
     this.toggle = !this.toggle
@@ -70,13 +83,16 @@ export class AppComponent {
 
 
   // screenWidth = window.innerWidth;
-
+  check = signal<'signed in' | 'signed out'>('signed out');
 
   ngOnInit(): void {
     this.auth_U.initializeAuth()
     this.auth_U.authStatus.subscribe(status => {
     this.status = status;
   });
+  this.auth_U.authStatus$.subscribe((status:'signed in' | 'signed out')=>{
+    this.check.update(a=>a= status)
+ })
         this.auth_U.authStatusLoaded.subscribe(loaded => this.authLoaded = loaded);
 
     //Called after the constructor, initializing input properties, and the first call to ngOnChanges.
@@ -177,6 +193,7 @@ openSidebar() {
   this.seePhrases = true;
 }
 
+settingsOpen = false;
 closeSidebar() {
   this.seePhrases = false;
 }

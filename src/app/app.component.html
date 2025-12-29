@@ -1,239 +1,157 @@
 <!-- Font Awesome CDN -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
-<div class="min-h-screen mb-[4rem ] flex flex-col bg-gradient-to-br from-[#041017] to-[#0a1a25] text-white font-sans">
+<div class="min-h-screen bg-gradient-to-br from-[#020c12] to-[#071e2c] text-white font-['Inter']">
 
-  <!-- 🔹 Top Navbar -->
-  <header class="flex items-center h-14 px-4 bg-[#030a0e] border-b border-cyan-200 fixed top-0 left-0 right-0 z-50">
-    <div class="flex items-center gap-4">
-      <!-- Hamburger Toggle (mobile) -->
-      <button class="text-xl text-cyan-100 hover:text-emerald-400 sm:hidden"
-              (click)="side = !side">
+  <!-- HEADER -->
+  <header
+    class="fixed top-0 left-0 right-0 h-14 px-6 flex items-center justify-between
+           backdrop-blur-md bg-black/40 border-b border-white/5 z-50">
+
+    <div class="flex items-center gap-3">
+      <button class="sm:hidden text-xl text-cyan-400" (click)="side = !side">
         <i class="fas fa-bars"></i>
       </button>
-      <!-- App Title -->
-      <div class="text-2xl sm:text-4xl font-semibold text-cyan-100 cursive-font">Phrase Itera</div>
-      <!-- sign-up -->
-       <!-- <button [routerLink]="'signup'">sign-up</button> -->
-      <!-- <button [routerLink]="'signin'">sign-in</button> -->
 
-      <!-- <button (click)="logOut()">log out</button> -->
-
-
+      <span class="text-xl font-semibold tracking-wide">
+        Phrase<span class="text-cyan-400">Itera</span>
+      </span>
     </div>
-    
-  </header>
+    <div class="relative flex items-center gap-4 text-cyan-300">
 
-  <!-- 🔹 Mobile Backdrop -->
-  <div *ngIf="side" class="fixed inset-0 bg-white bg-opacity-50 z-40 sm:hidden" (click)="side = false"></div>
-
-  <!-- 🔹 Sidebar -->
-  <aside
-    class="fixed top-14 left-0 h-[calc(100%-3.5rem)] bg-[#030a0e] border-r border-cyan-800 flex flex-col items-center text-cyan-400 pt-6 space-y-6 z-50
-           transform transition-transform duration-300 ease-in-out
-           sm:translate-x-0 w-[5rem]"
-    [ngClass]="side ? 'translate-x-0' : '-translate-x-full sm:translate-x-0'">
-
-    <!-- Sidebar Items -->
-    <ng-container *ngFor="let item of sidebarItems">
-      <div class="flex flex-col items-center hover:text-emerald-300 cursor-pointer">
-        <button [routerLink]="item.route" routerLinkActive="text-emerald-300" class="text-xl">
-          <i class="{{ item.icon }}"></i>
-        </button>
-        <div class="text-xs mt-1">{{ item.label }}</div>
-      </div>
-    </ng-container>
-
-    <!-- Language Toggle -->
-    <div class="mt-4 w-[90%] overflow-hidden">
-      <div class="bg-cyan-600 px-4 py-2 rounded text-sm hover:bg-cyan-500 cursor-pointer text-center"
-           (click)="seeLanguages()">
-        🌐 
-      </div>
-    </div>  
-
-    <!-- Language Options -->
-    <div class="flex flex-col text-sm text-center overflow-hidden transition-all duration-300 ease-in-out w-[90%] overflow-y-auto"
-         [ngClass]="slanguages ? 'h-50' : 'h-0'">
-      <!--<a *ngFor="let lang of languages; let i = index"
-         (click)="navToSite(i)"
-         class="hover:text-emerald-300 cursor-pointer py-1">
-        {{ lang }}
-      </a>-->
-
-
-      
-    <!-- Left: Copyright -->
-    <div class="text-center md:text-left">
-      © 2025 <span class="font-semibold">PhraseItera</span>. All rights reserved.
-    </div>
-
-    <!-- Center: Navigation Links -->
-    <div class=" text-center">
-      <button [routerLink]="'/privacy-policy'" class="hover:text-white transition">Privacy Policy</button>
-      <button [routerLink]="'/terms-of-service'" class="hover:text-white transition">Terms of Service</button>
-      <button [routerLink]="'/feedback'" class="hover:text-white transition">Contact</button>
-    </div>
-
-    <!-- Right: Socials -->
-    <div class="flex">
-      <a href="https://instagram.com/phraseitera/" target="_blank" aria-label="Instagram" class="hover:text-white transition">
-        <i class="fa-brands fa-instagram"></i>
-      </a>
-      <!--<a href="https://github.com" target="_blank" aria-label="GitHub" class="hover:text-white transition">
-        <i class="fa-brands fa-github"></i>
-      </a>-->
-      <a href="https://youtube.com" target="_blank" aria-label="YouTube" class="hover:text-white transition">
-        <i class="fa-brands fa-youtube"></i>
-
-        
-      </a>
-    </div>
-    </div>
-
-    
-  </aside> 
-
-  <!-- 🔹 Main Content Area -->
-<main
-  class="flex-1 mt-14 p-4 transition-all duration-300 ease-in-out"
-  [ngClass]="{ 'ml-[5rem]': !side && screenWidth >= 640, 'ml-0': screenWidth < 640 }"
->
-
-
-
-  <!-- <app-timer></app-timer> -->
-   <app-stopwatch></app-stopwatch>
-  <router-outlet></router-outlet>  
-</main>
-
-</div>
-<!-- 🔹 Bottom Mobile Tab Bar --
-<nav class="fixed bottom-0 left-0 mt-15 right-0 bg-[#030a0e] border-t border-cyan-800 flex justify-around items-center h-14 sm:hidden z-50">
-  
-  <button *ngFor="let item of sidebarItems"
-
-    [routerLink]="item.route"
-    routerLinkActive="text-emerald-300"
-    class="flex flex-col items-center justify-center text-cyan-400 hover:text-emerald-300 text-sm">
-    <i class="{{ item.icon }} text-lg"></i>
-    <span class="text-xs mt-1">{{ item.label }}</span>
+  <!-- Profile --
+  <button routerLink="profile" class="hover:text-emerald-400 transition">
+    <i class="fas fa-user-circle text-xl"></i>
   </button>
 
-</nav>-->
-<!-- 
+  <!-- Notifications --
+  <button class="hover:text-emerald-400 transition">
+    <i class="fas fa-bell text-lg"></i>
+  </button>
 
+  <!-- Settings --
+  <button
+    (click)="settingsOpen = !settingsOpen"
+    class="hover:text-emerald-400 transition"
+  >
+    <i class="fas fa-cog text-lg"></i>
+  </button>
 
+  <!-- BACKDROP (click outside to close) -->
+  <div
+    *ngIf="settingsOpen"
+    class="fixed inset-0 z-40"
+    (click)="settingsOpen = false">
+  </div>
 
-<!-- Fonts --
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+  <!-- SETTINGS DROPDOWN -->
+  <div
+    *ngIf="settingsOpen"
+    class="absolute right-0 top-10 z-50
+           w-48 rounded-xl
+           bg-[#0a1a23]
+           border border-cyan-800
+           shadow-xl
+           text-sm"
+  >
 
-<div class="min-h-screen flex flex-col bg-[#0d1117] text-[#e6edf3] font-['Inter']">
+    <!-- GUEST OPTIONS -->
+    <ng-container *ngIf="check() !== 'signed in'">
 
-  <!-- 🔷 Top Navbar --
-  <header class="fixed top-0 left-0 right-0 h-14 px-6 bg-[#0d1117]/80 backdrop-blur-lg 
-                 border-b border-[#1f242b] flex items-center justify-between z-50">
-
-    <div class="flex items-center gap-4">
-      <button class="sm:hidden text-2xl text-[#9ba7b9] hover:text-[#00e5ff]" (click)="side = !side">
-        <i class="fas-fa-bars"></i>
+      <!-- Sign in -->
+      <button
+        routerLink="signin"
+        (click)="settingsOpen = false"
+        class="w-full flex items-center gap-3 px-4 py-3
+               hover:bg-cyan-900/40 transition"
+      >
+        <i class="fas fa-sign-in-alt text-cyan-400"></i>
+        <span>Sign in</span>
       </button>
 
-      <div class="text-3xl font-semibold tracking-tight text-white">
-        Phrase<span class="text-[#00e5ff]">Itera</span>
-      </div>
-    </div>
+      <!-- Sign up -->
+      <button
+        routerLink="signup"
+        (click)="settingsOpen = false"
+        class="w-full flex items-center gap-3 px-4 py-3
+               hover:bg-emerald-900/30 text-emerald-400 transition"
+      >
+        <i class="fas fa-user-plus"></i>
+        <span>Sign up</span>
+      </button>
+
+    </ng-container>
+
+    <!-- SIGNED IN -->
+    <button
+      *ngIf="check() === 'signed in'"
+      (click)="auth_U.signOut(); settingsOpen = false"
+      class="w-full flex items-center gap-3 px-4 py-3
+             hover:bg-red-900/30 text-red-400 transition"
+    >
+      <i class="fas fa-sign-out-alt"></i>
+      <span>Sign out</span>
+    </button>
+
+  </div>
+</div>
 
   </header>
 
-  <!-- 🔷 Mobile Backdrop --
-  <div *ngIf="side"
-       class="fixed inset-0 bg-black/40 backdrop-blur-sm z-40 sm:hidden"
-       (click)="side = false">
-  </div>
-
-  <!-- 🔷 Sidebar --
+  <!-- SIDEBAR -->
   <aside
-    class="fixed top-14 left-0 h-[calc(100%-3.5rem)] w-[5.5rem]
-           bg-[#161b22] border-r border-[#1f242b] shadow-xl
-           flex flex-col items-center py-6 space-y-7 z-50
-           transform transition-transform duration-300 ease-out
-           sm:translate-x-0"
+    class="fixed top-14 left-0 h-[calc(100%-3.5rem)] w-20
+           backdrop-blur-lg bg-black/40 border-r border-white/5
+           flex flex-col items-center py-6 space-y-8
+           transition-transform duration-300 z-40"
     [ngClass]="side ? 'translate-x-0' : '-translate-x-full sm:translate-x-0'">
 
-    <!-- Menu Items --
     <ng-container *ngFor="let item of sidebarItems">
-      <div class="flex flex-col items-center text-[#9ba7b9] hover:text-[#00e5ff] transition cursor-pointer">
-        <button [routerLink]="item.route"
-                routerLinkActive="text-[#00e5ff]"
-                class="text-2xl">
-          <i class="{{ item.icon }}"></i>
-        </button>
-        <div class="text-xs mt-1">{{ item.label }}</div>
-      </div>
+      <button
+        [routerLink]="item.route"
+        routerLinkActive="text-emerald-400"
+        class="group flex flex-col items-center text-cyan-300 hover:text-emerald-400 transition">
+
+        <i class="{{ item.icon }} text-xl"></i>
+        <span class="text-[10px] opacity-0 group-hover:opacity-100 transition">
+          {{ item.label }}
+        </span>
+      </button>
     </ng-container>
 
-    <!-- 🌐 Language Switch --
-    <div class="w-[85%]">
-      <div class="px-3 py-2 text-sm bg-[#0d1117] rounded-lg border border-[#1f242b]
-                  text-[#00e5ff] text-center cursor-pointer hover:bg-[#0d1117]/70 transition"
-           (click)="slanguages = !slanguages">
-        🌐 Languages
-      </div>
-    </div>
-
-    <!-- Languages Dropdown --
-    <div class="w-[85%] text-center text-sm transition-all duration-300 overflow-hidden"
-         [style.height]="slanguages ? '120px' : '0'">
-      <div *ngFor="let lang of languages; let i = index"
-           (click)="navToSite(i)"
-           class="cursor-pointer py-2 text-[#9ba7b9] hover:text-[#00e5ff] transition">
-        {{ lang }}
-      </div>
-    </div>
-
-    <!-- Spacer --
     <div class="flex-1"></div>
 
-    <!-- Footer --
-    <div class="text-xs w-full text-center text-[#7b8694] space-y-3 pb-4">
+    <button
+      class="mb-4 text-cyan-400 hover:text-emerald-400 transition"
+      (click)="seeLanguages()">
+      🌐
+    </button>
 
-      <div>© 2025 <span class="text-white font-medium">PhraseItera</span></div>
-
-      <div class="space-y-1">
-        <button routerLink="/privacy-policy" class="hover:text-white transition">Privacy Policy</button>
-        <button routerLink="/terms-of-service" class="hover:text-white transition">Terms</button>
-        <button routerLink="/feedback" class="hover:text-white transition">Contact</button>
-      </div>
-
-      <div class="flex justify-center gap-4 text-lg text-[#9ba7b9]">
-        <a href="https://instagram.com/phraseitera/" target="_blank" class="hover:text-[#00e5ff] transition">
-          <i class="fa-brands fa-instagram"></i>
-        </a>
-        <a href="https://youtube.com" target="_blank" class="hover:text-[#00e5ff] transition">
-          <i class="fa-brands fa-youtube"></i>
-        </a>
-      </div>
+<div *ngIf="slanguages" class="text-xs w-full text-center text-[#7b8694] space-y-3 pb-4"> 
+        <div>© 2025 
+          <span class="text-white font-medium">PhraseItera</span>
+        </div> <div class="space-y-1"> 
+        <button routerLink="/privacy-policy" class="hover:text-white transition">Privacy Policy</button> 
+        <button routerLink="/terms-of-service" class="hover:text-white transition">Terms</button> 
+        <button routerLink="/feedback" class="hover:text-white transition">Contact</button> 
+      </div> 
+      <div class="flex justify-center gap-4 text-lg text-[#9ba7b9]"> 
+        <a href="https://instagram.com/phraseitera/" target="_blank" class="hover:text-[#00e5ff] transition"> <i class="fa-brands fa-instagram"></i> </a> <a href="https://youtube.com" target="_blank" class="hover:text-[#00e5ff] transition"> <i class="fa-brands fa-youtube"></i> 
+        </a> 
+      </div> 
     </div>
-
   </aside>
 
-  <!-- 🔷 MAIN CONTENT --
+
+  <!-- MAIN -->
   <main
-    class="flex-1 mt-14 p-6 transition-all duration-300"
-    [ngClass]="{
-      'ml-[5.5rem]': screenWidth >= 640,
-      'ml-0': screenWidth < 640
-    }">
+    class="pt-16 px-6 transition-all duration-300"
+    [ngClass]="{ 'ml-20': screenWidth >= 640 }">
 
-    <app-stopwatch></app-stopwatch>
-    <router-outlet></router-outlet>
-
+    <section class="max-w-5xl mx-auto">
+      <router-outlet></router-outlet>
+    </section>
+    
   </main>
-
 </div>
-
-
-
-
--->

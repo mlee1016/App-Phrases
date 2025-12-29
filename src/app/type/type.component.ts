@@ -308,9 +308,7 @@ ngOnInit(): void {
   
     this.loadPhrasesById();
   });
-    this.selectPhraseList()
-    // this.voice = window.speechSynthesis.getVoices()
-    // console.log(this.voice)
+    this.selectPhraseList();
 }
  voice
 setUnifiedPhrases(lang: string, phraseList: any[]) {
@@ -459,7 +457,7 @@ selectPhraseList() {
     this.allPhrase = i
   }
   
-  getSpecificPhrases(p:string){
+  getSpecificPhrases(p:any){
     if(this.id == 'Japanese'){
       this.input2.set(p);
       this.selectedPhrases.set(p)
@@ -514,17 +512,39 @@ selectPhraseList() {
     return this.remainingPhrases()[this.currentIndex()];
 }
   
-  startQuiz() {
-    const all = this.phrases();
-    this.remainingPhrases.set([...all]);   // fresh copy
-    this.currentIndex.set(0);
-    this.score.set(0);
-    this.quizStarted = true
-    this.answered.set(false)
-    this.lastResult.set('')
-    this.currentPhrase()
+//   startQuiz() {
+//     const all = this.phrases();
+//     this.remainingPhrases.set([...all]);   // fresh copy
+//     this.currentIndex.set(0);
+//     this.score.set(0);
+//     this.quizStarted = true
+//     this.answered.set(false)
+//     this.lastResult.set('')
+//     this.currentPhrase()
+// }
+
+
+startQuiz() {
+  const shuffled = this.shuffleArray(this.phrases());
+
+  this.remainingPhrases.set(shuffled);
+  this.currentIndex.set(0);
+  this.score.set(0);
+
+  this.quizStarted = true;
+  this.answered.set(false);
+  this.lastResult.set('');
 }
 
+
+shuffleArray<T>(array: T[]): T[] {
+  const arr = [...array];
+  for (let i = arr.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [arr[i], arr[j]] = [arr[j], arr[i]];
+  }
+  return arr;
+}
 
   getQuestion(): string {
     switch(this.id){
@@ -705,14 +725,6 @@ next() {
   this.userInput = '';
   this.reset2();
 }
-
-
-   /* prev() {
-      if (this.currentIndex() > 0) {
-        this.currentIndex.update(current =>current -1);
-        this.reset2();
-      }
-    }*/
 
   prev() { 
         if (this.currentIndex() > 0) {
